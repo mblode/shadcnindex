@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "cta17",
+  "url": "https://shadcnblocks.com/r/cta17.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "cta17",
+    "type": "registry:block",
+    "title": "Cta",
+    "description": "A centered call-to-action block with a patterned background, featuring a large title, a descriptive paragraph, and two large buttons for actions.",
+    "dependencies": [],
+    "registryDependencies": ["button"],
+    "files": [
+      {
+        "path": "code/block/cta17.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:18.479Z"
+}

@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature160",
+  "url": "https://shadcnblocks.com/r/feature160.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature160",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A tabbed component with 4 items, each with an icon, title, and description. Clicking a tab shows a related image. Uses a grid layout for tabs.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": ["tabs"],
+    "files": [
+      {
+        "path": "code/block/feature160.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:23.012Z"
+}

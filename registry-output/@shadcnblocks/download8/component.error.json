@@ -1,0 +1,24 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "download8",
+  "url": "https://shadcnblocks.com/r/download8.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "download8",
+    "type": "registry:block",
+    "title": "Download",
+    "description": "This component displays a download block with a featured image, a title, an auto-detect download button with its last update date, and a list of download options for various platforms categorized in a 2-column layout.",
+    "dependencies": ["lucide-react", "react-icons"],
+    "registryDependencies": [
+      "https://ui.aceternity.com/registry/glare-card.json",
+      "button"
+    ],
+    "files": [
+      {
+        "path": "code/block/download8.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:19.538Z"
+}

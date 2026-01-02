@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "hero146",
+  "url": "https://shadcnblocks.com/r/hero146.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "hero146",
+    "type": "registry:block",
+    "title": "Hero",
+    "description": "A component featuring an attention-grabbing headline and brief description with a gradient \"Get Started\" button, followed by a teaser section for a video presentation. The video section includes a unique hover effect on the play button and a modal dialog for playback.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": ["aspect-ratio", "button", "dialog"],
+    "files": [
+      {
+        "path": "code/block/hero146.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:34.506Z"
+}

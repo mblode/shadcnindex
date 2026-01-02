@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "compare-products2",
+  "url": "https://shadcnblocks.com/r/compare-products2.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "compare-products2",
+    "type": "registry:block",
+    "title": "Compare-products",
+    "description": "This component, \"CompareProducts2,\" is designed for comparing multiple products with specific characteristics and specifications presented in a tabular format. It allows users to view product images, prices, ratings, and additional product details, facilitating easy comparison and decision-making.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["aspect-ratio", "badge", "button", "table"],
+    "files": [
+      {
+        "path": "code/block/compare-products2.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:16.746Z"
+}

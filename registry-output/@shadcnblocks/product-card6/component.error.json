@@ -1,0 +1,28 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "product-card6",
+  "url": "https://shadcnblocks.com/r/product-card6.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "product-card6",
+    "type": "registry:block",
+    "title": "Product-card",
+    "description": "This component is an interactive product display block that showcases product details, including images, pricing, and stock status. It integrates a form allowing users to select product variants, with features like quick add to cart, sale indicators, and variant-specific color options.",
+    "dependencies": ["@hookform/resolvers", "react-hook-form", "zod"],
+    "registryDependencies": [
+      "https://shadcnblocks.com/r/price",
+      "aspect-ratio",
+      "button",
+      "card",
+      "form",
+      "radio-group"
+    ],
+    "files": [
+      {
+        "path": "code/block/product-card6.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:45.187Z"
+}

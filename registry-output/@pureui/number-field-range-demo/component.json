@@ -1,0 +1,13 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "number-field-range-demo",
+  "type": "registry:example",
+  "registryDependencies": ["number-field"],
+  "files": [
+    {
+      "path": "src/registry/pure-ui/examples/number-field/number-field-range-demo.tsx",
+      "content": "import {\n  NumberField,\n  NumberFieldDecrement,\n  NumberFieldGroup,\n  NumberFieldIncrement,\n  NumberFieldInput,\n  NumberFieldScrubArea,\n} from \"@/registry/pure-ui/ui/number-field\";\nimport { Label } from \"@/registry/pure-ui/ui/label\";\n\nexport function NumberFieldRangeDemo() {\n  return (\n    <div className=\"flex flex-col gap-5\">\n      <NumberField defaultValue={10} min={5} id=\"minimum\">\n        <NumberFieldScrubArea>\n          <Label htmlFor=\"minimum\" className=\"cursor-ew-resize\">\n            Minimum\n          </Label>\n        </NumberFieldScrubArea>\n        <NumberFieldGroup>\n          <NumberFieldDecrement />\n          <NumberFieldInput />\n          <NumberFieldIncrement />\n        </NumberFieldGroup>\n      </NumberField>\n\n      <NumberField defaultValue={10} max={25} id=\"maximum\">\n        <NumberFieldScrubArea>\n          <Label htmlFor=\"maximum\" className=\"cursor-ew-resize\">\n            Maximum\n          </Label>\n        </NumberFieldScrubArea>\n        <NumberFieldGroup>\n          <NumberFieldDecrement />\n          <NumberFieldInput />\n          <NumberFieldIncrement />\n        </NumberFieldGroup>\n      </NumberField>\n\n      <NumberField defaultValue={10} min={5} max={25} id=\"range\">\n        <NumberFieldScrubArea>\n          <Label htmlFor=\"range\" className=\"cursor-ew-resize\">\n            Range\n          </Label>\n        </NumberFieldScrubArea>\n        <NumberFieldGroup>\n          <NumberFieldDecrement />\n          <NumberFieldInput />\n          <NumberFieldIncrement />\n        </NumberFieldGroup>\n      </NumberField>\n    </div>\n  );\n}\n",
+      "type": "registry:example"
+    }
+  ]
+}

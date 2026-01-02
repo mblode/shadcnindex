@@ -1,0 +1,45 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "switch",
+  "type": "registry:ui",
+  "title": "Switch",
+  "description": "Windows 95 styled switch component",
+  "dependencies": ["@radix-ui/react-switch"],
+  "files": [
+    {
+      "path": "components/97cn/switch.tsx",
+      "content": "\"use client\"\n\nimport * as React from \"react\"\nimport * as SwitchPrimitives from \"@radix-ui/react-switch\"\nimport { cn } from \"@/lib/utils\"\n\nconst Switch = React.forwardRef<\n  React.ElementRef<typeof SwitchPrimitives.Root>,\n  React.ComponentPropsWithoutRef<typeof SwitchPrimitives.Root>\n>(({ className, ...props }, ref) => (\n  <SwitchPrimitives.Root\n    className={cn(\n      \"peer inline-flex h-6 w-11 shrink-0 cursor-pointer items-center rounded-full\",\n      \"win95-sunken bg-win95-button-face transition-colors\",\n      \"focus-visible:outline-none focus:outline-1 focus:outline-dotted focus:outline-win95-black focus:outline-offset-[-2px]\",\n      \"disabled:cursor-not-allowed disabled:opacity-50\",\n      \"data-[state=checked]:bg-win95-highlight\",\n      className,\n    )}\n    {...props}\n    ref={ref}\n  >\n    <SwitchPrimitives.Thumb\n      className={cn(\n        \"pointer-events-none block h-5 w-5 rounded-full bg-win95-white shadow-lg ring-0 transition-transform\",\n        \"win95-raised border border-win95-dark-gray\",\n        \"data-[state=checked]:translate-x-5 data-[state=unchecked]:translate-x-0\",\n      )}\n    />\n  </SwitchPrimitives.Root>\n))\nSwitch.displayName = SwitchPrimitives.Root.displayName\n\nexport { Switch }\n",
+      "type": "registry:ui"
+    }
+  ],
+  "cssVars": {
+    "light": {
+      "win95-button-face": "#c0c0c0",
+      "win95-button-shadow": "#808080",
+      "win95-button-highlight": "#ffffff",
+      "win95-navy": "#000080"
+    },
+    "dark": {
+      "win95-button-face": "#c0c0c0",
+      "win95-button-shadow": "#808080",
+      "win95-button-highlight": "#ffffff",
+      "win95-navy": "#000080"
+    }
+  },
+  "css": {
+    "@layer utilities": {
+      ".win95-raised": {
+        "border-top": "2px solid var(--win95-button-highlight)",
+        "border-left": "2px solid var(--win95-button-highlight)",
+        "border-right": "2px solid var(--win95-button-shadow)",
+        "border-bottom": "2px solid var(--win95-button-shadow)"
+      },
+      ".win95-sunken": {
+        "border-top": "2px solid var(--win95-button-shadow)",
+        "border-left": "2px solid var(--win95-button-shadow)",
+        "border-right": "2px solid var(--win95-button-highlight)",
+        "border-bottom": "2px solid var(--win95-button-highlight)"
+      }
+    }
+  }
+}

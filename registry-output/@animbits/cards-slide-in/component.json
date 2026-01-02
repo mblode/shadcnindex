@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "cards-slide-in",
+  "type": "registry:component",
+  "title": "Slide In Card",
+  "description": "Card that slides in from any direction on mount",
+  "dependencies": ["motion"],
+  "files": [
+    {
+      "path": "registry/new-york/animations/cards/slide-in.tsx",
+      "content": "\"use client\";\nimport * as React from \"react\";\nimport { motion, HTMLMotionProps } from \"motion/react\";\nimport { cn } from \"@/lib/utils\";\nimport { useSlideIn, type SlideDirection } from \"@/lib/use-slide-in\";\nexport interface CardSlideInProps extends HTMLMotionProps<\"div\"> {\n  duration?: number;\n  delay?: number;\n  direction?: SlideDirection;\n  distance?: number;\n}\nexport function CardSlideIn({\n  children,\n  className,\n  duration = 0.5,\n  delay = 0,\n  direction = \"left\",\n  distance = 50,\n  ...props\n}: CardSlideInProps) {\n  const slideProps = useSlideIn({\n    direction,\n    distance,\n    duration,\n    delay,\n  });\n  return (\n    <motion.div {...slideProps} className={cn(className)} {...props}>\n      {children}\n    </motion.div>\n  );\n}\n",
+      "type": "registry:component"
+    },
+    {
+      "path": "lib/use-slide-in.ts",
+      "content": "import { type MotionProps, type Easing } from \"motion/react\";\n\nexport type SlideDirection = \"left\" | \"right\" | \"up\" | \"down\";\n\nexport interface UseSlideInOptions {\n  direction?: SlideDirection;\n\n  distance?: number;\n\n  duration?: number;\n\n  delay?: number;\n\n  initialOpacity?: number;\n\n  ease?: Easing | Easing[];\n\n  viewport?: \"once\" | \"always\";\n}\n\nexport function useSlideIn(options: UseSlideInOptions = {}): MotionProps {\n  const {\n    direction = \"left\",\n    distance = 50,\n    duration = 0.5,\n    delay = 0,\n    initialOpacity = 0,\n    ease = \"easeOut\",\n    viewport = \"once\",\n  } = options;\n\n  const getInitialPosition = () => {\n    switch (direction) {\n      case \"left\":\n        return { x: -distance, y: 0 };\n      case \"right\":\n        return { x: distance, y: 0 };\n      case \"up\":\n        return { x: 0, y: -distance };\n      case \"down\":\n        return { x: 0, y: distance };\n      default:\n        return { x: -distance, y: 0 };\n    }\n  };\n\n  const initialPosition = getInitialPosition();\n\n  return {\n    initial: {\n      ...initialPosition,\n      opacity: initialOpacity,\n    },\n    whileInView: {\n      x: 0,\n      y: 0,\n      opacity: 1,\n    },\n    viewport: {\n      once: viewport === \"once\",\n    },\n    transition: {\n      duration,\n      delay,\n      ease,\n    },\n  };\n}\n",
+      "type": "registry:lib"
+    }
+  ]
+}

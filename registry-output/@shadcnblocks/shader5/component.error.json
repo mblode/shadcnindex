@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "shader5",
+  "url": "https://shadcnblocks.com/r/shader5.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "shader5",
+    "type": "registry:block",
+    "title": "Shader",
+    "description": "This component generates a dynamic shader-based background using customizable vertex and fragment shaders, allowing for visually engaging effects. It includes uniform variables for time and resolution, enabling smooth animations and responsiveness to changes in canvas size.",
+    "dependencies": ["@react-three/fiber", "react", "three"],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/shader5.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:51.051Z"
+}

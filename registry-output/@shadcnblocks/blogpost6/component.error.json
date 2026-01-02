@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "blogpost6",
+  "url": "https://shadcnblocks.com/r/blogpost6.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "blogpost6",
+    "type": "registry:block",
+    "title": "Blogpost",
+    "description": "A blog post component with dynamic breadcrumb navigation, author bio, social sharing, and interactive chapter selection.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": ["avatar", "breadcrumb", "button"],
+    "files": [
+      {
+        "path": "code/block/blogpost6.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:14.945Z"
+}

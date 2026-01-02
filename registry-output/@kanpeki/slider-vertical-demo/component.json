@@ -1,0 +1,13 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "files": [
+    {
+      "content": "import { Slider } from \"~/registry/ui/slider\";\n\nexport function SliderVerticalDemo() {\n  return (\n    <Slider.Root\n      aria-label=\"Vertical slider\"\n      defaultValue={[50]}\n      orientation=\"vertical\"\n    >\n      <Slider.Track>\n        <Slider.Range />\n        <Slider.Thumb />\n      </Slider.Track>\n    </Slider.Root>\n  );\n}\n",
+      "path": "src/registry/examples/slider/slider-vertical-demo.tsx",
+      "type": "registry:example"
+    }
+  ],
+  "name": "slider-vertical-demo",
+  "registryDependencies": ["@kanpeki/slider"],
+  "type": "registry:example"
+}

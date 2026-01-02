@@ -1,0 +1,13 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "tabs-horizontal-orientation-demo",
+  "type": "registry:example",
+  "registryDependencies": ["tabs"],
+  "files": [
+    {
+      "path": "src/registry/pure-ui/examples/tabs/tabs-horizontal-orientation-demo.tsx",
+      "content": "import { Tabs, TabsList, TabsTrigger } from \"@/registry/pure-ui/ui/tabs\";\n\nexport function TabsHorizontalOrientationDemo() {\n  return (\n    <div className=\"flex flex-col gap-6\">\n      <Tabs defaultValue=\"docs\" orientation=\"horizontal\" variant=\"segmented\">\n        <TabsList>\n          <TabsTrigger value=\"docs\">Docs</TabsTrigger>\n          <TabsTrigger value=\"components\">Components</TabsTrigger>\n          <TabsTrigger value=\"blocks\">Blocks</TabsTrigger>\n        </TabsList>\n      </Tabs>\n\n      <Tabs defaultValue=\"docs\" orientation=\"horizontal\" variant=\"underline\">\n        <TabsList>\n          <TabsTrigger value=\"docs\">Docs</TabsTrigger>\n          <TabsTrigger value=\"components\">Components</TabsTrigger>\n          <TabsTrigger value=\"blocks\">Blocks</TabsTrigger>\n        </TabsList>\n      </Tabs>\n\n      <Tabs defaultValue=\"docs\" orientation=\"horizontal\" variant=\"card\">\n        <TabsList>\n          <TabsTrigger value=\"docs\">Docs</TabsTrigger>\n          <TabsTrigger value=\"components\">Components</TabsTrigger>\n          <TabsTrigger value=\"blocks\">Blocks</TabsTrigger>\n        </TabsList>\n      </Tabs>\n    </div>\n  );\n}\n",
+      "type": "registry:example"
+    }
+  ]
+}

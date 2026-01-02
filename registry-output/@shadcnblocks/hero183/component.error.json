@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "hero183",
+  "url": "https://shadcnblocks.com/r/hero183.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "hero183",
+    "type": "registry:block",
+    "title": "Hero",
+    "description": "A component featuring a premium badge, a bold title with descriptive text, buttons for actions, and a grid of images with decorative lines transitioning into a carousel for smaller views.",
+    "dependencies": ["react"],
+    "registryDependencies": ["badge", "button", "carousel"],
+    "files": [
+      {
+        "path": "code/block/hero183.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:35.501Z"
+}

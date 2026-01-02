@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "use-has-primary-touch",
+  "title": "Use has primary touch",
+  "description": "Hook utility: use-has-primary-touch",
+  "dependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/optics/hooks/use-has-primary-touch.jsx",
+      "content": "import { useEffect, useState } from \"react\";\n\nexport function useTouchPrimary() {\n  const [isTouchPrimary, setIsTouchPrimary] = useState(false);\n\n  useEffect(() => {\n    if (typeof window === \"undefined\") return;\n\n    const controller = new AbortController();\n    const { signal } = controller;\n\n    const handleTouch = () => {\n      const hasTouch = \"ontouchstart\" in window || navigator.maxTouchPoints > 0;\n      const prefersTouch = window.matchMedia(\"(pointer: coarse)\").matches;\n      setIsTouchPrimary(hasTouch && prefersTouch);\n    };\n\n    const mq = window.matchMedia(\"(pointer: coarse)\");\n    mq.addEventListener(\"change\", handleTouch, { signal });\n    window.addEventListener(\"pointerdown\", handleTouch, { signal });\n\n    handleTouch();\n\n    return () => controller.abort();\n  }, []);\n\n  return isTouchPrimary;\n}\n",
+      "type": "registry:lib",
+      "target": "hooks/use-has-primary-touch.jsx"
+    }
+  ],
+  "type": "registry:lib"
+}

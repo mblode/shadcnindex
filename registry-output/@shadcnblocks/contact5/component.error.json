@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "contact5",
+  "url": "https://shadcnblocks.com/r/contact5.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "contact5",
+    "type": "registry:block",
+    "title": "Contact",
+    "description": "A contact form block with a title, description, fields for name, email, phone, and message, a privacy policy checkbox, and a submit button.",
+    "dependencies": [],
+    "registryDependencies": ["button", "input", "label", "textarea"],
+    "files": [
+      {
+        "path": "code/block/contact5.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:17.788Z"
+}

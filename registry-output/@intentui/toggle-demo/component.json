@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "extends": "none",
+  "name": "toggle-demo",
+  "title": "Toggle",
+  "description": "toggle-demo",
+  "registryDependencies": ["https://intentui.com/r/toggle"],
+  "files": [
+    {
+      "path": "src/components/docs/buttons/toggle/toggle-demo.tsx",
+      "content": "\"use client\"\n\nimport { Toggle } from \"@/components/ui/toggle\"\n\nexport default function ToggleDemo() {\n  return <Toggle>{({ isSelected }) => <>{isSelected ? \"Unpin\" : \"Pin\"}</>}</Toggle>\n}\n",
+      "type": "registry:page",
+      "target": "app/toggle-demo/page.tsx"
+    }
+  ],
+  "type": "registry:page"
+}

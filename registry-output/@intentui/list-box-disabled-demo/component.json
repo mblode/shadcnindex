@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "extends": "none",
+  "name": "list-box-disabled-demo",
+  "title": "List Box Disabled",
+  "description": "list-box-disabled-demo",
+  "registryDependencies": ["https://intentui.com/r/list-box"],
+  "files": [
+    {
+      "path": "src/components/docs/collections/list-box/list-box-disabled-demo.tsx",
+      "content": "\"use client\"\n\nimport { ListBox, ListBoxItem } from \"@/components/ui/list-box\"\n\nexport default function ListBoxDisabledDemo() {\n  return (\n    <ListBox\n      className=\"max-w-2xs\"\n      disabledKeys={[2, 3, 4, 5]}\n      items={fruits}\n      aria-label=\"Fruits\"\n      selectionMode=\"multiple\"\n    >\n      {(fruit) => <ListBoxItem id={fruit.id}>{fruit.name}</ListBoxItem>}\n    </ListBox>\n  )\n}\n\nconst fruits = [\n  {\n    id: 1,\n    name: \"Apple\",\n  },\n  {\n    id: 2,\n    name: \"Banana\",\n  },\n  {\n    id: 3,\n    name: \"Orange\",\n  },\n  {\n    id: 4,\n    name: \"Strawberry\",\n  },\n  {\n    id: 5,\n    name: \"Grapes\",\n  },\n  {\n    id: 6,\n    name: \"Mango\",\n  },\n  {\n    id: 7,\n    name: \"Pineapple\",\n  },\n]\n",
+      "type": "registry:page",
+      "target": "app/list-box-disabled-demo/page.tsx"
+    }
+  ],
+  "type": "registry:page"
+}

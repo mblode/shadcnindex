@@ -1,0 +1,13 @@
+{
+  "name": "use-is-hydrated",
+  "author": "Brendan Dash (https://shadcn-hooks.vercel.app)",
+  "description": "A hook to check if the component is hydrated",
+  "files": [
+    {
+      "path": "registry/hooks/use-is-hydrated.ts",
+      "content": "import { useSyncExternalStore } from 'react'\n\nfunction subscribe() {\n  return () => {}\n}\n\n/**\n * Return a boolean indicating if the JS has been hydrated already.\n * When doing Server-Side Rendering, the result will always be false.\n * When doing Client-Side Rendering, the result will always be false on the\n * first render and true from then on. Even if a new component renders it will\n * always start with true.\n *\n * Example: Disable a button that needs JS to work.\n * ```tsx\n * const isHydrated = useIsHydrated();\n * return (\n *   <button type=\"button\" disabled={!isHydrated} onClick={doSomethingCustom}>\n *     Click me\n *   </button>\n * );\n * ```\n */\nexport function useIsHydrated() {\n  return useSyncExternalStore(\n    subscribe,\n    () => true,\n    () => false,\n  )\n}\n",
+      "type": "registry:hook"
+    }
+  ],
+  "type": "registry:hook"
+}

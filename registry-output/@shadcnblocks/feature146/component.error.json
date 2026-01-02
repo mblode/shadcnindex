@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature146",
+  "url": "https://shadcnblocks.com/r/feature146.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature146",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A component featuring title sections, text descriptions, and images across two rows with unique dashed border decorations.",
+    "dependencies": [],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/feature146.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:22.454Z"
+}

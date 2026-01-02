@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "hero125",
+  "url": "https://shadcnblocks.com/r/hero125.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "hero125",
+    "type": "registry:block",
+    "title": "Hero",
+    "description": "Component features a 2-column layout with a focus on returns management. Includes icons, a big title, a paragraph, and a button. The right column showcases an image with exchange options.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["aspect-ratio", "button"],
+    "files": [
+      {
+        "path": "code/block/hero125.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:33.989Z"
+}

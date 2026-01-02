@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature37",
+  "url": "https://shadcnblocks.com/r/feature37.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature37",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A component with a 5-column grid layout, featuring 4 blocks with images and text descriptions, 2 columns wide for the first and last, 3 for the middle two. Each has a rounded, accent-colored background.",
+    "dependencies": [],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/feature37.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:28.737Z"
+}

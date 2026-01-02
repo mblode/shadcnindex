@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "extends": "none",
+  "name": "button-size-demo",
+  "title": "Button Size",
+  "description": "button-size-demo",
+  "registryDependencies": [
+    "https://intentui.com/r/button",
+    "https://intentui.com/r/separator"
+  ],
+  "files": [
+    {
+      "path": "src/components/docs/buttons/button/button-size-demo.tsx",
+      "content": "\"use client\"\n\nimport { BrandXIcon } from \"@/components/icons/brand-x-icon\"\nimport { Button } from \"@/components/ui/button\"\nimport { Separator } from \"@/components/ui/separator\"\n\nexport default function ButtonSizeDemo() {\n  return (\n    <div className=\"flex flex-col gap-y-4\">\n      <div className=\"flex flex-wrap items-end gap-2\">\n        <Button size=\"xs\">Label</Button>\n        <Button size=\"sm\">Label</Button>\n        <Button>Label</Button>\n        <Button size=\"lg\">Label</Button>\n      </div>\n      <Separator />\n      <div className=\"flex flex-wrap items-end gap-2\">\n        <Button size=\"sq-xs\">\n          <BrandXIcon />\n        </Button>\n        <Button size=\"sq-sm\">\n          <BrandXIcon />\n        </Button>\n        <Button size=\"sq-md\">\n          <BrandXIcon />\n        </Button>\n        <Button size=\"sq-lg\">\n          <BrandXIcon />\n        </Button>\n      </div>\n    </div>\n  )\n}\n",
+      "type": "registry:page",
+      "target": "app/button-size-demo/page.tsx"
+    }
+  ],
+  "type": "registry:page"
+}

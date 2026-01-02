@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "extends": "none",
+  "name": "search-field-readonly-demo",
+  "title": "Search Field Readonly",
+  "description": "search-field-readonly-demo",
+  "registryDependencies": ["https://intentui.com/r/search-field"],
+  "files": [
+    {
+      "path": "src/components/docs/forms/search-field/search-field-readonly-demo.tsx",
+      "content": "\"use client\"\n\nimport { SearchField, SearchInput } from \"@/components/ui/search-field\"\n\nexport default function SearchFieldDescriptionDemo() {\n  return (\n    <SearchField aria-label=\"Search\" isReadOnly>\n      <SearchInput placeholder=\"Search\" />\n    </SearchField>\n  )\n}\n",
+      "type": "registry:page",
+      "target": "app/search-field-readonly-demo/page.tsx"
+    }
+  ],
+  "type": "registry:page"
+}

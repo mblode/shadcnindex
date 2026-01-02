@@ -1,0 +1,14 @@
+{
+  "name": "use-is-match-media",
+  "author": "Brendan Dash (https://shadcn-hooks.vercel.app)",
+  "description": "A hook to check if the media query matches",
+  "registryDependencies": ["@hooks/use-isomorphic-layout-effect"],
+  "files": [
+    {
+      "path": "registry/hooks/use-is-match-media.ts",
+      "content": "import { useState } from 'react'\nimport { useIsomorphicLayoutEffect } from '@/registry/hooks/use-isomorphic-layout-effect'\n\nexport function useIsMatchMedia(mediaQueryString: string) {\n  const [isMatch, setIsMatch] = useState(() => {\n    if (typeof window === 'undefined') return false\n    return window.matchMedia(mediaQueryString).matches\n  })\n\n  useIsomorphicLayoutEffect(() => {\n    const mediaQueryList = window.matchMedia(mediaQueryString)\n\n    setIsMatch(mediaQueryList.matches)\n\n    const listener = (event: MediaQueryListEvent) => {\n      setIsMatch(event.matches)\n    }\n\n    mediaQueryList.addEventListener('change', listener)\n\n    return () => {\n      mediaQueryList.removeEventListener('change', listener)\n    }\n  }, [mediaQueryString])\n\n  return isMatch\n}\n",
+      "type": "registry:hook"
+    }
+  ],
+  "type": "registry:hook"
+}

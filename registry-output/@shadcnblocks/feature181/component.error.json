@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature181",
+  "url": "https://shadcnblocks.com/r/feature181.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature181",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A component showcasing four key features in a grid layout. Each card has a large masked index number, feature details, and a time badge.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["badge", "button"],
+    "files": [
+      {
+        "path": "code/block/feature181.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:23.730Z"
+}

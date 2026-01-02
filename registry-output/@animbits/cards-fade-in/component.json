@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "cards-fade-in",
+  "type": "registry:component",
+  "title": "Fade In Card",
+  "description": "Card with fade-in animation on mount",
+  "dependencies": ["motion"],
+  "files": [
+    {
+      "path": "registry/new-york/animations/cards/fade-in.tsx",
+      "content": "\"use client\";\nimport * as React from \"react\";\nimport { motion, HTMLMotionProps } from \"motion/react\";\nimport { cn } from \"@/lib/utils\";\nexport interface CardFadeInProps extends HTMLMotionProps<\"div\"> {\n  duration?: number;\n  delay?: number;\n}\nexport function CardFadeIn({\n  children,\n  className,\n  duration = 0.5,\n  delay = 0,\n  ...props\n}: CardFadeInProps) {\n  return (\n    <motion.div\n      initial={{ opacity: 0 }}\n      animate={{ opacity: 1 }}\n      transition={{ duration, delay }}\n      className={cn(className)}\n      {...props}\n    >\n      {children}\n    </motion.div>\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ]
+}

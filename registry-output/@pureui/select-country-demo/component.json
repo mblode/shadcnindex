@@ -1,0 +1,13 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "select-country-demo",
+  "type": "registry:example",
+  "registryDependencies": ["select"],
+  "files": [
+    {
+      "path": "src/registry/pure-ui/examples/select/select-country-demo.tsx",
+      "content": "import { CheckIcon, PlusIcon } from \"lucide-react\";\n\nimport {\n  Select,\n  SelectTrigger,\n  SelectValue,\n  SelectIcon,\n  SelectPopup,\n  SelectList,\n  SelectItem,\n  SelectItemText,\n  SelectItemIndicator,\n} from \"@/registry/pure-ui/ui/select\";\n\nconst countries = [\n  {\n    label: \"Argentina\",\n    value: \"argentina\",\n    flag: \"https://flagcdn.com/ar.svg\",\n  },\n  {\n    label: \"Venezuela\",\n    value: \"venezuela\",\n    flag: \"https://flagcdn.com/ve.svg\",\n  },\n  {\n    label: \"Brazil\",\n    value: \"brazil\",\n    flag: \"https://flagcdn.com/br.svg\",\n  },\n  {\n    label: \"Switzerland\",\n    value: \"switzerland\",\n    flag: \"https://flagcdn.com/ch.svg\",\n  },\n  {\n    label: \"Germany\",\n    value: \"germany\",\n    flag: \"https://flagcdn.com/de.svg\",\n  },\n  {\n    label: \"Spain\",\n    value: \"spain\",\n    flag: \"https://flagcdn.com/es.svg\",\n  },\n  {\n    label: \"France\",\n    value: \"france\",\n    flag: \"https://flagcdn.com/fr.svg\",\n  },\n  {\n    label: \"Italy\",\n    value: \"italy\",\n    flag: \"https://flagcdn.com/it.svg\",\n  },\n  {\n    label: \"Mexico\",\n    value: \"mexico\",\n    flag: \"https://flagcdn.com/mx.svg\",\n  },\n];\n\nexport const SelectCountryDemo = () => {\n  return (\n    <Select items={countries}>\n      <SelectTrigger className=\"min-w-46\">\n        <SelectValue />\n        <SelectIcon>\n          <PlusIcon className=\"size-4\" />\n        </SelectIcon>\n      </SelectTrigger>\n      <SelectPopup>\n        <SelectList>\n          {countries.map(({ label, value, flag }) => {\n            return (\n              <SelectItem key={value} value={value} className=\"h-fit\">\n                <img\n                  src={flag}\n                  alt={label}\n                  className=\"size-5.5 rounded-full object-cover\"\n                />\n                <SelectItemText>{label}</SelectItemText>\n                <SelectItemIndicator>\n                  <CheckIcon className=\"size-3\" />\n                </SelectItemIndicator>\n              </SelectItem>\n            );\n          })}\n        </SelectList>\n      </SelectPopup>\n    </Select>\n  );\n};\n",
+      "type": "registry:example"
+    }
+  ]
+}

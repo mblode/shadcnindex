@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature126",
+  "url": "https://shadcnblocks.com/r/feature126.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature126",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "An accordion-style component displays key features with titles, descriptions, and images. Allows toggling between sections to reveal content and images.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": ["accordion", "button"],
+    "files": [
+      {
+        "path": "code/block/feature126.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:21.706Z"
+}

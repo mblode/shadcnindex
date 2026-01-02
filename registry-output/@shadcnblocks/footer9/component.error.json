@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "footer9",
+  "url": "https://shadcnblocks.com/r/footer9.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "footer9",
+    "type": "registry:block",
+    "title": "Footer",
+    "description": "A multi-layout footer block featuring marketing messages, a pricing card, link sections, and legal/social links. Incorporates colorful icons and hover effects.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["button"],
+    "files": [
+      {
+        "path": "code/block/footer9.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:32.122Z"
+}

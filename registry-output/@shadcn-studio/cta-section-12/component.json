@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "cta-section-12",
+  "type": "registry:block",
+  "description": "Newsletter subscription CTA with muted background card, two-column grid layout with rounded workspace image on left, right side featuring muted nested card with heading about building better products, muted text mentioning 1,000,000+ subscribers, horizontal flex email form with background-colored input field and primary button for subscribing",
+  "registryDependencies": ["button", "card", "input"],
+  "files": [
+    {
+      "path": "src/registry/new-york/blocks/marketing-ui/cta-section/cta-section-12/page.tsx",
+      "content": "import CTA from '@/registry/new-york/components/blocks/cta-section-12/cta-section-12'\n\nconst CTASection = () => {\n  return <CTA />\n}\n\nexport default CTASection\n",
+      "type": "registry:page",
+      "target": "app/cta-section-12/page.tsx"
+    },
+    {
+      "path": "src/registry/new-york/components/blocks/cta-section-12/cta-section-12.tsx",
+      "content": "'use client'\n\n// Component Imports\nimport { Button } from '@/registry/new-york/ui/button'\nimport { Card, CardContent } from '@/registry/new-york/ui/card'\nimport { Input } from '@/registry/new-york/ui/input'\n\nconst CTA = () => {\n  return (\n    <section className='bg-muted py-8 sm:py-16 lg:py-24'>\n      <div className='container mx-auto max-w-5xl px-4 sm:px-6 lg:px-8'>\n        <Card className='shadow-none'>\n          <CardContent>\n            <div className='grid grid-cols-1 gap-6 lg:grid-cols-2'>\n              {/* Left Column - Image */}\n              <div className='relative h-64 sm:h-80 lg:h-auto'>\n                <img\n                  src='https://cdn.shadcnstudio.com/ss-assets/template/landing-page/ink/image-01.png'\n                  alt='Workspace with laptop'\n                  className='h-full w-full rounded-lg object-cover'\n                />\n              </div>\n\n              {/* Right Column - Content */}\n              <Card className='bg-muted rounded-lg border-0 shadow-none'>\n                <CardContent className='flex h-full flex-col justify-between gap-4'>\n                  <h2 className='text-xl leading-tight font-semibold lg:text-2xl'>\n                    Explore insights, stories, and strategies that help you build better products every day.\n                  </h2>\n                  <div>\n                    <p className='text-muted-foreground mb-3 text-base'>\n                      Join 1,000,000+ subscribers receiving expert tips on earning more, investing smarter and living\n                      better, all in our free newsletter.\n                    </p>\n                    {/* Email Form */}\n                    <form className='gap-3 py-1 max-sm:space-y-2 sm:flex sm:flex-row'>\n                      <Input type='email' placeholder='Your email' className='bg-background h-10 flex-1 text-base' />\n                      <Button size='lg' className='rounded-lg text-base max-sm:w-full' type='submit'>\n                        Subscribe\n                      </Button>\n                    </form>\n                  </div>\n                </CardContent>\n              </Card>\n            </div>\n          </CardContent>\n        </Card>\n      </div>\n    </section>\n  )\n}\n\nexport default CTA\n",
+      "type": "registry:component",
+      "target": "components/shadcn-studio/blocks/cta-section-12/cta-section-12.tsx"
+    }
+  ]
+}

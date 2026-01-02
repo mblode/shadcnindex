@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "extends": "none",
+  "name": "separator-demo",
+  "title": "Separator",
+  "description": "separator-demo",
+  "registryDependencies": ["https://intentui.com/r/separator"],
+  "files": [
+    {
+      "path": "src/components/docs/surfaces/separator/separator-demo.tsx",
+      "content": "\"use client\"\n\nimport { Separator } from \"@/components/ui/separator\"\n\nexport default function SeparatorDemo() {\n  return <Separator />\n}\n",
+      "type": "registry:page",
+      "target": "app/separator-demo/page.tsx"
+    }
+  ],
+  "type": "registry:page"
+}

@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "footer16",
+  "url": "https://shadcnblocks.com/r/footer16.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "footer16",
+    "type": "registry:block",
+    "title": "Footer",
+    "description": "A footer component featuring logo, contact button, social icons, and navigation in accordion for smaller screens or columns layout.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["accordion", "button"],
+    "files": [
+      {
+        "path": "code/block/footer16.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:31.470Z"
+}

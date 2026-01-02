@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "about10",
+  "url": "https://shadcnblocks.com/r/about10.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "about10",
+    "type": "registry:block",
+    "title": "About",
+    "description": "A component showcasing a professional profile with an avatar, contact link, biography, core philosophy, workspace image, and a tools list. Layout includes a sticky sidebar and a main content area with two-thirds width.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/about10.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:11.023Z"
+}

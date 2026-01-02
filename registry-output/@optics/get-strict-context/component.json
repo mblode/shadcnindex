@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "get-strict-context",
+  "title": "Get strict context",
+  "description": "Library utility: get-strict-context",
+  "dependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/optics/lib/get-strict-context.jsx",
+      "content": "import * as React from 'react';\n\nfunction getStrictContext(name) {\n  const Context = React.createContext(undefined);\n\n  const Provider = ({\n    value,\n    children\n  }) => <Context.Provider value={value}>{children}</Context.Provider>;\n\n  const useSafeContext = () => {\n    const ctx = React.useContext(Context);\n    if (ctx === undefined) {\n      throw new Error(`useContext must be used within ${name ?? 'a Provider'}`);\n    }\n    return ctx;\n  };\n\n  return [Provider, useSafeContext];\n}\n\nexport { getStrictContext };\n",
+      "type": "registry:lib",
+      "target": "lib/get-strict-context.jsx"
+    }
+  ],
+  "type": "registry:lib"
+}

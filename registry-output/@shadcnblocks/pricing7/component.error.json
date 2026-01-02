@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "pricing7",
+  "url": "https://shadcnblocks.com/r/pricing7.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "pricing7",
+    "type": "registry:block",
+    "title": "Pricing",
+    "description": "A component displaying pricing options with a billing cycle toggle (monthly/annually), supporting discount display. Includes a 2-column layout for plan comparisons, featuring dynamic pricing, plan benefits, and \"Start a free trial\" buttons.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": ["badge", "button", "label", "radio-group"],
+    "files": [
+      {
+        "path": "code/block/pricing7.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:44.701Z"
+}

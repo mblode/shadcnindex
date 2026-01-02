@@ -1,0 +1,15 @@
+{
+  "name": "use-throttle-fn",
+  "author": "Brendan Dash (https://shadcn-hooks.vercel.app)",
+  "description": "A hook to throttle a function",
+  "dependencies": ["es-toolkit"],
+  "registryDependencies": ["@hooks/use-latest", "@hooks/use-unmount"],
+  "files": [
+    {
+      "path": "registry/hooks/use-throttle-fn.ts",
+      "content": "import { throttle } from 'es-toolkit'\nimport { useMemo } from 'react'\nimport { useLatest } from '@/registry/hooks/use-latest'\nimport { useUnmount } from '@/registry/hooks/use-unmount'\nimport type { ThrottleOptions } from 'es-toolkit'\n\nexport type { ThrottleOptions }\n\nexport function useThrottleFn<Fn extends (...args: any[]) => any>(\n  fn: Fn,\n  throttleMs?: number,\n  options?: ThrottleOptions,\n) {\n  const fnRef = useLatest(fn)\n\n  const throttledFn = useMemo(\n    () =>\n      throttle(\n        (...args: Parameters<Fn>) => fnRef.current(...args),\n        throttleMs ?? 1000,\n        options,\n      ),\n    [],\n  )\n\n  useUnmount(() => throttledFn.cancel())\n\n  return {\n    run: throttledFn,\n    cancel: throttledFn.cancel,\n    flush: throttledFn.flush,\n  }\n}\n",
+      "type": "registry:hook"
+    }
+  ],
+  "type": "registry:hook"
+}

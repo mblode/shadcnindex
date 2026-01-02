@@ -1,0 +1,24 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "extends": "none",
+  "name": "select-searchable-demo",
+  "title": "Select Searchable",
+  "description": "select-searchable-demo",
+  "dependencies": ["react-aria-components"],
+  "registryDependencies": [
+    "https://intentui.com/r/dialog",
+    "https://intentui.com/r/field",
+    "https://intentui.com/r/list-box",
+    "https://intentui.com/r/search-field",
+    "https://intentui.com/r/select"
+  ],
+  "files": [
+    {
+      "path": "src/components/docs/pickers/select/select-searchable-demo.tsx",
+      "content": "\"use client\"\n\nimport { Autocomplete, Popover, useFilter } from \"react-aria-components\"\nimport { Dialog } from \"@/components/ui/dialog\"\nimport { Label } from \"@/components/ui/field\"\nimport { ListBox } from \"@/components/ui/list-box\"\nimport { SearchField, SearchInput } from \"@/components/ui/search-field\"\nimport { Select, SelectItem, SelectTrigger } from \"@/components/ui/select\"\n\nconst languages = [\n  { id: \"en\", name: \"English\" },\n  { id: \"es\", name: \"Spanish\" },\n  { id: \"fr\", name: \"French\" },\n  { id: \"de\", name: \"German\" },\n  { id: \"it\", name: \"Italian\" },\n  { id: \"pt\", name: \"Portuguese\" },\n  { id: \"ru\", name: \"Russian\" },\n  { id: \"ja\", name: \"Japanese\" },\n  { id: \"zh\", name: \"Chinese\" },\n  { id: \"ar\", name: \"Arabic\" },\n]\n\nexport default function SelectSearchableDemo() {\n  const { contains } = useFilter({ sensitivity: \"base\" })\n  return (\n    <Select>\n      <Label>Select a language</Label>\n      <SelectTrigger />\n      <Popover className=\"entering:fade-in exiting:fade-out flex max-h-80 w-(--trigger-width) entering:animate-in exiting:animate-out flex-col overflow-hidden rounded-lg border bg-overlay\">\n        <Dialog aria-label=\"Language\">\n          <Autocomplete filter={contains}>\n            <div className=\"border-b bg-muted p-2\">\n              <SearchField className=\"rounded-lg bg-bg\" autoFocus>\n                <SearchInput />\n              </SearchField>\n            </div>\n            <ListBox\n              className=\"max-h-[inherit] min-w-[inherit] rounded-t-none border-0 bg-transparent shadow-none\"\n              items={languages}\n            >\n              {(item) => <SelectItem>{item.name}</SelectItem>}\n            </ListBox>\n          </Autocomplete>\n        </Dialog>\n      </Popover>\n    </Select>\n  )\n}\n",
+      "type": "registry:page",
+      "target": "app/select-searchable-demo/page.tsx"
+    }
+  ],
+  "type": "registry:page"
+}

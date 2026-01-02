@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "extends": "none",
+  "name": "menu-basic-demo",
+  "title": "Menu Basic",
+  "description": "menu-basic-demo",
+  "registryDependencies": ["https://intentui.com/r/menu"],
+  "files": [
+    {
+      "path": "src/components/docs/collections/menu/menu-basic-demo.tsx",
+      "content": "\"use client\"\n\nimport { Menu, MenuContent, MenuItem, MenuTrigger } from \"@/components/ui/menu\"\n\nexport default function MenuBasicDemo() {\n  return (\n    <Menu>\n      <MenuTrigger>Open</MenuTrigger>\n      <MenuContent popover={{ placement: \"bottom\" }}>\n        <MenuItem>Inbox</MenuItem>\n        <MenuItem>Sent</MenuItem>\n        <MenuItem>New Message</MenuItem>\n      </MenuContent>\n    </Menu>\n  )\n}\n",
+      "type": "registry:page",
+      "target": "app/menu-basic-demo/page.tsx"
+    }
+  ],
+  "type": "registry:page"
+}

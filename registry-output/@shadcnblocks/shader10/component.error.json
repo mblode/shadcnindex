@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "shader10",
+  "url": "https://shadcnblocks.com/r/shader10.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "shader10",
+    "type": "registry:block",
+    "title": "Shader",
+    "description": "This component creates a dynamic visual block using WebGL shaders for blending and transitioning between background images with lens distortion effects. It leverages React Three Fiber and allows customization of image sources, transition duration, and pause duration to create engaging visual effects in React applications.",
+    "dependencies": ["@react-three/fiber", "react", "three"],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/shader10.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:50.815Z"
+}

@@ -1,0 +1,33 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "faq1",
+  "title": "Faq",
+  "description": "An accordion-style FAQ component with a customizable heading and list of questions and answers.",
+  "dependencies": [
+    "clsx",
+    "tailwind-merge",
+    "@radix-ui/react-accordion",
+    "lucide-react"
+  ],
+  "registryDependencies": ["accordion"],
+  "files": [
+    {
+      "path": "code/block/faq1.tsx",
+      "content": "import { cn } from \"@/lib/utils\";\n\nimport {\n  Accordion,\n  AccordionContent,\n  AccordionItem,\n  AccordionTrigger,\n} from \"@/components/ui/accordion\";\n\ninterface FaqItem {\n  id: string;\n  question: string;\n  answer: string;\n  className?: string;\n}\n\ninterface Faq1Props {\n  heading?: string;\n  items?: FaqItem[];\n  className?: string;\n}\n\nconst Faq1 = ({\n  heading = \"Frequently asked questions\",\n  items = [\n    {\n      id: \"faq-1\",\n      question: \"What is a FAQ?\",\n      answer:\n        \"A FAQ is a list of frequently asked questions and answers on a particular topic.\",\n    },\n    {\n      id: \"faq-2\",\n      question: \"What is the purpose of a FAQ?\",\n      answer:\n        \"The purpose of a FAQ is to provide answers to common questions and help users find the information they need quickly and easily.\",\n    },\n    {\n      id: \"faq-3\",\n      question: \"How do I create a FAQ?\",\n      answer:\n        \"To create a FAQ, you need to compile a list of common questions and answers on a particular topic and organize them in a clear and easy-to-navigate format.\",\n    },\n    {\n      id: \"faq-4\",\n      question: \"What are the benefits of a FAQ?\",\n      answer:\n        \"The benefits of a FAQ include providing quick and easy access to information, reducing the number of support requests, and improving the overall user experience.\",\n    },\n    {\n      id: \"faq-5\",\n      question: \"How should I organize my FAQ?\",\n      answer:\n        \"You should organize your FAQ in a logical manner, grouping related questions together and ordering them from most basic to more advanced topics.\",\n    },\n    {\n      id: \"faq-6\",\n      question: \"How long should FAQ answers be?\",\n      answer:\n        \"FAQ answers should be concise and to the point, typically a few sentences or a short paragraph is sufficient for most questions.\",\n    },\n    {\n      id: \"faq-7\",\n      question: \"Should I include links in my FAQ?\",\n      answer:\n        \"Yes, including links to more detailed information or related resources can be very helpful for users who want to learn more about a particular topic.\",\n    },\n  ],\n  className,\n}: Faq1Props) => {\n  return (\n    <section className={cn(\"py-32\", className)}>\n      <div className=\"container max-w-3xl\">\n        <h1 className=\"mb-4 text-3xl font-semibold md:mb-11 md:text-4xl\">\n          {heading}\n        </h1>\n        <Accordion type=\"single\" collapsible>\n          {items.map((item, index) => (\n            <AccordionItem key={index} value={`item-${index}`}>\n              <AccordionTrigger className=\"font-semibold hover:no-underline\">\n                {item.question}\n              </AccordionTrigger>\n              <AccordionContent className=\"text-muted-foreground\">\n                {item.answer}\n              </AccordionContent>\n            </AccordionItem>\n          ))}\n        </Accordion>\n      </div>\n    </section>\n  );\n};\n\nexport { Faq1 };\n",
+      "type": "registry:block"
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "content": "import { type ClassValue, clsx } from 'clsx';\nimport { twMerge } from 'tailwind-merge';\n\nexport function cn(...inputs: ClassValue[]) {\n  return twMerge(clsx(inputs));\n}\n",
+      "type": "registry:lib",
+      "target": ""
+    },
+    {
+      "path": "src/components/ui/accordion.tsx",
+      "content": "import * as React from \"react\"\nimport * as AccordionPrimitive from \"@radix-ui/react-accordion\"\nimport { ChevronDownIcon } from \"lucide-react\"\n\nimport { cn } from \"@/lib/utils\"\n\nfunction Accordion({\n  ...props\n}: React.ComponentProps<typeof AccordionPrimitive.Root>) {\n  return <AccordionPrimitive.Root data-slot=\"accordion\" {...props} />\n}\n\nfunction AccordionItem({\n  className,\n  ...props\n}: React.ComponentProps<typeof AccordionPrimitive.Item>) {\n  return (\n    <AccordionPrimitive.Item\n      data-slot=\"accordion-item\"\n      className={cn(\"border-b last:border-b-0\", className)}\n      {...props}\n    />\n  )\n}\n\nfunction AccordionTrigger({\n  className,\n  children,\n  ...props\n}: React.ComponentProps<typeof AccordionPrimitive.Trigger>) {\n  return (\n    <AccordionPrimitive.Header className=\"flex\">\n      <AccordionPrimitive.Trigger\n        data-slot=\"accordion-trigger\"\n        className={cn(\n          \"focus-visible:border-ring focus-visible:ring-ring/50 flex flex-1 items-start justify-between gap-4 rounded-md py-4 text-left text-sm font-medium transition-all outline-none hover:underline focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 [&[data-state=open]>svg]:rotate-180\",\n          className\n        )}\n        {...props}\n      >\n        {children}\n        <ChevronDownIcon className=\"text-muted-foreground pointer-events-none size-4 shrink-0 translate-y-0.5 transition-transform duration-200\" />\n      </AccordionPrimitive.Trigger>\n    </AccordionPrimitive.Header>\n  )\n}\n\nfunction AccordionContent({\n  className,\n  children,\n  ...props\n}: React.ComponentProps<typeof AccordionPrimitive.Content>) {\n  return (\n    <AccordionPrimitive.Content\n      data-slot=\"accordion-content\"\n      className=\"data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down overflow-hidden text-sm\"\n      {...props}\n    >\n      <div className={cn(\"pt-0 pb-4\", className)}>{children}</div>\n    </AccordionPrimitive.Content>\n  )\n}\n\nexport { Accordion, AccordionItem, AccordionTrigger, AccordionContent }\n",
+      "type": "registry:ui",
+      "target": ""
+    }
+  ],
+  "type": "registry:block"
+}

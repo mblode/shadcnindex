@@ -1,0 +1,33 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "faq5",
+  "title": "Faq",
+  "description": "A FAQ component with a badge, heading, and description at the top, followed by a list of questions and answers presented in a single-column layout. Each item features a numeric label.",
+  "dependencies": [
+    "clsx",
+    "tailwind-merge",
+    "@radix-ui/react-slot",
+    "class-variance-authority"
+  ],
+  "registryDependencies": ["badge"],
+  "files": [
+    {
+      "path": "code/block/faq5.tsx",
+      "content": "import { cn } from \"@/lib/utils\";\n\nimport { Badge } from \"@/components/ui/badge\";\n\nexport interface FaqItem {\n  question: string;\n  answer: string;\n}\n\nexport interface Faq5Props {\n  badge?: string;\n  heading?: string;\n  description?: string;\n  faqs?: FaqItem[];\n  className?: string;\n}\n\nconst defaultFaqs: FaqItem[] = [\n  {\n    question: \"What is a FAQ and why is it important?\",\n    answer:\n      \"FAQ stands for Frequently Asked Questions. It is a list that provides answers to common questions people may have about a specific product, service, or topic.\",\n  },\n  {\n    question: \"Why should I use a FAQ on my website or app?\",\n    answer:\n      \"Utilizing a FAQ section on your website or app is a practical way to offer instant assistance to your users or customers. Instead of waiting for customer support responses, they can find quick answers to commonly asked questions. \",\n  },\n  {\n    question: \"How do I effectively create a FAQ section?\",\n    answer:\n      \"Creating a FAQ section starts with gathering the most frequent questions you receive from your users or customers. Once you have a list, you need to write clear, detailed, and helpful answers to each question.\",\n  },\n  {\n    question: \"What are the benefits of having a well-maintained FAQ section?\",\n    answer:\n      \"There are numerous advantages to maintaining a robust FAQ section. Firstly, it provides immediate answers to common queries, which improves the user experience.\",\n  },\n];\n\nconst Faq5 = ({\n  badge = \"FAQ\",\n  heading = \"Common Questions & Answers\",\n  description = \"Find out all the essential details about our platform and how it can serve your needs.\",\n  faqs = defaultFaqs,\n  className,\n}: Faq5Props) => {\n  return (\n    <section className={cn(\"py-32\", className)}>\n      <div className=\"container\">\n        <div className=\"text-center\">\n          <Badge className=\"text-xs font-medium\">{badge}</Badge>\n          <h1 className=\"mt-4 text-4xl font-semibold\">{heading}</h1>\n          <p className=\"mt-6 font-medium text-muted-foreground\">\n            {description}\n          </p>\n        </div>\n        <div className=\"mx-auto mt-14 max-w-xl\">\n          {faqs.map((faq, index) => (\n            <div key={index} className=\"mb-8 flex gap-4\">\n              <span className=\"flex size-6 shrink-0 items-center justify-center rounded-sm bg-secondary font-mono text-xs text-primary\">\n                {index + 1}\n              </span>\n              <div>\n                <div className=\"mb-2 flex items-center justify-between\">\n                  <h3 className=\"font-medium\">{faq.question}</h3>\n                </div>\n                <p className=\"text-sm text-muted-foreground\">{faq.answer}</p>\n              </div>\n            </div>\n          ))}\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Faq5 };\n",
+      "type": "registry:block"
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "content": "import { type ClassValue, clsx } from 'clsx';\nimport { twMerge } from 'tailwind-merge';\n\nexport function cn(...inputs: ClassValue[]) {\n  return twMerge(clsx(inputs));\n}\n",
+      "type": "registry:lib",
+      "target": ""
+    },
+    {
+      "path": "src/components/ui/badge.tsx",
+      "content": "import * as React from \"react\"\nimport { Slot } from \"@radix-ui/react-slot\"\nimport { cva, type VariantProps } from \"class-variance-authority\"\n\nimport { cn } from \"@/lib/utils\"\n\nconst badgeVariants = cva(\n  \"inline-flex items-center justify-center rounded-md border px-2 py-0.5 text-xs font-medium w-fit whitespace-nowrap shrink-0 [&>svg]:size-3 gap-1 [&>svg]:pointer-events-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive transition-[color,box-shadow] overflow-hidden\",\n  {\n    variants: {\n      variant: {\n        default:\n          \"border-transparent bg-primary text-primary-foreground [a&]:hover:bg-primary/90\",\n        secondary:\n          \"border-transparent bg-secondary text-secondary-foreground [a&]:hover:bg-secondary/90\",\n        destructive:\n          \"border-transparent bg-destructive text-white [a&]:hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/60\",\n        outline:\n          \"text-foreground [a&]:hover:bg-accent [a&]:hover:text-accent-foreground\",\n      },\n    },\n    defaultVariants: {\n      variant: \"default\",\n    },\n  }\n)\n\nfunction Badge({\n  className,\n  variant,\n  asChild = false,\n  ...props\n}: React.ComponentProps<\"span\"> &\n  VariantProps<typeof badgeVariants> & { asChild?: boolean }) {\n  const Comp = asChild ? Slot : \"span\"\n\n  return (\n    <Comp\n      data-slot=\"badge\"\n      className={cn(badgeVariants({ variant }), className)}\n      {...props}\n    />\n  )\n}\n\nexport { Badge, badgeVariants }\n",
+      "type": "registry:ui",
+      "target": ""
+    }
+  ],
+  "type": "registry:block"
+}

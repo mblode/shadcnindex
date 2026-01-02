@@ -1,0 +1,28 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "order-history1",
+  "url": "https://shadcnblocks.com/r/order-history1.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "order-history1",
+    "type": "registry:block",
+    "title": "Order-history",
+    "description": "This component provides users an interface to view and manage their order history, including functionalities to filter orders by status and search by order number. It displays details such as order number, date, status, item count, total price, and allows actions like tracking shipped orders and reordering delivered items.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": [
+      "aspect-ratio",
+      "badge",
+      "button",
+      "card",
+      "input",
+      "tabs"
+    ],
+    "files": [
+      {
+        "path": "code/block/order-history1.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:42.883Z"
+}

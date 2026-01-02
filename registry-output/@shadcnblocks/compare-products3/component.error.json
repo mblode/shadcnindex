@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "compare-products3",
+  "url": "https://shadcnblocks.com/r/compare-products3.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "compare-products3",
+    "type": "registry:block",
+    "title": "Compare-products",
+    "description": "This component allows users to compare up to four products by showcasing details such as price, rating, reviews, and key highlights. Features include the ability to add or remove products for comparison and a call-to-action button to add selected products to the cart.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": ["button", "card", "scroll-area", "separator"],
+    "files": [
+      {
+        "path": "code/block/compare-products3.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:16.761Z"
+}

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "randevum",
+  "title": "randevum",
+  "files": [
+    {
+      "path": "././static/components-generated/randevum.tsx",
+      "content": "import type { SVGProps } from \"react\";\n\nconst Randevum = (props: SVGProps<SVGSVGElement>) => (\n  <svg {...props} viewBox=\"0 -1 64 64\">\n    <path fill=\"#1b8cff\" d=\"M55 35H9L2 54h60Z\" opacity=\".3\" />\n    <path\n      fill=\"none\"\n      stroke=\"#fff\"\n      strokeMiterlimit=\"10\"\n      strokeWidth=\"2\"\n      d=\"M3 51h58\"\n      opacity=\".5\"\n    />\n    <path\n      fill=\"none\"\n      stroke=\"#fff\"\n      strokeMiterlimit=\"10\"\n      strokeWidth=\"2\"\n      d=\"M8.125 38h47.75\"\n      opacity=\".5\"\n    />\n    <path\n      fill=\"none\"\n      stroke=\"#1b8cff\"\n      strokeLinecap=\"round\"\n      strokeLinejoin=\"round\"\n      strokeWidth=\"4\"\n      d=\"M9 6h46v29H9z\"\n    />\n    <path\n      fill=\"none\"\n      stroke=\"#1b8cff\"\n      strokeLinecap=\"round\"\n      strokeLinejoin=\"round\"\n      strokeWidth=\"4\"\n      d=\"M9 54v6h46v-6\"\n    />\n    <path\n      fill=\"none\"\n      stroke=\"#1b8cff\"\n      strokeLinecap=\"round\"\n      strokeLinejoin=\"round\"\n      strokeWidth=\"4\"\n      d=\"M55 35H9L2 54h60Z\"\n    />\n    <path\n      fill=\"none\"\n      stroke=\"#1b8cff\"\n      strokeLinecap=\"round\"\n      strokeLinejoin=\"round\"\n      strokeWidth=\"2\"\n      d=\"M9 12h46\"\n    />\n    <path\n      fill=\"none\"\n      stroke=\"#1b8cff\"\n      strokeLinecap=\"round\"\n      strokeLinejoin=\"round\"\n      strokeWidth=\"2\"\n      d=\"M15 32v6\"\n    />\n    <path\n      fill=\"none\"\n      stroke=\"#1b8cff\"\n      strokeLinecap=\"round\"\n      strokeLinejoin=\"round\"\n      strokeWidth=\"2\"\n      d=\"M49 32v6\"\n    />\n    <path\n      fill=\"none\"\n      stroke=\"#1b8cff\"\n      strokeLinecap=\"round\"\n      strokeLinejoin=\"round\"\n      strokeWidth=\"4\"\n      d=\"M15 2v4\"\n    />\n    <path\n      fill=\"none\"\n      stroke=\"#1b8cff\"\n      strokeLinecap=\"round\"\n      strokeLinejoin=\"round\"\n      strokeWidth=\"4\"\n      d=\"M49 2v4\"\n    />\n    <g\n      fill=\"none\"\n      stroke=\"#1b8cff\"\n      strokeLinecap=\"round\"\n      strokeLinejoin=\"round\"\n      strokeWidth=\"2\"\n    >\n      <path d=\"M20.5 19h5\" />\n      <path d=\"M29.5 19h5\" />\n      <path d=\"M38.5 19h5\" />\n    </g>\n    <g\n      fill=\"none\"\n      stroke=\"#1b8cff\"\n      strokeLinecap=\"round\"\n      strokeLinejoin=\"round\"\n      strokeWidth=\"2\"\n    >\n      <path d=\"M20.5 25h5\" />\n      <path d=\"M29.5 25h5\" />\n      <path d=\"M38.5 25h5\" />\n    </g>\n  </svg>\n);\n\nexport { Randevum };\n",
+      "type": "registry:component",
+      "target": "components/ui/svgs/randevum.tsx"
+    }
+  ],
+  "type": "registry:component"
+}

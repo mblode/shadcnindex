@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature156",
+  "url": "https://shadcnblocks.com/r/feature156.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature156",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A component displaying tabs with 3 columns, featuring dynamic visual content for software development themes upon tab selection.",
+    "dependencies": ["react"],
+    "registryDependencies": ["tabs"],
+    "files": [
+      {
+        "path": "code/block/feature156.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:22.797Z"
+}

@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature93",
+  "url": "https://shadcnblocks.com/r/feature93.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature93",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A component featuring staggered avatars and a 3-column layout with icons, highlighting customer care themes, and focusing on support, solutions, and feedback.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["avatar"],
+    "files": [
+      {
+        "path": "code/block/feature93.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:30.795Z"
+}

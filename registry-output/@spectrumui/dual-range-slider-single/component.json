@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "dual-range-slider-single",
+  "type": "registry:component",
+  "title": "Dual Range Slider Single",
+  "description": "component for the Dual Range Slider Single",
+  "registryDependencies": ["@spectrumui/dual-range-slider-dependecies"],
+  "files": [
+    {
+      "path": "app/registry/dual-range-slider/usage/dual-range-slider-single.tsx",
+      "content": "\"use client\";\n\nimport * as React from \"react\";\nimport { DualRangeSlider } from \"@/components/ui/dual-range-slider\";\nimport { useState } from \"react\";\n\nconst DualRangeSliderSingle = () => {\n  const [values, setValues] = useState([10]);\n\n  return (\n    <div className=\"w-full space-y-5 px-10\">\n      <div>With Label:</div>\n      <DualRangeSlider\n        label={(value) => value}\n        value={values}\n        onValueChange={setValues}\n        min={0}\n        max={100}\n        step={1}\n      />\n      <div>Without Label</div>\n      <DualRangeSlider\n        value={values}\n        onValueChange={setValues}\n        min={0}\n        max={100}\n        step={1}\n      />\n    </div>\n  );\n};\nexport default DualRangeSliderSingle;\n",
+      "type": "registry:component",
+      "target": "components/spectrumui/dual-range-slider-single.tsx"
+    }
+  ]
+}

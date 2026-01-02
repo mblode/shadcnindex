@@ -1,0 +1,21 @@
+{
+  "registry": "@efferd",
+  "component": "cta-6",
+  "url": "https://efferd.com/r/cta-6.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "cta-6",
+    "description": "A call-to-action Block with a heading and an animated 'Join Now!' button with hover effects.",
+    "dependencies": ["motion"],
+    "registryDependencies": ["button"],
+    "files": [
+      {
+        "path": "registry/cta/6/call-to-action.tsx",
+        "type": "registry:component"
+      }
+    ],
+    "categories": ["cta"],
+    "type": "registry:block"
+  },
+  "fetchedAt": "2026-01-02T11:08:57.335Z"
+}

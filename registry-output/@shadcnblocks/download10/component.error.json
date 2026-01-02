@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "download10",
+  "url": "https://shadcnblocks.com/r/download10.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "download10",
+    "type": "registry:block",
+    "title": "Download",
+    "description": "A component promoting software downloads, subdivided into 3 columns for Desktop, Mobile, and Web versions with respective download options.",
+    "dependencies": ["react-icons"],
+    "registryDependencies": ["button"],
+    "files": [
+      {
+        "path": "code/block/download10.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:19.247Z"
+}

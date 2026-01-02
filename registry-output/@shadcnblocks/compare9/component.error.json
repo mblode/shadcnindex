@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "compare9",
+  "url": "https://shadcnblocks.com/r/compare9.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "compare9",
+    "type": "registry:block",
+    "title": "Compare",
+    "description": "A comparative component showcases metrics & technical analysis of 3 models with status indicators, hover effects on data rows, and a detailed breakdown of each model's performance in a grid layout.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": ["table"],
+    "files": [
+      {
+        "path": "code/block/compare9.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:17.168Z"
+}

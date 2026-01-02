@@ -1,0 +1,28 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "pricing28",
+  "url": "https://shadcnblocks.com/r/pricing28.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "pricing28",
+    "type": "registry:block",
+    "title": "Pricing",
+    "description": "This component displays pricing packages with toggle for monthly/annual billing, features tooltip, and a \"Popular\" badge for a highlighted plan, all in a 4-column layout.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": [
+      "avatar",
+      "badge",
+      "button",
+      "label",
+      "radio-group",
+      "tooltip"
+    ],
+    "files": [
+      {
+        "path": "code/block/pricing28.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:44.033Z"
+}

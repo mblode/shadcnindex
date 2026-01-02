@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "testimonial26",
+  "url": "https://shadcnblocks.com/r/testimonial26.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "testimonial26",
+    "type": "registry:block",
+    "title": "Testimonial",
+    "description": "A testimonial carousel block with dynamic navigation dots and decorative background patterns. Displays quotes, authors, roles, and logos.",
+    "dependencies": ["react"],
+    "registryDependencies": ["carousel"],
+    "files": [
+      {
+        "path": "code/block/testimonial26.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:53.997Z"
+}

@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "datetime-picker-ref",
+  "type": "registry:component",
+  "title": "Datetime Picker Ref",
+  "description": "component for the Datetime Picker Ref",
+  "registryDependencies": ["datetime-picker"],
+  "files": [
+    {
+      "path": "app/registry/datetime-picker/usage/datetime-picker-ref.tsx",
+      "content": "\"use client\";\nimport React, { useRef, useState } from \"react\";\nimport { Button } from \"@/components/ui/button\";\nimport {\n  DateTimePicker,\n  DateTimePickerRef,\n} from \"@/components/ui/datetime-picker\";\n\nconst DatetimePickerRef = () => {\n  const [date, setDate] = useState<Date | undefined>(undefined);\n  const ref = useRef<DateTimePickerRef>(null);\n\n  return (\n    <div className=\"w-72 space-y-3\">\n      <Button\n        onClick={() => {\n          alert(JSON.stringify(ref.current?.value?.toLocaleString()));\n          /** following are the ref operations which is equivalent to button. */\n          // ref.current?.focus();\n          // ref.current?.blur();\n          // ...\n        }}\n      >\n        alert ref value\n      </Button>\n      <DateTimePicker ref={ref} value={date} onChange={setDate} />\n    </div>\n  );\n};\n\nexport default DatetimePickerRef;\n",
+      "type": "registry:component",
+      "target": "components/spectrumui/date-picker-ref.tsx"
+    }
+  ]
+}

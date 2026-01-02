@@ -1,0 +1,13 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "dialog-non-dismissible-demo",
+  "type": "registry:example",
+  "registryDependencies": ["dialog"],
+  "files": [
+    {
+      "path": "src/registry/pure-ui/examples/dialog/dialog-non-dismissible-demo.tsx",
+      "content": "import {\n  Dialog,\n  DialogPopup,\n  DialogDescription,\n  DialogFooter,\n  DialogHeader,\n  DialogTitle,\n  DialogTrigger,\n} from \"@/registry/pure-ui/ui/dialog\";\n\nimport { Button } from \"@/registry/pure-ui/ui/button\";\n\nexport const DialogNonDismissibleDemo = () => {\n  return (\n    <Dialog disablePointerDismissal={true}>\n      <DialogTrigger render={<Button />}>Open</DialogTrigger>\n\n      <DialogPopup>\n        <DialogHeader>\n          <DialogTitle>Terms of Service</DialogTitle>\n          <DialogDescription>\n            Please read the following terms of service carefully.\n          </DialogDescription>\n        </DialogHeader>\n\n        <div className=\"grid gap-4 py-4\">\n          <p>\n            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,\n            quos. Lorem ipsum dolor sit amet consectetur adipisicing elit.\n            Quisquam, quos.\n          </p>\n        </div>\n\n        <DialogFooter>\n          <Button variant=\"outline\" radius=\"full\" className=\"w-full sm:w-auto\">\n            Decline\n          </Button>\n          <Button type=\"submit\" radius=\"full\" className=\"w-full sm:w-auto\">\n            Accept\n          </Button>\n        </DialogFooter>\n      </DialogPopup>\n    </Dialog>\n  );\n};\n",
+      "type": "registry:example"
+    }
+  ]
+}

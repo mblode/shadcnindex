@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature129",
+  "url": "https://shadcnblocks.com/r/feature129.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature129",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A tabbed component showcasing integrations like Slack & Google Drive, featuring descriptions, images, and \"Learn more\" links. Has a title and subtitle.",
+    "dependencies": ["react"],
+    "registryDependencies": ["tabs"],
+    "files": [
+      {
+        "path": "code/block/feature129.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:21.740Z"
+}

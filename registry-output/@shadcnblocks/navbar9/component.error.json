@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "navbar9",
+  "url": "https://shadcnblocks.com/r/navbar9.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "navbar9",
+    "type": "registry:block",
+    "title": "Navbar",
+    "description": "A navigation bar with logo, link/button list, and mobile menu toggle. On mobile, features an accordion menu for navigation items.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": ["accordion", "button", "navigation-menu", "sheet"],
+    "files": [
+      {
+        "path": "code/block/navbar9.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:42.691Z"
+}

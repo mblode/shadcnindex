@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "gallery24",
+  "url": "https://shadcnblocks.com/r/gallery24.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "gallery24",
+    "type": "registry:block",
+    "title": "Gallery",
+    "description": "An interactive gallery block that showcases images with dynamic resizing and details on hover or click, including an \"Add to Cart\" button.",
+    "dependencies": ["framer-motion", "lucide-react", "react"],
+    "registryDependencies": ["button"],
+    "files": [
+      {
+        "path": "code/block/gallery24.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:32.696Z"
+}

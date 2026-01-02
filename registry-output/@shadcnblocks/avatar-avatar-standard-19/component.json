@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "avatar-avatar-standard-19",
+  "title": "Avatar/avatar-standard-",
+  "description": "A avatar/avatar-standard- example",
+  "dependencies": ["@radix-ui/react-avatar", "clsx", "tailwind-merge"],
+  "registryDependencies": ["avatar"],
+  "files": [
+    {
+      "path": "code/example/avatar/avatar-standard-19.tsx",
+      "content": "import { Avatar, AvatarFallback, AvatarImage } from \"@/components/ui/avatar\";\n\nexport const title = \"Avatar with Badge Top Left\";\n\nconst Example = () => (\n  <div className=\"relative w-fit\">\n    <Avatar>\n      <AvatarImage\n        alt=\"@haydenbleasel\"\n        src=\"https://github.com/haydenbleasel.png\"\n      />\n      <AvatarFallback>HB</AvatarFallback>\n    </Avatar>\n    <span className=\"absolute -top-2 -left-2 flex size-5 items-center justify-center rounded-full border-2 border-background bg-red-500 text-xs font-medium text-white\">\n      3\n    </span>\n  </div>\n);\n\nexport default Example;\n",
+      "type": "registry:block"
+    },
+    {
+      "path": "src/components/ui/avatar.tsx",
+      "content": "import * as React from \"react\"\nimport * as AvatarPrimitive from \"@radix-ui/react-avatar\"\n\nimport { cn } from \"@/lib/utils\"\n\nfunction Avatar({\n  className,\n  ...props\n}: React.ComponentProps<typeof AvatarPrimitive.Root>) {\n  return (\n    <AvatarPrimitive.Root\n      data-slot=\"avatar\"\n      className={cn(\n        \"relative flex size-8 shrink-0 overflow-hidden rounded-full\",\n        className\n      )}\n      {...props}\n    />\n  )\n}\n\nfunction AvatarImage({\n  className,\n  ...props\n}: React.ComponentProps<typeof AvatarPrimitive.Image>) {\n  return (\n    <AvatarPrimitive.Image\n      data-slot=\"avatar-image\"\n      className={cn(\"aspect-square size-full\", className)}\n      {...props}\n    />\n  )\n}\n\nfunction AvatarFallback({\n  className,\n  ...props\n}: React.ComponentProps<typeof AvatarPrimitive.Fallback>) {\n  return (\n    <AvatarPrimitive.Fallback\n      data-slot=\"avatar-fallback\"\n      className={cn(\n        \"bg-muted flex size-full items-center justify-center rounded-full\",\n        className\n      )}\n      {...props}\n    />\n  )\n}\n\nexport { Avatar, AvatarImage, AvatarFallback }\n",
+      "type": "registry:ui",
+      "target": ""
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "content": "import { type ClassValue, clsx } from 'clsx';\nimport { twMerge } from 'tailwind-merge';\n\nexport function cn(...inputs: ClassValue[]) {\n  return twMerge(clsx(inputs));\n}\n",
+      "type": "registry:lib",
+      "target": ""
+    }
+  ],
+  "type": "registry:block"
+}

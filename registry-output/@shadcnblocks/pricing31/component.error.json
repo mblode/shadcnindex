@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "pricing31",
+  "url": "https://shadcnblocks.com/r/pricing31.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "pricing31",
+    "type": "registry:block",
+    "title": "Pricing",
+    "description": "A component displaying 3 pricing plans with features, highlighting the \"most popular\" choice. Each plan card lists price, benefits, and a CTA button.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["button"],
+    "files": [
+      {
+        "path": "code/block/pricing31.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:44.233Z"
+}

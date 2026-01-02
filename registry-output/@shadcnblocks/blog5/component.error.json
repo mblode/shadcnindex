@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "blog5",
+  "url": "https://shadcnblocks.com/r/blog5.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "blog5",
+    "type": "registry:block",
+    "title": "Blog",
+    "description": "A blog component showcasing posts in a grid layout with image, label, title, summary, and author info. Includes a header with a title and optional button.",
+    "dependencies": [],
+    "registryDependencies": ["avatar", "badge", "button"],
+    "files": [
+      {
+        "path": "code/block/blog5.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:14.600Z"
+}

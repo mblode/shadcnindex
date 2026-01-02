@@ -1,0 +1,41 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "shopping-cart17",
+  "url": "https://shadcnblocks.com/r/shopping-cart17.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "shopping-cart17",
+    "type": "registry:block",
+    "title": "Shopping-cart",
+    "description": "This component provides an interactive shopping cart experience with features like displaying cart items, allowing quantity adjustments, and updating the total price dynamically. It includes functionality for handling empty cart states and adding promotional codes to enhance user engagement and purchase potential.",
+    "dependencies": [
+      "@hookform/resolvers",
+      "clsx",
+      "lucide-react",
+      "react",
+      "react-hook-form",
+      "zod"
+    ],
+    "registryDependencies": [
+      "https://shadcnblocks.com/r/price",
+      "https://shadcnblocks.com/r/quantity-input",
+      "alert",
+      "aspect-ratio",
+      "button",
+      "card",
+      "checkbox",
+      "empty",
+      "field",
+      "input-group",
+      "label",
+      "sheet"
+    ],
+    "files": [
+      {
+        "path": "code/block/shopping-cart17.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:51.371Z"
+}

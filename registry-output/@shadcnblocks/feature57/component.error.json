@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature57",
+  "url": "https://shadcnblocks.com/r/feature57.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature57",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A component showcasing a feature list with an image carousel. It has selectable tabs that scroll images into view and update dynamically.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": ["badge", "carousel"],
+    "files": [
+      {
+        "path": "code/block/feature57.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:29.307Z"
+}

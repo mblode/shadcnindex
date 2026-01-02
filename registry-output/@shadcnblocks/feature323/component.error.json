@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature323",
+  "url": "https://shadcnblocks.com/r/feature323.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature323",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "This component enables users to browse a collection of features, displaying an animated card layout that reveals detailed information upon selection. It includes navigational controls for both desktop and mobile views, allowing users to easily switch between different items.",
+    "dependencies": ["framer-motion", "lucide-react", "react"],
+    "registryDependencies": ["button"],
+    "files": [
+      {
+        "path": "code/block/feature323.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:28.535Z"
+}

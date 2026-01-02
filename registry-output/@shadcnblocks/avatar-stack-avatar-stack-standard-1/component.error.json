@@ -1,0 +1,24 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "avatar-stack-avatar-stack-standard-1",
+  "url": "https://shadcnblocks.com/r/avatar-stack-avatar-stack-standard-1.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "avatar-stack-avatar-stack-standard-1",
+    "type": "registry:block",
+    "title": "Avatar-stack/avatar-stack-standard-",
+    "description": "A avatar-stack/avatar-stack-standard- example",
+    "dependencies": [],
+    "registryDependencies": [
+      "https://www.kibo-ui.com/r/avatar-stack.json",
+      "avatar"
+    ],
+    "files": [
+      {
+        "path": "code/example/avatar-stack/avatar-stack-standard-1.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:15:01.101Z"
+}

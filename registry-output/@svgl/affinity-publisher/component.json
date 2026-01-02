@@ -1,0 +1,14 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "affinity-publisher",
+  "title": "affinity-publisher",
+  "files": [
+    {
+      "path": "././static/components-generated/affinityPublisher.tsx",
+      "content": "import type { SVGProps } from \"react\";\n\nconst AffinityPublisher = (props: SVGProps<SVGSVGElement>) => (\n  <svg\n    {...props}\n    xmlSpace=\"preserve\"\n    fillRule=\"evenodd\"\n    strokeLinejoin=\"round\"\n    strokeMiterlimit=\"2\"\n    clipRule=\"evenodd\"\n    viewBox=\"0 0 1024 1024\"\n  >\n    <path\n      fill=\"#891b26\"\n      d=\"M1024 100c0-55.192-44.808-100-100-100H100C44.808 0 0 44.808 0 100v824c0 55.192 44.808 100 100 100h824c55.192 0 100-44.808 100-100V100Z\"\n    />\n    <path\n      fill=\"url(#a)\"\n      d=\"m4145.14 949-257.8-446.348L3754 733.508V909c0 22.077 17.92 40 40 40h351.14Zm187.99 0h-148.64s-192.55-333.487-257.06-445.057c-12.63-21.85-12.64-48.87-.01-70.724 23.33-40.368 53.92-93.31 53.92-93.31L4333.13 949Zm187.99 0h-148.64l-369.29-646.928 72.14-124.89L4521.12 949ZM4628 808.578V909c0 22.077-17.92 40-40 40h-27.53L4095 143.121 4134.35 75h69.95L4628 808.578ZM4588 75h-344.36L4628 740.456V115c0-22.077-17.92-40-40-40Z\"\n      transform=\"translate(-3678.99)\"\n    />\n    <defs>\n      <radialGradient\n        id=\"a\"\n        cx=\"0\"\n        cy=\"0\"\n        r=\"1\"\n        gradientTransform=\"translate(4421.95 -89.26) scale(1038.26)\"\n        gradientUnits=\"userSpaceOnUse\"\n      >\n        <stop offset=\"0\" stop-color=\"#ffae71\" />\n        <stop offset=\"1\" stop-color=\"#ff9350\" />\n      </radialGradient>\n    </defs>\n  </svg>\n);\n\nexport { AffinityPublisher };\n",
+      "type": "registry:component",
+      "target": "components/ui/svgs/affinityPublisher.tsx"
+    }
+  ],
+  "type": "registry:component"
+}

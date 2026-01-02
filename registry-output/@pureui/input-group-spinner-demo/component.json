@@ -1,0 +1,13 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "input-group-spinner-demo",
+  "type": "registry:example",
+  "registryDependencies": ["input-group"],
+  "files": [
+    {
+      "path": "src/registry/pure-ui/examples/input-group/input-group-spinner-demo.tsx",
+      "content": "import {\n  InputGroup,\n  InputGroupAddon,\n  InputGroupInput,\n  InputGroupText,\n} from \"@/registry/pure-ui/ui/input-group\";\nimport { Spinner } from \"@/registry/pure-ui/ui/spinner\";\n\nexport function InputGroupSpinnerDemo() {\n  return (\n    <div className=\"grid w-full max-w-sm gap-4\">\n      <InputGroup data-disabled>\n        <InputGroupInput placeholder=\"Searching...\" disabled />\n        <InputGroupAddon align=\"inline-end\">\n          <Spinner size=\"sm\" />\n        </InputGroupAddon>\n      </InputGroup>\n\n      <InputGroup data-disabled>\n        <InputGroupInput placeholder=\"Processing...\" disabled />\n        <InputGroupAddon>\n          <Spinner size=\"sm\" />\n        </InputGroupAddon>\n      </InputGroup>\n\n      <InputGroup data-disabled>\n        <InputGroupInput placeholder=\"Saving changes...\" disabled />\n        <InputGroupAddon align=\"inline-end\">\n          <InputGroupText>Saving...</InputGroupText>\n          <Spinner size=\"sm\" />\n        </InputGroupAddon>\n      </InputGroup>\n\n      <InputGroup data-disabled>\n        <InputGroupInput placeholder=\"Refreshing data...\" disabled />\n        <InputGroupAddon>\n          <Spinner size=\"sm\" />\n        </InputGroupAddon>\n        <InputGroupAddon align=\"inline-end\">\n          <InputGroupText className=\"text-muted-foreground\">\n            Please wait...\n          </InputGroupText>\n        </InputGroupAddon>\n      </InputGroup>\n    </div>\n  );\n}\n",
+      "type": "registry:example"
+    }
+  ]
+}

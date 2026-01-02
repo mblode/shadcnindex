@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "projects11",
+  "url": "https://shadcnblocks.com/r/projects11.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "projects11",
+    "type": "registry:block",
+    "title": "Projects",
+    "description": "A dynamic image gallery with 1-3 columns featuring animated, hover-zoomed images.",
+    "dependencies": ["framer-motion", "react"],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/projects11.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:47.950Z"
+}

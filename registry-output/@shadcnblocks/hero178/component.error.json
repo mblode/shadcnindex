@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "hero178",
+  "url": "https://shadcnblocks.com/r/hero178.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "hero178",
+    "type": "registry:block",
+    "title": "Hero",
+    "description": "A two-column block with text elements & layered images, featuring dynamic text sizes and aspect-ratio controlled images.",
+    "dependencies": [],
+    "registryDependencies": ["aspect-ratio"],
+    "files": [
+      {
+        "path": "code/block/hero178.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:35.360Z"
+}

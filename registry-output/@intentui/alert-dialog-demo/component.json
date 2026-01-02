@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "extends": "none",
+  "name": "alert-dialog-demo",
+  "title": "Alert Dialog",
+  "description": "alert-dialog-demo",
+  "registryDependencies": [
+    "https://intentui.com/r/button",
+    "https://intentui.com/r/modal"
+  ],
+  "files": [
+    {
+      "path": "src/components/docs/overlays/modal/alert-dialog-demo.tsx",
+      "content": "\"use client\"\nimport { Button } from \"@/components/ui/button\"\nimport {\n  Modal,\n  ModalClose,\n  ModalContent,\n  ModalDescription,\n  ModalFooter,\n  ModalHeader,\n  ModalTitle,\n} from \"@/components/ui/modal\"\n\nexport default function AlertDialogDemo() {\n  return (\n    <Modal>\n      <Button intent=\"danger\">Revoke Access</Button>\n      <ModalContent role=\"alertdialog\">\n        <ModalHeader>\n          <ModalTitle>Revoke User Access?</ModalTitle>\n          <ModalDescription>\n            This will immediately remove all access for the selected user. This action is permanent\n            and cannot be undone.\n          </ModalDescription>\n        </ModalHeader>\n        <ModalFooter>\n          <ModalClose>Cancel</ModalClose>\n          <Button intent=\"danger\">Revoke Access</Button>\n        </ModalFooter>\n      </ModalContent>\n    </Modal>\n  )\n}\n",
+      "type": "registry:page",
+      "target": "app/alert-dialog-demo/page.tsx"
+    }
+  ],
+  "type": "registry:page"
+}

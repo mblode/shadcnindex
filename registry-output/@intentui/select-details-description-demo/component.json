@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "extends": "none",
+  "name": "select-details-description-demo",
+  "title": "Select Details Description",
+  "description": "select-details-description-demo",
+  "registryDependencies": [
+    "https://intentui.com/r/field",
+    "https://intentui.com/r/select"
+  ],
+  "files": [
+    {
+      "path": "src/components/docs/pickers/select/select-details-description-demo.tsx",
+      "content": "\"use client\"\n\nimport { Label } from \"@/components/ui/field\"\nimport {\n  Select,\n  SelectContent,\n  SelectDescription,\n  SelectItem,\n  SelectLabel,\n  SelectTrigger,\n} from \"@/components/ui/select\"\n\nexport default function SelectDetailsDescriptionDemo() {\n  return (\n    <Select placeholder=\"Select a role\">\n      <Label>Roles</Label>\n      <SelectTrigger />\n      <SelectContent className=\"max-w-(--trigger-width)\" items={roles}>\n        {(item) => (\n          <SelectItem id={item.id} textValue={item.name}>\n            <SelectLabel>{item.name}</SelectLabel>\n            <SelectDescription>{item.description}</SelectDescription>\n          </SelectItem>\n        )}\n      </SelectContent>\n    </Select>\n  )\n}\n\nexport const roles = [\n  {\n    id: 1,\n    name: \"Admin\",\n    description: \"Has full access to all resources\",\n  },\n  {\n    id: 2,\n    name: \"Editor\",\n    description: \"Can edit content but has limited access to settings\",\n  },\n  {\n    id: 3,\n    name: \"Viewer\",\n    description: \"Can view content but cannot make changes\",\n  },\n  {\n    id: 4,\n    name: \"Contributor\",\n    description: \"Can contribute content for review\",\n  },\n  {\n    id: 5,\n    name: \"Guest\",\n    description: \"Limited access, mostly for viewing purposes\",\n  },\n]\n",
+      "type": "registry:page",
+      "target": "app/select-details-description-demo/page.tsx"
+    }
+  ],
+  "type": "registry:page"
+}

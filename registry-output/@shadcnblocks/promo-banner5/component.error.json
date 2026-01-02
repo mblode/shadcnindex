@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "promo-banner5",
+  "url": "https://shadcnblocks.com/r/promo-banner5.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "promo-banner5",
+    "type": "registry:block",
+    "title": "Promo-banner",
+    "description": "This component is a promotional banner with a countdown timer that highlights a flash sale event, displaying the time remaining until the end of the sale. It features customizable messages and descriptions, and adjusts its appearance based on provided styling classes.",
+    "dependencies": ["react"],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/promo-banner5.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:48.973Z"
+}

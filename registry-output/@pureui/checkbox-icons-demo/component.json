@@ -1,0 +1,13 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "checkbox-icons-demo",
+  "type": "registry:example",
+  "registryDependencies": ["checkbox"],
+  "files": [
+    {
+      "path": "src/registry/pure-ui/examples/checkbox/checkbox-icons-demo.tsx",
+      "content": "import { Checkbox } from \"@/registry/pure-ui/ui/checkbox\";\nimport { CheckIcon, Map, Settings } from \"lucide-react\";\n\nexport function CheckboxIconsDemo() {\n  return (\n    <div className=\"flex flex-col gap-5\">\n      <label className=\"flex items-center gap-2 cursor-pointer\">\n        <Checkbox size=\"lg\">\n          <CheckIcon />\n        </Checkbox>\n        <span>Make a choice</span>\n      </label>\n      <label className=\"flex items-center gap-2 cursor-pointer\">\n        <Checkbox size=\"lg\">\n          <Map />\n        </Checkbox>\n        <span>Would you like to visit?</span>\n      </label>\n\n      <label className=\"flex items-center gap-2 cursor-pointer\">\n        <Checkbox size=\"lg\">\n          <Settings />\n        </Checkbox>\n        <span>Would you like to configure?</span>\n      </label>\n    </div>\n  );\n}\n",
+      "type": "registry:example"
+    }
+  ]
+}

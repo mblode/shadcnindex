@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "cards-flip",
+  "type": "registry:component",
+  "title": "Flip Card",
+  "description": "Card with 3D flip animation on hover",
+  "dependencies": ["motion"],
+  "files": [
+    {
+      "path": "registry/new-york/animations/cards/flip.tsx",
+      "content": "\"use client\";\nimport * as React from \"react\";\nimport { motion, HTMLMotionProps } from \"motion/react\";\nimport { cn } from \"@/lib/utils\";\nexport interface CardFlipProps extends HTMLMotionProps<\"div\"> {\n  duration?: number;\n  axis?: \"x\" | \"y\";\n}\nexport function CardFlip({\n  children,\n  className,\n  duration = 0.6,\n  axis = \"y\",\n  ...props\n}: CardFlipProps) {\n  return (\n    <motion.div\n      whileHover={{\n        rotateY: axis === \"y\" ? 180 : 0,\n        rotateX: axis === \"x\" ? 180 : 0,\n      }}\n      transition={{ duration }}\n      style={{ transformStyle: \"preserve-3d\" }}\n      className={cn(\"cursor-pointer\", className)}\n      {...props}\n    >\n      {children}\n    </motion.div>\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ]
+}

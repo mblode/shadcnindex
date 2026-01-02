@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "progress-progress-with-label-3",
+  "title": "Progress/progress-with-label-",
+  "description": "A progress/progress-with-label- example",
+  "dependencies": ["@radix-ui/react-progress", "clsx", "tailwind-merge"],
+  "registryDependencies": ["progress"],
+  "files": [
+    {
+      "path": "code/example/progress/progress-with-label-3.tsx",
+      "content": "import { Progress } from \"@/components/ui/progress\";\n\nexport const title = \"With Label Below\";\n\nconst Example = () => {\n  const value = 80;\n  return (\n    <div className=\"w-full max-w-md space-y-2\">\n      <Progress value={value} />\n      <span className=\"text-sm text-muted-foreground\">Almost there!</span>\n    </div>\n  );\n};\n\nexport default Example;\n",
+      "type": "registry:block"
+    },
+    {
+      "path": "src/components/ui/progress.tsx",
+      "content": "import * as React from \"react\"\nimport * as ProgressPrimitive from \"@radix-ui/react-progress\"\n\nimport { cn } from \"@/lib/utils\"\n\nfunction Progress({\n  className,\n  value,\n  ...props\n}: React.ComponentProps<typeof ProgressPrimitive.Root>) {\n  return (\n    <ProgressPrimitive.Root\n      data-slot=\"progress\"\n      className={cn(\n        \"bg-primary/20 relative h-2 w-full overflow-hidden rounded-full\",\n        className\n      )}\n      {...props}\n    >\n      <ProgressPrimitive.Indicator\n        data-slot=\"progress-indicator\"\n        className=\"bg-primary h-full w-full flex-1 transition-all\"\n        style={{ transform: `translateX(-${100 - (value || 0)}%)` }}\n      />\n    </ProgressPrimitive.Root>\n  )\n}\n\nexport { Progress }\n",
+      "type": "registry:ui",
+      "target": ""
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "content": "import { type ClassValue, clsx } from 'clsx';\nimport { twMerge } from 'tailwind-merge';\n\nexport function cn(...inputs: ClassValue[]) {\n  return twMerge(clsx(inputs));\n}\n",
+      "type": "registry:lib",
+      "target": ""
+    }
+  ],
+  "type": "registry:block"
+}

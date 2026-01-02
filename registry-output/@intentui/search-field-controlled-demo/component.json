@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "extends": "none",
+  "name": "search-field-controlled-demo",
+  "title": "Search Field Controlled",
+  "description": "search-field-controlled-demo",
+  "registryDependencies": [
+    "https://intentui.com/r/field",
+    "https://intentui.com/r/search-field"
+  ],
+  "files": [
+    {
+      "path": "src/components/docs/forms/search-field/search-field-controlled-demo.tsx",
+      "content": "\"use client\"\n\nimport { useState } from \"react\"\n\nimport { Description } from \"@/components/ui/field\"\nimport { SearchField, SearchInput } from \"@/components/ui/search-field\"\n\nexport default function SearchFieldControlledDemo() {\n  const [value, setValue] = useState(\"\")\n  return (\n    <>\n      <SearchField value={value} onChange={setValue} className=\"mb-2\" aria-label=\"Search\">\n        <SearchInput />\n      </SearchField>\n      <Description className=\"mt-2 block [&>strong]:text-fg\">\n        You have typed: <strong>{value ?? \"-\"}</strong>\n      </Description>\n    </>\n  )\n}\n",
+      "type": "registry:page",
+      "target": "app/search-field-controlled-demo/page.tsx"
+    }
+  ],
+  "type": "registry:page"
+}

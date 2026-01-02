@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "product-gallery3",
+  "url": "https://shadcnblocks.com/r/product-gallery3.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "product-gallery3",
+    "type": "registry:block",
+    "title": "Product-gallery",
+    "description": "This component, named `ProductGallery3`, provides an interactive image gallery with carousel functionality to display product images dynamically from a provided list. It leverages PhotoSwipeLightbox for viewing images in a full-screen mode and includes custom navigation elements for enhanced user interaction.",
+    "dependencies": ["photoswipe", "react"],
+    "registryDependencies": ["aspect-ratio", "badge", "button", "carousel"],
+    "files": [
+      {
+        "path": "code/block/product-gallery3.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:46.022Z"
+}

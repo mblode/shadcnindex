@@ -1,0 +1,23 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature272",
+  "url": "https://shadcnblocks.com/r/feature272.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature272",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A 3-step guide block with a centered title, intro text, and a grid of 3 columns each detailing a step. Features arrows pointing between steps.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": [
+      "https://ui.aceternity.com/registry/background-beams.json"
+    ],
+    "files": [
+      {
+        "path": "code/block/feature272.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:27.226Z"
+}

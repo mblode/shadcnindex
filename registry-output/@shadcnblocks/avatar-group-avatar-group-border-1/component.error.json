@@ -1,0 +1,24 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "avatar-group-avatar-group-border-1",
+  "url": "https://shadcnblocks.com/r/avatar-group-avatar-group-border-1.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "avatar-group-avatar-group-border-1",
+    "type": "registry:block",
+    "title": "Avatar-group/avatar-group-border-",
+    "description": "A avatar-group/avatar-group-border- example",
+    "dependencies": [],
+    "registryDependencies": [
+      "https://shadcnblocks.com/r/avatar-group",
+      "avatar"
+    ],
+    "files": [
+      {
+        "path": "code/example/avatar-group/avatar-group-border-1.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:15:00.765Z"
+}

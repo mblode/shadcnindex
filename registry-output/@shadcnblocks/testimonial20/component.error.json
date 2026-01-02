@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "testimonial20",
+  "url": "https://shadcnblocks.com/r/testimonial20.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "testimonial20",
+    "type": "registry:block",
+    "title": "Testimonial",
+    "description": "A two-column testimonial block with dashed borders, featuring quotes, avatars, and names. Decorated with sparkle icons at its corners.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["avatar"],
+    "files": [
+      {
+        "path": "code/block/testimonial20.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:53.853Z"
+}

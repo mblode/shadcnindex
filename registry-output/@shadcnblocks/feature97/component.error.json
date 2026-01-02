@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature97",
+  "url": "https://shadcnblocks.com/r/feature97.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature97",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A component showcasing platform highlights in a two-column grid with icons, titles, and texts for each feature. Includes a title, description, and buttons above the grid.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["button"],
+    "files": [
+      {
+        "path": "code/block/feature97.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:30.826Z"
+}

@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "hero68",
+  "url": "https://shadcnblocks.com/r/hero68.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "hero68",
+    "type": "registry:block",
+    "title": "Hero",
+    "description": "A component with a promotional message, featuring a central title, a subtitle, buttons for action calls (trial/demo), and a 3-column footer highlighting service benefits with icons.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["avatar", "badge", "button"],
+    "files": [
+      {
+        "path": "code/block/hero68.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:39.215Z"
+}

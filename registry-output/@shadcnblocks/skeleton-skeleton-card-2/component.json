@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "skeleton-skeleton-card-2",
+  "title": "Skeleton/skeleton-card-",
+  "description": "A skeleton/skeleton-card- example",
+  "dependencies": ["clsx", "tailwind-merge"],
+  "registryDependencies": ["skeleton"],
+  "files": [
+    {
+      "path": "code/example/skeleton/skeleton-card-2.tsx",
+      "content": "import { Skeleton } from \"@/components/ui/skeleton\";\n\nexport const title = \"Card with Avatar and Content\";\n\nconst Example = () => (\n  <div className=\"flex w-full max-w-sm flex-col gap-3 rounded-md border p-4\">\n    <div className=\"flex items-center gap-3\">\n      <Skeleton className=\"size-12 rounded-full\" />\n      <div className=\"flex flex-1 flex-col gap-2\">\n        <Skeleton className=\"h-4 w-24\" />\n        <Skeleton className=\"h-3 w-32\" />\n      </div>\n    </div>\n    <Skeleton className=\"h-4 w-full\" />\n    <Skeleton className=\"h-4 w-5/6\" />\n    <Skeleton className=\"h-4 w-4/6\" />\n  </div>\n);\n\nexport default Example;\n",
+      "type": "registry:block"
+    },
+    {
+      "path": "src/components/ui/skeleton.tsx",
+      "content": "import { cn } from \"@/lib/utils\"\n\nfunction Skeleton({ className, ...props }: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"skeleton\"\n      className={cn(\"bg-accent animate-pulse rounded-md\", className)}\n      {...props}\n    />\n  )\n}\n\nexport { Skeleton }\n",
+      "type": "registry:ui",
+      "target": ""
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "content": "import { type ClassValue, clsx } from 'clsx';\nimport { twMerge } from 'tailwind-merge';\n\nexport function cn(...inputs: ClassValue[]) {\n  return twMerge(clsx(inputs));\n}\n",
+      "type": "registry:lib",
+      "target": ""
+    }
+  ],
+  "type": "registry:block"
+}

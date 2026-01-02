@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "extends": "none",
+  "name": "avatar-initials-demo",
+  "title": "Avatar Initials",
+  "description": "avatar-initials-demo",
+  "registryDependencies": ["https://intentui.com/r/avatar"],
+  "files": [
+    {
+      "path": "src/components/docs/media/avatar/avatar-initials-demo.tsx",
+      "content": "import { Avatar } from \"@/components/ui/avatar\"\n\nexport default function AvatarInitialsDemo() {\n  return <Avatar src=\"\" initials=\"SH\" />\n}\n",
+      "type": "registry:page",
+      "target": "app/avatar-initials-demo/page.tsx"
+    }
+  ],
+  "type": "registry:page"
+}

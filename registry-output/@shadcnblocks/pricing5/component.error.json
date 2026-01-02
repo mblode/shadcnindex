@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "pricing5",
+  "url": "https://shadcnblocks.com/r/pricing5.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "pricing5",
+    "type": "registry:block",
+    "title": "Pricing",
+    "description": "A pricing component with two plans, offering comparison across features in a table and emphasized call-to-actions. Provides a clear visual differentiation between plans.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["button", "card", "separator", "table"],
+    "files": [
+      {
+        "path": "code/block/pricing5.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:44.546Z"
+}

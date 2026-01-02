@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "footer30",
+  "url": "https://shadcnblocks.com/r/footer30.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "footer30",
+    "type": "registry:block",
+    "title": "Footer",
+    "description": "A footer component showcasing contact info, navigation, social links, and legal terms in a multi-column layout, plus a prominent brand name display.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/footer30.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:31.841Z"
+}

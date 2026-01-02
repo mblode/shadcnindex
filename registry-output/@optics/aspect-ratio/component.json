@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "aspect-ratio",
+  "title": "Aspect Ratio",
+  "description": "Displays content within a desired ratio.",
+  "dependencies": ["clsx", "tailwind-merge"],
+  "registryDependencies": ["https://optics.agusmayol.com.ar/r/utils.json"],
+  "files": [
+    {
+      "path": "registry/optics/aspect-ratio.jsx",
+      "content": "import { cn } from \"@/lib/utils\"\n\nfunction AspectRatio({\n  ratio = 1,\n  className = \"\",\n  ...props\n}) {\n  return (\n    <div\n      data-slot=\"aspect-ratio\"\n      style={\n        {\n          \"--ratio\": ratio\n        }\n      }\n      className={cn(\"relative aspect-(--ratio)\", className)}\n      {...props} />\n  );\n}\n\nexport { AspectRatio }\n",
+      "type": "registry:component",
+      "target": "components/optics/aspect-ratio.jsx"
+    }
+  ],
+  "type": "registry:component"
+}

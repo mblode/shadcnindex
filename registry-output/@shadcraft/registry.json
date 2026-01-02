@@ -1,0 +1,591 @@
+{
+  "name": "Shadcraft Free",
+  "homepage": "https://shadcraft-free.vercel.app",
+  "items": [
+    {
+      "name": "index",
+      "type": "registry:style",
+      "dependencies": ["class-variance-authority", "lucide-react"],
+      "devDependencies": ["tw-animate-css"],
+      "css": {
+        "@layer base": {
+          "button": {
+            "cursor": "pointer"
+          }
+        }
+      }
+    },
+    {
+      "name": "avatar-stack",
+      "type": "registry:ui",
+      "title": "Avatar Stack",
+      "description": "A component that stacks and overlaps a list of avatars.",
+      "registryDependencies": [
+        "https://shadcraft-free.vercel.app/r/index.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/pro-marketing/ui/avatar-stack.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "meta": {
+        "bundle": "pro-marketing"
+      }
+    },
+    {
+      "name": "marquee",
+      "type": "registry:ui",
+      "title": "Marquee",
+      "description": "A component that displays a list of items in a horizontal or vertical scrolling motion.",
+      "dependencies": ["react-fast-marquee"],
+      "registryDependencies": [
+        "https://shadcraft-free.vercel.app/r/index.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/pro-marketing/ui/marquee.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "meta": {
+        "bundle": "pro-marketing"
+      }
+    },
+    {
+      "name": "tagline",
+      "type": "registry:ui",
+      "title": "Tagline",
+      "description": "A component that displays a tagline with different variants.",
+      "registryDependencies": [
+        "https://shadcraft-free.vercel.app/r/index.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/pro-marketing/ui/tagline.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "meta": {
+        "bundle": "pro-marketing"
+      }
+    },
+    {
+      "name": "page-heading",
+      "type": "registry:component",
+      "title": "Page Heading",
+      "description": "A component that acts as the text-focused version of a hero banner. This component combines a pre-heading label, an H1 heading, supporting description text, and call-to-action buttons.",
+      "registryDependencies": [
+        "https://shadcraft-free.vercel.app/r/index.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/pro-marketing/components/page-heading.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "bundle": "pro-marketing"
+      }
+    },
+    {
+      "name": "placeholder-logo",
+      "type": "registry:component",
+      "title": "Placeholder Logo",
+      "description": "A component for that can be replaced with your brand's main logo. This component ensures layouts stay consistent before brand assets are applied.",
+      "registryDependencies": [
+        "https://shadcraft-free.vercel.app/r/index.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/pro-marketing/components/placeholder-logo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "bundle": "pro-marketing"
+      }
+    },
+    {
+      "name": "profile-card",
+      "type": "registry:component",
+      "title": "Profile Card",
+      "description": "An extension of the avatar component with more details on the individual. Good for blog posts etc.",
+      "registryDependencies": [
+        "avatar",
+        "https://shadcraft-free.vercel.app/r/index.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/pro-marketing/components/profile-card.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "bundle": "pro-marketing"
+      }
+    },
+    {
+      "name": "section-heading",
+      "type": "registry:component",
+      "title": "Section Heading",
+      "description": "A component that standardizes heading typography and spacing. This component includes a pre-heading label, main heading, and body text in different layout variants.",
+      "registryDependencies": [
+        "https://shadcraft-free.vercel.app/r/index.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/pro-marketing/components/section-heading.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "bundle": "pro-marketing"
+      }
+    },
+    {
+      "name": "star-rating",
+      "type": "registry:component",
+      "title": "Star Rating",
+      "description": "A component that displays ratings with stars and an optional label. This component builds trust with visual feedback.",
+      "registryDependencies": [
+        "https://shadcraft-free.vercel.app/r/index.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/pro-marketing/components/star-rating.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "bundle": "pro-marketing"
+      }
+    },
+    {
+      "name": "banner-10",
+      "type": "registry:block",
+      "title": "Banner 10",
+      "registryDependencies": [
+        "button",
+        "https://shadcraft-free.vercel.app/r/index.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/pro-marketing/blocks/banners/10/index.tsx",
+          "type": "registry:component",
+          "target": "components/banner-10.tsx"
+        }
+      ],
+      "meta": {
+        "bundle": "pro-marketing"
+      },
+      "categories": ["banners"]
+    },
+    {
+      "name": "benefits-13",
+      "type": "registry:block",
+      "title": "Benefits 13",
+      "registryDependencies": [
+        "card",
+        "https://shadcraft-free.vercel.app/r/section-heading.json",
+        "https://shadcraft-free.vercel.app/r/index.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/pro-marketing/blocks/benefits/13/index.tsx",
+          "type": "registry:component",
+          "target": "components/benefits-13.tsx"
+        }
+      ],
+      "meta": {
+        "bundle": "pro-marketing"
+      },
+      "categories": ["benefits"]
+    },
+    {
+      "name": "contact-11",
+      "type": "registry:block",
+      "title": "Contact 11",
+      "registryDependencies": [
+        "button",
+        "label",
+        "input",
+        "textarea",
+        "checkbox",
+        "https://shadcraft-free.vercel.app/r/section-heading.json",
+        "https://shadcraft-free.vercel.app/r/index.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/pro-marketing/blocks/contact/11/index.tsx",
+          "type": "registry:component",
+          "target": "components/contact-11.tsx"
+        }
+      ],
+      "meta": {
+        "bundle": "pro-marketing"
+      },
+      "categories": ["contact"]
+    },
+    {
+      "name": "cta-9",
+      "type": "registry:block",
+      "title": "CTA 9",
+      "registryDependencies": [
+        "button",
+        "https://shadcraft-free.vercel.app/r/section-heading.json",
+        "https://shadcraft-free.vercel.app/r/index.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/pro-marketing/blocks/cta/9/index.tsx",
+          "type": "registry:component",
+          "target": "components/cta-9.tsx"
+        }
+      ],
+      "meta": {
+        "bundle": "pro-marketing"
+      },
+      "categories": ["cta"]
+    },
+    {
+      "name": "faqs-4",
+      "type": "registry:block",
+      "title": "FAQs 4",
+      "registryDependencies": [
+        "accordion",
+        "separator",
+        "https://shadcraft-free.vercel.app/r/section-heading.json",
+        "https://shadcraft-free.vercel.app/r/index.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/pro-marketing/blocks/faqs/4/index.tsx",
+          "type": "registry:component",
+          "target": "components/faqs-4.tsx"
+        }
+      ],
+      "meta": {
+        "bundle": "pro-marketing"
+      },
+      "categories": ["faqs"]
+    },
+    {
+      "name": "footer-4",
+      "type": "registry:block",
+      "title": "Footer 4",
+      "registryDependencies": [
+        "separator",
+        "https://shadcraft-free.vercel.app/r/placeholder-logo.json",
+        "https://shadcraft-free.vercel.app/r/index.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/pro-marketing/blocks/footers/4/index.tsx",
+          "type": "registry:component",
+          "target": "components/footer-4.tsx"
+        }
+      ],
+      "meta": {
+        "containerClassName": "min-h-svh content-end",
+        "bundle": "pro-marketing"
+      },
+      "categories": ["footers"]
+    },
+    {
+      "name": "newsletter-signup-5",
+      "type": "registry:block",
+      "title": "Newsletter Signup 5",
+      "registryDependencies": [
+        "button",
+        "input",
+        "https://shadcraft-free.vercel.app/r/section-heading.json",
+        "https://shadcraft-free.vercel.app/r/index.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/pro-marketing/blocks/newsletter-signup/5/index.tsx",
+          "type": "registry:component",
+          "target": "components/newsletter-signup-5.tsx"
+        }
+      ],
+      "meta": {
+        "bundle": "pro-marketing"
+      },
+      "categories": ["newsletter-signup"]
+    },
+    {
+      "name": "team-6",
+      "type": "registry:block",
+      "title": "Team 6",
+      "registryDependencies": [
+        "https://shadcraft-free.vercel.app/r/section-heading.json",
+        "https://shadcraft-free.vercel.app/r/profile-card.json",
+        "https://shadcraft-free.vercel.app/r/index.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/pro-marketing/blocks/team/6/index.tsx",
+          "type": "registry:component",
+          "target": "components/team-6.tsx"
+        }
+      ],
+      "meta": {
+        "bundle": "pro-marketing"
+      },
+      "categories": ["team"]
+    },
+    {
+      "name": "testimonials-11",
+      "type": "registry:block",
+      "title": "Testimonials 11",
+      "registryDependencies": [
+        "card",
+        "https://shadcraft-free.vercel.app/r/section-heading.json",
+        "https://shadcraft-free.vercel.app/r/profile-card.json",
+        "https://shadcraft-free.vercel.app/r/index.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/pro-marketing/blocks/testimonials/11/index.tsx",
+          "type": "registry:component",
+          "target": "components/testimonials-11.tsx"
+        }
+      ],
+      "meta": {
+        "bundle": "pro-marketing"
+      },
+      "categories": ["testimonials"]
+    },
+    {
+      "name": "pricing-8",
+      "type": "registry:block",
+      "title": "Pricing 8",
+      "registryDependencies": [
+        "card",
+        "button",
+        "tooltip",
+        "https://shadcraft-free.vercel.app/r/section-heading.json",
+        "https://shadcraft-free.vercel.app/r/index.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/pro-marketing/blocks/pricing/8/index.tsx",
+          "type": "registry:component",
+          "target": "components/pricing-8.tsx"
+        },
+        {
+          "path": "src/registry/pro-marketing/blocks/pricing/8/components/pricing-card.tsx",
+          "type": "registry:component",
+          "target": "components/pricing-card.tsx"
+        }
+      ],
+      "meta": {
+        "bundle": "pro-marketing"
+      },
+      "categories": ["pricing"]
+    },
+    {
+      "name": "top-navigation-5",
+      "type": "registry:block",
+      "title": "Top Navigation 5",
+      "registryDependencies": [
+        "button",
+        "https://shadcraft-free.vercel.app/r/placeholder-logo.json",
+        "https://shadcraft-free.vercel.app/r/use-click-outside.json",
+        "https://shadcraft-free.vercel.app/r/use-mobile.json",
+        "https://shadcraft-free.vercel.app/r/index.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/pro-marketing/blocks/top-navigation/5/index.tsx",
+          "type": "registry:component",
+          "target": "components/top-navigation-5.tsx"
+        }
+      ],
+      "meta": {
+        "bundle": "pro-marketing"
+      },
+      "categories": ["top-navigation"]
+    },
+    {
+      "name": "avatar-stack-demo",
+      "type": "registry:example",
+      "title": "Avatar Stack Demo",
+      "registryDependencies": [
+        "avatar",
+        "https://shadcraft-free.vercel.app/r/avatar-stack.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/pro-marketing/examples/avatar-stack-demo.tsx",
+          "type": "registry:example"
+        }
+      ],
+      "meta": {
+        "bundle": "pro-marketing"
+      }
+    },
+    {
+      "name": "marquee-demo",
+      "type": "registry:example",
+      "title": "Marquee Demo",
+      "registryDependencies": [
+        "https://shadcraft-free.vercel.app/r/marquee.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/pro-marketing/examples/marquee-demo.tsx",
+          "type": "registry:example"
+        }
+      ],
+      "meta": {
+        "bundle": "pro-marketing"
+      }
+    },
+    {
+      "name": "page-heading-demo",
+      "type": "registry:example",
+      "title": "Page Heading Demo",
+      "registryDependencies": [
+        "https://shadcraft-free.vercel.app/r/page-heading.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/pro-marketing/examples/page-heading-demo.tsx",
+          "type": "registry:example"
+        }
+      ],
+      "meta": {
+        "bundle": "pro-marketing"
+      }
+    },
+    {
+      "name": "placeholder-logo-demo",
+      "type": "registry:example",
+      "title": "Placeholder Logo Demo",
+      "registryDependencies": [
+        "https://shadcraft-free.vercel.app/r/placeholder-logo.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/pro-marketing/examples/placeholder-logo-demo.tsx",
+          "type": "registry:example"
+        }
+      ],
+      "meta": {
+        "bundle": "pro-marketing"
+      }
+    },
+    {
+      "name": "profile-card-demo",
+      "type": "registry:example",
+      "title": "Profile Card Demo",
+      "registryDependencies": [
+        "https://shadcraft-free.vercel.app/r/profile-card.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/pro-marketing/examples/profile-card-demo.tsx",
+          "type": "registry:example"
+        }
+      ],
+      "meta": {
+        "bundle": "pro-marketing"
+      }
+    },
+    {
+      "name": "section-heading-demo",
+      "type": "registry:example",
+      "title": "Section Heading Demo",
+      "registryDependencies": [
+        "https://shadcraft-free.vercel.app/r/section-heading.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/pro-marketing/examples/section-heading-demo.tsx",
+          "type": "registry:example"
+        }
+      ],
+      "meta": {
+        "bundle": "pro-marketing"
+      }
+    },
+    {
+      "name": "star-rating-demo",
+      "type": "registry:example",
+      "title": "Star Rating Demo",
+      "registryDependencies": [
+        "https://shadcraft-free.vercel.app/r/star-rating.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/pro-marketing/examples/star-rating-demo.tsx",
+          "type": "registry:example"
+        }
+      ],
+      "meta": {
+        "bundle": "pro-marketing"
+      }
+    },
+    {
+      "name": "tagline-demo",
+      "type": "registry:example",
+      "title": "Tagline Demo",
+      "registryDependencies": [
+        "https://shadcraft-free.vercel.app/r/tagline.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/pro-marketing/examples/tagline-demo.tsx",
+          "type": "registry:example"
+        }
+      ],
+      "meta": {
+        "bundle": "pro-marketing"
+      }
+    },
+    {
+      "name": "use-carousel",
+      "type": "registry:hook",
+      "dependencies": ["embla-carousel", "embla-carousel-react"],
+      "files": [
+        {
+          "path": "src/registry/pro-marketing/hooks/use-carousel.ts",
+          "type": "registry:hook"
+        }
+      ],
+      "meta": {
+        "bundle": "pro-marketing"
+      }
+    },
+    {
+      "name": "use-click-outside",
+      "type": "registry:hook",
+      "dependencies": [],
+      "files": [
+        {
+          "path": "src/registry/pro-marketing/hooks/use-click-outside.ts",
+          "type": "registry:hook"
+        }
+      ],
+      "meta": {
+        "bundle": "pro-marketing"
+      }
+    },
+    {
+      "name": "use-mobile",
+      "type": "registry:hook",
+      "dependencies": [],
+      "files": [
+        {
+          "path": "src/registry/pro-marketing/hooks/use-mobile.ts",
+          "type": "registry:hook"
+        }
+      ],
+      "meta": {
+        "bundle": "pro-marketing"
+      }
+    }
+  ]
+}

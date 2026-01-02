@@ -1,0 +1,39 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "tabs",
+  "type": "registry:ui",
+  "title": "Tabs",
+  "description": "Windows 95 styled tabs component",
+  "dependencies": ["@radix-ui/react-tabs"],
+  "files": [
+    {
+      "path": "components/97cn/tabs.tsx",
+      "content": "\"use client\"\n\nimport * as React from \"react\"\nimport * as TabsPrimitive from \"@radix-ui/react-tabs\"\nimport { cn } from \"@/lib/utils\"\n\nconst Win95Tabs = TabsPrimitive.Root\n\nconst Win95TabsList = React.forwardRef<\n  React.ElementRef<typeof TabsPrimitive.List>,\n  React.ComponentPropsWithoutRef<typeof TabsPrimitive.List>\n>(({ className, ...props }, ref) => (\n  <TabsPrimitive.List\n    ref={ref}\n    className={cn(\n      \"inline-flex h-auto items-center justify-start bg-win95-button-face border-b-2 border-win95-button-shadow\",\n      className,\n    )}\n    {...props}\n  />\n))\nWin95TabsList.displayName = TabsPrimitive.List.displayName\n\nconst Win95TabsTrigger = React.forwardRef<\n  React.ElementRef<typeof TabsPrimitive.Trigger>,\n  React.ComponentPropsWithoutRef<typeof TabsPrimitive.Trigger>\n>(({ className, ...props }, ref) => (\n  <TabsPrimitive.Trigger\n    ref={ref}\n    className={cn(\n      \"inline-flex items-center justify-center whitespace-nowrap px-3 py-1 text-xs font-medium bg-win95-button-face text-win95-black border-t-2 border-l-2 border-r-2 border-win95-button-highlight border-r-win95-button-shadow border-b-0 -mb-0.5 relative z-10 transition-all focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-win95-black disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-win95-button-face data-[state=active]:text-win95-black data-[state=active]:border-b-2 data-[state=active]:border-b-win95-button-face data-[state=active]:z-20\",\n      className,\n    )}\n    {...props}\n  />\n))\nWin95TabsTrigger.displayName = TabsPrimitive.Trigger.displayName\n\nconst Win95TabsContent = React.forwardRef<\n  React.ElementRef<typeof TabsPrimitive.Content>,\n  React.ComponentPropsWithoutRef<typeof TabsPrimitive.Content>\n>(({ className, ...props }, ref) => (\n  <TabsPrimitive.Content\n    ref={ref}\n    className={cn(\n      \"mt-0 bg-win95-button-face win95-sunken p-2 text-xs text-win95-black focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-win95-black\",\n      className,\n    )}\n    {...props}\n  />\n))\nWin95TabsContent.displayName = TabsPrimitive.Content.displayName\n\nexport { Win95Tabs, Win95TabsList, Win95TabsTrigger, Win95TabsContent }\n",
+      "type": "registry:ui"
+    }
+  ],
+  "cssVars": {
+    "light": {
+      "win95-button-face": "#c0c0c0",
+      "win95-black": "#000000",
+      "win95-button-shadow": "#808080",
+      "win95-button-highlight": "#ffffff"
+    },
+    "dark": {
+      "win95-button-face": "#c0c0c0",
+      "win95-black": "#000000",
+      "win95-button-shadow": "#808080",
+      "win95-button-highlight": "#ffffff"
+    }
+  },
+  "css": {
+    "@layer utilities": {
+      ".win95-raised": {
+        "border-top": "2px solid var(--win95-button-highlight)",
+        "border-left": "2px solid var(--win95-button-highlight)",
+        "border-right": "2px solid var(--win95-button-shadow)",
+        "border-bottom": "2px solid var(--win95-button-shadow)"
+      }
+    }
+  }
+}

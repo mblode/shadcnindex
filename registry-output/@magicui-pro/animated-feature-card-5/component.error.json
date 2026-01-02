@@ -1,0 +1,21 @@
+{
+  "registry": "@magicui-pro",
+  "component": "animated-feature-card-5",
+  "url": "https://pro.magicui.design/registry/animated-feature-card-5",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "animated-feature-card-5",
+    "type": "registry:block",
+    "dependencies": ["motion"],
+    "files": [
+      {
+        "path": "registry/blocks/animated-feature-card-5.tsx",
+        "type": "registry:component"
+      }
+    ],
+    "meta": {
+      "height": 317
+    }
+  },
+  "fetchedAt": "2026-01-02T11:10:47.823Z"
+}

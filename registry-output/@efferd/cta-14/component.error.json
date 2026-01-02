@@ -1,0 +1,20 @@
+{
+  "registry": "@efferd",
+  "component": "cta-14",
+  "url": "https://efferd.com/r/cta-14.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "cta-14",
+    "description": "Bold inverted design with large typography and email/calendar buttons.",
+    "registryDependencies": ["button"],
+    "files": [
+      {
+        "path": "registry/cta/14/call-to-action.tsx",
+        "type": "registry:component"
+      }
+    ],
+    "categories": ["cta"],
+    "type": "registry:block"
+  },
+  "fetchedAt": "2026-01-02T11:08:57.739Z"
+}

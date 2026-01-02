@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "contact14",
+  "url": "https://shadcnblocks.com/r/contact14.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "contact14",
+    "type": "registry:block",
+    "title": "Contact",
+    "description": "A two-column contact component with avatar, contact details, and form fields for name & phone, plus a button.",
+    "dependencies": ["react"],
+    "registryDependencies": ["avatar", "button", "card", "input"],
+    "files": [
+      {
+        "path": "code/block/contact14.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:17.463Z"
+}

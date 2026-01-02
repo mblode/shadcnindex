@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "hero36",
+  "url": "https://shadcnblocks.com/r/hero36.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "hero36",
+    "type": "registry:block",
+    "title": "Hero",
+    "description": "A component showcasing 3 cards in a row, highlighting features like \"Product Design,\" \"Development,\" and \"Marketing,\" with images, descriptions, and \"See more\" links. Includes a title, a badge stating \"New Release,\" and a description above the cards.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["badge"],
+    "files": [
+      {
+        "path": "code/block/hero36.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:38.412Z"
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "extends": "none",
+  "name": "slider-demo",
+  "title": "Slider",
+  "description": "slider-demo",
+  "registryDependencies": [
+    "https://intentui.com/r/field",
+    "https://intentui.com/r/slider"
+  ],
+  "files": [
+    {
+      "path": "src/components/docs/controls/slider/slider-demo.tsx",
+      "content": "\"use client\"\n\nimport { Label } from \"@/components/ui/field\"\nimport { Slider, SliderFill, SliderOutput, SliderThumb, SliderTrack } from \"@/components/ui/slider\"\n\nexport default function SliderDemo() {\n  return (\n    <Slider defaultValue={20}>\n      <div className=\"flex items-center justify-between\">\n        <Label>Opacity</Label>\n        <SliderOutput />\n      </div>\n      <SliderTrack>\n        <SliderFill />\n        <SliderThumb />\n      </SliderTrack>\n    </Slider>\n  )\n}\n",
+      "type": "registry:page",
+      "target": "app/slider-demo/page.tsx"
+    }
+  ],
+  "type": "registry:page"
+}

@@ -1,0 +1,49 @@
+{
+  "registry": "@efferd",
+  "component": "header-5",
+  "url": "https://efferd.com/r/header-5.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "header-5",
+    "description": "A sticky animated header with dropdown navigation menus for courses and community, featuring smooth scroll-triggered morphing between expanded and compact pill-shaped states.",
+    "dependencies": ["motion", "@radix-ui/react-portal"],
+    "registryDependencies": ["button", "navigation-menu"],
+    "files": [
+      {
+        "path": "registry/header/5/header.tsx",
+        "type": "registry:component"
+      },
+      {
+        "path": "registry/header/5/mobile-nav.tsx",
+        "type": "registry:component"
+      },
+      {
+        "path": "registry/header/5/desktop-nav.tsx",
+        "type": "registry:component"
+      },
+      {
+        "path": "registry/header/5/sheard.tsx",
+        "type": "registry:component"
+      },
+      {
+        "path": "registry/header/5/nav-links.ts",
+        "type": "registry:component"
+      },
+      {
+        "path": "../../packages/core/src/logo.tsx",
+        "type": "registry:component"
+      },
+      {
+        "path": "../../packages/core/src/hooks/use-scroll.ts",
+        "type": "registry:hook"
+      },
+      {
+        "path": "../../packages/core/src/hooks/use-media-query.ts",
+        "type": "registry:hook"
+      }
+    ],
+    "categories": ["header"],
+    "type": "registry:block"
+  },
+  "fetchedAt": "2026-01-02T11:08:58.649Z"
+}

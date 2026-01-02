@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature59",
+  "url": "https://shadcnblocks.com/r/feature59.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature59",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A component presenting a main feature with a large description and image, followed by three smaller feature blocks with descriptions and images, organized in a 2-column layout.",
+    "dependencies": [],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/feature59.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:29.317Z"
+}

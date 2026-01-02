@@ -1,0 +1,13 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "badge-custom-demo",
+  "type": "registry:example",
+  "registryDependencies": ["badge"],
+  "files": [
+    {
+      "path": "src/registry/pure-ui/examples/badge/badge-custom-demo.tsx",
+      "content": "import { Badge } from \"@/registry/pure-ui/ui/badge\";\n\nexport function BadgeCustomDemo() {\n  return (\n    <div className=\"flex flex-wrap items-center gap-2 md:flex-row\">\n      <Badge\n        className=\"dark:bg-[#1c120d] bg-[#f1763a] border border-[#f1763a] dark:text-[#f1763a] text-[#1c120d]\"\n        shape=\"bar\"\n      >\n        L. Norris\n      </Badge>\n      <Badge\n        className=\"dark:bg-[#091917] bg-[#0ad4b4] border border-[#0ad4b4] dark:text-[#0ad4b4] text-[#091917]\"\n        shape=\"bar\"\n      >\n        G. Russel\n      </Badge>\n      <Badge\n        className=\"dark:bg-[#151515] bg-[#9c9ea1] border border-[#9c9ea1] dark:text-[#9c9ea1] text-[#151515]\"\n        shape=\"bar\"\n      >\n        O. Bearman\n      </Badge>\n      <Badge\n        className=\"dark:bg-[#0e1319] bg-[#4680d6] border border-[#4680d6] dark:text-[#4680d6] text-white\"\n        shape=\"bar\"\n      >\n        M. Verstappen\n      </Badge>\n      <Badge\n        className=\"dark:bg-[#0a111a] bg-[#1568da] border border-[#1568da] dark:text-[#1568da] text-white\"\n        shape=\"bar\"\n      >\n        C. Sainz\n      </Badge>\n      <Badge\n        className=\"dark:bg-[#09180a] bg-[#0cbf10] border border-[#0cbf10] dark:text-[#0cbf10] text-white\"\n        shape=\"bar\"\n      >\n        N. Hulkenberg\n      </Badge>\n      <Badge\n        className=\"dark:bg-[#1b0a0c] bg-[#eb1131] border border-[#eb1131] dark:text-[#eb1131] text-white\"\n        shape=\"bar\"\n      >\n        L. Stroll\n      </Badge>\n    </div>\n  );\n}\n",
+      "type": "registry:example"
+    }
+  ]
+}

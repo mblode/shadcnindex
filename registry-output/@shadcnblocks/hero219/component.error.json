@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "hero219",
+  "url": "https://shadcnblocks.com/r/hero219.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "hero219",
+    "type": "registry:block",
+    "title": "Hero",
+    "description": "A dynamic hero block featuring animated text, a particle effect background, and multiple vertical marquees with icons. It includes an engaging headline and a blurred white background overlay.",
+    "dependencies": ["framer-motion", "react"],
+    "registryDependencies": ["https://magicui.design/r/particles"],
+    "files": [
+      {
+        "path": "code/block/hero219.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:36.635Z"
+}

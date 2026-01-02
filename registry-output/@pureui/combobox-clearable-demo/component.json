@@ -1,0 +1,13 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "combobox-clearable-demo",
+  "type": "registry:example",
+  "registryDependencies": ["combobox"],
+  "files": [
+    {
+      "path": "src/registry/pure-ui/examples/combobox/combobox-clearable-demo.tsx",
+      "content": "\"use client\";\n\nimport {\n  Combobox,\n  ComboboxEmpty,\n  ComboboxInput,\n  ComboboxItem,\n  ComboboxList,\n  ComboboxPopup,\n} from \"@/registry/pure-ui/ui/combobox\";\n\nconst users = [\n  { id: \"u1\", label: \"Alice Johnson\", value: \"alice@example.com\" },\n  { id: \"u2\", label: \"Bob Lee\", value: \"bob@example.com\" },\n  { id: \"u3\", label: \"Cathy Kim\", value: \"cathy@example.com\" },\n  { id: \"u4\", label: \"David Smith\", value: \"david@example.com\" },\n  { id: \"u5\", label: \"Emily Davis\", value: \"emily@example.com\" },\n  { id: \"u6\", label: \"Frank Miller\", value: \"frank@example.com\" },\n  { id: \"u7\", label: \"Grace Lee\", value: \"grace@example.com\" },\n  { id: \"u8\", label: \"Henry Walker\", value: \"henry@example.com\" },\n];\n\ntype User = (typeof users)[number];\n\nexport function ComboboxClearableDemo() {\n  return (\n    <Combobox items={users}>\n      <div className=\"max-w-xs w-full\">\n        <ComboboxInput placeholder=\"Select a user...\" isClearable />\n      </div>\n      <ComboboxPopup>\n        <ComboboxEmpty>No users found.</ComboboxEmpty>\n        <ComboboxList>\n          {(user: User) => (\n            <ComboboxItem key={user.id} value={user}>\n              <div>\n                <div className=\"font-medium\">{user.label}</div>\n                <div className=\"text-xs text-muted-foreground\">\n                  {user.value}\n                </div>\n              </div>\n            </ComboboxItem>\n          )}\n        </ComboboxList>\n      </ComboboxPopup>\n    </Combobox>\n  );\n}\n",
+      "type": "registry:example"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "extends": "none",
+  "name": "link-unstyled-demo",
+  "title": "Link Unstyled",
+  "description": "link-unstyled-demo",
+  "registryDependencies": ["https://intentui.com/r/link"],
+  "files": [
+    {
+      "path": "src/components/docs/navigation/link/link-unstyled-demo.tsx",
+      "content": "\"use client\"\n\nimport { Link } from \"@/components/ui/link\"\n\nexport default function LinkUnstyledDemo() {\n  return <Link href=\"#unstyled\">Label</Link>\n}\n",
+      "type": "registry:page",
+      "target": "app/link-unstyled-demo/page.tsx"
+    }
+  ],
+  "type": "registry:page"
+}

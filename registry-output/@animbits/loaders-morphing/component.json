@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "loaders-morphing",
+  "type": "registry:component",
+  "title": "Morphing Loader",
+  "description": "Shape-shifting morphing animation",
+  "dependencies": ["motion"],
+  "files": [
+    {
+      "path": "registry/new-york/animations/loaders/morphing.tsx",
+      "content": "\"use client\";\nimport * as React from \"react\";\nimport { motion, HTMLMotionProps } from \"motion/react\";\nimport { cn } from \"@/lib/utils\";\nexport interface LoaderMorphingProps\n  extends Omit<HTMLMotionProps<\"div\">, \"children\"> {\n  size?: number;\n  color?: string;\n  duration?: number;\n}\nexport function LoaderMorphing({\n  className,\n  size = 40,\n  color = \"currentColor\",\n  duration = 2,\n  ...props\n}: LoaderMorphingProps) {\n  return (\n    <motion.div\n      className={cn(className)}\n      style={{\n        width: size,\n        height: size,\n        backgroundColor: color,\n      }}\n      animate={{\n        borderRadius: [\"20%\", \"50%\", \"20%\", \"50%\", \"20%\"],\n        rotate: [0, 90, 180, 270, 360],\n        scale: [1, 1.2, 1, 1.2, 1],\n      }}\n      transition={{\n        duration,\n        ease: \"easeInOut\",\n        repeat: Infinity,\n      }}\n      {...props}\n    />\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ]
+}

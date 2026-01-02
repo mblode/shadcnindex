@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "about2",
+  "url": "https://shadcnblocks.com/r/about2.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "about2",
+    "type": "registry:block",
+    "title": "About",
+    "description": "A multi-section component featuring a title, a descriptive paragraph, a 3-image grid, a series of stat blocks, client logos, and benefits with images and text. Layout varies responsively, with image and text grids adjusting for mobile. Unique features include a testimonials section and a stats showcase.",
+    "dependencies": [],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/about2.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:11.383Z"
+}

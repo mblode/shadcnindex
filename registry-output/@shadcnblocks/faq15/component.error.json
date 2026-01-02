@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "faq15",
+  "url": "https://shadcnblocks.com/r/faq15.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "faq15",
+    "type": "registry:block",
+    "title": "Faq",
+    "description": "An FAQ component with a title and a 2-column layout of items, each featuring an icon, heading, and description.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/faq15.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:20.115Z"
+}

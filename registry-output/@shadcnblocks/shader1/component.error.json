@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "shader1",
+  "url": "https://shadcnblocks.com/r/shader1.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "shader1",
+    "type": "registry:block",
+    "title": "Shader",
+    "description": "This component renders an animated, customizable shader background using Three.js and React Three Fiber, featuring vertex and fragment shaders with adjustable uniforms. Users can control its appearance by providing their own shaders, uniforms, and a color option.",
+    "dependencies": ["@react-three/fiber", "react", "three"],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/shader1.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:50.803Z"
+}

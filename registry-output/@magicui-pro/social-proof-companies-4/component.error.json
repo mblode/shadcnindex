@@ -1,0 +1,20 @@
+{
+  "registry": "@magicui-pro",
+  "component": "social-proof-companies-4",
+  "url": "https://pro.magicui.design/registry/social-proof-companies-4",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "social-proof-companies-4",
+    "type": "registry:block",
+    "files": [
+      {
+        "path": "registry/blocks/social-proof-companies-4.tsx",
+        "type": "registry:component"
+      }
+    ],
+    "meta": {
+      "height": 1204
+    }
+  },
+  "fetchedAt": "2026-01-02T11:10:49.439Z"
+}

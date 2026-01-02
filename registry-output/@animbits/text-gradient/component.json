@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "text-gradient",
+  "type": "registry:component",
+  "title": "Gradient Text",
+  "description": "Text with animated gradient effect",
+  "dependencies": ["motion"],
+  "files": [
+    {
+      "path": "registry/new-york/animations/text/gradient.tsx",
+      "content": "\"use client\";\nimport * as React from \"react\";\nimport { motion, HTMLMotionProps } from \"motion/react\";\nimport { cn } from \"@/lib/utils\";\nexport interface TextGradientProps\n  extends Omit<HTMLMotionProps<\"p\">, \"children\"> {\n  children: string;\n  gradient?: string;\n  animate?: boolean;\n  duration?: number;\n}\nexport function TextGradient({\n  children,\n  className,\n  gradient = \"linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899)\",\n  animate: shouldAnimate = true,\n  duration = 3,\n  ...props\n}: TextGradientProps) {\n  return (\n    <motion.p\n      className={cn(className)}\n      style={{\n        backgroundImage: gradient,\n        backgroundSize: shouldAnimate ? \"200% auto\" : \"100% auto\",\n        WebkitBackgroundClip: \"text\",\n        WebkitTextFillColor: \"transparent\",\n        backgroundClip: \"text\",\n      }}\n      animate={\n        shouldAnimate\n          ? {\n              backgroundPosition: [\"0% center\", \"200% center\"],\n            }\n          : undefined\n      }\n      transition={\n        shouldAnimate\n          ? {\n              duration,\n              ease: \"linear\",\n              repeat: Infinity,\n            }\n          : undefined\n      }\n      {...props}\n    >\n      {children}\n    </motion.p>\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "registry": "@shadcnui-blocks",
+  "component": "marquee",
+  "url": "https://shadcnui-blocks.com/r/marquee.json",
+  "error": "fetch failed",
+  "item": {
+    "name": "marquee",
+    "type": "registry:ui",
+    "title": "Marquee",
+    "description": "A simple marquee",
+    "files": [
+      {
+        "path": "src/components/ui/marquee.tsx",
+        "type": "registry:ui"
+      }
+    ],
+    "tailwind": {
+      "config": {
+        "theme": {
+          "extend": {
+            "animation": {
+              "marquee": "marquee var(--duration) linear infinite",
+              "marquee-vertical": "marquee-vertical var(--duration) linear infinite"
+            },
+            "keyframes": {
+              "marquee": {
+                "from": {
+                  "transform": "translateX(0)"
+                },
+                "to": {
+                  "transform": "translateX(calc(-100% - var(--gap)))"
+                }
+              },
+              "marquee-vertical": {
+                "from": {
+                  "transform": "translateY(0)"
+                },
+                "to": {
+                  "transform": "translateY(calc(-100% - var(--gap)))"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "fetchedAt": "2026-01-02T11:15:41.060Z"
+}

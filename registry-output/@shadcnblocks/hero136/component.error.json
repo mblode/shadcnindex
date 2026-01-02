@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "hero136",
+  "url": "https://shadcnblocks.com/r/hero136.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "hero136",
+    "type": "registry:block",
+    "title": "Hero",
+    "description": "A component showcasing a large header, descriptive text, two buttons, logos of trusted companies, and a uniquely styled image display with an asymmetrical background design.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["button"],
+    "files": [
+      {
+        "path": "code/block/hero136.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:34.255Z"
+}

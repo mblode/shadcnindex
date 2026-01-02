@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "about16",
+  "url": "https://shadcnblocks.com/r/about16.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "about16",
+    "type": "registry:block",
+    "title": "About",
+    "description": "A component showcasing achievements with a \"Why us?\" sticky label, a passionate narrative, and a grid of statistics (3 items). Features a full-width image and a 6-column layout with 2:4 ratio.",
+    "dependencies": ["react"],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/about16.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:11.110Z"
+}

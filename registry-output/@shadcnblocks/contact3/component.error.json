@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "contact3",
+  "url": "https://shadcnblocks.com/r/contact3.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "contact3",
+    "type": "registry:block",
+    "title": "Contact",
+    "description": "A contact component with a heading, two buttons, and sections for support, sales, inquiries, verification, and global offices. Uses icons and grid layouts.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["button"],
+    "files": [
+      {
+        "path": "code/block/contact3.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:17.740Z"
+}

@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "hero177",
+  "url": "https://shadcnblocks.com/r/hero177.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "hero177",
+    "type": "registry:block",
+    "title": "Hero",
+    "description": "A component featuring an app rating badge, a bold headline, descriptive text, list of benefits, call-to-action buttons, and two images in distinct aspect ratios.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["aspect-ratio", "badge", "button"],
+    "files": [
+      {
+        "path": "code/block/hero177.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:35.333Z"
+}

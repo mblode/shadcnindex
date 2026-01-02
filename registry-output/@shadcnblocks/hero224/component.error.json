@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "hero224",
+  "url": "https://shadcnblocks.com/r/hero224.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "hero224",
+    "type": "registry:block",
+    "title": "Hero",
+    "description": "A component with a headline, text, two buttons, and an image cloud. It&#x27;s a split layout with text on one side and images on the other.",
+    "dependencies": ["lucide-react", "react", "react-dom"],
+    "registryDependencies": ["button"],
+    "files": [
+      {
+        "path": "code/block/hero224.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:36.844Z"
+}

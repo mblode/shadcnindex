@@ -1,0 +1,22 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "collapsible-collapsible-sidebar-4",
+  "title": "Collapsible/collapsible-sidebar-",
+  "description": "A collapsible/collapsible-sidebar- example",
+  "dependencies": ["lucide-react", "@radix-ui/react-collapsible"],
+  "registryDependencies": ["collapsible"],
+  "files": [
+    {
+      "path": "code/example/collapsible/collapsible-sidebar-4.tsx",
+      "content": "import { ChevronDown } from \"lucide-react\";\n\nimport {\n  Collapsible,\n  CollapsibleContent,\n  CollapsibleTrigger,\n} from \"@/components/ui/collapsible\";\n\nexport const title = \"Minimal Sidebar Group\";\n\nconst Example = () => (\n  <div className=\"w-full max-w-lg\">\n    <Collapsible>\n      <CollapsibleTrigger className=\"flex w-full items-center justify-between px-2 py-1 text-xs font-semibold tracking-wider text-muted-foreground uppercase hover:text-foreground\">\n        <span>Getting Started</span>\n        <ChevronDown className=\"h-3 w-3\" />\n      </CollapsibleTrigger>\n      <CollapsibleContent className=\"mt-1 space-y-1\">\n        <div className=\"rounded-md px-2 py-1.5 text-sm hover:bg-muted\">\n          Introduction\n        </div>\n        <div className=\"rounded-md px-2 py-1.5 text-sm hover:bg-muted\">\n          Installation\n        </div>\n        <div className=\"rounded-md px-2 py-1.5 text-sm hover:bg-muted\">\n          Quick Start\n        </div>\n      </CollapsibleContent>\n    </Collapsible>\n  </div>\n);\n\nexport default Example;\n",
+      "type": "registry:block"
+    },
+    {
+      "path": "src/components/ui/collapsible.tsx",
+      "content": "import * as CollapsiblePrimitive from \"@radix-ui/react-collapsible\"\n\nfunction Collapsible({\n  ...props\n}: React.ComponentProps<typeof CollapsiblePrimitive.Root>) {\n  return <CollapsiblePrimitive.Root data-slot=\"collapsible\" {...props} />\n}\n\nfunction CollapsibleTrigger({\n  ...props\n}: React.ComponentProps<typeof CollapsiblePrimitive.CollapsibleTrigger>) {\n  return (\n    <CollapsiblePrimitive.CollapsibleTrigger\n      data-slot=\"collapsible-trigger\"\n      {...props}\n    />\n  )\n}\n\nfunction CollapsibleContent({\n  ...props\n}: React.ComponentProps<typeof CollapsiblePrimitive.CollapsibleContent>) {\n  return (\n    <CollapsiblePrimitive.CollapsibleContent\n      data-slot=\"collapsible-content\"\n      {...props}\n    />\n  )\n}\n\nexport { Collapsible, CollapsibleTrigger, CollapsibleContent }\n",
+      "type": "registry:ui",
+      "target": ""
+    }
+  ],
+  "type": "registry:block"
+}

@@ -1,0 +1,27 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "product-list10",
+  "url": "https://shadcnblocks.com/r/product-list10.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "product-list10",
+    "type": "registry:block",
+    "title": "Product-list",
+    "description": "This component is designed for showcasing a collection of products with promotional features, including details like stock status, pricing, and special badges. It allows users to view product images, access additional options like 'Add to cart' and 'Quick View', and features a promotional card with a call-to-action button.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": [
+      "https://shadcnblocks.com/r/price",
+      "aspect-ratio",
+      "badge",
+      "button",
+      "card"
+    ],
+    "files": [
+      {
+        "path": "code/block/product-list10.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:46.065Z"
+}

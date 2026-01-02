@@ -1,0 +1,14 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "matlab",
+  "title": "matlab",
+  "files": [
+    {
+      "path": "././static/components-generated/matlab.tsx",
+      "content": "import type { SVGProps } from \"react\";\n\nconst Matlab = (props: SVGProps<SVGSVGElement>) => (\n  <svg {...props} viewBox=\"0 0 48 48\">\n    <linearGradient\n      id=\"a\"\n      x1=\"22.645\"\n      x2=\"26.757\"\n      y1=\"10.881\"\n      y2=\"23.854\"\n      gradientUnits=\"userSpaceOnUse\"\n    >\n      <stop offset=\"0\" stop-color=\"#4adddf\" />\n      <stop offset=\".699\" stop-color=\"#3f5352\" />\n      <stop offset=\".863\" stop-color=\"#442729\" />\n    </linearGradient>\n    <path\n      fill=\"url(#a)\"\n      d=\"m21 27-7-6s1-1.5 2.5-3 2.736-1.852 4.5-3c3.511-2.284 6.5-12 11-12L21 27z\"\n    />\n    <linearGradient\n      id=\"b\"\n      x1=\"1\"\n      x2=\"37.775\"\n      y1=\"27.033\"\n      y2=\"27.033\"\n      gradientUnits=\"userSpaceOnUse\"\n    >\n      <stop offset=\"0\" stop-color=\"#4adddf\" />\n      <stop offset=\".792\" stop-color=\"#3f5352\" />\n      <stop offset=\"1\" stop-color=\"#442729\" />\n    </linearGradient>\n    <path fill=\"url(#b)\" d=\"M11 33.066 1 26l13-5 7.277 5.465L14 32.066z\" />\n    <linearGradient\n      id=\"c\"\n      x1=\"11\"\n      x2=\"47\"\n      y1=\"24\"\n      y2=\"24\"\n      gradientUnits=\"userSpaceOnUse\"\n    >\n      <stop offset=\".206\" stop-color=\"#53140f\" />\n      <stop offset=\".3\" stop-color=\"#84360f\" />\n      <stop offset=\".413\" stop-color=\"#b85b10\" />\n      <stop offset=\".511\" stop-color=\"#df7610\" />\n      <stop offset=\".59\" stop-color=\"#f68710\" />\n      <stop offset=\".639\" stop-color=\"#ff8d10\" />\n      <stop offset=\".729\" stop-color=\"#fd8a10\" />\n      <stop offset=\".8\" stop-color=\"#f58010\" />\n      <stop offset=\".865\" stop-color=\"#e86f10\" />\n      <stop offset=\".925\" stop-color=\"#d65811\" />\n      <stop offset=\".982\" stop-color=\"#c03a11\" />\n      <stop offset=\"1\" stop-color=\"#b72f11\" />\n    </linearGradient>\n    <path\n      fill=\"url(#c)\"\n      d=\"M32 3c5 0 13 27 15 34 0 0-7.017-6.63-11-6s-5.47 6.548-9.725 10.756C23.5 44.5 21 45 21 45s-.206-8.124-5-11c-2.5-1.5-5-1-5-1s6.049-2.901 9.474-8.174S28.5 3 32 3z\"\n    />\n  </svg>\n);\n\nexport { Matlab };\n",
+      "type": "registry:component",
+      "target": "components/ui/svgs/matlab.tsx"
+    }
+  ],
+  "type": "registry:component"
+}

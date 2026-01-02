@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "changelog2",
+  "url": "https://shadcnblocks.com/r/changelog2.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "changelog2",
+    "type": "registry:block",
+    "title": "Changelog",
+    "description": "A changelog component with a title, NEW badge, description, email signup, and dated entries with images, headlines, and text links.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["badge", "button", "input"],
+    "files": [
+      {
+        "path": "code/block/changelog2.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:15.851Z"
+}

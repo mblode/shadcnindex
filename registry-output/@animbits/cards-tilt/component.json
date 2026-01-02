@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "cards-tilt",
+  "type": "registry:component",
+  "title": "Tilt Card",
+  "description": "Card with mouse-tracking tilt effect",
+  "dependencies": ["motion"],
+  "files": [
+    {
+      "path": "registry/new-york/animations/cards/tilt.tsx",
+      "content": "\"use client\";\nimport * as React from \"react\";\nimport { motion, HTMLMotionProps } from \"motion/react\";\nimport { cn } from \"@/lib/utils\";\nexport interface CardTiltProps extends HTMLMotionProps<\"div\"> {\n  maxTilt?: number;\n  duration?: number;\n}\nexport function CardTilt({\n  children,\n  className,\n  maxTilt = 10,\n  duration = 0.3,\n  ...props\n}: CardTiltProps) {\n  const [tilt, setTilt] = React.useState({ x: 0, y: 0 });\n  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {\n    const rect = e.currentTarget.getBoundingClientRect();\n    const x = (e.clientX - rect.left) / rect.width;\n    const y = (e.clientY - rect.top) / rect.height;\n    setTilt({\n      x: (y - 0.5) * maxTilt * 2,\n      y: (x - 0.5) * -maxTilt * 2,\n    });\n  };\n  const handleMouseLeave = () => {\n    setTilt({ x: 0, y: 0 });\n  };\n  return (\n    <motion.div\n      onMouseMove={handleMouseMove}\n      onMouseLeave={handleMouseLeave}\n      animate={{\n        rotateX: tilt.x,\n        rotateY: tilt.y,\n      }}\n      transition={{ duration }}\n      style={{ transformStyle: \"preserve-3d\" }}\n      className={cn(\"cursor-pointer\", className)}\n      {...props}\n    >\n      {children}\n    </motion.div>\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "text-slide-up",
+  "type": "registry:component",
+  "title": "Slide Up Text",
+  "description": "Text that slides up word by word or character by character",
+  "dependencies": ["motion"],
+  "files": [
+    {
+      "path": "registry/new-york/animations/text/slide-up.tsx",
+      "content": "\"use client\";\nimport * as React from \"react\";\nimport { motion, HTMLMotionProps } from \"motion/react\";\nimport { cn } from \"@/lib/utils\";\nexport interface TextSlideUpProps\n  extends Omit<HTMLMotionProps<\"p\">, \"children\"> {\n  children: string;\n  duration?: number;\n  delay?: number;\n  by?: \"character\" | \"word\";\n  staggerDelay?: number;\n  distance?: number;\n}\nexport function TextSlideUp({\n  children,\n  className,\n  duration = 0.5,\n  delay = 0,\n  by = \"word\",\n  staggerDelay = 0.03,\n  distance = 20,\n  ...props\n}: TextSlideUpProps) {\n  const units = by === \"word\" ? children.split(\" \") : children.split(\"\");\n  return (\n    <motion.p className={cn(className)} {...props}>\n      {units.map((unit, index) => (\n        <motion.span\n          key={index}\n          initial={{ opacity: 0, y: distance }}\n          animate={{ opacity: 1, y: 0 }}\n          transition={{\n            duration,\n            delay: delay + index * staggerDelay,\n          }}\n          style={{ display: \"inline-block\" }}\n        >\n          {unit}\n          {by === \"word\" && index < units.length - 1 && \"\\u00A0\"}\n        </motion.span>\n      ))}\n    </motion.p>\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature235",
+  "url": "https://shadcnblocks.com/r/feature235.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature235",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A component displays UI blocks with flickering image animations and a stylized border effect. It includes descriptive text and buttons, within a dual-column layout.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["https://magicui.design/r/shine-border", "button"],
+    "files": [
+      {
+        "path": "code/block/feature235.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:26.063Z"
+}

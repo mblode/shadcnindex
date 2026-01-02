@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "logos7",
+  "url": "https://shadcnblocks.com/r/logos7.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "logos7",
+    "type": "registry:block",
+    "title": "Logos",
+    "description": "A component showcasing logos with a headline, organized in a horizontally scrolling ticker, featuring hover effects.",
+    "dependencies": [],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/logos7.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:41.934Z"
+}

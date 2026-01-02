@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "logos12",
+  "url": "https://shadcnblocks.com/r/logos12.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "logos12",
+    "type": "registry:block",
+    "title": "Logos",
+    "description": "A carousel component displaying logos with auto-scroll functionality, supporting dark mode inversion.",
+    "dependencies": ["embla-carousel-auto-scroll"],
+    "registryDependencies": ["carousel"],
+    "files": [
+      {
+        "path": "code/block/logos12.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:41.790Z"
+}

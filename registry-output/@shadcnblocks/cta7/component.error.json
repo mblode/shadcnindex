@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "cta7",
+  "url": "https://shadcnblocks.com/r/cta7.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "cta7",
+    "type": "registry:block",
+    "title": "Cta",
+    "description": "A two-column call-to-action component featuring bullet points with checkmarks and a \"Get Started\" button, decorated with a geometric background.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["button"],
+    "files": [
+      {
+        "path": "code/block/cta7.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:19.093Z"
+}

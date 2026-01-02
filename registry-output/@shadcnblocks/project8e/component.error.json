@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "project8e",
+  "url": "https://shadcnblocks.com/r/project8e.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "project8e",
+    "type": "registry:block",
+    "title": "Project8e",
+    "description": "A two-section block featuring a fullscreen hero with animated text and a detailed content section in a 2-column layout with credits.",
+    "dependencies": ["framer-motion"],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/project8e.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:47.840Z"
+}

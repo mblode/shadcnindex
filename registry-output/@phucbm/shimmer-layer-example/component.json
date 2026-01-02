@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "shimmer-layer-example",
+  "type": "registry:component",
+  "title": "Shimmer Layer Example",
+  "description": "Pure CSS to add an animated shimmer effect that activates on hover.",
+  "dependencies": [],
+  "registryDependencies": ["https://ui.phucbm.com/r/shimmer-layer.json"],
+  "files": [
+    {
+      "path": "registry/phucbm/blocks/shimmer-layer/example.transformed.tsx",
+      "content": "import {ShimmerLayer} from \"@/components/phucbm/shimmer-layer\";\n\nexport default function Example() {\n    return (\n        <div className=\"h-screen flex items-center justify-center gap-10 bg-slate-50\">\n            {/*button*/}\n            <a\n                href=\"#\"\n                className=\"group/shimmer overflow-hidden relative\n                px-5 py-3 bg-blue-600 text-white rounded-lg text-sm\n                border-t-[2px] border-x-[2px] border-b-[4px] border-black/15\n                transition-all duration-300 ease-in-out\n                hover:shadow-[0_4px_10px_rgba(0,0,0,0.08)] hover:bg-blue-600/90 hover:border-b-[2px]\n                \"\n            >\n                HOVER ON ME\n                <ShimmerLayer/>\n            </a>\n\n\n            {/*image*/}\n            <div\n                className=\"w-56 aspect-square rounded-full group/shimmer relative overflow-hidden ring-1 ring-slate-300\">\n                <img src={`https://picsum.photos/400/400?random=${Math.random()}`}\n                     alt=\"Image demo\"\n                     className=\"object-cover w-full h-full\"/>\n                <ShimmerLayer skew={-20} duration={1000} width={15}/>\n            </div>\n\n        </div>\n    );\n}",
+      "type": "registry:component",
+      "target": "index.tsx"
+    }
+  ]
+}

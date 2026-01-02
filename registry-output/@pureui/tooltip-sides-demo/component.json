@@ -1,0 +1,13 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "tooltip-sides-demo",
+  "type": "registry:example",
+  "registryDependencies": ["tooltip"],
+  "files": [
+    {
+      "path": "src/registry/pure-ui/examples/tooltip/tooltip-sides-demo.tsx",
+      "content": "import {\n  Tooltip,\n  TooltipPopup,\n  TooltipProvider,\n  TooltipTrigger,\n} from \"@/registry/pure-ui/ui/tooltip\";\n\nexport const TooltipSidesDemo = () => {\n  const sides = [\n    \"top\",\n    \"right\",\n    \"bottom\",\n    \"left\",\n    \"inline-start\",\n    \"inline-end\",\n  ] as const;\n\n  return (\n    <div className=\"flex flex-wrap md:inline-grid md:grid-cols-3 gap-4\">\n      <TooltipProvider>\n        {sides.map((side) => {\n          return (\n            <Tooltip key={side}>\n              <TooltipTrigger\n                render={\n                  <button className=\"inline-flex items-center gap-1 px-2 py-0.5 rounded-md border border-border/40 bg-secondary/50 hover:bg-secondary cursor-pointer\" />\n                }\n              >\n                {side.replace(\"-\", \" \")}\n              </TooltipTrigger>\n              <TooltipPopup showArrow side={side} sideOffset={8}>\n                <p className=\"text-xs text-muted-foreground\">\n                  8:51 PM - Oct 22, 2025\n                </p>\n              </TooltipPopup>\n            </Tooltip>\n          );\n        })}\n      </TooltipProvider>\n    </div>\n  );\n};\n",
+      "type": "registry:example"
+    }
+  ]
+}

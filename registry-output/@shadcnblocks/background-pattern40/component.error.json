@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "background-pattern40",
+  "url": "https://shadcnblocks.com/r/background-pattern40.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "background-pattern40",
+    "type": "registry:block",
+    "title": "Background-pattern",
+    "description": "This component serves as a versatile background pattern featuring a combination of linear and radial gradients, creating a grid with dots effect. It is designed to seamlessly integrate into your project with customizable styles through additional class names.",
+    "dependencies": [],
+    "registryDependencies": ["https://shadcnblocks.com/r/pattern-placeholder"],
+    "files": [
+      {
+        "path": "code/block/background-pattern40.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:13.500Z"
+}

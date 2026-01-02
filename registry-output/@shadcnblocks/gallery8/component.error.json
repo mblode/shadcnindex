@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "gallery8",
+  "url": "https://shadcnblocks.com/r/gallery8.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "gallery8",
+    "type": "registry:block",
+    "title": "Gallery",
+    "description": "A carousel component displaying resources in 3 columns, featuring navigation, separators, and dynamic link icons.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": ["carousel", "separator"],
+    "files": [
+      {
+        "path": "code/block/gallery8.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:33.403Z"
+}

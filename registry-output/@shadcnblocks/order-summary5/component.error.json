@@ -1,0 +1,27 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "order-summary5",
+  "url": "https://shadcnblocks.com/r/order-summary5.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "order-summary5",
+    "type": "registry:block",
+    "title": "Order-summary",
+    "description": "This component displays an order summary with detailed information about ordered items, pricing, and estimated delivery dates, allowing users to view, track orders, and continue shopping. It features interactive elements like buttons to toggle the display and manage actions, as well as formatted pricing details for enhanced user experience.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": [
+      "aspect-ratio",
+      "button",
+      "scroll-area",
+      "separator",
+      "sheet"
+    ],
+    "files": [
+      {
+        "path": "code/block/order-summary5.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:43.222Z"
+}

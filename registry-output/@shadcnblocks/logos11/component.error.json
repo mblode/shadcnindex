@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "logos11",
+  "url": "https://shadcnblocks.com/r/logos11.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "logos11",
+    "type": "registry:block",
+    "title": "Logos",
+    "description": "A component featuring dual carousels of logos, a central title, and action buttons, styled with patterns and lines.",
+    "dependencies": ["embla-carousel-auto-scroll", "react"],
+    "registryDependencies": ["button", "carousel"],
+    "files": [
+      {
+        "path": "code/block/logos11.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:41.641Z"
+}

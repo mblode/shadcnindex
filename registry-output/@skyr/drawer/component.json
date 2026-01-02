@@ -1,0 +1,45 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "drawer",
+  "type": "registry:block",
+  "title": "Drawer",
+  "registryDependencies": ["https://ui-play.skyroc.me/r/style.json"],
+  "files": [
+    {
+      "path": "src/components/drawer/Drawer.tsx",
+      "content": "'use client';\n\nimport { useComponentConfig } from '../config-provider/context';\nimport DrawerUI from './DrawerUI';\nimport type { DrawerProps } from './types';\n\nconst Drawer = (props: DrawerProps) => {\n  const config = useComponentConfig('drawer');\n\n  const mergedProps = {\n    ...config,\n    ...props\n  };\n\n  return (\n    <DrawerUI\n      {...mergedProps}\n    />\n  );\n};\n\nDrawer.displayName = 'Drawer';\n\nexport default Drawer;\n",
+      "type": "registry:ui",
+      "target": "components/drawer/Drawer.tsx"
+    },
+    {
+      "path": "src/components/drawer/DrawerContent.tsx",
+      "content": "import { Content } from '@radix-ui/react-dialog';\nimport { cn } from '@/lib/utils';\nimport { drawerVariants } from './drawer-variants';\nimport type { DrawerContentProps } from './types';\n\nconst DrawerContent = (props: DrawerContentProps) => {\n  const { className, side, ...rest } = props;\n\n  const { content } = drawerVariants({ side });\n\n  const mergedCls = cn(content(), className);\n\n  return (\n    <Content\n      className={mergedCls}\n      data-side={side}\n      data-slot=\"drawer-content\"\n      {...rest}\n    />\n  );\n};\n\nexport default DrawerContent;\n",
+      "type": "registry:ui",
+      "target": "components/drawer/DrawerContent.tsx"
+    },
+    {
+      "path": "src/components/drawer/DrawerUI.tsx",
+      "content": "'use client';\n\nimport { cn } from '@/lib/utils';\nimport { Dialog } from '../dialog';\nimport DrawerContent from './DrawerContent';\nimport type { DrawerProps } from './types';\n\nconst DrawerUI = (props: DrawerProps) => {\n  const { children, scrollable = true, ...rest } = props;\n\n  return (\n    <Dialog\n      contentComponent={DrawerContent}\n      {...rest}\n    >\n      <div className={cn('flex-grow', scrollable && ' overflow-auto')}>{children}</div>\n    </Dialog>\n  );\n};\n\nexport default DrawerUI;\n",
+      "type": "registry:ui",
+      "target": "components/drawer/DrawerUI.tsx"
+    },
+    {
+      "path": "src/components/drawer/drawer-variants.ts",
+      "content": "import { tv } from 'tailwind-variants';\nimport type { VariantProps } from 'tailwind-variants';\n\nexport const drawerVariants = tv({\n  defaultVariants: {\n    side: 'right',\n    size: 'md'\n  },\n  slots: {\n    content: [\n      `fixed z-50 flex flex-col justify-between items-stretch border bg-background rounded-md transition ease-in-out`,\n      `data-[state=open]:animate-in data-[state=open]:duration-500`,\n      `data-[state=closed]:animate-out data-[state=closed]:duration-300`\n    ]\n  },\n  variants: {\n    side: {\n      bottom: {\n        content: `inset-x-0 bottom-0 border-t rounded-b-0 data-[state=open]:slide-in-from-bottom data-[state=closed]:slide-out-to-bottom`\n      },\n      left: {\n        content: `inset-y-0 left-0 h-full w-3/4 border-r rounded-l-0 data-[state=open]:slide-in-from-left data-[state=closed]:slide-out-to-left sm:max-w-sm`\n      },\n      right: {\n        content: `inset-y-0 right-0 h-full w-3/4 border-l rounded-r-0 data-[state=open]:slide-in-from-right data-[state=closed]:slide-out-to-right sm:max-w-sm`\n      },\n      top: {\n        content: `inset-x-0 top-0 border-b rounded-t-0 data-[state=open]:slide-in-from-top data-[state=closed]:slide-out-to-top`\n      }\n    },\n    size: {\n      '2xl': {\n        content: `gap-y-6 px-7 py-6 text-xl`\n      },\n      'lg': {\n        content: `gap-y-4 px-5 py-4 text-base`\n      },\n      'md': {\n        content: `gap-y-3 px-4 py-3 text-sm`\n      },\n      'sm': {\n        content: `gap-y-2 px-3 py-2 text-xs`\n      },\n      'xl': {\n        content: `gap-y-5 px-6 py-5 text-lg`\n      },\n      'xs': {\n        content: `gap-y-1.5 px-2 py-1.5 text-2xs`\n      }\n    }\n  }\n});\n\ntype DrawerVariants = VariantProps<typeof drawerVariants>;\n\nexport type DrawerSide = NonNullable<DrawerVariants['side']>;\n",
+      "type": "registry:ui",
+      "target": "components/drawer/drawer-variants.ts"
+    },
+    {
+      "path": "src/components/drawer/index.ts",
+      "content": "export { default as Drawer } from './Drawer';\nexport { default as DrawerContent } from './DrawerContent';\n\nexport * from './types';\n",
+      "type": "registry:ui",
+      "target": "components/drawer/index.ts"
+    },
+    {
+      "path": "src/components/drawer/types.ts",
+      "content": "import type { DialogContentProps } from '@radix-ui/react-dialog';\nimport type { StyledComponentProps, ClassValue } from '@/types/shared';\nimport type { DialogSlots as DrawerSlots } from '../dialog/dialog-variants';\nimport type { DialogProps } from '../dialog/types';\nimport type { DrawerSide } from './drawer-variants';\n\n/**\n * Props for the drawer content component.\n * The main container that slides in from a specified side of the screen.\n *\n * @example\n * ```tsx\n * <DrawerContent side=\"right\">\n *   <DrawerHeader>\n *     <DrawerTitle>Drawer Title</DrawerTitle>\n *   </DrawerHeader>\n *   <div>Drawer content goes here</div>\n * </DrawerContent>\n * ```\n */\nexport interface DrawerContentProps extends StyledComponentProps<DialogContentProps> {\n  /**\n   * The side of the screen from which the drawer slides in.\n   * Can be \"top\", \"right\", \"bottom\", or \"left\".\n   */\n  side?: DrawerSide;\n}\n\n/**\n * Class names for different slots in the drawer component.\n * Allows customizing styles for the overlay, content, and other parts.\n */\nexport type DrawerClassNames = Partial<Record<DrawerSlots, ClassValue>>;\n\n/**\n * Props for the main Drawer component.\n * A side panel modal that slides in from the edge of the screen.\n *\n * @example\n * ```tsx\n * <Drawer scrollable>\n *   <DrawerTrigger>Open Drawer</DrawerTrigger>\n *   <DrawerContent side=\"left\">\n *     <DrawerHeader>\n *       <DrawerTitle>Navigation</DrawerTitle>\n *     </DrawerHeader>\n *     <DrawerBody>\n *       <nav>Navigation items here</nav>\n *     </DrawerBody>\n *   </DrawerContent>\n * </Drawer>\n * ```\n */\nexport interface DrawerProps extends Omit<DialogProps<DrawerContentProps>, 'contentComponent'> {\n  /**\n   * Whether the drawer content should be scrollable.\n   * When true, adds overflow-auto to the content wrapper.\n   * @default true\n   */\n  scrollable?: boolean;\n}\n\nexport { DrawerSide };\n",
+      "type": "registry:ui",
+      "target": "components/drawer/types.ts"
+    }
+  ]
+}

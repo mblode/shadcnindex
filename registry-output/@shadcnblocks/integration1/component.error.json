@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "integration1",
+  "url": "https://shadcnblocks.com/r/integration1.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "integration1",
+    "type": "registry:block",
+    "title": "Integration",
+    "description": "A component showcasing a collection of integration options with app icons, titles, and descriptions, arranged in up to two columns.",
+    "dependencies": ["react"],
+    "registryDependencies": ["button", "card"],
+    "files": [
+      {
+        "path": "code/block/integration1.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:40.567Z"
+}

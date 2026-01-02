@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature140",
+  "url": "https://shadcnblocks.com/r/feature140.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature140",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A carousel block displaying items with titles, descriptions, and images in a flex layout, includes previous and next controls. Each item combines text and a full-width image.",
+    "dependencies": [],
+    "registryDependencies": ["carousel"],
+    "files": [
+      {
+        "path": "code/block/feature140.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:22.291Z"
+}

@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature194",
+  "url": "https://shadcnblocks.com/r/feature194.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature194",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A component showcasing 4 unique features with icons in a 4-column layout, each with a description and \"Learn more\" link.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["button", "card"],
+    "files": [
+      {
+        "path": "code/block/feature194.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:24.259Z"
+}

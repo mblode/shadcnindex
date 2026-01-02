@@ -1,0 +1,14 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "json",
+  "title": "json",
+  "files": [
+    {
+      "path": "././static/components-generated/json.tsx",
+      "content": "import type { SVGProps } from \"react\";\n\nconst Json = (props: SVGProps<SVGSVGElement>) => (\n  <svg\n    {...props}\n    xmlnsXlink=\"http://www.w3.org/1999/xlink\"\n    viewBox=\"0 0 160 160\"\n  >\n    <defs>\n      <linearGradient id=\"a\">\n        <stop offset=\"0\" />\n        <stop offset=\"1\" stop-color=\"#fff\" />\n      </linearGradient>\n      <linearGradient\n        xlink:href=\"#a\"\n        id=\"c\"\n        x1=\"-553.27\"\n        x2=\"-666.12\"\n        y1=\"525.91\"\n        y2=\"413.05\"\n        gradientTransform=\"matrix(.99884 0 0 .9987 689.01 -388.84)\"\n        gradientUnits=\"userSpaceOnUse\"\n      />\n      <linearGradient\n        xlink:href=\"#a\"\n        id=\"b\"\n        x1=\"-666.12\"\n        x2=\"-553.27\"\n        y1=\"413.04\"\n        y2=\"525.91\"\n        gradientTransform=\"matrix(.99884 0 0 .9987 689.01 -388.84)\"\n        gradientUnits=\"userSpaceOnUse\"\n      />\n    </defs>\n    <g fillRule=\"evenodd\" color=\"#000\">\n      <path\n        fill=\"url(#b)\"\n        d=\"M79.865 119.1c35.398 48.255 70.04-13.469 69.989-50.587C149.794 24.627 105.313.099 79.836.099 38.944.099 0 33.895 0 80.135 0 131.531 44.64 160 79.836 160c-7.965-1.147-34.506-6.834-34.863-67.967-.24-41.347 13.488-57.866 34.805-50.599.477.177 23.514 9.265 23.514 38.951 0 29.56-23.427 38.715-23.427 38.715z\"\n      />\n      <path\n        fill=\"url(#c)\"\n        d=\"M79.823 41.401C56.433 33.339 27.78 52.617 27.78 91.23c0 63.048 46.721 68.77 52.384 68.77C121.056 160 160 126.204 160 79.964 160 28.568 115.36.099 80.164.099c9.748-1.35 52.541 10.55 52.541 69.037 0 38.141-31.953 58.905-52.735 50.033-.477-.177-23.514-9.264-23.514-38.951 0-29.56 23.367-38.818 23.367-38.818z\"\n      />\n    </g>\n  </svg>\n);\n\nexport { Json };\n",
+      "type": "registry:component",
+      "target": "components/ui/svgs/json.tsx"
+    }
+  ],
+  "type": "registry:component"
+}

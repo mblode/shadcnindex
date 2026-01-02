@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "incentives6",
+  "url": "https://shadcnblocks.com/r/incentives6.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "incentives6",
+    "type": "registry:block",
+    "title": "Incentives",
+    "description": "This component is an interactive carousel that displays a list of incentives, each with a title, description, and icon. It allows users to browse through various incentive options such as customer care and app information with navigational controls for easier access.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["carousel", "item"],
+    "files": [
+      {
+        "path": "code/block/incentives6.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:40.274Z"
+}

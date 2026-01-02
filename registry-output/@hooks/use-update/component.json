@@ -1,0 +1,13 @@
+{
+  "name": "use-update",
+  "author": "Brendan Dash (https://shadcn-hooks.vercel.app)",
+  "description": "A hook to force a component to re-render",
+  "files": [
+    {
+      "path": "registry/hooks/use-update.ts",
+      "content": "import { useCallback, useState } from 'react'\n\nexport function useUpdate() {\n  const [, setState] = useState({})\n\n  return useCallback(() => setState({}), [])\n}\n",
+      "type": "registry:hook"
+    }
+  ],
+  "type": "registry:hook"
+}

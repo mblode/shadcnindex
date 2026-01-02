@@ -1,0 +1,26 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "download5",
+  "url": "https://shadcnblocks.com/r/download5.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "download5",
+    "type": "registry:block",
+    "title": "Download",
+    "description": "A component providing options to download software, with tabs for Linux, MacOS, and a waitlist for Windows. Features version selection and size details.",
+    "dependencies": ["lucide-react", "react", "react-icons"],
+    "registryDependencies": [
+      "https://www.kibo-ui.com/r/snippet.json",
+      "button",
+      "separator",
+      "tabs"
+    ],
+    "files": [
+      {
+        "path": "code/block/download5.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:19.377Z"
+}

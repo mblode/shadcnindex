@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "button-group-button-group-standard-3",
+  "url": "https://shadcnblocks.com/r/button-group-button-group-standard-3.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "button-group-button-group-standard-3",
+    "type": "registry:block",
+    "title": "Button-group/button-group-standard-",
+    "description": "A button-group/button-group-standard- example",
+    "dependencies": [],
+    "registryDependencies": ["button", "button-group"],
+    "files": [
+      {
+        "path": "code/example/button-group/button-group-standard-3.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:15:05.399Z"
+}

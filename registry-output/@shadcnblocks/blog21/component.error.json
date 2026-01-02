@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "blog21",
+  "url": "https://shadcnblocks.com/r/blog21.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "blog21",
+    "type": "registry:block",
+    "title": "Blog",
+    "description": "A carousel component displaying blog posts with navigation arrows, tags, and a \"View All Articles\" button.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": ["badge", "button", "carousel"],
+    "files": [
+      {
+        "path": "code/block/blog21.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:14.275Z"
+}

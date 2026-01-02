@@ -1,0 +1,14 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "microsoft",
+  "title": "microsoft",
+  "files": [
+    {
+      "path": "././static/components-generated/microsoft.tsx",
+      "content": "import type { SVGProps } from \"react\";\n\nconst Microsoft = (props: SVGProps<SVGSVGElement>) => (\n  <svg {...props} viewBox=\"0 0 256 256\" preserveAspectRatio=\"xMidYMid\">\n    <path fill=\"#F1511B\" d=\"M121.666 121.666H0V0h121.666z\" />\n    <path fill=\"#80CC28\" d=\"M256 121.666H134.335V0H256z\" />\n    <path fill=\"#00ADEF\" d=\"M121.663 256.002H0V134.336h121.663z\" />\n    <path fill=\"#FBBC09\" d=\"M256 256.002H134.335V134.336H256z\" />\n  </svg>\n);\n\nexport { Microsoft };\n",
+      "type": "registry:component",
+      "target": "components/ui/svgs/microsoft.tsx"
+    }
+  ],
+  "type": "registry:component"
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "avatar",
+  "type": "registry:component",
+  "title": "Avatar",
+  "description": "Circular Avatar",
+  "dependencies": ["@radix-ui/react-avatar"],
+  "devDependencies": [],
+  "registryDependencies": ["avatars.json"],
+  "files": [
+    {
+      "path": "src/registry/zippystarter/components/avatar/demo.tsx",
+      "type": "registry:component",
+      "target": "components/zippystarter/avatar-demo.tsx",
+      "content": "import { Avatar } from \"@/components/avatar\";\nimport { avatars } from \"@/registry/zippystarter/data/avatars\";\n\nconst defaultProps = {\n  src: avatars.travelBug.avatarSrc,\n  alt: avatars.travelBug.avatarName,\n};\n\nexport function Demo() {\n  return (\n    <div className=\"@container h-full place-content-center p-8\">\n      <div className=\"grid grid-flow-col justify-around max-w-2xl mx-auto items-end gap-1\">\n        <Avatar {...defaultProps} size=\"xs\" />\n        <Avatar {...defaultProps} size=\"sm\" />\n        <Avatar {...defaultProps} size=\"md\" />\n        <Avatar {...defaultProps} size=\"lg\" />\n        <Avatar {...defaultProps} size=\"xl\" />\n        <Avatar {...defaultProps} size=\"2xl\" />\n      </div>\n    </div>\n  );\n}\n"
+    },
+    {
+      "path": "src/registry/zippystarter/components/avatar/index.tsx",
+      "type": "registry:component",
+      "target": "components/zippystarter/avatar.tsx",
+      "content": "import { cn } from \"@/lib/utils\";\nimport { cva, type VariantProps } from \"class-variance-authority\";\nimport * as AvatarPrimitive from \"@radix-ui/react-avatar\";\n\nconst avatarVariants = cva(\n  \"inline-block overflow-hidden *:data-[slot=avatar]:ring-background *:data-[slot=avatar]:ring-2\",\n  {\n    variants: {\n      size: {\n        \"2xl\": \"size-20 text-2xl\",\n        xl: \"size-16 text-xl\",\n        lg: \"size-14 text-lg\",\n        md: \"size-12 text-md\",\n        sm: \"size-10 text-sm\",\n        xs: \"size-6 text-xs\",\n      },\n    },\n    defaultVariants: {\n      size: \"lg\",\n    },\n  },\n);\n\nexport interface AvatarProps extends VariantProps<typeof avatarVariants> {\n  src?: string;\n  initials?: string;\n  alt?: string;\n  className?: string;\n  square?: boolean;\n  fallbackColor?: {\n    background?: string;\n    text?: string;\n  };\n}\n\nexport function Avatar({\n  src,\n  initials,\n  alt = \"\",\n  className,\n  size = \"lg\",\n  square = false,\n  fallbackColor,\n}: AvatarProps) {\n  return (\n    <AvatarPrimitive.Root\n      data-slot=\"avatar\"\n      className={cn(\n        \"relative\",\n        avatarVariants({\n          size,\n          className,\n        }),\n        square ? \"rounded-lg\" : \"rounded-full\",\n      )}\n    >\n      <AvatarPrimitive.Image\n        data-slot=\"avatar-image\"\n        src={src}\n        alt={alt}\n        className=\"aspect-square size-full\"\n      />\n      <AvatarPrimitive.Fallback\n        data-slot=\"avatar-fallback\"\n        className={cn(\n          \"flex size-full items-center justify-center\",\n          fallbackColor?.background || \"bg-accent\",\n          fallbackColor?.text || \"text-accent-foreground\",\n          square ? \"rounded-lg\" : \"rounded-full\",\n        )}\n      >\n        {initials}\n      </AvatarPrimitive.Fallback>\n    </AvatarPrimitive.Root>\n  );\n}\n"
+    }
+  ],
+  "categories": ["avatars"],
+  "meta": {
+    "iframeHeight": "200px"
+  }
+}

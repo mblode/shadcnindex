@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "x-formerly-twitter",
+  "title": "x-formerly-twitter",
+  "files": [
+    {
+      "path": "././static/components-generated/x.tsx",
+      "content": "import type { SVGProps } from \"react\";\n\nconst X = (props: SVGProps<SVGSVGElement>) => (\n  <svg {...props} fill=\"none\" viewBox=\"0 0 1200 1227\">\n    <path\n      fill=\"#000\"\n      d=\"M714.163 519.284 1160.89 0h-105.86L667.137 450.887 357.328 0H0l468.492 681.821L0 1226.37h105.866l409.625-476.152 327.181 476.152H1200L714.137 519.284h.026ZM569.165 687.828l-47.468-67.894-377.686-540.24h162.604l304.797 435.991 47.468 67.894 396.2 566.721H892.476L569.165 687.854v-.026Z\"\n    />\n  </svg>\n);\n\nexport { X };\n",
+      "type": "registry:component",
+      "target": "components/ui/svgs/x.tsx"
+    },
+    {
+      "path": "././static/components-generated/xDark.tsx",
+      "content": "import type { SVGProps } from \"react\";\n\nconst XDark = (props: SVGProps<SVGSVGElement>) => (\n  <svg {...props} fill=\"none\" viewBox=\"0 0 1200 1227\">\n    <path\n      fill=\"#fff\"\n      d=\"M714.163 519.284 1160.89 0h-105.86L667.137 450.887 357.328 0H0l468.492 681.821L0 1226.37h105.866l409.625-476.152 327.181 476.152H1200L714.137 519.284h.026ZM569.165 687.828l-47.468-67.894-377.686-540.24h162.604l304.797 435.991 47.468 67.894 396.2 566.721H892.476L569.165 687.854v-.026Z\"\n    />\n  </svg>\n);\n\nexport { XDark };\n",
+      "type": "registry:component",
+      "target": "components/ui/svgs/xDark.tsx"
+    }
+  ],
+  "type": "registry:component"
+}

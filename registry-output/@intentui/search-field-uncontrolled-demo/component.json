@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "extends": "none",
+  "name": "search-field-uncontrolled-demo",
+  "title": "Search Field Uncontrolled",
+  "description": "search-field-uncontrolled-demo",
+  "registryDependencies": ["https://intentui.com/r/search-field"],
+  "files": [
+    {
+      "path": "src/components/docs/forms/search-field/search-field-uncontrolled-demo.tsx",
+      "content": "\"use client\"\n\nimport { SearchField, SearchInput } from \"@/components/ui/search-field\"\n\nexport default function SearchFieldControlledDemo() {\n  return (\n    <SearchField defaultValue=\"Laravel\" aria-label=\"Framework\">\n      <SearchInput />\n    </SearchField>\n  )\n}\n",
+      "type": "registry:page",
+      "target": "app/search-field-uncontrolled-demo/page.tsx"
+    }
+  ],
+  "type": "registry:page"
+}

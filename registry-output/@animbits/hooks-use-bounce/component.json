@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "hooks-use-bounce",
+  "type": "registry:lib",
+  "title": "Use Bounce",
+  "description": "The use-bounce hook.",
+  "dependencies": ["motion"],
+  "files": [
+    {
+      "path": "lib/use-bounce.ts",
+      "content": "import { type MotionProps, type Easing } from \"motion/react\";\n\nexport interface UseBounceOptions {\n  bounceHeight?: number;\n\n  duration?: number;\n\n  ease?: Easing | Easing[];\n\n  repeat?: number;\n\n  delay?: number;\n\n  onHover?: boolean;\n}\n\nexport function useBounce(options: UseBounceOptions = {}): MotionProps {\n  const {\n    bounceHeight = -20,\n    duration = 0.6,\n    ease = [0.68, -0.55, 0.265, 1.55],\n    repeat = Infinity,\n    delay = 0,\n    onHover = false,\n  } = options;\n\n  if (onHover) {\n    return {\n      whileHover: {\n        y: [0, bounceHeight, 0],\n      },\n      transition: {\n        duration,\n        ease,\n      },\n    };\n  }\n\n  return {\n    animate: {\n      y: [0, bounceHeight, 0],\n    },\n    transition: {\n      duration,\n      ease,\n      repeat,\n      delay,\n    },\n  };\n}\n",
+      "type": "registry:lib"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "text-shimmer",
+  "type": "registry:component",
+  "title": "Shimmer Text",
+  "description": "Text with gradient shimmer sweep animation",
+  "dependencies": ["motion"],
+  "files": [
+    {
+      "path": "registry/new-york/animations/text/shimmer.tsx",
+      "content": "\"use client\";\nimport * as React from \"react\";\nimport { cn } from \"@/lib/utils\";\nimport { useShimmer, type UseShimmerOptions } from \"@/lib/use-shimmer\";\nexport interface TextShimmerProps\n  extends React.HTMLAttributes<HTMLParagraphElement>,\n    UseShimmerOptions {\n  children: string;\n  as?: \"h1\" | \"h2\" | \"h3\" | \"h4\" | \"h5\" | \"h6\" | \"p\" | \"span\" | \"div\";\n}\nexport function TextShimmer({\n  children,\n  className,\n  duration,\n  colors,\n  as: Component = \"p\",\n  ...props\n}: TextShimmerProps) {\n  const shimmerStyle = useShimmer({\n    duration,\n    colors: colors || [\"transparent\", \"#3b82f6\", \"transparent\"],\n  });\n  return (\n    <Component style={shimmerStyle} className={cn(className)} {...props}>\n      {children}\n    </Component>\n  );\n}\n",
+      "type": "registry:component"
+    },
+    {
+      "path": "lib/use-shimmer.ts",
+      "content": "import { type CSSProperties } from \"react\";\n\nexport interface UseShimmerOptions {\n  duration?: number;\n  colors?: [string, string, string];\n}\n\nexport function useShimmer(options: UseShimmerOptions = {}): CSSProperties {\n  const {\n    duration = 2.5,\n    colors = [\"transparent\", \"rgba(255,255,255,0.8)\", \"transparent\"],\n  } = options;\n\n  const gradient = `linear-gradient(90deg, ${colors[0]} 0%, ${colors[1]} 50%, ${colors[2]} 100%)`;\n\n  const animationName = \"shimmer\";\n\n  if (typeof document !== \"undefined\") {\n    const styleId = \"shimmer-keyframes\";\n    if (!document.getElementById(styleId)) {\n      const style = document.createElement(\"style\");\n      style.id = styleId;\n      style.textContent = `\n        @keyframes shimmer {\n          0% { background-position: 200% center; }\n          100% { background-position: -200% center; }\n        }\n      `;\n      document.head.appendChild(style);\n    }\n  }\n\n  return {\n    display: \"inline-block\",\n    backgroundImage: gradient,\n    backgroundSize: \"200% auto\",\n    WebkitBackgroundClip: \"text\",\n    WebkitTextFillColor: \"transparent\",\n    backgroundClip: \"text\",\n    animation: `${animationName} ${duration}s linear infinite`,\n  };\n}\n",
+      "type": "registry:lib"
+    }
+  ]
+}

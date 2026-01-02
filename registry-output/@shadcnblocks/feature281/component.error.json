@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature281",
+  "url": "https://shadcnblocks.com/r/feature281.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature281",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A testimonial display component featuring an animated card stack with user feedback, adjustable through attributes like offset and scale. Includes a \"Read More\" button.",
+    "dependencies": ["framer-motion", "lucide-react", "react", "react-icons"],
+    "registryDependencies": ["avatar", "button"],
+    "files": [
+      {
+        "path": "code/block/feature281.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:27.526Z"
+}

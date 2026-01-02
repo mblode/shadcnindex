@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature150",
+  "url": "https://shadcnblocks.com/r/feature150.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature150",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A component showcasing 2 CRM solutions with hover effects, images, and a \"Learn More\" or \"Get Started\" button.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["button"],
+    "files": [
+      {
+        "path": "code/block/feature150.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:22.675Z"
+}

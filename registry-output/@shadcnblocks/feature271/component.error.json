@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature271",
+  "url": "https://shadcnblocks.com/r/feature271.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature271",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A component showcasing features with an animated background, a central title, a labeled introduction, and a two-column list, each with an icon and a description.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": ["badge"],
+    "files": [
+      {
+        "path": "code/block/feature271.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:27.230Z"
+}

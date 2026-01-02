@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "project6a",
+  "url": "https://shadcnblocks.com/r/project6a.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "project6a",
+    "type": "registry:block",
+    "title": "Project6a",
+    "description": "A component displaying an image collection with animated elements, project rows, and descriptive text. Features dynamic image scaling on hover.",
+    "dependencies": ["framer-motion"],
+    "registryDependencies": ["badge"],
+    "files": [
+      {
+        "path": "code/block/project6a.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:47.594Z"
+}

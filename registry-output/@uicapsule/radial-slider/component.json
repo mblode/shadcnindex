@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "homepage": "https://uicapsule.com/ui/radial-slider",
+  "name": "radial-slider",
+  "type": "registry:block",
+  "author": "Kaiyu Hsu <uicapsule@kyh.io>",
+  "dependencies": ["@number-flow/react", "motion"],
+  "devDependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "type": "registry:file",
+      "path": "/radial-slider.tsx",
+      "content": "import React, { useRef, useState } from \"react\";\nimport NumberFlow from \"@number-flow/react\";\nimport {\n  animate,\n  motion,\n  useMotionValue,\n  useMotionValueEvent,\n} from \"motion/react\";\n\ninterface RadialSliderProps {\n  value: number;\n  onChange: (value: number) => void;\n  maxValue?: number;\n}\n\nexport const RadialSlider = ({\n  onChange,\n  maxValue = 100,\n}: RadialSliderProps) => {\n  const motionX = useMotionValue(0);\n  const rotate = useMotionValue(0);\n  const accumulatedRotation = useRef(0);\n\n  useMotionValueEvent(motionX, \"change\", (latest) => {\n    rotate.set(accumulatedRotation.current + latest / 5);\n  });\n\n  return (\n    <>\n      <motion.div\n        drag=\"x\"\n        dragConstraints={{ left: 0, right: 0 }}\n        dragElastic={0}\n        onDrag={(event, info) => {\n          motionX.set(info.offset.x);\n\n          const currentRotation = rotate.get();\n\n          const snapAngle = 360 / maxValue;\n          let normalizedRotation = currentRotation;\n          normalizedRotation = ((normalizedRotation % 360) + 360) % 360;\n          const nearestMultiple =\n            Math.round(normalizedRotation / snapAngle) * snapAngle;\n\n          const topIndex = (maxValue - nearestMultiple / snapAngle) % maxValue;\n          onChange(Math.floor(topIndex));\n        }}\n        onDragEnd={() => {\n          const currentRotation = rotate.get();\n\n          const snapAngle = 360 / maxValue;\n          let normalizedRotation = currentRotation;\n          normalizedRotation = ((normalizedRotation % 360) + 360) % 360;\n          const nearestMultiple =\n            Math.round(normalizedRotation / snapAngle) * snapAngle;\n\n          const fullRotations = Math.floor(currentRotation / 360) * 360;\n          const finalRotation = fullRotations + nearestMultiple;\n\n          accumulatedRotation.current = finalRotation;\n\n          animate(rotate, finalRotation, {\n            type: \"spring\",\n            stiffness: 300,\n            damping: 30,\n          });\n        }}\n        style={{ rotate }}\n        className=\"relative aspect-square w-full cursor-grab rounded-full bg-transparent active:cursor-grabbing\"\n      >\n        {Array.from({ length: maxValue }).map((_, i) => (\n          <div\n            key={i}\n            data-index={i}\n            className=\"absolute inset-0 flex justify-center overflow-hidden rounded-full\"\n            style={{\n              transform: `rotate(${i * (360 / maxValue)}deg)`,\n            }}\n          >\n            <div className=\"absolute h-8 w-0.5 bg-gray-200\" />\n          </div>\n        ))}\n      </motion.div>\n      <div className=\"pointer-events-none absolute right-0 bottom-0 left-0 z-10 h-[calc(50%+1rem)] bg-gradient-to-r from-blue-500 to-yellow-500 mix-blend-multiply\" />\n    </>\n  );\n};\n",
+      "target": "uicapsule/radial-slider/radial-slider.tsx"
+    }
+  ]
+}

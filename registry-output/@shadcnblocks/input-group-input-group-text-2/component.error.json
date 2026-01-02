@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "input-group-input-group-text-2",
+  "url": "https://shadcnblocks.com/r/input-group-input-group-text-2.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "input-group-input-group-text-2",
+    "type": "registry:block",
+    "title": "Input-group/input-group-text-",
+    "description": "A input-group/input-group-text- example",
+    "dependencies": [],
+    "registryDependencies": ["input-group"],
+    "files": [
+      {
+        "path": "code/example/input-group/input-group-text-2.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:15:24.156Z"
+}

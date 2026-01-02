@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "project4c",
+  "url": "https://shadcnblocks.com/r/project4c.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "project4c",
+    "type": "registry:block",
+    "title": "Project4c",
+    "description": "A component showcasing a brand identity project with a hero section, article content, and visual assets. Features a full-screen image overlay, project summary, and results metrics grid.",
+    "dependencies": ["react"],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/project4c.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:47.178Z"
+}

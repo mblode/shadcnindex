@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "cta3",
+  "url": "https://shadcnblocks.com/r/cta3.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "cta3",
+    "type": "registry:block",
+    "title": "Cta",
+    "description": "A 2-column component featuring a call-to-action with buttons and two card links for documentation and getting started guides, adorned with icons.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["button", "card"],
+    "files": [
+      {
+        "path": "code/block/cta3.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:18.799Z"
+}

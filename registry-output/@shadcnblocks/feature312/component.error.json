@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature312",
+  "url": "https://shadcnblocks.com/r/feature312.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature312",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "This component, Feature312, is designed to showcase impactful digital solutions, highlighting key statistics such as projects launched and client retention rates through visually appealing cards. It includes customizable headings, subheadings, descriptions, an image, and minor brand logos, making it suitable for highlighting accomplishments and client engagement metrics.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/feature312.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:28.403Z"
+}

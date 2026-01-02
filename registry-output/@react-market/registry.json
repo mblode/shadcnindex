@@ -1,0 +1,521 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "react-market",
+  "homepage": "https://www.react-market.com",
+  "items": [
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "smart-header",
+      "type": "registry:component",
+      "title": "Smart Header: Disappears when scrolling",
+      "description": "",
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "id": 50,
+          "path": "use-smart-header.tsx",
+          "type": "registry:hook"
+        },
+        {
+          "id": 51,
+          "path": "header.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": []
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "pick-close-day",
+      "type": "registry:component",
+      "title": "Pick Close Day - a tiny calendar",
+      "description": "",
+      "dependencies": ["date-fns", "motion", "lucide-react"],
+      "devDependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "id": 48,
+          "path": "pick-close-day.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": ["Calendar"]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "dj-skazi-profile",
+      "type": "registry:component",
+      "title": "DJ Profile A modern digital profile card component",
+      "description": "A stylish and responsive profile component for showcasing a user’s digital presence.",
+      "dependencies": ["zod", "lucide-react", "clsx"],
+      "devDependencies": [
+        "typescript",
+        "eslint",
+        "prettier",
+        "tailwindcss",
+        "@types/react",
+        "@types/node"
+      ],
+      "registryDependencies": ["button", "input"],
+      "files": [
+        {
+          "id": 40,
+          "path": "digi-scazi-profile.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": ["Template", "Animation"]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "cool-animated-button",
+      "type": "registry:component",
+      "title": "Cool Animated Button",
+      "description": "A stylish button with advanced animations for enhanced user experience",
+      "dependencies": ["zod", "lucide-react", "framer-motion@10.12.4"],
+      "devDependencies": ["typescript", "eslint", "prettier"],
+      "registryDependencies": ["button", "input", "card"],
+      "files": [
+        {
+          "id": 39,
+          "path": "cool-button.tsx",
+          "type": "registry:component"
+        },
+        {
+          "id": 41,
+          "path": "page.tsx",
+          "type": "registry:page",
+          "target": "page.tsx"
+        }
+      ],
+      "categories": ["Loading Indicator", "Button", "Animation"]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "logo-spinner",
+      "type": "registry:component",
+      "title": "Logo Spinner – Animated Logo with Circular Progress",
+      "description": "A beautifully animated React component that displays a spinning logo inside a customizable circular progress ring.\n\nA versatile and stylish loading spinner featuring a central animated logo, a customizable progress ring, and optional percentage display.",
+      "dependencies": ["framer-motion", "react", "react-dom"],
+      "devDependencies": ["typescript", "eslint", "prettier"],
+      "registryDependencies": ["button", "card"],
+      "files": [
+        {
+          "id": 35,
+          "path": "logo-spinner.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": ["Loading Indicator"]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "creative-agency-portfolio",
+      "type": "registry:component",
+      "title": "Creative Agency Portfolio ✨",
+      "description": "A stunning, animated portfolio showcase for creative agencies with interactive sections and modern design.",
+      "dependencies": ["framer-motion", "lucide-react", "next-themes"],
+      "devDependencies": ["typescript", "eslint", "prettier"],
+      "registryDependencies": ["button", "card", "input", "form"],
+      "files": [
+        {
+          "id": 24,
+          "path": "footer.tsx",
+          "type": "registry:component"
+        },
+        {
+          "id": 25,
+          "path": "about.tsx",
+          "type": "registry:component"
+        },
+        {
+          "id": 26,
+          "path": "contact.tsx",
+          "type": "registry:component"
+        },
+        {
+          "id": 27,
+          "path": "portfolio.tsx",
+          "type": "registry:component"
+        },
+        {
+          "id": 28,
+          "path": "services.tsx",
+          "type": "registry:component"
+        },
+        {
+          "id": 29,
+          "path": "hero.tsx",
+          "type": "registry:component"
+        },
+        {
+          "id": 30,
+          "path": "theme-provider.tsx",
+          "type": "registry:component"
+        },
+        {
+          "id": 31,
+          "path": "use-mobile.tsx",
+          "type": "registry:hook"
+        },
+        {
+          "id": 32,
+          "path": "use-toast.ts",
+          "type": "registry:hook"
+        },
+        {
+          "id": 43,
+          "path": "page.tsx",
+          "type": "registry:page",
+          "target": "page.tsx"
+        },
+        {
+          "id": 44,
+          "path": "layout.tsx",
+          "type": "registry:file",
+          "target": "layout.tsx"
+        }
+      ],
+      "categories": ["Template", "Portfolio"]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "action-search-bar",
+      "type": "registry:component",
+      "title": "🔍 Action Search Bar Component",
+      "description": "",
+      "dependencies": ["zod", "name@1.0.2", "framer-motion", "lucide-react"],
+      "devDependencies": ["typescript", "eslint", "prettier"],
+      "registryDependencies": ["button", "input"],
+      "files": [
+        {
+          "id": 23,
+          "path": "action-search-bar.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": ["Search", "Animation"]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "dynamic-dark-calendar",
+      "type": "registry:component",
+      "title": "Dynamic Dark Calendar with Event Management",
+      "description": "A sleek, animated dark-themed calendar component with event management capabilities.",
+      "dependencies": [
+        "framer-motion",
+        "date-fns",
+        "uuid",
+        "@types/uuid",
+        "lucide-react"
+      ],
+      "devDependencies": ["typescript", "eslint", "prettier"],
+      "registryDependencies": [
+        "button",
+        "card",
+        "dialog",
+        "input",
+        "label",
+        "radio-group",
+        "select",
+        "textarea",
+        "tooltip",
+        "badge"
+      ],
+      "files": [
+        {
+          "id": 21,
+          "path": "calendar.tsx",
+          "type": "registry:component",
+          "target": "components/calendar.tsx"
+        },
+        {
+          "id": 22,
+          "path": "use-media-query.ts",
+          "type": "registry:hook",
+          "target": "hooks/use-media-query.ts"
+        }
+      ],
+      "categories": []
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "customer-support-chat",
+      "type": "registry:component",
+      "title": "💬 Customer Support Chat",
+      "description": "A professional, customizable chat widget for customer support with real-time typing indicators and smart responses.",
+      "dependencies": [
+        "framer-motion",
+        "lucide-react",
+        "date-fns",
+        "react-hook-form",
+        "zod"
+      ],
+      "devDependencies": [
+        "typescript",
+        "eslint",
+        "prettier",
+        "@types/react",
+        "@testing-library/react"
+      ],
+      "registryDependencies": [
+        "avatar",
+        "button",
+        "card",
+        "scroll-area",
+        "textarea",
+        "tooltip"
+      ],
+      "files": [
+        {
+          "id": 19,
+          "path": "customer-support-chat.tsx",
+          "type": "registry:component"
+        },
+        {
+          "id": 20,
+          "path": "standalone-chat.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": []
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "analytics-dashboard",
+      "type": "registry:component",
+      "title": "Analytics Dashboard",
+      "description": "A comprehensive, data-rich analytics dashboard with multiple visualizations and real-time metrics tracking.",
+      "dependencies": ["zod", "lucide-react", "date-fns", "name@1.0.2"],
+      "devDependencies": [
+        "typescript",
+        "eslint",
+        "prettier",
+        "@types/react",
+        "@testing-library/react"
+      ],
+      "registryDependencies": [
+        "button",
+        "input",
+        "card",
+        "dropdown-menu",
+        "select",
+        "tabs",
+        "table",
+        "chart"
+      ],
+      "files": [
+        {
+          "id": 18,
+          "path": "analytics-dashboard.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": []
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "elegant-video-player",
+      "type": "registry:component",
+      "title": "Elegant Video Player",
+      "description": "A beautiful, customizable video player with glass morphism UI and animations",
+      "dependencies": ["zod", "lucide-react", "name@1.0.2"],
+      "devDependencies": ["typescript", "eslint", "prettier"],
+      "registryDependencies": ["button", "input"],
+      "files": [
+        {
+          "id": 17,
+          "path": "video-player.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": []
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "multi-step-register-form",
+      "type": "registry:component",
+      "title": "Multi-Step Registration Form",
+      "description": "A stylish 3-step registration form with animations and dark mode support.",
+      "dependencies": [
+        "zod",
+        "lucide-react",
+        "name@1.0.2",
+        "framer-motion",
+        "react-hook-form",
+        "@hookform/resolvers",
+        "date-fns",
+        "next-themes"
+      ],
+      "devDependencies": ["typescript", "eslint", "prettier"],
+      "registryDependencies": [
+        "button",
+        "input",
+        "label",
+        "radio-group",
+        "calendar",
+        "popover"
+      ],
+      "files": [
+        {
+          "id": 16,
+          "path": "multi-step-register-form.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": []
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "sleek-animated-shopping-cart",
+      "type": "registry:component",
+      "title": "Sleek Animated Shopping Cart",
+      "description": "A modern, animated shopping cart component with blue and black styling for e-commerce applications.",
+      "dependencies": ["zod", "lucide-react", "name@1.0.2", "framer-motion"],
+      "devDependencies": ["typescript", "eslint", "prettier"],
+      "registryDependencies": ["button", "input", "card"],
+      "files": [
+        {
+          "id": 15,
+          "path": "shopping-cart.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": []
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "credit-card-checkout",
+      "type": "registry:component",
+      "title": "Luxury Credit Card Checkout",
+      "description": "An elegant black and gold credit card checkout component with interactive 3D card visualization\nLong description\nA premium credit card checkout component featuring a stunning black and gold design with real-time card visualization. The component includes a 3D flipping card that updates as users enter their information, automatic card type detection, input formatting, and form validation. The luxurious design includes gold accents, patterns, and elegant typography, making it perfect for high-end e-commerce sites and premium services.",
+      "dependencies": ["framer-motion", "lucide-react", "zod"],
+      "devDependencies": ["typescript", "eslint", "prettier"],
+      "registryDependencies": ["plaintext", "button", "input", "label", "card"],
+      "files": [
+        {
+          "id": 14,
+          "path": "credit-card-checkout.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": []
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "file-upload-dropzone",
+      "type": "registry:component",
+      "title": "File Upload Dropzone",
+      "description": "Modern drag & drop file uploader with progress tracking and validation",
+      "dependencies": ["lucide-react"],
+      "devDependencies": ["typescript", "eslint", "prettier"],
+      "registryDependencies": ["button", "progress"],
+      "files": [
+        {
+          "id": 13,
+          "path": "file-upload.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": ["File Upload"]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "simple-responsive-navbar",
+      "type": "registry:component",
+      "title": "Responsive Navigation Bar",
+      "description": "Responsive navbar with mobile and desktop views, icon support, and RTL/LTR support",
+      "dependencies": ["lucide-react"],
+      "devDependencies": ["typescript", "eslint", "prettier"],
+      "registryDependencies": ["button", "sheet"],
+      "files": [
+        {
+          "id": 12,
+          "path": "navbar.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": []
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "copy-btn",
+      "type": "registry:component",
+      "title": "Copy button",
+      "description": "Simple copy button that can be modified according to your needs!",
+      "dependencies": ["lucide-react", "sonner"],
+      "devDependencies": [],
+      "registryDependencies": ["button"],
+      "files": [
+        {
+          "id": 11,
+          "path": "copy-button.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": ["Button"]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "tabs",
+      "type": "registry:block",
+      "title": "Animated tabs",
+      "description": "",
+      "dependencies": ["lucide-react"],
+      "devDependencies": [],
+      "registryDependencies": ["button", "card"],
+      "files": [
+        {
+          "id": 45,
+          "path": "tabs.tsx",
+          "type": "registry:block"
+        }
+      ],
+      "categories": ["Button", "Animation"]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "loading-spinner",
+      "type": "registry:component",
+      "title": "Simple loading spinner",
+      "description": "Very basic loading spinner with 0 dependencies!",
+      "dependencies": [],
+      "devDependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "id": 8,
+          "path": "loading-spinner.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": ["Loading Indicator"]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "dark-mode",
+      "type": "registry:component",
+      "title": "Dark mode set-up",
+      "description": "Dark mode provider + toggle",
+      "dependencies": ["next-themes"],
+      "devDependencies": [],
+      "registryDependencies": ["button", "dropdown-menu"],
+      "files": [
+        {
+          "id": 6,
+          "path": "mode-toggle.tsx",
+          "type": "registry:component"
+        },
+        {
+          "id": 7,
+          "path": "providers/theme-provider.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": []
+    }
+  ]
+}

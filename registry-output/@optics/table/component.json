@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "table",
+  "title": "Table",
+  "description": "A responsive table component.",
+  "dependencies": ["clsx", "tailwind-merge"],
+  "registryDependencies": ["https://optics.agusmayol.com.ar/r/utils.json"],
+  "files": [
+    {
+      "path": "registry/optics/table.jsx",
+      "content": "\"use client\"\n\nimport * as React from \"react\"\n\nimport { cn } from \"@/lib/utils\"\n\nfunction Table({\n  className = \"\",\n  ...props\n}) {\n  return (\n    <div data-slot=\"table-container\" className=\"relative w-full overflow-x-auto\">\n      <table\n        data-slot=\"table\"\n        className={cn(\"w-full caption-bottom text-xs\", className)}\n        {...props} />\n    </div>\n  );\n}\n\nfunction TableHeader({\n  className = \"\",\n  ...props\n}) {\n  return (\n    <thead\n      data-slot=\"table-header\"\n      className={cn(\"[&_tr]:border-b\", className)}\n      {...props} />\n  );\n}\n\nfunction TableBody({\n  className = \"\",\n  ...props\n}) {\n  return (\n    <tbody\n      data-slot=\"table-body\"\n      className={cn(\"[&_tr:last-child]:border-0\", className)}\n      {...props} />\n  );\n}\n\nfunction TableFooter({\n  className = \"\",\n  ...props\n}) {\n  return (\n    <tfoot\n      data-slot=\"table-footer\"\n      className={cn(\"bg-muted/50 border-t font-medium [&>tr]:last:border-b-0\", className)}\n      {...props} />\n  );\n}\n\nfunction TableRow({\n  className = \"\",\n  ...props\n}) {\n  return (\n    <tr\n      data-slot=\"table-row\"\n      className={cn(\n        \"hover:bg-muted/50 data-[state=selected]:bg-muted border-b transition-colors\",\n        className\n      )}\n      {...props} />\n  );\n}\n\nfunction TableHead({\n  className = \"\",\n  ...props\n}) {\n  return (\n    <th\n      data-slot=\"table-head\"\n      className={cn(\n        \"text-foreground h-10 px-2 text-left align-middle font-medium whitespace-nowrap [&:has([role=checkbox])]:pr-0\",\n        className\n      )}\n      {...props} />\n  );\n}\n\nfunction TableCell({\n  className = \"\",\n  ...props\n}) {\n  return (\n    <td\n      data-slot=\"table-cell\"\n      className={cn(\n        \"p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0\",\n        className\n      )}\n      {...props} />\n  );\n}\n\nfunction TableCaption({\n  className = \"\",\n  ...props\n}) {\n  return (\n    <caption\n      data-slot=\"table-caption\"\n      className={cn(\"text-muted-foreground mt-4 text-xs\", className)}\n      {...props} />\n  );\n}\n\nexport {\n  Table,\n  TableHeader,\n  TableBody,\n  TableFooter,\n  TableHead,\n  TableRow,\n  TableCell,\n  TableCaption,\n}\n",
+      "type": "registry:component",
+      "target": "components/optics/table.jsx"
+    }
+  ],
+  "type": "registry:component"
+}

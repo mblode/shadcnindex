@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "input-otp-input-otp-standard-1",
+  "url": "https://shadcnblocks.com/r/input-otp-input-otp-standard-1.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "input-otp-input-otp-standard-1",
+    "type": "registry:block",
+    "title": "Input-otp/input-otp-standard-",
+    "description": "A input-otp/input-otp-standard- example",
+    "dependencies": [],
+    "registryDependencies": ["input-otp"],
+    "files": [
+      {
+        "path": "code/example/input-otp/input-otp-standard-1.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:15:24.663Z"
+}

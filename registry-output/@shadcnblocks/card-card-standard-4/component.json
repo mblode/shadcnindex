@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "card-card-standard-4",
+  "title": "Card/card-standard-",
+  "description": "A card/card-standard- example",
+  "dependencies": ["@faker-js/faker", "lucide-react", "clsx", "tailwind-merge"],
+  "registryDependencies": ["card"],
+  "files": [
+    {
+      "path": "code/example/card/card-standard-4.tsx",
+      "content": "import { faker } from \"@faker-js/faker\";\nimport { Bath, Bed, Maximize } from \"lucide-react\";\n\nimport {\n  Card,\n  CardContent,\n  CardDescription,\n  CardFooter,\n  CardHeader,\n  CardTitle,\n} from \"@/components/ui/card\";\n\nexport const title = \"Image Card\";\n\nconst price = faker.commerce.price({ min: 100_000, max: 500_000, dec: 0 });\nconst beds = faker.number.int({ min: 2, max: 5 });\nconst baths = faker.number.int({ min: 1, max: 3 });\nconst area = faker.number.int({ min: 200, max: 500 });\n\nconst Example = () => (\n  <Card className=\"w-full max-w-md overflow-hidden\">\n    <CardHeader>\n      <CardTitle>3-Bedroom House</CardTitle>\n      <CardDescription>\n        A luxurious 3-bedroom house with a modern design.\n      </CardDescription>\n    </CardHeader>\n    <CardContent className=\"p-0\">\n      {/** biome-ignore lint/performance/noImgElement: \"Kibo UI is framework agnostic\" */}\n      <img\n        alt=\"\"\n        height={1380}\n        src=\"https://images.unsplash.com/photo-1570129477492-45c003edd2be?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\"\n        width={2070}\n      />\n    </CardContent>\n    <CardFooter className=\"flex items-center justify-between\">\n      <div className=\"flex items-center gap-2\">\n        <div className=\"flex items-center gap-2 rounded-full border px-4 py-2\">\n          <Bed className=\"h-4 w-4\" />\n          <span className=\"text-sm font-medium\">{beds}</span>\n        </div>\n        <div className=\"flex items-center gap-2 rounded-full border px-4 py-2\">\n          <Bath className=\"h-4 w-4\" />\n          <span className=\"text-sm font-medium\">{baths}</span>\n        </div>\n        <div className=\"flex items-center gap-2 rounded-full border px-4 py-2\">\n          <Maximize className=\"h-4 w-4\" />\n          <span className=\"text-sm font-medium\">{area}m²</span>\n        </div>\n      </div>\n      <p className=\"text-2xl font-bold\">${Number(price).toLocaleString()}</p>\n    </CardFooter>\n  </Card>\n);\n\nexport default Example;\n",
+      "type": "registry:block"
+    },
+    {
+      "path": "src/components/ui/card.tsx",
+      "content": "import * as React from \"react\"\n\nimport { cn } from \"@/lib/utils\"\n\nfunction Card({ className, ...props }: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"card\"\n      className={cn(\n        \"bg-card text-card-foreground flex flex-col gap-6 rounded-xl border py-6 shadow-sm\",\n        className\n      )}\n      {...props}\n    />\n  )\n}\n\nfunction CardHeader({ className, ...props }: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"card-header\"\n      className={cn(\n        \"@container/card-header grid auto-rows-min grid-rows-[auto_auto] items-start gap-2 px-6 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6\",\n        className\n      )}\n      {...props}\n    />\n  )\n}\n\nfunction CardTitle({ className, ...props }: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"card-title\"\n      className={cn(\"leading-none font-semibold\", className)}\n      {...props}\n    />\n  )\n}\n\nfunction CardDescription({ className, ...props }: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"card-description\"\n      className={cn(\"text-muted-foreground text-sm\", className)}\n      {...props}\n    />\n  )\n}\n\nfunction CardAction({ className, ...props }: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"card-action\"\n      className={cn(\n        \"col-start-2 row-span-2 row-start-1 self-start justify-self-end\",\n        className\n      )}\n      {...props}\n    />\n  )\n}\n\nfunction CardContent({ className, ...props }: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"card-content\"\n      className={cn(\"px-6\", className)}\n      {...props}\n    />\n  )\n}\n\nfunction CardFooter({ className, ...props }: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"card-footer\"\n      className={cn(\"flex items-center px-6 [.border-t]:pt-6\", className)}\n      {...props}\n    />\n  )\n}\n\nexport {\n  Card,\n  CardHeader,\n  CardFooter,\n  CardTitle,\n  CardAction,\n  CardDescription,\n  CardContent,\n}\n",
+      "type": "registry:ui",
+      "target": ""
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "content": "import { type ClassValue, clsx } from 'clsx';\nimport { twMerge } from 'tailwind-merge';\n\nexport function cn(...inputs: ClassValue[]) {\n  return twMerge(clsx(inputs));\n}\n",
+      "type": "registry:lib",
+      "target": ""
+    }
+  ],
+  "type": "registry:block"
+}

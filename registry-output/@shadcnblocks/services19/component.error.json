@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "services19",
+  "url": "https://shadcnblocks.com/r/services19.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "services19",
+    "type": "registry:block",
+    "title": "Services",
+    "description": "An animated table layout displaying service options with a unique feature of a cursor-following image that changes based on the hovered table row.",
+    "dependencies": ["framer-motion", "react"],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/services19.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:50.481Z"
+}

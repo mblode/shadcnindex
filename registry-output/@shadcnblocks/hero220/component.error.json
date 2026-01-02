@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "hero220",
+  "url": "https://shadcnblocks.com/r/hero220.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "hero220",
+    "type": "registry:block",
+    "title": "Hero",
+    "description": "A component displaying fullscreen video-text inside a semi-transparent image background, with animated text scaling effect.",
+    "dependencies": ["framer-motion", "react"],
+    "registryDependencies": ["https://magicui.design/r/video-text"],
+    "files": [
+      {
+        "path": "code/block/hero220.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:36.640Z"
+}

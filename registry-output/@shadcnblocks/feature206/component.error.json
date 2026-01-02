@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature206",
+  "url": "https://shadcnblocks.com/r/feature206.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature206",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A component featuring a title, description, and a grid of images paired with texts to explain various features. Grid adjusts from 2 to 4 columns.",
+    "dependencies": [],
+    "registryDependencies": ["badge"],
+    "files": [
+      {
+        "path": "code/block/feature206.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:24.781Z"
+}

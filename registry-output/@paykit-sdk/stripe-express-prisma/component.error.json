@@ -1,0 +1,31 @@
+{
+  "registry": "@paykit-sdk",
+  "component": "stripe-express-prisma",
+  "url": "https://www.usepaykit.dev/r/stripe-express-prisma.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "stripe-express-prisma",
+    "type": "registry:block",
+    "description": "Stripe integration for Express with Prisma ORM schemas for payments and subscriptions",
+    "dependencies": ["prisma"],
+    "devDependencies": ["prisma"],
+    "registryDependencies": ["https://usepaykit.dev/r/stripe-express"],
+    "files": [
+      {
+        "type": "registry:file",
+        "target": "prisma/schema-payments.prisma",
+        "path": "shared/schema/prisma.prisma",
+        "content": "model Customer {\n  id        String   @id @default(cuid())\n  email     String   @unique\n  name      String\n  phone     String\n  metadata  Json?\n  createdAt DateTime @default(now())\n  updatedAt DateTime @updatedAt\n\n  payments      Payment[]\n  subscriptions Subscription[]\n  invoices      Invoice[]\n}\n\nmodel Payment {\n  id         String        @id\n  amount     Int\n  currency   String\n  status     PaymentStatus\n  itemId  String?       @map(\"item_id\")\n  metadata   Json\n  createdAt  DateTime      @default(now())\n  updatedAt  DateTime      @updatedAt\n\n  customerId String?   @map(\"customer_id\")\n  customer   Customer? @relation(fields: [customerId], references: [id], onDelete: Cascade)\n\n  // Guest checkout for when the customer is not yet determined\n  customerEmail String? @map(\"customer_email\")\n\n  refunds    Refund[]\n\n  paymentUrl String? @map(\"payment_url\")\n  requiresAction Boolean? @map(\"requires_action\")\n\n  @@index([customerId])\n  @@index([status])\n  @@index([customerEmail])\n}\n\nenum PaymentStatus {\n  pending\n  processing\n  requires_action\n  requires_capture\n  succeeded\n  canceled\n  failed\n}\n\nmodel Subscription {\n  id                  String               @id\n  amount              Int\n  currency            String\n  status              SubscriptionStatus\n  itemId              String               @map(\"item_id\")\n  billingInterval     String               @map(\"billing_interval\")\n  currentPeriodStart  DateTime             @map(\"current_period_start\")\n  currentPeriodEnd    DateTime             @map(\"current_period_end\")\n  metadata            Json?\n  customFields        Json?                @map(\"custom_fields\")\n  createdAt           DateTime             @default(now())\n  updatedAt           DateTime             @updatedAt\n\n  customerId String?   @map(\"customer_id\")\n  customer   Customer? @relation(fields: [customerId], references: [id], onDelete: Cascade)\n\n  // Guest checkout for when the customer is not yet determined\n  customerEmail String? @map(\"customer_email\")\n\n  invoices   Invoice[]\n\n  @@index([customerId])\n  @@index([status])\n  @@index([customerEmail])\n}\n\nenum SubscriptionStatus {\n  active\n  past_due\n  canceled\n  expired\n  pending\n}\n\nmodel Refund {\n  id        String   @id\n  amount    Int\n  currency  String\n  reason    String?\n  metadata  Json?\n  createdAt DateTime @default(now())\n\n  paymentId String  @map(\"payment_id\")\n  payment   Payment @relation(fields: [paymentId], references: [id], onDelete: Cascade)\n\n  @@index([paymentId])\n}\n\nmodel Invoice {\n  id             String        @id\n  subscriptionId String?       @map(\"subscription_id\")\n  billingMode    String        @map(\"billing_mode\")\n  amountPaid     Int           @map(\"amount_paid\")\n  currency       String\n  status         InvoiceStatus\n  paidAt         DateTime?     @map(\"paid_at\")\n  lineItems      Json?         @map(\"line_items\")\n  metadata       Json?\n  customFields   Json?         @map(\"custom_fields\")\n  createdAt      DateTime      @default(now())\n  updatedAt      DateTime      @updatedAt\n\n  customerId String?   @map(\"customer_id\")\n  customer   Customer? @relation(fields: [customerId], references: [id], onDelete: Cascade)\n\n  customerEmail String? @map(\"customer_email\")\n  subscription Subscription? @relation(fields: [subscriptionId], references: [id], onDelete: SetNull)\n\n  @@index([customerId])\n  @@index([subscriptionId])\n  @@index([status])\n  @@index([customerEmail])\n}\n\nenum InvoiceStatus {\n  paid\n  open\n}"
+      }
+    ],
+    "docs": "Copy the content from prisma/schema-payments.prisma to your own schema.prisma file.\nRun 'prisma migrate dev' to create the tables.",
+    "meta": {
+      "backend": "express",
+      "provider": "stripe",
+      "orm": "prisma",
+      "database": "postgres",
+      "auth": "none"
+    }
+  },
+  "fetchedAt": "2026-01-02T11:17:42.579Z"
+}

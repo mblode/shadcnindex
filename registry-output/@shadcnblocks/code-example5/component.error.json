@@ -1,0 +1,25 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "code-example5",
+  "url": "https://shadcnblocks.com/r/code-example5.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "code-example5",
+    "type": "registry:block",
+    "title": "Code-example",
+    "description": "This component provides a code explorer, allowing users to interactively select and view code examples for different API integrations including REST, GraphQL, and WebSocket. It features language switching tabs, displays code snippets with syntax highlighting, and offers a copy-to-clipboard functionality.",
+    "dependencies": ["react"],
+    "registryDependencies": [
+      "https://www.kibo-ui.com/r/code-block.json",
+      "scroll-area",
+      "tabs"
+    ],
+    "files": [
+      {
+        "path": "code/block/code-example5.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:16.438Z"
+}

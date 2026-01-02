@@ -1,0 +1,23 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature282",
+  "url": "https://shadcnblocks.com/r/feature282.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature282",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A 2-column component featuring an interactive encryption card and detailed text on encryption technology, with security highlights listed using bullet-like icons.",
+    "dependencies": ["react"],
+    "registryDependencies": [
+      "https://ui.aceternity.com/registry/evervault-card.json"
+    ],
+    "files": [
+      {
+        "path": "code/block/feature282.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:27.520Z"
+}

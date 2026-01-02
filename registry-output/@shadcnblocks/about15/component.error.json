@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "about15",
+  "url": "https://shadcnblocks.com/r/about15.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "about15",
+    "type": "registry:block",
+    "title": "About",
+    "description": "A component with a 2-column layout featuring an angled image and user info on one side and a title with paragraphs on the other. Unique for its image tilt and contrasting text styles.",
+    "dependencies": ["react"],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/about15.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:11.995Z"
+}

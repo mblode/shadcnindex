@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "compare10",
+  "url": "https://shadcnblocks.com/r/compare10.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "compare10",
+    "type": "registry:block",
+    "title": "Compare",
+    "description": "A component contrasting \"Legacy\" vs \"New\" features in a two-column layout, highlighting issues with old tools and advantages of modern solutions, using symbols and separators.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": ["separator"],
+    "files": [
+      {
+        "path": "code/block/compare10.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:16.881Z"
+}

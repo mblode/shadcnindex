@@ -1,0 +1,22 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "feature42",
+  "title": "Feature",
+  "description": "A component showcasing core values in a 3-column layout, with a large header spanning two rows and 4 smaller sections for individual values.",
+  "dependencies": ["clsx", "tailwind-merge"],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "code/block/feature42.tsx",
+      "content": "import { cn } from \"@/lib/utils\";\n\ninterface Feature42Props {\n  className?: string;\n}\n\nconst Feature42 = ({ className }: Feature42Props) => {\n  return (\n    <section className={cn(\"py-32\", className)}>\n      <div className=\"container\">\n        <div className=\"grid gap-8 lg:grid-cols-3\">\n          <h2 className=\"row-span-2 text-3xl font-semibold lg:text-5xl\">\n            Our Values and Principles\n          </h2>\n          <div>\n            <h3 className=\"mb-2 text-xl font-medium\">Team Spirit</h3>\n            <p className=\"text-muted-foreground\">\n              Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit\n              architecto atque consequuntur perferendis ratione dolorem vitae,\n              doloribus facere.\n            </p>\n          </div>\n          <div>\n            <h3 className=\"mb-2 text-xl font-medium\">Innovation</h3>\n            <p className=\"text-muted-foreground\">\n              Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit\n              architecto atque consequuntur perferendis ratione dolorem vitae,\n              doloribus facere.\n            </p>\n          </div>\n          <div>\n            <h3 className=\"mb-2 text-xl font-medium\">Quality</h3>\n            <p className=\"text-muted-foreground\">\n              Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit\n              architecto atque consequuntur perferendis ratione dolorem vitae,\n              doloribus facere.\n            </p>\n          </div>\n          <div>\n            <h3 className=\"mb-2 text-xl font-medium\">Integrity</h3>\n            <p className=\"text-muted-foreground\">\n              Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit\n              architecto atque consequuntur perferendis ratione dolorem vitae,\n              doloribus facere.\n            </p>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature42 };\n",
+      "type": "registry:block"
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "content": "import { type ClassValue, clsx } from 'clsx';\nimport { twMerge } from 'tailwind-merge';\n\nexport function cn(...inputs: ClassValue[]) {\n  return twMerge(clsx(inputs));\n}\n",
+      "type": "registry:lib",
+      "target": ""
+    }
+  ],
+  "type": "registry:block"
+}

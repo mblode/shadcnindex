@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "faq8",
+  "url": "https://shadcnblocks.com/r/faq8.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "faq8",
+    "type": "registry:block",
+    "title": "Faq",
+    "description": "An FAQ component with collapsible sections for \"General\" and \"Billing\" questions, each with their own set of questions and answers. It has a 3-column layout on wider screens.",
+    "dependencies": [],
+    "registryDependencies": ["accordion"],
+    "files": [
+      {
+        "path": "code/block/faq8.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:20.462Z"
+}

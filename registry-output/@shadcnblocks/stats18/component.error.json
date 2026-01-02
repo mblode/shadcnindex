@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "stats18",
+  "url": "https://shadcnblocks.com/r/stats18.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "stats18",
+    "type": "registry:block",
+    "title": "Stats",
+    "description": "A component featuring a central radar chart and a row of stats below, displaying numerical values and descriptions.",
+    "dependencies": ["react", "recharts"],
+    "registryDependencies": ["chart"],
+    "files": [
+      {
+        "path": "code/block/stats18.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:52.571Z"
+}

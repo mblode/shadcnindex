@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature243",
+  "url": "https://shadcnblocks.com/r/feature243.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature243",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A component displaying a vertical timeline layout of steps, each with an icon, title, and description. It uses cards for step details.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": ["card"],
+    "files": [
+      {
+        "path": "code/block/feature243.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:26.350Z"
+}

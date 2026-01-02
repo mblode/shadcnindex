@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "scroll-area-scroll-area-standard-2",
+  "url": "https://shadcnblocks.com/r/scroll-area-scroll-area-standard-2.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "scroll-area-scroll-area-standard-2",
+    "type": "registry:block",
+    "title": "Scroll-area/scroll-area-standard-",
+    "description": "A scroll-area/scroll-area-standard- example",
+    "dependencies": [],
+    "registryDependencies": ["scroll-area"],
+    "files": [
+      {
+        "path": "code/example/scroll-area/scroll-area-standard-2.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:15:31.412Z"
+}

@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "faq14",
+  "url": "https://shadcnblocks.com/r/faq14.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "faq14",
+    "type": "registry:block",
+    "title": "Faq",
+    "description": "An FAQ component with a central heading, a subtitle, and grouped questions within collapsible cards, each representing a category. Includes a decorative background.",
+    "dependencies": ["react"],
+    "registryDependencies": ["accordion", "card"],
+    "files": [
+      {
+        "path": "code/block/faq14.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:20.063Z"
+}

@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature132",
+  "url": "https://shadcnblocks.com/r/feature132.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature132",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A component displaying a welcome message, a description, a \"Get Started\" button, and a 4-column layout of items with images, titles, and descriptions.",
+    "dependencies": [],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/feature132.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:21.907Z"
+}

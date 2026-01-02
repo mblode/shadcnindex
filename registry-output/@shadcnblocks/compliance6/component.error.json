@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "compliance6",
+  "url": "https://shadcnblocks.com/r/compliance6.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "compliance6",
+    "type": "registry:block",
+    "title": "Compliance",
+    "description": "A component showcasing compliance features with a title, description, and two rows of icons with text. The first row highlights four certifications in a grid, and the second row presents three key benefits with icons.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/compliance6.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:17.246Z"
+}

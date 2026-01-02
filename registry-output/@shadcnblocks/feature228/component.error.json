@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature228",
+  "url": "https://shadcnblocks.com/r/feature228.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature228",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A component showcasing smart home features with a 2-column layout: one side highlights benefits (intuitive lighting, security, ecosystem integration, social connectivity) with icons, the other displays images.",
+    "dependencies": ["lucide-react", "react-icons"],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/feature228.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:25.784Z"
+}

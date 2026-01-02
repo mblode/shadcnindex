@@ -1,0 +1,25 @@
+{
+  "registry": "@efferd",
+  "component": "cta-16",
+  "url": "https://efferd.com/r/cta-16.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "cta-16",
+    "description": "Logo branding with animated expanding border frame.",
+    "dependencies": ["motion"],
+    "registryDependencies": ["button"],
+    "files": [
+      {
+        "path": "../../packages/core/src/logo.tsx",
+        "type": "registry:component"
+      },
+      {
+        "path": "registry/cta/16/call-to-action.tsx",
+        "type": "registry:component"
+      }
+    ],
+    "categories": ["cta"],
+    "type": "registry:block"
+  },
+  "fetchedAt": "2026-01-02T11:08:57.858Z"
+}

@@ -1,0 +1,20 @@
+{
+  "registry": "@abui",
+  "component": "extra-breakpoints",
+  "url": "https://abui.io/r/extra-breakpoints.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "extra-breakpoints",
+    "type": "registry:style",
+    "title": "Extra Breakpoints",
+    "description": "Adds XS, XXS and 3XL breakpoints.",
+    "cssVars": {
+      "theme": {
+        "--breakpoint-xxs": "20rem",
+        "--breakpoint-xs": "30rem",
+        "--breakpoint-3xl": "116rem"
+      }
+    }
+  },
+  "fetchedAt": "2026-01-02T11:07:00.221Z"
+}

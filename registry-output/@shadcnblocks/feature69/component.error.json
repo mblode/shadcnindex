@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature69",
+  "url": "https://shadcnblocks.com/r/feature69.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature69",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A carousel component with an image slider and a side list detailing features. It evolves around dynamically updating content based on user interaction.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": ["carousel"],
+    "files": [
+      {
+        "path": "code/block/feature69.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:29.750Z"
+}

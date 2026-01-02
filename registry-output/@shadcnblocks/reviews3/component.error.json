@@ -1,0 +1,28 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "reviews3",
+  "url": "https://shadcnblocks.com/r/reviews3.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "reviews3",
+    "type": "registry:block",
+    "title": "Reviews",
+    "description": "This component presents user reviews with features that include displaying the reviewer's name, avatar, review content, rating, and images. It also allows users to mark reviews as helpful and provides a button to write a new review.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": [
+      "https://shadcnblocks.com/r/rating",
+      "aspect-ratio",
+      "avatar",
+      "button",
+      "card",
+      "separator"
+    ],
+    "files": [
+      {
+        "path": "code/block/reviews3.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:49.558Z"
+}

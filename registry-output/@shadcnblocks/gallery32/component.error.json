@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "gallery32",
+  "url": "https://shadcnblocks.com/r/gallery32.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "gallery32",
+    "type": "registry:block",
+    "title": "Gallery",
+    "description": "An interactive gallery component with dimension-variable, overlapping images and blur effect on hover. Contains descriptive text animations.",
+    "dependencies": ["framer-motion", "react"],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/gallery32.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:33.012Z"
+}

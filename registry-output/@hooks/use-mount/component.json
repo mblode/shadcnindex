@@ -1,0 +1,13 @@
+{
+  "name": "use-mount",
+  "author": "Brendan Dash (https://shadcn-hooks.vercel.app)",
+  "description": "A hook to run a function when the component mounts",
+  "files": [
+    {
+      "path": "registry/hooks/use-mount.ts",
+      "content": "import { useEffect } from 'react'\nimport type { EffectCallback } from 'react'\n\ntype MountCallback = EffectCallback | (() => Promise<void | (() => void)>)\n\nexport function useMount(fn: MountCallback) {\n  useEffect(() => {\n    const result = fn?.()\n    // If fn returns a Promise, don't return it as cleanup function\n    if (\n      result &&\n      typeof result === 'object' &&\n      typeof (result as any).then === 'function'\n    ) {\n      return\n    }\n\n    return result as ReturnType<EffectCallback>\n  }, [])\n}\n",
+      "type": "registry:hook"
+    }
+  ],
+  "type": "registry:hook"
+}

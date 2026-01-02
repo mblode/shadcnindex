@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature31",
+  "url": "https://shadcnblocks.com/r/feature31.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature31",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A component featuring a central message with 2 columns below, mixing images and text. Includes headings, paragraphs, and links. Unique for its text-image alternating layout.",
+    "dependencies": [],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/feature31.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:28.221Z"
+}

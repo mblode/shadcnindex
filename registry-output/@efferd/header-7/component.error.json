@@ -1,0 +1,28 @@
+{
+  "registry": "@efferd",
+  "component": "header-7",
+  "url": "https://efferd.com/r/header-7.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "header-7",
+    "description": "Floating squircle navigation with popover menu and social links.",
+    "registryDependencies": ["button", "popover"],
+    "files": [
+      {
+        "path": "registry/header/7/header.tsx",
+        "type": "registry:component"
+      },
+      {
+        "path": "registry/header/7/header-menu.tsx",
+        "type": "registry:component"
+      },
+      {
+        "path": "../../packages/core/src/logo.tsx",
+        "type": "registry:component"
+      }
+    ],
+    "categories": ["header"],
+    "type": "registry:block"
+  },
+  "fetchedAt": "2026-01-02T11:08:58.669Z"
+}

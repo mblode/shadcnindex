@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "pages-page-transition-link",
+  "type": "registry:component",
+  "title": "Page Transition Link",
+  "description": "Navigation link component with View Transitions API support.",
+  "dependencies": [],
+  "files": [
+    {
+      "path": "registry/new-york/animations/pages/page-transition-link.tsx",
+      "content": "\"use client\";\nimport * as React from \"react\";\nimport { useRouter } from \"next/navigation\";\nimport Link, { LinkProps } from \"next/link\";\nexport interface PageTransitionLinkProps extends Omit<LinkProps, \"onClick\"> {\n  children: React.ReactNode;\n  className?: string;\n  onClick?: (e: React.MouseEvent<HTMLAnchorElement>) => void;\n}\nexport function PageTransitionLink({\n  href,\n  children,\n  className,\n  onClick,\n  ...props\n}: PageTransitionLinkProps) {\n  const router = useRouter();\n  const handleClick = async (e: React.MouseEvent<HTMLAnchorElement>) => {\n    e.preventDefault();\n    onClick?.(e);\n    if (typeof document === \"undefined\" || !document.startViewTransition) {\n      router.push(href.toString());\n      return;\n    }\n    const transition = document.startViewTransition(() => {\n      router.push(href.toString());\n    });\n    await transition.ready;\n  };\n  return (\n    <Link href={href} onClick={handleClick} className={className} {...props}>\n      {children}\n    </Link>\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ]
+}

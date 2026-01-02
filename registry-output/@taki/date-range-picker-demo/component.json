@@ -1,0 +1,14 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "date-range-picker-demo",
+  "dependencies": ["@internationalized/date"],
+  "registryDependencies": ["https://taki-ui.com/r/date-range-picker.json"],
+  "files": [
+    {
+      "path": "registry/new-york/examples/date-range-picker-demo.tsx",
+      "content": "import { DateRangePicker } from \"@/registry/new-york/ui/date-range-picker\"\n\nexport default function DateRangePickerDemo() {\n  return (\n    <DateRangePicker\n      label=\"Trip dates\"\n      description=\"Select your trip start and end dates.\"\n    />\n  )\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

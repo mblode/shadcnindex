@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "extends": "none",
+  "name": "checkbox-controlled-demo",
+  "title": "Checkbox Controlled",
+  "description": "checkbox-controlled-demo",
+  "registryDependencies": [
+    "https://intentui.com/r/checkbox",
+    "https://intentui.com/r/field"
+  ],
+  "files": [
+    {
+      "path": "src/components/docs/forms/checkbox/checkbox-controlled-demo.tsx",
+      "content": "\"use client\"\n\nimport { useState } from \"react\"\n\nimport { Checkbox } from \"@/components/ui/checkbox\"\nimport { Description } from \"@/components/ui/field\"\n\nexport default function CheckboxControlledDemo() {\n  const [selected, setSelection] = useState(false)\n  return (\n    <>\n      <Checkbox isSelected={selected} onChange={setSelection} value=\"updates\">\n        Receive Updates\n      </Checkbox>\n      <Description className=\"mt-2 block [&>strong]:text-fg\">\n        You have <strong>{selected ? \"enabled\" : \"disabled\"}</strong> the option.\n      </Description>\n    </>\n  )\n}\n",
+      "type": "registry:page",
+      "target": "app/checkbox-controlled-demo/page.tsx"
+    }
+  ],
+  "type": "registry:page"
+}

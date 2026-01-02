@@ -1,0 +1,14 @@
+{
+  "name": "use-throttle",
+  "author": "Brendan Dash (https://shadcn-hooks.vercel.app)",
+  "description": "A hook to throttle a value",
+  "registryDependencies": ["@hooks/use-throttle-fn"],
+  "files": [
+    {
+      "path": "registry/hooks/use-throttle.ts",
+      "content": "import { useEffect, useState } from 'react'\nimport { useThrottleFn } from '@/registry/hooks/use-throttle-fn'\nimport type { ThrottleOptions } from '@/registry/hooks/use-throttle-fn'\n\nexport function useThrottle<T>(\n  value: T,\n  throttleMs?: number,\n  options?: ThrottleOptions,\n) {\n  const [throttledValue, setThrottledValue] = useState<T>(value)\n\n  const { run } = useThrottleFn(\n    () => {\n      setThrottledValue(value)\n    },\n    throttleMs,\n    options,\n  )\n\n  useEffect(() => {\n    run()\n  }, [value, run])\n\n  return throttledValue\n}\n",
+      "type": "registry:hook"
+    }
+  ],
+  "type": "registry:hook"
+}

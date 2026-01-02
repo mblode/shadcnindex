@@ -1,0 +1,23 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "button-52",
+  "type": "registry:component",
+  "title": "Button 52",
+  "description": "Button with stitched border design using layered shadow effects",
+  "dependencies": ["class-variance-authority"],
+  "registryDependencies": ["button", "utils"],
+  "files": [
+    {
+      "path": "src/registry/new-york/components/button/button-52.tsx",
+      "content": "import { PrimaryOrionButton } from '@/registry/new-york/ui/orion-button'\n\nconst PrimaryOrionButtonDemo = () => {\n  return <PrimaryOrionButton>Orion Button</PrimaryOrionButton>\n}\n\nexport default PrimaryOrionButtonDemo\n",
+      "type": "registry:component",
+      "target": "components/shadcn-studio/button/button-52.tsx"
+    },
+    {
+      "path": "src/registry/new-york/ui/orion-button.tsx",
+      "content": "'use client'\n\nimport * as React from 'react'\n\nimport type { VariantProps } from 'class-variance-authority'\n\nimport { cn } from '@/registry/new-york/lib/utils'\n\nimport { Button, type buttonVariants } from '@/registry/new-york/ui/button'\n\ninterface OrionButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {\n  size?: VariantProps<typeof buttonVariants>['size']\n  children: React.ReactNode\n  className?: string\n  asChild?: boolean\n}\n\nfunction PrimaryOrionButton({ children, size, asChild = false, className, ...props }: OrionButtonProps) {\n  return (\n    <Button\n      size={size}\n      asChild={asChild}\n      className={cn(\n        'hover:bg-primary border-0 shadow-[inset_0_2px_3px_0_var(--primary),inset_2px_-4px_4px_0_rgba(0,0,0,0.25),inset_-2px_4px_4px_0_rgba(255,255,255,0.35)] transition-shadow duration-300 hover:shadow-[inset_0_0_0_0_var(--primary),inset_1px_-1.5px_2px_0_rgba(0,0,0,0.25),inset_-1px_1.5px_2px_0_rgba(255,255,255,0.35)]',\n        size === 'lg' && 'text-base has-[>svg]:px-6',\n        className\n      )}\n      {...props}\n    >\n      {children}\n    </Button>\n  )\n}\n\nfunction SecondaryOrionButton({ children, size, asChild = false, className, ...props }: OrionButtonProps) {\n  return (\n    <Button\n      variant='secondary'\n      size={size}\n      asChild={asChild}\n      className={cn(\n        'hover:bg-secondary bg-secondary text-secondary-foreground border-0 shadow-[inset_0_2px_3px_0_var(--secondary),inset_2px_-4px_4px_0_rgba(0,0,0,0.25),inset_-2px_4px_4px_0_rgba(255,255,255,0.35)] transition-shadow duration-300 hover:shadow-[inset_0_0_0_0_var(--secondary),inset_1px_-1.5px_2px_0_rgba(0,0,0,0.25),inset_-1px_1.5px_2px_0_rgba(255,255,255,0.35)]',\n        size === 'lg' && 'text-base has-[>svg]:px-6',\n        className\n      )}\n      {...props}\n    >\n      {children}\n    </Button>\n  )\n}\n\nexport { PrimaryOrionButton, SecondaryOrionButton, type OrionButtonProps }\n",
+      "type": "registry:ui",
+      "target": "components/ui/orion-button.tsx"
+    }
+  ]
+}

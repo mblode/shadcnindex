@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "signup6",
+  "url": "https://shadcnblocks.com/r/signup6.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "signup6",
+    "type": "registry:block",
+    "title": "Signup",
+    "description": "A signup component featuring email/password fields, Google signup, and a login redirect. Layout includes a centered form in a 400px column.",
+    "dependencies": [],
+    "registryDependencies": ["button", "input", "label"],
+    "files": [
+      {
+        "path": "code/block/signup6.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:52.004Z"
+}

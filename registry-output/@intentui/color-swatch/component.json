@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "extends": "none",
+  "name": "color-swatch",
+  "title": "color-swatch",
+  "description": "color-swatch",
+  "dependencies": ["react-aria-components"],
+  "registryDependencies": ["https://intentui.com/r/primitive"],
+  "files": [
+    {
+      "path": "src/components/ui/color-swatch.tsx",
+      "content": "import type { ColorSwatchProps } from \"react-aria-components\"\nimport { ColorSwatch as ColorSwatchPrimitive } from \"react-aria-components\"\nimport { cx } from \"@/lib/primitive\"\n\nexport function ColorSwatch({ className, ...props }: ColorSwatchProps) {\n  return (\n    <ColorSwatchPrimitive\n      data-slot=\"color-swatch\"\n      className={cx(\n        \"inset-ring-1 inset-ring-current/20 size-[calc(var(--color-swatch-size)+--spacing(1))] shrink-0 rounded-[calc(var(--radius-lg)-1px)] [--color-swatch-size:--spacing(9)] sm:size-(--color-swatch-size)\",\n        className,\n      )}\n      {...props}\n    />\n  )\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "type": "registry:ui"
+}

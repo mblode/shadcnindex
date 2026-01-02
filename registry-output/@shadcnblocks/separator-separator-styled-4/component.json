@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "separator-separator-styled-4",
+  "title": "Separator/separator-styled-",
+  "description": "A separator/separator-styled- example",
+  "dependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "code/example/separator/separator-styled-4.tsx",
+      "content": "export const title = \"Gradient Separator\";\n\nconst Example = () => (\n  <div className=\"space-y-4\">\n    <p className=\"text-sm\">Above</p>\n    <div className=\"h-px w-full bg-gradient-to-r from-transparent via-border to-transparent\" />\n    <p className=\"text-sm\">Below</p>\n  </div>\n);\n\nexport default Example;\n",
+      "type": "registry:block"
+    }
+  ],
+  "type": "registry:block"
+}

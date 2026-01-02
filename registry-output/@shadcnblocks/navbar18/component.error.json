@@ -1,0 +1,26 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "navbar18",
+  "url": "https://shadcnblocks.com/r/navbar18.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "navbar18",
+    "type": "registry:block",
+    "title": "Navbar",
+    "description": "A navigation bar with logo, collapsible menus, and a login button. Layout adapts for mobile with a popover menu.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": [
+      "accordion",
+      "button",
+      "navigation-menu",
+      "popover"
+    ],
+    "files": [
+      {
+        "path": "code/block/navbar18.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:42.224Z"
+}

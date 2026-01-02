@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "button-copy",
+  "type": "registry:ui",
+  "title": "button-copy",
+  "description": "A ButtonCopy component for SmoothUI.",
+  "author": "Eduardo Calvo <educlopez93@gmail.com>",
+  "dependencies": ["motion", "lucide-react"],
+  "devDependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "type": "registry:ui",
+      "path": "index.tsx",
+      "content": "\"use client\";\n\nimport { Check, Copy, LoaderCircle } from \"lucide-react\";\nimport { AnimatePresence, motion } from \"motion/react\";\nimport { type ReactNode, useCallback, useState } from \"react\";\n\nexport type ButtonCopyProps = {\n  onCopy?: () => Promise<void> | void;\n  idleIcon?: ReactNode;\n  loadingIcon?: ReactNode;\n  successIcon?: ReactNode;\n  className?: string;\n  duration?: number;\n  loadingDuration?: number;\n  disabled?: boolean;\n};\n\nconst defaultIcons = {\n  idle: <Copy size={16} />,\n  loading: <LoaderCircle className=\"animate-spin\" size={16} />,\n  success: <Check size={16} />,\n};\n\nexport default function ButtonCopy({\n  onCopy,\n  idleIcon = defaultIcons.idle,\n  loadingIcon = defaultIcons.loading,\n  successIcon = defaultIcons.success,\n  className = \"\",\n  duration = 2000,\n  loadingDuration = 1000,\n  disabled = false,\n}: ButtonCopyProps) {\n  const [buttonState, setButtonState] = useState<\n    \"idle\" | \"loading\" | \"success\"\n  >(\"idle\");\n\n  const handleClick = useCallback(async () => {\n    setButtonState(\"loading\");\n    if (onCopy) {\n      await onCopy();\n    }\n    setTimeout(() => {\n      setButtonState(\"success\");\n    }, loadingDuration);\n    setTimeout(() => {\n      setButtonState(\"idle\");\n    }, loadingDuration + duration);\n  }, [onCopy, loadingDuration, duration]);\n\n  const icons = {\n    idle: idleIcon,\n    loading: loadingIcon,\n    success: successIcon,\n  };\n\n  return (\n    <div className=\"flex justify-center\">\n      <button\n        aria-label={buttonState === \"loading\" ? \"Copying...\" : \"Copy\"}\n        className={`relative w-auto cursor-pointer overflow-hidden rounded-full border bg-background p-3 disabled:opacity-50 ${className}`}\n        disabled={buttonState !== \"idle\" || disabled}\n        onClick={handleClick}\n        type=\"button\"\n      >\n        <AnimatePresence initial={false} mode=\"popLayout\">\n          <motion.span\n            animate={{ opacity: 1, y: 0, filter: \"blur(0px)\" }}\n            className=\"flex w-full items-center justify-center\"\n            exit={{ opacity: 0, y: 25, filter: \"blur(10px)\" }}\n            initial={{ opacity: 0, y: -25, filter: \"blur(10px)\" }}\n            key={buttonState}\n            transition={{ type: \"spring\", duration: 0.3, bounce: 0 }}\n          >\n            {icons[buttonState]}\n          </motion.span>\n        </AnimatePresence>\n      </button>\n    </div>\n  );\n}\n",
+      "target": "components/smoothui/button-copy/index.tsx"
+    }
+  ],
+  "css": {}
+}

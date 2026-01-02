@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "blog11",
+  "url": "https://shadcnblocks.com/r/blog11.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "blog11",
+    "type": "registry:block",
+    "title": "Blog",
+    "description": "A component with a sticky header displaying \"Blog Posts\" and navigation links, beside a 2-column grid of blog entries featuring images and titles.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["separator"],
+    "files": [
+      {
+        "path": "code/block/blog11.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:14.004Z"
+}

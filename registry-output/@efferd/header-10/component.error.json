@@ -1,0 +1,45 @@
+{
+  "registry": "@efferd",
+  "component": "header-10",
+  "url": "https://efferd.com/r/header-10.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "header-10",
+    "description": "Fixed navigation with dropdown menus and mobile accordion.",
+    "dependencies": ["@radix-ui/react-portal"],
+    "registryDependencies": ["button", "navigation-menu", "accordion"],
+    "files": [
+      {
+        "path": "registry/header/10/header.tsx",
+        "type": "registry:component"
+      },
+      {
+        "path": "registry/header/10/mobile-nav.tsx",
+        "type": "registry:component"
+      },
+      {
+        "path": "registry/header/10/desktop-nav.tsx",
+        "type": "registry:component"
+      },
+      {
+        "path": "registry/header/10/sheard.tsx",
+        "type": "registry:component"
+      },
+      {
+        "path": "registry/header/10/nav-links.ts",
+        "type": "registry:component"
+      },
+      {
+        "path": "../../packages/core/src/logo.tsx",
+        "type": "registry:component"
+      },
+      {
+        "path": "../../packages/core/src/hooks/use-media-query.ts",
+        "type": "registry:hook"
+      }
+    ],
+    "categories": ["header"],
+    "type": "registry:block"
+  },
+  "fetchedAt": "2026-01-02T11:08:58.808Z"
+}

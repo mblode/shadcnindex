@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "input-group-input-group-spinner-3",
+  "url": "https://shadcnblocks.com/r/input-group-input-group-spinner-3.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "input-group-input-group-spinner-3",
+    "type": "registry:block",
+    "title": "Input-group/input-group-spinner-",
+    "description": "A input-group/input-group-spinner- example",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["input-group"],
+    "files": [
+      {
+        "path": "code/example/input-group/input-group-spinner-3.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:15:24.043Z"
+}

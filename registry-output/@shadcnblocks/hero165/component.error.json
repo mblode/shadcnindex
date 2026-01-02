@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "hero165",
+  "url": "https://shadcnblocks.com/r/hero165.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "hero165",
+    "type": "registry:block",
+    "title": "Hero",
+    "description": "A two-column layout with dynamic image composition on one side and compelling headings on the other, featuring customized aspect ratios and image placements.",
+    "dependencies": [],
+    "registryDependencies": ["aspect-ratio"],
+    "files": [
+      {
+        "path": "code/block/hero165.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:34.860Z"
+}

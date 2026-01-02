@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "pricing10",
+  "url": "https://shadcnblocks.com/r/pricing10.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "pricing10",
+    "type": "registry:block",
+    "title": "Pricing",
+    "description": "A pricing component displays 4 plans in columns, detailing features, price, and an annual billing switch. Includes badges for discounts and a \"Recommended\" tag.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": ["badge", "button", "label", "switch"],
+    "files": [
+      {
+        "path": "code/block/pricing10.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:43.514Z"
+}

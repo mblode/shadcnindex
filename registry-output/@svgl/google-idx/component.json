@@ -1,0 +1,14 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "google-idx",
+  "title": "google-idx",
+  "files": [
+    {
+      "path": "././static/components-generated/googleIdx.tsx",
+      "content": "import type { SVGProps } from \"react\";\n\nconst GoogleIdx = (props: SVGProps<SVGSVGElement>) => (\n  <svg {...props} viewBox=\"0 0 192 192\" fill=\"none\">\n    <rect x=\"28\" y=\"156\" width=\"88\" height=\"24\" rx=\"12\" fill=\"#8964e8\" />\n    <rect x=\"104\" y=\"120\" width=\"36\" height=\"24\" rx=\"12\" fill=\"#17b877\" />\n    <rect x=\"56\" y=\"120\" width=\"36\" height=\"24\" rx=\"12\" fill=\"#17b877\" />\n    <rect x=\"84\" y=\"84\" width=\"52\" height=\"24\" rx=\"12\" fill=\"#ffa23e\" />\n    <rect x=\"148\" y=\"84\" width=\"24\" height=\"24\" rx=\"12\" fill=\"#ffa23e\" />\n    <rect x=\"56\" y=\"48\" width=\"88\" height=\"24\" rx=\"12\" fill=\"#25a6e9\" />\n    <rect x=\"64\" y=\"12\" width=\"52\" height=\"24\" rx=\"12\" fill=\"#8964e8\" />\n    <rect x=\"28\" y=\"12\" width=\"24\" height=\"24\" rx=\"12\" fill=\"#8964e8\" />\n  </svg>\n);\n\nexport { GoogleIdx };\n",
+      "type": "registry:component",
+      "target": "components/ui/svgs/googleIdx.tsx"
+    }
+  ],
+  "type": "registry:component"
+}

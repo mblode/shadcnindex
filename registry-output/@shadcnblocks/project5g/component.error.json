@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "project5g",
+  "url": "https://shadcnblocks.com/r/project5g.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "project5g",
+    "type": "registry:block",
+    "title": "Project5g",
+    "description": "An artistic component featuring staggered fade-in animations, structured into a header and main area. It contains a 5-column grid layout in the header and grids that shift from 3 to 2 columns in the main part, for displaying text and images related to an art exhibition. Unique elements include variable text spans and carefully positioned images within adjustable aspect ratios.",
+    "dependencies": ["framer-motion"],
+    "registryDependencies": ["button"],
+    "files": [
+      {
+        "path": "code/block/project5g.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:47.464Z"
+}

@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature285",
+  "url": "https://shadcnblocks.com/r/feature285.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature285",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A component with a 2-column layout featuring a brand logo, title, text, and button on one side and dual vertical marquees with interactive images on the other. Unique for image blur on hover.",
+    "dependencies": ["framer-motion", "lucide-react", "react"],
+    "registryDependencies": ["https://magicui.design/r/marquee", "button"],
+    "files": [
+      {
+        "path": "code/block/feature285.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:27.769Z"
+}

@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "compare6",
+  "url": "https://shadcnblocks.com/r/compare6.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "compare6",
+    "type": "registry:block",
+    "title": "Compare",
+    "description": "A component displaying a comparative analysis of models in a table with tabs for model selection. Features statue indicators and fixed columns.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": ["table", "tabs"],
+    "files": [
+      {
+        "path": "code/block/compare6.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:17.154Z"
+}

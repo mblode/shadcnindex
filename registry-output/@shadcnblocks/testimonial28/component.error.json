@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "testimonial28",
+  "url": "https://shadcnblocks.com/r/testimonial28.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "testimonial28",
+    "type": "registry:block",
+    "title": "Testimonial",
+    "description": "A carousel component showcasing testimonials with avatars, names, and comments. Each slide has a dashed border with plus icons at the corners.",
+    "dependencies": ["react"],
+    "registryDependencies": ["avatar", "carousel"],
+    "files": [
+      {
+        "path": "code/block/testimonial28.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:54.136Z"
+}

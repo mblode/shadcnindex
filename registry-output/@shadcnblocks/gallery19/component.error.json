@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "gallery19",
+  "url": "https://shadcnblocks.com/r/gallery19.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "gallery19",
+    "type": "registry:block",
+    "title": "Gallery",
+    "description": "Component displays a carousel of images with overlay text & a \"Know More\" link. Offers animated entrances and card effects.",
+    "dependencies": ["framer-motion", "lucide-react", "swiper"],
+    "registryDependencies": ["button"],
+    "files": [
+      {
+        "path": "code/block/gallery19.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:32.452Z"
+}

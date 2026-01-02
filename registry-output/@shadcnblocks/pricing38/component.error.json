@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "pricing38",
+  "url": "https://shadcnblocks.com/r/pricing38.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "pricing38",
+    "type": "registry:block",
+    "title": "Pricing",
+    "description": "A marketing package selector with 3 options, highlighting features per plan. Includes alerts and clickable elements for user interaction.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["alert", "button", "radio-group", "separator"],
+    "files": [
+      {
+        "path": "code/block/pricing38.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:44.466Z"
+}

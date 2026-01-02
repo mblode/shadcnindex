@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "test-field",
+  "type": "registry:component",
+  "title": "TestField",
+  "description": "A component for Wandry UI",
+  "dependencies": ["@wandry/inertia-form"],
+  "registryDependencies": ["field", "button", "input-group"],
+  "files": [
+    {
+      "path": "registry/wandry-ui/test-field.tsx",
+      "content": "",
+      "type": "registry:component"
+    }
+  ]
+}

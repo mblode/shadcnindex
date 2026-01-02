@@ -1,0 +1,27 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "product-card2",
+  "url": "https://shadcnblocks.com/r/product-card2.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "product-card2",
+    "type": "registry:block",
+    "title": "Product-card",
+    "description": "This component displays a product card featuring an image, title, description, price details (including sale pricing), and an \"Add to cart\" button. It also includes a customizable badge, link overlay, and manages layout using a card structure.",
+    "dependencies": [],
+    "registryDependencies": [
+      "https://shadcnblocks.com/r/price",
+      "aspect-ratio",
+      "badge",
+      "button",
+      "card"
+    ],
+    "files": [
+      {
+        "path": "code/block/product-card2.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:45.009Z"
+}

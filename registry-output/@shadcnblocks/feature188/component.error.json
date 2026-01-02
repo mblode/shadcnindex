@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature188",
+  "url": "https://shadcnblocks.com/r/feature188.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature188",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A component displaying 3 resources with titles, descriptions, and images, structured in a bordered container with horizontal dividers.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/feature188.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:23.979Z"
+}

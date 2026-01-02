@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "projects16",
+  "url": "https://shadcnblocks.com/r/projects16.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "projects16",
+    "type": "registry:block",
+    "title": "Projects",
+    "description": "A gallery component showcasing nature photos in two columns, with a descriptive heading and a discovery link button.",
+    "dependencies": [],
+    "registryDependencies": ["button"],
+    "files": [
+      {
+        "path": "code/block/projects16.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:48.376Z"
+}

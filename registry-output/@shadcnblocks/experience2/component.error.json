@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "experience2",
+  "url": "https://shadcnblocks.com/r/experience2.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "experience2",
+    "type": "registry:block",
+    "title": "Experience",
+    "description": "A component showcasing professional experiences in a 6-column layout with sticky summary and contact on the left and detailed list on the right.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": ["button"],
+    "files": [
+      {
+        "path": "code/block/experience2.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:19.828Z"
+}

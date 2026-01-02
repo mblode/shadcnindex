@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature101",
+  "url": "https://shadcnblocks.com/r/feature101.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature101",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A layout showcasing capabilities with a title, description, and 5 feature blocks in a 3-column grid. Unique elements include icons, hover animations on images, and varied block sizing.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/feature101.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:20.626Z"
+}

@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "navbar24",
+  "url": "https://shadcnblocks.com/r/navbar24.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "navbar24",
+    "type": "registry:block",
+    "title": "Navbar",
+    "description": "A dynamic navbar component featuring an animated dock with interactive icons for navigation linked to different sections.",
+    "dependencies": ["lucide-react", "motion", "react"],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/navbar24.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:42.370Z"
+}

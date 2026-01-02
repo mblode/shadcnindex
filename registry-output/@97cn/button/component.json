@@ -1,0 +1,49 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "button",
+  "type": "registry:ui",
+  "title": "Button",
+  "description": "Windows 95 styled button component with multiple variants",
+  "dependencies": ["@radix-ui/react-slot", "class-variance-authority"],
+  "files": [
+    {
+      "path": "components/97cn/button.tsx",
+      "content": "\"use client\"\n\nimport * as React from \"react\"\nimport { Slot } from \"@radix-ui/react-slot\"\nimport { cva, type VariantProps } from \"class-variance-authority\"\nimport { cn } from \"@/lib/utils\"\n\nconst win95ButtonVariants = cva(\n  \"inline-flex items-center justify-center whitespace-nowrap font-medium transition-colors focus-visible:outline-none focus-visible:ring-0 focus-visible:ring-offset-0 focus:outline-1 focus:outline-dotted focus:outline-win95-black focus:outline-offset-[-3px] disabled:pointer-events-none disabled:opacity-50 font-sans rounded-none\",\n  {\n    variants: {\n      variant: {\n        default:\n          \"bg-win95-button-face text-win95-black win95-raised hover:bg-win95-light-gray active:win95-sunken active:translate-x-[1px] active:translate-y-[1px]\",\n        primary:\n          \"bg-win95-button-face text-win95-black win95-raised hover:bg-win95-light-gray active:win95-sunken active:translate-x-[1px] active:translate-y-[1px] border-2 border-win95-black\",\n        flat: \"bg-win95-button-face text-win95-black border border-win95-dark-gray hover:bg-win95-light-gray active:bg-win95-dark-gray\",\n      },\n      size: {\n        default: \"h-8 px-3 py-1 text-xs\",\n        sm: \"h-7 px-2 text-xs\",\n        lg: \"h-10 px-4 text-sm\",\n        icon: \"h-8 w-8\",\n      },\n    },\n    defaultVariants: {\n      variant: \"default\",\n      size: \"default\",\n    },\n  },\n)\n\nexport interface Win95ButtonProps\n  extends React.ButtonHTMLAttributes<HTMLButtonElement>,\n    VariantProps<typeof win95ButtonVariants> {\n  asChild?: boolean\n}\n\nconst Win95Button = React.forwardRef<HTMLButtonElement, Win95ButtonProps>(\n  ({ className, variant, size, asChild = false, ...props }, ref) => {\n    const Comp = asChild ? Slot : \"button\"\n    return <Comp className={cn(win95ButtonVariants({ variant, size, className }))} ref={ref} {...props} />\n  },\n)\nWin95Button.displayName = \"Win95Button\"\n\nexport { Win95Button, win95ButtonVariants }\n",
+      "type": "registry:ui"
+    }
+  ],
+  "cssVars": {
+    "light": {
+      "win95-button-face": "#c0c0c0",
+      "win95-black": "#000000",
+      "win95-light-gray": "#dfdfdf",
+      "win95-dark-gray": "#808080",
+      "win95-button-highlight": "#ffffff",
+      "win95-button-shadow": "#808080"
+    },
+    "dark": {
+      "win95-button-face": "#c0c0c0",
+      "win95-black": "#000000",
+      "win95-light-gray": "#dfdfdf",
+      "win95-dark-gray": "#808080",
+      "win95-button-highlight": "#ffffff",
+      "win95-button-shadow": "#808080"
+    }
+  },
+  "css": {
+    "@layer utilities": {
+      ".win95-raised": {
+        "border-top": "2px solid var(--win95-button-highlight)",
+        "border-left": "2px solid var(--win95-button-highlight)",
+        "border-right": "2px solid var(--win95-button-shadow)",
+        "border-bottom": "2px solid var(--win95-button-shadow)"
+      },
+      ".win95-sunken": {
+        "border-top": "2px solid var(--win95-button-shadow)",
+        "border-left": "2px solid var(--win95-button-shadow)",
+        "border-right": "2px solid var(--win95-button-highlight)",
+        "border-bottom": "2px solid var(--win95-button-highlight)"
+      }
+    }
+  }
+}

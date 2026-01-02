@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "card",
+  "type": "registry:ui",
+  "title": "Card",
+  "description": "A customizable card component",
+  "dependencies": ["clsx", "tailwind-merge"],
+  "registryDependencies": ["classes"],
+  "files": [
+    {
+      "path": "src/registry/pure-ui/ui/card/index.tsx",
+      "content": "import React from \"react\";\n\nimport { cn } from \"@/lib/classes\";\n\ninterface CardProps extends React.ComponentProps<\"div\"> {}\n\nfunction Card({ className, ...props }: CardProps) {\n  return (\n    <div\n      data-slot=\"card\"\n      className={cn(\n        \"relative flex flex-col gap-3 overflow-hidden p-4 rounded-xl border border-border/60\",\n        \"bg-card shadow-xs in-data-[slot=popover-popup]:bg-transparent in-data-[slot=popover-popup]:shadow-none\",\n        className\n      )}\n      {...props}\n    />\n  );\n}\n\ninterface CardHeaderProps extends React.ComponentProps<\"div\"> {}\n\nfunction CardHeader({ className, ...props }: CardHeaderProps) {\n  return (\n    <div\n      data-slot=\"card-header\"\n      className={cn(\"flex flex-col\", className)}\n      {...props}\n    />\n  );\n}\n\ninterface CardTitleProps extends React.ComponentProps<\"h3\"> {}\n\nfunction CardTitle({ className, ...props }: CardTitleProps) {\n  return (\n    <h3\n      data-slot=\"card-title\"\n      className={cn(\"text-base text-card-foreground leading-6\", className)}\n      {...props}\n    />\n  );\n}\n\ninterface CardDescriptionProps extends React.ComponentProps<\"p\"> {}\n\nfunction CardDescription({ className, ...props }: CardDescriptionProps) {\n  return (\n    <p\n      data-slot=\"card-description\"\n      className={cn(\"text-muted-foreground text-sm\", className)}\n      {...props}\n    />\n  );\n}\n\ninterface CardContentProps extends React.ComponentProps<\"div\"> {}\n\nfunction CardContent({ className, ...props }: CardContentProps) {\n  return (\n    <div\n      data-slot=\"card-content\"\n      className={cn(\"flex flex-col gap-1 flex-1\", className)}\n      {...props}\n    />\n  );\n}\n\ninterface CardFooterProps extends React.ComponentProps<\"div\"> {}\nfunction CardFooter({ className, ...props }: CardFooterProps) {\n  return (\n    <div\n      data-slot=\"card-footer\"\n      className={cn(\"flex flex-row items-center\", className)}\n      {...props}\n    />\n  );\n}\n\nexport {\n  Card,\n  CardHeader,\n  CardTitle,\n  CardDescription,\n  CardContent,\n  CardFooter,\n};\n",
+      "type": "registry:ui",
+      "target": "components/ui/card.tsx"
+    }
+  ]
+}

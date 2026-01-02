@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "inline-code",
+  "type": "registry:component",
+  "title": "Inline Code",
+  "description": "component for the Inline Code",
+  "files": [
+    {
+      "path": "app/registry/spectrumui/inline-code.tsx",
+      "content": "import * as React from \"react\";\nimport { cn } from \"@/lib/utils\";\n\nexport function InlineCode({\n  className,\n  ...props\n}: React.HTMLAttributes<HTMLSpanElement>) {\n  return (\n    <code\n      className={cn(\n        \"relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold\",\n        className,\n      )}\n      {...props}\n    />\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/spectrumui/inline-code.tsx"
+    }
+  ]
+}

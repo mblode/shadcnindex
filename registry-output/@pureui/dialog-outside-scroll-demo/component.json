@@ -1,0 +1,13 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "dialog-outside-scroll-demo",
+  "type": "registry:example",
+  "registryDependencies": ["dialog"],
+  "files": [
+    {
+      "path": "src/registry/pure-ui/examples/dialog/dialog-outside-scroll-demo.tsx",
+      "content": "\"use client\";\n\nimport { useRef } from \"react\";\n\nimport {\n  Dialog,\n  DialogPopup,\n  DialogDescription,\n  DialogFooter,\n  DialogHeader,\n  DialogTitle,\n  DialogTrigger,\n} from \"@/registry/pure-ui/ui/dialog\";\n\nimport { Button } from \"@/registry/pure-ui/ui/button\";\n\nexport function DialogOutsideScrollDemo() {\n  const popupRef = useRef<HTMLDivElement>(null);\n\n  return (\n    <Dialog>\n      <DialogTrigger render={<Button />}>Open</DialogTrigger>\n    </Dialog>\n  );\n}\n",
+      "type": "registry:example"
+    }
+  ]
+}

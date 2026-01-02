@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "magnetic-example",
+  "type": "registry:component",
+  "title": "Magnetic Example",
+  "description": "Add smooth magnetic attraction effects for HTML elements.",
+  "dependencies": ["react", "@phucbm/magnetic-button"],
+  "registryDependencies": ["https://ui.phucbm.com/r/magnetic.json"],
+  "files": [
+    {
+      "path": "registry/phucbm/blocks/magnetic/example.transformed.tsx",
+      "content": "import {Magnetic} from \"@/components/phucbm/magnetic\";\n\nexport default function Example() {\n    return (\n        <div className=\"h-screen flex items-center justify-center bg-slate-50\">\n            <Magnetic distance={50} attraction={0.5}>\n                <button\n                    className=\"relative inline-flex items-center justify-center px-8 py-4 rounded-2xl bg-blue-600 hover:bg-blue-700 text-white font-bold shadow-lg shadow-blue-500/50 transition-colors duration-200\"\n                >\n                    HOVER ON ME\n                </button>\n            </Magnetic>\n        </div>\n    );\n}",
+      "type": "registry:component",
+      "target": "index.tsx"
+    }
+  ]
+}

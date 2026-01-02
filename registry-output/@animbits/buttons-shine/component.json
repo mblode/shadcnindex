@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "buttons-shine",
+  "type": "registry:component",
+  "title": "Shine Button",
+  "description": "Button with shine sweep effect on hover",
+  "dependencies": ["motion"],
+  "files": [
+    {
+      "path": "registry/new-york/animations/buttons/shine.tsx",
+      "content": "\"use client\";\nimport { motion, type HTMLMotionProps } from \"motion/react\";\ninterface ShineButtonProps extends Omit<HTMLMotionProps<\"button\">, \"animate\"> {\n  children: React.ReactNode;\n  direction?: \"left\" | \"right\";\n}\nexport function ShineButton({\n  children,\n  direction = \"right\",\n  className,\n  ...props\n}: ShineButtonProps) {\n  return (\n    <motion.button\n      className={`relative overflow-hidden ${className || \"\"}`}\n      whileHover=\"hover\"\n      initial=\"initial\"\n      {...props}\n    >\n      {children}\n      <motion.div\n        className=\"absolute inset-0 w-full h-full pointer-events-none\"\n        style={{\n          background:\n            \"linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent)\",\n        }}\n        variants={{\n          initial: {\n            x: direction === \"right\" ? \"-100%\" : \"100%\",\n          },\n          hover: {\n            x: direction === \"right\" ? \"100%\" : \"-100%\",\n          },\n        }}\n        transition={{ duration: 0.6, ease: \"easeInOut\" }}\n      />\n    </motion.button>\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ]
+}

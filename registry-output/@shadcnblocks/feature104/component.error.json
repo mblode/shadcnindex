@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature104",
+  "url": "https://shadcnblocks.com/r/feature104.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature104",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A component featuring a header with an outlined badge, a title, a paragraph, a placeholder image, and six sections with icons and texts in a 3-column layout.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["badge"],
+    "files": [
+      {
+        "path": "code/block/feature104.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:20.820Z"
+}

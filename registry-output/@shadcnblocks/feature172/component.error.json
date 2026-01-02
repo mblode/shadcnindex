@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature172",
+  "url": "https://shadcnblocks.com/r/feature172.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature172",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A feature block splits into a 2-item top grid and a 3-item bottom grid, offering detailed insights and visuals for solutions. Unique image alignments highlight offerings.",
+    "dependencies": [],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/feature172.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:23.510Z"
+}

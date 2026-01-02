@@ -1,0 +1,29 @@
+{
+  "registry": "@efferd",
+  "component": "cta-12",
+  "url": "https://efferd.com/r/cta-12.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "cta-12",
+    "description": "Installation command with animated border lines and copy button.",
+    "dependencies": ["motion"],
+    "registryDependencies": ["button", "tooltip"],
+    "files": [
+      {
+        "path": "registry/cta/12/call-to-action.tsx",
+        "type": "registry:component"
+      },
+      {
+        "path": "components/copy-button.tsx",
+        "type": "registry:component"
+      },
+      {
+        "path": "../../packages/core/src/hooks/use-copy-to-clipboard.ts",
+        "type": "registry:hook"
+      }
+    ],
+    "categories": ["cta"],
+    "type": "registry:block"
+  },
+  "fetchedAt": "2026-01-02T11:08:57.729Z"
+}

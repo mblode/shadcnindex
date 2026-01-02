@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "extends": "none",
+  "name": "number-field-controlled-demo",
+  "title": "Number Field Controlled",
+  "description": "number-field-controlled-demo",
+  "registryDependencies": [
+    "https://intentui.com/r/field",
+    "https://intentui.com/r/number-field"
+  ],
+  "files": [
+    {
+      "path": "src/components/docs/forms/number-field/number-field-controlled-demo.tsx",
+      "content": "\"use client\"\n\nimport { useState } from \"react\"\n\nimport { Description, Label } from \"@/components/ui/field\"\nimport { NumberField, NumberInput } from \"@/components/ui/number-field\"\n\nexport default function NumberFieldControlledDemo() {\n  const [number, setNumber] = useState(1280)\n  return (\n    <div>\n      <NumberField value={number} onChange={setNumber}>\n        <Label>Width</Label>\n        <NumberInput />\n      </NumberField>\n\n      <Description className=\"mt-2 block [&>strong]:text-fg\">\n        You have typed: <strong>{number ?? \"-\"}</strong>\n      </Description>\n    </div>\n  )\n}\n",
+      "type": "registry:page",
+      "target": "app/number-field-controlled-demo/page.tsx"
+    }
+  ],
+  "type": "registry:page"
+}

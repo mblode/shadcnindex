@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "text-split-reveal",
+  "type": "registry:component",
+  "title": "Split Reveal Text",
+  "description": "Text reveals with vertical split effect",
+  "dependencies": ["motion"],
+  "files": [
+    {
+      "path": "registry/new-york/animations/text/split-reveal.tsx",
+      "content": "\"use client\";\nimport * as React from \"react\";\nimport { motion, HTMLMotionProps } from \"motion/react\";\nimport { cn } from \"@/lib/utils\";\nexport interface TextSplitRevealProps\n  extends Omit<HTMLMotionProps<\"p\">, \"children\"> {\n  children: string;\n  duration?: number;\n  delay?: number;\n  staggerDelay?: number;\n}\nexport function TextSplitReveal({\n  children,\n  className,\n  duration = 0.6,\n  delay = 0,\n  staggerDelay = 0.1,\n  ...props\n}: TextSplitRevealProps) {\n  const midpoint = Math.ceil(children.length / 2);\n  const leftHalf = children.slice(0, midpoint);\n  const rightHalf = children.slice(midpoint);\n  return (\n    <motion.p className={cn(\"overflow-hidden\", className)} {...props}>\n      <motion.span\n        className=\"inline-block\"\n        initial={{ opacity: 0, y: 20, clipPath: \"inset(0 100% 0 0)\" }}\n        animate={{ opacity: 1, y: 0, clipPath: \"inset(0 0% 0 0)\" }}\n        transition={{\n          duration,\n          delay,\n          ease: \"easeOut\",\n        }}\n      >\n        {leftHalf}\n      </motion.span>\n      <motion.span\n        className=\"inline-block\"\n        initial={{ opacity: 0, y: 20, clipPath: \"inset(0 0 0 100%)\" }}\n        animate={{ opacity: 1, y: 0, clipPath: \"inset(0 0 0 0%)\" }}\n        transition={{\n          duration,\n          delay: delay + staggerDelay,\n          ease: \"easeOut\",\n        }}\n      >\n        {rightHalf}\n      </motion.span>\n    </motion.p>\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ]
+}

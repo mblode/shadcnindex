@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "download11",
+  "url": "https://shadcnblocks.com/r/download11.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "download11",
+    "type": "registry:block",
+    "title": "Download",
+    "description": "A component displaying a download section with options for .MSI and .EXE files, Windows compatibility info, and dynamic bordered images.",
+    "dependencies": [],
+    "registryDependencies": ["https://magicui.design/r/border-beam", "button"],
+    "files": [
+      {
+        "path": "code/block/download11.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:19.247Z"
+}

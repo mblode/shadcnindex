@@ -1,0 +1,24 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature286",
+  "url": "https://shadcnblocks.com/r/feature286.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature286",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A component featuring an intro, 3 cards with glowing stars, pricing, and a \"View All\" button. Each card has \"Add to cart\" functionality and displays collection names and prices.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": [
+      "https://ui.aceternity.com/registry/glowing-stars.json",
+      "button"
+    ],
+    "files": [
+      {
+        "path": "code/block/feature286.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:27.767Z"
+}

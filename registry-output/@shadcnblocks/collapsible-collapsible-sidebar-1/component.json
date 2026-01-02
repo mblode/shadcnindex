@@ -1,0 +1,22 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "collapsible-collapsible-sidebar-1",
+  "title": "Collapsible/collapsible-sidebar-",
+  "description": "A collapsible/collapsible-sidebar- example",
+  "dependencies": ["lucide-react", "@radix-ui/react-collapsible"],
+  "registryDependencies": ["collapsible"],
+  "files": [
+    {
+      "path": "code/example/collapsible/collapsible-sidebar-1.tsx",
+      "content": "import { ChevronRight, Circle } from \"lucide-react\";\n\nimport {\n  Collapsible,\n  CollapsibleContent,\n  CollapsibleTrigger,\n} from \"@/components/ui/collapsible\";\n\nexport const title = \"Nested Sidebar Items\";\n\nconst Example = () => (\n  <div className=\"w-full max-w-lg\">\n    <Collapsible>\n      <CollapsibleTrigger className=\"flex w-full items-center gap-2 rounded-md px-2 py-1.5 text-sm font-medium hover:bg-muted\">\n        <ChevronRight className=\"h-4 w-4\" />\n        <span>Documentation</span>\n      </CollapsibleTrigger>\n      <CollapsibleContent className=\"mt-1 ml-2 border-l-2 pl-2\">\n        <Collapsible>\n          <CollapsibleTrigger className=\"flex w-full items-center gap-2 rounded-md px-2 py-1.5 text-sm hover:bg-muted\">\n            <ChevronRight className=\"h-3 w-3\" />\n            <span>Components</span>\n          </CollapsibleTrigger>\n          <CollapsibleContent className=\"mt-1 ml-4 space-y-1\">\n            <div className=\"flex items-center gap-2 px-2 py-1 text-sm hover:bg-muted\">\n              <Circle className=\"h-1.5 w-1.5 fill-current\" />\n              <span>Button</span>\n            </div>\n            <div className=\"flex items-center gap-2 px-2 py-1 text-sm hover:bg-muted\">\n              <Circle className=\"h-1.5 w-1.5 fill-current\" />\n              <span>Input</span>\n            </div>\n          </CollapsibleContent>\n        </Collapsible>\n      </CollapsibleContent>\n    </Collapsible>\n  </div>\n);\n\nexport default Example;\n",
+      "type": "registry:block"
+    },
+    {
+      "path": "src/components/ui/collapsible.tsx",
+      "content": "import * as CollapsiblePrimitive from \"@radix-ui/react-collapsible\"\n\nfunction Collapsible({\n  ...props\n}: React.ComponentProps<typeof CollapsiblePrimitive.Root>) {\n  return <CollapsiblePrimitive.Root data-slot=\"collapsible\" {...props} />\n}\n\nfunction CollapsibleTrigger({\n  ...props\n}: React.ComponentProps<typeof CollapsiblePrimitive.CollapsibleTrigger>) {\n  return (\n    <CollapsiblePrimitive.CollapsibleTrigger\n      data-slot=\"collapsible-trigger\"\n      {...props}\n    />\n  )\n}\n\nfunction CollapsibleContent({\n  ...props\n}: React.ComponentProps<typeof CollapsiblePrimitive.CollapsibleContent>) {\n  return (\n    <CollapsiblePrimitive.CollapsibleContent\n      data-slot=\"collapsible-content\"\n      {...props}\n    />\n  )\n}\n\nexport { Collapsible, CollapsibleTrigger, CollapsibleContent }\n",
+      "type": "registry:ui",
+      "target": ""
+    }
+  ],
+  "type": "registry:block"
+}

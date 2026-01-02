@@ -1,0 +1,13 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "input-group-label-demo",
+  "type": "registry:example",
+  "registryDependencies": ["input-group"],
+  "files": [
+    {
+      "path": "src/registry/pure-ui/examples/input-group/input-group-label-demo.tsx",
+      "content": "import {\n  InputGroup,\n  InputGroupAddon,\n  InputGroupButton,\n  InputGroupInput,\n  InputGroupText,\n  InputGroupTextarea,\n} from \"@/registry/pure-ui/ui/input-group\";\nimport {\n  Tooltip,\n  TooltipTrigger,\n  TooltipPopup,\n  TooltipProvider,\n} from \"@/registry/pure-ui/ui/tooltip\";\nimport { Label } from \"@/registry/pure-ui/ui/label\";\nimport { InfoIcon } from \"lucide-react\";\n\nexport function InputGroupLabelDemo() {\n  return (\n    <div className=\"grid w-full max-w-sm gap-4\">\n      <InputGroup>\n        <InputGroupInput id=\"email\" placeholder=\"Krishna\" />\n        <InputGroupAddon>\n          <Label htmlFor=\"email\">@</Label>\n        </InputGroupAddon>\n      </InputGroup>\n\n      <InputGroup>\n        <InputGroupInput id=\"email-2\" placeholder=\"krishna@kam-ui.com\" />\n        <InputGroupAddon align=\"block-start\">\n          <Label htmlFor=\"email-2\" className=\"text-foreground\">\n            Email\n          </Label>\n          <TooltipProvider>\n            <Tooltip>\n              <TooltipTrigger\n                render={\n                  <InputGroupButton\n                    variant=\"ghost\"\n                    aria-label=\"Help\"\n                    className=\"ml-auto rounded-full\"\n                    size=\"icon-xs\"\n                  />\n                }\n              >\n                <InfoIcon />\n              </TooltipTrigger>\n              <TooltipPopup>\n                <p>We&apos;ll use this to send you notifications</p>\n              </TooltipPopup>\n            </Tooltip>\n          </TooltipProvider>\n        </InputGroupAddon>\n      </InputGroup>\n    </div>\n  );\n}\n",
+      "type": "registry:example"
+    }
+  ]
+}

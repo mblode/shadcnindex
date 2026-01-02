@@ -1,0 +1,19 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "responsive-modal-side",
+  "type": "registry:component",
+  "title": "Responsive Modal Side",
+  "description": "component for the Responsive Modal Side",
+  "registryDependencies": [
+    "@spectrumui/responsive-modal-dependencies",
+    "button"
+  ],
+  "files": [
+    {
+      "path": "app/registry/responsive-modal/usage/responsive-modal-side.tsx",
+      "content": "\"use client\";\nimport React from \"react\";\nimport {\n  ResponsiveModal,\n  ResponsiveModalContent,\n  ResponsiveModalDescription,\n  ResponsiveModalHeader,\n  ResponsiveModalTitle,\n  ResponsiveModalTrigger,\n} from \"@/app/registry/spectrumui/responsive-modal-dependencies\";\nimport { Button } from \"@/components/ui/button\";\n\ntype Side = \"top\" | \"bottom\" | \"left\" | \"right\";\n\nconst ResponsiveModalSide = () => {\n  return (\n    <div className=\"space-y-3\">\n      <div className=\"space-x-3\">\n        <Modal side=\"top\" />\n        <Modal side=\"bottom\" />\n      </div>\n      <div className=\"space-x-3\">\n        <Modal side=\"left\" />\n        <Modal side=\"right\" />\n      </div>\n    </div>\n  );\n};\n\nconst Modal = ({ side }: { side: Side }) => {\n  return (\n    <ResponsiveModal>\n      <ResponsiveModalTrigger asChild>\n        <Button variant=\"outline\">{side}</Button>\n      </ResponsiveModalTrigger>\n      <ResponsiveModalContent side={side}>\n        <ResponsiveModalHeader>\n          <ResponsiveModalTitle>\n            This dialog will popup from {side} on mobile.\n          </ResponsiveModalTitle>\n          <ResponsiveModalDescription>\n            Lorem Ipsum is simply dummy text of the printing and typesetting\n            industry. Lorem Ipsum has been the standard dummy text ever since\n            the 1500s, when an unknown printer took a galley of type and\n            scrambled it to make a type specimen book. It has survived not only\n            five centuries, but also the leap into electronic typesetting,\n            remaining essentially unchanged. It was popularised in the 1960s\n            with the release of Letraset sheets containing Lorem Ipsum passages,\n            and more recently with desktop publishing software like Aldus\n            PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply\n            dummy text of the printing and typesetting industry. Lorem Ipsum has\n            been the standard dummy text ever since the 1500s, when an unknown\n            printer took a galley of type and scrambled it to make a type\n            specimen book. It has survived not only five centuries, but also the\n            leap into electronic typesetting, remaining essentially unchanged.\n            It was popularised in the 1960s with the release of Letraset sheets\n            containing Lorem Ipsum passages, and more recently with desktop\n            publishing software like Aldus PageMaker including versions of Lorem\n            Ipsum.\n          </ResponsiveModalDescription>\n        </ResponsiveModalHeader>\n      </ResponsiveModalContent>\n    </ResponsiveModal>\n  );\n};\n\nexport default ResponsiveModalSide;\n",
+      "type": "registry:component",
+      "target": "components/spectrumui/responsive-modal-side.tsx"
+    }
+  ]
+}

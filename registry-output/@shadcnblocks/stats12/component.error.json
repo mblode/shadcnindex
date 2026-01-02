@@ -1,0 +1,26 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "stats12",
+  "url": "https://shadcnblocks.com/r/stats12.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "stats12",
+    "type": "registry:block",
+    "title": "Stats",
+    "description": "This component displays dynamic stats with a toggle for monthly/yearly views, animated graph, and call-to-action button. It has a 2-column layout with animated numbers and icons.",
+    "dependencies": [
+      "@number-flow/react",
+      "framer-motion",
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": ["button"],
+    "files": [
+      {
+        "path": "code/block/stats12.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:52.290Z"
+}

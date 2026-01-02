@@ -1,0 +1,41 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "accordion-accordion-form-1",
+  "title": "Accordion/accordion-form-",
+  "description": "A accordion/accordion-form- example",
+  "dependencies": [
+    "@faker-js/faker",
+    "lucide-react",
+    "react",
+    "@radix-ui/react-accordion",
+    "clsx",
+    "tailwind-merge"
+  ],
+  "registryDependencies": ["accordion", "input"],
+  "files": [
+    {
+      "path": "code/example/accordion/accordion-form-1.tsx",
+      "content": "import { faker } from \"@faker-js/faker\";\nimport { Mail, MapPin, User } from \"lucide-react\";\nimport type { ReactNode } from \"react\";\n\nimport {\n  Accordion,\n  AccordionContent,\n  AccordionItem,\n  AccordionTrigger,\n} from \"@/components/ui/accordion\";\nimport { Input } from \"@/components/ui/input\";\n\nexport const title = \"Form\";\n\ntype FormSection = {\n  id: string;\n  title: string;\n  icon: ReactNode;\n  children: ReactNode;\n  isComplete?: boolean;\n};\n\nconst sections: FormSection[] = [\n  {\n    id: faker.string.uuid(),\n    icon: <User className=\"size-4 stroke-2 text-muted-foreground\" />,\n    title: \"Personal Information\",\n    children: (\n      <div className=\"flex flex-col gap-2\">\n        <Input placeholder=\"First Name\" type=\"text\" />\n        <Input placeholder=\"Last Name\" type=\"text\" />\n      </div>\n    ),\n  },\n  {\n    id: faker.string.uuid(),\n    icon: <Mail className=\"size-4 stroke-2 text-muted-foreground\" />,\n    title: \"Contact Information\",\n    children: (\n      <div className=\"flex flex-col gap-2\">\n        <Input placeholder=\"Email\" type=\"email\" />\n        <Input placeholder=\"Phone\" type=\"tel\" />\n      </div>\n    ),\n  },\n  {\n    id: faker.string.uuid(),\n    icon: <MapPin className=\"size-4 stroke-2 text-muted-foreground\" />,\n    title: \"Address Information\",\n    children: (\n      <div className=\"flex flex-col gap-2\">\n        <Input placeholder=\"Street\" type=\"text\" />\n        <Input placeholder=\"City\" type=\"text\" />\n        <Input placeholder=\"State\" type=\"text\" />\n        <Input placeholder=\"Zip\" type=\"text\" />\n      </div>\n    ),\n  },\n];\n\nconst Example = () => (\n  <Accordion className=\"w-full max-w-md -space-y-px\" collapsible type=\"single\">\n    {sections.map((section) => (\n      <AccordionItem\n        className=\"overflow-hidden border bg-background px-4 first:rounded-t-lg last:rounded-b-lg last:border-b\"\n        key={section.id}\n        value={section.id}\n      >\n        <AccordionTrigger className=\"group\">\n          <div className=\"flex items-center gap-2\">\n            {section.icon}\n            <span>{section.title}</span>\n            {section.isComplete && (\n              <span className=\"ml-2 text-sm text-green-500\">✓</span>\n            )}\n          </div>\n        </AccordionTrigger>\n        <AccordionContent>{section.children}</AccordionContent>\n      </AccordionItem>\n    ))}\n  </Accordion>\n);\n\nexport default Example;\n",
+      "type": "registry:block"
+    },
+    {
+      "path": "src/components/ui/accordion.tsx",
+      "content": "import * as React from \"react\"\nimport * as AccordionPrimitive from \"@radix-ui/react-accordion\"\nimport { ChevronDownIcon } from \"lucide-react\"\n\nimport { cn } from \"@/lib/utils\"\n\nfunction Accordion({\n  ...props\n}: React.ComponentProps<typeof AccordionPrimitive.Root>) {\n  return <AccordionPrimitive.Root data-slot=\"accordion\" {...props} />\n}\n\nfunction AccordionItem({\n  className,\n  ...props\n}: React.ComponentProps<typeof AccordionPrimitive.Item>) {\n  return (\n    <AccordionPrimitive.Item\n      data-slot=\"accordion-item\"\n      className={cn(\"border-b last:border-b-0\", className)}\n      {...props}\n    />\n  )\n}\n\nfunction AccordionTrigger({\n  className,\n  children,\n  ...props\n}: React.ComponentProps<typeof AccordionPrimitive.Trigger>) {\n  return (\n    <AccordionPrimitive.Header className=\"flex\">\n      <AccordionPrimitive.Trigger\n        data-slot=\"accordion-trigger\"\n        className={cn(\n          \"focus-visible:border-ring focus-visible:ring-ring/50 flex flex-1 items-start justify-between gap-4 rounded-md py-4 text-left text-sm font-medium transition-all outline-none hover:underline focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 [&[data-state=open]>svg]:rotate-180\",\n          className\n        )}\n        {...props}\n      >\n        {children}\n        <ChevronDownIcon className=\"text-muted-foreground pointer-events-none size-4 shrink-0 translate-y-0.5 transition-transform duration-200\" />\n      </AccordionPrimitive.Trigger>\n    </AccordionPrimitive.Header>\n  )\n}\n\nfunction AccordionContent({\n  className,\n  children,\n  ...props\n}: React.ComponentProps<typeof AccordionPrimitive.Content>) {\n  return (\n    <AccordionPrimitive.Content\n      data-slot=\"accordion-content\"\n      className=\"data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down overflow-hidden text-sm\"\n      {...props}\n    >\n      <div className={cn(\"pt-0 pb-4\", className)}>{children}</div>\n    </AccordionPrimitive.Content>\n  )\n}\n\nexport { Accordion, AccordionItem, AccordionTrigger, AccordionContent }\n",
+      "type": "registry:ui",
+      "target": ""
+    },
+    {
+      "path": "src/components/ui/input.tsx",
+      "content": "import * as React from \"react\"\n\nimport { cn } from \"@/lib/utils\"\n\nfunction Input({ className, type, ...props }: React.ComponentProps<\"input\">) {\n  return (\n    <input\n      type={type}\n      data-slot=\"input\"\n      className={cn(\n        \"file:text-foreground placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 border-input h-9 w-full min-w-0 rounded-md border bg-transparent px-3 py-1 text-base shadow-xs transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm\",\n        \"focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px]\",\n        \"aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive\",\n        className\n      )}\n      {...props}\n    />\n  )\n}\n\nexport { Input }\n",
+      "type": "registry:ui",
+      "target": ""
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "content": "import { type ClassValue, clsx } from 'clsx';\nimport { twMerge } from 'tailwind-merge';\n\nexport function cn(...inputs: ClassValue[]) {\n  return twMerge(clsx(inputs));\n}\n",
+      "type": "registry:lib",
+      "target": ""
+    }
+  ],
+  "type": "registry:block"
+}

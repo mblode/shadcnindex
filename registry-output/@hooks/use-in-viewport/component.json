@@ -1,0 +1,18 @@
+{
+  "name": "use-in-viewport",
+  "author": "Brendan Dash (https://shadcn-hooks.vercel.app)",
+  "description": "A hook to check if an element is in the viewport",
+  "registryDependencies": [
+    "@hooks/use-effect-with-target",
+    "@hooks/create-effect-with-target",
+    "@hooks/use-in-viewport"
+  ],
+  "files": [
+    {
+      "path": "registry/hooks/use-in-viewport.ts",
+      "content": "import { useState } from 'react'\nimport { useEffectWithTarget } from '@/registry/hooks/use-effect-with-target'\nimport { getTargetElement } from '@/registry/lib/create-effect-with-target'\nimport type { BasicTarget } from '@/registry/lib/create-effect-with-target'\n\ntype CallbackType = (entry: IntersectionObserverEntry) => void\n\nexport interface Options {\n  rootMargin?: string\n  threshold?: number | number[]\n  root?: BasicTarget<Element>\n  callback?: CallbackType\n}\n\nexport function useInViewport(\n  target: BasicTarget | BasicTarget[],\n  options?: Options,\n) {\n  const { callback, ...option } = options || {}\n\n  const [state, setState] = useState<boolean>()\n  const [ratio, setRatio] = useState<number>()\n\n  useEffectWithTarget(\n    () => {\n      const targets = Array.isArray(target) ? target : [target]\n      const els = targets\n        .map((element) => getTargetElement(element))\n        .filter(Boolean)\n\n      if (!els.length) {\n        return\n      }\n\n      const observer = new IntersectionObserver(\n        (entries) => {\n          for (const entry of entries) {\n            setRatio(entry.intersectionRatio)\n            setState(entry.isIntersecting)\n            callback?.(entry)\n          }\n        },\n        {\n          ...option,\n          root: getTargetElement(options?.root),\n        },\n      )\n\n      els.forEach((el) => observer.observe(el!))\n\n      return () => {\n        observer.disconnect()\n      }\n    },\n    [options?.rootMargin, options?.threshold, callback],\n    target,\n  )\n\n  return [state, ratio] as const\n}\n",
+      "type": "registry:hook"
+    }
+  ],
+  "type": "registry:hook"
+}

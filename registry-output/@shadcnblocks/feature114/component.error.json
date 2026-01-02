@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature114",
+  "url": "https://shadcnblocks.com/r/feature114.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature114",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A component featuring dual-column layout with avatars, a heading, stats, and vertically auto-scrolling carousels showcasing features.",
+    "dependencies": ["embla-carousel-auto-scroll", "lucide-react"],
+    "registryDependencies": ["avatar", "button", "carousel"],
+    "files": [
+      {
+        "path": "code/block/feature114.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:21.170Z"
+}

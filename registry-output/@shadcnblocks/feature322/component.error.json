@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature322",
+  "url": "https://shadcnblocks.com/r/feature322.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature322",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "This component, named `Feature322`, highlights several features and includes a testimonial, all enhanced with animations using \"framer-motion\" to create an engaging user experience. It consists of interactive feature cards that display dynamic content such as titles, subtitles, statistics, and visuals, along with an animated scroll progress indicator and a testimonial section to offer a comprehensive overview.",
+    "dependencies": ["framer-motion", "react"],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/feature322.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:28.447Z"
+}

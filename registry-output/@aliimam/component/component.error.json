@@ -1,0 +1,12 @@
+{
+  "registry": "@aliimam",
+  "component": "component",
+  "url": "https://aliimam.in/r/component.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "component",
+    "type": "registry:component",
+    "registryDependencies": ["@aliimam/gradient-mesh"]
+  },
+  "fetchedAt": "2026-01-02T11:07:25.729Z"
+}

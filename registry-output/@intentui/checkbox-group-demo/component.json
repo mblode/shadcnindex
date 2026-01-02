@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "extends": "none",
+  "name": "checkbox-group-demo",
+  "title": "Checkbox Group",
+  "description": "checkbox-group-demo",
+  "registryDependencies": [
+    "https://intentui.com/r/checkbox",
+    "https://intentui.com/r/field"
+  ],
+  "files": [
+    {
+      "path": "src/components/docs/forms/checkbox/checkbox-group-demo.tsx",
+      "content": "\"use client\"\n\nimport { Checkbox, CheckboxGroup } from \"@/components/ui/checkbox\"\nimport { Label } from \"@/components/ui/field\"\n\nexport default function CheckboxGroupDemo() {\n  return (\n    <CheckboxGroup>\n      <Label>Settings</Label>\n      <Checkbox value=\"notifications\">Enable notifications</Checkbox>\n      <Checkbox value=\"auto_update\">Auto-update applications</Checkbox>\n      <Checkbox value=\"dark_mode\">Enable dark mode</Checkbox>\n      <Checkbox value=\"location_access\">Allow location access</Checkbox>\n      <Checkbox value=\"two_factor_auth\">Enable two-factor authentication</Checkbox>\n    </CheckboxGroup>\n  )\n}\n",
+      "type": "registry:page",
+      "target": "app/checkbox-group-demo/page.tsx"
+    }
+  ],
+  "type": "registry:page"
+}

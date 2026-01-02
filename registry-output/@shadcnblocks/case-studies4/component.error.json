@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "case-studies4",
+  "url": "https://shadcnblocks.com/r/case-studies4.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "case-studies4",
+    "type": "registry:block",
+    "title": "Case-studies",
+    "description": "This component displays a case study block highlighting significant improvements and achievements, featuring key statistics, an author profile, and a summary. It includes a call-to-action button that guides users to read the full story, making it useful for showcasing success stories or customer testimonials.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["avatar", "button"],
+    "files": [
+      {
+        "path": "code/block/case-studies4.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:15.619Z"
+}

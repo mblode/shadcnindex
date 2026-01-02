@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "npm",
+  "title": "npm",
+  "files": [
+    {
+      "path": "././static/components-generated/npm.tsx",
+      "content": "import type { SVGProps } from \"react\";\n\nconst Npm = (props: SVGProps<SVGSVGElement>) => (\n  <svg {...props} viewBox=\"0 0 2500 2500\">\n    <path fill=\"#c00\" d=\"M0 0h2500v2500H0z\" />\n    <path\n      fill=\"#fff\"\n      d=\"M1241.5 268.5h-973v1962.9h972.9V763.5h495v1467.9h495V268.5z\"\n    />\n  </svg>\n);\n\nexport { Npm };\n",
+      "type": "registry:component",
+      "target": "components/ui/svgs/npm.tsx"
+    },
+    {
+      "path": "././static/components-generated/npmWordmark.tsx",
+      "content": "import type { SVGProps } from \"react\";\n\nconst NpmWordmark = (props: SVGProps<SVGSVGElement>) => (\n  <svg {...props} viewBox=\"0 0 128 128\">\n    <path\n      fill=\"#cb3837\"\n      d=\"M2 38.5h124v43.71H64v7.29H36.44v-7.29H2Zm6.89 36.43h13.78V53.07h6.89v21.86h6.89V45.79H8.89Zm34.44-29.14v36.42h13.78v-7.28h13.78V45.79Zm13.78 7.29H64v14.56h-6.89Zm20.67-7.29v29.14h13.78V53.07h6.89v21.86h6.89V53.07h6.89v21.86h6.89V45.79Z\"\n    />\n  </svg>\n);\n\nexport { NpmWordmark };\n",
+      "type": "registry:component",
+      "target": "components/ui/svgs/npmWordmark.tsx"
+    }
+  ],
+  "type": "registry:component"
+}

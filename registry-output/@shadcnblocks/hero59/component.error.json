@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "hero59",
+  "url": "https://shadcnblocks.com/r/hero59.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "hero59",
+    "type": "registry:block",
+    "title": "Hero",
+    "description": "A full-screen component with a video background, featuring a title, subtitle, and two buttons in a central column layout.",
+    "dependencies": [],
+    "registryDependencies": ["button"],
+    "files": [
+      {
+        "path": "code/block/hero59.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:38.997Z"
+}

@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "banner6",
+  "url": "https://shadcnblocks.com/r/banner6.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "banner6",
+    "type": "registry:block",
+    "title": "Banner",
+    "description": "A dismissible banner featuring overlapping avatars, a text description, and a close button.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": ["avatar", "button"],
+    "files": [
+      {
+        "path": "code/block/banner6.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:13.824Z"
+}

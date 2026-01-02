@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "hero24",
+  "url": "https://shadcnblocks.com/r/hero24.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "hero24",
+    "type": "registry:block",
+    "title": "Hero",
+    "description": "A marketing block with an image, title, button, and 4 columns highlighting features with icons.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["button"],
+    "files": [
+      {
+        "path": "code/block/hero24.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:37.469Z"
+}

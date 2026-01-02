@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "services13",
+  "url": "https://shadcnblocks.com/r/services13.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "services13",
+    "type": "registry:block",
+    "title": "Services",
+    "description": "A component featuring services with a dynamic layout. It has a title, text, and a button, followed by cards for each service with hover effects. The layout shifts from single to multiple columns.",
+    "dependencies": ["framer-motion", "lucide-react"],
+    "registryDependencies": ["button", "card"],
+    "files": [
+      {
+        "path": "code/block/services13.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:50.236Z"
+}

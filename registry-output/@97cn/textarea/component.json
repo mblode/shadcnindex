@@ -1,0 +1,41 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "textarea",
+  "type": "registry:ui",
+  "title": "Textarea",
+  "description": "Windows 95 styled textarea component",
+  "dependencies": [],
+  "files": [
+    {
+      "path": "components/97cn/textarea.tsx",
+      "content": "import * as React from \"react\"\nimport { cn } from \"@/lib/utils\"\n\nexport interface Win95TextareaProps extends React.TextareaHTMLAttributes<HTMLTextAreaElement> {}\n\nconst Win95Textarea = React.forwardRef<HTMLTextAreaElement, Win95TextareaProps>(({ className, ...props }, ref) => {\n  return (\n    <textarea\n      className={cn(\n        \"flex min-h-20 w-full bg-win95-white px-2 py-1 text-xs text-win95-black win95-sunken placeholder:text-win95-dark-gray focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-win95-black disabled:cursor-not-allowed disabled:opacity-50 font-sans resize-none\",\n        className,\n      )}\n      ref={ref}\n      {...props}\n    />\n  )\n})\nWin95Textarea.displayName = \"Win95Textarea\"\n\nexport { Win95Textarea }\n",
+      "type": "registry:ui"
+    }
+  ],
+  "cssVars": {
+    "light": {
+      "win95-white": "#ffffff",
+      "win95-black": "#000000",
+      "win95-dark-gray": "#808080",
+      "win95-button-shadow": "#808080",
+      "win95-button-highlight": "#ffffff"
+    },
+    "dark": {
+      "win95-white": "#ffffff",
+      "win95-black": "#000000",
+      "win95-dark-gray": "#808080",
+      "win95-button-shadow": "#808080",
+      "win95-button-highlight": "#ffffff"
+    }
+  },
+  "css": {
+    "@layer utilities": {
+      ".win95-sunken": {
+        "border-top": "2px solid var(--win95-button-shadow)",
+        "border-left": "2px solid var(--win95-button-shadow)",
+        "border-right": "2px solid var(--win95-button-highlight)",
+        "border-bottom": "2px solid var(--win95-button-highlight)"
+      }
+    }
+  }
+}

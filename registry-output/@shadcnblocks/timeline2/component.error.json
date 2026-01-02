@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "timeline2",
+  "url": "https://shadcnblocks.com/r/timeline2.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "timeline2",
+    "type": "registry:block",
+    "title": "Timeline",
+    "description": "A component displaying a timeline of sections with images and text. It has a two-column layout, with text on the left and a sticky, changing image on the right as you scroll.",
+    "dependencies": ["react"],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/timeline2.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:54.671Z"
+}

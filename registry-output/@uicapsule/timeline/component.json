@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "homepage": "https://uicapsule.com/ui/timeline",
+  "name": "timeline",
+  "type": "registry:block",
+  "author": "Kaiyu Hsu <uicapsule@kyh.io>",
+  "dependencies": [],
+  "devDependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "type": "registry:file",
+      "path": "/timeline.tsx",
+      "content": "import React from \"react\";\n\nexport const Timeline = () => {\n  return <div>Timeline Component coming soon</div>;\n};\n",
+      "target": "uicapsule/timeline/timeline.tsx"
+    }
+  ]
+}

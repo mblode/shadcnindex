@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "extends": "none",
+  "name": "search-field-with-label-demo",
+  "title": "Search Field With Label",
+  "description": "search-field-with-label-demo",
+  "registryDependencies": [
+    "https://intentui.com/r/field",
+    "https://intentui.com/r/search-field"
+  ],
+  "files": [
+    {
+      "path": "src/components/docs/forms/search-field/search-field-with-label-demo.tsx",
+      "content": "\"use client\"\n\nimport { Label } from \"@/components/ui/field\"\nimport { SearchField, SearchInput } from \"@/components/ui/search-field\"\n\nexport default function SearchFieldWithLabelDemo() {\n  return (\n    <SearchField>\n      <Label>Search</Label>\n      <SearchInput />\n    </SearchField>\n  )\n}\n",
+      "type": "registry:page",
+      "target": "app/search-field-with-label-demo/page.tsx"
+    }
+  ],
+  "type": "registry:page"
+}

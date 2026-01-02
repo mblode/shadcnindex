@@ -1,0 +1,13 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "accordion-swiss-variant-demo",
+  "type": "registry:example",
+  "registryDependencies": ["accordion"],
+  "files": [
+    {
+      "path": "src/registry/pure-ui/examples/accordion/accordion-swiss-variant-demo.tsx",
+      "content": "import {\n  Accordion,\n  AccordionPanel,\n  AccordionItem,\n  AccordionTrigger,\n} from \"@/registry/pure-ui/ui/accordion\";\n\nexport function AccordionSwissVariantDemo() {\n  return (\n    <Accordion variant=\"swiss\" className=\"w-full max-w-xl\">\n      <AccordionItem value=\"item-1\">\n        <AccordionTrigger className=\"flex items-center gap-2\">\n          What Is Football?\n        </AccordionTrigger>\n        <AccordionPanel className=\"flex flex-col gap-4 text-balance\">\n          <p className=\"text-[15px] text-muted-foreground\">\n            A global sport where two teams aim to score goals by getting the\n            ball into the opponent’s net.\n          </p>\n        </AccordionPanel>\n      </AccordionItem>\n      <AccordionItem value=\"item-2\">\n        <AccordionTrigger className=\"flex items-center gap-2\">\n          Duration of the Game\n        </AccordionTrigger>\n        <AccordionPanel className=\"flex flex-col gap-4 text-balance\">\n          <p className=\"text-[15px] text-muted-foreground\">\n            A match lasts 90 minutes, divided into two halves, with added\n            stoppage time as needed.\n          </p>\n        </AccordionPanel>\n      </AccordionItem>\n      <AccordionItem value=\"item-3\">\n        <AccordionTrigger className=\"flex items-center gap-2\">\n          Basic Rules\n        </AccordionTrigger>\n        <AccordionPanel className=\"flex flex-col gap-4 text-balance\">\n          <p className=\"text-[15px] text-muted-foreground\">\n            Players can use any body part except their hands (goalkeepers\n            excluded). Fouls, offsides, and penalties shape the game.\n          </p>\n        </AccordionPanel>\n      </AccordionItem>\n      <AccordionItem value=\"item-4\">\n        <AccordionTrigger className=\"flex items-center gap-2\">\n          Player Positions\n        </AccordionTrigger>\n        <AccordionPanel className=\"flex flex-col gap-4 text-balance\">\n          <p className=\"text-[15px] text-muted-foreground\">\n            Teams have defenders, midfielders, forwards, and a goalkeeper—each\n            with specific responsibilities on the field.\n          </p>\n        </AccordionPanel>\n      </AccordionItem>\n    </Accordion>\n  );\n}\n",
+      "type": "registry:example"
+    }
+  ]
+}

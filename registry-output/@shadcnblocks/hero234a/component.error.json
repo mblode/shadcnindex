@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "hero234a",
+  "url": "https://shadcnblocks.com/r/hero234a.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "hero234a",
+    "type": "registry:block",
+    "title": "Hero234a",
+    "description": "Animated image gallery with dynamic text overlay and interactive button. Four-column, infinite scroll horizontal flip, ellipse masking for edge softening.",
+    "dependencies": ["framer-motion"],
+    "registryDependencies": ["button"],
+    "files": [
+      {
+        "path": "code/block/hero234a.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:37.200Z"
+}

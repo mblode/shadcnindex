@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "toggle-group-toggle-group-sizes-1",
+  "url": "https://shadcnblocks.com/r/toggle-group-toggle-group-sizes-1.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "toggle-group-toggle-group-sizes-1",
+    "type": "registry:block",
+    "title": "Toggle-group/toggle-group-sizes-",
+    "description": "A toggle-group/toggle-group-sizes- example",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["toggle-group"],
+    "files": [
+      {
+        "path": "code/example/toggle-group/toggle-group-sizes-1.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:15:39.267Z"
+}

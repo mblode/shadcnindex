@@ -1,0 +1,13 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "card-horizontal-layout",
+  "type": "registry:example",
+  "registryDependencies": ["card"],
+  "files": [
+    {
+      "path": "src/registry/pure-ui/examples/card/card-horizontal-layout.tsx",
+      "content": "import {\n  Card,\n  CardHeader,\n  CardTitle,\n  CardDescription,\n  CardFooter,\n} from \"@/registry/pure-ui/ui/card\";\nimport { Button } from \"@/registry/pure-ui/ui/button\";\n\nexport function CardHorizontalLayout() {\n  return (\n    <Card className=\"w-full items-stretch md:flex-row\">\n      <img\n        alt=\"Demon Slayer: Kimetsu no Yaiba\"\n        className=\"rounded-lg pointer-events-none aspect-square w-full select-none object-cover md:max-w-[146px]\"\n        loading=\"lazy\"\n        src=\"https://pbs.twimg.com/media/G2co19tXoAAnWT8?format=jpg&name=large\"\n      />\n      <div className=\"flex flex-1 flex-col gap-3\">\n        <CardHeader className=\"gap-1 py-1\">\n          <CardTitle>Demon Slayer: Kimetsu no Yaiba</CardTitle>\n          <CardDescription>\n            Follow Tanjiro Kamado as he embarks on a journey to become a demon\n            slayer and find a cure for his sister Nezuko, who has been turned\n            into a demon. An epic tale of courage, family bonds, and\n            breathtaking battles.\n          </CardDescription>\n        </CardHeader>\n        <CardFooter className=\"mt-auto flex w-full flex-row items-center justify-between\">\n          <div className=\"flex flex-col\">\n            <span\n              aria-label=\"Rating: 8.6 out of 10\"\n              className=\"text-foreground text-sm font-medium\"\n            >\n              ★ 8.6/10\n            </span>\n            <span\n              aria-label=\"Total episodes: 26 episodes\"\n              className=\"text-muted-foreground text-xs\"\n            >\n              26 episodes\n            </span>\n          </div>\n          <Button size=\"sm\">Watch Now</Button>\n        </CardFooter>\n      </div>\n    </Card>\n  );\n}\n",
+      "type": "registry:example"
+    }
+  ]
+}

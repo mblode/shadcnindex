@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "list1",
+  "url": "https://shadcnblocks.com/r/list1.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "list1",
+    "type": "registry:block",
+    "title": "List",
+    "description": "A component displaying a table with details on various projects, including icons, categories, descriptions, years, offers, and segments. It adapts to different screen widths.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["table"],
+    "files": [
+      {
+        "path": "code/block/list1.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:41.089Z"
+}

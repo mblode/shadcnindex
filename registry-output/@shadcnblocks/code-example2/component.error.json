@@ -1,0 +1,25 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "code-example2",
+  "url": "https://shadcnblocks.com/r/code-example2.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "code-example2",
+    "type": "registry:block",
+    "title": "Code-example",
+    "description": "This component provides a visual interface for displaying code examples of HTTP requests in multiple programming languages, including JavaScript, Python, and Go. It features a code block with selectable files, language switching options, and a button for copying code, making it ideal for educational or documentation purposes.",
+    "dependencies": [],
+    "registryDependencies": [
+      "https://www.kibo-ui.com/r/code-block.json",
+      "button",
+      "scroll-area"
+    ],
+    "files": [
+      {
+        "path": "code/block/code-example2.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:16.349Z"
+}

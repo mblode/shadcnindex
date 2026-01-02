@@ -1,0 +1,14 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "trust-wallet",
+  "title": "trust-wallet",
+  "files": [
+    {
+      "path": "././static/components-generated/trust.tsx",
+      "content": "import type { SVGProps } from \"react\";\n\nconst Trust = (props: SVGProps<SVGSVGElement>) => (\n  <svg {...props} viewBox=\"0 0 444 501\" fill=\"none\">\n    <path\n      d=\"M0.710022 72.41L222.16 0.109985V500.63C63.98 433.89 0.710022 305.98 0.710022 233.69V72.41Z\"\n      fill=\"#0500FF\"\n    />\n    <path\n      d=\"M443.62 72.41L222.17 0.109985V500.63C380.35 433.89 443.62 305.98 443.62 233.69V72.41Z\"\n      fill=\"url(#paint0_linear_3_10)\"\n    />\n    <defs>\n      <linearGradient\n        id=\"paint0_linear_3_10\"\n        x1=\"385.26\"\n        y1=\"-34.78\"\n        x2=\"216.61\"\n        y2=\"493.5\"\n        gradientUnits=\"userSpaceOnUse\"\n      >\n        <stop offset=\"0.02\" stop-color=\"#0000FF\" />\n        <stop offset=\"0.08\" stop-color=\"#0094FF\" />\n        <stop offset=\"0.16\" stop-color=\"#48FF91\" />\n        <stop offset=\"0.42\" stop-color=\"#0094FF\" />\n        <stop offset=\"0.68\" stop-color=\"#0038FF\" />\n        <stop offset=\"0.9\" stop-color=\"#0500FF\" />\n      </linearGradient>\n    </defs>\n  </svg>\n);\n\nexport { Trust };\n",
+      "type": "registry:component",
+      "target": "components/ui/svgs/trust.tsx"
+    }
+  ],
+  "type": "registry:component"
+}

@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "projects17b",
+  "url": "https://shadcnblocks.com/r/projects17b.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "projects17b",
+    "type": "registry:block",
+    "title": "Projects17b",
+    "description": "A carousel-based component showcasing projects with images, titles, categories, locations, years, and descriptions within cards. Includes navigational arrows and badges for category identification.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": ["badge", "button", "carousel"],
+    "files": [
+      {
+        "path": "code/block/projects17b.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:48.442Z"
+}

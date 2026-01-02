@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "faq2",
+  "url": "https://shadcnblocks.com/r/faq2.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "faq2",
+    "type": "registry:block",
+    "title": "Faq",
+    "description": "A FAQ component displaying questions and answers in a column, with a customizable heading and dynamic content.",
+    "dependencies": [],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/faq2.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:20.138Z"
+}

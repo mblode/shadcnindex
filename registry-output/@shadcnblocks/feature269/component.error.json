@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature269",
+  "url": "https://shadcnblocks.com/r/feature269.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature269",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A feature block lists 12 advantages with icons in a two-column grid and highlights services with an image in an adjacent visual card.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": ["https://ui.aceternity.com/registry/3d-card.json"],
+    "files": [
+      {
+        "path": "code/block/feature269.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:27.194Z"
+}

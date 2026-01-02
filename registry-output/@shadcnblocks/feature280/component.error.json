@@ -1,0 +1,23 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature280",
+  "url": "https://shadcnblocks.com/r/feature280.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature280",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A layout showcasing user testimonials and a feature list with a title, separated into two columns, including checkboxes for features.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": [
+      "https://ui.aceternity.com/registry/card-stack.json"
+    ],
+    "files": [
+      {
+        "path": "code/block/feature280.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:27.513Z"
+}

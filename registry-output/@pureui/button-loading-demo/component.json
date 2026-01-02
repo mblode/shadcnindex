@@ -1,0 +1,13 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "button-loading-demo",
+  "type": "registry:example",
+  "registryDependencies": ["button"],
+  "files": [
+    {
+      "path": "src/registry/pure-ui/examples/button/button-loading-demo.tsx",
+      "content": "\"use client\";\n\nimport { useEffect, useState } from \"react\";\n\nimport { Button } from \"@/registry/pure-ui/ui/button\";\nimport { Spinner } from \"@/registry/pure-ui/ui/spinner\";\n\nexport function ButtonLoadingDemo() {\n  const [isPending, setIsPending] = useState(false);\n\n  useEffect(() => {\n    isPending && setTimeout(() => setIsPending(false), 2000);\n  }, [isPending]);\n\n  return (\n    <Button disabled={isPending} onClick={() => setIsPending(true)}>\n      {isPending ? <Spinner size=\"sm\" /> : null}\n      {isPending ? \"Submitting...\" : \"Submit\"}\n    </Button>\n  );\n}\n",
+      "type": "registry:example"
+    }
+  ]
+}

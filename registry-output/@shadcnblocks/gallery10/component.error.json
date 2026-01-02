@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "gallery10",
+  "url": "https://shadcnblocks.com/r/gallery10.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "gallery10",
+    "type": "registry:block",
+    "title": "Gallery",
+    "description": "A testimonial carousel component with text content, navigation buttons, and progress indicator. It has a dual-column layout with quotes and images.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": ["badge", "button", "carousel"],
+    "files": [
+      {
+        "path": "code/block/gallery10.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:32.165Z"
+}

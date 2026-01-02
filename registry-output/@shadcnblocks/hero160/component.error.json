@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "hero160",
+  "url": "https://shadcnblocks.com/r/hero160.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "hero160",
+    "type": "registry:block",
+    "title": "Hero",
+    "description": "This component displays an overlay text and buttons on an image backdrop with an aspect-ratio image below. Features a badge with an award, a gradient headline, a subtext, and action buttons. Also includes a small text with icons.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["aspect-ratio", "badge", "button"],
+    "files": [
+      {
+        "path": "code/block/hero160.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:34.786Z"
+}

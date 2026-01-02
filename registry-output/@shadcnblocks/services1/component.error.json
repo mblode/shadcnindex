@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "services1",
+  "url": "https://shadcnblocks.com/r/services1.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "services1",
+    "type": "registry:block",
+    "title": "Services",
+    "description": "A component displaying services in 1-2 columns, each service with a title, description, and list of features marked by check icons.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/services1.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:50.180Z"
+}

@@ -1,0 +1,21 @@
+{
+  "registry": "@efferd",
+  "component": "cta-13",
+  "url": "https://efferd.com/r/cta-13.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "cta-13",
+    "description": "Animated circular border with centered heading and action button.",
+    "dependencies": ["motion"],
+    "registryDependencies": ["button"],
+    "files": [
+      {
+        "path": "registry/cta/13/call-to-action.tsx",
+        "type": "registry:component"
+      }
+    ],
+    "categories": ["cta"],
+    "type": "registry:block"
+  },
+  "fetchedAt": "2026-01-02T11:08:57.600Z"
+}

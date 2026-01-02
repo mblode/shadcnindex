@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "navbar4",
+  "url": "https://shadcnblocks.com/r/navbar4.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "navbar4",
+    "type": "registry:block",
+    "title": "Navbar",
+    "description": "A navigational component with six main categories, each expanding into detailed sub-menus including solutions, products, company information, customer stories, partner programs, and resources. Features interactive elements for a comprehensive exploration.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": ["button", "navigation-menu"],
+    "files": [
+      {
+        "path": "code/block/navbar4.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:42.579Z"
+}

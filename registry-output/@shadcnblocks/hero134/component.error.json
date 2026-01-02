@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "hero134",
+  "url": "https://shadcnblocks.com/r/hero134.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "hero134",
+    "type": "registry:block",
+    "title": "Hero",
+    "description": "Marketing component with a video popup, call-to-action buttons, and brand logos. Features a headline, description, and image.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": ["aspect-ratio", "button", "dialog"],
+    "files": [
+      {
+        "path": "code/block/hero134.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:34.225Z"
+}

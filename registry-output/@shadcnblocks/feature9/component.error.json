@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature9",
+  "url": "https://shadcnblocks.com/r/feature9.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature9",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A component featuring a central title, description, badges, two textual cards, and an image in a three-column layout; includes \"Read more\" buttons.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["badge", "button", "card"],
+    "files": [
+      {
+        "path": "code/block/feature9.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:30.546Z"
+}

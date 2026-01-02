@@ -1,0 +1,13 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "checkbox-disabled-demo",
+  "type": "registry:example",
+  "registryDependencies": ["checkbox"],
+  "files": [
+    {
+      "path": "src/registry/pure-ui/examples/checkbox/checkbox-disabled-demo.tsx",
+      "content": "import { Checkbox } from \"@/registry/pure-ui/ui/checkbox\";\n\nexport function CheckboxDisabledDemo() {\n  return (\n    <label className=\"flex items-center gap-2 cursor-pointer\">\n      <Checkbox disabled />\n    </label>\n  );\n}\n",
+      "type": "registry:example"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "alert-dialog-alert-dialog-destructive-2",
+  "url": "https://shadcnblocks.com/r/alert-dialog-alert-dialog-destructive-2.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "alert-dialog-alert-dialog-destructive-2",
+    "type": "registry:block",
+    "title": "Alert-dialog/alert-dialog-destructive-",
+    "description": "A alert-dialog/alert-dialog-destructive- example",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["alert-dialog", "button"],
+    "files": [
+      {
+        "path": "code/example/alert-dialog/alert-dialog-destructive-2.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:58.099Z"
+}

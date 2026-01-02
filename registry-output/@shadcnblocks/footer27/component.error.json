@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "footer27",
+  "url": "https://shadcnblocks.com/r/footer27.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "footer27",
+    "type": "registry:block",
+    "title": "Footer",
+    "description": "A footer block with animated visibility, featuring a \"Connect with Me\" call-to-action, social links with hover effects, and copyright information.",
+    "dependencies": ["framer-motion", "lucide-react"],
+    "registryDependencies": ["button", "separator"],
+    "files": [
+      {
+        "path": "code/block/footer27.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:31.600Z"
+}

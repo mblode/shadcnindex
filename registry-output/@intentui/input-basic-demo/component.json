@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "extends": "none",
+  "name": "input-basic-demo",
+  "title": "Input Basic",
+  "description": "input-basic-demo",
+  "registryDependencies": ["https://intentui.com/r/input"],
+  "files": [
+    {
+      "path": "src/components/docs/forms/input/input-basic-demo.tsx",
+      "content": "\"use client\"\n\nimport { Input } from \"@/components/ui/input\"\n\nexport default function InputBasicDemo() {\n  return <Input aria-label=\"Name\" placeholder=\"Your name\" />\n}\n",
+      "type": "registry:page",
+      "target": "app/input-basic-demo/page.tsx"
+    }
+  ],
+  "type": "registry:page"
+}

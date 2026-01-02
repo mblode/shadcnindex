@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "progress",
+  "title": "Progress",
+  "description": "Displays an indicator showing the completion progress of a task.",
+  "dependencies": ["@base-ui/react", "clsx", "tailwind-merge"],
+  "registryDependencies": ["https://optics.agusmayol.com.ar/r/utils.json"],
+  "files": [
+    {
+      "path": "registry/optics/progress.jsx",
+      "content": "\"use client\"\n\nimport { Progress as ProgressPrimitive } from \"@base-ui/react/progress\"\n\nimport { cn } from \"@/lib/utils\"\n\nfunction Progress({\n  className = \"\",\n  children = null,\n  value = 0,\n  ...props\n}) {\n  return (\n    <ProgressPrimitive.Root\n      value={value}\n      data-slot=\"progress\"\n      className={cn(\"flex flex-wrap gap-3\", className)}\n      {...props}>\n      {children}\n      <ProgressTrack>\n        <ProgressIndicator />\n      </ProgressTrack>\n    </ProgressPrimitive.Root>\n  );\n}\n\nfunction ProgressTrack({\n  className = \"\",\n  ...props\n}) {\n  return (\n    <ProgressPrimitive.Track\n      className={cn(\n        \"bg-muted h-1 rounded-md relative flex w-full items-center overflow-x-hidden\",\n        className\n      )}\n      data-slot=\"progress-track\"\n      {...props} />\n  );\n}\n\nfunction ProgressIndicator({\n  className = \"\",\n  ...props\n}) {\n  return (\n    <ProgressPrimitive.Indicator\n      data-slot=\"progress-indicator\"\n      className={cn(\"bg-primary h-full transition-all\", className)}\n      {...props} />\n  );\n}\n\nfunction ProgressLabel({\n  className = \"\",\n  ...props\n}) {\n  return (\n    <ProgressPrimitive.Label\n      className={cn(\"text-xs/relaxed font-medium\", className)}\n      data-slot=\"progress-label\"\n      {...props} />\n  );\n}\n\nfunction ProgressValue({\n  className = \"\",\n  ...props\n}) {\n  return (\n    <ProgressPrimitive.Value\n      className={cn(\"text-muted-foreground ml-auto text-xs/relaxed tabular-nums\", className)}\n      data-slot=\"progress-value\"\n      {...props} />\n  );\n}\n\nexport {\n  Progress,\n  ProgressTrack,\n  ProgressIndicator,\n  ProgressLabel,\n  ProgressValue,\n}\n",
+      "type": "registry:component",
+      "target": "components/optics/progress.jsx"
+    }
+  ],
+  "type": "registry:component"
+}

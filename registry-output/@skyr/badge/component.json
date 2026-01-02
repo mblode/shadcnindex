@@ -1,0 +1,51 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "badge",
+  "type": "registry:block",
+  "title": "Badge",
+  "registryDependencies": ["https://ui-play.skyroc.me/r/style.json"],
+  "files": [
+    {
+      "path": "src/components/badge/Badge.tsx",
+      "content": "'use client';\n\nimport { forwardRef } from 'react';\nimport { useComponentConfig } from '../config-provider/context';\nimport BadgeUI from './BadgeUI';\nimport type { BadgeProps } from './types';\n\nconst Badge = forwardRef<HTMLDivElement, BadgeProps>((props, ref) => {\n  const config = useComponentConfig('badge');\n\n  const mergedProps = {\n    ...config,\n    ...props\n  };\n\n  return (\n    <BadgeUI\n      {...mergedProps}\n      ref={ref}\n    />\n  );\n});\n\nBadge.displayName = 'Badge';\n\nexport default Badge;\n",
+      "type": "registry:ui",
+      "target": "components/badge/Badge.tsx"
+    },
+    {
+      "path": "src/components/badge/BadgeContent.tsx",
+      "content": "import { forwardRef } from 'react';\nimport { cn } from '@/lib/utils';\nimport { badgeVariants } from './badge-variants';\nimport type { BadgeContentProps } from './types';\n\nconst BadgeContent = forwardRef<HTMLSpanElement, BadgeContentProps>((props, ref) => {\n  const { className, color, position, size, ...rest } = props;\n\n  const { content } = badgeVariants({ color, position, size });\n\n  const mergedCls = cn(content(), className);\n\n  return (\n    <span\n      className={mergedCls}\n      data-slot=\"badge-content\"\n      ref={ref}\n      {...rest}\n    />\n  );\n});\n\nBadgeContent.displayName = 'BadgeContent';\n\nexport default BadgeContent;\n",
+      "type": "registry:ui",
+      "target": "components/badge/BadgeContent.tsx"
+    },
+    {
+      "path": "src/components/badge/BadgeRoot.tsx",
+      "content": "import { forwardRef } from 'react';\nimport { cn } from '@/lib/utils';\nimport { badgeVariants } from './badge-variants';\nimport type { BadgeRootProps } from './types';\n\nconst BadgeRoot = forwardRef<HTMLDivElement, BadgeRootProps>((props, ref) => {\n  const { className, ...rest } = props;\n\n  const { root } = badgeVariants();\n\n  const mergedCls = cn(root(), className);\n\n  return (\n    <div\n      className={mergedCls}\n      data-slot=\"badge-root\"\n      ref={ref}\n      {...rest}\n    />\n  );\n});\n\nBadgeRoot.displayName = 'BadgeRoot';\n\nexport default BadgeRoot;\n",
+      "type": "registry:ui",
+      "target": "components/badge/BadgeRoot.tsx"
+    },
+    {
+      "path": "src/components/badge/BadgeUI.tsx",
+      "content": "import { forwardRef } from 'react';\nimport BadgeContent from './BadgeContent';\nimport BadgeRoot from './BadgeRoot';\nimport type { BadgeProps } from './types';\n\nconst BadgeUI = forwardRef<HTMLDivElement, BadgeProps>((props, ref) => {\n  const { children, className, classNames, color, content, open = true, position, size, ...rest } = props;\n\n  return (\n    <BadgeRoot\n      className={className || classNames?.root}\n      ref={ref}\n      {...rest}\n    >\n      {children}\n\n      {open\n        ? (\n          <BadgeContent\n            className={classNames?.content}\n            color={color}\n            position={position}\n            size={size}\n          >\n            {content}\n          </BadgeContent>\n        )\n        : null}\n    </BadgeRoot>\n  );\n});\n\nBadgeUI.displayName = 'BadgeUI';\n\nexport default BadgeUI;\n",
+      "type": "registry:ui",
+      "target": "components/badge/BadgeUI.tsx"
+    },
+    {
+      "path": "src/components/badge/badge-variants.ts",
+      "content": "import { tv } from 'tailwind-variants';\nimport type { VariantProps } from 'tailwind-variants';\n\nexport const badgeVariants = tv({\n  defaultVariants: {\n    color: 'primary',\n    position: 'top-right',\n    size: 'md'\n  },\n  slots: {\n    content: `absolute flex justify-center items-center whitespace-nowrap rounded-full transform`,\n    root: 'relative'\n  },\n  variants: {\n    color: {\n      accent: {\n        content: 'bg-accent text-accent-foreground'\n      },\n      carbon: {\n        content: 'bg-carbon text-carbon-foreground'\n      },\n      destructive: {\n        content: 'bg-destructive text-destructive-foreground'\n      },\n      info: {\n        content: 'bg-info text-info-foreground'\n      },\n      primary: {\n        content: 'bg-primary text-primary-foreground'\n      },\n      secondary: {\n        content: 'bg-secondary text-secondary-foreground'\n      },\n      success: {\n        content: 'bg-success text-success-foreground'\n      },\n      warning: {\n        content: 'bg-warning text-warning-foreground'\n      }\n    },\n    position: {\n      'bottom-left': {\n        content: 'left-0 bottom-0 -translate-x-1/2 translate-y-1/2'\n      },\n      'bottom-right': {\n        content: 'right-0 bottom-0 translate-x-1/2 translate-y-1/2'\n      },\n      'top-left': {\n        content: 'left-0 top-0 -translate-x-1/2 -translate-y-1/2'\n      },\n      'top-right': {\n        content: 'right-0 top-0 translate-x-1/2 -translate-y-1/2'\n      }\n    },\n    size: {\n      '2xl': {\n        content: `min-h-5 px-2.5 text-base leading-relaxed`\n      },\n      'lg': {\n        content: `min-h-3.5 px-1.75 text-xs leading-relaxed`\n      },\n      'md': {\n        content: `min-h-3 px-1.5 text-2xs leading-relaxed`\n      },\n      'sm': {\n        content: `min-h-2.5 px-1.25 text-3xs leading-relaxed`\n      },\n      'xl': {\n        content: `min-h-4 px-2 text-sm leading-relaxed`\n      },\n      'xs': {\n        content: `min-h-2 px-1 text-4xs leading-relaxed`\n      }\n    }\n  }\n});\n\ntype BadgeVariants = VariantProps<typeof badgeVariants>;\n\nexport type BadgePosition = NonNullable<BadgeVariants['position']>;\n\nexport type BadgeSlots = keyof typeof badgeVariants.slots;\n",
+      "type": "registry:ui",
+      "target": "components/badge/badge-variants.ts"
+    },
+    {
+      "path": "src/components/badge/index.ts",
+      "content": "export { default as Badge } from './Badge';\nexport { default as BadgeContent } from './BadgeContent';\nexport { default as BadgeRoot } from './BadgeRoot';\n\nexport * from './types';\n",
+      "type": "registry:ui",
+      "target": "components/badge/index.ts"
+    },
+    {
+      "path": "src/components/badge/types.ts",
+      "content": "import type { HTMLComponentProps, ClassValue, ThemeColor, ThemeSize } from '@/types/shared';\nimport type { BadgePosition, BadgeSlots } from './badge-variants';\n\n/**\n * Props for the badge root container component.\n * Serves as the main wrapper for the badge element.\n */\nexport type BadgeRootProps = HTMLComponentProps<'div'>;\n\n/**\n * Props for the badge content component.\n * Controls the styling and appearance of the badge's displayed content.\n */\nexport interface BadgeContentProps extends HTMLComponentProps<'span'> {\n  /**\n   * Theme color for the badge.\n   * Determines the visual styling and background color.\n   */\n  color?: ThemeColor;\n\n  /**\n   * Position where the badge is placed.\n   * Affects the badge's layout and positioning within its container.\n   */\n  position?: BadgePosition;\n\n  /**\n   * Size variant for the badge.\n   * Controls the overall dimensions and padding.\n   */\n  size?: ThemeSize;\n}\n\n/**\n * Class names for different slots in the badge component.\n * Allows customizing styles for specific parts of the badge.\n */\nexport type BadgeUi = Partial<Record<BadgeSlots, ClassValue>>;\n\n/**\n * Props for the main Badge component.\n * Combines root and content properties with visibility control.\n *\n * @example\n * ```tsx\n * <Badge\n *   color=\"blue\"\n *   size=\"md\"\n *   position=\"left\"\n *   content=\"Label\"\n *   open={true}\n * />\n * ```\n */\nexport interface BadgeProps\n  extends Omit<BadgeRootProps, 'color' | 'content'>,\n  Pick<BadgeContentProps, 'color' | 'position' | 'size'> {\n  /**\n   * Custom class names for different badge UI slots.\n   * Allows fine-grained styling of badge components.\n   */\n  classNames?: BadgeUi;\n\n  /**\n   * The content to display inside the badge.\n   * Can be text, icons, or any React node.\n   */\n  content?: React.ReactNode;\n\n  /**\n   * Controls the visibility/open state of the badge.\n   * When true, the badge is displayed; when false, it may be hidden or collapsed.\n   */\n  open?: boolean;\n}\n\nexport { BadgePosition };\n",
+      "type": "registry:ui",
+      "target": "components/badge/types.ts"
+    }
+  ]
+}

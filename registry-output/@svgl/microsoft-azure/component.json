@@ -1,0 +1,14 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "microsoft-azure",
+  "title": "microsoft-azure",
+  "files": [
+    {
+      "path": "././static/components-generated/azure.tsx",
+      "content": "import type { SVGProps } from \"react\";\n\nconst Azure = (props: SVGProps<SVGSVGElement>) => (\n  <svg {...props} viewBox=\"0 0 96 96\">\n    <defs>\n      <linearGradient\n        id=\"a\"\n        x1=\"-1032.17\"\n        x2=\"-1059.21\"\n        y1=\"145.31\"\n        y2=\"65.43\"\n        gradientTransform=\"matrix(1 0 0 -1 1075 158)\"\n        gradientUnits=\"userSpaceOnUse\"\n      >\n        <stop offset=\"0\" stop-color=\"#114a8b\" />\n        <stop offset=\"1\" stop-color=\"#0669bc\" />\n      </linearGradient>\n      <linearGradient\n        id=\"b\"\n        x1=\"-1023.73\"\n        x2=\"-1029.98\"\n        y1=\"108.08\"\n        y2=\"105.97\"\n        gradientTransform=\"matrix(1 0 0 -1 1075 158)\"\n        gradientUnits=\"userSpaceOnUse\"\n      >\n        <stop offset=\"0\" stop-opacity=\".3\" />\n        <stop offset=\".07\" stop-opacity=\".2\" />\n        <stop offset=\".32\" stop-opacity=\".1\" />\n        <stop offset=\".62\" stop-opacity=\".05\" />\n        <stop offset=\"1\" stop-opacity=\"0\" />\n      </linearGradient>\n      <linearGradient\n        id=\"c\"\n        x1=\"-1027.16\"\n        x2=\"-997.48\"\n        y1=\"147.64\"\n        y2=\"68.56\"\n        gradientTransform=\"matrix(1 0 0 -1 1075 158)\"\n        gradientUnits=\"userSpaceOnUse\"\n      >\n        <stop offset=\"0\" stop-color=\"#3ccbf4\" />\n        <stop offset=\"1\" stop-color=\"#2892df\" />\n      </linearGradient>\n    </defs>\n    <path\n      fill=\"url(#a)\"\n      d=\"M33.34 6.54h26.04l-27.03 80.1a4.15 4.15 0 0 1-3.94 2.81H8.15a4.14 4.14 0 0 1-3.93-5.47L29.4 9.38a4.15 4.15 0 0 1 3.94-2.83z\"\n    />\n    <path\n      fill=\"#0078d4\"\n      d=\"M71.17 60.26H29.88a1.91 1.91 0 0 0-1.3 3.31l26.53 24.76a4.17 4.17 0 0 0 2.85 1.13h23.38z\"\n    />\n    <path\n      fill=\"url(#b)\"\n      d=\"M33.34 6.54a4.12 4.12 0 0 0-3.95 2.88L4.25 83.92a4.14 4.14 0 0 0 3.91 5.54h20.79a4.44 4.44 0 0 0 3.4-2.9l5.02-14.78 17.91 16.7a4.24 4.24 0 0 0 2.67.97h23.29L71.02 60.26H41.24L59.47 6.55z\"\n    />\n    <path\n      fill=\"url(#c)\"\n      d=\"M66.6 9.36a4.14 4.14 0 0 0-3.93-2.82H33.65a4.15 4.15 0 0 1 3.93 2.82l25.18 74.62a4.15 4.15 0 0 1-3.93 5.48h29.02a4.15 4.15 0 0 0 3.93-5.48z\"\n    />\n  </svg>\n);\n\nexport { Azure };\n",
+      "type": "registry:component",
+      "target": "components/ui/svgs/azure.tsx"
+    }
+  ],
+  "type": "registry:component"
+}

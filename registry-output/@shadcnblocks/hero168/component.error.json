@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "hero168",
+  "url": "https://shadcnblocks.com/r/hero168.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "hero168",
+    "type": "registry:block",
+    "title": "Hero",
+    "description": "This component displays a hero section with a headline, introductory text, and a &#x27;Get Started&#x27; button. It features an arrangement of images on one side, within a layout that spans across columns.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["button"],
+    "files": [
+      {
+        "path": "code/block/hero168.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:35.076Z"
+}

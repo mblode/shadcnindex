@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "extends": "none",
+  "name": "drop-zone-demo",
+  "title": "Drop Zone",
+  "description": "drop-zone-demo",
+  "registryDependencies": [
+    "https://intentui.com/r/drop-zone",
+    "https://intentui.com/r/field"
+  ],
+  "files": [
+    {
+      "path": "src/components/docs/drag-and-drop/drag/drop-zone-demo.tsx",
+      "content": "\"use client\"\n\nimport { useState } from \"react\"\n\nimport { DropZone } from \"@/components/ui/drop-zone\"\nimport { Label } from \"@/components/ui/field\"\n\nexport default function DropZoneDemo() {\n  const [dropped, setDropped] = useState(false)\n\n  return (\n    <DropZone onDrop={() => setDropped(true)}>\n      <Label>{dropped ? \"Drop nailed\" : \"Toss your stuff here\"}</Label>\n    </DropZone>\n  )\n}\n",
+      "type": "registry:page",
+      "target": "app/drop-zone-demo/page.tsx"
+    }
+  ],
+  "type": "registry:page"
+}

@@ -1,0 +1,19 @@
+{
+  "registry": "@paceui",
+  "component": "index",
+  "url": "https://ui.paceui.com/r/index.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "index",
+    "type": "registry:style",
+    "dependencies": [
+      "tw-animate-css",
+      "class-variance-authority",
+      "lucide-react"
+    ],
+    "registryDependencies": ["utils"],
+    "cssVars": {},
+    "files": []
+  },
+  "fetchedAt": "2026-01-02T11:11:21.907Z"
+}

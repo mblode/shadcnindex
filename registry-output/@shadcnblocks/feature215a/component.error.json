@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature215a",
+  "url": "https://shadcnblocks.com/r/feature215a.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature215a",
+    "type": "registry:block",
+    "title": "Feature215a",
+    "description": "A component showcasing a grid of cards with videos, icons, and texts. Features hover-to-play videos and links.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": ["aspect-ratio", "card"],
+    "files": [
+      {
+        "path": "code/block/feature215a.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:25.093Z"
+}

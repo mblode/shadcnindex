@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "gallery18",
+  "url": "https://shadcnblocks.com/r/gallery18.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "gallery18",
+    "type": "registry:block",
+    "title": "Gallery",
+    "description": "A card-carousel gallery with autoplay, displaying portraits with annotated names in a looping mode.",
+    "dependencies": ["react", "swiper"],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/gallery18.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:32.447Z"
+}

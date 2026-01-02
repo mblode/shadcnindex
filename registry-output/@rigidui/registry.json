@@ -1,0 +1,338 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "acme",
+  "homepage": "https://rigidui.com",
+  "items": [
+    {
+      "name": "access-manager",
+      "type": "registry:component",
+      "title": "Access Manager",
+      "description": "A comprehensive access based control system with session validation",
+      "files": [
+        {
+          "path": "r/new-york/access-manager/access-manager.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "author": "Nitish Singh <devxnitish@gmail.com>"
+    },
+    {
+      "name": "location-picker",
+      "type": "registry:component",
+      "title": "Location Picker",
+      "description": "A location locator component",
+      "registryDependencies": ["button", "input", "popover"],
+      "files": [
+        {
+          "path": "r/new-york/location-picker/location-picker.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "author": "Nitish Singh <devxnitish@gmail.com>"
+    },
+    {
+      "name": "currency-manager",
+      "type": "registry:component",
+      "title": "Currency Manager",
+      "description": "A currency manager component",
+      "registryDependencies": ["select", "command", "popover", "button"],
+      "files": [
+        {
+          "path": "r/new-york/currency-manager/currency-manager.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "author": "Nitish Singh <devxnitish@gmail.com>"
+    },
+    {
+      "name": "file-explorer",
+      "type": "registry:component",
+      "title": "File Explorer",
+      "description": "A file system explorer component with code preview",
+      "registryDependencies": ["button", "card", "input"],
+      "dependencies": ["react-syntax-highlighter", "lucide-react"],
+      "files": [
+        {
+          "path": "r/new-york/file-explorer/file-explorer.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "author": "Nitish Singh <devxnitish@gmail.com>"
+    },
+    {
+      "name": "multi-step-form-wrapper",
+      "type": "registry:component",
+      "title": "Multi Step Form Wrapper",
+      "description": "A multi step form wrapper component",
+      "registryDependencies": ["button"],
+      "dependencies": ["react-hook-form", "zod", "@hookform/resolvers"],
+      "files": [
+        {
+          "path": "r/new-york/multi-step-form-wrapper/multi-step-form-wrapper.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "author": "Nitish Singh <devxnitish@gmail.com>"
+    },
+    {
+      "name": "strength-meter",
+      "type": "registry:component",
+      "title": "Strength Meter",
+      "description": "A password strength meter component",
+      "registryDependencies": ["button"],
+      "files": [
+        {
+          "path": "r/new-york/strength-meter/strength-meter.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "author": "Nitish Singh <devxnitish@gmail.com>"
+    },
+    {
+      "name": "file-uploader",
+      "type": "registry:component",
+      "title": "File Uploader",
+      "description": "A file uploader component",
+      "registryDependencies": ["button", "card", "badge", "dialog"],
+      "dependencies": ["react-image-crop"],
+      "files": [
+        {
+          "path": "r/new-york/file-uploader/file-uploader.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "author": "Nitish Singh <devxnitish@gmail.com>"
+    },
+    {
+      "name": "file-uploader-rn",
+      "type": "registry:component",
+      "title": "File Uploader",
+      "description": "A file uploader component for react native",
+      "registryDependencies": [
+        "https://reactnativereusables.com/r/new-york/card.json",
+        "https://reactnativereusables.com/r/new-york/button.json",
+        "https://reactnativereusables.com/r/new-york/badge.json"
+      ],
+      "dependencies": [
+        "expo-document-picker",
+        "@react-native-vector-icons/ant-design"
+      ],
+      "files": [
+        {
+          "path": "r/new-york/file-uploader/file-uploader.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "author": "Nitish Singh <devxnitish@gmail.com>"
+    },
+    {
+      "name": "infinite-scroll",
+      "type": "registry:component",
+      "title": "Infinite Scroll",
+      "description": "An infinite scroll component",
+      "files": [
+        {
+          "path": "r/new-york/infinite-scroll/infinite-scroll.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "dependencies": ["@tanstack/react-virtual"],
+      "author": "Nitish Singh <devxnitish@gmail.com>"
+    },
+    {
+      "name": "infinite-scroll-rn",
+      "type": "registry:component",
+      "title": "Infinite Scroll",
+      "description": "An infinite scroll component for react native",
+      "files": [
+        {
+          "path": "r/new-york/infinite-scroll/infinite-scroll.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "author": "Nitish Singh <devxnitish@gmail.com"
+    },
+    {
+      "name": "use-location",
+      "type": "registry:hook",
+      "title": "Use Location",
+      "description": "A custom hook to get the manage location",
+      "files": [
+        {
+          "path": "r/new-york/use-location/use-location.ts",
+          "type": "registry:hook"
+        }
+      ],
+      "author": "Nitish Singh <devxnitish@gmail.com>"
+    },
+    {
+      "name": "notification-center",
+      "type": "registry:component",
+      "title": "Notification Center",
+      "description": "A notification center component",
+      "registryDependencies": [
+        "button",
+        "badge",
+        "popover",
+        "card",
+        "scroll-area",
+        "dropdown-menu"
+      ],
+      "dependencies": ["@tanstack/react-query"],
+      "files": [
+        {
+          "path": "r/new-york/notification-center/notification-center.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "author": "Nitish Singh <devxnitish@gmail.com>"
+    },
+    {
+      "name": "smart-form",
+      "type": "registry:component",
+      "title": "Smart Form",
+      "description": "A smart form component",
+      "registryDependencies": [
+        "button",
+        "input",
+        "select",
+        "textarea",
+        "checkbox",
+        "radio-group",
+        "card",
+        "form"
+      ],
+      "dependencies": [
+        "react-hook-form",
+        "zod",
+        "@hookform/resolvers",
+        "@tanstack/react-query"
+      ],
+      "files": [
+        {
+          "path": "r/new-york/smart-form/smart-form.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "author": "Nitish Singh <devxnitish@gmail.com>"
+    },
+    {
+      "name": "smart-search",
+      "type": "registry:component",
+      "title": "Smart Search",
+      "description": "A smart search component",
+      "registryDependencies": ["input"],
+      "dependencies": ["@tanstack/react-pacer"],
+      "files": [
+        {
+          "path": "r/new-york/smart-search/smart-search.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "author": "Nitish Singh <devxnitish@gmail.com>"
+    },
+    {
+      "name": "draggable-dashboard",
+      "type": "registry:component",
+      "title": "Draggable Dashboard",
+      "description": "A draggable dashboard component",
+      "registryDependencies": ["switch", "label", "separator"],
+      "dependencies": [
+        "@dnd-kit/core",
+        "@dnd-kit/sortable",
+        "@dnd-kit/utilities"
+      ],
+      "files": [
+        {
+          "path": "r/new-york/draggable-dashboard/draggable-dashboard.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "author": "Nitish Singh <devxnitish@gmail.com>"
+    },
+    {
+      "name": "image-loader",
+      "type": "registry:component",
+      "title": "Image Loader",
+      "description": "An advanced image loading component with beautiful loading effect and error handling",
+      "files": [
+        {
+          "path": "r/new-york/image-loader/image-loader.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "author": "Nitish Singh <devxnitish@gmail.com>"
+    },
+    {
+      "name": "guided-tour",
+      "type": "registry:component",
+      "title": "Guided Tour",
+      "description": "An interactive guided tour component to onboard users and showcase features.",
+      "registryDependencies": ["button", "card"],
+      "files": [
+        {
+          "path": "r/new-york/guided-tour/guided-tour.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "author": "Nitish Singh <devxnitish@gmail.com>"
+    },
+    {
+      "name": "content-grid",
+      "type": "registry:component",
+      "title": "Content Grid",
+      "description": "A content grid component that supports both grid and list views.",
+      "registryDependencies": ["button"],
+      "files": [
+        {
+          "path": "r/new-york/content-grid/content-grid.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "author": "Nitish Singh <devxnitish@gmail.com>"
+    },
+    {
+      "name": "data-reveal",
+      "type": "registry:component",
+      "title": "Data Reveal",
+      "description": "A animated data reveal component",
+      "dependencies": ["motion"],
+      "files": [
+        {
+          "path": "r/new-york/data-reveal/data-reveal.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "author": "Nitish Singh <devxnitish@gmail.com>"
+    },
+    {
+      "name": "text-shift",
+      "type": "registry:component",
+      "title": "Text Shift",
+      "description": "A text shift animation component to showcase two different texts with smooth transition on hover.",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "files": [
+        {
+          "path": "r/new-york/text-shift/text-shift.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "author": "Nitish Singh <devxnitish@gmail.com>"
+    },
+    {
+      "name": "draggable-canvas",
+      "type": "registry:component",
+      "title": "Draggable Canvas",
+      "description": "A draggable canvas component to create interactive and dynamic layouts.",
+      "dependencies": ["motion"],
+      "files": [
+        {
+          "path": "r/new-york/draggable-canvas/draggable-canvas.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "author": "Nitish Singh <devxnitish@gmail.com>"
+    }
+  ]
+}

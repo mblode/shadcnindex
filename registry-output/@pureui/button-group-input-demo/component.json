@@ -1,0 +1,13 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "button-group-input-demo",
+  "type": "registry:example",
+  "registryDependencies": ["button-group"],
+  "files": [
+    {
+      "path": "src/registry/pure-ui/examples/button-group/button-group-input-demo.tsx",
+      "content": "import { SearchIcon } from \"lucide-react\";\n\nimport { Button } from \"@/registry/pure-ui/ui/button\";\nimport { ButtonGroup } from \"@/registry/pure-ui/ui/button-group\";\nimport { Input } from \"@/registry/pure-ui/ui/input\";\n\nexport function ButtonGroupInputDemo() {\n  return (\n    <ButtonGroup>\n      <Input placeholder=\"Search...\" />\n      <Button variant=\"outline\" aria-label=\"Search\">\n        <SearchIcon />\n      </Button>\n    </ButtonGroup>\n  );\n}\n",
+      "type": "registry:example"
+    }
+  ]
+}

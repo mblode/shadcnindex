@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "hero141",
+  "url": "https://shadcnblocks.com/r/hero141.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "hero141",
+    "type": "registry:block",
+    "title": "Hero",
+    "description": "A component with a video background, featuring a central column for text, a call-to-action button, and a 5-star rating.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["button"],
+    "files": [
+      {
+        "path": "code/block/hero141.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:34.275Z"
+}

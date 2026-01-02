@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "radio-group-radio-group-form-2",
+  "url": "https://shadcnblocks.com/r/radio-group-radio-group-form-2.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "radio-group-radio-group-form-2",
+    "type": "registry:block",
+    "title": "Radio-group/radio-group-form-",
+    "description": "A radio-group/radio-group-form- example",
+    "dependencies": [],
+    "registryDependencies": ["label", "radio-group"],
+    "files": [
+      {
+        "path": "code/example/radio-group/radio-group-form-2.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:15:30.903Z"
+}

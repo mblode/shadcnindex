@@ -1,0 +1,14 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "solidity",
+  "title": "solidity",
+  "files": [
+    {
+      "path": "././static/components-generated/solidity.tsx",
+      "content": "import type { SVGProps } from \"react\";\n\nconst Solidity = (props: SVGProps<SVGSVGElement>) => (\n  <svg {...props} xmlSpace=\"preserve\" viewBox=\"0 0 1300 1300\">\n    <path\n      d=\"M773.772 253.308 643.068 485.61H381.842l130.614-232.302h261.316\"\n      opacity=\".45\"\n    />\n    <path\n      d=\"M643.068 485.61h261.318L773.772 253.308H512.456L643.068 485.61z\"\n      opacity=\".6\"\n    />\n    <path\n      d=\"M512.456 717.822 643.068 485.61 512.456 253.308 381.842 485.61l130.614 232.212z\"\n      opacity=\".8\"\n    />\n    <path\n      d=\"m513.721 1066.275 130.704-232.303h261.318l-130.705 232.303H513.721\"\n      opacity=\".45\"\n    />\n    <path\n      d=\"M644.424 833.973H383.107l130.613 232.303h261.317L644.424 833.973z\"\n      opacity=\".6\"\n    />\n    <path\n      d=\"M775.038 601.761 644.424 833.973l130.614 232.303 130.704-232.303-130.704-232.212z\"\n      opacity=\".8\"\n    />\n  </svg>\n);\n\nexport { Solidity };\n",
+      "type": "registry:component",
+      "target": "components/ui/svgs/solidity.tsx"
+    }
+  ],
+  "type": "registry:component"
+}

@@ -1,0 +1,26 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "product-list5",
+  "url": "https://shadcnblocks.com/r/product-list5.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "product-list5",
+    "type": "registry:block",
+    "title": "Product-list",
+    "description": "This component, named `ProductList5`, displays a collection of products, showcasing their images, names, prices (including sale prices), and respective collections in a grid format. It also includes a header with a call-to-action button and organizes products using a card layout, making it suitable for listing and browsing items visually.",
+    "dependencies": [],
+    "registryDependencies": [
+      "https://shadcnblocks.com/r/price",
+      "aspect-ratio",
+      "button",
+      "card"
+    ],
+    "files": [
+      {
+        "path": "code/block/product-list5.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:46.308Z"
+}

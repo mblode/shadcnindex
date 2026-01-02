@@ -1,0 +1,41 @@
+{
+  "registry": "@paykit-sdk",
+  "component": "stripe-express",
+  "url": "https://www.usepaykit.dev/r/stripe-express.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "stripe-express",
+    "type": "registry:block",
+    "description": "Stripe payment integration for Express backend with unified routes and webhook handling",
+    "dependencies": ["@paykit-sdk/core", "@paykit-sdk/stripe", "express"],
+    "devDependencies": ["@types/express"],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "providers/stripe.ts",
+        "type": "registry:lib",
+        "target": "src/lib/paykit.ts",
+        "content": "import { PayKit, createEndpointHandlers } from '@paykit-sdk/core';\nimport { stripe } from '@paykit-sdk/stripe';\n\nexport const paykit = new PayKit(stripe());\nexport const endpoints = createEndpointHandlers(paykit);\n"
+      },
+      {
+        "path": "shared/routers/express.ts",
+        "type": "registry:page",
+        "target": "src/routes/paykit.ts",
+        "content": "import { endpoints, paykit } from '@/lib/paykit';\nimport type { EndpointArgs, EndpointHandler, EndpointPath } from '@paykit-sdk/core';\nimport { Router, type Request, type Response } from 'express';\n\nexport const paykitRouter = Router();\n\n// Catch-all for PayKit API endpoints\npaykitRouter.post('/*', async (req: Request, res: Response) => {\n  const path = req.path as EndpointPath;\n  const handler = endpoints[path] as EndpointHandler<typeof path>;\n\n  if (!handler) {\n    return res.status(404).json({ message: 'Endpoint not found' });\n  }\n\n  const { args } = req.body as { args: EndpointArgs<typeof path> };\n\n  try {\n    const result = await handler(...args);\n    return res.json({ result });\n  } catch (error) {\n    console.error('PayKit API Error:', error);\n    const message = error instanceof Error ? error.message : 'Internal server error';\n    return res.status(500).json({ message });\n  }\n});\n\n// Webhook handler\npaykitRouter.post('/webhooks', async (req: Request, res: Response) => {\n  const webhookSecret = process.env.STRIPE_WEBHOOK_SECRET;\n\n  if (!webhookSecret) {\n    return res.status(500).json({ error: 'Webhook secret not configured' });\n  }\n\n  const webhook = paykit.webhooks\n    .setup({ webhookSecret })\n    .on('customer.created', async event => {\n      console.log('Customer created:', event.data);\n    })\n    .on('subscription.created', async event => {\n      console.log('Subscription created:', event.data);\n    })\n    .on('payment.created', async event => {\n      console.log('Payment created:', event.data);\n    })\n    .on('refund.created', async event => {\n      console.log('Refund created:', event.data);\n    })\n    .on('invoice.generated', async event => {\n      console.log('Invoice generated:', event.data);\n    });\n\n  // Express stores raw body in req.body when using express.raw()\n  const body = typeof req.body === 'string' ? req.body : JSON.stringify(req.body);\n  const headers = new Headers(Object.entries(req.headers) as [string, string][]);\n  const fullUrl = `${req.protocol}://${req.get('host')}${req.originalUrl}`;\n\n  try {\n    console.log('Webhook handled');\n    await webhook.handle({ body, headers, fullUrl });\n    return res.json({ success: true });\n  } catch (error) {\n    console.log('Webhook Error', error);\n    return res.json({ success: false });\n  }\n});\n\n/**\n * MAIN APP ROUTER INTEGRATION:\n * import express from 'express';\n * import { paykitRouter } from './router';\n *\n * const app = express();\n *\n * ⚠️ IMPORTANT: Middleware setup\n * app.use(express.json());\n * app.use('/paykit/webhooks',express.raw({ type: 'application/json' }));\n *\n * // Your existing routes\n * app.get('/', (req, res) => res.send('Hello World'));\n *\n * // PayKit routes\n * app.use('/paykit', paykitRouter);\n *\n * app.listen(3000, () => {\n *   console.log('Server running on port 3000');\n * });\n */\n"
+      }
+    ],
+    "envVars": {
+      "STRIPE_SECRET_KEY": "sk_test_...",
+      "STRIPE_WEBHOOK_SECRET": "whsec_..."
+    },
+    "docs": "Get your Stripe API keys from https://dashboard.stripe.com/apikeys\nCreate a webhook endpoint at https://dashboard.stripe.com/webhooks to get your webhook secret\nMake sure to read the integration guide completely in `src/routes/paykit.ts` file for the proper setup.",
+    "meta": {
+      "backend": "express",
+      "provider": "stripe",
+      "orm": "none",
+      "database": "none",
+      "auth": "none"
+    }
+  },
+  "fetchedAt": "2026-01-02T11:17:42.672Z"
+}

@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature52",
+  "url": "https://shadcnblocks.com/r/feature52.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature52",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A component featuring tabbed navigation with icons and titles, transitioning to different content images on selection.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["tabs"],
+    "files": [
+      {
+        "path": "code/block/feature52.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:29.035Z"
+}

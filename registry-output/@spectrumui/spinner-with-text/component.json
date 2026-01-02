@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "spinner-with-text",
+  "type": "registry:component",
+  "title": "Spinner With Text",
+  "description": "component for the Spinner With Text",
+  "registryDependencies": ["@spectrumui/spinner-dependencies"],
+  "files": [
+    {
+      "path": "app/registry/spinner/usage/spinner-with-text.tsx",
+      "content": "import React from \"react\";\nimport { Spinner } from \"@/components/ui/spinner\";\n\nconst SpinnerWithText = () => {\n  return (\n    <div className=\"flex items-center gap-3\">\n      <Spinner>Loading...</Spinner>\n      <Spinner className=\"text-red-400\">\n        <span className=\"text-red-400\">Loading with custom style</span>\n      </Spinner>\n    </div>\n  );\n};\n\nexport default SpinnerWithText;\n",
+      "type": "registry:component",
+      "target": "components/spectrumui/spinner-with-text.tsx"
+    }
+  ]
+}

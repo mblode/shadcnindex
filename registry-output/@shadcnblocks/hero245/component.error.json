@@ -1,0 +1,24 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "hero245",
+  "url": "https://shadcnblocks.com/r/hero245.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "hero245",
+    "type": "registry:block",
+    "title": "Hero",
+    "description": "A component with a hiring banner, central slogan, supporting text, download buttons, and dynamic background.antal panels fadeIn based on device.",
+    "dependencies": ["framer-motion", "lucide-react", "react"],
+    "registryDependencies": [
+      "https://ui.aceternity.com/registry/pointer-highlight.json",
+      "button"
+    ],
+    "files": [
+      {
+        "path": "code/block/hero245.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:37.703Z"
+}

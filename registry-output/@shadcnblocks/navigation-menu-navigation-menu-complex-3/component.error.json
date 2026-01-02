@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "navigation-menu-navigation-menu-complex-3",
+  "url": "https://shadcnblocks.com/r/navigation-menu-navigation-menu-complex-3.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "navigation-menu-navigation-menu-complex-3",
+    "type": "registry:block",
+    "title": "Navigation-menu/navigation-menu-complex-",
+    "description": "A navigation-menu/navigation-menu-complex- example",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": ["navigation-menu", "tabs"],
+    "files": [
+      {
+        "path": "code/example/navigation-menu/navigation-menu-complex-3.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:15:27.991Z"
+}

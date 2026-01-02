@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "changelog5",
+  "url": "https://shadcnblocks.com/r/changelog5.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "changelog5",
+    "type": "registry:block",
+    "title": "Changelog",
+    "description": "A component that displays changelogs with features like a sticky timeline navigation, vertical separators, and scroll-spy functionality for active section highlighting.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": ["avatar", "separator"],
+    "files": [
+      {
+        "path": "code/block/changelog5.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:15.902Z"
+}

@@ -1,0 +1,24 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "hero233",
+  "url": "https://shadcnblocks.com/r/hero233.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "hero233",
+    "type": "registry:block",
+    "title": "Hero",
+    "description": "A hero component with a text banner, animated background lines, and buttons, featuring a central title with special text effects and call-to-action buttons.",
+    "dependencies": ["framer-motion", "lucide-react", "react"],
+    "registryDependencies": [
+      "https://magicui.design/r/line-shadow-text",
+      "button"
+    ],
+    "files": [
+      {
+        "path": "code/block/hero233.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:37.140Z"
+}

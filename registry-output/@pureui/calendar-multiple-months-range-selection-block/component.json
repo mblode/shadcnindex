@@ -1,0 +1,14 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "calendar-multiple-months-range-selection-block",
+  "type": "registry:block",
+  "registryDependencies": ["calendar"],
+  "files": [
+    {
+      "path": "src/registry/pure-ui/blocks/calendar/calendar-4-block.tsx",
+      "content": "\"use client\";\n\nimport { useState } from \"react\";\nimport { DateRange } from \"react-day-picker\";\n\nimport { Calendar } from \"@/registry/pure-ui/ui/calendar\";\n\nexport function Calendar4Block() {\n  const [dateRange, setDateRange] = useState<DateRange | undefined>({\n    from: new Date(2025, 5, 12),\n    to: new Date(2025, 6, 15),\n  });\n\n  return (\n    <div className=\"flex items-center justify-center p-5 min-h-[500px]\">\n      <Calendar\n        animate\n        mode=\"range\"\n        defaultMonth={dateRange?.from}\n        selected={dateRange}\n        onSelect={setDateRange}\n        numberOfMonths={2}\n      />\n    </div>\n  );\n}\n",
+      "type": "registry:file",
+      "target": "blocks/calendar/calendar-4-block.tsx"
+    }
+  ]
+}

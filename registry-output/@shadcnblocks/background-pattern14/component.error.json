@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "background-pattern14",
+  "url": "https://shadcnblocks.com/r/background-pattern14.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "background-pattern14",
+    "type": "registry:block",
+    "title": "Background-pattern",
+    "description": "This component serves as a full-screen background pattern block, featuring a diagonally oriented cross grid with a top fade effect. It allows customization through optional styling via class names and includes a placeholder pattern element.",
+    "dependencies": [],
+    "registryDependencies": ["https://shadcnblocks.com/r/pattern-placeholder"],
+    "files": [
+      {
+        "path": "code/block/background-pattern14.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:12.266Z"
+}

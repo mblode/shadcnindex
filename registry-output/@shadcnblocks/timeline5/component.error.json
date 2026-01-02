@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "timeline5",
+  "url": "https://shadcnblocks.com/r/timeline5.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "timeline5",
+    "type": "registry:block",
+    "title": "Timeline",
+    "description": "A 2-column layout component featuring static content on the left and scrollable cards on the right, each with an icon, title, and description.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/timeline5.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:54.742Z"
+}

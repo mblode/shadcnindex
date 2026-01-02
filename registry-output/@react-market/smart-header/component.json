@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "smart-header",
+  "type": "registry:component",
+  "title": "Smart Header: Disappears when scrolling",
+  "author": "Benjamin",
+  "description": "",
+  "dependencies": ["motion"],
+  "devDependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "id": 50,
+      "path": "use-smart-header.tsx",
+      "content": "import { useMotionValue, useSpring } from \"motion/react\";\nimport { useEffect, useRef } from \"react\";\n\nexport function useSmartHeader(headerPx = 64, snapDelay = 120) {\n  const yRaw = useMotionValue(0); // 0 = fully shown\n  const y = useSpring(yRaw, { stiffness: 400, damping: 40 });\n\n  const lastY = useRef(0);\n  const snapTimer = useRef<NodeJS.Timeout | null>(null);\n\n  useEffect(() => {\n    const onScroll = () => {\n      const cur = window.scrollY;\n\n      /* Always show at top, even if the user scrolled up slowly to the top */\n      if (cur <= 50) {\n        yRaw.set(0); // fully visible\n        lastY.current = 0;\n        return;\n      }\n\n      const delta = cur - lastY.current;\n      lastY.current = cur;\n\n      // move header opposite to scroll direction, clamped\n      const next = Math.max(Math.min(yRaw.get() - delta, 0), -headerPx);\n      yRaw.set(next);\n\n      if (snapTimer.current !== null) {\n        clearTimeout(snapTimer.current);\n      }\n      snapTimer.current = setTimeout(() => {\n        const pos = yRaw.get();\n        yRaw.set(pos < -headerPx / 2 ? -headerPx : 0); // snap\n      }, snapDelay);\n    };\n\n    window.addEventListener(\"scroll\", onScroll, { passive: true });\n    return () => window.removeEventListener(\"scroll\", onScroll);\n  }, [headerPx, snapDelay, yRaw]);\n\n  return y; // spring-smoothed motion value\n}",
+      "type": "registry:hook"
+    },
+    {
+      "id": 51,
+      "path": "header.tsx",
+      "content": "\"use client\";\n\nimport { motion } from \"motion/react\";\nimport { useSmartHeader } from \"@/use-smart-header\";\n\nexport default function Header() {\n  const y = useSmartHeader(100);\n\n  return (\n    <div className=\"pointer-events-none sticky top-0 z-50\">\n      <motion.header\n        className=\"relative z-50 mx-auto flex max-w-3xl flex-row items-center gap-2 px-4 pt-8 md:gap-4\"\n        style={{ y }}\n      >\n        <div className=\"pointer-events-auto flex flex-1 items-center justify-between rounded-full bg-background/60 p-2 backdrop-blur-md\">\n          <div className=\"flex items-center gap-2 md:gap-4\">\n            <span>A</span>\n            <span>B</span>\n          </div>\n          <div className=\"flex items-center gap-4\">\n            <span>C</span>\n            <span>D</span>\n          </div>\n        </div>\n      </motion.header>\n    </div>\n  );\n}",
+      "type": "registry:component"
+    }
+  ],
+  "categories": []
+}

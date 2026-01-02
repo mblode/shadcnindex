@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature209",
+  "url": "https://shadcnblocks.com/r/feature209.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature209",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A gallery component with a text and button panel on left and image carousel on right, including image thumbnails for selection and a patterned background overlay.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": ["button", "separator"],
+    "files": [
+      {
+        "path": "code/block/feature209.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:24.841Z"
+}

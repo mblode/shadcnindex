@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "context-menu-context-menu-canvas-2",
+  "url": "https://shadcnblocks.com/r/context-menu-context-menu-canvas-2.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "context-menu-context-menu-canvas-2",
+    "type": "registry:block",
+    "title": "Context-menu/context-menu-canvas-",
+    "description": "A context-menu/context-menu-canvas- example",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["context-menu"],
+    "files": [
+      {
+        "path": "code/example/context-menu/context-menu-canvas-2.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:15:12.819Z"
+}

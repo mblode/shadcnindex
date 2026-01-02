@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature299",
+  "url": "https://shadcnblocks.com/r/feature299.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature299",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "This component provides a comprehensive visualization of a system's architecture, detailing key features such as data hubs, contributor networks, and authorization processes, enhanced by icon representations for each element. It helps users understand connections and dependencies within the infrastructure, with an illustrative browser mockup for contextual reference.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["https://magicui.design/r/safari"],
+    "files": [
+      {
+        "path": "code/block/feature299.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:28.160Z"
+}

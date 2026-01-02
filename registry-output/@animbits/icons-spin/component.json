@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-spin",
+  "type": "registry:component",
+  "title": "Spin Icon",
+  "description": "Continuous rotation animation for icons",
+  "dependencies": ["motion"],
+  "files": [
+    {
+      "path": "registry/new-york/animations/icons/spin.tsx",
+      "content": "\"use client\";\nimport * as motion from \"framer-motion/client\";\nimport type { HTMLMotionProps } from \"motion/react\";\ninterface SpinIconProps extends Omit<HTMLMotionProps<\"div\">, \"animate\"> {\n  children: React.ReactNode;\n  duration?: number;\n  direction?: \"clockwise\" | \"counterclockwise\";\n}\nexport function SpinIcon({\n  children,\n  duration = 1,\n  direction = \"clockwise\",\n  ...props\n}: SpinIconProps) {\n  const rotation = direction === \"clockwise\" ? 360 : -360;\n  return (\n    <motion.div\n      animate={{ rotate: rotation }}\n      transition={{\n        duration,\n        ease: \"linear\",\n        repeat: Infinity,\n      }}\n      {...props}\n    >\n      {children}\n    </motion.div>\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "files": [
+    {
+      "content": "import { Badge } from \"~/registry/ui/badge\";\n\nexport function BadgeOutlineDemo() {\n  return <Badge variant=\"outline\">Badge</Badge>;\n}\n",
+      "path": "src/registry/examples/badge/badge-outline-demo.tsx",
+      "type": "registry:example"
+    }
+  ],
+  "name": "badge-outline-demo",
+  "registryDependencies": ["@kanpeki/badge"],
+  "type": "registry:example"
+}

@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "alert-dialog-alert-dialog-confirmation-3",
+  "url": "https://shadcnblocks.com/r/alert-dialog-alert-dialog-confirmation-3.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "alert-dialog-alert-dialog-confirmation-3",
+    "type": "registry:block",
+    "title": "Alert-dialog/alert-dialog-confirmation-",
+    "description": "A alert-dialog/alert-dialog-confirmation- example",
+    "dependencies": [],
+    "registryDependencies": ["alert-dialog", "button"],
+    "files": [
+      {
+        "path": "code/example/alert-dialog/alert-dialog-confirmation-3.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:57.765Z"
+}

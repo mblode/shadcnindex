@@ -1,0 +1,14 @@
+{
+  "name": "use-interval",
+  "author": "Brendan Dash (https://shadcn-hooks.vercel.app)",
+  "description": "A hook that creates an interval.",
+  "registryDependencies": ["@hooks/use-memoized-fn"],
+  "files": [
+    {
+      "path": "registry/hooks/use-interval.ts",
+      "content": "import { useCallback, useEffect, useRef } from 'react'\nimport { useMemoizedFn } from '@/registry/hooks/use-memoized-fn'\n\nexport function useInterval(\n  fn: () => void,\n  delay?: number,\n  options?: { immediate?: boolean },\n) {\n  const fnRef = useMemoizedFn(fn)\n  const timerRef = useRef<number | null>(null)\n\n  const clear = useCallback(() => {\n    if (timerRef.current) {\n      clearInterval(timerRef.current)\n      timerRef.current = null\n    }\n  }, [])\n\n  useEffect(() => {\n    if (!(typeof delay === 'number') || delay < 0) {\n      return\n    }\n\n    if (options?.immediate) {\n      fnRef()\n    }\n\n    timerRef.current = window.setInterval(fnRef, delay)\n\n    return () => {\n      clear()\n    }\n  }, [delay, options?.immediate, fnRef, clear])\n\n  return clear\n}\n",
+      "type": "registry:hook"
+    }
+  ],
+  "type": "registry:hook"
+}

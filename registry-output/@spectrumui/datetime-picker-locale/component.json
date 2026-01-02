@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "datetime-picker-locale",
+  "type": "registry:component",
+  "title": "Datetime Picker Locale",
+  "description": "component for the Datetime Picker Locale",
+  "registryDependencies": ["datetime-picker"],
+  "files": [
+    {
+      "path": "app/registry/datetime-picker/usage/datetime-picker-locale.tsx",
+      "content": "\"use client\";\nimport React, { useState } from \"react\";\nimport { DateTimePicker } from \"@/components/ui/datetime-picker\";\nimport { zhTW } from \"date-fns/locale\";\nimport { InlineCode } from \"@/components/ui/inline-code\";\nconst DatetimePickerLocale = () => {\n  const [date, setDate] = useState<Date | undefined>(undefined);\n  return (\n    <div className=\"flex w-72 flex-col gap-3\">\n      <p>\n        The following example is <InlineCode>zhTW</InlineCode> from{\" \"}\n        <InlineCode>date-fns</InlineCode>.\n      </p>\n      <DateTimePicker\n        locale={zhTW}\n        value={date}\n        onChange={setDate}\n        weekStartsOn={undefined}\n        showWeekNumber={undefined}\n        showOutsideDays={undefined}\n      />\n    </div>\n  );\n};\n\nexport default DatetimePickerLocale;\n",
+      "type": "registry:component",
+      "target": "components/spectrumui/datetime-picker-locale.tsx"
+    }
+  ]
+}

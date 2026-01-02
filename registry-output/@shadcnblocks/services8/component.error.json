@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "services8",
+  "url": "https://shadcnblocks.com/r/services8.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "services8",
+    "type": "registry:block",
+    "title": "Services",
+    "description": "An interactive component lists services with accordions, including icons, titles, and descriptions. Features 2-column grid for in-depth details.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["accordion"],
+    "files": [
+      {
+        "path": "code/block/services8.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:50.795Z"
+}

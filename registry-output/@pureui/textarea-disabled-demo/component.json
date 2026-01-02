@@ -1,0 +1,13 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "textarea-disabled-demo",
+  "type": "registry:example",
+  "registryDependencies": ["textarea"],
+  "files": [
+    {
+      "path": "src/registry/pure-ui/examples/textarea/textarea-disabled-demo.tsx",
+      "content": "import { Textarea } from \"@/registry/pure-ui/ui/textarea\";\n\nexport function TextareaDisabledDemo() {\n  return (\n    <Textarea placeholder=\"Can't type here\" disabled className=\"max-w-72\" />\n  );\n}\n",
+      "type": "registry:example"
+    }
+  ]
+}

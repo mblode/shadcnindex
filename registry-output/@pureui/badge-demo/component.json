@@ -1,0 +1,13 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "badge-demo",
+  "type": "registry:example",
+  "registryDependencies": ["badge"],
+  "files": [
+    {
+      "path": "src/registry/pure-ui/examples/badge/badge-demo.tsx",
+      "content": "import { Badge } from \"@/registry/pure-ui/ui/badge\";\n\nexport function BadgeDemo() {\n  return (\n    <div className=\"flex flex-wrap items-center gap-2 md:flex-row\">\n      <Badge shape=\"simple\" variant=\"default\">\n        Badge\n      </Badge>\n    </div>\n  );\n}\n",
+      "type": "registry:example"
+    }
+  ]
+}

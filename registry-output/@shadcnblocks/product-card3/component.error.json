@@ -1,0 +1,27 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "product-card3",
+  "url": "https://shadcnblocks.com/r/product-card3.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "product-card3",
+    "type": "registry:block",
+    "title": "Product-card",
+    "description": "This component is a product display block designed to showcase product details including an image, name, description, pricing with sale indication, and a customizable badge. It features a call-to-action button for adding items to a cart and provides an interactive experience with hover effects.",
+    "dependencies": [],
+    "registryDependencies": [
+      "https://shadcnblocks.com/r/price",
+      "aspect-ratio",
+      "badge",
+      "button",
+      "card"
+    ],
+    "files": [
+      {
+        "path": "code/block/product-card3.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:45.053Z"
+}

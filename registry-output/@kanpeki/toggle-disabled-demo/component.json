@@ -1,0 +1,13 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "files": [
+    {
+      "content": "import { ThumbsDownIcon } from \"lucide-react\";\nimport { Toggle } from \"~/registry/ui/toggle/toggle\";\n\nexport function ToggleDisabledDemo() {\n  return (\n    <Toggle aria-label=\"Toggle dislike\" isDisabled variant=\"outline\">\n      <ThumbsDownIcon />\n    </Toggle>\n  );\n}\n",
+      "path": "src/registry/examples/toggle/toggle-disabled-demo.tsx",
+      "type": "registry:example"
+    }
+  ],
+  "name": "toggle-disabled-demo",
+  "registryDependencies": ["@kanpeki/toggle"],
+  "type": "registry:example"
+}

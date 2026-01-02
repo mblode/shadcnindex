@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "hero20",
+  "url": "https://shadcnblocks.com/r/hero20.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "hero20",
+    "type": "registry:block",
+    "title": "Hero",
+    "description": "A carousel-linked accordion block with a 2-column layout: icons & FAQs on the left, images rotating in sync on the right. Unique features include timed content transition and interactive FAQ accordion.",
+    "dependencies": ["embla-carousel-fade", "lucide-react", "react"],
+    "registryDependencies": ["accordion", "badge", "carousel"],
+    "files": [
+      {
+        "path": "code/block/hero20.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:36.032Z"
+}

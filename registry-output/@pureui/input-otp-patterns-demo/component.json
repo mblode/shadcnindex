@@ -1,0 +1,13 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "input-otp-patterns-demo",
+  "type": "registry:example",
+  "registryDependencies": ["input-otp"],
+  "files": [
+    {
+      "path": "src/registry/pure-ui/examples/input-otp/input-otp-patterns-demo.tsx",
+      "content": "import {\n  InputOTP,\n  InputOTPGroup,\n  InputOTPSlot,\n} from \"@/registry/pure-ui/ui/input-otp\";\n\nexport const InputOTPPatternDemo = () => {\n  const patternConfig = [\n    {\n      name: \"Only lowercase letters (a-z):\",\n      value: \"^[a-z]*$\",\n    },\n    {\n      name: \"Only uppercase letters (A-Z):\",\n      value: \"^[A-Z]*$\",\n    },\n    {\n      name: \"Numbers only (0-9):\",\n      value: \"^[0-9]*$\",\n    },\n    {\n      name: \"Letters only (a-z, A-Z):\",\n      value: \"^[a-zA-Z]*$\",\n    },\n  ];\n\n  return (\n    <div className=\"flex flex-col gap-4\">\n      {patternConfig.map((config) => (\n        <div className=\"flex flex-col gap-1\" key={config.name}>\n          <InputOTP maxLength={6} pattern={config.value}>\n            <InputOTPGroup>\n              <InputOTPSlot index={0} />\n              <InputOTPSlot index={1} />\n              <InputOTPSlot index={2} />\n              <InputOTPSlot index={3} />\n              <InputOTPSlot index={4} />\n              <InputOTPSlot index={5} />\n            </InputOTPGroup>\n          </InputOTP>\n          <p className=\"text-sm text-muted-foreground\">{config.name}</p>\n        </div>\n      ))}\n    </div>\n  );\n};\n",
+      "type": "registry:example"
+    }
+  ]
+}

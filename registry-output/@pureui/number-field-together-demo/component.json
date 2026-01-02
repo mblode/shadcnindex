@@ -1,0 +1,13 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "number-field-together-demo",
+  "type": "registry:example",
+  "registryDependencies": ["number-field"],
+  "files": [
+    {
+      "path": "src/registry/pure-ui/examples/number-field/number-field-together-demo.tsx",
+      "content": "import {\n  NumberField,\n  NumberFieldDecrement,\n  NumberFieldGroup,\n  NumberFieldIncrement,\n  NumberFieldInput,\n} from \"@/registry/pure-ui/ui/number-field\";\n\nexport function NumberFieldTogetherDemo() {\n  return (\n    <div className=\"flex flex-col gap-5\">\n      <NumberField defaultValue={0}>\n        <NumberFieldGroup className=\"[&>[data-slot=number-field-input]+[data-slot=number-field-decrement]]:rounded-none [&>[data-slot=number-field-input]+[data-slot=number-field-increment]]:rounded-none [&>[data-slot=number-field-decrement]+[data-slot=number-field-increment]]:rounded-r-lg [&>[data-slot=number-field-increment]+[data-slot=number-field-decrement]]:rounded-r-lg [&>[data-slot=number-field-increment]+[data-slot=number-field-decrement]]:rounded-l-none\">\n          <NumberFieldInput className=\"text-left\" />\n          <NumberFieldDecrement />\n          <NumberFieldIncrement />\n        </NumberFieldGroup>\n      </NumberField>\n\n      <NumberField defaultValue={0}>\n        <NumberFieldGroup className=\"[&>[data-slot=number-field-input]+[data-slot=number-field-decrement]]:rounded-none [&>[data-slot=number-field-input]+[data-slot=number-field-increment]]:rounded-none [&>[data-slot=number-field-decrement]+[data-slot=number-field-increment]]:rounded-r-lg [&>[data-slot=number-field-increment]+[data-slot=number-field-decrement]]:rounded-r-lg [&>[data-slot=number-field-increment]+[data-slot=number-field-decrement]]:rounded-l-none\">\n          <NumberFieldInput className=\"text-left\" />\n          <NumberFieldIncrement />\n          <NumberFieldDecrement />\n        </NumberFieldGroup>\n      </NumberField>\n    </div>\n  );\n}\n",
+      "type": "registry:example"
+    }
+  ]
+}

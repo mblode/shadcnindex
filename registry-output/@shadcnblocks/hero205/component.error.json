@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "hero205",
+  "url": "https://shadcnblocks.com/r/hero205.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "hero205",
+    "type": "registry:block",
+    "title": "Hero",
+    "description": "This component showcases a hero section with a large headline, professional information, CTA buttons, and an animated card. It utilizes icons and a custom animation for visual appeal.",
+    "dependencies": ["framer-motion", "lucide-react", "react"],
+    "registryDependencies": ["button", "card"],
+    "files": [
+      {
+        "path": "code/block/hero205.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:36.171Z"
+}

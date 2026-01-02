@@ -1,0 +1,13 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "select-formatting-value-demo",
+  "type": "registry:example",
+  "registryDependencies": ["select"],
+  "files": [
+    {
+      "path": "src/registry/pure-ui/examples/select/select-formatting-value.tsx",
+      "content": "import { CheckIcon, PlusIcon } from \"lucide-react\";\n\nimport {\n  Select,\n  SelectTrigger,\n  SelectValue,\n  SelectIcon,\n  SelectPopup,\n  SelectList,\n  SelectItem,\n  SelectItemText,\n  SelectItemIndicator,\n} from \"@/registry/pure-ui/ui/select\";\n\nconst items = [\n  { value: \"system\", label: \"System default\" },\n  { value: \"light\", label: \"Light\" },\n  { value: \"dark\", label: \"Dark\" },\n];\n\nexport const SelectFormattingValueDemo = () => {\n  return (\n    <div className=\"flex flex-col md:flex-row gap-4\">\n      <div className=\"flex flex-col gap-2\">\n        <p className=\"text-sm\">Raw value</p>\n\n        <Select>\n          <SelectTrigger className=\"min-w-46\">\n            <SelectValue />\n            <SelectIcon>\n              <PlusIcon className=\"size-4\" />\n            </SelectIcon>\n          </SelectTrigger>\n          <SelectPopup>\n            <SelectList>\n              {items.map(({ label, value }) => {\n                return (\n                  <SelectItem key={value} value={value}>\n                    <SelectItemText>{label}</SelectItemText>\n                    <SelectItemIndicator>\n                      <CheckIcon className=\"size-3\" />\n                    </SelectItemIndicator>\n                  </SelectItem>\n                );\n              })}\n            </SelectList>\n          </SelectPopup>\n        </Select>\n      </div>\n\n      <div className=\"flex flex-col gap-2\">\n        <p className=\"text-sm\">Formatted value</p>\n\n        <Select items={items}>\n          <SelectTrigger className=\"min-w-46\">\n            <SelectValue />\n            <SelectIcon>\n              <PlusIcon className=\"size-4\" />\n            </SelectIcon>\n          </SelectTrigger>\n          <SelectPopup>\n            <SelectList>\n              {items.map(({ label, value }) => {\n                return (\n                  <SelectItem key={value} value={value}>\n                    <SelectItemText>{label}</SelectItemText>\n                    <SelectItemIndicator>\n                      <CheckIcon className=\"size-3\" />\n                    </SelectItemIndicator>\n                  </SelectItem>\n                );\n              })}\n            </SelectList>\n          </SelectPopup>\n        </Select>\n      </div>\n    </div>\n  );\n};\n",
+      "type": "registry:example"
+    }
+  ]
+}

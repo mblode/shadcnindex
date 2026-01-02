@@ -1,0 +1,13 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "button-radius-demo",
+  "type": "registry:example",
+  "registryDependencies": ["button"],
+  "files": [
+    {
+      "path": "src/registry/pure-ui/examples/button/button-radius-demo.tsx",
+      "content": "import { Button } from \"@/registry/pure-ui/ui/button\";\n\nexport function ButtonRadiusDemo() {\n  return (\n    <div className=\"flex flex-col items-center justify-center gap-4\">\n      <Button radius=\"none\">Pure UI Button</Button>\n      <Button radius=\"sm\">Pure UI Button</Button>\n      <Button radius=\"default\">Pure UI Button</Button>\n      <Button radius=\"lg\">Pure UI Button</Button>\n      <Button radius=\"xl\">Pure UI Button</Button>\n      <Button radius=\"full\">Pure UI Button</Button>\n    </div>\n  );\n}\n",
+      "type": "registry:example"
+    }
+  ]
+}

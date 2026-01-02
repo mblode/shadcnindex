@@ -1,0 +1,13 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "number-field-step-demo",
+  "type": "registry:example",
+  "registryDependencies": ["number-field"],
+  "files": [
+    {
+      "path": "src/registry/pure-ui/examples/number-field/number-field-step-demo.tsx",
+      "content": "import {\n  NumberField,\n  NumberFieldDecrement,\n  NumberFieldGroup,\n  NumberFieldIncrement,\n  NumberFieldInput,\n  NumberFieldScrubArea,\n} from \"@/registry/pure-ui/ui/number-field\";\nimport { Label } from \"@/registry/pure-ui/ui/label\";\n\nexport function NumberFieldRangeDemo() {\n  return (\n    <div className=\"flex flex-col gap-5\">\n      <NumberField defaultValue={0} step={20} id=\"step-20\">\n        <NumberFieldScrubArea>\n          <Label htmlFor=\"step-20\" className=\"cursor-ew-resize\">\n            Step 20\n          </Label>\n        </NumberFieldScrubArea>\n        <NumberFieldGroup>\n          <NumberFieldDecrement />\n          <NumberFieldInput />\n          <NumberFieldIncrement />\n        </NumberFieldGroup>\n      </NumberField>\n    </div>\n  );\n}\n",
+      "type": "registry:example"
+    }
+  ]
+}

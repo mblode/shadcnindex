@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "product-categories3",
+  "url": "https://shadcnblocks.com/r/product-categories3.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "product-categories3",
+    "type": "registry:block",
+    "title": "Product-categories",
+    "description": "This component displays a product category with a title, summary, and background image, arranged centrally with flexible layout capabilities. It is highly customizable, allowing users to modify text and image content via props, and includes optional class-based styling.",
+    "dependencies": [],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/product-categories3.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:45.339Z"
+}

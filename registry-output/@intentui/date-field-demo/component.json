@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "extends": "none",
+  "name": "date-field-demo",
+  "title": "Date Field",
+  "description": "date-field-demo",
+  "registryDependencies": [
+    "https://intentui.com/r/date-field",
+    "https://intentui.com/r/field"
+  ],
+  "files": [
+    {
+      "path": "src/components/docs/date-and-time/date-field/date-field-demo.tsx",
+      "content": "\"use client\"\n\nimport { DateField, DateInput } from \"@/components/ui/date-field\"\nimport { Label } from \"@/components/ui/field\"\n\nexport default function DateFieldDemo() {\n  return (\n    <DateField>\n      <Label>Event date</Label>\n      <DateInput />\n    </DateField>\n  )\n}\n",
+      "type": "registry:page",
+      "target": "app/date-field-demo/page.tsx"
+    }
+  ],
+  "type": "registry:page"
+}

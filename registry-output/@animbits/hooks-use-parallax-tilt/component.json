@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "hooks-use-parallax-tilt",
+  "type": "registry:lib",
+  "title": "Use Parallax Tilt",
+  "description": "The use-parallax-tilt hook.",
+  "dependencies": ["motion"],
+  "files": [
+    {
+      "path": "lib/use-parallax-tilt.ts",
+      "content": "import * as React from \"react\";\nimport { useMotionValue, useSpring, useTransform } from \"motion/react\";\n\nexport interface UseParallaxTiltOptions {\n  maxTilt?: number;\n  duration?: number;\n  shadowIntensity?: number;\n  stiffness?: number;\n  damping?: number;\n}\n\nexport function useParallaxTilt(options: UseParallaxTiltOptions = {}) {\n  const {\n    maxTilt = 15,\n    duration = 0.3,\n    shadowIntensity = 0.3,\n    stiffness = 300,\n    damping = 30,\n  } = options;\n\n  const ref = React.useRef<HTMLElement>(null);\n  const x = useMotionValue(0);\n  const y = useMotionValue(0);\n\n  const mouseXSpring = useSpring(x, { stiffness, damping });\n  const mouseYSpring = useSpring(y, { stiffness, damping });\n\n  const rotateX = useTransform(mouseYSpring, [-0.5, 0.5], [maxTilt, -maxTilt]);\n  const rotateY = useTransform(mouseXSpring, [-0.5, 0.5], [-maxTilt, maxTilt]);\n\n  const shadowX = useTransform(mouseXSpring, [-0.5, 0.5], [-20, 20]);\n  const shadowY = useTransform(mouseYSpring, [-0.5, 0.5], [-20, 20]);\n\n  const handleMouseMove = (e: React.MouseEvent<HTMLElement>) => {\n    if (!ref.current) return;\n\n    const rect = ref.current.getBoundingClientRect();\n    const width = rect.width;\n    const height = rect.height;\n    const mouseX = e.clientX - rect.left;\n    const mouseY = e.clientY - rect.top;\n    const xPct = mouseX / width - 0.5;\n    const yPct = mouseY / height - 0.5;\n    x.set(xPct);\n    y.set(yPct);\n  };\n\n  const handleMouseLeave = () => {\n    x.set(0);\n    y.set(0);\n  };\n\n  const tiltProps = {\n    style: {\n      rotateX,\n      rotateY,\n      transformStyle: \"preserve-3d\" as const,\n      boxShadow: useTransform(\n        [shadowX, shadowY],\n        ([x, y]) => `${x}px ${y}px 30px rgba(0, 0, 0, ${shadowIntensity})`,\n      ),\n    },\n    onMouseMove: handleMouseMove,\n    onMouseLeave: handleMouseLeave,\n    transition: { duration },\n  };\n\n  return { tiltProps, ref };\n}\n",
+      "type": "registry:lib"
+    }
+  ]
+}

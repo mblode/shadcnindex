@@ -1,0 +1,13 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "menu-radio-group-demo",
+  "type": "registry:example",
+  "registryDependencies": ["menu"],
+  "files": [
+    {
+      "path": "src/registry/pure-ui/examples/menu/menu-radio-group-demo.tsx",
+      "content": "\"use client\";\n\nimport { useState } from \"react\";\n\nimport { Button } from \"@/registry/pure-ui/ui/button\";\nimport {\n  Menu,\n  MenuTrigger,\n  MenuPopup,\n  MenuItem,\n  MenuSeparator,\n  MenuGroup,\n  MenuLabel,\n  MenuRadioGroup,\n  MenuRadioItem,\n} from \"@/registry/pure-ui/ui/menu\";\n\nexport function MenuRadioGroupDemo() {\n  const [open, setOpen] = useState(false);\n  const [position, setPosition] = useState(\"top\");\n\n  return (\n    <Menu open={open} onOpenChange={setOpen}>\n      <MenuTrigger render={<Button variant=\"outline\" />}>\n        <span>Open</span>\n      </MenuTrigger>\n      <MenuPopup className=\"w-56\" align=\"center\">\n        <MenuLabel>My Account</MenuLabel>\n        <MenuGroup>\n          <MenuItem onSelect={(event) => event.preventDefault()}>\n            Profile\n          </MenuItem>\n        </MenuGroup>\n        <MenuSeparator />\n        <MenuLabel>Teams</MenuLabel>\n        <MenuRadioGroup value={position} onValueChange={setPosition}>\n          <MenuRadioItem value=\"top\">Top</MenuRadioItem>\n          <MenuRadioItem value=\"bottom\">Bottom</MenuRadioItem>\n          <MenuRadioItem value=\"right\">Right</MenuRadioItem>\n        </MenuRadioGroup>\n      </MenuPopup>\n    </Menu>\n  );\n}\n",
+      "type": "registry:example"
+    }
+  ]
+}

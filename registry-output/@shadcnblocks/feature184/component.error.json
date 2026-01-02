@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature184",
+  "url": "https://shadcnblocks.com/r/feature184.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature184",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A component displaying features with interactive tabs and images. Uses a 2-column layout, including a dynamic image and detailed tabs for each feature. Includes buttons.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": ["button", "tabs"],
+    "files": [
+      {
+        "path": "code/block/feature184.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:23.841Z"
+}

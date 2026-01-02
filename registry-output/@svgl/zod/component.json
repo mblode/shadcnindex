@@ -1,0 +1,14 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "zod",
+  "title": "zod",
+  "files": [
+    {
+      "path": "././static/components-generated/zod.tsx",
+      "content": "import type { SVGProps } from \"react\";\n\nconst Zod = (props: SVGProps<SVGSVGElement>) => (\n  <svg\n    {...props}\n    xmlnsXlink=\"http://www.w3.org/1999/xlink\"\n    viewBox=\"0 0 256 203\"\n  >\n    <defs>\n      <filter\n        id=\"a\"\n        width=\"105.2%\"\n        height=\"106.5%\"\n        x=\"-2.2%\"\n        y=\"-2.8%\"\n        filterUnits=\"objectBoundingBox\"\n      >\n        <feOffset dx=\"1\" dy=\"1\" in=\"SourceAlpha\" result=\"shadowOffsetOuter1\" />\n        <feGaussianBlur\n          in=\"shadowOffsetOuter1\"\n          result=\"shadowBlurOuter1\"\n          stdDeviation=\"2\"\n        />\n        <feColorMatrix\n          in=\"shadowBlurOuter1\"\n          values=\"0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.36 0\"\n        />\n      </filter>\n      <path\n        id=\"b\"\n        d=\"M200.42 0H53.63L0 53.355l121.76 146.624 9.714-10.9L252 53.857 200.42 0Zm-5.362 12.562 39.84 41.6-112.8 126.558L17 54.162l41.815-41.6h136.243Z\"\n      />\n    </defs>\n    <path\n      fill=\"#18253F\"\n      d=\"M60.816 14.033h136.278l39.933 41.69-112.989 126.554L18.957 55.724z\"\n    />\n    <path\n      fill=\"#274D82\"\n      d=\"M151.427 152.386H98.013l-24.124-29.534 68.364-.002.002-4.19h39.078z\"\n    />\n    <path\n      fill=\"#274D82\"\n      d=\"m225.56 43.834-147.382 85.09-19.226-24.051 114.099-65.877-2.096-3.631 30.391-17.546zM146.596 14.075 35.93 77.968 18.719 56.483l74.095-42.78z\"\n    />\n    <g transform=\"translate(2 1.51)\">\n      <use xlink:href=\"#b\" filter=\"url(#a)\" />\n      <use xlink:href=\"#b\" fill=\"#3068B7\" />\n    </g>\n  </svg>\n);\n\nexport { Zod };\n",
+      "type": "registry:component",
+      "target": "components/ui/svgs/zod.tsx"
+    }
+  ],
+  "type": "registry:component"
+}

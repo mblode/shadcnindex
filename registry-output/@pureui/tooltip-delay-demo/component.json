@@ -1,0 +1,13 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "tooltip-delay-demo",
+  "type": "registry:example",
+  "registryDependencies": ["tooltip"],
+  "files": [
+    {
+      "path": "src/registry/pure-ui/examples/tooltip/tooltip-delay-demo.tsx",
+      "content": "import {\n  Tooltip,\n  TooltipTrigger,\n  TooltipPopup,\n  TooltipProvider,\n} from \"@/registry/pure-ui/ui/tooltip\";\nimport { Button } from \"@/registry/pure-ui/ui/button\";\n\nexport const TooltipDelayDemo = () => {\n  return (\n    <div className=\"flex items-center flex-wrap gap-4\">\n      <TooltipProvider>\n        <Tooltip>\n          <TooltipTrigger\n            delay={1000}\n            render={<Button size=\"sm\" variant=\"outline\" radius=\"none\" />}\n          >\n            Delay Open (1000ms)\n          </TooltipTrigger>\n          <TooltipPopup>\n            <p>Tooltip Content</p>\n          </TooltipPopup>\n        </Tooltip>\n\n        <Tooltip>\n          <TooltipTrigger\n            closeDelay={1000000000}\n            render={<Button size=\"sm\" variant=\"outline\" radius=\"none\" />}\n          >\n            Delay Close (1000ms)\n          </TooltipTrigger>\n          <TooltipPopup>\n            <p>Tooltip Content</p>\n          </TooltipPopup>\n        </Tooltip>\n      </TooltipProvider>\n    </div>\n  );\n};\n",
+      "type": "registry:example"
+    }
+  ]
+}

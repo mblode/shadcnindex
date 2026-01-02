@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "css-content",
+  "type": "registry:ui",
+  "title": "Content",
+  "dependencies": ["react-aria-components"],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "components/ui/Content.tsx",
+      "type": "registry:ui",
+      "content": "import {\n  Heading as AriaHeading,\n  HeadingProps,\n  Text as AriaText,\n  TextProps\n} from 'react-aria-components';\n\nimport './Content.css';\n\nexport function Heading(props: HeadingProps) {\n  return <AriaHeading {...props} />;\n};\n\nexport function Text(props: TextProps) {\n  return <AriaText {...props} />;\n};\n"
+    },
+    {
+      "path": "components/ui/Content.css",
+      "type": "registry:component",
+      "content": ".react-aria-Heading {\n  margin: 0;\n}"
+    }
+  ]
+}

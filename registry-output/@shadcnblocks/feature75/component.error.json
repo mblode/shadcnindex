@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature75",
+  "url": "https://shadcnblocks.com/r/feature75.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature75",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A component with a title and text on one side; three action blocks on the other, each with a tagline, description, and a \"Learn more\" button.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/feature75.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:30.046Z"
+}

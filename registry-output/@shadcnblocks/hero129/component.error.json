@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "hero129",
+  "url": "https://shadcnblocks.com/r/hero129.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "hero129",
+    "type": "registry:block",
+    "title": "Hero",
+    "description": "This component features a two-column layout with a bold headline, text content, buttons including one with an icon, overlapping avatars, and a unique phone image showcase with a 3D effect.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["avatar", "button"],
+    "files": [
+      {
+        "path": "code/block/hero129.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:34.083Z"
+}

@@ -1,0 +1,21 @@
+{
+  "registry": "@efferd",
+  "component": "cta-10",
+  "url": "https://efferd.com/r/cta-10.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "cta-10",
+    "description": "Animated border lines with 'Get Started' button.",
+    "dependencies": ["motion"],
+    "registryDependencies": ["button"],
+    "files": [
+      {
+        "path": "registry/cta/10/call-to-action.tsx",
+        "type": "registry:component"
+      }
+    ],
+    "categories": ["cta"],
+    "type": "registry:block"
+  },
+  "fetchedAt": "2026-01-02T11:08:57.335Z"
+}

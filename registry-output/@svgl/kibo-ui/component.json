@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "kibo-ui",
+  "title": "kibo-ui",
+  "files": [
+    {
+      "path": "././static/components-generated/kiboUiLight.tsx",
+      "content": "import type { SVGProps } from \"react\";\n\nconst KiboUiLight = (props: SVGProps<SVGSVGElement>) => (\n  <svg {...props} fill=\"none\" viewBox=\"0 0 117 116\">\n    <path\n      clipRule=\"evenodd\"\n      d=\"m29.8378 0h87.0002v29 58l-29.0002 29v-87h-87.000031zm-29.000031 95.7389v-37.7389h37.738831zm58.000031 20.2611h-37.249l37.249-37.2488z\"\n      fill=\"#000\"\n      fillRule=\"evenodd\"\n    />\n  </svg>\n);\n\nexport { KiboUiLight };\n",
+      "type": "registry:component",
+      "target": "components/ui/svgs/kiboUiLight.tsx"
+    },
+    {
+      "path": "././static/components-generated/kiboUiDark.tsx",
+      "content": "import type { SVGProps } from \"react\";\n\nconst KiboUiDark = (props: SVGProps<SVGSVGElement>) => (\n  <svg {...props} fill=\"none\" viewBox=\"0 0 117 116\">\n    <path\n      clipRule=\"evenodd\"\n      d=\"m29.8378 0h87.0002v29 58l-29.0002 29v-87h-87.000031zm-29.000031 95.7389v-37.7389h37.738831zm58.000031 20.2611h-37.249l37.249-37.2488z\"\n      fill=\"#fff\"\n      fillRule=\"evenodd\"\n    />\n  </svg>\n);\n\nexport { KiboUiDark };\n",
+      "type": "registry:component",
+      "target": "components/ui/svgs/kiboUiDark.tsx"
+    }
+  ],
+  "type": "registry:component"
+}

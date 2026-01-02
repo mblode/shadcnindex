@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "cta19",
+  "url": "https://shadcnblocks.com/r/cta19.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "cta19",
+    "type": "registry:block",
+    "title": "Cta",
+    "description": "A component featuring enterprise solution highlights, with a badge, heading, text, and action buttons on one side. The other side contains links to documentation and demos, divided by a separator.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["badge", "button", "separator"],
+    "files": [
+      {
+        "path": "code/block/cta19.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:18.504Z"
+}

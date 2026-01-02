@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "testimonial27",
+  "url": "https://shadcnblocks.com/r/testimonial27.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "testimonial27",
+    "type": "registry:block",
+    "title": "Testimonial",
+    "description": "This component displays testimonials and case studies. It features a two-column layout for testimonials and a three-column grid for case studies. Each testimonial includes a quote, author photo, name, and role. Case studies show stats, title, and a background image that changes on hover.",
+    "dependencies": [],
+    "registryDependencies": ["avatar"],
+    "files": [
+      {
+        "path": "code/block/testimonial27.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:54.007Z"
+}

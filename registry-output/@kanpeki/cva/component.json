@@ -1,0 +1,13 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "dependencies": ["cva@beta", "tailwind-merge"],
+  "files": [
+    {
+      "content": "import { defineConfig } from \"cva\";\nimport { twMerge } from \"tailwind-merge\";\n\nexport const {\n  cva,\n  cx: cn,\n  compose,\n} = defineConfig({\n  hooks: {\n    onComplete: (className) => twMerge(className),\n  },\n});\n",
+      "path": "src/registry/lib/cva.ts",
+      "type": "registry:lib"
+    }
+  ],
+  "name": "cva",
+  "type": "registry:lib"
+}

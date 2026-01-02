@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "hero214",
+  "url": "https://shadcnblocks.com/r/hero214.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "hero214",
+    "type": "registry:block",
+    "title": "Hero",
+    "description": "An animated gallery component cycling through portraits with a main headline. It features auto-changing images, and a masked layout with a \"Contact Us\" button.",
+    "dependencies": ["framer-motion", "lucide-react", "react"],
+    "registryDependencies": ["button"],
+    "files": [
+      {
+        "path": "code/block/hero214.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:36.549Z"
+}

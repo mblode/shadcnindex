@@ -1,0 +1,42 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "product-quick-view5",
+  "url": "https://shadcnblocks.com/r/product-quick-view5.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "product-quick-view5",
+    "type": "registry:block",
+    "title": "Product-quick-view",
+    "description": "The component provides a detailed product quick view interface featuring a carousel of image previews, rating display, pricing information, stock status, and service offerings. It includes interactive features like quantity selection, color choice options, social media sharing links, and an accordion section detailing product descriptions and features, making it ideal for e-commerce platforms to enhance product exploration and engagement.",
+    "dependencies": [
+      "@hookform/resolvers",
+      "clsx",
+      "lucide-react",
+      "photoswipe",
+      "react",
+      "react-hook-form",
+      "simple-icons",
+      "zod"
+    ],
+    "registryDependencies": [
+      "https://shadcnblocks.com/r/price",
+      "https://shadcnblocks.com/r/quantity-input",
+      "https://shadcnblocks.com/r/rating",
+      "accordion",
+      "aspect-ratio",
+      "badge",
+      "button",
+      "carousel",
+      "dialog",
+      "field",
+      "radio-group"
+    ],
+    "files": [
+      {
+        "path": "code/block/product-quick-view5.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:46.418Z"
+}

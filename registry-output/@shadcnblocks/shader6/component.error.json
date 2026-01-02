@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "shader6",
+  "url": "https://shadcnblocks.com/r/shader6.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "shader6",
+    "type": "registry:block",
+    "title": "Shader",
+    "description": "This component, Shader6, renders an animated background with customizable shaders and colors, using WebGL capabilities via the React Three Fiber library. Users can adjust vertex and fragment shaders, as well as define custom uniform values, to create dynamic and visually engaging effects for display.",
+    "dependencies": ["@react-three/fiber", "react", "three"],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/shader6.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:51.073Z"
+}

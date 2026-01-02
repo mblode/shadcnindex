@@ -1,0 +1,20 @@
+{
+  "registry": "@magicui-pro",
+  "component": "call-to-action-8",
+  "url": "https://pro.magicui.design/registry/call-to-action-8",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "call-to-action-8",
+    "type": "registry:block",
+    "files": [
+      {
+        "path": "registry/blocks/call-to-action-8.tsx",
+        "type": "registry:component"
+      }
+    ],
+    "meta": {
+      "height": 524
+    }
+  },
+  "fetchedAt": "2026-01-02T11:10:49.765Z"
+}

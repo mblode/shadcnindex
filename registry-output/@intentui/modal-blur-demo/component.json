@@ -1,0 +1,24 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "extends": "none",
+  "name": "modal-blur-demo",
+  "title": "Modal Blur",
+  "description": "modal-blur-demo",
+  "dependencies": ["react-aria-components"],
+  "registryDependencies": [
+    "https://intentui.com/r/button",
+    "https://intentui.com/r/field",
+    "https://intentui.com/r/input",
+    "https://intentui.com/r/modal",
+    "https://intentui.com/r/text-field"
+  ],
+  "files": [
+    {
+      "path": "src/components/docs/overlays/modal/modal-blur-demo.tsx",
+      "content": "\"use client\"\n\nimport { Form } from \"react-aria-components\"\nimport { Button } from \"@/components/ui/button\"\nimport { FieldError, Label } from \"@/components/ui/field\"\nimport { Input } from \"@/components/ui/input\"\nimport {\n  Modal,\n  ModalBody,\n  ModalClose,\n  ModalContent,\n  ModalDescription,\n  ModalFooter,\n  ModalHeader,\n  ModalTitle,\n} from \"@/components/ui/modal\"\nimport { TextField } from \"@/components/ui/text-field\"\n\nexport default function ModalBlurDemo() {\n  return (\n    <Modal>\n      <Button>Turn on 2FA</Button>\n      <ModalContent isBlurred>\n        <ModalHeader>\n          <ModalTitle>Nice! Let's beef up your account.</ModalTitle>\n          <ModalDescription>\n            2FA beefs up your account's defense. Pop in your password to keep going.\n          </ModalDescription>\n        </ModalHeader>\n        <Form onSubmit={() => {}}>\n          <ModalBody className=\"pb-1\">\n            <TextField isRequired>\n              <Label>Password</Label>\n              <Input placeholder=\"Enter your password\" type=\"password\" />\n              <FieldError />\n            </TextField>\n          </ModalBody>\n          <ModalFooter>\n            <ModalClose>Cancel</ModalClose>\n            <Button type=\"submit\">Turn on 2FA</Button>\n          </ModalFooter>\n        </Form>\n      </ModalContent>\n    </Modal>\n  )\n}\n",
+      "type": "registry:page",
+      "target": "app/modal-blur-demo/page.tsx"
+    }
+  ],
+  "type": "registry:page"
+}

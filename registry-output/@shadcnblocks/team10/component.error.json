@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "team10",
+  "url": "https://shadcnblocks.com/r/team10.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "team10",
+    "type": "registry:block",
+    "title": "Team",
+    "description": "A block displaying a team with a title, introduction, and button, followed by a multi-column layout of team members&#x27; avatars and roles.",
+    "dependencies": [],
+    "registryDependencies": ["avatar", "button"],
+    "files": [
+      {
+        "path": "code/block/team10.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:52.865Z"
+}

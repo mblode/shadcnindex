@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "navbar29",
+  "url": "https://shadcnblocks.com/r/navbar29.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "navbar29",
+    "type": "registry:block",
+    "title": "Navbar",
+    "description": "A navigation component with expandable mega menu, mobile navigation layout, animated button for menu toggling, including footer links and company contact information, supporting conditional rendering and animation for menu items.",
+    "dependencies": ["framer-motion", "lucide-react", "react"],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/navbar29.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:42.409Z"
+}

@@ -1,0 +1,34 @@
+{
+  "name": "vue-ui-user-menu",
+  "title": "vue-ui-user-menu",
+  "type": "registry:component",
+  "description": "",
+  "registryDependencies": [],
+  "dependencies": ["prosekit"],
+  "files": [
+    {
+      "path": "registry/src/vue/ui/user-menu/index.ts",
+      "type": "registry:component",
+      "target": "components/editor/ui/user-menu/index.ts",
+      "content": "export { default as UserMenu } from './user-menu.vue'\n"
+    },
+    {
+      "path": "registry/src/vue/ui/user-menu/user-menu.vue",
+      "type": "registry:component",
+      "target": "components/editor/ui/user-menu/user-menu.vue",
+      "content": "<script setup lang=\"ts\">\nimport type { BasicExtension } from 'prosekit/basic'\nimport {\n  canUseRegexLookbehind,\n  type Union,\n} from 'prosekit/core'\nimport type { MentionExtension } from 'prosekit/extensions/mention'\nimport { useEditor } from 'prosekit/vue'\nimport {\n  AutocompleteEmpty,\n  AutocompleteItem,\n  AutocompleteList,\n  AutocompletePopover,\n} from 'prosekit/vue/autocomplete'\n\nconst props = defineProps<{\n  users: { id: number; name: string }[]\n  loading?: boolean\n  onQueryChange?: (query: string) => void\n  onOpenChange?: (open: boolean) => void\n}>()\n\nconst editor = useEditor<Union<[MentionExtension, BasicExtension]>>()\n\nfunction handleUserInsert(id: number, username: string) {\n  editor.value.commands.insertMention({\n    id: id.toString(),\n    value: '@' + username,\n    kind: 'user',\n  })\n  editor.value.commands.insertText({ text: ' ' })\n}\n\n// Match inputs like \"@\", \"@foo\", \"@foo bar\" etc. Do not match \"@ foo\".\nconst regex = canUseRegexLookbehind() ? /(?<!\\S)@(\\S.*)?$/u : /@(\\S.*)?$/u\n</script>\n\n<template>\n  <AutocompletePopover\n    :regex=\"regex\"\n    class=\"relative block max-h-100 min-w-60 select-none overflow-auto whitespace-nowrap p-1 z-10 box-border rounded-lg border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 shadow-lg [&:not([data-state])]:hidden\"\n    @query-change=\"props.onQueryChange\"\n    @open-change=\"props.onOpenChange\"\n  >\n    <AutocompleteList>\n      <AutocompleteEmpty class=\"relative flex items-center justify-between min-w-32 scroll-my-1 rounded-sm px-3 py-1.5 box-border cursor-default select-none whitespace-nowrap outline-hidden data-focused:bg-gray-100 dark:data-focused:bg-gray-800\">\n        {{ props.loading ? 'Loading...' : 'No results' }}\n      </AutocompleteEmpty>\n\n      <AutocompleteItem\n        v-for=\"user in props.users\"\n        :key=\"user.id\"\n        class=\"relative flex items-center justify-between min-w-32 scroll-my-1 rounded-sm px-3 py-1.5 box-border cursor-default select-none whitespace-nowrap outline-hidden data-focused:bg-gray-100 dark:data-focused:bg-gray-800\"\n        @select=\"() => handleUserInsert(user.id, user.name)\"\n      >\n        <span v-if=\"props.loading\" class=\"opacity-50\">\n          {{ user.name }}\n        </span>\n        <span v-else>\n          {{ user.name }}\n        </span>\n      </AutocompleteItem>\n    </AutocompleteList>\n  </AutocompletePopover>\n</template>\n"
+    }
+  ],
+  "meta": {
+    "hasIcons": false,
+    "hidden": false,
+    "story": "",
+    "framework": "vue",
+    "accumulatedFiles": [
+      "registry/src/vue/ui/user-menu/index.ts",
+      "registry/src/vue/ui/user-menu/user-menu.vue"
+    ],
+    "internalDependencies": []
+  },
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json"
+}

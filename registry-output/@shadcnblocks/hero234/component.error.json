@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "hero234",
+  "url": "https://shadcnblocks.com/r/hero234.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "hero234",
+    "type": "registry:block",
+    "title": "Hero",
+    "description": "A dynamic gallery component with animated, looping image rows moving in opposite directions, featuring interactive images that scale on hover, gradient edge masks, and a centered promotional message with a button.",
+    "dependencies": ["framer-motion"],
+    "registryDependencies": ["button"],
+    "files": [
+      {
+        "path": "code/block/hero234.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:37.170Z"
+}

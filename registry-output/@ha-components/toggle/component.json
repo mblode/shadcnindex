@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "toggle",
+  "type": "registry:component",
+  "title": "Simple Toggle Switch Component",
+  "description": "Switch with an attached Entity trigger",
+  "registryDependencies": ["@ha-components/switch", "@ha-components/auth"],
+  "files": [
+    {
+      "path": "components/ha-ui/toggle.tsx",
+      "content": "\"use client\";\nimport type { EntityId } from \"@/types/entity-types\";\nimport { useEffect, useState } from \"react\";\nimport { Switch } from \"@/components/ha-ui/ui/switch\";\nimport { haWebSocket } from \"@/lib/haWebsocket\";\n\ntype ToggleProps = React.ComponentProps<typeof Switch> & {\n    /**\n     * HomeAssistant Entity Name\n     */\n    entity: EntityId;\n    domain: string;\n    service?: string;\n};\n\nexport function Toggle({\n    entity,\n    domain,\n    service = \"toggle\",\n    ...props // Switch Props\n}: ToggleProps) {\n    const [monitoredState, setMonitoredState] = useState(false);\n\n    useEffect(() => {\n        // Load Initial State\n        haWebSocket.getState(entity).then((data) => {\n            if (data) {\n                setMonitoredState(data.state === \"on\");\n            }\n        });\n        // Subscribe to state updates\n        const handler = (newState: any) => {\n            setMonitoredState(newState.state === \"on\");\n        };\n        haWebSocket.addStateListener(entity, handler);\n\n        return () => haWebSocket.removeStateListener(entity, handler);\n    }, [entity]);\n\n    return (\n        <Switch\n            checked={monitoredState}\n            onCheckedChange={() =>\n                haWebSocket.callService(domain, service, {\n                    entity_id: entity,\n                })\n            }\n            style={{ [\"--switch-width\" as string]: \"6rem\", [\"--switch-height\" as string]: \"2rem\" }}\n            {...props}\n        ></Switch>\n    );\n}\n",
+      "type": "registry:component",
+      "target": "components/ha-ui/toggle.tsx"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "use-boolean",
+  "author": "Brendan Dash (https://shadcn-hooks.vercel.app)",
+  "description": "A hook to toggle a boolean value",
+  "registryDependencies": ["@hooks/use-toggle"],
+  "files": [
+    {
+      "path": "registry/hooks/use-boolean.ts",
+      "content": "import { useMemo } from 'react'\nimport useToggle from '@/registry/hooks/use-toggle'\n\nexport function useBoolean(defaultValue: boolean = false) {\n  const [state, actions] = useToggle(defaultValue)\n\n  return [\n    state,\n    useMemo(\n      () => ({\n        set: (value: boolean) => actions.set(value),\n        setTrue: () => actions.set(true),\n        setFalse: () => actions.set(false),\n        toggle: () => actions.toggle(),\n      }),\n      [actions],\n    ),\n  ] as const\n}\n",
+      "type": "registry:hook"
+    }
+  ],
+  "type": "registry:hook"
+}

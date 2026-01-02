@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "hooks-index",
+  "type": "registry:lib",
+  "title": "Index",
+  "description": "The index hook.",
+  "dependencies": ["motion"],
+  "files": [
+    {
+      "path": "lib/index.ts",
+      "content": "/**\n * AnimBits Animation Primitive Hooks\n *\n * Component-agnostic animation hooks that work with any element via Framer Motion.\n * Use these hooks to add animations to any motion component without being locked\n * into specific component types.\n */\n\n// Interaction hooks (Framer Motion based)\nexport { useHoverLift, type UseHoverLiftOptions } from \"./use-hover-lift\";\nexport { useHoverGlow, type UseHoverGlowOptions } from \"./use-hover-glow\";\nexport { usePress, type UsePressOptions } from \"./use-press\";\nexport { useMagnetic, type UseMagneticOptions } from \"./use-magnetic\";\nexport {\n  useParallaxTilt,\n  type UseParallaxTiltOptions,\n} from \"./use-parallax-tilt\";\n\nexport { useFadeIn, type UseFadeInOptions } from \"./use-fade-in\";\nexport { useScaleIn, type UseScaleInOptions } from \"./use-scale-in\";\nexport {\n  useSlideIn,\n  type UseSlideInOptions,\n  type SlideDirection,\n} from \"./use-slide-in\";\n\nexport { usePulse, type UsePulseOptions } from \"./use-pulse\";\nexport { useBounce, type UseBounceOptions } from \"./use-bounce\";\n\nexport { useShimmer, type UseShimmerOptions } from \"./use-shimmer\";\nexport { useScramble, type UseScrambleOptions } from \"./use-scramble\";\nexport {\n  useWordCarousel,\n  type UseWordCarouselOptions,\n} from \"./use-word-carousel\";\n\nexport { useStrokeDraw, type UseStrokeDrawOptions } from \"./use-stroke-draw\";\n",
+      "type": "registry:lib"
+    }
+  ]
+}

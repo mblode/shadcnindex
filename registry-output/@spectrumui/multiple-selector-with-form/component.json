@@ -1,0 +1,22 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "multiple-selector-with-form",
+  "type": "registry:component",
+  "title": "Multiple Selector With Form",
+  "description": "component for the Multiple Selector With Form",
+  "dependencies": ["react-hook-form", "zod", "@hookform/resolvers"],
+  "registryDependencies": [
+    "form",
+    "@spectrumui/use-toast",
+    "@spectrumui/loading-button",
+    "@spectrumui/multiple-selector-dependencies"
+  ],
+  "files": [
+    {
+      "path": "app/registry/multiple-selector/usage/multiple-selector-with-form.tsx",
+      "content": "\"use client\";\n\nimport { zodResolver } from \"@hookform/resolvers/zod\";\nimport { useForm } from \"react-hook-form\";\nimport * as z from \"zod\";\nimport * as React from \"react\";\nimport {\n  Form,\n  FormControl,\n  FormField,\n  FormItem,\n  FormLabel,\n  FormMessage,\n} from \"@/components/ui/form\";\nimport { toast } from \"@/app/registry/spectrumui/use-toast\";\nimport { LoadingButton } from \"@/app/registry/spectrumui/loading-button-dependencies\";\nimport MultipleSelector, {\n  Option,\n} from \"@/app/registry/spectrumui/multiple-selector-dependencies\";\n\nconst OPTIONS: Option[] = [\n  { label: \"nextjs\", value: \"Nextjs\" },\n  { label: \"React\", value: \"react\" },\n  { label: \"Remix\", value: \"remix\" },\n  { label: \"Vite\", value: \"vite\" },\n  { label: \"Nuxt\", value: \"nuxt\" },\n  { label: \"Vue\", value: \"vue\" },\n  { label: \"Svelte\", value: \"svelte\" },\n  { label: \"Angular\", value: \"angular\" },\n  { label: \"Ember\", value: \"ember\", disable: true },\n  { label: \"Gatsby\", value: \"gatsby\", disable: true },\n  { label: \"Astro\", value: \"astro\" },\n];\n\nconst optionSchema = z.object({\n  label: z.string(),\n  value: z.string(),\n  disable: z.boolean().optional(),\n});\n\nconst FormSchema = z.object({\n  frameworks: z.array(optionSchema).min(1),\n});\n\nconst MultipleSelectorWithForm = () => {\n  const form = useForm<z.infer<typeof FormSchema>>({\n    resolver: zodResolver(FormSchema),\n  });\n\n  const [loading, setLoading] = React.useState(false);\n\n  function onSubmit(data: z.infer<typeof FormSchema>) {\n    setLoading(true);\n\n    setTimeout(() => {\n      setLoading(false);\n      toast({\n        title: \"Your submitted data\",\n        description: (\n          <pre className=\"mt-2 w-[340px] rounded-md bg-slate-950 p-4\">\n            <code className=\"text-white\">{JSON.stringify(data, null, 2)}</code>\n          </pre>\n        ),\n      });\n    }, 500);\n  }\n\n  return (\n    <Form {...form}>\n      <form onSubmit={form.handleSubmit(onSubmit)} className=\"w-2/3 space-y-6\">\n        <FormField\n          control={form.control}\n          name=\"frameworks\"\n          render={({ field }) => (\n            <FormItem>\n              <FormLabel>Frameworks</FormLabel>\n              <FormControl>\n                <MultipleSelector\n                  {...field}\n                  defaultOptions={OPTIONS}\n                  placeholder=\"Select frameworks you like...\"\n                  emptyIndicator={\n                    <p className=\"text-center text-lg leading-10 text-gray-600 dark:text-gray-400\">\n                      no results found.\n                    </p>\n                  }\n                />\n              </FormControl>\n              <FormMessage />\n            </FormItem>\n          )}\n        />\n        <LoadingButton loading={loading} type=\"submit\">\n          Submit\n        </LoadingButton>\n      </form>\n    </Form>\n  );\n};\nexport default MultipleSelectorWithForm;\n",
+      "type": "registry:component",
+      "target": "components/spectrumui/multiple-selector-with-form.tsx"
+    }
+  ]
+}

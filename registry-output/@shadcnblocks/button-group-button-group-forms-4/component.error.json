@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "button-group-button-group-forms-4",
+  "url": "https://shadcnblocks.com/r/button-group-button-group-forms-4.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "button-group-button-group-forms-4",
+    "type": "registry:block",
+    "title": "Button-group/button-group-forms-",
+    "description": "A button-group/button-group-forms- example",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": ["button", "button-group"],
+    "files": [
+      {
+        "path": "code/example/button-group/button-group-forms-4.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:15:04.696Z"
+}

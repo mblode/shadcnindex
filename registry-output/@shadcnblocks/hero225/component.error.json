@@ -1,0 +1,24 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "hero225",
+  "url": "https://shadcnblocks.com/r/hero225.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "hero225",
+    "type": "registry:block",
+    "title": "Hero",
+    "description": "A component displaying animated circles populated with tech icons and a central text message, accompanied by a call-to-action button.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": [
+      "https://magicui.design/r/orbiting-circles",
+      "button"
+    ],
+    "files": [
+      {
+        "path": "code/block/hero225.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:36.860Z"
+}

@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "hero86",
+  "url": "https://shadcnblocks.com/r/hero86.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "hero86",
+    "type": "registry:block",
+    "title": "Hero",
+    "description": "This component features a 2-column layout with a text section and an image. The text includes a title, description, and a button. The image section has a unique aspect ratio with a decorative background.",
+    "dependencies": [],
+    "registryDependencies": ["aspect-ratio", "button"],
+    "files": [
+      {
+        "path": "code/block/hero86.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:39.850Z"
+}

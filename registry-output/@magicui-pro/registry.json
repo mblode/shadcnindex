@@ -1,0 +1,1177 @@
+{
+  "name": "magicui-pro",
+  "homepage": "https://pro.magicui.design",
+  "items": [
+    {
+      "name": "index",
+      "type": "registry:style",
+      "dependencies": ["class-variance-authority", "lucide-react"],
+      "devDependencies": ["tw-animate-css"],
+      "registryDependencies": ["utils"],
+      "files": [],
+      "cssVars": {},
+      "meta": {}
+    },
+    {
+      "name": "header-1",
+      "type": "registry:block",
+      "description": "A header section which animates while scrolling down.",
+      "dependencies": ["motion", "next-themes"],
+      "files": [
+        {
+          "path": "registry/blocks/header-1.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "height": 800
+      }
+    },
+    {
+      "name": "header-2",
+      "type": "registry:block",
+      "files": [
+        {
+          "path": "registry/blocks/header-2.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "height": 800
+      }
+    },
+    {
+      "name": "header-3",
+      "type": "registry:block",
+      "dependencies": ["motion"],
+      "files": [
+        {
+          "path": "registry/blocks/header-3.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "height": 130
+      }
+    },
+    {
+      "name": "header-4",
+      "type": "registry:block",
+      "dependencies": ["motion"],
+      "files": [
+        {
+          "path": "registry/blocks/header-4.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "height": 210
+      }
+    },
+    {
+      "name": "header-5",
+      "type": "registry:block",
+      "files": [
+        {
+          "path": "registry/blocks/header-5.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "height": 96
+      }
+    },
+    {
+      "name": "feature-scroll-1",
+      "type": "registry:block",
+      "files": [
+        {
+          "path": "registry/blocks/feature-scroll-1.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "height": 2177
+      }
+    },
+    {
+      "name": "animated-feature-card-1",
+      "type": "registry:block",
+      "dependencies": ["motion"],
+      "files": [
+        {
+          "path": "registry/blocks/animated-feature-card-1.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "height": 331
+      }
+    },
+    {
+      "name": "animated-feature-card-2",
+      "type": "registry:block",
+      "dependencies": ["motion"],
+      "files": [
+        {
+          "path": "registry/blocks/animated-feature-card-2.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "height": 397
+      }
+    },
+    {
+      "name": "animated-feature-card-3",
+      "type": "registry:block",
+      "dependencies": ["motion"],
+      "files": [
+        {
+          "path": "registry/blocks/animated-feature-card-3.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "height": 282
+      }
+    },
+    {
+      "name": "animated-feature-card-4",
+      "type": "registry:block",
+      "dependencies": ["motion"],
+      "files": [
+        {
+          "path": "registry/blocks/animated-feature-card-4.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "height": 397
+      }
+    },
+    {
+      "name": "animated-feature-card-5",
+      "type": "registry:block",
+      "dependencies": ["motion"],
+      "files": [
+        {
+          "path": "registry/blocks/animated-feature-card-5.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "height": 317
+      }
+    },
+    {
+      "name": "animated-feature-card-6",
+      "type": "registry:block",
+      "dependencies": ["motion"],
+      "files": [
+        {
+          "path": "registry/blocks/animated-feature-card-6.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "height": 387
+      }
+    },
+    {
+      "name": "animated-feature-card-7",
+      "type": "registry:block",
+      "dependencies": ["motion"],
+      "registryDependencies": ["@magicui/marquee"],
+      "files": [
+        {
+          "path": "registry/blocks/animated-feature-card-7.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "height": 387
+      }
+    },
+    {
+      "name": "animated-feature-card-8",
+      "type": "registry:block",
+      "dependencies": ["motion"],
+      "files": [
+        {
+          "path": "registry/blocks/animated-feature-card-8.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "height": 345
+      }
+    },
+    {
+      "name": "animated-feature-card-9",
+      "type": "registry:block",
+      "dependencies": ["motion"],
+      "files": [
+        {
+          "path": "registry/blocks/animated-feature-card-9.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "height": 500
+      }
+    },
+    {
+      "name": "animated-feature-card-10",
+      "type": "registry:block",
+      "dependencies": ["motion"],
+      "files": [
+        {
+          "path": "registry/blocks/animated-feature-card-10.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "height": 652
+      }
+    },
+    {
+      "name": "feature-1",
+      "type": "registry:block",
+      "files": [
+        {
+          "path": "registry/blocks/feature-1.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "height": 738
+      }
+    },
+    {
+      "name": "feature-2",
+      "type": "registry:block",
+      "files": [
+        {
+          "path": "registry/blocks/feature-2.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "height": 738
+      }
+    },
+    {
+      "name": "feature-3",
+      "type": "registry:block",
+      "files": [
+        {
+          "path": "registry/blocks/feature-3.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "height": 712
+      }
+    },
+    {
+      "name": "feature-6",
+      "type": "registry:block",
+      "registryDependencies": ["badge"],
+      "files": [
+        {
+          "path": "registry/blocks/feature-6.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "height": 908
+      }
+    },
+    {
+      "name": "stats-1",
+      "type": "registry:block",
+      "files": [
+        {
+          "path": "registry/blocks/stats-1.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "height": 460
+      }
+    },
+    {
+      "name": "stats-2",
+      "type": "registry:block",
+      "files": [
+        {
+          "path": "registry/blocks/stats-2.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "height": 436
+      }
+    },
+    {
+      "name": "stats-3",
+      "type": "registry:block",
+      "files": [
+        {
+          "path": "registry/blocks/stats-3.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "height": 508
+      }
+    },
+    {
+      "name": "stats-4",
+      "type": "registry:block",
+      "registryDependencies": ["chart"],
+      "files": [
+        {
+          "path": "registry/blocks/stats-4.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "height": 604
+      }
+    },
+    {
+      "name": "stats-5",
+      "type": "registry:block",
+      "files": [
+        {
+          "path": "registry/blocks/stats-5.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "height": 622
+      }
+    },
+    {
+      "name": "carousel-1",
+      "type": "registry:block",
+      "files": [
+        {
+          "path": "registry/blocks/carousel-1.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "height": 760
+      }
+    },
+    {
+      "name": "carousel-2",
+      "type": "registry:block",
+      "files": [
+        {
+          "path": "registry/blocks/carousel-2.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "height": 740
+      }
+    },
+    {
+      "name": "footer-1",
+      "type": "registry:block",
+      "files": [
+        {
+          "path": "registry/blocks/footer-1.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "height": 414
+      }
+    },
+    {
+      "name": "footer-2",
+      "type": "registry:block",
+      "files": [
+        {
+          "path": "registry/blocks/footer-2.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "height": 111
+      }
+    },
+    {
+      "name": "footer-3",
+      "type": "registry:block",
+      "files": [
+        {
+          "path": "registry/blocks/footer-3.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "height": 72
+      }
+    },
+    {
+      "name": "footer-4",
+      "type": "registry:block",
+      "files": [
+        {
+          "path": "registry/blocks/footer-4.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "height": 353
+      }
+    },
+    {
+      "name": "footer-5",
+      "type": "registry:block",
+      "files": [
+        {
+          "path": "registry/blocks/footer-5.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "height": 72
+      }
+    },
+    {
+      "name": "footer-6",
+      "type": "registry:block",
+      "files": [
+        {
+          "path": "registry/blocks/footer-6.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "height": 204
+      }
+    },
+    {
+      "name": "footer-7",
+      "type": "registry:block",
+      "files": [
+        {
+          "path": "registry/blocks/footer-7.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "height": 72
+      }
+    },
+    {
+      "name": "footer-8",
+      "type": "registry:block",
+      "files": [
+        {
+          "path": "registry/blocks/footer-8.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "height": 330
+      }
+    },
+    {
+      "name": "footer-9",
+      "type": "registry:block",
+      "files": [
+        {
+          "path": "registry/blocks/footer-9.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "height": 88
+      }
+    },
+    {
+      "name": "footer-10",
+      "type": "registry:block",
+      "files": [
+        {
+          "path": "registry/blocks/footer-10.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "height": 368
+      }
+    },
+    {
+      "name": "footer-11",
+      "type": "registry:block",
+      "files": [
+        {
+          "path": "registry/blocks/footer-11.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "height": 393
+      }
+    },
+    {
+      "name": "hero-1",
+      "type": "registry:block",
+      "dependencies": ["motion"],
+      "registryDependencies": ["@magicui/border-beam", "button"],
+      "files": [
+        {
+          "path": "registry/blocks/hero-1.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "height": 1353
+      }
+    },
+    {
+      "name": "hero-2",
+      "type": "registry:block",
+      "registryDependencies": ["@magicui/border-beam", "@magicui/retro-grid"],
+      "files": [
+        {
+          "path": "registry/blocks/hero-2.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "height": 1133
+      }
+    },
+    {
+      "name": "hero-3",
+      "type": "registry:block",
+      "files": [
+        {
+          "path": "registry/blocks/hero-3.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "height": 565
+      }
+    },
+    {
+      "name": "hero-4",
+      "type": "registry:block",
+      "files": [
+        {
+          "path": "registry/blocks/hero-4.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "height": 1096
+      }
+    },
+    {
+      "name": "social-proof-press-1",
+      "type": "registry:block",
+      "files": [
+        {
+          "path": "registry/blocks/social-proof-press-1.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "height": 252
+      }
+    },
+    {
+      "name": "social-proof-press-2",
+      "type": "registry:block",
+      "files": [
+        {
+          "path": "registry/blocks/social-proof-press-2.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "height": 252
+      }
+    },
+    {
+      "name": "social-proof-press-3",
+      "type": "registry:block",
+      "registryDependencies": ["@magicui/marquee"],
+      "files": [
+        {
+          "path": "registry/blocks/social-proof-press-3.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "height": 212
+      }
+    },
+    {
+      "name": "social-proof-companies-1",
+      "type": "registry:block",
+      "files": [
+        {
+          "path": "registry/blocks/social-proof-companies-1.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "height": 244
+      }
+    },
+    {
+      "name": "social-proof-companies-2",
+      "type": "registry:block",
+      "files": [
+        {
+          "path": "registry/blocks/social-proof-companies-2.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "height": 244
+      }
+    },
+    {
+      "name": "social-proof-companies-3",
+      "type": "registry:block",
+      "registryDependencies": ["@magicui/marquee"],
+      "files": [
+        {
+          "path": "registry/blocks/social-proof-companies-3.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "height": 212
+      }
+    },
+    {
+      "name": "social-proof-companies-4",
+      "type": "registry:block",
+      "files": [
+        {
+          "path": "registry/blocks/social-proof-companies-4.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "height": 1204
+      }
+    },
+    {
+      "name": "social-proof-testimonials-1",
+      "type": "registry:block",
+      "files": [
+        {
+          "path": "registry/blocks/social-proof-testimonials-1.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "height": 508
+      }
+    },
+    {
+      "name": "social-proof-testimonials-2",
+      "type": "registry:block",
+      "files": [
+        {
+          "path": "registry/blocks/social-proof-testimonials-2.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "height": 856
+      }
+    },
+    {
+      "name": "social-proof-testimonials-3",
+      "type": "registry:block",
+      "registryDependencies": ["@magicui/marquee"],
+      "files": [
+        {
+          "path": "registry/blocks/social-proof-testimonials-3.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "height": 806
+      }
+    },
+    {
+      "name": "call-to-action-1",
+      "type": "registry:block",
+      "registryDependencies": ["@magicui/marquee"],
+      "files": [
+        {
+          "path": "registry/blocks/call-to-action-1.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "height": 530
+      }
+    },
+    {
+      "name": "call-to-action-2",
+      "type": "registry:block",
+      "registryDependencies": ["@magicui/marquee"],
+      "files": [
+        {
+          "path": "registry/blocks/call-to-action-2.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "height": 530
+      }
+    },
+    {
+      "name": "call-to-action-3",
+      "type": "registry:block",
+      "files": [
+        {
+          "path": "registry/blocks/call-to-action-3.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "height": 240
+      }
+    },
+    {
+      "name": "call-to-action-4",
+      "type": "registry:block",
+      "files": [
+        {
+          "path": "registry/blocks/call-to-action-4.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "height": 614
+      }
+    },
+    {
+      "name": "call-to-action-5",
+      "type": "registry:block",
+      "files": [
+        {
+          "path": "registry/blocks/call-to-action-5.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "height": 623
+      }
+    },
+    {
+      "name": "call-to-action-6",
+      "type": "registry:block",
+      "files": [
+        {
+          "path": "registry/blocks/call-to-action-6.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "height": 382
+      }
+    },
+    {
+      "name": "call-to-action-7",
+      "type": "registry:block",
+      "files": [
+        {
+          "path": "registry/blocks/call-to-action-7.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "height": 704
+      }
+    },
+    {
+      "name": "call-to-action-8",
+      "type": "registry:block",
+      "files": [
+        {
+          "path": "registry/blocks/call-to-action-8.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "height": 524
+      }
+    },
+    {
+      "name": "call-to-action-9",
+      "type": "registry:block",
+      "files": [
+        {
+          "path": "registry/blocks/call-to-action-9.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "height": 295
+      }
+    },
+    {
+      "name": "call-to-action-10",
+      "type": "registry:block",
+      "files": [
+        {
+          "path": "registry/blocks/call-to-action-10.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "height": 933
+      }
+    },
+    {
+      "name": "call-to-action-11",
+      "type": "registry:block",
+      "files": [
+        {
+          "path": "registry/blocks/call-to-action-11.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "height": 464
+      }
+    },
+    {
+      "name": "pricing-1",
+      "type": "registry:block",
+      "dependencies": ["motion", "lucide-react", "@radix-ui/react-icons"],
+      "registryDependencies": ["button", "switch"],
+      "files": [
+        {
+          "path": "registry/blocks/pricing-1.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "height": 743
+      }
+    },
+    {
+      "name": "pricing-2",
+      "type": "registry:block",
+      "files": [
+        {
+          "path": "registry/blocks/pricing-2.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "height": 844
+      }
+    },
+    {
+      "name": "pricing-3",
+      "type": "registry:block",
+      "files": [
+        {
+          "path": "registry/blocks/pricing-3.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "height": 896
+      }
+    },
+    {
+      "name": "pricing-4",
+      "type": "registry:block",
+      "files": [
+        {
+          "path": "registry/blocks/pricing-4.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "height": 686
+      }
+    },
+    {
+      "name": "pricing-5",
+      "type": "registry:block",
+      "files": [
+        {
+          "path": "registry/blocks/pricing-5.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "height": 1172
+      }
+    },
+    {
+      "name": "pricing-6",
+      "type": "registry:block",
+      "files": [
+        {
+          "path": "registry/blocks/pricing-6.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "height": 638
+      }
+    },
+    {
+      "name": "pricing-7",
+      "type": "registry:block",
+      "files": [
+        {
+          "path": "registry/blocks/pricing-7.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "height": 787
+      }
+    },
+    {
+      "name": "pricing-8",
+      "type": "registry:block",
+      "files": [
+        {
+          "path": "registry/blocks/pricing-8.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "height": 922
+      }
+    },
+    {
+      "name": "pricing-9",
+      "type": "registry:block",
+      "files": [
+        {
+          "path": "registry/blocks/pricing-9.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "height": 1406
+      }
+    },
+    {
+      "name": "faq-1",
+      "type": "registry:block",
+      "files": [
+        {
+          "path": "registry/blocks/faq-1.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "height": 985
+      }
+    },
+    {
+      "name": "faq-2",
+      "type": "registry:block",
+      "files": [
+        {
+          "path": "registry/blocks/faq-2.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "height": 785
+      }
+    },
+    {
+      "name": "faq-3",
+      "type": "registry:block",
+      "files": [
+        {
+          "path": "registry/blocks/faq-3.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "height": 904
+      }
+    },
+    {
+      "name": "faq-4",
+      "type": "registry:block",
+      "files": [
+        {
+          "path": "registry/blocks/faq-4.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "height": 548
+      }
+    },
+    {
+      "name": "red-theme",
+      "type": "registry:theme",
+      "cssVars": {
+        "light": {
+          "background": "oklch(1 0 0)",
+          "foreground": "oklch(0.141 0.005 285.823)",
+          "card": "oklch(1 0 0)",
+          "card-foreground": "oklch(0.141 0.005 285.823)",
+          "popover": "oklch(1 0 0)",
+          "popover-foreground": "oklch(0.141 0.005 285.823)",
+          "primary": "oklch(0.637 0.237 25.331)",
+          "primary-foreground": "oklch(0.971 0.013 17.38)",
+          "secondary": "oklch(0.967 0.001 286.375)",
+          "secondary-foreground": "oklch(0.21 0.006 285.885)",
+          "muted": "oklch(0.967 0.001 286.375)",
+          "muted-foreground": "oklch(0.552 0.016 285.938)",
+          "accent": "oklch(0.967 0.001 286.375)",
+          "accent-foreground": "oklch(0.21 0.006 285.885)",
+          "destructive": "oklch(0.577 0.245 27.325)",
+          "border": "oklch(0.92 0.004 286.32)",
+          "input": "oklch(0.92 0.004 286.32)",
+          "ring": "oklch(0.637 0.237 25.331)",
+          "chart-1": "oklch(0.646 0.222 41.116)",
+          "chart-2": "oklch(0.6 0.118 184.704)",
+          "chart-3": "oklch(0.398 0.07 227.392)",
+          "chart-4": "oklch(0.828 0.189 84.429)",
+          "chart-5": "oklch(0.769 0.188 70.08)",
+          "sidebar": "oklch(0.985 0 0)",
+          "sidebar-foreground": "oklch(0.141 0.005 285.823)",
+          "sidebar-primary": "oklch(0.637 0.237 25.331)",
+          "sidebar-primary-foreground": "oklch(0.971 0.013 17.38)",
+          "sidebar-accent": "oklch(0.967 0.001 286.375)",
+          "sidebar-accent-foreground": "oklch(0.21 0.006 285.885)",
+          "sidebar-border": "oklch(0.92 0.004 286.32)",
+          "sidebar-ring": "oklch(0.637 0.237 25.331)"
+        },
+        "dark": {
+          "background": "oklch(0.141 0.005 285.823)",
+          "foreground": "oklch(0.985 0 0)",
+          "card": "oklch(0.21 0.006 285.885)",
+          "card-foreground": "oklch(0.985 0 0)",
+          "popover": "oklch(0.21 0.006 285.885)",
+          "popover-foreground": "oklch(0.985 0 0)",
+          "primary": "oklch(0.637 0.237 25.331)",
+          "primary-foreground": "oklch(0.971 0.013 17.38)",
+          "secondary": "oklch(0.274 0.006 286.033)",
+          "secondary-foreground": "oklch(0.985 0 0)",
+          "muted": "oklch(0.274 0.006 286.033)",
+          "muted-foreground": "oklch(0.705 0.015 286.067)",
+          "accent": "oklch(0.274 0.006 286.033)",
+          "accent-foreground": "oklch(0.985 0 0)",
+          "destructive": "oklch(0.704 0.191 22.216)",
+          "border": "oklch(1 0 0 / 10%)",
+          "input": "oklch(1 0 0 / 15%)",
+          "ring": "oklch(0.637 0.237 25.331)",
+          "chart-1": "oklch(0.488 0.243 264.376)",
+          "chart-2": "oklch(0.696 0.17 162.48)",
+          "chart-3": "oklch(0.769 0.188 70.08)",
+          "chart-4": "oklch(0.627 0.265 303.9)",
+          "chart-5": "oklch(0.645 0.246 16.439)",
+          "sidebar": "oklch(0.21 0.006 285.885)",
+          "sidebar-foreground": "oklch(0.985 0 0)",
+          "sidebar-primary": "oklch(0.637 0.237 25.331)",
+          "sidebar-primary-foreground": "oklch(0.971 0.013 17.38)",
+          "sidebar-accent": "oklch(0.274 0.006 286.033)",
+          "sidebar-accent-foreground": "oklch(0.985 0 0)",
+          "sidebar-border": "oklch(1 0 0 / 10%)",
+          "sidebar-ring": "oklch(0.637 0.237 25.331)"
+        }
+      },
+      "meta": {}
+    },
+    {
+      "name": "blue-theme",
+      "type": "registry:theme",
+      "cssVars": {
+        "light": {
+          "background": "oklch(1 0 0)",
+          "foreground": "oklch(0.141 0.005 285.823)",
+          "card": "oklch(1 0 0)",
+          "card-foreground": "oklch(0.141 0.005 285.823)",
+          "popover": "oklch(1 0 0)",
+          "popover-foreground": "oklch(0.141 0.005 285.823)",
+          "primary": "oklch(0.637 0.237 240.331)",
+          "primary-foreground": "oklch(0.971 0.013 17.38)",
+          "secondary": "oklch(0.967 0.001 286.375)",
+          "secondary-foreground": "oklch(0.21 0.006 285.885)",
+          "muted": "oklch(0.967 0.001 286.375)",
+          "muted-foreground": "oklch(0.552 0.016 285.938)",
+          "accent": "oklch(0.967 0.001 286.375)",
+          "accent-foreground": "oklch(0.21 0.006 285.885)",
+          "destructive": "oklch(0.577 0.245 27.325)",
+          "border": "oklch(0.92 0.004 286.32)",
+          "input": "oklch(0.92 0.004 286.32)",
+          "ring": "oklch(0.637 0.237 240.331)",
+          "chart-1": "oklch(0.646 0.222 240.116)",
+          "chart-2": "oklch(0.6 0.118 184.704)",
+          "chart-3": "oklch(0.398 0.07 227.392)",
+          "chart-4": "oklch(0.828 0.189 84.429)",
+          "chart-5": "oklch(0.769 0.188 70.08)",
+          "sidebar": "oklch(0.985 0 0)",
+          "sidebar-foreground": "oklch(0.141 0.005 285.823)",
+          "sidebar-primary": "oklch(0.637 0.237 240.331)",
+          "sidebar-primary-foreground": "oklch(0.971 0.013 17.38)",
+          "sidebar-accent": "oklch(0.967 0.001 286.375)",
+          "sidebar-accent-foreground": "oklch(0.21 0.006 285.885)",
+          "sidebar-border": "oklch(0.92 0.004 286.32)",
+          "sidebar-ring": "oklch(0.637 0.237 240.331)"
+        },
+        "dark": {
+          "background": "oklch(0.141 0.005 285.823)",
+          "foreground": "oklch(0.985 0 0)",
+          "card": "oklch(0.21 0.006 285.885)",
+          "card-foreground": "oklch(0.985 0 0)",
+          "popover": "oklch(0.21 0.006 285.885)",
+          "popover-foreground": "oklch(0.985 0 0)",
+          "primary": "oklch(0.637 0.237 240.331)",
+          "primary-foreground": "oklch(0.971 0.013 17.38)",
+          "secondary": "oklch(0.274 0.006 286.033)",
+          "secondary-foreground": "oklch(0.985 0 0)",
+          "muted": "oklch(0.274 0.006 286.033)",
+          "muted-foreground": "oklch(0.705 0.015 286.067)",
+          "accent": "oklch(0.274 0.006 286.033)",
+          "accent-foreground": "oklch(0.985 0 0)",
+          "destructive": "oklch(0.704 0.191 22.216)",
+          "border": "oklch(1 0 0 / 10%)",
+          "input": "oklch(1 0 0 / 15%)",
+          "ring": "oklch(0.637 0.237 240.331)",
+          "chart-1": "oklch(0.488 0.243 240.376)",
+          "chart-2": "oklch(0.696 0.17 162.48)",
+          "chart-3": "oklch(0.769 0.188 70.08)",
+          "chart-4": "oklch(0.627 0.265 303.9)",
+          "chart-5": "oklch(0.645 0.246 16.439)",
+          "sidebar": "oklch(0.21 0.006 285.885)",
+          "sidebar-foreground": "oklch(0.985 0 0)",
+          "sidebar-primary": "oklch(0.637 0.237 240.331)",
+          "sidebar-primary-foreground": "oklch(0.971 0.013 17.38)",
+          "sidebar-accent": "oklch(0.274 0.006 286.033)",
+          "sidebar-accent-foreground": "oklch(0.985 0 0)",
+          "sidebar-border": "oklch(1 0 0 / 10%)",
+          "sidebar-ring": "oklch(0.637 0.237 240.331)"
+        }
+      },
+      "meta": {}
+    }
+  ]
+}

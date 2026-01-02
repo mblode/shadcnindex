@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "extends": "none",
+  "name": "color-swatch-size-demo",
+  "title": "Color Swatch Size",
+  "description": "color-swatch-size-demo",
+  "registryDependencies": ["https://intentui.com/r/color-swatch"],
+  "files": [
+    {
+      "path": "src/components/docs/colors/color-swatch/color-swatch-size-demo.tsx",
+      "content": "\"use client\"\n\nimport { ColorSwatch } from \"@/components/ui/color-swatch\"\n\nexport default function ColorSwatchSizeDemo() {\n  return (\n    <ColorSwatch\n      className=\"[--color-swatch-size:--spacing(16)]\"\n      aria-label=\"Current color\"\n      color=\"#0d6efd\"\n    />\n  )\n}\n",
+      "type": "registry:page",
+      "target": "app/color-swatch-size-demo/page.tsx"
+    }
+  ],
+  "type": "registry:page"
+}

@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature193",
+  "url": "https://shadcnblocks.com/r/feature193.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature193",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A component showcasing features with dynamic layouts, multi-column grid, and decorative background gradients. Includes title, descriptions, and images.",
+    "dependencies": ["react"],
+    "registryDependencies": ["card"],
+    "files": [
+      {
+        "path": "code/block/feature193.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:24.259Z"
+}

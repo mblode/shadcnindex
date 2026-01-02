@@ -1,0 +1,20 @@
+{
+  "registry": "@magicui-pro",
+  "component": "carousel-1",
+  "url": "https://pro.magicui.design/registry/carousel-1",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "carousel-1",
+    "type": "registry:block",
+    "files": [
+      {
+        "path": "registry/blocks/carousel-1.tsx",
+        "type": "registry:component"
+      }
+    ],
+    "meta": {
+      "height": 760
+    }
+  },
+  "fetchedAt": "2026-01-02T11:10:49.191Z"
+}

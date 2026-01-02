@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "live-purchase3",
+  "url": "https://shadcnblocks.com/r/live-purchase3.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "live-purchase3",
+    "type": "registry:block",
+    "title": "Live-purchase",
+    "description": "This component displays live notifications of recent purchases, including product details and when they were made, in a rotating manner for improved visibility. It also shows live stats with the number of current viewers and the total purchases made today, providing a quick overview of customer interactions.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": ["button", "card"],
+    "files": [
+      {
+        "path": "code/block/live-purchase3.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:41.319Z"
+}

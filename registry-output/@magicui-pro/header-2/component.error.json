@@ -1,0 +1,20 @@
+{
+  "registry": "@magicui-pro",
+  "component": "header-2",
+  "url": "https://pro.magicui.design/registry/header-2",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "header-2",
+    "type": "registry:block",
+    "files": [
+      {
+        "path": "registry/blocks/header-2.tsx",
+        "type": "registry:component"
+      }
+    ],
+    "meta": {
+      "height": 800
+    }
+  },
+  "fetchedAt": "2026-01-02T11:10:48.513Z"
+}

@@ -1,0 +1,13 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "card-with-image-demo",
+  "type": "registry:example",
+  "registryDependencies": ["card"],
+  "files": [
+    {
+      "path": "src/registry/pure-ui/examples/card/card-with-image-demo.tsx",
+      "content": "\"use client\";\n\nimport { AnimatePresence, motion } from \"motion/react\";\n\nimport { Card, CardFooter } from \"@/registry/pure-ui/ui/card\";\n\nexport function CardWithImageDemo() {\n  return (\n    <div className=\"flex flex-col gap-4 md:flex-row\">\n      <Card className=\"w-[220px] gap-2 p-1\">\n        <img\n          alt=\"Harry Potter Collections\"\n          className=\"block aspect-square w-full shrink-0 select-none rounded-lg object-cover align-middle\"\n          loading=\"lazy\"\n          src=\"https://pbs.twimg.com/media/G0uYIupbcAQDPry?format=jpg&name=medium\"\n        />\n        <CardFooter className=\"flex items-center justify-between px-2 text-sm\">\n          <span>Harry Potter</span>\n          <span\n            aria-label=\"18 pictures in collection\"\n            className=\"text-muted-foreground\"\n          >\n            18 pictures\n          </span>\n        </CardFooter>\n      </Card>\n\n      <Card className=\"w-[220px] gap-2 p-1\">\n        <img\n          alt=\"Hell's Paradise\"\n          className=\"block aspect-square w-full shrink-0 select-none rounded-lg object-cover align-middle\"\n          loading=\"lazy\"\n          src=\"https://pbs.twimg.com/media/G2B8SNGXwAACC9G?format=jpg&name=small\"\n        />\n        <CardFooter className=\"flex items-center justify-between px-2 text-sm\">\n          <span>Hell's Paradise</span>\n          <span\n            aria-label=\"56 pictures in collection\"\n            className=\"text-muted-foreground\"\n          >\n            56 pictures\n          </span>\n        </CardFooter>\n      </Card>\n    </div>\n  );\n}\n",
+      "type": "registry:example"
+    }
+  ]
+}

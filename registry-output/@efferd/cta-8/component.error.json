@@ -1,0 +1,26 @@
+{
+  "registry": "@efferd",
+  "component": "cta-8",
+  "url": "https://efferd.com/r/cta-8.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "cta-8",
+    "description": "Grid pattern background with email input and 'Join Now' button.",
+    "dependencies": ["motion"],
+    "registryDependencies": [
+      "button",
+      "button-group",
+      "input-group",
+      "@magicui/grid-pattern"
+    ],
+    "files": [
+      {
+        "path": "registry/cta/8/call-to-action.tsx",
+        "type": "registry:component"
+      }
+    ],
+    "categories": ["cta"],
+    "type": "registry:block"
+  },
+  "fetchedAt": "2026-01-02T11:08:57.758Z"
+}

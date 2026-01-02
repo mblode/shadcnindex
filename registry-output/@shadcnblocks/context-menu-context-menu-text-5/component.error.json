@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "context-menu-context-menu-text-5",
+  "url": "https://shadcnblocks.com/r/context-menu-context-menu-text-5.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "context-menu-context-menu-text-5",
+    "type": "registry:block",
+    "title": "Context-menu/context-menu-text-",
+    "description": "A context-menu/context-menu-text- example",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["context-menu"],
+    "files": [
+      {
+        "path": "code/example/context-menu/context-menu-text-5.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:15:13.827Z"
+}

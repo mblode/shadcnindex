@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature199",
+  "url": "https://shadcnblocks.com/r/feature199.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature199",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A component displaying a dynamic list of features with images - 3:2 column split, scrolls to highlight features.",
+    "dependencies": ["react"],
+    "registryDependencies": ["separator"],
+    "files": [
+      {
+        "path": "code/block/feature199.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:24.491Z"
+}

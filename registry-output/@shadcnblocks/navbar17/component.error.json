@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "navbar17",
+  "url": "https://shadcnblocks.com/r/navbar17.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "navbar17",
+    "type": "registry:block",
+    "title": "Navbar",
+    "description": "A navigation component with dynamic indicator for active links and a mobile menu with an animated icon for toggling.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": ["button", "navigation-menu", "popover"],
+    "files": [
+      {
+        "path": "code/block/navbar17.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:42.205Z"
+}

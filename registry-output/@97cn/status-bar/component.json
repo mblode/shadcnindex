@@ -1,0 +1,39 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "status-bar",
+  "type": "registry:ui",
+  "title": "Status Bar",
+  "description": "Windows 95 styled status bar component",
+  "dependencies": [],
+  "files": [
+    {
+      "path": "components/97cn/status-bar.tsx",
+      "content": "import * as React from \"react\"\nimport { cn } from \"@/lib/utils\"\n\ninterface Win95StatusBarProps extends React.HTMLAttributes<HTMLDivElement> {\n  children: React.ReactNode\n}\n\ninterface Win95StatusPanelProps extends React.HTMLAttributes<HTMLDivElement> {\n  children: React.ReactNode\n  sunken?: boolean\n}\n\nconst Win95StatusBar = React.forwardRef<HTMLDivElement, Win95StatusBarProps>(\n  ({ className, children, ...props }, ref) => {\n    return (\n      <div\n        ref={ref}\n        className={cn(\n          \"flex items-center bg-win95-button-face border-t border-win95-button-highlight px-1 py-0.5 gap-1 h-6\",\n          className,\n        )}\n        {...props}\n      >\n        {children}\n      </div>\n    )\n  },\n)\nWin95StatusBar.displayName = \"Win95StatusBar\"\n\nconst Win95StatusPanel = React.forwardRef<HTMLDivElement, Win95StatusPanelProps>(\n  ({ className, children, sunken = true, ...props }, ref) => {\n    return (\n      <div\n        ref={ref}\n        className={cn(\n          \"px-1.5 py-0 text-xs font-sans text-win95-black h-5 flex items-center\",\n          sunken ? \"win95-sunken bg-win95-white\" : \"bg-win95-button-face\",\n          className,\n        )}\n        {...props}\n      >\n        {children}\n      </div>\n    )\n  },\n)\nWin95StatusPanel.displayName = \"Win95StatusPanel\"\n\nexport { Win95StatusBar, Win95StatusPanel }\n",
+      "type": "registry:ui"
+    }
+  ],
+  "cssVars": {
+    "light": {
+      "win95-button-face": "#c0c0c0",
+      "win95-black": "#000000",
+      "win95-button-shadow": "#808080",
+      "win95-button-highlight": "#ffffff"
+    },
+    "dark": {
+      "win95-button-face": "#c0c0c0",
+      "win95-black": "#000000",
+      "win95-button-shadow": "#808080",
+      "win95-button-highlight": "#ffffff"
+    }
+  },
+  "css": {
+    "@layer utilities": {
+      ".win95-sunken": {
+        "border-top": "2px solid var(--win95-button-shadow)",
+        "border-left": "2px solid var(--win95-button-shadow)",
+        "border-right": "2px solid var(--win95-button-highlight)",
+        "border-bottom": "2px solid var(--win95-button-highlight)"
+      }
+    }
+  }
+}

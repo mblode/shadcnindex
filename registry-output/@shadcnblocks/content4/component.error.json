@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "content4",
+  "url": "https://shadcnblocks.com/r/content4.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "content4",
+    "type": "registry:block",
+    "title": "Content",
+    "description": "A content block with navigation links to sections, an interactive 'back to top' button, using dynamic highlighting for section visibility. It includes a breadcrumb, author info, and images laid out in a grid and column format.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": ["avatar", "breadcrumb", "button", "separator"],
+    "files": [
+      {
+        "path": "code/block/content4.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:18.110Z"
+}

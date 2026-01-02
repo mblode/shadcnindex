@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "input-group-input-group-buttons-1",
+  "url": "https://shadcnblocks.com/r/input-group-input-group-buttons-1.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "input-group-input-group-buttons-1",
+    "type": "registry:block",
+    "title": "Input-group/input-group-buttons-",
+    "description": "A input-group/input-group-buttons- example",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": ["input-group"],
+    "files": [
+      {
+        "path": "code/example/input-group/input-group-buttons-1.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:15:23.231Z"
+}

@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "gallery1",
+  "url": "https://shadcnblocks.com/r/gallery1.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "gallery1",
+    "type": "registry:block",
+    "title": "Gallery",
+    "description": "A gallery block showcasing 3 case studies with dynamic resizing; includes images, logos, text, and interactive effects on mouse hover.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": ["badge"],
+    "files": [
+      {
+        "path": "code/block/gallery1.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:32.140Z"
+}

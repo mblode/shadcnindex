@@ -1,0 +1,47 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "toggle",
+  "type": "registry:ui",
+  "title": "Toggle",
+  "description": "Windows 95 styled toggle button component",
+  "dependencies": ["@radix-ui/react-toggle"],
+  "files": [
+    {
+      "path": "components/97cn/toggle.tsx",
+      "content": "\"use client\"\n\nimport * as React from \"react\"\nimport * as TogglePrimitive from \"@radix-ui/react-toggle\"\nimport { cva, type VariantProps } from \"class-variance-authority\"\nimport { cn } from \"@/lib/utils\"\n\nconst toggleVariants = cva(\n  \"inline-flex items-center justify-center rounded-none text-sm font-medium transition-colors hover:bg-win95-light-gray focus-visible:outline-none focus:outline-1 focus:outline-dotted focus:outline-win95-black focus:outline-offset-[-3px] disabled:pointer-events-none disabled:opacity-50 data-[state=on]:bg-win95-light-gray font-sans\",\n  {\n    variants: {\n      variant: {\n        default: \"win95-raised bg-win95-button-face text-win95-black data-[state=on]:win95-sunken\",\n        outline:\n          \"border border-win95-dark-gray bg-transparent hover:bg-win95-light-gray data-[state=on]:bg-win95-light-gray text-win95-black\",\n      },\n      size: {\n        default: \"h-10 px-3 text-xs\",\n        sm: \"h-9 px-2.5 text-xs\",\n        lg: \"h-11 px-5 text-sm\",\n      },\n    },\n    defaultVariants: {\n      variant: \"default\",\n      size: \"default\",\n    },\n  },\n)\n\nconst Toggle = React.forwardRef<\n  React.ElementRef<typeof TogglePrimitive.Root>,\n  React.ComponentPropsWithoutRef<typeof TogglePrimitive.Root> & VariantProps<typeof toggleVariants>\n>(({ className, variant, size, ...props }, ref) => (\n  <TogglePrimitive.Root ref={ref} className={cn(toggleVariants({ variant, size, className }))} {...props} />\n))\n\nToggle.displayName = TogglePrimitive.Root.displayName\n\nexport { Toggle, toggleVariants }\n",
+      "type": "registry:ui"
+    }
+  ],
+  "cssVars": {
+    "light": {
+      "win95-button-face": "#c0c0c0",
+      "win95-black": "#000000",
+      "win95-light-gray": "#dfdfdf",
+      "win95-button-shadow": "#808080",
+      "win95-button-highlight": "#ffffff"
+    },
+    "dark": {
+      "win95-button-face": "#c0c0c0",
+      "win95-black": "#000000",
+      "win95-light-gray": "#dfdfdf",
+      "win95-button-shadow": "#808080",
+      "win95-button-highlight": "#ffffff"
+    }
+  },
+  "css": {
+    "@layer utilities": {
+      ".win95-raised": {
+        "border-top": "2px solid var(--win95-button-highlight)",
+        "border-left": "2px solid var(--win95-button-highlight)",
+        "border-right": "2px solid var(--win95-button-shadow)",
+        "border-bottom": "2px solid var(--win95-button-shadow)"
+      },
+      ".win95-sunken": {
+        "border-top": "2px solid var(--win95-button-shadow)",
+        "border-left": "2px solid var(--win95-button-shadow)",
+        "border-right": "2px solid var(--win95-button-highlight)",
+        "border-bottom": "2px solid var(--win95-button-highlight)"
+      }
+    }
+  }
+}

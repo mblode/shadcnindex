@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "cta18",
+  "url": "https://shadcnblocks.com/r/cta18.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "cta18",
+    "type": "registry:block",
+    "title": "Cta",
+    "description": "A call-to-action component with two columns: text (with a title and buttons) on one side, and unique, angled placeholder images on the other.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["button"],
+    "files": [
+      {
+        "path": "code/block/cta18.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:18.515Z"
+}

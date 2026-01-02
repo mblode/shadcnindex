@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "extends": "none",
+  "name": "button-group-demo",
+  "title": "Button Group",
+  "description": "button-group-demo",
+  "registryDependencies": [
+    "https://intentui.com/r/button",
+    "https://intentui.com/r/button-group"
+  ],
+  "files": [
+    {
+      "path": "src/components/docs/buttons/button-group/button-group-demo.tsx",
+      "content": "import { Button } from \"@/components/ui/button\"\nimport { ButtonGroup } from \"@/components/ui/button-group\"\n\nexport default function ButtonGroupDemo() {\n  return (\n    <ButtonGroup>\n      <Button intent=\"secondary\">Down</Button>\n      <Button intent=\"secondary\">Up</Button>\n    </ButtonGroup>\n  )\n}\n",
+      "type": "registry:page",
+      "target": "app/button-group-demo/page.tsx"
+    }
+  ],
+  "type": "registry:page"
+}

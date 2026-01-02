@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "stats2",
+  "url": "https://shadcnblocks.com/r/stats2.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "stats2",
+    "type": "registry:block",
+    "title": "Stats",
+    "description": "A 3-column block displaying platform insights with arrows and icons denoting trends and values, includes descriptive texts.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["card"],
+    "files": [
+      {
+        "path": "code/block/stats2.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:52.575Z"
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "careers1",
+  "title": "Careers",
+  "description": "A component displaying career opportunities by department, with clickable roles that reveal more via an arrow icon animation.",
+  "dependencies": ["lucide-react", "clsx", "tailwind-merge"],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "code/block/careers1.tsx",
+      "content": "import { ArrowRight } from \"lucide-react\";\n\nimport { cn } from \"@/lib/utils\";\n\ninterface Role {\n  title: string;\n  location: string;\n  href: string;\n}\n\ninterface Department {\n  title: string;\n  roles: Role[];\n  className?: string;\n}\n\ninterface Careers1Props {\n  title?: string;\n  description?: string;\n  departments?: Department[];\n  className?: string;\n}\n\nconst Careers1 = ({\n  title = \"Careers\",\n  description = \"View our open roles.\",\n  departments = [\n    {\n      title: \"Sales\",\n      roles: [\n        {\n          title: \"Sales Manager\",\n          location: \"London\",\n          href: \"#\",\n        },\n        {\n          title: \"Sales Development Representative\",\n          location: \"London\",\n          href: \"#\",\n        },\n        {\n          title: \"Sales Manager\",\n          location: \"London\",\n          href: \"#\",\n        },\n      ],\n    },\n    {\n      title: \"Customer Success\",\n      roles: [\n        {\n          title: \"Customer Success Associate\",\n          location: \"London\",\n          href: \"#\",\n        },\n      ],\n    },\n  ],\n  className,\n}: Careers1Props) => {\n  return (\n    <section className={cn(\"bg-background py-32\", className)}>\n      <div className=\"container\">\n        <h2 className=\"text-4xl font-medium md:text-6xl\">{title}</h2>\n        <p className=\"mt-6 whitespace-pre-wrap text-muted-foreground md:mb-20 md:text-lg\">\n          {description}\n        </p>\n        {departments.map((department) => (\n          <div key={department.title} className=\"mt-12 md:mt-20\">\n            <h3 className=\"mb-8 text-3xl font-medium md:text-4xl\">\n              {department.title}\n            </h3>\n            <ul className=\"divide-y divide-border border-y border-border\">\n              {department.roles.map((role, index) => (\n                <li key={index} className=\"group\">\n                  <a href={role.href} className=\"flex items-center py-6\">\n                    <div>\n                      <div className=\"font-medium md:text-lg\">{role.title}</div>\n                      <div className=\"text-xs text-muted-foreground md:mt-2 md:text-sm\">\n                        {role.location}\n                      </div>\n                    </div>\n                    <ArrowRight className=\"ml-auto size-6 -translate-x-6 opacity-0 transition-all group-hover:translate-x-0 group-hover:opacity-100\" />\n                  </a>\n                </li>\n              ))}\n            </ul>\n          </div>\n        ))}\n      </div>\n    </section>\n  );\n};\n\nexport { Careers1 };\n",
+      "type": "registry:block"
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "content": "import { type ClassValue, clsx } from 'clsx';\nimport { twMerge } from 'tailwind-merge';\n\nexport function cn(...inputs: ClassValue[]) {\n  return twMerge(clsx(inputs));\n}\n",
+      "type": "registry:lib",
+      "target": ""
+    }
+  ],
+  "type": "registry:block"
+}

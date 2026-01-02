@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature174",
+  "url": "https://shadcnblocks.com/r/feature174.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature174",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A component showcasing features across a grid layout with dynamic fading effects; includes titles, descriptions, and images.",
+    "dependencies": [],
+    "registryDependencies": ["card"],
+    "files": [
+      {
+        "path": "code/block/feature174.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:23.554Z"
+}

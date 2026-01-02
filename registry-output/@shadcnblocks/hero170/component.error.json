@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "hero170",
+  "url": "https://shadcnblocks.com/r/hero170.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "hero170",
+    "type": "registry:block",
+    "title": "Hero",
+    "description": "A component featuring a headline, a subtext, buttons for app download and GitHub star, integration options with icons, and a video preview with decorative dots.",
+    "dependencies": ["react-icons"],
+    "registryDependencies": ["button"],
+    "files": [
+      {
+        "path": "code/block/hero170.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:35.098Z"
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "extends": "none",
+  "name": "button-link-demo",
+  "title": "Button Link",
+  "description": "button-link-demo",
+  "registryDependencies": [
+    "https://intentui.com/r/button",
+    "https://intentui.com/r/link"
+  ],
+  "files": [
+    {
+      "path": "src/components/docs/buttons/button/button-link-demo.tsx",
+      "content": "\"use client\"\n\nimport { buttonStyles } from \"@/components/ui/button\"\nimport { Link } from \"@/components/ui/link\"\n\nexport default function ButtonLinkDemo() {\n  return (\n    <Link\n      className={buttonStyles({ intent: \"primary\" })}\n      href={\"/docs/components/collections/choicebox\"}\n    >\n      Choicebox\n    </Link>\n  )\n}\n",
+      "type": "registry:page",
+      "target": "app/button-link-demo/page.tsx"
+    }
+  ],
+  "type": "registry:page"
+}

@@ -1,0 +1,26 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "footer4",
+  "url": "https://shadcnblocks.com/r/footer4.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "footer4",
+    "type": "registry:block",
+    "title": "Footer",
+    "description": "A footer component with a logo, social icons, link sections, a newsletter subscription, and legal links. GridLayout adapts to 6 columns on large screens.",
+    "dependencies": ["react-icons"],
+    "registryDependencies": [
+      "https://shadcnblocks.com/r/logo",
+      "button",
+      "input",
+      "separator"
+    ],
+    "files": [
+      {
+        "path": "code/block/footer4.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:31.892Z"
+}

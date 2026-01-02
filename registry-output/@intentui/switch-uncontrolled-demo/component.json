@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "extends": "none",
+  "name": "switch-uncontrolled-demo",
+  "title": "Switch Uncontrolled",
+  "description": "switch-uncontrolled-demo",
+  "registryDependencies": [
+    "https://intentui.com/r/field",
+    "https://intentui.com/r/switch"
+  ],
+  "files": [
+    {
+      "path": "src/components/docs/controls/switch/switch-uncontrolled-demo.tsx",
+      "content": "\"use client\"\n\nimport { Description } from \"@/components/ui/field\"\nimport { Switch, SwitchLabel } from \"@/components/ui/switch\"\n\nexport default function SwitchUncontrolledDemo() {\n  return (\n    <Switch defaultSelected>\n      {({ isSelected }) => (\n        <>\n          <SwitchLabel>Dark mode</SwitchLabel>\n          <Description>Dark mode is {isSelected ? \"enabled\" : \"disabled\"}.</Description>\n        </>\n      )}\n    </Switch>\n  )\n}\n",
+      "type": "registry:page",
+      "target": "app/switch-uncontrolled-demo/page.tsx"
+    }
+  ],
+  "type": "registry:page"
+}

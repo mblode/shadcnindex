@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "blog23",
+  "url": "https://shadcnblocks.com/r/blog23.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "blog23",
+    "type": "registry:block",
+    "title": "Blog",
+    "description": "A component displaying a tagline, heading, and description at the top, followed by a series of articles with images, labels, authors, dates, and summaries, ending with a \"View all\" button.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["badge", "button", "card"],
+    "files": [
+      {
+        "path": "code/block/blog23.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:14.317Z"
+}

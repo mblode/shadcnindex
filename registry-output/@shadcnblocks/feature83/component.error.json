@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature83",
+  "url": "https://shadcnblocks.com/r/feature83.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature83",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A component with a 2-column layout featuring badges, icons, and text to highlight flexible support and collaborative tools. Includes a decorative background effect.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["badge"],
+    "files": [
+      {
+        "path": "code/block/feature83.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:30.421Z"
+}

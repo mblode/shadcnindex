@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "input-group-input-group-tooltip-1",
+  "url": "https://shadcnblocks.com/r/input-group-input-group-tooltip-1.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "input-group-input-group-tooltip-1",
+    "type": "registry:block",
+    "title": "Input-group/input-group-tooltip-",
+    "description": "A input-group/input-group-tooltip- example",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["input-group", "tooltip"],
+    "files": [
+      {
+        "path": "code/example/input-group/input-group-tooltip-1.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:15:24.404Z"
+}

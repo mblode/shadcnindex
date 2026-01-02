@@ -1,0 +1,13 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "files": [
+    {
+      "content": "\"use client\";\n\nimport { toast } from \"sonner\";\nimport { Button } from \"~/registry/ui/button\";\n\nexport function ToastDemo() {\n  return (\n    <Button onPress={() => toast(\"Event has been created\")} variant=\"outline\">\n      Show Toast\n    </Button>\n  );\n}\n",
+      "path": "src/registry/examples/toast/toast-demo.tsx",
+      "type": "registry:example"
+    }
+  ],
+  "name": "toast-demo",
+  "registryDependencies": ["@kanpeki/toast"],
+  "type": "registry:example"
+}

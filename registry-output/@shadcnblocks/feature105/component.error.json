@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature105",
+  "url": "https://shadcnblocks.com/r/feature105.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature105",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A component featuring tabs with icons and text, each tab showing a different image.",
+    "dependencies": ["@radix-ui/react-tabs", "lucide-react"],
+    "registryDependencies": ["badge"],
+    "files": [
+      {
+        "path": "code/block/feature105.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:20.820Z"
+}

@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "contact8",
+  "url": "https://shadcnblocks.com/r/contact8.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "contact8",
+    "type": "registry:block",
+    "title": "Contact",
+    "description": "A component featuring a \"Contact\" header, subtext, an image, email addresses, and office locations in a 2-column layout with styled divs.",
+    "dependencies": [],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/contact8.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:17.921Z"
+}

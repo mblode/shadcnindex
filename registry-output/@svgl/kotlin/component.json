@@ -1,0 +1,14 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "kotlin",
+  "title": "kotlin",
+  "files": [
+    {
+      "path": "././static/components-generated/kotlin.tsx",
+      "content": "import type { SVGProps } from \"react\";\n\nconst Kotlin = (props: SVGProps<SVGSVGElement>) => (\n  <svg {...props} viewBox=\"0 0 256 256\" preserveAspectRatio=\"xMidYMid\">\n    <defs>\n      <linearGradient x1=\"99.991%\" y1=\"-.011%\" x2=\".01%\" y2=\"100.01%\" id=\"a\">\n        <stop stop-color=\"#E44857\" offset=\".344%\" />\n        <stop stop-color=\"#C711E1\" offset=\"46.89%\" />\n        <stop stop-color=\"#7F52FF\" offset=\"100%\" />\n      </linearGradient>\n    </defs>\n    <path fill=\"url(#a)\" d=\"M256 256H0V0h256L128 127.949z\" />\n  </svg>\n);\n\nexport { Kotlin };\n",
+      "type": "registry:component",
+      "target": "components/ui/svgs/kotlin.tsx"
+    }
+  ],
+  "type": "registry:component"
+}

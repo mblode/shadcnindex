@@ -1,0 +1,41 @@
+{
+  "registry": "@paykit-sdk",
+  "component": "stripe-hono",
+  "url": "https://www.usepaykit.dev/r/stripe-hono.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "stripe-hono",
+    "type": "registry:block",
+    "description": "Stripe payment integration for Hono backend with unified routes and webhook handling",
+    "dependencies": ["@paykit-sdk/core", "@paykit-sdk/stripe", "hono"],
+    "devDependencies": [],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "providers/stripe.ts",
+        "type": "registry:lib",
+        "target": "src/lib/paykit.ts",
+        "content": "import { PayKit, createEndpointHandlers } from '@paykit-sdk/core';\nimport { stripe } from '@paykit-sdk/stripe';\n\nexport const paykit = new PayKit(stripe());\nexport const endpoints = createEndpointHandlers(paykit);\n"
+      },
+      {
+        "path": "shared/routers/hono.ts",
+        "type": "registry:page",
+        "target": "src/routes/paykit.ts",
+        "content": "import { endpoints, paykit } from '@/lib/paykit';\nimport type { EndpointArgs, EndpointHandler, EndpointPath } from '@paykit-sdk/core';\nimport { Hono } from 'hono';\n\nexport const paykitRouter = new Hono();\n\npaykitRouter.post('/*', async c => {\n  const path = c.req.path as EndpointPath;\n\n  const handler = endpoints[path] as EndpointHandler<typeof path>;\n\n  if (!handler) {\n    return c.json({ message: 'Endpoint not found' }, 404);\n  }\n\n  const body = await c.req.json();\n  const { args } = body as { args: EndpointArgs<typeof path> };\n\n  try {\n    const result = await handler(...args);\n    return c.json({ result });\n  } catch (error) {\n    console.error('PayKit API Error:', error);\n    const message = error instanceof Error ? error.message : 'Internal server error';\n    return c.json({ message }, 500);\n  }\n});\n\n// Webhook handler\npaykitRouter.post('/webhooks', async c => {\n  const webhookSecret = process.env.STRIPE_WEBHOOK_SECRET;\n\n  if (!webhookSecret) {\n    return c.json({ error: 'Webhook secret not configured' }, 500);\n  }\n\n  const webhook = paykit.webhooks\n    .setup({ webhookSecret })\n    .on('customer.created', async event => {\n      console.log('Customer created:', event.data);\n    })\n    .on('subscription.created', async event => {\n      console.log('Subscription created:', event.data);\n    })\n    .on('payment.created', async event => {\n      console.log('Payment created:', event.data);\n    })\n    .on('refund.created', async event => {\n      console.log('Refund created:', event.data);\n    })\n    .on('invoice.generated', async event => {\n      console.log('Invoice generated:', event.data);\n    });\n\n  const body = await c.req.text();\n  const headers = new Headers(c.req.raw.headers);\n  const url = c.req.raw.url;\n\n  try {\n    console.log('Webhook handled');\n    await webhook.handle({ body, headers, fullUrl: url });\n    return c.json({ success: true });\n  } catch (error) {\n    console.log('Webhook Error', error);\n    return c.json({ success: false });\n  }\n});\n"
+      }
+    ],
+    "envVars": {
+      "STRIPE_SECRET_KEY": "sk_test_...",
+      "STRIPE_WEBHOOK_SECRET": "whsec_..."
+    },
+    "docs": "Get your Stripe API keys from https://dashboard.stripe.com/apikeys \n Create a webhook endpoint at https://dashboard.stripe.com/webhooks to get your webhook secret.",
+    "meta": {
+      "backend": "hono",
+      "provider": "stripe",
+      "orm": "none",
+      "database": "none",
+      "auth": "none"
+    }
+  },
+  "fetchedAt": "2026-01-02T11:17:42.308Z"
+}

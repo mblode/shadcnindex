@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "hooks-use-shimmer",
+  "type": "registry:lib",
+  "title": "Use Shimmer",
+  "description": "The use-shimmer hook.",
+  "dependencies": ["motion"],
+  "files": [
+    {
+      "path": "lib/use-shimmer.ts",
+      "content": "import { type CSSProperties } from \"react\";\n\nexport interface UseShimmerOptions {\n  duration?: number;\n  colors?: [string, string, string];\n}\n\nexport function useShimmer(options: UseShimmerOptions = {}): CSSProperties {\n  const {\n    duration = 2.5,\n    colors = [\"transparent\", \"rgba(255,255,255,0.8)\", \"transparent\"],\n  } = options;\n\n  const gradient = `linear-gradient(90deg, ${colors[0]} 0%, ${colors[1]} 50%, ${colors[2]} 100%)`;\n\n  const animationName = \"shimmer\";\n\n  if (typeof document !== \"undefined\") {\n    const styleId = \"shimmer-keyframes\";\n    if (!document.getElementById(styleId)) {\n      const style = document.createElement(\"style\");\n      style.id = styleId;\n      style.textContent = `\n        @keyframes shimmer {\n          0% { background-position: 200% center; }\n          100% { background-position: -200% center; }\n        }\n      `;\n      document.head.appendChild(style);\n    }\n  }\n\n  return {\n    display: \"inline-block\",\n    backgroundImage: gradient,\n    backgroundSize: \"200% auto\",\n    WebkitBackgroundClip: \"text\",\n    WebkitTextFillColor: \"transparent\",\n    backgroundClip: \"text\",\n    animation: `${animationName} ${duration}s linear infinite`,\n  };\n}\n",
+      "type": "registry:lib"
+    }
+  ]
+}

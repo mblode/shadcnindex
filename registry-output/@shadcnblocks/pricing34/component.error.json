@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "pricing34",
+  "url": "https://shadcnblocks.com/r/pricing34.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "pricing34",
+    "type": "registry:block",
+    "title": "Pricing",
+    "description": "A pricing component with a toggle for monthly/yearly billing, three plan options, and includes feature lists, using cards.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": ["button", "card", "separator", "toggle-group"],
+    "files": [
+      {
+        "path": "code/block/pricing34.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:44.298Z"
+}

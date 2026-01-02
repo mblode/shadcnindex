@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature220b",
+  "url": "https://shadcnblocks.com/r/feature220b.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature220b",
+    "type": "registry:block",
+    "title": "Feature220b",
+    "description": "A component showcases statistics and a video/content layout. It has a 2-column grid with stats at the top, a video on the left, and descriptive content on the right.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["aspect-ratio", "button"],
+    "files": [
+      {
+        "path": "code/block/feature220b.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:25.537Z"
+}

@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "background-pattern39",
+  "url": "https://shadcnblocks.com/r/background-pattern39.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "background-pattern39",
+    "type": "registry:block",
+    "title": "Background-pattern",
+    "description": "The BackgroundPattern39 component creates a visually appealing section with a dynamic white grid and dots background, perfect for enhancing the aesthetics of a user interface. It allows for customization through additional class names and integrates seamlessly with other components by serving as a decorative and functional backdrop.",
+    "dependencies": [],
+    "registryDependencies": ["https://shadcnblocks.com/r/pattern-placeholder"],
+    "files": [
+      {
+        "path": "code/block/background-pattern39.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:13.318Z"
+}

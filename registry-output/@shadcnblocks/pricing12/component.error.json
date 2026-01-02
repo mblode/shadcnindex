@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "pricing12",
+  "url": "https://shadcnblocks.com/r/pricing12.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "pricing12",
+    "type": "registry:block",
+    "title": "Pricing",
+    "description": "A component displaying add-on options in two sections: \"featured\" in a grid layout and \"other\" in a list layout, with prices and descriptions.",
+    "dependencies": [],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/pricing12.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:43.612Z"
+}

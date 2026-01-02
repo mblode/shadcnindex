@@ -1,0 +1,22 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "feature74",
+  "title": "Feature",
+  "description": "A component with a title, description, and 2-column grid each hosting an image and text describing different features, with a \"Book a demo\" link.",
+  "dependencies": ["lucide-react", "clsx", "tailwind-merge"],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "code/block/feature74.tsx",
+      "content": "import { ArrowRight } from \"lucide-react\";\n\nimport { cn } from \"@/lib/utils\";\n\ninterface Feature74Props {\n  className?: string;\n}\n\nconst Feature74 = ({ className }: Feature74Props) => {\n  return (\n    <section className={cn(\"py-32\", className)}>\n      <div className=\"container flex flex-col gap-16 lg:px-16\">\n        <div className=\"lg:max-w-sm\">\n          <h2 className=\"mb-3 text-xl font-semibold md:mb-4 md:text-4xl lg:mb-6\">\n            Feature name\n          </h2>\n          <p className=\"mb-8 text-muted-foreground lg:text-lg\">\n            Lorem ipsum dolor sit amet consectetur adipisicing elit. Elig\n            doloremque mollitia fugiat omnis! Porro facilis quo animi\n            consequatur. Explicabo.\n          </p>\n          <a\n            href=\"#\"\n            className=\"group flex items-center text-xs font-medium md:text-base lg:text-lg\"\n          >\n            Book a demo{\" \"}\n            <ArrowRight className=\"ml-2 size-4 transition-transform group-hover:translate-x-1\" />\n          </a>\n        </div>\n        <div className=\"grid gap-6 md:grid-cols-2 lg:gap-8\">\n          <div className=\"flex flex-col overflow-clip rounded-xl border border-border md:col-span-2 md:grid md:grid-cols-2 md:gap-6 lg:gap-8\">\n            <div className=\"md:min-h-[24rem] lg:min-h-[28rem] xl:min-h-[32rem]\">\n              <img\n                src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg\"\n                alt=\"Feature 1\"\n                className=\"aspect-16/9 h-full w-full object-cover object-center\"\n              />\n            </div>\n            <div className=\"flex flex-col justify-center px-6 py-8 md:px-8 md:py-10 lg:px-10 lg:py-12\">\n              <h3 className=\"mb-3 text-lg font-semibold md:mb-4 md:text-2xl lg:mb-6\">\n                Feature 1\n              </h3>\n              <p className=\"text-muted-foreground lg:text-lg\">\n                Nam vitae molestie arcu. Quisque eu libero orci. Aliquam\n                imperdiet magna nec massa consectetur, id interdum ante congue.\n              </p>\n            </div>\n          </div>\n          <div className=\"flex flex-col-reverse overflow-clip rounded-xl border border-border md:col-span-2 md:grid md:grid-cols-2 md:gap-6 lg:gap-8\">\n            <div className=\"flex flex-col justify-center px-6 py-8 md:px-8 md:py-10 lg:px-10 lg:py-12\">\n              <h3 className=\"mb-3 text-lg font-semibold md:mb-4 md:text-2xl lg:mb-6\">\n                Feature 2\n              </h3>\n              <p className=\"text-muted-foreground lg:text-lg\">\n                Nam vitae molestie arcu. Quisque eu libero orci. Aliquam\n                imperdiet magna nec massa consectetur, id interdum ante congue.\n              </p>\n            </div>\n            <div className=\"md:min-h-[24rem] lg:min-h-[28rem] xl:min-h-[32rem]\">\n              <img\n                src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg\"\n                alt=\"Feature 2\"\n                className=\"aspect-16/9 h-full w-full object-cover object-center\"\n              />\n            </div>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature74 };\n",
+      "type": "registry:block"
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "content": "import { type ClassValue, clsx } from 'clsx';\nimport { twMerge } from 'tailwind-merge';\n\nexport function cn(...inputs: ClassValue[]) {\n  return twMerge(clsx(inputs));\n}\n",
+      "type": "registry:lib",
+      "target": ""
+    }
+  ],
+  "type": "registry:block"
+}

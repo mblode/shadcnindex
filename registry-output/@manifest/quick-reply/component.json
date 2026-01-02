@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "quick-reply",
+  "title": "Quick Reply",
+  "description": "Quick reply buttons for common chat responses.",
+  "dependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/miscellaneous/quick-reply.tsx",
+      "content": "'use client'\n\nimport { cn } from '@/lib/utils'\n\n/*\n * QuickReply Component - ChatGPT UI Guidelines Compliant\n * - Clear action buttons for quick responses\n * - Use system colors (neutral grayscale)\n * - Immediate visual feedback on hover\n */\n\nexport interface QuickReply {\n  id: string\n  label: string\n  value?: string\n  icon?: React.ReactNode\n}\n\nexport interface QuickReplyProps {\n  data?: {\n    replies?: QuickReply[]\n  }\n  actions?: {\n    onSelectReply?: (reply: QuickReply) => void\n  }\n}\n\nconst defaultReplies: QuickReply[] = [\n  { id: '1', label: 'Yes, confirm' },\n  { id: '2', label: 'No thanks' },\n  { id: '3', label: 'I have a question' },\n  { id: '4', label: 'View details' }\n]\n\nexport function QuickReply({ data, actions }: QuickReplyProps) {\n  const { replies = defaultReplies } = data ?? {}\n  const { onSelectReply } = actions ?? {}\n  return (\n    <div className=\"w-full bg-card rounded-lg p-4\">\n      <div className=\"flex flex-wrap gap-2\">\n        {replies.map((reply) => (\n          <button\n            key={reply.id}\n            onClick={() => onSelectReply?.(reply)}\n            className={cn(\n              'inline-flex items-center gap-1 sm:gap-1.5 rounded-full border border-border bg-background px-2.5 sm:px-3 py-1 sm:py-1.5 text-xs sm:text-sm text-foreground transition-colors cursor-pointer',\n              'hover:bg-foreground hover:text-background hover:border-foreground'\n            )}\n          >\n            {reply.icon}\n            {reply.label}\n          </button>\n        ))}\n      </div>\n    </div>\n  )\n}\n",
+      "type": "registry:component"
+    }
+  ],
+  "type": "registry:component"
+}

@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature36",
+  "url": "https://shadcnblocks.com/r/feature36.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature36",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A component with a 3-column layout for case studies, featuring one larger highlighted card and five smaller ones, each with a title, badge for the larger card, and a \"Continue reading\" link.",
+    "dependencies": [],
+    "registryDependencies": ["badge", "card"],
+    "files": [
+      {
+        "path": "code/block/feature36.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:28.700Z"
+}

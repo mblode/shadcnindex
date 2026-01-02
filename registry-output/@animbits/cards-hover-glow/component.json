@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "cards-hover-glow",
+  "type": "registry:component",
+  "title": "Hover Glow Card",
+  "description": "Card with glow effect on hover",
+  "dependencies": ["motion"],
+  "files": [
+    {
+      "path": "registry/new-york/animations/cards/hover-glow.tsx",
+      "content": "\"use client\";\nimport * as React from \"react\";\nimport { motion, HTMLMotionProps } from \"motion/react\";\nimport { cn } from \"@/lib/utils\";\nimport { useHoverGlow } from \"@/lib/use-hover-glow\";\nexport interface CardHoverGlowProps extends HTMLMotionProps<\"div\"> {\n  glowColor?: string;\n  glowSpread?: number;\n  duration?: number;\n}\nexport function CardHoverGlow({\n  children,\n  className,\n  glowColor = \"rgba(59, 130, 246, 0.5)\",\n  glowSpread = 20,\n  duration = 0.3,\n  ...props\n}: CardHoverGlowProps) {\n  const glowProps = useHoverGlow({\n    glowColor,\n    glowBlur: glowSpread,\n    duration,\n  });\n  return (\n    <motion.div\n      {...glowProps}\n      className={cn(\"cursor-pointer\", className)}\n      {...props}\n    >\n      {children}\n    </motion.div>\n  );\n}\n",
+      "type": "registry:component"
+    },
+    {
+      "path": "lib/use-hover-glow.ts",
+      "content": "import { type MotionProps, type Easing } from \"motion/react\";\n\nexport interface UseHoverGlowOptions {\n  glowColor?: string;\n\n  glowBlur?: number;\n\n  glowSpread?: number;\n\n  duration?: number;\n\n  ease?: Easing | Easing[];\n\n  scale?: number;\n\n  innerGlow?: boolean;\n}\n\nexport function useHoverGlow(options: UseHoverGlowOptions = {}): MotionProps {\n  const {\n    glowColor = \"rgba(59, 130, 246, 0.5)\",\n    glowBlur = 20,\n    glowSpread = 5,\n    duration = 0.3,\n    ease = \"easeOut\",\n    scale = 1.02,\n    innerGlow = false,\n  } = options;\n\n  const baseShadow = \"0 2px 8px rgba(0, 0, 0, 0.1)\";\n  const glowShadow = `0 0 ${glowBlur}px ${glowSpread}px ${glowColor}`;\n  const innerGlowShadow = innerGlow\n    ? `inset 0 0 ${glowBlur / 2}px ${glowColor}`\n    : \"\";\n\n  const hoverShadow = innerGlow\n    ? `${baseShadow}, ${glowShadow}, ${innerGlowShadow}`\n    : `${baseShadow}, ${glowShadow}`;\n\n  return {\n    initial: {\n      scale: 1,\n      boxShadow: baseShadow,\n    },\n    whileHover: {\n      scale,\n      boxShadow: hoverShadow,\n    },\n    transition: {\n      duration,\n      ease,\n    },\n  };\n}\n",
+      "type": "registry:lib"
+    }
+  ]
+}

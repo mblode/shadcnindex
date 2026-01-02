@@ -1,0 +1,14 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "qt",
+  "title": "qt",
+  "files": [
+    {
+      "path": "././static/components-generated/qt.tsx",
+      "content": "import type { SVGProps } from \"react\";\n\nconst Qt = (props: SVGProps<SVGSVGElement>) => (\n  <svg {...props} viewBox=\"0 0 54 43\">\n    <path fill=\"#0c0\" d=\"M1 42V10l9-9h43v33l-9 9z\" />\n    <text x=\"9\" y=\"32\" fill=\"#FFF\" font-family=\"Arial\" font-size=\"32\">\n      Qt\n    </text>\n  </svg>\n);\n\nexport { Qt };\n",
+      "type": "registry:component",
+      "target": "components/ui/svgs/qt.tsx"
+    }
+  ],
+  "type": "registry:component"
+}

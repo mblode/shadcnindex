@@ -1,0 +1,24 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature287",
+  "url": "https://shadcnblocks.com/r/feature287.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature287",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A component displaying a title and a grid of cards (4 columns wide on larger screens, fewer on smaller). Each card includes a glowing stars effect, a title, and text. A button below the grid invites user interaction.",
+    "dependencies": ["react"],
+    "registryDependencies": [
+      "https://ui.aceternity.com/registry/glowing-stars.json",
+      "button"
+    ],
+    "files": [
+      {
+        "path": "code/block/feature287.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:27.777Z"
+}

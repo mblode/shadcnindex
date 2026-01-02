@@ -1,0 +1,26 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "stats13",
+  "url": "https://shadcnblocks.com/r/stats13.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "stats13",
+    "type": "registry:block",
+    "title": "Stats",
+    "description": "A component showcasing animated bars comparing values, with tooltips and percentage indicators for enhanced visual analysis. Includes a candy-striped background.",
+    "dependencies": [
+      "@number-flow/react",
+      "framer-motion",
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/stats13.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:52.315Z"
+}

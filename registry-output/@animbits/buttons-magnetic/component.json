@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "buttons-magnetic",
+  "type": "registry:component",
+  "title": "Magnetic Button",
+  "description": "Button with cursor-following magnetic attraction effect",
+  "dependencies": ["motion"],
+  "files": [
+    {
+      "path": "registry/new-york/animations/buttons/magnetic.tsx",
+      "content": "\"use client\";\nimport * as React from \"react\";\nimport { motion, HTMLMotionProps } from \"motion/react\";\nimport { cn } from \"@/lib/utils\";\nimport { useMagnetic, type UseMagneticOptions } from \"@/lib/use-magnetic\";\ninterface MagneticButtonProps\n  extends Omit<HTMLMotionProps<\"button\">, \"ref\">,\n    UseMagneticOptions {\n  children: React.ReactNode;\n}\nexport function MagneticButton({\n  children,\n  className,\n  strength,\n  stiffness,\n  damping,\n  ...props\n}: MagneticButtonProps) {\n  const { magneticProps, ref } = useMagnetic({ strength, stiffness, damping });\n  return (\n    <motion.button\n      ref={ref as any}\n      {...magneticProps}\n      className={cn(className)}\n      {...props}\n    >\n      {children}\n    </motion.button>\n  );\n}\n",
+      "type": "registry:component"
+    },
+    {
+      "path": "lib/use-magnetic.ts",
+      "content": "import * as React from \"react\";\nimport { useMotionValue, useSpring } from \"motion/react\";\n\nexport interface UseMagneticOptions {\n  strength?: number;\n  stiffness?: number;\n  damping?: number;\n}\n\nexport function useMagnetic(options: UseMagneticOptions = {}) {\n  const { strength = 30, stiffness = 150, damping = 15 } = options;\n\n  const ref = React.useRef<HTMLElement>(null);\n  const x = useMotionValue(0);\n  const y = useMotionValue(0);\n\n  const springConfig = { damping, stiffness };\n  const springX = useSpring(x, springConfig);\n  const springY = useSpring(y, springConfig);\n\n  const handleMouseMove = (e: React.MouseEvent<HTMLElement>) => {\n    if (!ref.current) return;\n\n    const rect = ref.current.getBoundingClientRect();\n    const centerX = rect.left + rect.width / 2;\n    const centerY = rect.top + rect.height / 2;\n\n    const distanceX = e.clientX - centerX;\n    const distanceY = e.clientY - centerY;\n\n    x.set(distanceX * (strength / 100));\n    y.set(distanceY * (strength / 100));\n  };\n\n  const handleMouseLeave = () => {\n    x.set(0);\n    y.set(0);\n  };\n\n  const magneticProps = {\n    style: { x: springX, y: springY },\n    onMouseMove: handleMouseMove,\n    onMouseLeave: handleMouseLeave,\n  };\n\n  return { magneticProps, ref };\n}\n",
+      "type": "registry:lib"
+    }
+  ]
+}

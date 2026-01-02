@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "text-scramble",
+  "type": "registry:component",
+  "title": "Scramble Text",
+  "description": "Hacker-style text scramble decode animation",
+  "dependencies": ["motion"],
+  "files": [
+    {
+      "path": "registry/new-york/animations/text/scramble.tsx",
+      "content": "\"use client\";\nimport * as React from \"react\";\nimport { motion, HTMLMotionProps } from \"motion/react\";\nimport { cn } from \"@/lib/utils\";\nimport { useScramble, type UseScrambleOptions } from \"@/lib/use-scramble\";\nexport interface TextScrambleProps\n  extends Omit<HTMLMotionProps<\"p\">, \"children\">,\n    UseScrambleOptions {\n  children: string;\n}\nexport function TextScramble({\n  children,\n  className,\n  duration,\n  delay,\n  scrambleChars,\n  ...props\n}: TextScrambleProps) {\n  const displayText = useScramble({\n    text: children,\n    duration,\n    delay,\n    scrambleChars,\n  });\n  return (\n    <motion.p\n      className={cn(\"font-mono\", className)}\n      initial={{ opacity: 0 }}\n      animate={{ opacity: 1 }}\n      transition={{ duration: 0.2, delay: delay || 0 }}\n      {...props}\n    >\n      {displayText}\n    </motion.p>\n  );\n}\n",
+      "type": "registry:component"
+    },
+    {
+      "path": "lib/use-scramble.ts",
+      "content": "import * as React from \"react\";\n\nexport interface UseScrambleOptions {\n  text?: string;\n  duration?: number;\n  delay?: number;\n  scrambleChars?: string;\n}\n\nexport function useScramble(options: UseScrambleOptions): string {\n  const {\n    text = \"\",\n    duration = 0.8,\n    delay = 0,\n    scrambleChars = \"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()\",\n  } = options;\n\n  const [displayText, setDisplayText] = React.useState(text);\n\n  React.useEffect(() => {\n    const iterations = Math.floor(duration * 60); // 60fps\n    let currentIteration = 0;\n\n    const timeout = setTimeout(() => {\n      const interval = setInterval(\n        () => {\n          if (currentIteration >= iterations) {\n            setDisplayText(text);\n            clearInterval(interval);\n            return;\n          }\n\n          const progress = currentIteration / iterations;\n          const newText = text\n            .split(\"\")\n            .map((char, index) => {\n              if (char === \" \") return \" \";\n              if (index / text.length < progress) {\n                return char;\n              }\n              return scrambleChars[\n                Math.floor(Math.random() * scrambleChars.length)\n              ];\n            })\n            .join(\"\");\n\n          setDisplayText(newText);\n          currentIteration++;\n        },\n        (duration * 1000) / iterations,\n      );\n\n      return () => clearInterval(interval);\n    }, delay * 1000);\n\n    return () => clearTimeout(timeout);\n  }, [text, duration, delay, scrambleChars]);\n\n  return displayText;\n}\n",
+      "type": "registry:lib"
+    }
+  ]
+}

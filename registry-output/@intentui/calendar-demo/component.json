@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "extends": "none",
+  "name": "calendar-demo",
+  "title": "Calendar",
+  "description": "calendar-demo",
+  "registryDependencies": ["https://intentui.com/r/calendar"],
+  "files": [
+    {
+      "path": "src/components/docs/date-and-time/calendar/calendar-demo.tsx",
+      "content": "\"use client\"\n\nimport { Calendar } from \"@/components/ui/calendar\"\n\nexport default function CalendarDemo() {\n  return <Calendar aria-label=\"Event date\" />\n}\n",
+      "type": "registry:page",
+      "target": "app/calendar-demo/page.tsx"
+    }
+  ],
+  "type": "registry:page"
+}

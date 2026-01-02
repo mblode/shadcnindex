@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature21",
+  "url": "https://shadcnblocks.com/r/feature21.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature21",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A component showcasing utility features with icons, badges, and cards in a two-column layout, incorporating headings, paragraphs, and images.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["badge", "card", "separator"],
+    "files": [
+      {
+        "path": "code/block/feature21.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:24.832Z"
+}

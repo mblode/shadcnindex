@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "pricing26",
+  "url": "https://shadcnblocks.com/r/pricing26.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "pricing26",
+    "type": "registry:block",
+    "title": "Pricing",
+    "description": "A component displaying 3 marketing plan options, highlighting one. Features badges, descriptions, and a call-to-action button for each plan.",
+    "dependencies": [],
+    "registryDependencies": ["badge", "button"],
+    "files": [
+      {
+        "path": "code/block/pricing26.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:43.973Z"
+}

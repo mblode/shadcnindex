@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "blog14",
+  "url": "https://shadcnblocks.com/r/blog14.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "blog14",
+    "type": "registry:block",
+    "title": "Blog",
+    "description": "A blog component showcasing 1 main post in a 2-column layout and 3 popular posts in a 3-column layout, featuring images, categories, and summaries.",
+    "dependencies": [],
+    "registryDependencies": ["badge"],
+    "files": [
+      {
+        "path": "code/block/blog14.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:14.102Z"
+}

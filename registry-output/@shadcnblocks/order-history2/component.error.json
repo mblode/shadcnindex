@@ -1,0 +1,30 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "order-history2",
+  "url": "https://shadcnblocks.com/r/order-history2.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "order-history2",
+    "type": "registry:block",
+    "title": "Order-history",
+    "description": "This component provides an interactive order management interface, allowing users to filter, search, and review details of their purchase history. It features collapsible order details, status indicators, and various actions that users can perform on their orders such as canceling, tracking, or reordering items.",
+    "dependencies": ["react", "lucide-react"],
+    "registryDependencies": [
+      "aspect-ratio",
+      "badge",
+      "button",
+      "card",
+      "collapsible",
+      "input",
+      "select",
+      "separator"
+    ],
+    "files": [
+      {
+        "path": "code/block/order-history2.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:42.903Z"
+}

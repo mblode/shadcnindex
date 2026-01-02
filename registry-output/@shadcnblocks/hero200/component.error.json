@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "hero200",
+  "url": "https://shadcnblocks.com/r/hero200.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "hero200",
+    "type": "registry:block",
+    "title": "Hero",
+    "description": "A component showcasing a centered introductory text with a button and a dynamic phone mockup animation, structured in a single-column layout.",
+    "dependencies": ["framer-motion", "react"],
+    "registryDependencies": ["button"],
+    "files": [
+      {
+        "path": "code/block/hero200.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:36.062Z"
+}

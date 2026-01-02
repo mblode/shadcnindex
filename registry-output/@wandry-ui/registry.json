@@ -1,0 +1,632 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "@wandry/ui",
+  "homepage": "https://wandry.com.ua",
+  "items": [
+    {
+      "name": "text-field",
+      "type": "registry:component",
+      "title": "TextField",
+      "description": "Controlled text input component with label and error message support.",
+      "dependencies": ["@wandry/inertia-form"],
+      "registryDependencies": ["input-group", "field"],
+      "files": [
+        {
+          "path": "registry/wandry-ui/text-field.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "select-field",
+      "title": "Select Field",
+      "type": "registry:component",
+      "description": "A component for Wandry UI",
+      "dependencies": ["@wandry/inertia-form"],
+      "registryDependencies": ["select", "field"],
+      "files": [
+        {
+          "path": "registry/wandry-ui/select-field.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "checkbox-field",
+      "title": "Checkbox Field",
+      "type": "registry:component",
+      "description": "A component for Wandry UI",
+      "dependencies": ["@wandry/inertia-form"],
+      "registryDependencies": ["checkbox", "field"],
+      "files": [
+        {
+          "path": "registry/wandry-ui/checkbox-field.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "radio-field",
+      "title": "Radio Field",
+      "type": "registry:component",
+      "description": "A component for Wandry UI",
+      "dependencies": ["@wandry/inertia-form"],
+      "registryDependencies": ["radio-group", "field"],
+      "files": [
+        {
+          "path": "registry/wandry-ui/radio-field.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "textarea-field",
+      "title": "Textarea Field",
+      "type": "registry:component",
+      "description": "A component for Wandry UI",
+      "dependencies": ["@wandry/inertia-form"],
+      "registryDependencies": ["textarea", "field"],
+      "files": [
+        {
+          "path": "registry/wandry-ui/textarea-field.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "password-field",
+      "title": "Password Field",
+      "type": "registry:component",
+      "description": "A component for Wandry UI",
+      "dependencies": ["lucide-react", "@wandry/inertia-form"],
+      "registryDependencies": ["input-group", "field"],
+      "files": [
+        {
+          "path": "registry/wandry-ui/password-field.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "switch-field",
+      "title": "Switch Field",
+      "type": "registry:component",
+      "description": "A component for Wandry UI",
+      "dependencies": ["@wandry/inertia-form"],
+      "registryDependencies": ["switch", "field"],
+      "files": [
+        {
+          "path": "registry/wandry-ui/switch-field.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "async-autocomplete-field",
+      "title": "AsyncAutocompleteField",
+      "type": "registry:component",
+      "description": "A component for Wandry UI",
+      "dependencies": ["@wandry/inertia-form"],
+      "registryDependencies": ["popover", "command", "button", "field"],
+      "files": [
+        {
+          "path": "registry/wandry-ui/async-autocomplete-field.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "input-otp-field",
+      "title": "InputOtpField",
+      "type": "registry:component",
+      "description": "A component for Wandry UI",
+      "dependencies": ["@wandry/inertia-form"],
+      "registryDependencies": ["input-otp", "field"],
+      "files": [
+        {
+          "path": "registry/wandry-ui/input-otp-field.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "datepicker-field",
+      "title": "DatepickerField",
+      "type": "registry:component",
+      "description": "A component for Wandry UI",
+      "dependencies": ["@wandry/inertia-form"],
+      "registryDependencies": ["calendar", "popover", "button", "field"],
+      "files": [
+        {
+          "path": "registry/wandry-ui/datepicker-field.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "timepicker-field",
+      "title": "Timepicker Field",
+      "type": "registry:component",
+      "description": "A component for Wandry UI",
+      "dependencies": ["@wandry/inertia-form"],
+      "registryDependencies": ["input", "field"],
+      "files": [
+        {
+          "path": "registry/wandry-ui/timepicker-field.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "datepicker-range-field",
+      "title": "Datepicker Range Field",
+      "type": "registry:component",
+      "description": "A component for Wandry UI",
+      "dependencies": ["@wandry/inertia-form"],
+      "registryDependencies": ["calendar", "popover", "field", "button"],
+      "files": [
+        {
+          "path": "registry/wandry-ui/datepicker-range-field.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "slider-field",
+      "title": "Slider Field",
+      "type": "registry:component",
+      "description": "A component for Wandry UI",
+      "dependencies": ["@wandry/inertia-form"],
+      "registryDependencies": ["slider", "field"],
+      "files": [
+        {
+          "path": "registry/wandry-ui/slider-field.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "file-field",
+      "title": "File Field",
+      "type": "registry:component",
+      "description": "A component for Wandry UI",
+      "dependencies": ["@wandry/inertia-form"],
+      "registryDependencies": ["input", "field", "button"],
+      "files": [
+        {
+          "path": "registry/wandry-ui/file-field.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "choisebox-field",
+      "title": "Choisebox Field",
+      "type": "registry:component",
+      "description": "A component for Wandry UI",
+      "dependencies": ["@wandry/inertia-form"],
+      "registryDependencies": ["field", "radio-group"],
+      "files": [
+        {
+          "path": "registry/wandry-ui/choisebox-field.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "dropzone-field",
+      "title": "Dropzone Field",
+      "type": "registry:component",
+      "description": "A component for Wandry UI",
+      "dependencies": ["@wandry/inertia-form", "react-dropzone"],
+      "registryDependencies": ["button", "field"],
+      "files": [
+        {
+          "path": "registry/wandry-ui/dropzone-field.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "login-01",
+      "title": "Login form",
+      "type": "registry:block",
+      "description": "A component for Wandry UI",
+      "dependencies": ["@wandry/inertia-form"],
+      "registryDependencies": [
+        "button",
+        "@wandry-ui/text-field",
+        "@wandry-ui/password-field"
+      ],
+      "files": [
+        {
+          "path": "registry/wandry-ui/blocks/login-01/page.tsx",
+          "type": "registry:page",
+          "target": "resources/js/Pages/login-01.tsx"
+        }
+      ]
+    },
+    {
+      "name": "login-02",
+      "title": "Wandry UI Component",
+      "type": "registry:block",
+      "description": "A component for Wandry UI",
+      "dependencies": ["@wandry/inertia-form"],
+      "registryDependencies": [
+        "@wandry-ui/text-field",
+        "@wandry-ui/password-field"
+      ],
+      "files": [
+        {
+          "path": "registry/wandry-ui/blocks/login-02/page.tsx",
+          "type": "registry:block",
+          "target": "resources/js/Pages/login-02.tsx"
+        },
+        {
+          "path": "registry/wandry-ui/blocks/login-02/components/login-form.tsx",
+          "type": "registry:block",
+          "target": "resources/js/components/login-02/login-form.tsx"
+        }
+      ]
+    },
+    {
+      "name": "login-03",
+      "title": "Wandry UI Component",
+      "type": "registry:block",
+      "description": "A component for Wandry UI",
+      "dependencies": ["@wandry/inertia-form"],
+      "registryDependencies": [
+        "@wandry-ui/text-field",
+        "@wandry-ui/password-field",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/wandry-ui/blocks/login-03/page.tsx",
+          "type": "registry:block",
+          "target": "resources/js/Pages/login-03.tsx"
+        },
+        {
+          "path": "registry/wandry-ui/blocks/login-03/components/login-form.tsx",
+          "type": "registry:block",
+          "target": "resources/js/components/login-03/login-form.tsx"
+        }
+      ]
+    },
+    {
+      "name": "login-04",
+      "title": "Wandry UI Component",
+      "type": "registry:block",
+      "description": "A component for Wandry UI",
+      "dependencies": ["@wandry/inertia-form"],
+      "registryDependencies": [
+        "@wandry-ui/text-field",
+        "@wandry-ui/password-field",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/wandry-ui/blocks/login-04/page.tsx",
+          "type": "registry:block",
+          "target": "resources/js/Pages/login-04.tsx"
+        },
+        {
+          "path": "registry/wandry-ui/blocks/login-04/components/login-form.tsx",
+          "type": "registry:block",
+          "target": "resources/js/components/login-04/login-form.tsx"
+        }
+      ]
+    },
+    {
+      "name": "login-05",
+      "title": "Wandry UI Component",
+      "type": "registry:block",
+      "description": "A component for Wandry UI",
+      "dependencies": ["@wandry/inertia-form"],
+      "registryDependencies": [
+        "@wandry-ui/text-field",
+        "@wandry-ui/password-field"
+      ],
+      "files": [
+        {
+          "path": "registry/wandry-ui/blocks/login-05/page.tsx",
+          "type": "registry:block",
+          "target": "resources/js/Pages/login-05.tsx"
+        },
+        {
+          "path": "registry/wandry-ui/blocks/login-05/components/login-form.tsx",
+          "type": "registry:block",
+          "target": "resources/js/components/login-05/login-form.tsx"
+        }
+      ]
+    },
+    {
+      "name": "signup-01",
+      "title": "Wandry UI Component",
+      "type": "registry:block",
+      "description": "A component for Wandry UI",
+      "dependencies": ["@wandry/inertia-form"],
+      "registryDependencies": [
+        "@wandry-ui/text-field",
+        "@wandry-ui/password-field"
+      ],
+      "files": [
+        {
+          "path": "registry/wandry-ui/blocks/signup-01/page.tsx",
+          "type": "registry:block",
+          "target": "resources/js/Pages/signup-01.tsx"
+        },
+        {
+          "path": "registry/wandry-ui/blocks/signup-01/components/signup-form.tsx",
+          "type": "registry:block",
+          "target": "resources/js/components/signup-01/signup-form.tsx"
+        }
+      ]
+    },
+    {
+      "name": "signup-02",
+      "title": "Wandry UI Component",
+      "type": "registry:block",
+      "description": "A component for Wandry UI",
+      "dependencies": ["@wandry/inertia-form"],
+      "registryDependencies": [
+        "@wandry-ui/text-field",
+        "@wandry-ui/password-field",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/wandry-ui/blocks/signup-02/page.tsx",
+          "type": "registry:page",
+          "target": "resources/js/Pages/signup-02.tsx"
+        },
+        {
+          "path": "registry/wandry-ui/blocks/signup-02/components/signup-form.tsx",
+          "type": "registry:component",
+          "target": "resources/js/components/signup-02/signup-form.tsx"
+        }
+      ]
+    },
+    {
+      "name": "signup-03",
+      "title": "Wandry UI Component",
+      "type": "registry:block",
+      "description": "A component for Wandry UI",
+      "dependencies": ["@wandry/inertia-form"],
+      "registryDependencies": [
+        "@wandry-ui/text-field",
+        "@wandry-ui/password-field",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/wandry-ui/blocks/signup-03/page.tsx",
+          "type": "registry:block",
+          "target": "resources/js/Pages/signup-03.tsx"
+        },
+        {
+          "path": "registry/wandry-ui/blocks/signup-03/components/signup-form.tsx",
+          "type": "registry:block",
+          "target": "resources/js/components/signup-03/signup-form.tsx"
+        }
+      ]
+    },
+    {
+      "name": "signup-04",
+      "title": "Wandry UI Component",
+      "type": "registry:block",
+      "description": "A component for Wandry UI",
+      "dependencies": ["@wandry/inertia-form"],
+      "registryDependencies": [
+        "@wandry-ui/text-field",
+        "@wandry-ui/password-field"
+      ],
+      "files": [
+        {
+          "path": "registry/wandry-ui/blocks/signup-04/page.tsx",
+          "type": "registry:block",
+          "target": "resources/js/Pages/signup-04.tsx"
+        },
+        {
+          "path": "registry/wandry-ui/blocks/signup-04/components/signup-form.tsx",
+          "type": "registry:block",
+          "target": "resources/js/components/signup-04/signup-form.tsx"
+        }
+      ]
+    },
+    {
+      "name": "signup-05",
+      "title": "Wandry UI Component",
+      "type": "registry:block",
+      "description": "A component for Wandry UI",
+      "dependencies": ["@wandry/inertia-form"],
+      "registryDependencies": ["@wandry-ui/text-field", "button"],
+      "files": [
+        {
+          "path": "registry/wandry-ui/blocks/signup-05/page.tsx",
+          "type": "registry:block",
+          "target": "resources/js/Pages/signup-05.tsx"
+        },
+        {
+          "path": "registry/wandry-ui/blocks/signup-05/components/signup-form.tsx",
+          "type": "registry:block",
+          "target": "resources/js/components/signup-05/signup-form.tsx"
+        }
+      ]
+    },
+    {
+      "name": "settings-01",
+      "title": "Settings 01",
+      "type": "registry:block",
+      "description": "A component for Wandry UI",
+      "dependencies": ["@wandry/inertia-form"],
+      "registryDependencies": [
+        "button",
+        "text-field",
+        "select-field",
+        "textarea-field",
+        "radio-field",
+        "submit-button"
+      ],
+      "files": [
+        {
+          "path": "registry/wandry-ui/blocks/settings-01/page.tsx",
+          "type": "registry:block",
+          "target": "resources/js/Pages/settings-01.tsx"
+        }
+      ]
+    },
+    {
+      "name": "settings-02",
+      "title": "Settings 02",
+      "type": "registry:block",
+      "description": "A component for Wandry UI",
+      "dependencies": ["@wandry/inertia-form"],
+      "registryDependencies": [
+        "button",
+        "text-field",
+        "select-field",
+        "checkbox-field",
+        "submit-button"
+      ],
+      "files": [
+        {
+          "path": "registry/wandry-ui/blocks/settings-02/page.tsx",
+          "type": "registry:block"
+        }
+      ]
+    },
+    {
+      "name": "submit-button",
+      "title": "Submit Button",
+      "type": "registry:component",
+      "description": "A component for Wandry UI",
+      "dependencies": ["@wandry/inertia-form"],
+      "registryDependencies": ["button", "spinner"],
+      "files": [
+        {
+          "path": "registry/wandry-ui/submit-button.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "settings-03",
+      "title": "Settings 03",
+      "type": "registry:block",
+      "description": "A component for Wandry UI",
+      "dependencies": ["@wandry/inertia-form"],
+      "registryDependencies": [
+        "button",
+        "text-field",
+        "select-field",
+        "choisebox-field",
+        "submit-button"
+      ],
+      "files": [
+        {
+          "path": "registry/wandry-ui/blocks/settings-03/page.tsx",
+          "type": "registry:block"
+        }
+      ]
+    },
+    {
+      "name": "array-field",
+      "title": "ArrayField",
+      "type": "registry:component",
+      "description": "A component for Wandry UI",
+      "dependencies": ["@wandry/inertia-form"],
+      "registryDependencies": ["field", "button"],
+      "files": [
+        {
+          "path": "registry/wandry-ui/array-field.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "masked-field",
+      "title": "MaskedField",
+      "type": "registry:component",
+      "description": "A component for Wandry UI",
+      "dependencies": ["@wandry/inertia-form"],
+      "registryDependencies": ["https://diceui.com/r/mask-input", "field"],
+      "files": [
+        {
+          "path": "registry/wandry-ui/masked-field.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "colorpicker-field",
+      "title": "ColorPickerField",
+      "type": "registry:component",
+      "description": "A component for Wandry UI",
+      "dependencies": ["@wandry/inertia-form", "react-aria-components"],
+      "registryDependencies": ["field", "button", "input-group", "popover"],
+      "files": [
+        {
+          "path": "registry/wandry-ui/colorpicker-field.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "tags-field",
+      "title": "TagsField",
+      "type": "registry:component",
+      "description": "A component for Wandry UI",
+      "dependencies": ["@wandry/inertia-form"],
+      "registryDependencies": ["field", "button", "input-group"],
+      "files": [
+        {
+          "path": "registry/wandry-ui/tags-field.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "test-field",
+      "title": "TestField",
+      "type": "registry:component",
+      "description": "A component for Wandry UI",
+      "dependencies": ["@wandry/inertia-form"],
+      "registryDependencies": ["field", "button", "input-group"],
+      "files": [
+        {
+          "path": "registry/wandry-ui/test-field.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "webhook-component",
+      "title": "WebhookComponent",
+      "type": "registry:component",
+      "description": "A component for Wandry UI",
+      "dependencies": ["@wandry/inertia-form"],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/wandry-ui/webhook-component.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "update-button",
+      "title": "UpdateButton",
+      "type": "registry:component",
+      "description": "A component for Wandry UI",
+      "dependencies": ["@wandry/inertia-form"],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/wandry-ui/update-button.tsx",
+          "type": "registry:component"
+        }
+      ]
+    }
+  ]
+}

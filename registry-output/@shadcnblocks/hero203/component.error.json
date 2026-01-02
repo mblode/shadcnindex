@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "hero203",
+  "url": "https://shadcnblocks.com/r/hero203.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "hero203",
+    "type": "registry:block",
+    "title": "Hero",
+    "description": "A component showcasing a title, description, sign-up button, and two visual content blocks with hover effects, dates, titles, and a \"See All\" link.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": ["button"],
+    "files": [
+      {
+        "path": "code/block/hero203.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:36.087Z"
+}

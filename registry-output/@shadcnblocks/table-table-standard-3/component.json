@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "table-table-standard-3",
+  "title": "Table/table-standard-",
+  "description": "A table/table-standard- example",
+  "dependencies": ["clsx", "tailwind-merge"],
+  "registryDependencies": ["table"],
+  "files": [
+    {
+      "path": "code/example/table/table-standard-3.tsx",
+      "content": "import {\n  Table,\n  TableBody,\n  TableCell,\n  TableHead,\n  TableHeader,\n  TableRow,\n} from \"@/components/ui/table\";\n\nexport const title = \"Table Without Dividers\";\n\nconst products = [\n  {\n    name: \"Laptop\",\n    category: \"Electronics\",\n    price: \"$999.00\",\n    stock: 24,\n  },\n  {\n    name: \"Headphones\",\n    category: \"Audio\",\n    price: \"$199.00\",\n    stock: 156,\n  },\n  {\n    name: \"Keyboard\",\n    category: \"Accessories\",\n    price: \"$79.00\",\n    stock: 89,\n  },\n  {\n    name: \"Mouse\",\n    category: \"Accessories\",\n    price: \"$49.00\",\n    stock: 234,\n  },\n];\n\nconst Example = () => (\n  <div className=\"w-full max-w-4xl rounded-md border bg-background\">\n    <Table>\n      <TableHeader>\n        <TableRow className=\"border-b-0 hover:bg-transparent\">\n          <TableHead>Product</TableHead>\n          <TableHead>Category</TableHead>\n          <TableHead className=\"text-right\">Price</TableHead>\n          <TableHead className=\"text-right\">Stock</TableHead>\n        </TableRow>\n      </TableHeader>\n      <TableBody>\n        {products.map((product) => (\n          <TableRow className=\"border-b-0\" key={product.name}>\n            <TableCell className=\"font-medium\">{product.name}</TableCell>\n            <TableCell>{product.category}</TableCell>\n            <TableCell className=\"text-right\">{product.price}</TableCell>\n            <TableCell className=\"text-right\">{product.stock}</TableCell>\n          </TableRow>\n        ))}\n      </TableBody>\n    </Table>\n  </div>\n);\n\nexport default Example;\n",
+      "type": "registry:block"
+    },
+    {
+      "path": "src/components/ui/table.tsx",
+      "content": "import * as React from \"react\"\n\nimport { cn } from \"@/lib/utils\"\n\nfunction Table({ className, ...props }: React.ComponentProps<\"table\">) {\n  return (\n    <div\n      data-slot=\"table-container\"\n      className=\"relative w-full overflow-x-auto\"\n    >\n      <table\n        data-slot=\"table\"\n        className={cn(\"w-full caption-bottom text-sm\", className)}\n        {...props}\n      />\n    </div>\n  )\n}\n\nfunction TableHeader({ className, ...props }: React.ComponentProps<\"thead\">) {\n  return (\n    <thead\n      data-slot=\"table-header\"\n      className={cn(\"[&_tr]:border-b\", className)}\n      {...props}\n    />\n  )\n}\n\nfunction TableBody({ className, ...props }: React.ComponentProps<\"tbody\">) {\n  return (\n    <tbody\n      data-slot=\"table-body\"\n      className={cn(\"[&_tr:last-child]:border-0\", className)}\n      {...props}\n    />\n  )\n}\n\nfunction TableFooter({ className, ...props }: React.ComponentProps<\"tfoot\">) {\n  return (\n    <tfoot\n      data-slot=\"table-footer\"\n      className={cn(\n        \"bg-muted/50 border-t font-medium [&>tr]:last:border-b-0\",\n        className\n      )}\n      {...props}\n    />\n  )\n}\n\nfunction TableRow({ className, ...props }: React.ComponentProps<\"tr\">) {\n  return (\n    <tr\n      data-slot=\"table-row\"\n      className={cn(\n        \"hover:bg-muted/50 data-[state=selected]:bg-muted border-b transition-colors\",\n        className\n      )}\n      {...props}\n    />\n  )\n}\n\nfunction TableHead({ className, ...props }: React.ComponentProps<\"th\">) {\n  return (\n    <th\n      data-slot=\"table-head\"\n      className={cn(\n        \"text-foreground h-10 px-2 text-left align-middle font-medium whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]\",\n        className\n      )}\n      {...props}\n    />\n  )\n}\n\nfunction TableCell({ className, ...props }: React.ComponentProps<\"td\">) {\n  return (\n    <td\n      data-slot=\"table-cell\"\n      className={cn(\n        \"p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]\",\n        className\n      )}\n      {...props}\n    />\n  )\n}\n\nfunction TableCaption({\n  className,\n  ...props\n}: React.ComponentProps<\"caption\">) {\n  return (\n    <caption\n      data-slot=\"table-caption\"\n      className={cn(\"text-muted-foreground mt-4 text-sm\", className)}\n      {...props}\n    />\n  )\n}\n\nexport {\n  Table,\n  TableHeader,\n  TableBody,\n  TableFooter,\n  TableHead,\n  TableRow,\n  TableCell,\n  TableCaption,\n}\n",
+      "type": "registry:ui",
+      "target": ""
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "content": "import { type ClassValue, clsx } from 'clsx';\nimport { twMerge } from 'tailwind-merge';\n\nexport function cn(...inputs: ClassValue[]) {\n  return twMerge(clsx(inputs));\n}\n",
+      "type": "registry:lib",
+      "target": ""
+    }
+  ],
+  "type": "registry:block"
+}

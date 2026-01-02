@@ -1,0 +1,13 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "tabs-panel-demo",
+  "type": "registry:example",
+  "registryDependencies": ["tabs"],
+  "files": [
+    {
+      "path": "src/registry/pure-ui/examples/tabs/tabs-panel-demo.tsx",
+      "content": "import {\n  Tabs,\n  TabsList,\n  TabsPanel,\n  TabsTrigger,\n} from \"@/registry/pure-ui/ui/tabs\";\n\nexport function TabsPanelDemo() {\n  return (\n    <div className=\"max-w-md mx-auto w-full\">\n      <Tabs defaultValue=\"docs\">\n        <TabsList>\n          <TabsTrigger value=\"docs\">Docs</TabsTrigger>\n          <TabsTrigger value=\"components\">Components</TabsTrigger>\n          <TabsTrigger value=\"blocks\">Blocks</TabsTrigger>\n        </TabsList>\n        <div className=\"bg-muted p-4 rounded-lg\">\n          <TabsPanel value=\"docs\">\n            <div className=\"flex flex-col gap-2\">\n              <h3 className=\"text-lg font-medium\">Docs</h3>\n              <p className=\"text-sm text-muted-foreground\">\n                Docs are a great way to learn about the product and how to use\n                it.\n              </p>\n              <p className=\"text-sm text-muted-foreground\">\n                Docs are a great way to learn about the product and how to use\n                it.\n              </p>\n              <p className=\"text-sm text-muted-foreground\">\n                Docs are a great way to learn about the product and how to use\n                it.\n              </p>\n            </div>\n          </TabsPanel>\n          <TabsPanel value=\"components\">\n            <div className=\"flex flex-col gap-2\">\n              <h3 className=\"text-lg font-medium\">Components</h3>\n              <p className=\"text-sm text-muted-foreground\">\n                Components are a great way to learn about the product and how to\n                use it.\n              </p>\n            </div>\n          </TabsPanel>\n          <TabsPanel value=\"blocks\">\n            <div className=\"flex flex-col gap-2\">\n              <h3 className=\"text-lg font-medium\">Blocks</h3>\n              <p className=\"text-sm text-muted-foreground\">\n                Blocks are a great way to learn about the product and how to use\n                it.\n              </p>\n            </div>\n          </TabsPanel>\n        </div>\n      </Tabs>\n    </div>\n  );\n}\n",
+      "type": "registry:example"
+    }
+  ]
+}

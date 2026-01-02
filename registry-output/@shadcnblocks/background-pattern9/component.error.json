@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "background-pattern9",
+  "url": "https://shadcnblocks.com/r/background-pattern9.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "background-pattern9",
+    "type": "registry:block",
+    "title": "Background-pattern",
+    "description": "This component, BackgroundPattern9, creates a visually appealing background with a grid pattern and a radial fade effect in the bottom right corner, which serves as a decorative element. It allows for customizable styling through an optional className prop, ensuring integration with different design systems.",
+    "dependencies": [],
+    "registryDependencies": ["https://shadcnblocks.com/r/pattern-placeholder"],
+    "files": [
+      {
+        "path": "code/block/background-pattern9.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:13.613Z"
+}

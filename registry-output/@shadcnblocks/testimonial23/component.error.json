@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "testimonial23",
+  "url": "https://shadcnblocks.com/r/testimonial23.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "testimonial23",
+    "type": "registry:block",
+    "title": "Testimonial",
+    "description": "A masonry layout component displaying customer testimonials with avatars, feedback, and dates. Includes a title, subtitle, and a \"See More\" button.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": ["avatar", "badge", "button", "card"],
+    "files": [
+      {
+        "path": "code/block/testimonial23.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:53.899Z"
+}

@@ -1,0 +1,18 @@
+{
+  "name": "use-hover",
+  "author": "Brendan Dash (https://shadcn-hooks.vercel.app)",
+  "description": "A hook to check if the mouse is hovering over an element",
+  "registryDependencies": [
+    "@hooks/create-effect-with-target",
+    "@hooks/use-event-listener",
+    "@hooks/use-boolean"
+  ],
+  "files": [
+    {
+      "path": "registry/hooks/use-hover.ts",
+      "content": "import { useBoolean } from '@/registry/hooks/use-boolean'\nimport { useEventListener } from '@/registry/hooks/use-event-listener'\nimport type { BasicTarget } from '@/registry/lib/create-effect-with-target'\n\nexport interface Options {\n  onEnter?: () => void\n  onLeave?: () => void\n  onChange?: (isHovering: boolean) => void\n}\n\nexport function useHover(target: BasicTarget, options?: Options): boolean {\n  const { onEnter, onLeave, onChange } = options || {}\n\n  const [state, { setTrue, setFalse }] = useBoolean(false)\n\n  useEventListener(\n    'mouseenter',\n    () => {\n      onEnter?.()\n      setTrue()\n      onChange?.(true)\n    },\n    {\n      target,\n    },\n  )\n\n  useEventListener(\n    'mouseleave',\n    () => {\n      onLeave?.()\n      setFalse()\n      onChange?.(false)\n    },\n    {\n      target,\n    },\n  )\n\n  return state\n}\n",
+      "type": "registry:hook"
+    }
+  ],
+  "type": "registry:hook"
+}

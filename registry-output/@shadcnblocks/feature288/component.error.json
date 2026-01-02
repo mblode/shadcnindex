@@ -1,0 +1,23 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature288",
+  "url": "https://shadcnblocks.com/r/feature288.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature288",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A component featuring a central text block with embedded clickable previews, housed within a single column layout, emphasizing the ease of integration and customization.",
+    "dependencies": ["react"],
+    "registryDependencies": [
+      "https://ui.aceternity.com/registry/link-preview.json"
+    ],
+    "files": [
+      {
+        "path": "code/block/feature288.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:27.873Z"
+}

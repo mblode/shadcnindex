@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "stats",
+  "title": "Stats",
+  "description": "Scrollable stat cards with values, trends, and change indicators.",
+  "dependencies": ["lucide-react"],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/miscellaneous/stat-card.tsx",
+      "content": "\"use client\"\n\nimport { TrendingUp, TrendingDown, Minus } from \"lucide-react\"\nimport { cn } from \"@/lib/utils\"\n\nexport interface StatCardProps {\n  label: string\n  value: string | number\n  change?: number\n  changeLabel?: string\n  icon?: React.ReactNode\n  trend?: \"up\" | \"down\" | \"neutral\"\n}\n\nexport interface StatsProps {\n  data?: {\n    stats?: StatCardProps[]\n  }\n}\n\nconst defaultStats: StatCardProps[] = [\n  { label: \"Sales\", value: \"$12,543\", change: 12.5, trend: \"up\" },\n  { label: \"Orders\", value: \"342\", change: -3.2, trend: \"down\" },\n  { label: \"Customers\", value: \"1,205\", change: 0, trend: \"neutral\" },\n]\n\nexport function Stats({ data }: StatsProps) {\n  const { stats = defaultStats } = data ?? {}\n  const getTrendIcon = (trend?: \"up\" | \"down\" | \"neutral\") => {\n    switch (trend) {\n      case \"up\":\n        return <TrendingUp className=\"h-3.5 w-3.5\" />\n      case \"down\":\n        return <TrendingDown className=\"h-3.5 w-3.5\" />\n      default:\n        return <Minus className=\"h-3.5 w-3.5\" />\n    }\n  }\n\n  const getTrendColor = (trend?: \"up\" | \"down\" | \"neutral\") => {\n    switch (trend) {\n      case \"up\":\n        return \"text-green-600\"\n      case \"down\":\n        return \"text-red-600\"\n      default:\n        return \"text-muted-foreground\"\n    }\n  }\n\n  return (\n    <div className=\"w-full\">\n      <div className=\"grid grid-cols-2 sm:grid-cols-3 gap-2 sm:gap-4\">\n        {stats.map((stat, index) => (\n          <div\n            key={index}\n            className=\"rounded-md sm:rounded-lg border bg-card p-2 sm:p-3 space-y-0.5 sm:space-y-1\"\n          >\n            <div className=\"flex items-center justify-between\">\n              <span className=\"text-[10px] sm:text-xs text-muted-foreground\">{stat.label}</span>\n              {stat.icon}\n            </div>\n            <div className=\"flex flex-wrap items-baseline gap-1 sm:gap-2\">\n              <span className=\"text-base sm:text-xl font-bold\">{stat.value}</span>\n              {stat.change !== undefined && (\n                <span\n                  className={cn(\n                    \"flex items-center gap-0.5 text-[10px] sm:text-xs font-medium shrink-0\",\n                    getTrendColor(stat.trend)\n                  )}\n                >\n                  {getTrendIcon(stat.trend)}\n                  {Math.abs(stat.change)}%\n                </span>\n              )}\n            </div>\n            {stat.changeLabel && (\n              <span className=\"text-[10px] sm:text-xs text-muted-foreground\">\n                {stat.changeLabel}\n              </span>\n            )}\n          </div>\n        ))}\n      </div>\n    </div>\n  )\n}\n",
+      "type": "registry:component"
+    }
+  ],
+  "type": "registry:component"
+}

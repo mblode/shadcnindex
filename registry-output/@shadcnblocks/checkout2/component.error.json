@@ -1,0 +1,38 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "checkout2",
+  "url": "https://shadcnblocks.com/r/checkout2.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "checkout2",
+    "type": "registry:block",
+    "title": "Checkout",
+    "description": "This component facilitates a comprehensive e-commerce checkout process, allowing users to input contact information, shipping address, choose a shipping method, and select a payment method. It includes an order summary where users can view, modify quantities, and remove items from their shopping cart before finalizing their purchase.",
+    "dependencies": [
+      "@hookform/resolvers",
+      "lucide-react",
+      "react",
+      "react-hook-form",
+      "zod"
+    ],
+    "registryDependencies": [
+      "https://shadcnblocks.com/r/logo",
+      "https://shadcnblocks.com/r/price",
+      "https://shadcnblocks.com/r/quantity-input",
+      "aspect-ratio",
+      "button",
+      "card",
+      "checkbox",
+      "field",
+      "input",
+      "radio-group"
+    ],
+    "files": [
+      {
+        "path": "code/block/checkout2.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:16.101Z"
+}

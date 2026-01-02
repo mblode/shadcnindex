@@ -1,0 +1,25 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature267",
+  "url": "https://shadcnblocks.com/r/feature267.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature267",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A dual-column block featuring an animated 3D marquee with images, a subscription input form, and dynamic text sections, highlighted by an icon.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": [
+      "https://ui.aceternity.com/registry/3d-marquee.json",
+      "button",
+      "input"
+    ],
+    "files": [
+      {
+        "path": "code/block/feature267.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:27.015Z"
+}

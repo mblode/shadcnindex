@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-stroke-draw",
+  "type": "registry:component",
+  "title": "Stroke Draw Icon",
+  "description": "SVG path stroke drawing animation for icons",
+  "dependencies": ["motion"],
+  "files": [
+    {
+      "path": "registry/new-york/animations/icons/stroke-draw.tsx",
+      "content": "\"use client\";\nimport * as React from \"react\";\nimport * as motion from \"framer-motion/client\";\nimport { cn } from \"@/lib/utils\";\nimport {\n  useStrokeDraw,\n  type UseStrokeDrawOptions,\n} from \"@/lib/use-stroke-draw\";\nexport interface StrokeDrawIconProps\n  extends Omit<React.SVGProps<SVGSVGElement>, \"children\">,\n    UseStrokeDrawOptions {\n  pathData: string;\n  strokeColor?: string;\n  strokeWidth?: number;\n}\nexport function StrokeDrawIcon({\n  pathData,\n  className,\n  duration,\n  delay,\n  repeat,\n  ease,\n  strokeColor = \"currentColor\",\n  strokeWidth = 2,\n  ...props\n}: StrokeDrawIconProps) {\n  const strokeProps = useStrokeDraw({ duration, delay, repeat, ease });\n  return (\n    <motion.svg\n      className={cn(className)}\n      fill=\"none\"\n      stroke={strokeColor}\n      strokeWidth={strokeWidth}\n      strokeLinecap=\"round\"\n      strokeLinejoin=\"round\"\n      viewBox={props.viewBox || \"0 0 24 24\"}\n      width={props.width}\n      height={props.height}\n    >\n      <motion.path d={pathData} {...strokeProps} />\n    </motion.svg>\n  );\n}\n",
+      "type": "registry:component"
+    },
+    {
+      "path": "lib/use-stroke-draw.ts",
+      "content": "import { type MotionProps, type Easing } from \"motion/react\";\n\nexport interface UseStrokeDrawOptions {\n  duration?: number;\n  delay?: number;\n  repeat?: boolean;\n  ease?: Easing | Easing[];\n}\n\nexport function useStrokeDraw(options: UseStrokeDrawOptions = {}): MotionProps {\n  const {\n    duration = 1.5,\n    delay = 0,\n    repeat = false,\n    ease = \"easeInOut\",\n  } = options;\n\n  return {\n    initial: { pathLength: 0, opacity: 0 },\n    animate: { pathLength: 1, opacity: 1 },\n    transition: {\n      pathLength: { duration, delay, ease },\n      opacity: { duration: 0.2, delay },\n      repeat: repeat ? Infinity : 0,\n      repeatDelay: 1,\n    },\n  };\n}\n",
+      "type": "registry:lib"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "slot",
+  "title": "Slot",
+  "description": "Slot component for motion animations.",
+  "dependencies": ["motion", "clsx", "tailwind-merge"],
+  "registryDependencies": ["https://optics.agusmayol.com.ar/r/utils.json"],
+  "files": [
+    {
+      "path": "registry/optics/helpers/primitives/animate/slot.jsx",
+      "content": "'use client';;\nimport * as React from 'react';\nimport { motion, isMotionComponent } from 'motion/react';\nimport { cn } from '@/registry/optics/lib/utils';\n\nfunction mergeRefs(...refs) {\n  return (node) => {\n    refs.forEach((ref) => {\n      if (!ref) return;\n      if (typeof ref === 'function') {\n        ref(node);\n      } else {\n        (ref).current = node;\n      }\n    });\n  };\n}\n\nfunction mergeProps(childProps, slotProps) {\n  const merged = { ...childProps, ...slotProps };\n\n  if (childProps.className || slotProps.className) {\n    merged.className = cn(childProps.className, slotProps.className);\n  }\n\n  if (childProps.style || slotProps.style) {\n    merged.style = {\n      ...(childProps.style),\n      ...(slotProps.style),\n    };\n  }\n\n  return merged;\n}\n\nfunction Slot(\n  {\n    children,\n    ref,\n    ...props\n  }\n) {\n  const isAlreadyMotion =\n    typeof children.type === 'object' &&\n    children.type !== null &&\n    isMotionComponent(children.type);\n\n  const Base = React.useMemo(() =>\n    isAlreadyMotion\n      ? (children.type)\n      : motion.create(children.type), [isAlreadyMotion, children.type]);\n\n  if (!React.isValidElement(children)) return null;\n\n  const { ref: childRef, ...childProps } = children.props;\n\n  const mergedProps = mergeProps(childProps, props);\n\n  return (<Base {...mergedProps} ref={mergeRefs(childRef, ref)} />);\n}\n\nexport { Slot };\n",
+      "type": "registry:component",
+      "target": "components/optics/helpers/primitives/animate/slot.jsx"
+    }
+  ],
+  "type": "registry:component"
+}

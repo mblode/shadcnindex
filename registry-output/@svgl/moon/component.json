@@ -1,0 +1,14 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "moon",
+  "title": "moon",
+  "files": [
+    {
+      "path": "././static/components-generated/moon.tsx",
+      "content": "import type { SVGProps } from \"react\";\n\nconst Moon = (props: SVGProps<SVGSVGElement>) => (\n  <svg\n    {...props}\n    viewBox=\"0 0 256 256\"\n    xmlnsXlink=\"http://www.w3.org/1999/xlink\"\n    preserveAspectRatio=\"xMidYMid\"\n  >\n    <title>Moon</title>\n    <defs>\n      <circle id=\"path-1\" cx=\"128\" cy=\"128\" r=\"128\" />\n      <radialGradient\n        cx=\"50%\"\n        cy=\"50%\"\n        fx=\"50%\"\n        fy=\"50%\"\n        r=\"49.7893875%\"\n        id=\"moonRadialGradient-1\"\n      >\n        <stop stop-color=\"#4600D1\" offset=\"0%\" />\n        <stop stop-color=\"#4600D1\" offset=\"49.2852329%\" />\n        <stop stop-color=\"#35009F\" offset=\"100%\" />\n      </radialGradient>\n      <radialGradient\n        cx=\"50%\"\n        cy=\"50%\"\n        fx=\"50%\"\n        fy=\"50%\"\n        r=\"49.6030859%\"\n        id=\"moonRadialGradient-2\"\n      >\n        <stop stop-color=\"#35019E\" offset=\"0%\" />\n        <stop stop-color=\"#320194\" offset=\"18.7296056%\" />\n        <stop stop-color=\"#220066\" offset=\"100%\" />\n      </radialGradient>\n    </defs>\n    <g>\n      <g>\n        <circle fill=\"#5805FF\" cx=\"128\" cy=\"128\" r=\"128\" />\n        <mask id=\"mask-2\" fill=\"white\">\n          <use xlink:href=\"#path-1\" />\n        </mask>\n        <circle\n          fill=\"url(#moonRadialGradient-1)\"\n          mask=\"url(#mask-2)\"\n          cx=\"199.694484\"\n          cy=\"105.369165\"\n          r=\"128\"\n        />\n        <circle\n          fill=\"url(#moonRadialGradient-2)\"\n          mask=\"url(#mask-2)\"\n          cx=\"275.371994\"\n          cy=\"82.3762376\"\n          r=\"128\"\n        />\n      </g>\n    </g>\n  </svg>\n);\n\nexport { Moon };\n",
+      "type": "registry:component",
+      "target": "components/ui/svgs/moon.tsx"
+    }
+  ],
+  "type": "registry:component"
+}

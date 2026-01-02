@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "cards-background-zoom",
+  "type": "registry:component",
+  "title": "Background Zoom Card",
+  "description": "Card with background image zoom on hover",
+  "dependencies": ["motion"],
+  "files": [
+    {
+      "path": "registry/new-york/animations/cards/background-zoom.tsx",
+      "content": "\"use client\";\nimport * as React from \"react\";\nimport { motion, HTMLMotionProps } from \"motion/react\";\nimport { cn } from \"@/lib/utils\";\nexport interface CardBackgroundZoomProps\n  extends Omit<HTMLMotionProps<\"div\">, \"children\"> {\n  backgroundImage: string;\n  children: React.ReactNode;\n  scale?: number;\n  duration?: number;\n}\nexport function CardBackgroundZoom({\n  backgroundImage,\n  children,\n  className,\n  scale = 1.1,\n  duration = 0.6,\n  ...props\n}: CardBackgroundZoomProps) {\n  return (\n    <motion.div\n      className={cn(\"relative overflow-hidden\", className)}\n      whileHover=\"hover\"\n      initial=\"initial\"\n      {...props}\n    >\n      <motion.div\n        className=\"absolute inset-0 bg-cover bg-center\"\n        style={{ backgroundImage: `url(${backgroundImage})` }}\n        variants={{\n          initial: { scale: 1 },\n          hover: { scale },\n        }}\n        transition={{ duration, ease: \"easeOut\" }}\n      />\n      <div className=\"relative z-10\">{children}</div>\n    </motion.div>\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ]
+}

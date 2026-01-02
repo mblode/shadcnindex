@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "infinite-image-carousel-example",
+  "type": "registry:component",
+  "title": "Image Carousel Example",
+  "description": "A GSAP-powered infinite image carousel with draggable interaction and hover slowdown effects.",
+  "dependencies": [
+    "react",
+    "gsap",
+    "@gsap/react",
+    "responsive-gsap",
+    "tailwind-merge",
+    "clsx"
+  ],
+  "registryDependencies": [
+    "https://ui.phucbm.com/r/infinite-image-carousel.json"
+  ],
+  "files": [
+    {
+      "path": "registry/phucbm/blocks/infinite-image-carousel/example.transformed.tsx",
+      "content": "import {InfiniteImageCarousel} from \"@/components/phucbm/infinite-image-carousel\";\n\nexport default function Example() {\n    return (\n        <div className=\"h-screen flex flex-col justify-around py-[10vh]\">\n            {/*logos*/}\n            <InfiniteImageCarousel\n                itemClass=\"lg:mr-8 lg:px-4 xl:[--width:12vw] md:[--width:150px] [--width:100px]\"\n                isLogo={true}\n                direction={1}\n                images={exampleLogos()}\n            />\n\n            {/*photos*/}\n            <InfiniteImageCarousel\n                itemClass=\"xl:[--width:15vw] lg:[--width:260px] [--width:120px]\"\n                images={examplePhotos()}/>\n        </div>\n    );\n}\n\nconst examplePhotos = () => Array.from({length: 10}, (_, i) => ({\n    url: `https://picsum.photos/400/400?random=${Math.random()}`,\n    title: `Image ${i + 1}`\n}));\nconst exampleLogos = () => {\n    const brands = ['apple', 'google', 'microsoft', 'meta', 'netflix', 'spotify', 'samsung', 'intel', 'adobe'];\n    const shuffled = brands.sort(() => Math.random() - 0.5);\n    return shuffled.map((brand, i) => ({\n        url: `https://cdn.svglogos.dev/logos/${brand}.svg`,\n        title: brand.charAt(0).toUpperCase() + brand.slice(1)\n    }));\n};",
+      "type": "registry:component",
+      "target": "index.tsx"
+    }
+  ]
+}

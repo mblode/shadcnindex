@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "integration11",
+  "url": "https://shadcnblocks.com/r/integration11.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "integration11",
+    "type": "registry:block",
+    "title": "Integration",
+    "description": "A tabbed component showcasing categorized integrations with toggles for connection status and details button. Layout scales from 1 to 3 columns.",
+    "dependencies": ["react"],
+    "registryDependencies": ["button", "switch", "tabs"],
+    "files": [
+      {
+        "path": "code/block/integration11.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:40.563Z"
+}

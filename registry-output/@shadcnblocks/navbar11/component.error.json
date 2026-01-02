@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "navbar11",
+  "url": "https://shadcnblocks.com/r/navbar11.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "navbar11",
+    "type": "registry:block",
+    "title": "Navbar",
+    "description": "A component with a dynamic navbar, integrating desktop and mobile views with different button sets. It includes expandable menus for grouped items and icons alongside links.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": ["accordion", "button", "navigation-menu", "sheet"],
+    "files": [
+      {
+        "path": "code/block/navbar11.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:42.126Z"
+}

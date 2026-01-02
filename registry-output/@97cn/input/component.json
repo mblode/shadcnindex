@@ -1,0 +1,41 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "input",
+  "type": "registry:ui",
+  "title": "Input",
+  "description": "Windows 95 styled text input component",
+  "dependencies": [],
+  "files": [
+    {
+      "path": "components/97cn/input.tsx",
+      "content": "import * as React from \"react\"\nimport { cn } from \"@/lib/utils\"\n\nexport interface Win95InputProps extends React.InputHTMLAttributes<HTMLInputElement> {}\n\nconst Win95Input = React.forwardRef<HTMLInputElement, Win95InputProps>(({ className, type, ...props }, ref) => {\n  return (\n    <input\n      type={type}\n      className={cn(\n        \"flex h-8 w-full bg-win95-white px-2 py-1 text-xs text-win95-black win95-sunken file:border-0 file:bg-transparent file:text-xs file:font-medium placeholder:text-win95-dark-gray focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-win95-black disabled:cursor-not-allowed disabled:opacity-50 font-sans\",\n        className,\n      )}\n      ref={ref}\n      {...props}\n    />\n  )\n})\nWin95Input.displayName = \"Win95Input\"\n\nexport { Win95Input }\n",
+      "type": "registry:ui"
+    }
+  ],
+  "cssVars": {
+    "light": {
+      "win95-white": "#ffffff",
+      "win95-black": "#000000",
+      "win95-dark-gray": "#808080",
+      "win95-button-shadow": "#808080",
+      "win95-button-highlight": "#ffffff"
+    },
+    "dark": {
+      "win95-white": "#ffffff",
+      "win95-black": "#000000",
+      "win95-dark-gray": "#808080",
+      "win95-button-shadow": "#808080",
+      "win95-button-highlight": "#ffffff"
+    }
+  },
+  "css": {
+    "@layer utilities": {
+      ".win95-sunken": {
+        "border-top": "2px solid var(--win95-button-shadow)",
+        "border-left": "2px solid var(--win95-button-shadow)",
+        "border-right": "2px solid var(--win95-button-highlight)",
+        "border-bottom": "2px solid var(--win95-button-highlight)"
+      }
+    }
+  }
+}

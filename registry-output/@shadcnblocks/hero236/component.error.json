@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "hero236",
+  "url": "https://shadcnblocks.com/r/hero236.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "hero236",
+    "type": "registry:block",
+    "title": "Hero",
+    "description": "A component features a dynamic, interactive 3D cloud of icons and statistics highlighting key metrics. It splits into two main sections: one side lists achievements using icons and numbers, and the other displays a rotating, interactive cloud of technology icons.",
+    "dependencies": ["lucide-react", "react", "react-dom"],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/hero236.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:37.239Z"
+}

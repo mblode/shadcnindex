@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature222",
+  "url": "https://shadcnblocks.com/r/feature222.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature222",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A component displaying a grid of cards with images, titles, stats, and a \"Read Story\" button. Cards are dynamically populated from a list.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["button"],
+    "files": [
+      {
+        "path": "code/block/feature222.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:25.677Z"
+}

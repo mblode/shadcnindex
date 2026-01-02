@@ -1,0 +1,33 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "product-detail9",
+  "url": "https://shadcnblocks.com/r/product-detail9.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "product-detail9",
+    "type": "registry:block",
+    "title": "Product-detail",
+    "description": "This component is designed to display detailed product information, including images, price, and size options, providing an interactive user interface for selecting product variations and purchasing. It features an image carousel with lightbox functionality, a form for selecting product specifications, and buttons for adding the product to the cart or buying it immediately.",
+    "dependencies": [
+      "@hookform/resolvers",
+      "photoswipe",
+      "react",
+      "react-hook-form",
+      "zod"
+    ],
+    "registryDependencies": [
+      "aspect-ratio",
+      "button",
+      "carousel",
+      "form",
+      "radio-group"
+    ],
+    "files": [
+      {
+        "path": "code/block/product-detail9.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:45.794Z"
+}

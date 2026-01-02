@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "extends": "none",
+  "name": "show-more-as-text-demo",
+  "title": "Show More As Text",
+  "description": "show-more-as-text-demo",
+  "registryDependencies": ["https://intentui.com/r/show-more"],
+  "files": [
+    {
+      "path": "src/components/docs/surfaces/show-more/show-more-as-text-demo.tsx",
+      "content": "\"use client\"\n\nimport { ShowMore } from \"@/components/ui/show-more\"\n\nexport default function ShowMoreAsTextDemo() {\n  return (\n    <div className=\"py-6\">\n      <ShowMore as=\"text\" text=\"Or continue with\" />\n    </div>\n  )\n}\n",
+      "type": "registry:page",
+      "target": "app/show-more-as-text-demo/page.tsx"
+    }
+  ],
+  "type": "registry:page"
+}

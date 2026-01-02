@@ -1,0 +1,13 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "menu-scale-demo",
+  "type": "registry:example",
+  "registryDependencies": ["menu"],
+  "files": [
+    {
+      "path": "src/registry/pure-ui/examples/menu/menu-scale-demo.tsx",
+      "content": "import {\n  Menu,\n  MenuTrigger,\n  MenuPopup,\n  MenuItem,\n  MenuSeparator,\n  MenuSub,\n  MenuSubTrigger,\n  MenuSubPopup,\n} from \"@/registry/pure-ui/ui/menu\";\nimport { Button } from \"@/registry/pure-ui/ui/button\";\n\nexport const MenuScaleDemo = () => {\n  return (\n    <Menu>\n      <MenuTrigger\n        render={\n          <Button\n            variant=\"ghost\"\n            className=\"flex items-center gap-2 active:scale-100\"\n            size=\"sm\"\n          />\n        }\n      >\n        <span className=\"text-sm\">Song</span>\n      </MenuTrigger>\n      <MenuPopup className=\"w-44\" sideOffset={8} animationPreset=\"scale\">\n        <MenuItem className=\"cursor-pointer\">\n          <span>Add to Library</span>\n        </MenuItem>\n        <MenuSub>\n          <MenuSubTrigger className=\"cursor-pointer\">\n            <span>Add to Playlist</span>\n          </MenuSubTrigger>\n          <MenuSubPopup>\n            <MenuItem className=\"cursor-pointer\">\n              <span>Get Up!</span>\n            </MenuItem>\n            <MenuSeparator />\n            <MenuItem className=\"cursor-pointer\">\n              <span>Dancin' Queen</span>\n            </MenuItem>\n            <MenuItem className=\"cursor-pointer\">\n              <span>Shape of You</span>\n            </MenuItem>\n            <MenuSeparator />\n            <MenuItem className=\"cursor-pointer\">\n              <span>Thinking Out Loud</span>\n            </MenuItem>\n          </MenuSubPopup>\n        </MenuSub>\n        <MenuSeparator />\n        <MenuItem className=\"cursor-pointer\">\n          <span>Play Next</span>\n        </MenuItem>\n        <MenuItem className=\"cursor-pointer\">\n          <span>Play Last</span>\n        </MenuItem>\n        <MenuSeparator />\n        <MenuItem className=\"cursor-pointer\">\n          <span>Favorite</span>\n        </MenuItem>\n        <MenuItem className=\"cursor-pointer\">\n          <span>Share</span>\n        </MenuItem>\n      </MenuPopup>\n    </Menu>\n  );\n};\n",
+      "type": "registry:example"
+    }
+  ]
+}

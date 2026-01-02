@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "hero21",
+  "url": "https://shadcnblocks.com/r/hero21.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "hero21",
+    "type": "registry:block",
+    "title": "Hero",
+    "description": "A component with a headline, description, badges, buttons for actions & demo, and a call-to-action link. Includes an image beneath text content. Uses 2 columns and rounded design elements.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["badge", "button"],
+    "files": [
+      {
+        "path": "code/block/hero21.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:36.322Z"
+}

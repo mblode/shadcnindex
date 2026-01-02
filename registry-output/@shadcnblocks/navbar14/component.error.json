@@ -1,0 +1,26 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "navbar14",
+  "url": "https://shadcnblocks.com/r/navbar14.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "navbar14",
+    "type": "registry:block",
+    "title": "Navbar",
+    "description": "An expandable navigation component featuring categorized links with icons, a logo, and action buttons. It transitions to an accordion layout on smaller screens.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": [
+      "accordion",
+      "button",
+      "navigation-menu",
+      "separator"
+    ],
+    "files": [
+      {
+        "path": "code/block/navbar14.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:42.180Z"
+}

@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "hero187a",
+  "url": "https://shadcnblocks.com/r/hero187a.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "hero187a",
+    "type": "registry:block",
+    "title": "Hero187a",
+    "description": "A component featuring a carousel with auto-play functionality, a section with text content, and a grid layout displaying four features with icons. Includes navigation buttons.",
+    "dependencies": ["embla-carousel-autoplay", "lucide-react", "react"],
+    "registryDependencies": ["button", "carousel"],
+    "files": [
+      {
+        "path": "code/block/hero187a.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:35.642Z"
+}

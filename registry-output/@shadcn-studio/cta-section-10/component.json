@@ -1,0 +1,22 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "cta-section-10",
+  "type": "registry:block",
+  "description": "Simple primary-colored horizontal CTA card with flex layout, left side featuring heading and muted description text, right side with secondary button containing arrow-right icon, clean three-column justified spacing with responsive column stacking on mobile",
+  "dependencies": ["lucide-react"],
+  "registryDependencies": ["button", "card"],
+  "files": [
+    {
+      "path": "src/registry/new-york/blocks/marketing-ui/cta-section/cta-section-10/page.tsx",
+      "content": "import CTA from '@/registry/new-york/components/blocks/cta-section-10/cta-section-10'\n\nconst CTASection = () => {\n  return <CTA />\n}\n\nexport default CTASection\n",
+      "type": "registry:page",
+      "target": "app/cta-section-10/page.tsx"
+    },
+    {
+      "path": "src/registry/new-york/components/blocks/cta-section-10/cta-section-10.tsx",
+      "content": "import { ArrowRightIcon } from 'lucide-react'\n\nimport { Button } from '@/registry/new-york/ui/button'\nimport { Card, CardContent } from '@/registry/new-york/ui/card'\n\nconst CTASection = () => {\n  return (\n    <section className='bg-primary py-8 sm:py-16 lg:py-24'>\n      <div className='mx-auto max-w-5xl px-4 sm:px-6 lg:px-8'>\n        <Card className='bg-primary rounded-none border-0 shadow-none'>\n          <CardContent className='flex justify-between gap-6 max-lg:flex-col md:px-8 lg:items-center'>\n            <div className='space-y-4'>\n              <h2 className='text-primary-foreground text-2xl font-semibold md:text-3xl lg:text-4xl'>\n                Ready to Dive Deeper?\n              </h2>\n              <p className='text-muted-foreground text-lg md:text-xl'>\n                Everything from setup to advanced features is covered in our docs.\n              </p>\n            </div>\n            <div>\n              <Button size='lg' variant='secondary' className='shrink-0 rounded-lg text-base has-[>svg]:px-6' asChild>\n                <a href='#' className='inline-flex items-center gap-2'>\n                  View Docs\n                  <ArrowRightIcon className='size-5' />\n                </a>\n              </Button>\n            </div>\n          </CardContent>\n        </Card>\n      </div>\n    </section>\n  )\n}\n\nexport default CTASection\n",
+      "type": "registry:component",
+      "target": "components/shadcn-studio/blocks/cta-section-10/cta-section-10.tsx"
+    }
+  ]
+}

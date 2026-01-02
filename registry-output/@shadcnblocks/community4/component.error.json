@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "community4",
+  "url": "https://shadcnblocks.com/r/community4.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "community4",
+    "type": "registry:block",
+    "title": "Community",
+    "description": "A component with a title, description, and a grid of links to social platforms, each with an icon, a unique color background, headings, and descriptions.",
+    "dependencies": ["lucide-react", "react-icons"],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/community4.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:16.518Z"
+}

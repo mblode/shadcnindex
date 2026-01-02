@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "specials-reaction-dock-demo",
+  "type": "registry:component",
+  "title": "Reaction Dock Demo",
+  "description": "Demo for the Reaction Dock component",
+  "dependencies": ["motion", "lucide-react"],
+  "files": [
+    {
+      "path": "registry/new-york/animations/specials/reaction-dock-demo.tsx",
+      "content": "\"use client\";\n\nimport { ReactionDock } from \"./reaction-dock\";\nimport { Heart, ThumbsUp, Laugh, Frown, Angry, PartyPopper } from \"lucide-react\";\n\nexport default function ReactionDockDemo() {\n    const reactions = [\n        {\n            icon: <ThumbsUp className=\"h-5 w-5 text-zinc-500 dark:text-zinc-400\" />,\n            label: \"Like\",\n            onClick: () => console.log(\"Like\"),\n        },\n        {\n            icon: <Heart className=\"h-5 w-5 text-red-500\" />,\n            label: \"Love\",\n            onClick: () => console.log(\"Love\"),\n        },\n        {\n            icon: <Laugh className=\"h-5 w-5 text-amber-500\" />,\n            label: \"Haha\",\n            onClick: () => console.log(\"Haha\"),\n        },\n        {\n            icon: <PartyPopper className=\"h-5 w-5 text-blue-500\" />,\n            label: \"Celebrate\",\n            onClick: () => console.log(\"Celebrate\"),\n        },\n        {\n            icon: <Frown className=\"h-5 w-5 text-zinc-500 dark:text-zinc-400\" />,\n            label: \"Sad\",\n            onClick: () => console.log(\"Sad\"),\n        },\n        {\n            icon: <Angry className=\"h-5 w-5 text-orange-500\" />,\n            label: \"Angry\",\n            onClick: () => console.log(\"Angry\"),\n        },\n    ];\n\n    return (\n        <div className=\"flex min-h-[200px] items-center justify-center p-8\">\n            <ReactionDock items={reactions} />\n        </div>\n    );\n}\n",
+      "type": "registry:component"
+    }
+  ]
+}

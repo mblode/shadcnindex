@@ -1,0 +1,25 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "hero103",
+  "url": "https://shadcnblocks.com/r/hero103.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "hero103",
+    "type": "registry:block",
+    "title": "Hero",
+    "description": "A component with a split layout containing text and CTA buttons on one side, and a layered image gallery on the other, followed by a logo carousel.",
+    "dependencies": [
+      "embla-carousel-auto-scroll",
+      "embla-carousel-autoplay",
+      "lucide-react"
+    ],
+    "registryDependencies": ["button", "carousel"],
+    "files": [
+      {
+        "path": "code/block/hero103.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:33.651Z"
+}

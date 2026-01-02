@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "multiple-selector-controlled",
+  "type": "registry:component",
+  "title": "Multiple Selector Controlled",
+  "description": "component for the Multiple Selector Controlled",
+  "registryDependencies": ["@spectrumui/multiple-selector-dependencies"],
+  "files": [
+    {
+      "path": "app/registry/multiple-selector/usage/multiple-selector-controlled.tsx",
+      "content": "\"use client\";\nimport React from \"react\";\nimport MultipleSelector, {\n  Option,\n} from \"@/app/registry/spectrumui/multiple-selector-dependencies\";\n\nconst OPTIONS: Option[] = [\n  { label: \"nextjs\", value: \"Nextjs\" },\n  { label: \"React\", value: \"react\" },\n  { label: \"Remix\", value: \"remix\" },\n  { label: \"Vite\", value: \"vite\" },\n  { label: \"Nuxt\", value: \"nuxt\" },\n  { label: \"Vue\", value: \"vue\" },\n  { label: \"Svelte\", value: \"svelte\" },\n  { label: \"Angular\", value: \"angular\" },\n  { label: \"Ember\", value: \"ember\" },\n  { label: \"Gatsby\", value: \"gatsby\" },\n  { label: \"Astro\", value: \"astro\" },\n];\n\nconst MultipleSelectorControlled = () => {\n  const [value, setValue] = React.useState<Option[]>([]);\n  return (\n    <div className=\"flex w-full flex-col gap-5 px-10\">\n      <p className=\"text-primary\">\n        Your selection: {value.map((val) => val.label).join(\", \")}\n      </p>\n      <MultipleSelector\n        value={value}\n        onChange={setValue}\n        defaultOptions={OPTIONS}\n        placeholder=\"Select frameworks you like...\"\n        emptyIndicator={\n          <p className=\"text-center text-lg leading-10 text-gray-600 dark:text-gray-400\">\n            no results found.\n          </p>\n        }\n      />\n    </div>\n  );\n};\n\nexport default MultipleSelectorControlled;\n",
+      "type": "registry:component",
+      "target": "components/spectrumui/multiple-selector-controlled.tsx"
+    }
+  ]
+}

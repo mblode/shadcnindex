@@ -1,0 +1,39 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "tag",
+  "type": "registry:block",
+  "title": "Tag",
+  "registryDependencies": ["https://ui-play.skyroc.me/r/style.json"],
+  "files": [
+    {
+      "path": "src/components/tag/Tag.tsx",
+      "content": "'use client';\n\nimport { useComponentConfig } from '../config-provider/context';\nimport TagUI from './TagUI';\nimport type { TagProps } from './types';\n\nconst Tag = (props: TagProps) => {\n  const config = useComponentConfig('tag');\n\n  const mergedProps = {\n    ...config,\n    ...props\n  };\n\n  return (\n    <TagUI\n      {...mergedProps}\n    />\n  );\n};\n\nTag.displayName = 'Tag';\n\nexport default Tag;\n",
+      "type": "registry:ui",
+      "target": "components/tag/Tag.tsx"
+    },
+    {
+      "path": "src/components/tag/TagUI.tsx",
+      "content": "import { cn } from '@/lib/utils';\nimport { tagVariants } from './tag-variants';\nimport type { TagProps } from './types';\n\nconst TagUI = (props: TagProps) => {\n  const { className, color, shape, size, variant, ...rest } = props;\n\n  const mergedCls = cn(tagVariants({ color, shape, size, variant }), className);\n\n  return (\n    <div\n      className={mergedCls}\n      data-slot=\"tag\"\n      {...rest}\n    />\n  );\n};\n\nTagUI.displayName = 'TagUI';\n\nexport default TagUI;\n",
+      "type": "registry:ui",
+      "target": "components/tag/TagUI.tsx"
+    },
+    {
+      "path": "src/components/tag/index.ts",
+      "content": "export { default as Tag } from './Tag';\n\nexport * from './types';\n",
+      "type": "registry:ui",
+      "target": "components/tag/index.ts"
+    },
+    {
+      "path": "src/components/tag/tag-variants.ts",
+      "content": "import { tv } from 'tailwind-variants';\nimport type { VariantProps } from 'tailwind-variants';\n\nexport const tagVariants = tv({\n  base: 'inline-flex items-center border font-semibold',\n  compoundVariants: [\n    {\n      class: `bg-primary text-primary-foreground`,\n      color: 'primary',\n      variant: 'solid'\n    },\n    {\n      class: `bg-destructive text-destructive-foreground`,\n      color: 'destructive',\n      variant: 'solid'\n    },\n    {\n      class: `bg-success text-success-foreground`,\n      color: 'success',\n      variant: 'solid'\n    },\n    {\n      class: `bg-warning text-warning-foreground`,\n      color: 'warning',\n      variant: 'solid'\n    },\n    {\n      class: `bg-info text-info-foreground`,\n      color: 'info',\n      variant: 'solid'\n    },\n    {\n      class: `bg-carbon text-carbon-foreground`,\n      color: 'carbon',\n      variant: 'solid'\n    },\n    {\n      class: `bg-secondary text-secondary-foreground`,\n      color: 'secondary',\n      variant: 'solid'\n    },\n    {\n      class: `bg-accent text-accent-foreground`,\n      color: 'accent',\n      variant: 'solid'\n    },\n    {\n      class: 'bg-primary/10',\n      color: 'primary',\n      variant: ['soft', 'ghost']\n    },\n    {\n      class: 'bg-destructive/10',\n      color: 'destructive',\n      variant: ['soft', 'ghost']\n    },\n    {\n      class: 'bg-success/10',\n      color: 'success',\n      variant: ['soft', 'ghost']\n    },\n    {\n      class: 'bg-warning/10',\n      color: 'warning',\n      variant: ['soft', 'ghost']\n    },\n    {\n      class: 'bg-info/10',\n      color: 'info',\n      variant: ['soft', 'ghost']\n    },\n    {\n      class: 'bg-carbon/10',\n      color: 'carbon',\n      variant: ['soft', 'ghost']\n    },\n    {\n      class: 'bg-secondary-foreground/5',\n      color: 'secondary',\n      variant: ['soft', 'ghost']\n    },\n    {\n      class: 'bg-accent-foreground/5',\n      color: 'accent',\n      variant: ['soft', 'ghost']\n    }\n  ],\n  defaultVariants: {\n    color: 'primary',\n    shape: 'auto',\n    size: 'md',\n    variant: 'solid'\n  },\n  variants: {\n    color: {\n      accent: 'border-accent-foreground/50 text-accent-foreground',\n      carbon: 'border-carbon text-carbon',\n      destructive: 'border-destructive text-destructive',\n      info: 'border-info text-info',\n      primary: 'border-primary text-primary',\n      secondary: 'border-secondary-foreground/50 text-secondary-foreground',\n      success: 'border-success text-success',\n      warning: 'border-warning text-warning'\n    },\n    shape: {\n      auto: 'rounded-md',\n      rounded: 'rounded-full'\n    },\n    size: {\n      '2xl': 'gap-2 h-7 px-4 text-base',\n      'lg': 'gap-1.25 h-5 px-2.5 text-xs',\n      'md': 'gap-1 h-4.5 px-2 text-2xs',\n      'sm': 'gap-0.75 h-4 px-1.5 text-3xs',\n      'xl': 'gap-1.5 h-6 px-3 text-sm',\n      'xs': 'gap-0.5 h-3.5 px-1 text-4xs'\n    },\n    variant: {\n      ghost: '',\n      outline: 'bg-background',\n      pure: 'bg-background text-foreground border-border',\n      raw: 'bg-transparent border-0',\n      soft: 'border-0',\n      solid: ''\n    }\n  }\n});\n\ntype TagVariants = VariantProps<typeof tagVariants>;\n\nexport type TagVariant = NonNullable<TagVariants['variant']>;\n\nexport type TagShape = NonNullable<TagVariants['shape']>;\n",
+      "type": "registry:ui",
+      "target": "components/tag/tag-variants.ts"
+    },
+    {
+      "path": "src/components/tag/types.ts",
+      "content": "import type { StyledComponentProps, ThemeColor } from '@/types/shared';\nimport type { TagShape, TagVariant } from './tag-variants';\n\n/**\n * Props for the Tag component.\n * A small, styled label component used to highlight, categorize, or mark items.\n *\n * @example\n * ```jsx\n * <Tag color=\"primary\" variant=\"solid\" shape=\"pill\">\n *   New\n * </Tag>\n * ```\n */\nexport interface TagProps extends StyledComponentProps<React.ComponentProps<'div'>> {\n  /**\n   * The color theme of the tag (e.g., primary, secondary, destructive, success, etc.).\n   */\n  color?: ThemeColor;\n  /**\n   * The shape variant of the tag (e.g., square, rounded, pill).\n   */\n  shape?: TagShape;\n  /**\n   * The visual style variant of the tag (e.g., solid, outline, subtle, ghost).\n   */\n  variant?: TagVariant;\n}\n\nexport type { TagShape, TagVariant };\n",
+      "type": "registry:ui",
+      "target": "components/tag/types.ts"
+    }
+  ]
+}

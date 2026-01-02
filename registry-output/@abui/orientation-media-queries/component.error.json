@@ -1,0 +1,17 @@
+{
+  "registry": "@abui",
+  "component": "orientation-media-queries",
+  "url": "https://abui.io/r/orientation-media-queries.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "orientation-media-queries",
+    "type": "registry:style",
+    "title": "Orientation Media Queries",
+    "description": "A set of device orientation media queries.",
+    "css": {
+      "@custom-variant portrait (@media (orientation: portrait))": {},
+      "@custom-variant landscape (@media (orientation: landscape))": {}
+    }
+  },
+  "fetchedAt": "2026-01-02T11:07:00.213Z"
+}

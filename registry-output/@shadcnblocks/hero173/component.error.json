@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "hero173",
+  "url": "https://shadcnblocks.com/r/hero173.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "hero173",
+    "type": "registry:block",
+    "title": "Hero",
+    "description": "A component displaying text, images in overlapped layout with buttons for action & video modal. Uses 2-column grid, with a dynamic video pop-up.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": ["aspect-ratio", "button", "dialog"],
+    "files": [
+      {
+        "path": "code/block/hero173.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:35.127Z"
+}

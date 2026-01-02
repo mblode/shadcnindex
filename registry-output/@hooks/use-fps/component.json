@@ -1,0 +1,14 @@
+{
+  "name": "use-fps",
+  "author": "Brendan Dash (https://shadcn-hooks.vercel.app)",
+  "description": "A hook to calculate the FPS",
+  "registryDependencies": ["@hooks/use-fps"],
+  "files": [
+    {
+      "path": "registry/hooks/use-fps.ts",
+      "content": "import { useEffect, useRef, useState } from 'react'\nimport { isBrowser } from '@/registry/lib/is-browser'\n\nexport interface UseFpsProps {\n  /**\n   * Calculate the FPS on every x frames.\n   * @default 10\n   */\n  every?: number\n}\n\nexport function useFps(options?: UseFpsProps) {\n  const { every = 10 } = options ?? {}\n  const [fps, setFps] = useState<number>(0)\n  const frameRef = useRef<number | null>(null)\n\n  useEffect(() => {\n    if (\n      !isBrowser ||\n      typeof performance === 'undefined' ||\n      typeof requestAnimationFrame === 'undefined'\n    ) {\n      return\n    }\n\n    let frameCount = 0\n    let lastFpsUpdate = performance.now()\n\n    const measureFps = () => {\n      const now = performance.now()\n      frameCount++\n\n      // Update FPS every x frames\n      if (frameCount >= every) {\n        const timeDiff = now - lastFpsUpdate\n        // Avoid division by zero or very small numbers\n        const currentFps =\n          timeDiff > 0 ? Math.round((frameCount * 1000) / timeDiff) : 0\n        setFps(currentFps)\n        frameCount = 0\n        lastFpsUpdate = now\n      }\n\n      frameRef.current = requestAnimationFrame(measureFps)\n    }\n\n    frameRef.current = requestAnimationFrame(measureFps)\n\n    return () => {\n      if (frameRef.current) {\n        cancelAnimationFrame(frameRef.current)\n      }\n    }\n  }, [every])\n\n  return fps\n}\n",
+      "type": "registry:hook"
+    }
+  ],
+  "type": "registry:hook"
+}

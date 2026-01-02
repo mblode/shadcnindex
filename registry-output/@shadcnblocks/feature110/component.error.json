@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature110",
+  "url": "https://shadcnblocks.com/r/feature110.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature110",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A component featuring badges, a carousel with avatars, and descriptive text blocks, structured in a 2-column layout, each containing dynamic, premium, and structured content blocks.",
+    "dependencies": ["embla-carousel-auto-scroll", "lucide-react"],
+    "registryDependencies": ["avatar", "badge", "carousel"],
+    "files": [
+      {
+        "path": "code/block/feature110.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:20.927Z"
+}

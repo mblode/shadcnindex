@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "shopping-cart18",
+  "url": "https://shadcnblocks.com/r/shopping-cart18.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "shopping-cart18",
+    "type": "registry:block",
+    "title": "Shopping-cart",
+    "description": "This component provides a dynamic shopping cart interface with functionalities to view, update item quantities, and remove items, along with calculating and displaying the subtotal. It utilizes a popover for cart interactions and includes visual elements for item display, quantity management, and checkout options.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": ["aspect-ratio", "button", "popover", "separator"],
+    "files": [
+      {
+        "path": "code/block/shopping-cart18.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:51.502Z"
+}

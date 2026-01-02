@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "logos10",
+  "url": "https://shadcnblocks.com/r/logos10.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "logos10",
+    "type": "registry:block",
+    "title": "Logos",
+    "description": "A carousel component showcasing company logos with automatic scrolling feature. Includes a header and user prompt button. Each logo is numbered and arranged in a responsive grid.",
+    "dependencies": ["embla-carousel-auto-scroll"],
+    "registryDependencies": ["carousel"],
+    "files": [
+      {
+        "path": "code/block/logos10.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:41.609Z"
+}

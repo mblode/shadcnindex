@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "awards4",
+  "url": "https://shadcnblocks.com/r/awards4.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "awards4",
+    "type": "registry:block",
+    "title": "Awards",
+    "description": "A component displays awards in a table with details like logo, name, nomination, and year, with a large title and a date range subtitle.",
+    "dependencies": ["react"],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/awards4.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:11.986Z"
+}

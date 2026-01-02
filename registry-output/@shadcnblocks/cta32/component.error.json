@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "cta32",
+  "url": "https://shadcnblocks.com/r/cta32.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "cta32",
+    "type": "registry:block",
+    "title": "Cta",
+    "description": "This component is designed to promote engagement by showcasing a compelling heading, supportive description, and two action buttons for user interaction. It also displays key statistics in a visually appealing grid format to highlight significant achievements or features.",
+    "dependencies": [],
+    "registryDependencies": ["button"],
+    "files": [
+      {
+        "path": "code/block/cta32.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:18.884Z"
+}

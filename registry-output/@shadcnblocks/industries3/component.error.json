@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "industries3",
+  "url": "https://shadcnblocks.com/r/industries3.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "industries3",
+    "type": "registry:block",
+    "title": "Industries",
+    "description": "This component displays a list of projects with details such as year, name, description, and a relevant image, allowing users to explore different project categories. Each project entry includes a hover effect that reveals additional information and provides a clickable link for further exploration.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/industries3.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:40.524Z"
+}

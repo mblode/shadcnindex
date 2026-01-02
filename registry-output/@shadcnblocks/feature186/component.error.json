@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature186",
+  "url": "https://shadcnblocks.com/r/feature186.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature186",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A tabbed component displaying features with icons, descriptions, and images. It toggles between three key features, each with its visual and text content.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": ["button", "tabs"],
+    "files": [
+      {
+        "path": "code/block/feature186.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:23.851Z"
+}

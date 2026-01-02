@@ -1,0 +1,13 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "button-with-icons-demo",
+  "type": "registry:example",
+  "registryDependencies": ["button"],
+  "files": [
+    {
+      "path": "src/registry/pure-ui/examples/button/button-with-icons-demo.tsx",
+      "content": "import {\n  GlobeIcon,\n  MailIcon,\n  PlusIcon,\n  Trash2Icon,\n  GitBranchIcon,\n} from \"lucide-react\";\n\nimport { Button } from \"@/registry/pure-ui/ui/button\";\n\nexport function ButtonWithIconsDemo() {\n  return (\n    <div className=\"flex flex-wrap gap-3\">\n      <Button variant=\"outline\" size=\"sm\">\n        <GitBranchIcon />\n        New Branch\n      </Button>\n    </div>\n  );\n}\n",
+      "type": "registry:example"
+    }
+  ]
+}

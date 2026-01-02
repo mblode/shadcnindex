@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "gallery7",
+  "url": "https://shadcnblocks.com/r/gallery7.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "gallery7",
+    "type": "registry:block",
+    "title": "Gallery",
+    "description": "A component that combines a 2-column text intro with a looping AI-themed image carousel. Unique feature: staggered image positions.",
+    "dependencies": ["embla-carousel-auto-scroll", "lucide-react"],
+    "registryDependencies": ["carousel"],
+    "files": [
+      {
+        "path": "code/block/gallery7.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:33.283Z"
+}

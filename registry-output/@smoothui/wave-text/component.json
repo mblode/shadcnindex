@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "wave-text",
+  "type": "registry:ui",
+  "title": "wave-text",
+  "description": "A WaveText component for SmoothUI.",
+  "author": "Eduardo Calvo <educlopez93@gmail.com>",
+  "dependencies": ["motion"],
+  "devDependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "type": "registry:ui",
+      "path": "index.tsx",
+      "content": "import { motion } from \"motion/react\";\nimport type React from \"react\";\n\nexport type WaveTextProps = {\n  children: string;\n  amplitude?: number;\n  speed?: number;\n  className?: string;\n};\n\nconst WaveText: React.FC<WaveTextProps> = ({\n  children,\n  amplitude = 8,\n  speed = 0.3,\n  className = \"\",\n}) => (\n  <span className={className} style={{ display: \"inline-block\" }}>\n    {children.split(\"\").map((char, i) => (\n      <motion.span\n        animate={{ y: [0, -amplitude, 0] }}\n        key={`${i}-${char}`}\n        style={{ display: \"inline-block\" }}\n        transition={{\n          repeat: Number.POSITIVE_INFINITY,\n          duration: speed * children.length,\n          delay: i * speed,\n          ease: \"easeInOut\",\n        }}\n      >\n        {char === \" \" ? \"\\u00A0\" : char}\n      </motion.span>\n    ))}\n  </span>\n);\n\nexport default WaveText;\n",
+      "target": "components/smoothui/wave-text/index.tsx"
+    }
+  ],
+  "css": {}
+}

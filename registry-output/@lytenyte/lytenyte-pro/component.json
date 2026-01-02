@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "lytenyte-pro",
+  "type": "registry:component",
+  "title": "LyteNyte PRO",
+  "description": "The commercial PRO edition of LyteNyte Grid, the fastest data grid every created for the modern web.",
+  "dependencies": ["@1771technologies/lytenyte-pro"],
+  "files": [
+    {
+      "path": "registry/lytenyte/lytenyte-pro.tsx",
+      "content": "import \"@1771technologies/lytenyte-pro/grid.css\";\nimport type {\n  Grid as G,\n  RowLayout,\n  RowNormalRowLayout,\n} from \"@1771technologies/lytenyte-pro/types\";\nimport { Grid } from \"@1771technologies/lytenyte-pro\";\nimport { memo, type ReactNode } from \"react\";\n\nexport function LyteNyte<T>({ grid }: { grid: G<T> }) {\n  const view = grid.view.useValue();\n\n  return (\n    <div className=\"lng-grid lng1771-shadcn w-full h-full\">\n      <Grid.Root grid={grid}>\n        <Grid.Viewport>\n          <Grid.Header>\n            {view.header.layout.map((headerRow, i) => {\n              return (\n                <Grid.HeaderRow headerRowIndex={i} key={i}>\n                  {headerRow.map((headerCell) => {\n                    if (headerCell.kind === \"group\")\n                      return (\n                        <Grid.HeaderGroupCell\n                          cell={headerCell}\n                          key={headerCell.idOccurrence}\n                        />\n                      );\n\n                    return (\n                      <Grid.HeaderCell\n                        className=\"flex items-center px-2\"\n                        cell={headerCell}\n                        key={headerCell.id}\n                      />\n                    );\n                  })}\n                </Grid.HeaderRow>\n              );\n            })}\n          </Grid.Header>\n          <Grid.RowsContainer>\n            <Grid.RowsTop>\n              <RowHandler rows={view.rows.top} />\n            </Grid.RowsTop>\n            <Grid.RowsCenter>\n              <RowHandler rows={view.rows.center} />\n            </Grid.RowsCenter>\n            <Grid.RowsBottom>\n              <RowHandler rows={view.rows.bottom} />\n            </Grid.RowsBottom>\n          </Grid.RowsContainer>\n        </Grid.Viewport>\n      </Grid.Root>\n    </div>\n  );\n}\n\nconst RowHandler = <T,>(props: { rows: RowLayout<T>[] }) => {\n  return props.rows.map((row) => {\n    if (row.kind === \"full-width\")\n      return <Grid.RowFullWidth key={row.id} row={row} />;\n\n    return <Row key={row.id} row={row} />;\n  });\n};\nfunction RowImpl<T>({ row }: { row: RowNormalRowLayout<T> }) {\n  return (\n    <Grid.Row key={row.id} row={row}>\n      {row.cells.map((cell) => {\n        return (\n          <Grid.Cell\n            className=\"flex items-center px-2\"\n            cell={cell}\n            key={cell.id}\n          />\n        );\n      })}\n    </Grid.Row>\n  );\n}\n\nconst Row = memo(RowImpl) as <T>(props: {\n  row: RowNormalRowLayout<T>;\n}) => ReactNode;\n",
+      "type": "registry:component"
+    },
+    {
+      "path": "registry/lytenyte/use-lytenyte-pro.tsx",
+      "content": "import {\n  Grid,\n  useClientRowDataSource,\n  useClientRowDataSourcePaginated,\n  useClientTreeDataSource,\n  useServerDataSource,\n} from \"@1771technologies/lytenyte-pro\";\n\nconst useLyteNyte = Grid.useLyteNyte;\nexport {\n  useLyteNyte,\n  useClientRowDataSource,\n  useClientRowDataSourcePaginated,\n  useServerDataSource,\n  useClientTreeDataSource,\n};\n",
+      "type": "registry:hook"
+    }
+  ]
+}

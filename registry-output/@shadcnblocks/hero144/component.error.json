@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "hero144",
+  "url": "https://shadcnblocks.com/r/hero144.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "hero144",
+    "type": "registry:block",
+    "title": "Hero",
+    "description": "A component featuring a 2-row layout of app icons (5 on the top, 4 on the bottom) and a centered title with a description beneath. Each app icon is styled with a unique visual effect.",
+    "dependencies": [],
+    "registryDependencies": ["aspect-ratio"],
+    "files": [
+      {
+        "path": "code/block/hero144.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:34.452Z"
+}

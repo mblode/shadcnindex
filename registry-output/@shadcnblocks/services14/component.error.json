@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "services14",
+  "url": "https://shadcnblocks.com/r/services14.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "services14",
+    "type": "registry:block",
+    "title": "Services",
+    "description": "A component showcasing 4 service areas in a grid with animated cards. It features a title, a description, and a call-to-action button. Each service card includes an image, title, and hover effect.",
+    "dependencies": ["framer-motion", "lucide-react"],
+    "registryDependencies": ["button", "card"],
+    "files": [
+      {
+        "path": "code/block/services14.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:50.241Z"
+}

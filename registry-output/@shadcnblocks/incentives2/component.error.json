@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "incentives2",
+  "url": "https://shadcnblocks.com/r/incentives2.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "incentives2",
+    "type": "registry:block",
+    "title": "Incentives",
+    "description": "This component displays a carousel featuring various incentives, such as tech assistance, quick exchanges, and premium wrapping, each highlighted with an associated icon and description. It allows users to easily browse through a list of service benefits, improving their overall shopping experience.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["carousel"],
+    "files": [
+      {
+        "path": "code/block/incentives2.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:40.217Z"
+}

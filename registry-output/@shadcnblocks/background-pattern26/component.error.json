@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "background-pattern26",
+  "url": "https://shadcnblocks.com/r/background-pattern26.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "background-pattern26",
+    "type": "registry:block",
+    "title": "Background-pattern",
+    "description": "This component creates a visually appealing background pattern using intersecting linear and radial gradients, ideal for adding texture and depth to any layout. It also allows the integration of additional features or content by utilizing a placeholder element.",
+    "dependencies": [],
+    "registryDependencies": ["https://shadcnblocks.com/r/pattern-placeholder"],
+    "files": [
+      {
+        "path": "code/block/background-pattern26.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:12.857Z"
+}

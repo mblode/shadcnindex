@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "timeline14",
+  "url": "https://shadcnblocks.com/r/timeline14.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "timeline14",
+    "type": "registry:block",
+    "title": "Timeline",
+    "description": "A timeline component showcasing key milestones, uses intersection observer for active item highlight, includes sticky year indicator.",
+    "dependencies": ["react"],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/timeline14.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:54.656Z"
+}

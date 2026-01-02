@@ -1,0 +1,30 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "payment-methods2",
+  "url": "https://shadcnblocks.com/r/payment-methods2.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "payment-methods2",
+    "type": "registry:block",
+    "title": "Payment-methods",
+    "description": "This component allows users to manage payment methods, supporting actions such as adding, editing, and removing cards or PayPal accounts. It features a user-friendly interface for setting a default payment method and includes a visual grid layout for displaying current payment methods with logos.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": [
+      "badge",
+      "button",
+      "card",
+      "dropdown-menu",
+      "input",
+      "label",
+      "radio-group",
+      "select"
+    ],
+    "files": [
+      {
+        "path": "code/block/payment-methods2.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:43.365Z"
+}

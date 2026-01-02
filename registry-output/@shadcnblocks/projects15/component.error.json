@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "projects15",
+  "url": "https://shadcnblocks.com/r/projects15.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "projects15",
+    "type": "registry:block",
+    "title": "Projects",
+    "description": "A component showcasing video projects with hover-play functionality, dynamic text overlays for studio names and titles, and a header section for exploration.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/projects15.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:48.122Z"
+}

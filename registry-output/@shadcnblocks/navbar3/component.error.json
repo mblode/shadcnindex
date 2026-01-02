@@ -1,0 +1,26 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "navbar3",
+  "url": "https://shadcnblocks.com/r/navbar3.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "navbar3",
+    "type": "registry:block",
+    "title": "Navbar",
+    "description": "A component featuring a dynamic, multi-layer navigation menu with submenu dropdowns for platform, use cases, developers, and resources, complete with images, links, badges, and a responsive mobile layout.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": [
+      "https://shadcnblocks.com/r/logo",
+      "badge",
+      "button",
+      "navigation-menu"
+    ],
+    "files": [
+      {
+        "path": "code/block/navbar3.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:42.463Z"
+}

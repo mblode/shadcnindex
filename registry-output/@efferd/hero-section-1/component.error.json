@@ -1,0 +1,38 @@
+{
+  "registry": "@efferd",
+  "component": "hero-section-1",
+  "url": "https://efferd.com/r/hero-section-1.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "hero-section-1",
+    "description": "Modern hero page with particle background and social login buttons.",
+    "registryDependencies": [
+      "button",
+      "https://magicui.design/r/grid-pattern.json",
+      "https://motion-primitives.com/c/infinite-slider.json"
+    ],
+    "files": [
+      {
+        "path": "registry/hero-section/1/hero.tsx",
+        "type": "registry:component",
+        "target": "~/components/home/hero.tsx"
+      },
+      {
+        "path": "registry/hero-section/1/header.tsx",
+        "type": "registry:component"
+      },
+      {
+        "path": "registry/hero-section/1/logo-cloud.tsx",
+        "type": "registry:component",
+        "target": "~/components/home/logo-cloud.tsx"
+      },
+      {
+        "path": "../../packages/core/src/logo.tsx",
+        "type": "registry:component"
+      }
+    ],
+    "categories": ["hero-section"],
+    "type": "registry:block"
+  },
+  "fetchedAt": "2026-01-02T11:08:58.933Z"
+}

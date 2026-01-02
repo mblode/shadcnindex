@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "extends": "none",
+  "name": "file-trigger-demo",
+  "title": "File Trigger",
+  "description": "file-trigger-demo",
+  "registryDependencies": ["https://intentui.com/r/file-trigger"],
+  "files": [
+    {
+      "path": "src/components/docs/buttons/file-trigger/file-trigger-demo.tsx",
+      "content": "\"use client\"\n\nimport { FileTrigger } from \"@/components/ui/file-trigger\"\n\nexport default function FileTriggerDemo() {\n  return <FileTrigger />\n}\n",
+      "type": "registry:page",
+      "target": "app/file-trigger-demo/page.tsx"
+    }
+  ],
+  "type": "registry:page"
+}

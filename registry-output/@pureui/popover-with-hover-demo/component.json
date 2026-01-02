@@ -1,0 +1,13 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "popover-with-hover-demo",
+  "type": "registry:example",
+  "registryDependencies": ["popover"],
+  "files": [
+    {
+      "path": "src/registry/pure-ui/examples/popover/popover-with-hover-demo.tsx",
+      "content": "import { CheckCheck } from \"lucide-react\";\n\nimport {\n  Popover,\n  PopoverDescription,\n  PopoverPopup,\n  PopoverTrigger,\n} from \"@/registry/pure-ui/ui/popover\";\n\nexport const PopoverWithHoverDemo = () => {\n  return (\n    <Popover>\n      <PopoverTrigger\n        openOnHover\n        render={\n          <button className=\"inline-flex items-center gap-1 px-2 py-0.5 rounded-md border border-border/40 bg-secondary/50 hover:bg-secondary cursor-pointer\" />\n        }\n      >\n        <CheckCheck className=\"size-3.5 text-secondary-foreground\" />\n        <span className=\"text-secondary-foreground text-sm\">4</span>\n      </PopoverTrigger>\n      <PopoverPopup>\n        <PopoverDescription>Opened 4 times</PopoverDescription>\n        <div className=\"flex flex-col gap-2 mt-2\">\n          <div className=\"flex items-center justify-between gap-6\">\n            <p className=\"text-xs \">Luke Andrews</p>\n            <p className=\"text-xs text-muted-foreground\">just now</p>\n          </div>\n          <div className=\"flex items-center justify-between gap-6\">\n            <p className=\"text-xs \">Brooklyn Simmons</p>\n            <p className=\"text-xs text-muted-foreground\">2d ago, 12:04 PM</p>\n          </div>\n          <div className=\"flex items-center justify-between gap-6\">\n            <p className=\"text-xs \">Jenny Wilson</p>\n            <p className=\"text-xs text-muted-foreground\">Dec 24, 10:44 AM</p>\n          </div>\n          <div className=\"flex items-center justify-between gap-6\">\n            <p className=\"text-xs \">Floyd Miles</p>\n            <p className=\"text-xs text-muted-foreground\">Dec 21, 04:14 PM</p>\n          </div>\n        </div>\n      </PopoverPopup>\n    </Popover>\n  );\n};\n",
+      "type": "registry:example"
+    }
+  ]
+}

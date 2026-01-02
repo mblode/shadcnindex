@@ -1,0 +1,44 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "transitions-theme-toggle-slide-top",
+  "type": "registry:component",
+  "title": "Theme Toggle Slide Top",
+  "description": "Top to bottom slide animation for theme toggle using View Transitions API.",
+  "dependencies": [],
+  "files": [
+    {
+      "path": "registry/new-york/animations/transitions/theme-toggle-slide-top.tsx",
+      "content": "\"use client\";\nimport * as React from \"react\";\nexport interface ThemeToggleSlideTopProps {\n  children: React.ReactNode;\n  onToggle?: () => void;\n  theme?: \"light\" | \"dark\";\n  className?: string;\n  speed?: number;\n  blur?: number;\n}\nexport function ThemeToggleSlideTop({\n  children,\n  onToggle,\n  theme,\n  className,\n  speed = 0.5,\n  blur = 0,\n}: ThemeToggleSlideTopProps) {\n  const [isTransitioning, setIsTransitioning] = React.useState(false);\n  const handleClick = async () => {\n    if (isTransitioning) return;\n    if (!document.startViewTransition) {\n      onToggle?.();\n      return;\n    }\n    setIsTransitioning(true);\n    document.documentElement.style.setProperty(\n      \"--transition-speed\",\n      `${speed}s`,\n    );\n    document.documentElement.style.setProperty(\n      \"--transition-blur\",\n      `${blur}px`,\n    );\n    document.documentElement.classList.add(\"theme-slide-top\");\n    const transition = document.startViewTransition(() => {\n      onToggle?.();\n    });\n    try {\n      await transition.finished;\n    } catch (error) {\n      console.warn(\"Theme transition interrupted:\", error);\n    } finally {\n      document.documentElement.classList.remove(\"theme-slide-top\");\n      setIsTransitioning(false);\n    }\n  };\n  return (\n    <div\n      onClick={handleClick}\n      className={className}\n      style={{ pointerEvents: isTransitioning ? \"none\" : \"auto\" }}\n    >\n      {children}\n    </div>\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ],
+  "css": {
+    ":root": {
+      "--transition-speed": "0.5s",
+      "--transition-blur": "0px"
+    },
+    ".theme-slide-top::view-transition-old(root)": {
+      "animation": "slide-out-top var(--transition-speed) cubic-bezier(0.4, 0, 0.2, 1)",
+      "filter": "blur(var(--transition-blur))"
+    },
+    ".theme-slide-top::view-transition-new(root)": {
+      "animation": "slide-in-top var(--transition-speed) cubic-bezier(0.4, 0, 0.2, 1)",
+      "filter": "blur(var(--transition-blur))"
+    },
+    "@keyframes slide-out-top": {
+      "to": {
+        "transform": "translateY(-100%)"
+      }
+    },
+    "@keyframes slide-in-top": {
+      "from": {
+        "transform": "translateY(-100%)"
+      }
+    },
+    "@media (prefers-reduced-motion: reduce)": {
+      ".theme-slide-top::view-transition-group(*), .theme-slide-top::view-transition-old(*), .theme-slide-top::view-transition-new(*)": {
+        "animation": "none !important"
+      }
+    }
+  }
+}

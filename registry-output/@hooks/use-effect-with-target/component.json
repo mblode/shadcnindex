@@ -1,0 +1,14 @@
+{
+  "name": "use-effect-with-target",
+  "author": "Brendan Dash (https://shadcn-hooks.vercel.app)",
+  "description": "A hook to create an effect with a target element that re-runs when the target or dependencies change",
+  "registryDependencies": ["@hooks/create-effect-with-target"],
+  "files": [
+    {
+      "path": "registry/hooks/use-effect-with-target.ts",
+      "content": "import { useEffect } from 'react'\nimport { createEffectWithTarget } from '@/registry/lib/create-effect-with-target'\n\nexport const useEffectWithTarget = createEffectWithTarget(useEffect)\n",
+      "type": "registry:hook"
+    }
+  ],
+  "type": "registry:hook"
+}

@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "hover-card-hover-card-profile-1",
+  "url": "https://shadcnblocks.com/r/hover-card-hover-card-profile-1.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "hover-card-hover-card-profile-1",
+    "type": "registry:block",
+    "title": "Hover-card/hover-card-profile-",
+    "description": "A hover-card/hover-card-profile- example",
+    "dependencies": [],
+    "registryDependencies": ["avatar", "hover-card"],
+    "files": [
+      {
+        "path": "code/example/hover-card/hover-card-profile-1.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:15:21.764Z"
+}

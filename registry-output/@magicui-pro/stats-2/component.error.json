@@ -1,0 +1,20 @@
+{
+  "registry": "@magicui-pro",
+  "component": "stats-2",
+  "url": "https://pro.magicui.design/registry/stats-2",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "stats-2",
+    "type": "registry:block",
+    "files": [
+      {
+        "path": "registry/blocks/stats-2.tsx",
+        "type": "registry:component"
+      }
+    ],
+    "meta": {
+      "height": 436
+    }
+  },
+  "fetchedAt": "2026-01-02T11:10:48.678Z"
+}

@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature138",
+  "url": "https://shadcnblocks.com/r/feature138.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature138",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A component featuring three sections, each with an image and text side-by-side, headers, and a \"Learn more\" link. Alternates image/text order between sections.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/feature138.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:22.167Z"
+}

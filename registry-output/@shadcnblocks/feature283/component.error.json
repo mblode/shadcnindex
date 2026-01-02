@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature283",
+  "url": "https://shadcnblocks.com/r/feature283.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature283",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A component with an interactive image gallery, headline, text, and button. Features draggable, animate-on-scroll images with hover effects.",
+    "dependencies": ["framer-motion", "lucide-react", "react"],
+    "registryDependencies": ["button"],
+    "files": [
+      {
+        "path": "code/block/feature283.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:27.653Z"
+}

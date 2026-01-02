@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "hero157",
+  "url": "https://shadcnblocks.com/r/hero157.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "hero157",
+    "type": "registry:block",
+    "title": "Hero",
+    "description": "A hero component with a full-width background, features a tagline, a large heading, a descriptive text, and a button leading to projects. Utilizes overlay for text prominence.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["button"],
+    "files": [
+      {
+        "path": "code/block/hero157.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:34.582Z"
+}

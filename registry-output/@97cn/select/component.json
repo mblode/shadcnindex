@@ -1,0 +1,49 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "select",
+  "type": "registry:ui",
+  "title": "Select",
+  "description": "Windows 95 styled select dropdown component",
+  "dependencies": ["@radix-ui/react-select"],
+  "files": [
+    {
+      "path": "components/97cn/select.tsx",
+      "content": "\"use client\"\n\nimport * as React from \"react\"\nimport * as SelectPrimitive from \"@radix-ui/react-select\"\nimport { ChevronDown, ChevronUp } from \"lucide-react\"\nimport { cn } from \"@/lib/utils\"\n\nconst Win95Select = SelectPrimitive.Root\n\nconst Win95SelectGroup = SelectPrimitive.Group\n\nconst Win95SelectValue = SelectPrimitive.Value\n\nconst Win95SelectTrigger = React.forwardRef<\n  React.ElementRef<typeof SelectPrimitive.Trigger>,\n  React.ComponentPropsWithoutRef<typeof SelectPrimitive.Trigger>\n>(({ className, children, ...props }, ref) => (\n  <SelectPrimitive.Trigger\n    ref={ref}\n    className={cn(\n      \"flex h-8 w-full items-center justify-between bg-win95-white px-2 py-1 text-xs text-black win95-sunken placeholder:text-win95-dark-gray focus:outline-none focus:ring-1 focus:ring-win95-black disabled:cursor-not-allowed disabled:opacity-50 font-sans\",\n      className,\n    )}\n    {...props}\n  >\n    {children}\n    <SelectPrimitive.Icon asChild>\n      <ChevronDown className=\"h-3 w-3 opacity-50\" />\n    </SelectPrimitive.Icon>\n  </SelectPrimitive.Trigger>\n))\nWin95SelectTrigger.displayName = SelectPrimitive.Trigger.displayName\n\nconst Win95SelectScrollUpButton = React.forwardRef<\n  React.ElementRef<typeof SelectPrimitive.ScrollUpButton>,\n  React.ComponentPropsWithoutRef<typeof SelectPrimitive.ScrollUpButton>\n>(({ className, ...props }, ref) => (\n  <SelectPrimitive.ScrollUpButton\n    ref={ref}\n    className={cn(\"flex cursor-default items-center justify-center py-1\", className)}\n    {...props}\n  >\n    <ChevronUp className=\"h-3 w-3\" />\n  </SelectPrimitive.ScrollUpButton>\n))\nWin95SelectScrollUpButton.displayName = SelectPrimitive.ScrollUpButton.displayName\n\nconst Win95SelectScrollDownButton = React.forwardRef<\n  React.ElementRef<typeof SelectPrimitive.ScrollDownButton>,\n  React.ComponentPropsWithoutRef<typeof SelectPrimitive.ScrollDownButton>\n>(({ className, ...props }, ref) => (\n  <SelectPrimitive.ScrollDownButton\n    ref={ref}\n    className={cn(\"flex cursor-default items-center justify-center py-1\", className)}\n    {...props}\n  >\n    <ChevronDown className=\"h-3 w-3\" />\n  </SelectPrimitive.ScrollDownButton>\n))\nWin95SelectScrollDownButton.displayName = SelectPrimitive.ScrollDownButton.displayName\n\nconst Win95SelectContent = React.forwardRef<\n  React.ElementRef<typeof SelectPrimitive.Content>,\n  React.ComponentPropsWithoutRef<typeof SelectPrimitive.Content>\n>(({ className, children, position = \"popper\", ...props }, ref) => (\n  <SelectPrimitive.Portal>\n    <SelectPrimitive.Content\n      ref={ref}\n      className={cn(\n        \"relative z-50 max-h-96 min-w-32 overflow-hidden bg-win95-button-face win95-raised shadow-lg data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2\",\n        position === \"popper\" &&\n          \"data-[side=bottom]:translate-y-1 data-[side=left]:-translate-x-1 data-[side=right]:translate-x-1 data-[side=top]:-translate-y-1\",\n        className,\n      )}\n      position={position}\n      {...props}\n    >\n      <Win95SelectScrollUpButton />\n      <SelectPrimitive.Viewport\n        className={cn(\n          \"p-1\",\n          position === \"popper\" &&\n            \"h-[var(--radix-select-trigger-height)] w-full min-w-[var(--radix-select-trigger-width)]\",\n        )}\n      >\n        {children}\n      </SelectPrimitive.Viewport>\n      <Win95SelectScrollDownButton />\n    </SelectPrimitive.Content>\n  </SelectPrimitive.Portal>\n))\nWin95SelectContent.displayName = SelectPrimitive.Content.displayName\n\nconst Win95SelectLabel = React.forwardRef<\n  React.ElementRef<typeof SelectPrimitive.Label>,\n  React.ComponentPropsWithoutRef<typeof SelectPrimitive.Label>\n>(({ className, ...props }, ref) => (\n  <SelectPrimitive.Label\n    ref={ref}\n    className={cn(\"px-2 py-1.5 text-xs font-semibold text-black font-sans\", className)}\n    {...props}\n  />\n))\nWin95SelectLabel.displayName = SelectPrimitive.Label.displayName\n\nconst Win95SelectItem = React.forwardRef<\n  React.ElementRef<typeof SelectPrimitive.Item>,\n  React.ComponentPropsWithoutRef<typeof SelectPrimitive.Item>\n>(({ className, children, ...props }, ref) => (\n  <SelectPrimitive.Item\n    ref={ref}\n    className={cn(\n      \"relative flex w-full cursor-default select-none items-center px-2 py-1 text-xs text-black outline-none focus:bg-win95-highlight focus:text-win95-highlight-text data-[disabled]:pointer-events-none data-[disabled]:opacity-50 font-sans\",\n      className,\n    )}\n    {...props}\n  >\n    <SelectPrimitive.ItemText>{children}</SelectPrimitive.ItemText>\n  </SelectPrimitive.Item>\n))\nWin95SelectItem.displayName = SelectPrimitive.Item.displayName\n\nconst Win95SelectSeparator = React.forwardRef<\n  React.ElementRef<typeof SelectPrimitive.Separator>,\n  React.ComponentPropsWithoutRef<typeof SelectPrimitive.Separator>\n>(({ className, ...props }, ref) => (\n  <SelectPrimitive.Separator ref={ref} className={cn(\"-mx-1 my-1 h-px bg-win95-dark-gray\", className)} {...props} />\n))\nWin95SelectSeparator.displayName = SelectPrimitive.Separator.displayName\n\nexport {\n  Win95Select,\n  Win95SelectGroup,\n  Win95SelectValue,\n  Win95SelectTrigger,\n  Win95SelectContent,\n  Win95SelectLabel,\n  Win95SelectItem,\n  Win95SelectSeparator,\n  Win95SelectScrollUpButton,\n  Win95SelectScrollDownButton,\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "cssVars": {
+    "light": {
+      "win95-white": "#ffffff",
+      "win95-black": "#000000",
+      "win95-button-face": "#c0c0c0",
+      "win95-button-shadow": "#808080",
+      "win95-button-highlight": "#ffffff",
+      "win95-light-gray": "#dfdfdf"
+    },
+    "dark": {
+      "win95-white": "#ffffff",
+      "win95-black": "#000000",
+      "win95-button-face": "#c0c0c0",
+      "win95-button-shadow": "#808080",
+      "win95-button-highlight": "#ffffff",
+      "win95-light-gray": "#dfdfdf"
+    }
+  },
+  "css": {
+    "@layer utilities": {
+      ".win95-raised": {
+        "border-top": "2px solid var(--win95-button-highlight)",
+        "border-left": "2px solid var(--win95-button-highlight)",
+        "border-right": "2px solid var(--win95-button-shadow)",
+        "border-bottom": "2px solid var(--win95-button-shadow)"
+      },
+      ".win95-sunken": {
+        "border-top": "2px solid var(--win95-button-shadow)",
+        "border-left": "2px solid var(--win95-button-shadow)",
+        "border-right": "2px solid var(--win95-button-highlight)",
+        "border-bottom": "2px solid var(--win95-button-highlight)"
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "shader9",
+  "url": "https://shadcnblocks.com/r/shader9.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "shader9",
+    "type": "registry:block",
+    "title": "Shader",
+    "description": "This component uses WebGL and a shader to create an animated background with interactive mouse effects, rendering it into a Three.js canvas. Categorized under graphics and animation, it features customizable vertex and fragment shaders with dynamic uniforms for enhanced visual effects.",
+    "dependencies": ["@react-three/fiber", "react", "three"],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/shader9.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:51.118Z"
+}

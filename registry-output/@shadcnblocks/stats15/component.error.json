@@ -1,0 +1,26 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "stats15",
+  "url": "https://shadcnblocks.com/r/stats15.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "stats15",
+    "type": "registry:block",
+    "title": "Stats",
+    "description": "Dynamic stats display component with animated numbers, toggling year buttons, and an animated link illustration that changes based on the selected year. Features 4 columns of data.",
+    "dependencies": [
+      "@number-flow/react",
+      "framer-motion",
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": ["button"],
+    "files": [
+      {
+        "path": "code/block/stats15.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:52.357Z"
+}

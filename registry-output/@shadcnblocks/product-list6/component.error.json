@@ -1,0 +1,29 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "product-list6",
+  "url": "https://shadcnblocks.com/r/product-list6.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "product-list6",
+    "type": "registry:block",
+    "title": "Product-list",
+    "description": "This component is a product carousel designed to showcase a list of products with features such as stock status, pricing, and variant options. Users can view different product options by selecting various color variants and can quickly add products to their cart if they're in stock.",
+    "dependencies": ["@hookform/resolvers", "react", "react-hook-form", "zod"],
+    "registryDependencies": [
+      "https://shadcnblocks.com/r/price",
+      "aspect-ratio",
+      "button",
+      "card",
+      "carousel",
+      "form",
+      "radio-group"
+    ],
+    "files": [
+      {
+        "path": "code/block/product-list6.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:46.313Z"
+}

@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature266",
+  "url": "https://shadcnblocks.com/r/feature266.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature266",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A component showcasing a \"FRAGMENTS OF LIGHT & STILLNESS\" collection with a three-column grid of cards featuring image tooltips, staggered animations, and a hover effect enhancing visual context.",
+    "dependencies": ["framer-motion"],
+    "registryDependencies": ["card", "tooltip"],
+    "files": [
+      {
+        "path": "code/block/feature266.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:26.956Z"
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "extends": "none",
+  "name": "color-wheel-demo",
+  "title": "Color Wheel",
+  "description": "color-wheel-demo",
+  "registryDependencies": ["https://intentui.com/r/color-wheel"],
+  "files": [
+    {
+      "path": "src/components/docs/colors/color-wheel/color-wheel-demo.tsx",
+      "content": "\"use client\"\n\nimport { ColorWheel } from \"@/components/ui/color-wheel\"\n\nexport default function ColorWheelDemo() {\n  return <ColorWheel aria-label=\"Background color\" />\n}\n",
+      "type": "registry:page",
+      "target": "app/color-wheel-demo/page.tsx"
+    }
+  ],
+  "type": "registry:page"
+}

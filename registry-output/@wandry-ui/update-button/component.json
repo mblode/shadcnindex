@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "update-button",
+  "type": "registry:component",
+  "title": "UpdateButton",
+  "description": "A component for Wandry UI",
+  "dependencies": ["@wandry/inertia-form"],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/wandry-ui/update-button.tsx",
+      "content": "\"use client\";\nimport * as React from \"react\";\n\nexport type UpdateButtonProps = {};\n\nconst UpdateButton: React.FC<UpdateButtonProps> = (props) => {\n  return <button>Update</button>;\n};\n\nexport default UpdateButton;\n",
+      "type": "registry:component"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "loaders-skeleton",
+  "type": "registry:component",
+  "title": "Skeleton Loader",
+  "description": "Shimmer skeleton loader for content placeholders",
+  "dependencies": ["motion"],
+  "files": [
+    {
+      "path": "registry/new-york/animations/loaders/skeleton.tsx",
+      "content": "\"use client\";\nimport * as React from \"react\";\nimport { motion, HTMLMotionProps } from \"motion/react\";\nimport { cn } from \"@/lib/utils\";\nexport interface LoaderSkeletonProps extends HTMLMotionProps<\"div\"> {\n  width?: string | number;\n  height?: number;\n  borderRadius?: number;\n  baseColor?: string;\n  highlightColor?: string;\n  duration?: number;\n}\nexport function LoaderSkeleton({\n  className,\n  width = \"100%\",\n  height = 20,\n  borderRadius = 4,\n  baseColor,\n  highlightColor,\n  duration = 1.5,\n  ...props\n}: LoaderSkeletonProps) {\n  return (\n    <div\n      className={cn(\n        \"relative overflow-hidden bg-zinc-200 dark:bg-zinc-800\",\n        className\n      )}\n      style={{\n        width: width,\n        height: height,\n        borderRadius: borderRadius,\n        ...(baseColor && { backgroundColor: baseColor }),\n      }}\n    >\n      <motion.div\n        className=\"absolute inset-0\"\n        style={{\n          background: `linear-gradient(90deg, transparent, ${highlightColor || \"rgba(255, 255, 255, 0.3)\"\n            }, transparent)`,\n        }}\n        animate={{\n          x: [\"-100%\", \"100%\"],\n        }}\n        transition={{\n          duration,\n          ease: \"easeInOut\",\n          repeat: Infinity,\n        }}\n      />\n    </div>\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ]
+}

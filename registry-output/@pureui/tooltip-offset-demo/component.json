@@ -1,0 +1,13 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "tooltip-offset-demo",
+  "type": "registry:example",
+  "registryDependencies": ["tooltip"],
+  "files": [
+    {
+      "path": "src/registry/pure-ui/examples/tooltip/tooltip-offset-demo.tsx",
+      "content": "import {\n  Tooltip,\n  TooltipTrigger,\n  TooltipPopup,\n  TooltipProvider,\n} from \"@/registry/pure-ui/ui/tooltip\";\nimport { Button } from \"@/registry/pure-ui/ui/button\";\n\nexport const TooltipOffsetDemo = () => {\n  return (\n    <div className=\"flex items-center flex-wrap gap-4\">\n      <TooltipProvider>\n        <Tooltip>\n          <TooltipTrigger\n            render={<Button size=\"sm\" variant=\"outline\" radius=\"none\" />}\n          >\n            Default Offset (4)\n          </TooltipTrigger>\n          <TooltipPopup sideOffset={4}>\n            <p>Tooltip Content</p>\n          </TooltipPopup>\n        </Tooltip>\n\n        <Tooltip>\n          <TooltipTrigger\n            render={<Button size=\"sm\" variant=\"outline\" radius=\"none\" />}\n          >\n            15 Offset\n          </TooltipTrigger>\n          <TooltipPopup sideOffset={15}>\n            <p>Tooltip Content</p>\n          </TooltipPopup>\n        </Tooltip>\n\n        <Tooltip>\n          <TooltipTrigger\n            render={<Button size=\"sm\" variant=\"outline\" radius=\"none\" />}\n          >\n            -15 Offset\n          </TooltipTrigger>\n          <TooltipPopup sideOffset={-15}>\n            <p>Tooltip Content</p>\n          </TooltipPopup>\n        </Tooltip>\n      </TooltipProvider>\n    </div>\n  );\n};\n",
+      "type": "registry:example"
+    }
+  ]
+}

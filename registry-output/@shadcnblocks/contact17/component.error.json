@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "contact17",
+  "url": "https://shadcnblocks.com/r/contact17.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "contact17",
+    "type": "registry:block",
+    "title": "Contact",
+    "description": "A contact form component with 2 columns; one for form input, including text and select fields, and another for process steps and company logos. Includes FAQs and resources links.",
+    "dependencies": ["lucide-react", "react-hook-form"],
+    "registryDependencies": ["button", "form", "input", "select", "textarea"],
+    "files": [
+      {
+        "path": "code/block/contact17.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:17.515Z"
+}

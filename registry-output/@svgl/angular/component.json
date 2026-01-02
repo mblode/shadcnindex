@@ -1,0 +1,14 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "angular",
+  "title": "angular",
+  "files": [
+    {
+      "path": "././static/components-generated/angular.tsx",
+      "content": "import type { SVGProps } from \"react\";\n\nconst Angular = (props: SVGProps<SVGSVGElement>) => (\n  <svg {...props} fill=\"none\" viewBox=\"0 0 242 256\">\n    <g clipPath=\"url(#a)\">\n      <mask\n        id=\"b\"\n        width=\"242\"\n        height=\"256\"\n        x=\"0\"\n        y=\"0\"\n        maskUnits=\"userSpaceOnUse\"\n        style={{ maskType: \"luminance\" }}\n      >\n        <path fill=\"#fff\" d=\"M0 0h242v256H0V0Z\" />\n      </mask>\n      <g mask=\"url(#b)\">\n        <path\n          fill=\"url(#c)\"\n          d=\"m241 43-9 136L149 0l92 43Zm-58 176-62 36-63-36 12-31h101l12 31ZM121 68l32 80H88l33-80ZM9 179 0 43 92 0 9 179Z\"\n        />\n        <path\n          fill=\"url(#d)\"\n          d=\"m241 43-9 136L149 0l92 43Zm-58 176-62 36-63-36 12-31h101l12 31ZM121 68l32 80H88l33-80ZM9 179 0 43 92 0 9 179Z\"\n        />\n      </g>\n    </g>\n    <defs>\n      <linearGradient\n        id=\"c\"\n        x1=\"53.2\"\n        x2=\"245\"\n        y1=\"231.9\"\n        y2=\"140.7\"\n        gradientUnits=\"userSpaceOnUse\"\n      >\n        <stop stop-color=\"#E40035\" />\n        <stop offset=\".2\" stop-color=\"#F60A48\" />\n        <stop offset=\".4\" stop-color=\"#F20755\" />\n        <stop offset=\".5\" stop-color=\"#DC087D\" />\n        <stop offset=\".7\" stop-color=\"#9717E7\" />\n        <stop offset=\"1\" stop-color=\"#6C00F5\" />\n      </linearGradient>\n      <linearGradient\n        id=\"d\"\n        x1=\"44.5\"\n        x2=\"170\"\n        y1=\"30.7\"\n        y2=\"174\"\n        gradientUnits=\"userSpaceOnUse\"\n      >\n        <stop stop-color=\"#FF31D9\" />\n        <stop offset=\"1\" stop-color=\"#FF5BE1\" stop-opacity=\"0\" />\n      </linearGradient>\n      <clipPath id=\"a\">\n        <path fill=\"#fff\" d=\"M0 0h242v256H0z\" />\n      </clipPath>\n    </defs>\n  </svg>\n);\n\nexport { Angular };\n",
+      "type": "registry:component",
+      "target": "components/ui/svgs/angular.tsx"
+    }
+  ],
+  "type": "registry:component"
+}

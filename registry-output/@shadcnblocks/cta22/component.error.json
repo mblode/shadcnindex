@@ -1,0 +1,27 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "cta22",
+  "url": "https://shadcnblocks.com/r/cta22.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "cta22",
+    "type": "registry:block",
+    "title": "Cta",
+    "description": "A component features a 3-column layout, with the first two columns merged to showcase an app download CTA and mockups, and the third column for email subscriptions.",
+    "dependencies": [
+      "@hookform/resolvers",
+      "lucide-react",
+      "react-hook-form",
+      "react-icons",
+      "zod"
+    ],
+    "registryDependencies": ["button", "form", "input"],
+    "files": [
+      {
+        "path": "code/block/cta22.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:18.600Z"
+}

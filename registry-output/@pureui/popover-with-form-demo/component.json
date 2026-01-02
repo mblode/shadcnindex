@@ -1,0 +1,13 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "popover-with-form-demo",
+  "type": "registry:example",
+  "registryDependencies": ["popover"],
+  "files": [
+    {
+      "path": "src/registry/pure-ui/examples/popover/popover-with-form-demo.tsx",
+      "content": "\"use client\";\n\nimport { useState, useTransition } from \"react\";\n\nimport {\n  Popover,\n  PopoverPopup,\n  PopoverTrigger,\n} from \"@/registry/pure-ui/ui/popover\";\nimport { Button } from \"@/registry/pure-ui/ui/button\";\nimport { Input } from \"@/registry/pure-ui/ui/input\";\n\nexport const PopoverWithFormDemo = () => {\n  const [open, setOpen] = useState(false);\n\n  const [isSubmitting, startSubmitting] = useTransition();\n\n  const handleSubmit = () => {\n    startSubmitting(async () => {\n      await new Promise((resolve) => setTimeout(resolve, 2000));\n      setOpen(false);\n    });\n  };\n\n  return (\n    <div className=\"flex flex-col gap-4\">\n      <Popover open={open} onOpenChange={setOpen}>\n        <PopoverTrigger\n          render={<Button size=\"sm\" radius=\"none\" variant=\"outline\" />}\n        >\n          <span>Customize</span>\n        </PopoverTrigger>\n        <PopoverPopup>\n          <div className=\"flex flex-col gap-2\">\n            <Input defaultValue=\"100%\" size=\"sm\" />\n            <Input defaultValue=\"300px\" size=\"sm\" />\n            <Input defaultValue=\"24px\" size=\"sm\" />\n            <Input defaultValue=\"30px\" size=\"sm\" />\n            <Button\n              className=\"w-full\"\n              size=\"sm\"\n              onClick={handleSubmit}\n              disabled={isSubmitting}\n            >\n              Submit\n            </Button>\n          </div>\n        </PopoverPopup>\n      </Popover>\n    </div>\n  );\n};\n",
+      "type": "registry:example"
+    }
+  ]
+}

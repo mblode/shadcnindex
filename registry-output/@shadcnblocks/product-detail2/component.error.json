@@ -1,0 +1,37 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "product-detail2",
+  "url": "https://shadcnblocks.com/r/product-detail2.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "product-detail2",
+    "type": "registry:block",
+    "title": "Product-detail",
+    "description": "This React component is designed for displaying product details, including images, price options, and specifications. It features an interactive image carousel with zoom functionality and allows users to select various product attributes such as color, material, and quantity, while also providing detailed product information through expandable sections.",
+    "dependencies": [
+      "@hookform/resolvers",
+      "lucide-react",
+      "photoswipe",
+      "react",
+      "react-hook-form",
+      "zod"
+    ],
+    "registryDependencies": [
+      "accordion",
+      "aspect-ratio",
+      "badge",
+      "button",
+      "carousel",
+      "form",
+      "input",
+      "radio-group"
+    ],
+    "files": [
+      {
+        "path": "code/block/product-detail2.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:45.565Z"
+}

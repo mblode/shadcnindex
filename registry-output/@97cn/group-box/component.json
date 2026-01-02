@@ -1,0 +1,39 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "group-box",
+  "type": "registry:ui",
+  "title": "Group Box",
+  "description": "Windows 95 styled group box component",
+  "dependencies": [],
+  "files": [
+    {
+      "path": "components/97cn/group-box.tsx",
+      "content": "import * as React from \"react\"\nimport { cn } from \"@/lib/utils\"\n\nexport interface Win95GroupBoxProps extends React.HTMLAttributes<HTMLFieldSetElement> {\n  label?: string\n}\n\nconst Win95GroupBox = React.forwardRef<HTMLFieldSetElement, Win95GroupBoxProps>(\n  ({ className, label, children, ...props }, ref) => {\n    return (\n      <fieldset\n        ref={ref}\n        className={cn(\n          \"border-2 border-win95-button-shadow border-t-win95-button-highlight border-l-win95-button-highlight bg-win95-button-face p-3 pt-2\",\n          className,\n        )}\n        {...props}\n      >\n        {label && <legend className=\"px-1 text-xs font-sans text-win95-black bg-win95-button-face\">{label}</legend>}\n        {children}\n      </fieldset>\n    )\n  },\n)\nWin95GroupBox.displayName = \"Win95GroupBox\"\n\nexport { Win95GroupBox }\n",
+      "type": "registry:ui"
+    }
+  ],
+  "cssVars": {
+    "light": {
+      "win95-button-face": "#c0c0c0",
+      "win95-black": "#000000",
+      "win95-button-shadow": "#808080",
+      "win95-button-highlight": "#ffffff"
+    },
+    "dark": {
+      "win95-button-face": "#c0c0c0",
+      "win95-black": "#000000",
+      "win95-button-shadow": "#808080",
+      "win95-button-highlight": "#ffffff"
+    }
+  },
+  "css": {
+    "@layer utilities": {
+      ".win95-sunken": {
+        "border-top": "2px solid var(--win95-button-shadow)",
+        "border-left": "2px solid var(--win95-button-shadow)",
+        "border-right": "2px solid var(--win95-button-highlight)",
+        "border-bottom": "2px solid var(--win95-button-highlight)"
+      }
+    }
+  }
+}

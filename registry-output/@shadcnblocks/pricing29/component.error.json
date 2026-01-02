@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "pricing29",
+  "url": "https://shadcnblocks.com/r/pricing29.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "pricing29",
+    "type": "registry:block",
+    "title": "Pricing",
+    "description": "A component displaying 3 pricing tiers with features and CTA buttons, highlighted by design variations for the middle tier.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": ["button"],
+    "files": [
+      {
+        "path": "code/block/pricing29.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:44.166Z"
+}

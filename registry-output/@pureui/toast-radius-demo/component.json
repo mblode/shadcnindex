@@ -1,0 +1,13 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "toast-radius-demo",
+  "type": "registry:example",
+  "registryDependencies": ["toast"],
+  "files": [
+    {
+      "path": "src/registry/pure-ui/examples/toast/toast-radius-demo.tsx",
+      "content": "\"use client\";\n\nimport { Button } from \"@/registry/pure-ui/ui/button\";\nimport { toast } from \"@/registry/pure-ui/ui/toast\";\n\nexport function ToastRadiusDemo() {\n  return (\n    <div className=\"flex flex-wrap gap-2\">\n      {[\n        [\"None\", \"none\"],\n        [\"Small\", \"sm\"],\n        [\"Medium\", \"md\"],\n        [\"Large\", \"lg\"],\n        [\"Full\", \"full\"],\n      ].map((radius) => (\n        <Button\n          key={radius[1]}\n          variant=\"outline\"\n          onClick={() =>\n            toast.add({\n              title: \"Toast title\",\n              description: \"Toast displayed successfully\",\n              data: {\n                radius: radius[1],\n              },\n              timeout: 10000000,\n            })\n          }\n        >\n          {radius[0]}\n        </Button>\n      ))}\n    </div>\n  );\n}\n",
+      "type": "registry:example"
+    }
+  ]
+}

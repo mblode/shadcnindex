@@ -1,0 +1,22 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "extends": "none",
+  "name": "search-field-validation-demo",
+  "title": "Search Field Validation",
+  "description": "search-field-validation-demo",
+  "dependencies": ["react-aria-components"],
+  "registryDependencies": [
+    "https://intentui.com/r/button",
+    "https://intentui.com/r/field",
+    "https://intentui.com/r/search-field"
+  ],
+  "files": [
+    {
+      "path": "src/components/docs/forms/search-field/search-field-validation-demo.tsx",
+      "content": "\"use client\"\n\nimport { Form } from \"react-aria-components\"\nimport { Button } from \"@/components/ui/button\"\nimport { FieldError, Label } from \"@/components/ui/field\"\nimport { SearchField, SearchInput } from \"@/components/ui/search-field\"\n\nexport default function SearchFieldValidationDemo() {\n  return (\n    <Form className=\"space-y-4\">\n      <SearchField isRequired>\n        <Label>Name</Label>\n        <SearchInput />\n        <FieldError />\n      </SearchField>\n      <Button type=\"submit\">Submit</Button>\n    </Form>\n  )\n}\n",
+      "type": "registry:page",
+      "target": "app/search-field-validation-demo/page.tsx"
+    }
+  ],
+  "type": "registry:page"
+}

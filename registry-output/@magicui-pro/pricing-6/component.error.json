@@ -1,0 +1,20 @@
+{
+  "registry": "@magicui-pro",
+  "component": "pricing-6",
+  "url": "https://pro.magicui.design/registry/pricing-6",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "pricing-6",
+    "type": "registry:block",
+    "files": [
+      {
+        "path": "registry/blocks/pricing-6.tsx",
+        "type": "registry:component"
+      }
+    ],
+    "meta": {
+      "height": 638
+    }
+  },
+  "fetchedAt": "2026-01-02T11:10:49.959Z"
+}

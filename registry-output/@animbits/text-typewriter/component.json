@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "text-typewriter",
+  "type": "registry:component",
+  "title": "Typewriter Text",
+  "description": "Text with typewriter effect and optional blinking cursor",
+  "dependencies": ["motion"],
+  "files": [
+    {
+      "path": "registry/new-york/animations/text/typewriter.tsx",
+      "content": "\"use client\";\nimport * as React from \"react\";\nimport { motion, HTMLMotionProps } from \"motion/react\";\nimport { cn } from \"@/lib/utils\";\nexport interface TextTypewriterProps\n  extends Omit<HTMLMotionProps<\"p\">, \"children\"> {\n  children: string;\n  delay?: number;\n  speed?: number;\n  cursor?: boolean;\n  cursorChar?: string;\n}\nexport function TextTypewriter({\n  children,\n  className,\n  delay = 0,\n  speed = 30,\n  cursor = true,\n  cursorChar = \"|\",\n  ...props\n}: TextTypewriterProps) {\n  const [displayedText, setDisplayedText] = React.useState(\"\");\n  const [currentIndex, setCurrentIndex] = React.useState(0);\n  const [isComplete, setIsComplete] = React.useState(false);\n  React.useEffect(() => {\n    if (currentIndex === 0) {\n      const startTimeout = setTimeout(() => {\n        setCurrentIndex(1);\n      }, delay * 1000);\n      return () => clearTimeout(startTimeout);\n    }\n    if (currentIndex <= children.length) {\n      const timeout = setTimeout(() => {\n        setDisplayedText(children.slice(0, currentIndex));\n        setCurrentIndex(currentIndex + 1);\n      }, 1000 / speed);\n      return () => clearTimeout(timeout);\n    } else {\n      setIsComplete(true);\n    }\n  }, [currentIndex, children, delay, speed]);\n  return (\n    <motion.p className={cn(className)} {...props}>\n      {displayedText}\n      {cursor && !isComplete && (\n        <motion.span\n          animate={{ opacity: [1, 0] }}\n          transition={{\n            duration: 0.5,\n            repeat: Infinity,\n            repeatType: \"reverse\",\n          }}\n          className=\"inline-block\"\n        >\n          {cursorChar}\n        </motion.span>\n      )}\n    </motion.p>\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ]
+}

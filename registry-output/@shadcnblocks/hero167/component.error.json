@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "hero167",
+  "url": "https://shadcnblocks.com/r/hero167.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "hero167",
+    "type": "registry:block",
+    "title": "Hero",
+    "description": "A dual-column component with text and buttons in one and dynamic images in the other, featuring outlined buttons that change on hover, and images within aspect ratios.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["aspect-ratio", "button"],
+    "files": [
+      {
+        "path": "code/block/hero167.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:35.053Z"
+}

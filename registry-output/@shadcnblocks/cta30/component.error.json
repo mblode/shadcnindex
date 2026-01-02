@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "cta30",
+  "url": "https://shadcnblocks.com/r/cta30.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "cta30",
+    "type": "registry:block",
+    "title": "Cta",
+    "description": "This component displays overlapping avatars, a bold title, a descriptive paragraph, and a featured button with a playful tagline next to a custom line graphic.",
+    "dependencies": [],
+    "registryDependencies": ["avatar", "button"],
+    "files": [
+      {
+        "path": "code/block/cta30.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:18.878Z"
+}

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "flow-launcher",
+  "title": "flow-launcher",
+  "files": [
+    {
+      "path": "././static/components-generated/flowLauncher.tsx",
+      "content": "import type { SVGProps } from \"react\";\n\nconst FlowLauncher = (props: SVGProps<SVGSVGElement>) => (\n  <svg\n    {...props}\n    xmlnsXlink=\"http://www.w3.org/1999/xlink\"\n    viewBox=\"0 0 382.6 382.5\"\n  >\n    <defs>\n      <linearGradient\n        id=\"a\"\n        x2=\"249.9\"\n        y1=\"191.3\"\n        y2=\"191.3\"\n        gradientUnits=\"userSpaceOnUse\"\n      >\n        <stop offset=\"0\" stop-color=\"#1b9de2\" />\n        <stop offset=\".2\" stop-color=\"#1595df\" />\n        <stop offset=\".7\" stop-color=\"#0680d7\" />\n        <stop offset=\"1\" stop-color=\"#0078d4\" />\n      </linearGradient>\n      <linearGradient\n        xlink:href=\"#a\"\n        id=\"b\"\n        x1=\"697.3\"\n        x2=\"809.9\"\n        y1=\"499.2\"\n        y2=\"499.2\"\n        gradientTransform=\"rotate(49.2 809.6 -269.1)\"\n      />\n      <linearGradient\n        id=\"c\"\n        x1=\"143.6\"\n        x2=\"393.5\"\n        y1=\"249.8\"\n        y2=\"249.8\"\n        gradientTransform=\"rotate(180 263.1 220.5)\"\n        gradientUnits=\"userSpaceOnUse\"\n      >\n        <stop offset=\"0\" stop-color=\"#0c59a4\" />\n        <stop offset=\"1\" stop-color=\"#114a8b\" />\n      </linearGradient>\n    </defs>\n    <path\n      fill=\"url(#a)\"\n      d=\"M117 382.5H0v-189C0 90.7 84 0 186.9 0h63v120.4h-54.6c-46.8 0-78 31.2-78 78l-.1 184.1z\"\n    />\n    <path\n      fill=\"url(#b)\"\n      d=\"m249.9 182.6.2-46.8h-54.7c-39 0-62.4 23.4-62.4 62.4l-.2 47 54.6-.1c39 0 62.5-23.4 62.5-62.5z\"\n    />\n    <path\n      fill=\"url(#c)\"\n      d=\"M265.5 0h117v189c0 102.8-84 193.5-186.8 193.5h-63V262.1h54.6c46.9 0 78.1-31.2 78.1-78L265.5 0z\"\n    />\n  </svg>\n);\n\nexport { FlowLauncher };\n",
+      "type": "registry:component",
+      "target": "components/ui/svgs/flowLauncher.tsx"
+    }
+  ],
+  "type": "registry:component"
+}

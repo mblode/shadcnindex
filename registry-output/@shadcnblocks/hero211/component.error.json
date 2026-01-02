@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "hero211",
+  "url": "https://shadcnblocks.com/r/hero211.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "hero211",
+    "type": "registry:block",
+    "title": "Hero",
+    "description": "A component featuring a hero block with a motivational title, a text block, an image carousel with pagination, a \"Get Started\" button with a unique pop-up text animation, and a marquee of cards at the bottom.",
+    "dependencies": ["framer-motion", "react", "swiper"],
+    "registryDependencies": ["button"],
+    "files": [
+      {
+        "path": "code/block/hero211.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:36.349Z"
+}

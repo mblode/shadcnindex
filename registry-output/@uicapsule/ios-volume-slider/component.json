@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "homepage": "https://uicapsule.com/ui/ios-volume-slider",
+  "name": "ios-volume-slider",
+  "type": "registry:block",
+  "author": "Kaiyu Hsu <uicapsule@kyh.io>",
+  "dependencies": ["@radix-ui/react-slider", "motion"],
+  "devDependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "type": "registry:file",
+      "path": "/ios-volume-slider.tsx",
+      "content": "import React, { useRef, useState } from \"react\";\nimport * as Slider from \"@radix-ui/react-slider\";\nimport {\n  animate,\n  motion,\n  useMotionValue,\n  useMotionValueEvent,\n  useTransform,\n} from \"motion/react\";\n\nfunction decay(value: number, max: number) {\n  let entry = value / max;\n  let sigmoid = 2 / (1 + Math.exp(-entry)) - 1;\n  let exit = sigmoid * max;\n\n  return exit;\n}\n\nexport function Volume() {\n  const [value, setValue] = useState([0]);\n  const [position, setPosition] = useState<\"top\" | \"middle\" | \"bottom\">(\n    \"middle\",\n  );\n\n  const clientY = useMotionValue(0);\n  const y = useMotionValue(1);\n\n  const ref = useRef<HTMLDivElement>(null);\n\n  useMotionValueEvent(clientY, \"change\", (latestValue) => {\n    if (!ref.current) return;\n\n    let overflow = latestValue - ref.current.getBoundingClientRect().top;\n\n    if (overflow < 0) {\n      y.jump(decay(overflow, 50));\n      setPosition(\"bottom\");\n    } else if (overflow > 200) {\n      y.jump(decay(overflow - 200, 50));\n      setPosition(\"top\");\n    } else {\n      y.jump(1);\n      setPosition(\"middle\");\n    }\n  });\n\n  return (\n    <div className=\"flex h-96 flex-col items-center justify-center gap-12\">\n      <Slider.Root\n        ref={ref}\n        className=\"relative flex h-[200px] w-[60px] touch-none flex-col items-center select-none\"\n        value={value}\n        onValueChange={setValue}\n        max={100}\n        step={1}\n        orientation=\"vertical\"\n        asChild\n      >\n        <motion.div\n          style={{\n            scaleY: useTransform(() => (200 - y.get()) / 200),\n            transformOrigin:\n              position === \"top\"\n                ? \"bottom\"\n                : position === \"bottom\"\n                  ? \"bottom\"\n                  : \"center\",\n          }}\n          onPointerMove={(events) => {\n            if (events.buttons > 0) {\n              clientY.set(events.clientY);\n            }\n          }}\n          onLostPointerCapture={() => {\n            animate(y, 1, { type: \"spring\", bounce: 0.5 });\n          }}\n        >\n          <Slider.Track className=\"relative w-full grow overflow-hidden rounded-xl bg-neutral-800\">\n            <Slider.Range className=\"absolute w-full bg-white\" />\n          </Slider.Track>\n        </motion.div>\n      </Slider.Root>\n\n      <div className=\"flex w-96 flex-col items-center gap-1\">\n        <span className=\"text-neutral-300\">value: {value[0]}</span>\n        <span className=\"text-neutral-300\">\n          y:{\" \"}\n          <motion.span>{useTransform(() => Math.floor(y.get()))}</motion.span>\n        </span>\n      </div>\n    </div>\n  );\n}\n",
+      "target": "uicapsule/ios-volume-slider/ios-volume-slider.tsx"
+    }
+  ]
+}

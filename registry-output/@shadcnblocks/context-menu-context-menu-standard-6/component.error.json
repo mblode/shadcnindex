@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "context-menu-context-menu-standard-6",
+  "url": "https://shadcnblocks.com/r/context-menu-context-menu-standard-6.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "context-menu-context-menu-standard-6",
+    "type": "registry:block",
+    "title": "Context-menu/context-menu-standard-",
+    "description": "A context-menu/context-menu-standard- example",
+    "dependencies": ["react"],
+    "registryDependencies": ["context-menu"],
+    "files": [
+      {
+        "path": "code/example/context-menu/context-menu-standard-6.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:15:13.372Z"
+}

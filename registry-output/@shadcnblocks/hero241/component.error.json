@@ -1,0 +1,24 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "hero241",
+  "url": "https://shadcnblocks.com/r/hero241.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "hero241",
+    "type": "registry:block",
+    "title": "Hero",
+    "description": "A component showcasing launch-ready interfaces, featuring a title, descriptive text, two buttons, and metrics on developer trust and time saving, with a gradient background.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": [
+      "https://ui.aceternity.com/registry/background-beams-with-collision.json",
+      "button"
+    ],
+    "files": [
+      {
+        "path": "code/block/hero241.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:37.596Z"
+}

@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "footer32",
+  "url": "https://shadcnblocks.com/r/footer32.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "footer32",
+    "type": "registry:block",
+    "title": "Footer",
+    "description": "This component, called Footer32, provides a customizable footer block featuring a pre-defined heading, descriptive text, a call-to-action button, and integration with social media links for platforms like Twitter, Instagram, and Facebook. It also allows for adding a support email link, making it suitable for enhancing connectivity and engagement on web applications.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["https://magicui.design/r/rainbow-button"],
+    "files": [
+      {
+        "path": "code/block/footer32.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:31.849Z"
+}

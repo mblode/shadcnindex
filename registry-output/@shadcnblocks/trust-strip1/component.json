@@ -1,0 +1,22 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "trust-strip1",
+  "title": "Trust-strip",
+  "description": "This component displays a set of trust indicators, each with an icon, a title, and an optional description, such as \"Free Shipping\" and \"Secure Payment.\" It can be customized with different trust items and styled with additional CSS classes.",
+  "dependencies": ["lucide-react", "clsx", "tailwind-merge"],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "code/block/trust-strip1.tsx",
+      "content": "import { RotateCcw, Shield, Star, Truck } from \"lucide-react\";\n\nimport { cn } from \"@/lib/utils\";\n\ninterface TrustItem {\n  icon: React.ReactNode;\n  title: string;\n  description?: string;\n}\n\ninterface TrustStrip1Props {\n  items?: TrustItem[];\n  className?: string;\n}\n\nconst DEFAULT_ITEMS: TrustItem[] = [\n  {\n    icon: <Truck className=\"size-5\" />,\n    title: \"Free Shipping\",\n    description: \"On orders over $50\",\n  },\n  {\n    icon: <RotateCcw className=\"size-5\" />,\n    title: \"Easy Returns\",\n    description: \"30-day return policy\",\n  },\n  {\n    icon: <Shield className=\"size-5\" />,\n    title: \"Secure Payment\",\n    description: \"100% protected\",\n  },\n  {\n    icon: <Star className=\"size-5\" />,\n    title: \"4.9/5 Rating\",\n    description: \"From 10,000+ reviews\",\n  },\n];\n\nconst TrustStrip1 = ({\n  items = DEFAULT_ITEMS,\n  className,\n}: TrustStrip1Props) => {\n  return (\n    <section className={cn(\"border-y bg-muted/30 py-6\", className)}>\n      <div className=\"container\">\n        <div className=\"grid grid-cols-2 gap-6 md:grid-cols-4\">\n          {items.map((item, index) => (\n            <div key={index} className=\"flex items-center gap-3\">\n              <div className=\"flex size-10 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary\">\n                {item.icon}\n              </div>\n              <div>\n                <p className=\"font-medium leading-tight\">{item.title}</p>\n                {item.description && (\n                  <p className=\"text-sm text-muted-foreground\">\n                    {item.description}\n                  </p>\n                )}\n              </div>\n            </div>\n          ))}\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { TrustStrip1 };\n\n",
+      "type": "registry:block"
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "content": "import { type ClassValue, clsx } from 'clsx';\nimport { twMerge } from 'tailwind-merge';\n\nexport function cn(...inputs: ClassValue[]) {\n  return twMerge(clsx(inputs));\n}\n",
+      "type": "registry:lib",
+      "target": ""
+    }
+  ],
+  "type": "registry:block"
+}

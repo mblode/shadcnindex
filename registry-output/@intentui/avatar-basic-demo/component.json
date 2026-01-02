@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "extends": "none",
+  "name": "avatar-basic-demo",
+  "title": "Avatar Basic",
+  "description": "avatar-basic-demo",
+  "registryDependencies": ["https://intentui.com/r/avatar"],
+  "files": [
+    {
+      "path": "src/components/docs/media/avatar/avatar-basic-demo.tsx",
+      "content": "import { Avatar } from \"@/components/ui/avatar\"\n\nexport default function AvatarBasicDemo() {\n  return <Avatar src=\"/images/avatar/slash.jpg\" alt=\"...\" />\n}\n",
+      "type": "registry:page",
+      "target": "app/avatar-basic-demo/page.tsx"
+    }
+  ],
+  "type": "registry:page"
+}

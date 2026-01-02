@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "cta12",
+  "url": "https://shadcnblocks.com/r/cta12.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "cta12",
+    "type": "registry:block",
+    "title": "Cta",
+    "description": "A call-to-action block featuring a heading, description, email input field, and a subscribe button arranged in a column, centered.",
+    "dependencies": [],
+    "registryDependencies": ["button"],
+    "files": [
+      {
+        "path": "code/block/cta12.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:18.302Z"
+}

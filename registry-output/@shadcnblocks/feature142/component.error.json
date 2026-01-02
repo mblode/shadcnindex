@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature142",
+  "url": "https://shadcnblocks.com/r/feature142.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature142",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A grid-based component with a unique layout, featuring an image and text in a stylized block with border details, accompanied by a list with icons and a badge.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["badge"],
+    "files": [
+      {
+        "path": "code/block/feature142.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:22.393Z"
+}

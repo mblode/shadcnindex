@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "cards-grayscale",
+  "type": "registry:component",
+  "title": "Grayscale Card",
+  "description": "A card with grayscale to color transition effect on hover.",
+  "dependencies": ["motion"],
+  "files": [
+    {
+      "path": "registry/new-york/animations/cards/grayscale.tsx",
+      "content": "\"use client\";\nimport * as React from \"react\";\nimport * as motion from \"framer-motion/client\";\nimport type { HTMLMotionProps } from \"motion/react\";\nimport { cn } from \"@/lib/utils\";\nexport interface CardGrayscaleProps\n  extends Omit<HTMLMotionProps<\"div\">, \"children\"> {\n  image?: string;\n  children?: React.ReactNode;\n  duration?: number;\n}\nexport function CardGrayscale({\n  image,\n  children,\n  className,\n  duration = 0.5,\n  ...props\n}: CardGrayscaleProps) {\n  const [isHovered, setIsHovered] = React.useState(false);\n  return (\n    <motion.div\n      className={cn(\"relative overflow-hidden\", className)}\n      onHoverStart={() => setIsHovered(true)}\n      onHoverEnd={() => setIsHovered(false)}\n      animate={{\n        filter: isHovered ? \"grayscale(0%)\" : \"grayscale(100%)\",\n      }}\n      transition={{ duration }}\n      {...props}\n    >\n      {image && (\n        <div\n          className=\"absolute inset-0 bg-cover bg-center\"\n          style={{ backgroundImage: `url(${image})` }}\n        />\n      )}\n      {children}\n    </motion.div>\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ]
+}

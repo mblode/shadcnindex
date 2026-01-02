@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "navbar8",
+  "url": "https://shadcnblocks.com/r/navbar8.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "navbar8",
+    "type": "registry:block",
+    "title": "Navbar",
+    "description": "A navigation component with dynamic background change on scroll and a responsive mobile menu, featuring logo, links with hover images, and buttons.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": ["button", "navigation-menu", "sheet"],
+    "files": [
+      {
+        "path": "code/block/navbar8.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:42.633Z"
+}

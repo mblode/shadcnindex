@@ -1,0 +1,22 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "extends": "none",
+  "name": "number-field-invalid-demo",
+  "title": "Number Field Invalid",
+  "description": "number-field-invalid-demo",
+  "dependencies": ["react-aria-components"],
+  "registryDependencies": [
+    "https://intentui.com/r/button",
+    "https://intentui.com/r/field",
+    "https://intentui.com/r/number-field"
+  ],
+  "files": [
+    {
+      "path": "src/components/docs/forms/number-field/number-field-invalid-demo.tsx",
+      "content": "\"use client\"\n\nimport { Form } from \"react-aria-components\"\nimport { Button } from \"@/components/ui/button\"\nimport { FieldError, Label } from \"@/components/ui/field\"\nimport { NumberField, NumberInput } from \"@/components/ui/number-field\"\n\nexport default function NumberFieldInvalidDemo() {\n  return (\n    <Form onSubmit={(e) => e.preventDefault()} className=\"space-y-4\">\n      <NumberField isRequired>\n        <Label>Cookies</Label>\n        <NumberInput />\n        <FieldError />\n      </NumberField>\n      <Button type=\"submit\">Submit</Button>\n    </Form>\n  )\n}\n",
+      "type": "registry:page",
+      "target": "app/number-field-invalid-demo/page.tsx"
+    }
+  ],
+  "type": "registry:page"
+}

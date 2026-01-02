@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "service7",
+  "url": "https://shadcnblocks.com/r/service7.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "service7",
+    "type": "registry:block",
+    "title": "Service",
+    "description": "A component showcasing UX/UI design services with sections on expertise, main content, and related services. It includes icons, titles, descriptions, and a grid layout of 1 to 3 columns.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/service7.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:50.076Z"
+}

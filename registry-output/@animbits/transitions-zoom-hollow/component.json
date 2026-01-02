@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "transitions-zoom-hollow",
+  "type": "registry:component",
+  "title": "Zoom Hollow Text",
+  "description": "A beautiful text transition that zooms in with a hollow outline effect.",
+  "dependencies": ["motion"],
+  "files": [
+    {
+      "path": "registry/new-york/animations/transitions/zoom-hollow.tsx",
+      "content": "\"use client\";\n\nimport * as React from \"react\";\nimport { motion, AnimatePresence } from \"motion/react\";\nimport { cn } from \"@/lib/utils\";\n\nexport interface ZoomHollowTextProps {\n    words: string[];\n    className?: string;\n    duration?: number;\n    interval?: number;\n    strokeWidth?: number;\n    fillColor?: string;\n    strokeColor?: string;\n}\n\nexport function ZoomHollowText({\n    words,\n    className,\n    duration = 0.8,\n    interval = 2500,\n    strokeWidth = 2,\n    fillColor = \"transparent\",\n    strokeColor = \"currentColor\",\n}: ZoomHollowTextProps) {\n    const [currentIndex, setCurrentIndex] = React.useState(0);\n\n    React.useEffect(() => {\n        const timer = setInterval(() => {\n            setCurrentIndex((prev) => (prev + 1) % words.length);\n        }, interval);\n\n        return () => clearInterval(timer);\n    }, [words.length, interval]);\n\n    return (\n        <div className={cn(\"relative inline-block\", className)}>\n            <AnimatePresence mode=\"wait\">\n                <motion.div\n                    key={currentIndex}\n                    initial={{\n                        scale: 0.5,\n                        opacity: 0,\n                        filter: \"blur(10px)\"\n                    }}\n                    animate={{\n                        scale: 1,\n                        opacity: 1,\n                        filter: \"blur(0px)\"\n                    }}\n                    exit={{\n                        scale: 1.5,\n                        opacity: 0,\n                        filter: \"blur(10px)\"\n                    }}\n                    transition={{\n                        duration,\n                        ease: [0.22, 1, 0.36, 1], // Custom easing for smooth effect\n                    }}\n                    className=\"relative\"\n                    style={{\n                        WebkitTextStroke: `${strokeWidth}px ${strokeColor}`,\n                        WebkitTextFillColor: fillColor,\n                        paintOrder: \"stroke fill\",\n                    }}\n                >\n                    {words[currentIndex]}\n                </motion.div>\n            </AnimatePresence>\n        </div>\n    );\n}\n",
+      "type": "registry:component"
+    }
+  ]
+}

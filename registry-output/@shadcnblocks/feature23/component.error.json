@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature23",
+  "url": "https://shadcnblocks.com/r/feature23.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature23",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A module showcasing 3 features with images, titles, descriptions, and &#x27;Learn more&#x27; links in a 3-column layout.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["badge"],
+    "files": [
+      {
+        "path": "code/block/feature23.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:25.830Z"
+}

@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "gallery17",
+  "url": "https://shadcnblocks.com/r/gallery17.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "gallery17",
+    "type": "registry:block",
+    "title": "Gallery",
+    "description": "A carousel component featuring an image gallery with navigation arrows and pagination dots. Each image scales and adjusts opacity on selection.",
+    "dependencies": ["react"],
+    "registryDependencies": ["carousel"],
+    "files": [
+      {
+        "path": "code/block/gallery17.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:32.428Z"
+}

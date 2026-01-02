@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature215",
+  "url": "https://shadcnblocks.com/r/feature215.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature215",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A carousel component showcasing AI editing features with video previews, titles, and summaries. Each carousel card plays its video on hover.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": ["aspect-ratio", "card", "carousel"],
+    "files": [
+      {
+        "path": "code/block/feature215.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:25.066Z"
+}

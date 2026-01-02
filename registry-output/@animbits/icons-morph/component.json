@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-morph",
+  "type": "registry:component",
+  "title": "Morph Icon",
+  "description": "An icon that morphs between different states (e.g., play → pause).",
+  "dependencies": ["motion"],
+  "files": [
+    {
+      "path": "registry/new-york/animations/icons/morph.tsx",
+      "content": "\"use client\";\nimport * as React from \"react\";\nimport * as motion from \"framer-motion/client\";\nimport type { SVGMotionProps } from \"motion/react\";\nimport { cn } from \"@/lib/utils\";\nexport interface MorphIconProps\n  extends Omit<SVGMotionProps<SVGSVGElement>, \"children\"> {\n  paths: string[];\n  duration?: number;\n  interval?: number;\n  strokeColor?: string;\n  strokeWidth?: number;\n}\nexport function MorphIcon({\n  paths,\n  className,\n  duration = 0.3,\n  interval = 2,\n  strokeColor = \"currentColor\",\n  strokeWidth = 2,\n  ...props\n}: MorphIconProps) {\n  const [currentIndex, setCurrentIndex] = React.useState(0);\n  React.useEffect(() => {\n    const timer = setInterval(() => {\n      setCurrentIndex((prev) => (prev + 1) % paths.length);\n    }, interval * 1000);\n    return () => clearInterval(timer);\n  }, [paths.length, interval]);\n  return (\n    <motion.svg\n      className={cn(className)}\n      fill=\"none\"\n      stroke={strokeColor}\n      strokeWidth={strokeWidth}\n      strokeLinecap=\"round\"\n      strokeLinejoin=\"round\"\n      {...props}\n    >\n      <motion.path\n        d={paths[currentIndex]}\n        animate={{ d: paths[currentIndex] }}\n        transition={{ duration, ease: \"easeInOut\" }}\n      />\n    </motion.svg>\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ]
+}

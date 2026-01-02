@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature12",
+  "url": "https://shadcnblocks.com/r/feature12.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature12",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A feature block using a carousel to display slides on various topics. Includes a progress bar and navigation buttons.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": ["badge", "card", "carousel", "progress"],
+    "files": [
+      {
+        "path": "code/block/feature12.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:21.391Z"
+}

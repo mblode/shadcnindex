@@ -1,0 +1,22 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "awards2",
+  "title": "Awards",
+  "description": "An awards listing component with a 2 column grid layout, displaying award titles and years across two sections.",
+  "dependencies": ["react", "clsx", "tailwind-merge"],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "code/block/awards2.tsx",
+      "content": "import React from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\ninterface Awards2Props {\n  className?: string;\n}\n\nconst Awards2 = ({ className }: Awards2Props) => {\n  const awards = [\n    { title: \"Creative Collaboration Award\", year: \"2023\" },\n    { title: \"Design Excellence Prize\", year: \"2023\" },\n    { title: \"Innovation in Web Development\", year: \"2022\" },\n    { title: \"Best User Experience Design\", year: \"2022\" },\n    { title: \"Outstanding Visual Design\", year: \"2021\" },\n    { title: \"Digital Innovation Award\", year: \"2021\" },\n    { title: \"Creative Technology Excellence\", year: \"2020\" },\n    { title: \"Best Interactive Design\", year: \"2020\" },\n    { title: \"Web Design Achievement\", year: \"2019\" },\n  ];\n\n  return (\n    <section className={cn(\"py-32\", className)}>\n      <div className=\"container\">\n        <div className=\"grid grid-cols-1 gap-20 lg:grid-cols-6\">\n          <div className=\"top-10 col-span-2 flex h-fit w-fit items-center gap-3 py-8 lg:sticky\">\n            <span className=\"size-3 bg-orange-500\" />\n            <p className=\"text-2xl text-foreground/30 uppercase\">AWARDS</p>\n          </div>\n          <ul className=\"col-span-4 w-full\">\n            {awards.map((award, index) => (\n              <li key={index} className=\"flex justify-between border-b py-4\">\n                <h3 className=\"text-2xl font-medium tracking-tight\">\n                  {award.title}\n                </h3>\n                <p className=\"font-mono text-lg tracking-tighter text-foreground/50\">\n                  {award.year}\n                </p>\n              </li>\n            ))}\n          </ul>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Awards2 };\n",
+      "type": "registry:block"
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "content": "import { type ClassValue, clsx } from 'clsx';\nimport { twMerge } from 'tailwind-merge';\n\nexport function cn(...inputs: ClassValue[]) {\n  return twMerge(clsx(inputs));\n}\n",
+      "type": "registry:lib",
+      "target": ""
+    }
+  ],
+  "type": "registry:block"
+}

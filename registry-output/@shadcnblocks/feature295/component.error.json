@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature295",
+  "url": "https://shadcnblocks.com/r/feature295.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature295",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "This component displays projects with filters for categories and roles, and a toggle to show all. It features a 1-3 column grid of project cards.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": ["badge", "button", "select"],
+    "files": [
+      {
+        "path": "code/block/feature295.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:28.159Z"
+}

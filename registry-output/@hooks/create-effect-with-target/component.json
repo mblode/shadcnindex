@@ -1,0 +1,15 @@
+{
+  "name": "create-effect-with-target",
+  "author": "Brendan Dash (https://shadcn-hooks.vercel.app)",
+  "description": "A hook to create an effect with a target.",
+  "dependencies": ["es-toolkit"],
+  "registryDependencies": ["@hooks/use-unmount"],
+  "files": [
+    {
+      "path": "registry/lib/create-effect-with-target.ts",
+      "content": "import { isBrowser, isEqual, isFunction } from 'es-toolkit'\nimport { useRef } from 'react'\nimport { useUnmount } from '@/registry/hooks/use-unmount'\nimport type {\n  DependencyList,\n  EffectCallback,\n  RefObject,\n  useEffect,\n  useLayoutEffect,\n} from 'react'\n\ntype TargetValue<T> = T | undefined | null\n\ntype TargetType = HTMLElement | Element | Window | Document\n\nexport type BasicTarget<T extends TargetType = Element> =\n  | (() => TargetValue<T>)\n  | TargetValue<T>\n  | RefObject<TargetValue<T>>\n\nexport function getTargetElement<T extends TargetType>(\n  target: BasicTarget<T>,\n  defaultElement?: T,\n) {\n  if (!isBrowser) {\n    return undefined\n  }\n\n  if (!target) {\n    return defaultElement\n  }\n\n  let targetElement: TargetValue<T>\n\n  if (isFunction(target)) {\n    targetElement = target()\n  } else if ('current' in target) {\n    targetElement = target.current\n  } else {\n    targetElement = target\n  }\n\n  return targetElement\n}\n\nexport function createEffectWithTarget(\n  useEffectType: typeof useEffect | typeof useLayoutEffect,\n) {\n  /**\n   *\n   * @param effect\n   * @param deps\n   * @param target target should compare ref.current vs ref.current, dom vs dom, ()=>dom vs ()=>dom\n   */\n  const useEffectWithTarget = (\n    effect: EffectCallback,\n    deps: DependencyList,\n    target: BasicTarget<any> | BasicTarget<any>[],\n  ) => {\n    const hasInitRef = useRef(false)\n\n    const lastElementRef = useRef<(Element | null)[]>([])\n    const lastDepsRef = useRef<DependencyList>([])\n\n    const unLoadRef = useRef<any>(undefined)\n\n    useEffectType(() => {\n      const targets = Array.isArray(target) ? target : [target]\n      const els = targets.map((item) => getTargetElement(item))\n\n      // init run\n      if (!hasInitRef.current) {\n        hasInitRef.current = true\n        lastElementRef.current = els\n        lastDepsRef.current = deps\n\n        unLoadRef.current = effect()\n        return\n      }\n\n      if (\n        els.length !== lastElementRef.current.length ||\n        !isEqual(lastElementRef.current, els) ||\n        !isEqual(lastDepsRef.current, deps)\n      ) {\n        unLoadRef.current?.()\n\n        lastElementRef.current = els\n        lastDepsRef.current = deps\n        unLoadRef.current = effect()\n      }\n    })\n\n    useUnmount(() => {\n      unLoadRef.current?.()\n      // for react-refresh\n      hasInitRef.current = false\n    })\n  }\n\n  return useEffectWithTarget\n}\n",
+      "type": "registry:lib"
+    }
+  ],
+  "type": "registry:lib"
+}

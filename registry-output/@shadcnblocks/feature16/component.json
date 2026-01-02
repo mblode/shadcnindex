@@ -1,0 +1,22 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "feature16",
+  "title": "Feature",
+  "description": "A component featuring a three-column layout, each with icons (Timer, ZoomIn, Zap) for \"Performance\", \"Quality\", and \"Innovation\", with descriptions.",
+  "dependencies": ["lucide-react", "clsx", "tailwind-merge"],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "code/block/feature16.tsx",
+      "content": "import { Timer, Zap, ZoomIn } from \"lucide-react\";\n\nimport { cn } from \"@/lib/utils\";\n\ninterface Feature16Props {\n  className?: string;\n}\n\nconst Feature16 = ({ className }: Feature16Props) => {\n  return (\n    <section className={cn(\"py-32\", className)}>\n      <div className=\"container\">\n        <p className=\"mb-4 text-sm text-muted-foreground lg:text-base\">\n          OUR VALUES\n        </p>\n        <h2 className=\"text-3xl font-medium lg:text-4xl\">Why Choose Us?</h2>\n        <div className=\"mt-14 grid gap-6 lg:mt-20 lg:grid-cols-3\">\n          <div className=\"rounded-lg bg-accent p-5\">\n            <span className=\"mb-8 flex size-12 items-center justify-center rounded-full bg-background\">\n              <Timer className=\"size-6\" />\n            </span>\n            <h3 className=\"mb-2 text-xl font-medium\">Performance</h3>\n            <p className=\"leading-7 text-muted-foreground\">\n              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt\n              beatae tenetur totam aut blanditis ipsa quaerat neque eaque, atque\n              doloremque! Eligendi.\n            </p>\n          </div>\n          <div className=\"rounded-lg bg-accent p-5\">\n            <span className=\"mb-8 flex size-12 items-center justify-center rounded-full bg-background\">\n              <ZoomIn className=\"size-6\" />\n            </span>\n            <h3 className=\"mb-2 text-xl font-medium\">Quality</h3>\n            <p className=\"leading-7 text-muted-foreground\">\n              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt\n              beatae tenetur totam aut blanditis ipsa quaerat neque eaque, atque\n              doloremque! Eligendi.\n            </p>\n          </div>\n          <div className=\"rounded-lg bg-accent p-5\">\n            <span className=\"mb-8 flex size-12 items-center justify-center rounded-full bg-background\">\n              <Zap className=\"size-6\" />\n            </span>\n            <h3 className=\"mb-2 text-xl font-medium\">Innovation</h3>\n            <p className=\"leading-7 text-muted-foreground\">\n              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt\n              beatae tenetur totam aut blanditis ipsa quaerat neque eaque, atque\n              doloremque! Eligendi.\n            </p>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature16 };\n",
+      "type": "registry:block"
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "content": "import { type ClassValue, clsx } from 'clsx';\nimport { twMerge } from 'tailwind-merge';\n\nexport function cn(...inputs: ClassValue[]) {\n  return twMerge(clsx(inputs));\n}\n",
+      "type": "registry:lib",
+      "target": ""
+    }
+  ],
+  "type": "registry:block"
+}

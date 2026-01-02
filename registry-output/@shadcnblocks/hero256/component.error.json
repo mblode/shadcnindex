@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "hero256",
+  "url": "https://shadcnblocks.com/r/hero256.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "hero256",
+    "type": "registry:block",
+    "title": "Hero",
+    "description": "The component features a prominent hero block that includes a dynamic heading, a badge, and call-to-action buttons for easy user interaction. It also integrates a features section with interactive cards highlighting key functionalities, each accompanied by icons and descriptions, aiming to streamline workflows and provide insightful analytics.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": ["button"],
+    "files": [
+      {
+        "path": "code/block/hero256.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:37.889Z"
+}

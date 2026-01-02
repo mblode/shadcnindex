@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "data-table-data-table-advanced-4",
+  "url": "https://shadcnblocks.com/r/data-table-data-table-advanced-4.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "data-table-data-table-advanced-4",
+    "type": "registry:block",
+    "title": "Data-table/data-table-advanced-",
+    "description": "A data-table/data-table-advanced- example",
+    "dependencies": ["@tanstack/react-table", "lucide-react"],
+    "registryDependencies": ["button", "dropdown-menu", "table"],
+    "files": [
+      {
+        "path": "code/example/data-table/data-table-advanced-4.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:15:13.884Z"
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "tailwind-gridlist",
+  "type": "registry:ui",
+  "title": "GridList",
+  "dependencies": [
+    "react",
+    "react-aria-components",
+    "tailwind-variants",
+    "tailwindcss-react-aria-components",
+    "tailwindcss-animate"
+  ],
+  "registryDependencies": [
+    "https://react-aria.adobe.com/registry/tailwind-checkbox.json",
+    "https://react-aria.adobe.com/registry/tailwind-utils.json"
+  ],
+  "files": [
+    {
+      "path": "components/ui/GridList.tsx",
+      "type": "registry:ui",
+      "content": "'use client';\nimport React from 'react';\nimport {\n  GridList as AriaGridList,\n  GridListItem as AriaGridListItem,\n  Button,\n  composeRenderProps,\n  GridListItemProps,\n  GridListProps\n} from 'react-aria-components';\nimport { tv } from 'tailwind-variants';\nimport { Checkbox } from '@/registry/react-aria/ui/Checkbox';\nimport { composeTailwindRenderProps, focusRing } from '@/registry/react-aria/lib/react-aria-utils';\n\nexport function GridList<T extends object>(\n  { children, ...props }: GridListProps<T>\n) {\n  return (\n    <AriaGridList {...props} className={composeTailwindRenderProps(props.className, 'overflow-auto w-[200px] relative bg-white dark:bg-neutral-900 border border-neutral-300 dark:border-neutral-700 rounded-lg font-sans empty:flex empty:items-center empty:justify-center empty:italic empty:text-sm')}>\n      {children}\n    </AriaGridList>\n  );\n}\n\nconst itemStyles = tv({\n  extend: focusRing,\n  base: 'relative flex gap-3 cursor-default select-none py-2 px-3 text-sm text-neutral-900 dark:text-neutral-200 border-t dark:border-t-neutral-700 border-transparent first:border-t-0 first:rounded-t-lg last:rounded-b-lg last:mb-0 -outline-offset-2',\n  variants: {\n    isSelected: {\n      false: 'hover:bg-neutral-100 pressed:bg-neutral-100 dark:hover:bg-neutral-700/60 dark:pressed:bg-neutral-700/60',\n      true: 'bg-blue-100 dark:bg-blue-700/30 hover:bg-blue-200 pressed:bg-blue-200 dark:hover:bg-blue-700/40 dark:pressed:bg-blue-700/40 border-y-blue-200 dark:border-y-blue-900 z-20'\n    },\n    isDisabled: {\n      true: 'text-neutral-300 dark:text-neutral-600 forced-colors:text-[GrayText] z-10'\n    }\n  }\n});\n\nexport function GridListItem({ children, ...props }: GridListItemProps) {\n  let textValue = typeof children === 'string' ? children : undefined;\n  return (\n    <AriaGridListItem textValue={textValue} {...props} className={itemStyles}>\n      {composeRenderProps(children, (children, {selectionMode, selectionBehavior, allowsDragging}) => (\n        <>\n          {/* Add elements for drag and drop and selection. */}\n          {allowsDragging && <Button slot=\"drag\">≡</Button>}\n          {selectionMode !== 'none' && selectionBehavior === 'toggle' && (\n            <Checkbox slot=\"selection\" />\n          )}\n          {children}\n        </>\n      ))}\n    </AriaGridListItem>\n  );\n}\n"
+    }
+  ],
+  "css": {
+    "@plugin \"tailwindcss-react-aria-components\"": {},
+    "@plugin \"tailwindcss-animate\"": {}
+  }
+}

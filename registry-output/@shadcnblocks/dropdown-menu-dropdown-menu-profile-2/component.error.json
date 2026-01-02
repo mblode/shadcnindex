@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "dropdown-menu-dropdown-menu-profile-2",
+  "url": "https://shadcnblocks.com/r/dropdown-menu-dropdown-menu-profile-2.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "dropdown-menu-dropdown-menu-profile-2",
+    "type": "registry:block",
+    "title": "Dropdown-menu/dropdown-menu-profile-",
+    "description": "A dropdown-menu/dropdown-menu-profile- example",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["avatar", "badge", "button", "dropdown-menu"],
+    "files": [
+      {
+        "path": "code/example/dropdown-menu/dropdown-menu-profile-2.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:15:16.266Z"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "use-update-effect",
+  "author": "Brendan Dash (https://shadcn-hooks.vercel.app)",
+  "description": "A hook to run an effect only when the component updates",
+  "registryDependencies": ["@hooks/use-unmount"],
+  "files": [
+    {
+      "path": "registry/hooks/use-update-effect.ts",
+      "content": "import { useEffect, useRef } from 'react'\nimport { useUnmount } from '@/registry/hooks/use-unmount'\nimport type { DependencyList, EffectCallback } from 'react'\n\nexport function useUpdateEffect(effect: EffectCallback, deps: DependencyList) {\n  const mounted = useRef(false)\n\n  // for react-refresh\n  useUnmount(() => {\n    mounted.current = false\n  })\n\n  useEffect(() => {\n    if (!mounted.current) {\n      mounted.current = true\n      return\n    }\n\n    return effect()\n  }, deps)\n}\n",
+      "type": "registry:hook"
+    }
+  ],
+  "type": "registry:hook"
+}

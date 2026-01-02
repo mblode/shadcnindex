@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature113",
+  "url": "https://shadcnblocks.com/r/feature113.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature113",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A tabbed component with 3 options, integrating text, badges, buttons, and images, showcasing different features. Each tab has a 2-column layout for content and visuals.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["badge", "button", "tabs"],
+    "files": [
+      {
+        "path": "code/block/feature113.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:21.123Z"
+}

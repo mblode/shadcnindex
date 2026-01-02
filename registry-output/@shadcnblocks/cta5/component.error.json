@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "cta5",
+  "url": "https://shadcnblocks.com/r/cta5.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "cta5",
+    "type": "registry:block",
+    "title": "Cta",
+    "description": "A component featuring an image and a call-to-action (CTA) side by side in a two-column layout, with an appealing button and engaging text.",
+    "dependencies": [],
+    "registryDependencies": ["button"],
+    "files": [
+      {
+        "path": "code/block/cta5.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:19.006Z"
+}

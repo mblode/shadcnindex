@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "extends": "none",
+  "name": "context-menu-separator-demo",
+  "title": "Context Menu Separator",
+  "description": "context-menu-separator-demo",
+  "registryDependencies": ["https://intentui.com/r/context-menu"],
+  "files": [
+    {
+      "path": "src/components/docs/controls/context-menu/context-menu-separator-demo.tsx",
+      "content": "\"use client\"\n\nimport {\n  ContextMenu,\n  ContextMenuContent,\n  ContextMenuItem,\n  ContextMenuSeparator,\n  ContextMenuShortcut,\n  ContextMenuTrigger,\n} from \"@/components/ui/context-menu\"\n\nexport default function ContextMenuSeparatorDemo() {\n  return (\n    <ContextMenu>\n      <ContextMenuTrigger className=\"grid h-28 place-content-center rounded-lg border-2 border-dashed sm:min-w-60\">\n        Right click me\n      </ContextMenuTrigger>\n      <ContextMenuContent className=\"min-w-60\">\n        <ContextMenuItem>Go to Definition</ContextMenuItem>\n        <ContextMenuItem>Go to Type Definition</ContextMenuItem>\n        <ContextMenuItem>Go to Source Definition</ContextMenuItem>\n        <ContextMenuItem>Go to Implementations</ContextMenuItem>\n        <ContextMenuItem>\n          Go to References\n          <ContextMenuShortcut>⌘F12</ContextMenuShortcut>\n        </ContextMenuItem>\n        <ContextMenuItem>\n          Peek\n          <ContextMenuShortcut>⇧F12</ContextMenuShortcut>\n        </ContextMenuItem>\n        <ContextMenuSeparator />\n        <ContextMenuItem>\n          Find All References\n          <ContextMenuShortcut>⌘⇧F</ContextMenuShortcut>\n        </ContextMenuItem>\n        <ContextMenuItem>\n          Find All Implementations\n          <ContextMenuShortcut>⌘⇧I</ContextMenuShortcut>\n        </ContextMenuItem>\n        <ContextMenuItem>Show Call Hierarchy</ContextMenuItem>\n        <ContextMenuSeparator />\n        <ContextMenuItem>Rename Symbol</ContextMenuItem>\n        <ContextMenuItem>Change All Occurrences</ContextMenuItem>\n        <ContextMenuItem>Format Document</ContextMenuItem>\n        <ContextMenuItem>\n          Refactor...\n          <ContextMenuShortcut>⌘⇧R</ContextMenuShortcut>\n        </ContextMenuItem>\n      </ContextMenuContent>\n    </ContextMenu>\n  )\n}\n",
+      "type": "registry:page",
+      "target": "app/context-menu-separator-demo/page.tsx"
+    }
+  ],
+  "type": "registry:page"
+}

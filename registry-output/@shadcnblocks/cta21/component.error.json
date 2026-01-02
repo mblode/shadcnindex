@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "cta21",
+  "url": "https://shadcnblocks.com/r/cta21.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "cta21",
+    "type": "registry:block",
+    "title": "Cta",
+    "description": "A component with a large background image, overlayed by centered text and a large button, featuring an arrow icon.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["button"],
+    "files": [
+      {
+        "path": "code/block/cta21.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:18.590Z"
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "collapsible-collapsible-outline-2",
+  "title": "Collapsible/collapsible-outline-",
+  "description": "A collapsible/collapsible-outline- example",
+  "dependencies": ["lucide-react", "@radix-ui/react-collapsible"],
+  "registryDependencies": ["collapsible"],
+  "files": [
+    {
+      "path": "code/example/collapsible/collapsible-outline-2.tsx",
+      "content": "import { AlertTriangle } from \"lucide-react\";\n\nimport {\n  Collapsible,\n  CollapsibleContent,\n  CollapsibleTrigger,\n} from \"@/components/ui/collapsible\";\n\nexport const title = \"Warning Outline\";\n\nconst Example = () => (\n  <Collapsible className=\"w-full max-w-lg rounded-lg border-2 border-yellow-200 bg-yellow-50 dark:border-yellow-900 dark:bg-yellow-950\">\n    <CollapsibleTrigger className=\"flex w-full items-center gap-3 p-4\">\n      <AlertTriangle className=\"h-5 w-5 text-yellow-600 dark:text-yellow-400\" />\n      <div className=\"flex-1 text-left\">\n        <div className=\"font-medium text-yellow-900 dark:text-yellow-100\">\n          Warning\n        </div>\n        <div className=\"text-sm text-yellow-700 dark:text-yellow-300\">\n          Click to view details\n        </div>\n      </div>\n    </CollapsibleTrigger>\n    <CollapsibleContent className=\"border-t-2 border-yellow-200 px-4 py-3 text-sm text-yellow-800 dark:border-yellow-900 dark:text-yellow-200\">\n      This action may have unintended consequences. Please review the\n      documentation before proceeding.\n    </CollapsibleContent>\n  </Collapsible>\n);\n\nexport default Example;\n",
+      "type": "registry:block"
+    },
+    {
+      "path": "src/components/ui/collapsible.tsx",
+      "content": "import * as CollapsiblePrimitive from \"@radix-ui/react-collapsible\"\n\nfunction Collapsible({\n  ...props\n}: React.ComponentProps<typeof CollapsiblePrimitive.Root>) {\n  return <CollapsiblePrimitive.Root data-slot=\"collapsible\" {...props} />\n}\n\nfunction CollapsibleTrigger({\n  ...props\n}: React.ComponentProps<typeof CollapsiblePrimitive.CollapsibleTrigger>) {\n  return (\n    <CollapsiblePrimitive.CollapsibleTrigger\n      data-slot=\"collapsible-trigger\"\n      {...props}\n    />\n  )\n}\n\nfunction CollapsibleContent({\n  ...props\n}: React.ComponentProps<typeof CollapsiblePrimitive.CollapsibleContent>) {\n  return (\n    <CollapsiblePrimitive.CollapsibleContent\n      data-slot=\"collapsible-content\"\n      {...props}\n    />\n  )\n}\n\nexport { Collapsible, CollapsibleTrigger, CollapsibleContent }\n",
+      "type": "registry:ui",
+      "target": ""
+    }
+  ],
+  "type": "registry:block"
+}

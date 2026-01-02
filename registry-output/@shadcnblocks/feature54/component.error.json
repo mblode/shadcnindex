@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature54",
+  "url": "https://shadcnblocks.com/r/feature54.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature54",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A tabbed component showcasing features with images and subfeatures. Includes 5 tabs, images for each feature, and a 3-column layout for subfeatures.",
+    "dependencies": ["react"],
+    "registryDependencies": ["button", "tabs"],
+    "files": [
+      {
+        "path": "code/block/feature54.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:29.111Z"
+}

@@ -1,0 +1,26 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "hero230",
+  "url": "https://shadcnblocks.com/r/hero230.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "hero230",
+    "type": "registry:block",
+    "title": "Hero",
+    "description": "A marketing component with customizable buttons, a title, a descriptive paragraph, a dual-carousel display for logos and images, and fading edges for carousel overflow.",
+    "dependencies": [
+      "embla-carousel-auto-scroll",
+      "embla-carousel-autoplay",
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": ["button", "carousel"],
+    "files": [
+      {
+        "path": "code/block/hero230.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:36.935Z"
+}

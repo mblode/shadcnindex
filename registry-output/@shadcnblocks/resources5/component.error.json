@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "resources5",
+  "url": "https://shadcnblocks.com/r/resources5.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "resources5",
+    "type": "registry:block",
+    "title": "Resources",
+    "description": "This component displays a collection of educational courses, each including details like title, description, lessons, videos, duration, audience, author information, and a call-to-action button. It visually presents course information with thematic badges, images, and author avatars to enhance user engagement and easy navigation.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["avatar", "badge"],
+    "files": [
+      {
+        "path": "code/block/resources5.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:49.478Z"
+}

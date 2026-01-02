@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "process3",
+  "url": "https://shadcnblocks.com/r/process3.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "process3",
+    "type": "registry:block",
+    "title": "Process",
+    "description": "A component showcasing a 5-step process with animated entries, structured layout, and shifting background colors for each step. Unique number positioning.",
+    "dependencies": ["framer-motion", "lucide-react", "react"],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/process3.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:44.816Z"
+}

@@ -1,0 +1,18 @@
+{
+  "name": "use-reset-state",
+  "author": "Brendan Dash (https://shadcn-hooks.vercel.app)",
+  "description": "A hook to reset a state",
+  "registryDependencies": [
+    "es-toolkit",
+    "@hooks/use-creation",
+    "@hooks/use-memoized-fn"
+  ],
+  "files": [
+    {
+      "path": "registry/hooks/use-reset-state.ts",
+      "content": "import { isFunction } from 'es-toolkit/predicate'\nimport { useRef, useState } from 'react'\nimport { useCreation } from '@/registry/hooks/use-creation'\nimport { useMemoizedFn } from '@/registry/hooks/use-memoized-fn'\nimport type { Dispatch, SetStateAction } from 'react'\n\ntype ResetState = () => void\n\nexport function useResetState<S>(\n  initialState: S | (() => S),\n): readonly [S, Dispatch<SetStateAction<S>>, ResetState] {\n  const initialStateRef = useRef(initialState)\n  const initialStateMemo = useCreation(\n    () =>\n      isFunction(initialStateRef.current)\n        ? initialStateRef.current()\n        : initialStateRef.current,\n    [],\n  )\n\n  const [state, setState] = useState(initialStateMemo)\n\n  const resetState = useMemoizedFn(() => {\n    setState(initialStateMemo)\n  })\n\n  return [state, setState, resetState]\n}\n",
+      "type": "registry:hook"
+    }
+  ],
+  "type": "registry:hook"
+}

@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "download6",
+  "url": "https://shadcnblocks.com/r/download6.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "download6",
+    "type": "registry:block",
+    "title": "Download",
+    "description": "A component displaying download options for different software versions and platforms, highlighting the latest version with a badge. Offers a two-column layout for platform links.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["badge"],
+    "files": [
+      {
+        "path": "code/block/download6.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:19.378Z"
+}

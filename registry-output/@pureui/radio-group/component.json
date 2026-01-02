@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "radio-group",
+  "type": "registry:ui",
+  "title": "Radio Group",
+  "description": "A customizable radio group component",
+  "dependencies": ["@base-ui/react", "clsx", "tailwind-merge"],
+  "registryDependencies": ["classes"],
+  "files": [
+    {
+      "path": "src/registry/pure-ui/ui/radio-group/index.tsx",
+      "content": "\"use client\";\n\nimport { Radio as RadioPrimitive } from \"@base-ui/react/radio\";\nimport { RadioGroup as RadioGroupPrimitive } from \"@base-ui/react/radio-group\";\n\nimport { cn } from \"@/lib/classes\";\n\ninterface RadioGroupProps extends RadioGroupPrimitive.Props {\n  orientation?: \"horizontal\" | \"vertical\";\n}\n\nfunction RadioGroup({\n  className,\n  orientation = \"vertical\",\n  ...props\n}: RadioGroupProps) {\n  return (\n    <RadioGroupPrimitive\n      className={cn(\n        \"flex\",\n        className,\n        orientation === \"horizontal\" && \"flex-row flex-wrap gap-4\",\n        orientation === \"vertical\" && \"flex-col gap-4\"\n      )}\n      data-slot=\"radio-group\"\n      {...props}\n    />\n  );\n}\n\ninterface RadioProps extends RadioPrimitive.Root.Props {}\n\nfunction Radio({ className, ...props }: RadioProps) {\n  return (\n    <RadioPrimitive.Root\n      data-slot=\"radio\"\n      className={cn(\n        \"relative isolate size-5 rounded-full inline-flex items-center justify-center shrink-0 overflow-hidden outline-hidden focus:outline-hidden cursor-pointer focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background\",\n        \"data-disabled:cursor-not-allowed data-disabled:grayscale data-disabled:scale-100 data-disabled:opacity-50\",\n        \"before:content-[''] before:absolute before:rounded-full before:border-2 before:inset-0 before:border-border not-data-disabled:hover:before:bg-secondary/60\",\n        \"after:content-[''] after:absolute after:rounded-full after:inset-0 after:bg-primary data-unchecked:after:scale-50 data-unchecked:after:opacity-0 after:origin-center data-checked:after:scale-100 data-checked:after:opacity-100\",\n        \"before:transition-colors before:will-change-[scale,opacity] transition-transform after:[transition:0.2s_linear] after:[transition-property:opacity,scale,transform]\",\n        className\n      )}\n      {...props}\n    >\n      <RadioPrimitive.Indicator\n        className=\"relative z-10 flex items-center justify-center data-unchecked:opacity-0 data-checked:opacity-100 data-unchecked:scale-60 data-checked:scale-100 bg-primary-foreground size-2 rounded-full text-primary-foreground [transition-property:opacity,scale] duration-200 ease-out pointer-events-none will-change-[opacity,scale]\"\n        data-slot=\"radio-indicator\"\n      />\n    </RadioPrimitive.Root>\n  );\n}\n\nexport { RadioGroup, Radio };\n",
+      "type": "registry:ui",
+      "target": "components/ui/radio-group.tsx"
+    }
+  ]
+}

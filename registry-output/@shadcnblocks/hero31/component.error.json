@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "hero31",
+  "url": "https://shadcnblocks.com/r/hero31.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "hero31",
+    "type": "registry:block",
+    "title": "Hero",
+    "description": "A component featuring a welcome message, a description, two buttons, and dynamic overlapping blocks with varying dimensions. Incorporates a complex background design.",
+    "dependencies": [],
+    "registryDependencies": ["button"],
+    "files": [
+      {
+        "path": "code/block/hero31.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:38.192Z"
+}

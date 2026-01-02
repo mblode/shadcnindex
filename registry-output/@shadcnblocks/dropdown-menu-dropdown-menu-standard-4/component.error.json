@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "dropdown-menu-dropdown-menu-standard-4",
+  "url": "https://shadcnblocks.com/r/dropdown-menu-dropdown-menu-standard-4.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "dropdown-menu-dropdown-menu-standard-4",
+    "type": "registry:block",
+    "title": "Dropdown-menu/dropdown-menu-standard-",
+    "description": "A dropdown-menu/dropdown-menu-standard- example",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": ["button", "dropdown-menu"],
+    "files": [
+      {
+        "path": "code/example/dropdown-menu/dropdown-menu-standard-4.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:15:16.759Z"
+}

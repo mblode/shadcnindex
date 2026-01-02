@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "hero228",
+  "url": "https://shadcnblocks.com/r/hero228.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "hero228",
+    "type": "registry:block",
+    "title": "Hero",
+    "description": "A component showcasing a carousel of testimonials with dynamic rotation effect and custom scrollbar animation. Displays names below images.",
+    "dependencies": ["embla-carousel-autoplay", "framer-motion", "react"],
+    "registryDependencies": ["carousel"],
+    "files": [
+      {
+        "path": "code/block/hero228.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:36.926Z"
+}

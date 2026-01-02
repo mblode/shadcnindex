@@ -1,0 +1,26 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "footer17",
+  "url": "https://shadcnblocks.com/r/footer17.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "footer17",
+    "type": "registry:block",
+    "title": "Footer",
+    "description": "A footer component with theme toggle, navigation links, social links, theme-specific logo, and a system status indicator.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": [
+      "button",
+      "drawer",
+      "dropdown-menu",
+      "toggle-group"
+    ],
+    "files": [
+      {
+        "path": "code/block/footer17.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:31.555Z"
+}

@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature276",
+  "url": "https://shadcnblocks.com/r/feature276.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature276",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A component displaying a 3-column grid of cards for features like \"Plug & Play\", \"Customizable\", each with an icon, title, and description. It highlights a card on hover.",
+    "dependencies": ["framer-motion", "lucide-react", "react"],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/feature276.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:27.444Z"
+}

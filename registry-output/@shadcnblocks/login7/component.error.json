@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "login7",
+  "url": "https://shadcnblocks.com/r/login7.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "login7",
+    "type": "registry:block",
+    "title": "Login",
+    "description": "A login component featuring a card layout with a logo, a &#x27;Sign up with Google&#x27; button, a divider with &#x27;OR&#x27;, email and password fields, and a submit button.",
+    "dependencies": [],
+    "registryDependencies": ["button", "card", "input", "label"],
+    "files": [
+      {
+        "path": "code/block/login7.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:41.549Z"
+}

@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature32",
+  "url": "https://shadcnblocks.com/r/feature32.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature32",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A component with a title and a 3-column layout for testimonials, one large featured testimonial spans two columns and rows.",
+    "dependencies": [],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/feature32.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:28.452Z"
+}

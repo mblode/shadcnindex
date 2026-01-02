@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "faq12",
+  "url": "https://shadcnblocks.com/r/faq12.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "faq12",
+    "type": "registry:block",
+    "title": "Faq",
+    "description": "An FAQ component displaying questions under categories with a clickable sidebar for navigation. Features include dynamic active state updates and smooth scrolling.",
+    "dependencies": ["react"],
+    "registryDependencies": ["accordion", "button"],
+    "files": [
+      {
+        "path": "code/block/faq12.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:20.025Z"
+}

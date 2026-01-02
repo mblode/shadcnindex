@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "text-word-carousel",
+  "type": "registry:component",
+  "title": "Word Carousel Text",
+  "description": "Rotating word carousel animation",
+  "dependencies": ["motion"],
+  "files": [
+    {
+      "path": "registry/new-york/animations/text/word-carousel.tsx",
+      "content": "\"use client\";\nimport * as React from \"react\";\nimport { motion, AnimatePresence, HTMLMotionProps } from \"motion/react\";\nimport { cn } from \"@/lib/utils\";\nimport {\n  useWordCarousel,\n  type UseWordCarouselOptions,\n} from \"@/lib/use-word-carousel\";\nexport interface TextWordCarouselProps\n  extends Omit<HTMLMotionProps<\"span\">, \"children\">,\n    UseWordCarouselOptions {\n  duration?: number;\n}\nexport function TextWordCarousel({\n  words,\n  interval,\n  className,\n  duration = 0.3,\n  ...props\n}: TextWordCarouselProps) {\n  const { currentWord, key } = useWordCarousel({ words, interval });\n  return (\n    <span className={cn(\"inline-block relative\", className)}>\n      <AnimatePresence mode=\"wait\">\n        <motion.span\n          key={key}\n          initial={{ opacity: 0, y: 20 }}\n          animate={{ opacity: 1, y: 0 }}\n          exit={{ opacity: 0, y: -20 }}\n          transition={{ duration }}\n          className=\"inline-block\"\n          {...props}\n        >\n          {currentWord}\n        </motion.span>\n      </AnimatePresence>\n    </span>\n  );\n}\n",
+      "type": "registry:component"
+    },
+    {
+      "path": "lib/use-word-carousel.ts",
+      "content": "import * as React from \"react\";\n\nexport interface UseWordCarouselOptions {\n  words: string[];\n  interval?: number;\n}\n\nexport function useWordCarousel(options: UseWordCarouselOptions) {\n  const { words, interval = 2 } = options;\n  const [currentIndex, setCurrentIndex] = React.useState(0);\n\n  React.useEffect(() => {\n    const timer = setInterval(() => {\n      setCurrentIndex((prev) => (prev + 1) % words.length);\n    }, interval * 1000);\n\n    return () => clearInterval(timer);\n  }, [words.length, interval]);\n\n  return {\n    currentWord: words[currentIndex],\n    currentIndex,\n    key: currentIndex, // For AnimatePresence\n  };\n}\n",
+      "type": "registry:lib"
+    }
+  ]
+}

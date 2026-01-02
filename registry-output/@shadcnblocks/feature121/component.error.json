@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature121",
+  "url": "https://shadcnblocks.com/r/feature121.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature121",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A component displays features in a grid, each with an icon, title, and description. Interactive blocks reveal descriptions on click.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/feature121.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:21.452Z"
+}

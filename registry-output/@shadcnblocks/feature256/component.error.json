@@ -1,0 +1,23 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature256",
+  "url": "https://shadcnblocks.com/r/feature256.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature256",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A component displaying developer tools and guides, with two distinct sections. Tools section has a 2-3 column layout with icons; Guides use a 1-2 column format with text.",
+    "dependencies": [],
+    "registryDependencies": [
+      "https://ui.aceternity.com/registry/card-spotlight.json"
+    ],
+    "files": [
+      {
+        "path": "code/block/feature256.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:26.902Z"
+}

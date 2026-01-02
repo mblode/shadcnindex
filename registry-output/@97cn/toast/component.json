@@ -1,0 +1,39 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "toast",
+  "type": "registry:ui",
+  "title": "Toast",
+  "description": "Windows 95 styled toast notification component",
+  "dependencies": ["@radix-ui/react-toast"],
+  "files": [
+    {
+      "path": "components/97cn/toast.tsx",
+      "content": "\"use client\"\n\nimport type * as React from \"react\"\nimport { Toaster as Sonner } from \"sonner\"\n\ntype ToasterProps = React.ComponentProps<typeof Sonner>\n\nconst Toaster = ({ ...props }: ToasterProps) => {\n  return (\n    <Sonner\n      className=\"toaster group\"\n      toastOptions={{\n        classNames: {\n          toast:\n            \"group toast group-[.toaster]:bg-win95-button-face group-[.toaster]:text-win95-black group-[.toaster]:border-2 group-[.toaster]:border-win95-button-shadow group-[.toaster]:shadow-lg win95-raised group-[.toaster]:font-sans group-[.toaster]:text-xs group-[.toaster]:rounded-none\",\n          description: \"group-[.toast]:text-win95-dark-gray group-[.toast]:text-xs\",\n          actionButton:\n            \"group-[.toast]:bg-win95-button-face group-[.toast]:text-win95-black win95-raised group-[.toast]:border-2 group-[.toast]:border-win95-button-shadow group-[.toast]:text-xs group-[.toast]:px-2 group-[.toast]:py-1 group-[.toast]:font-sans group-[.toast]:rounded-none hover:group-[.toast]:bg-win95-light-gray active:group-[.toast]:win95-sunken\",\n          cancelButton:\n            \"group-[.toast]:bg-win95-button-face group-[.toast]:text-win95-black win95-raised group-[.toast]:border-2 group-[.toast]:border-win95-button-shadow group-[.toast]:text-xs group-[.toast]:px-2 group-[.toast]:py-1 group-[.toast]:font-sans group-[.toast]:rounded-none hover:group-[.toast]:bg-win95-light-gray active:group-[.toast]:win95-sunken\",\n        },\n      }}\n      {...props}\n    />\n  )\n}\n\nexport { Toaster }\n",
+      "type": "registry:ui"
+    }
+  ],
+  "cssVars": {
+    "light": {
+      "win95-button-face": "#c0c0c0",
+      "win95-black": "#000000",
+      "win95-button-shadow": "#808080",
+      "win95-button-highlight": "#ffffff"
+    },
+    "dark": {
+      "win95-button-face": "#c0c0c0",
+      "win95-black": "#000000",
+      "win95-button-shadow": "#808080",
+      "win95-button-highlight": "#ffffff"
+    }
+  },
+  "css": {
+    "@layer utilities": {
+      ".win95-raised": {
+        "border-top": "2px solid var(--win95-button-highlight)",
+        "border-left": "2px solid var(--win95-button-highlight)",
+        "border-right": "2px solid var(--win95-button-shadow)",
+        "border-bottom": "2px solid var(--win95-button-shadow)"
+      }
+    }
+  }
+}

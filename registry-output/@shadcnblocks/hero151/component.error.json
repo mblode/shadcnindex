@@ -1,0 +1,26 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "hero151",
+  "url": "https://shadcnblocks.com/r/hero151.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "hero151",
+    "type": "registry:block",
+    "title": "Hero",
+    "description": "A component featuring a title, description, large button, overlapping avatars with quotes, and a 2x2 grid of images incorporating unique aspect ratios and placements.",
+    "dependencies": [],
+    "registryDependencies": [
+      "https://shadcnblocks.com/r/avatar-group",
+      "aspect-ratio",
+      "avatar",
+      "button"
+    ],
+    "files": [
+      {
+        "path": "code/block/hero151.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:34.562Z"
+}

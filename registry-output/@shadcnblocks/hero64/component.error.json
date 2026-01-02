@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "hero64",
+  "url": "https://shadcnblocks.com/r/hero64.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "hero64",
+    "type": "registry:block",
+    "title": "Hero",
+    "description": "A testimonial display component with a title, descriptions, a call-to-action button, customer ratings, and profile images in a two-column layout.",
+    "dependencies": ["react-icons"],
+    "registryDependencies": ["avatar", "button"],
+    "files": [
+      {
+        "path": "code/block/hero64.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:39.040Z"
+}

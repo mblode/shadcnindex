@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "trigger",
+  "type": "registry:component",
+  "title": "Simple Trigger Button Component",
+  "description": "Button that with an attached Entity trigger",
+  "registryDependencies": ["button", "@ha-components/auth"],
+  "files": [
+    {
+      "path": "components/ha-ui/trigger.tsx",
+      "content": "\"use client\";\nimport type { EntityId } from \"@/types/entity-types\";\nimport { Button } from \"@/components/ui/button\";\nimport { haWebSocket } from \"@/lib/haWebsocket\";\n\ntype TriggerProps = React.ComponentProps<typeof Button> & {\n    /**\n     * HomeAssistant Entity Name\n     */\n    entity: EntityId;\n    description?: string;\n    domain?: string;\n    service?: string;\n};\n\nexport function Trigger({\n    entity,\n    description,\n    domain = \"automation\",\n    service = \"trigger\",\n    children,\n    ...props // Button Props\n}: TriggerProps) {\n    return (\n        <Button\n            onClick={() =>\n                haWebSocket.callService(domain, service, {\n                    entity_id: entity,\n                })\n            }\n            title={description}\n            {...props}\n        >\n            {children}\n        </Button>\n    );\n}\n",
+      "type": "registry:component",
+      "target": "components/ha-ui/trigger.tsx"
+    }
+  ]
+}

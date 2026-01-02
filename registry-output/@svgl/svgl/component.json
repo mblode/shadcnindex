@@ -1,0 +1,14 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "svgl",
+  "title": "svgl",
+  "files": [
+    {
+      "path": "././static/components-generated/svgl.tsx",
+      "content": "import type { SVGProps } from \"react\";\n\nconst Svgl = (props: SVGProps<SVGSVGElement>) => (\n  <svg\n    {...props}\n    viewBox=\"0 0 512 512\"\n    fill=\"none\"\n    xmlnsXlink=\"http://www.w3.org/1999/xlink\"\n  >\n    <rect\n      id=\"«r3b»\"\n      width=\"512\"\n      height=\"512\"\n      x=\"0\"\n      y=\"0\"\n      rx=\"128\"\n      fill=\"url(#«r3c»)\"\n      stroke=\"#FFFFFF\"\n      strokeWidth=\"0\"\n      stroke-opacity=\"100%\"\n      paint-order=\"stroke\"\n    />\n    <defs>\n      <radialGradient\n        id=\"«r3c»\"\n        cx=\"50%\"\n        cy=\"50%\"\n        r=\"100%\"\n        fx=\"50%\"\n        fy=\"0%\"\n        gradientUnits=\"objectBoundingBox\"\n      >\n        <stop stop-color=\"#232323\" />\n        <stop offset=\"1\" stop-color=\"#000000\" />\n      </radialGradient>\n    </defs>\n    <svg\n      fill=\"#fffafa\"\n      viewBox=\"0 0 256 256\"\n      x=\"76\"\n      y=\"76\"\n      alignment-baseline=\"middle\"\n      style={{ color: \"#e6e6e6\" }}\n    >\n      <path d=\"M168,36H88A52.06,52.06,0,0,0,36,88v80a52.06,52.06,0,0,0,52,52h48a3.83,3.83,0,0,0,1.26-.21c25.46-8.48,74.05-57.07,82.53-82.53A3.83,3.83,0,0,0,220,136V88A52.06,52.06,0,0,0,168,36ZM44,168V88A44.05,44.05,0,0,1,88,44h80a44.05,44.05,0,0,1,44,44v44H184a52.06,52.06,0,0,0-52,52v28H88A44.05,44.05,0,0,1,44,168Zm96,42V184a44.05,44.05,0,0,1,44-44h26C198.9,162.23,162.23,198.9,140,210Z\" />\n    </svg>\n  </svg>\n);\n\nexport { Svgl };\n",
+      "type": "registry:component",
+      "target": "components/ui/svgs/svgl.tsx"
+    }
+  ],
+  "type": "registry:component"
+}

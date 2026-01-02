@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "careers2",
+  "url": "https://shadcnblocks.com/r/careers2.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "careers2",
+    "type": "registry:block",
+    "title": "Careers",
+    "description": "A component showcasing job openings with a header, grid layout (single column expanding to four on large screens) for each job, including title, type, location, and an apply button.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["badge", "button"],
+    "files": [
+      {
+        "path": "code/block/careers2.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:15.157Z"
+}

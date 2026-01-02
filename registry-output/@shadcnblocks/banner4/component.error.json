@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "banner4",
+  "url": "https://shadcnblocks.com/r/banner4.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "banner4",
+    "type": "registry:block",
+    "title": "Banner",
+    "description": "An informational banner component with a title, description, and link button. Includes an icon and close function.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": ["button"],
+    "files": [
+      {
+        "path": "code/block/banner4.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:13.789Z"
+}

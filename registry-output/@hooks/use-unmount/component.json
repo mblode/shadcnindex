@@ -1,0 +1,14 @@
+{
+  "name": "use-unmount",
+  "author": "Brendan Dash (https://shadcn-hooks.vercel.app)",
+  "description": "A hook to run a function when the component unmounts",
+  "registryDependencies": ["@hooks/use-latest"],
+  "files": [
+    {
+      "path": "registry/hooks/use-unmount.ts",
+      "content": "import { useEffect } from 'react'\nimport { useLatest } from '@/registry/hooks/use-latest'\n\nexport function useUnmount(fn: () => void) {\n  const fnRef = useLatest(fn)\n\n  useEffect(\n    () => () => {\n      fnRef.current()\n    },\n    [],\n  )\n}\n",
+      "type": "registry:hook"
+    }
+  ],
+  "type": "registry:hook"
+}

@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "pricing3",
+  "url": "https://shadcnblocks.com/r/pricing3.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "pricing3",
+    "type": "registry:block",
+    "title": "Pricing",
+    "description": "A pricing block with a yearly billing switch, featuring 3 columns for Basic, Standard, and Premium plans. Includes feature lists and pricing details.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": ["button", "separator", "switch"],
+    "files": [
+      {
+        "path": "code/block/pricing3.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:44.174Z"
+}

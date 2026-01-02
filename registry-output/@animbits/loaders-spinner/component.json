@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "loaders-spinner",
+  "type": "registry:component",
+  "title": "Spinner Loader",
+  "description": "Circular spinning loader",
+  "dependencies": ["motion"],
+  "files": [
+    {
+      "path": "registry/new-york/animations/loaders/spinner.tsx",
+      "content": "\"use client\";\nimport * as React from \"react\";\nimport { motion, HTMLMotionProps } from \"motion/react\";\nimport { cn } from \"@/lib/utils\";\nexport interface LoaderSpinnerProps\n  extends Omit<HTMLMotionProps<\"div\">, \"children\"> {\n  size?: number;\n  color?: string;\n  borderWidth?: number;\n  duration?: number;\n}\nexport function LoaderSpinner({\n  className,\n  size = 40,\n  color = \"currentColor\",\n  borderWidth = 4,\n  duration = 1,\n  ...props\n}: LoaderSpinnerProps) {\n  return (\n    <motion.div\n      className={cn(\"rounded-full\", className)}\n      style={{\n        width: size,\n        height: size,\n        border: `${borderWidth}px solid transparent`,\n        borderTopColor: color,\n        borderRightColor: color,\n      }}\n      animate={{ rotate: 360 }}\n      transition={{\n        duration,\n        ease: \"linear\",\n        repeat: Infinity,\n      }}\n      {...props}\n    />\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ]
+}

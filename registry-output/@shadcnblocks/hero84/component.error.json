@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "hero84",
+  "url": "https://shadcnblocks.com/r/hero84.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "hero84",
+    "type": "registry:block",
+    "title": "Hero",
+    "description": "A component featuring a badge and text block on top, with a layered, overlapping image gallery below, arranged asymmetrically.",
+    "dependencies": [],
+    "registryDependencies": ["aspect-ratio", "badge"],
+    "files": [
+      {
+        "path": "code/block/hero84.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:39.802Z"
+}

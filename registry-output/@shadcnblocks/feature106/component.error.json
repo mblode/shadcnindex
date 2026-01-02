@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature106",
+  "url": "https://shadcnblocks.com/r/feature106.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature106",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A component showcasing features in an accordion for narrow screens and tabs for wider screens, each with icons, titles, and images.",
+    "dependencies": ["@radix-ui/react-tabs", "lucide-react"],
+    "registryDependencies": ["accordion"],
+    "files": [
+      {
+        "path": "code/block/feature106.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:20.836Z"
+}

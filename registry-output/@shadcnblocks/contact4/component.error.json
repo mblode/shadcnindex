@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "contact4",
+  "url": "https://shadcnblocks.com/r/contact4.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "contact4",
+    "type": "registry:block",
+    "title": "Contact",
+    "description": "A contact component with a title, introduction, 3-column layout for different contact options, and a carousel showcasing locations with maps and details.",
+    "dependencies": ["embla-carousel-fade"],
+    "registryDependencies": ["carousel"],
+    "files": [
+      {
+        "path": "code/block/contact4.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:17.750Z"
+}

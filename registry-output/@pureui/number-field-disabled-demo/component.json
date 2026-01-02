@@ -1,0 +1,13 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "number-field-disabled-demo",
+  "type": "registry:example",
+  "registryDependencies": ["number-field"],
+  "files": [
+    {
+      "path": "src/registry/pure-ui/examples/number-field/number-field-disabled-demo.tsx",
+      "content": "import {\n  NumberField,\n  NumberFieldDecrement,\n  NumberFieldGroup,\n  NumberFieldIncrement,\n  NumberFieldInput,\n} from \"@/registry/pure-ui/ui/number-field\";\n\nexport function NumberFieldDisabledDemo() {\n  return (\n    <NumberField defaultValue={0} disabled>\n      <NumberFieldGroup>\n        <NumberFieldDecrement />\n        <NumberFieldInput />\n        <NumberFieldIncrement />\n      </NumberFieldGroup>\n    </NumberField>\n  );\n}\n",
+      "type": "registry:example"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "about9",
+  "url": "https://shadcnblocks.com/r/about9.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "about9",
+    "type": "registry:block",
+    "title": "About",
+    "description": "A component showcasing a professional summary, a large team photo, personal introduction, another photo, followed by a detailed work experience section.",
+    "dependencies": ["react"],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/about9.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:11.697Z"
+}

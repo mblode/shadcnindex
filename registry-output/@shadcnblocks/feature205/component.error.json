@@ -1,0 +1,25 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature205",
+  "url": "https://shadcnblocks.com/r/feature205.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature205",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A two-column component featuring interactive tabs (Efficiency, Collaboration, Insights) with descriptive text and related images showcasing benefits.",
+    "dependencies": [],
+    "registryDependencies": [
+      "https://shadcnblocks.com/r/scrollable-tabslist",
+      "scroll-area",
+      "tabs"
+    ],
+    "files": [
+      {
+        "path": "code/block/feature205.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:24.781Z"
+}

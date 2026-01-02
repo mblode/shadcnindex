@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "timeline4",
+  "url": "https://shadcnblocks.com/r/timeline4.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "timeline4",
+    "type": "registry:block",
+    "title": "Timeline",
+    "description": "A component showcasing a step-by-step guide with alternating layout, custom badges, icons, and diagonal patterns.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["badge"],
+    "files": [
+      {
+        "path": "code/block/timeline4.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:54.736Z"
+}

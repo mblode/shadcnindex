@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "testimonial17",
+  "url": "https://shadcnblocks.com/r/testimonial17.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "testimonial17",
+    "type": "registry:block",
+    "title": "Testimonial",
+    "description": "A testimonial component with a dynamic carousel for mobile and a static 3-column layout for larger screens, showcasing user feedback and logos.",
+    "dependencies": ["react"],
+    "registryDependencies": ["avatar", "carousel"],
+    "files": [
+      {
+        "path": "code/block/testimonial17.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:53.714Z"
+}

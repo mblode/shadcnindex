@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "footer23",
+  "url": "https://shadcnblocks.com/r/footer23.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "footer23",
+    "type": "registry:block",
+    "title": "Footer",
+    "description": "A footer component with a logo, description, link columns, and an animated globe. Includes 3 sections with navigational links and separators.",
+    "dependencies": [],
+    "registryDependencies": ["https://magicui.design/r/globe", "separator"],
+    "files": [
+      {
+        "path": "code/block/footer23.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:31.593Z"
+}

@@ -1,0 +1,18 @@
+{
+  "name": "use-click-away",
+  "author": "Brendan Dash (https://shadcn-hooks.vercel.app)",
+  "description": "A hook to click away from an element",
+  "registryDependencies": [
+    "@hooks/use-latest",
+    "@hooks/use-effect-with-target",
+    "@hooks/create-effect-with-target"
+  ],
+  "files": [
+    {
+      "path": "registry/hooks/use-click-away.ts",
+      "content": "import { useEffectWithTarget } from '@/registry/hooks/use-effect-with-target'\nimport { useLatest } from '@/registry/hooks/use-latest'\nimport { getTargetElement } from '@/registry/lib/create-effect-with-target'\nimport type { BasicTarget } from '@/registry/lib/create-effect-with-target'\n\ntype DocumentEventKey = keyof DocumentEventMap\n\ndeclare type TargetValue<T> = T | undefined | null\n\nconst checkIfAllInShadow = (targets: BasicTarget[]) => {\n  return targets.every((item) => {\n    const targetElement = getTargetElement(item)\n    if (!targetElement) {\n      return false\n    }\n    if (targetElement.getRootNode() instanceof ShadowRoot) {\n      return true\n    }\n    return false\n  })\n}\n\nconst getShadow = (node: TargetValue<Element>) => {\n  if (!node) {\n    return document\n  }\n  return node.getRootNode()\n}\n\nconst getDocumentOrShadow = (\n  target: BasicTarget | BasicTarget[],\n): Document | Node => {\n  if (!target || !document.getRootNode) {\n    return document\n  }\n\n  const targets = Array.isArray(target) ? target : [target]\n\n  if (checkIfAllInShadow(targets)) {\n    return getShadow(getTargetElement(targets[0]))\n  }\n\n  return document\n}\n\nexport function useClickAway<T extends Event = Event>(\n  onClickAway: (event: T) => void,\n  target: BasicTarget | BasicTarget[],\n  eventName: DocumentEventKey | DocumentEventKey[] = 'click',\n) {\n  const onClickAwayRef = useLatest(onClickAway)\n\n  useEffectWithTarget(\n    () => {\n      const handler = (event: any) => {\n        const targets = Array.isArray(target) ? target : [target]\n        if (\n          targets.some((item) => {\n            const targetElement = getTargetElement(item)\n            return !targetElement || targetElement.contains(event.target)\n          })\n        ) {\n          return\n        }\n        onClickAwayRef.current(event)\n      }\n\n      const documentOrShadow = getDocumentOrShadow(target)\n\n      const eventNames = Array.isArray(eventName) ? eventName : [eventName]\n\n      eventNames.forEach((event) =>\n        documentOrShadow.addEventListener(event, handler),\n      )\n\n      return () => {\n        eventNames.forEach((event) =>\n          documentOrShadow.removeEventListener(event, handler),\n        )\n      }\n    },\n    Array.isArray(eventName) ? eventName : [eventName],\n    target,\n  )\n}\n",
+      "type": "registry:hook"
+    }
+  ],
+  "type": "registry:hook"
+}

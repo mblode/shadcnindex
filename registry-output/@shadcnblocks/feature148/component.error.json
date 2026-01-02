@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature148",
+  "url": "https://shadcnblocks.com/r/feature148.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature148",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "This component displays a title, description, and a grid of 6 cards, each containing an image, title, and description, arranged in 1-3 columns based on screen size.",
+    "dependencies": [],
+    "registryDependencies": ["button", "card"],
+    "files": [
+      {
+        "path": "code/block/feature148.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:22.645Z"
+}

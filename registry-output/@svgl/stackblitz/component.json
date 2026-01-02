@@ -1,0 +1,14 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "stackblitz",
+  "title": "stackblitz",
+  "files": [
+    {
+      "path": "././static/components-generated/stackblitz.tsx",
+      "content": "import type { SVGProps } from \"react\";\n\nconst Stackblitz = (props: SVGProps<SVGSVGElement>) => (\n  <svg {...props} viewBox=\"0 0 256 368\" preserveAspectRatio=\"xMidYMid\">\n    <path\n      fill=\"#49A2F8\"\n      d=\"M109.586 217.013H0L200.34 0l-53.926 150.233H256L55.645 367.246l53.927-150.233z\"\n    />\n  </svg>\n);\n\nexport { Stackblitz };\n",
+      "type": "registry:component",
+      "target": "components/ui/svgs/stackblitz.tsx"
+    }
+  ],
+  "type": "registry:component"
+}

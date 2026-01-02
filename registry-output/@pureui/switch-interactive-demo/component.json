@@ -1,0 +1,13 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "switch-interactive-demo",
+  "type": "registry:example",
+  "registryDependencies": ["switch"],
+  "files": [
+    {
+      "path": "src/registry/pure-ui/examples/switch/switch-interactive-demo.tsx",
+      "content": "import { Switch } from \"@/registry/pure-ui/ui/switch\";\nimport { Label } from \"@/registry/pure-ui/ui/label\";\n\nexport function SwitchInteractiveDemo() {\n  return (\n    <Label className=\"cursor-pointer\">\n      <Switch isInteractive />\n      <span>Enable notifications</span>\n    </Label>\n  );\n}\n",
+      "type": "registry:example"
+    }
+  ]
+}

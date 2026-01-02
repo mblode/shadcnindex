@@ -1,0 +1,13 @@
+{
+  "name": "use-toggle",
+  "author": "Brendan Dash (https://shadcn-hooks.vercel.app)",
+  "description": "A hook to toggle a value",
+  "files": [
+    {
+      "path": "registry/hooks/use-toggle.ts",
+      "content": "import { useMemo, useReducer } from 'react'\n\nexport interface Actions<T> {\n  setLeft: () => void\n  setRight: () => void\n  set: (value: T) => void\n  toggle: () => void\n}\n\nfunction useToggle<T = boolean>(): [boolean, Actions<T>]\nfunction useToggle<T>(defaultValue: T): [T, Actions<T>]\nfunction useToggle<T, U>(\n  defaultValue: T,\n  reverseValue: U,\n): [T | U, Actions<T | U>]\nfunction useToggle<D, R>(\n  defaultValue: D = false as unknown as D,\n  reverseValue?: R,\n) {\n  const [state, dispatch] = useReducer(\n    (\n      state: D | R,\n      action:\n        | { type: 'toggle' }\n        | { type: 'set'; payload: D | R }\n        | { type: 'setLeft' }\n        | { type: 'setRight' },\n    ) => {\n      const reverseValueOrigin = (\n        reverseValue === undefined ? !defaultValue : reverseValue\n      ) as D | R\n\n      switch (action.type) {\n        case 'toggle':\n          return state === defaultValue ? reverseValueOrigin : defaultValue\n        case 'set':\n          return action.payload\n        case 'setLeft':\n          return defaultValue\n        case 'setRight':\n          return reverseValueOrigin\n        default:\n          return state\n      }\n    },\n    defaultValue,\n  )\n\n  return [\n    state,\n    useMemo(() => {\n      return {\n        toggle: () => dispatch({ type: 'toggle' }),\n        set: (value: D | R) => dispatch({ type: 'set', payload: value }),\n        setLeft: () => dispatch({ type: 'setLeft' }),\n        setRight: () => dispatch({ type: 'setRight' }),\n      }\n    }, [dispatch]),\n  ]\n}\n\nexport default useToggle\n",
+      "type": "registry:hook"
+    }
+  ],
+  "type": "registry:hook"
+}

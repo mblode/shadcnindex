@@ -1,0 +1,13 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "select-basic-demo",
+  "type": "registry:example",
+  "registryDependencies": ["select"],
+  "files": [
+    {
+      "path": "src/registry/pure-ui/examples/select/select-basic-demo.tsx",
+      "content": "import { CheckIcon, ChevronDownIcon, ChevronsUpDownIcon } from \"lucide-react\";\n\nimport {\n  Select,\n  SelectIcon,\n  SelectItem,\n  SelectItemIndicator,\n  SelectItemText,\n  SelectList,\n  SelectPopup,\n  SelectTrigger,\n  SelectValue,\n} from \"@/registry/pure-ui/ui/select\";\n\nexport const food = [\n  {\n    id: \"1\",\n    value: \"pizza\",\n    label: \"Pizza 🍕\",\n  },\n  {\n    id: \"2\",\n    value: \"burger\",\n    label: \"Burger 🍔\",\n  },\n  {\n    id: \"3\",\n    value: \"ramen\",\n    label: \"Ramen 🍜\",\n  },\n];\n\nconst fonts = [\n  { label: \"Sans-serif\", value: \"sans\" },\n  { label: \"Serif\", value: \"serif\" },\n  { label: \"Monospace\", value: \"mono\" },\n  { label: \"Cursive\", value: \"cursive\" },\n];\n\nexport const SelectBasicDemo = () => {\n  return (\n    <div className=\"flex flex-col md:flex-row gap-4\">\n      <Select items={food}>\n        <SelectTrigger>\n          <SelectValue placeholder=\"Select a food\" />\n          <SelectIcon>\n            <ChevronDownIcon className=\"size-4\" />\n          </SelectIcon>\n        </SelectTrigger>\n        <SelectPopup alignItemWithTrigger>\n          <SelectList>\n            {food.map(({ label, value }) => (\n              <SelectItem key={value} value={value}>\n                <SelectItemText>{label}</SelectItemText>\n                <SelectItemIndicator>\n                  <CheckIcon className=\"size-3\" />\n                </SelectItemIndicator>\n              </SelectItem>\n            ))}\n          </SelectList>\n        </SelectPopup>\n      </Select>\n\n      <Select items={fonts}>\n        <SelectTrigger>\n          <SelectValue placeholder=\"Select a font\" />\n          <SelectIcon>\n            <ChevronsUpDownIcon className=\"size-4\" />\n          </SelectIcon>\n        </SelectTrigger>\n        <SelectPopup>\n          <SelectList>\n            {fonts.map(({ label, value }) => (\n              <SelectItem key={value} value={value}>\n                <SelectItemText>{label}</SelectItemText>\n                <SelectItemIndicator>\n                  <CheckIcon className=\"size-3\" />\n                </SelectItemIndicator>\n              </SelectItem>\n            ))}\n          </SelectList>\n        </SelectPopup>\n      </Select>\n    </div>\n  );\n};\n",
+      "type": "registry:example"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "million",
+  "title": "million",
+  "files": [
+    {
+      "path": "././static/components-generated/million.tsx",
+      "content": "import type { SVGProps } from \"react\";\n\nconst Million = (props: SVGProps<SVGSVGElement>) => (\n  <svg {...props} preserveAspectRatio=\"xMidYMid\" viewBox=\"0 0 256 182\">\n    <defs>\n      <radialGradient\n        cx=\"50%\"\n        cy=\"49.999%\"\n        fx=\"50%\"\n        fy=\"49.999%\"\n        r=\"32.306%\"\n        gradientTransform=\"translate(0 -380193.475) skewY(90)\"\n        id=\"a\"\n      >\n        <stop stop-color=\"#845CE7\" offset=\"0%\" />\n        <stop stop-color=\"#AF73D8\" offset=\"100%\" />\n      </radialGradient>\n      <radialGradient\n        cx=\"50.061%\"\n        cy=\"104.167%\"\n        fx=\"50.061%\"\n        fy=\"104.167%\"\n        r=\"67.301%\"\n        gradientTransform=\"translate(0 -35820434.112) skewY(90)\"\n        id=\"b\"\n      >\n        <stop stop-color=\"#845CE7\" offset=\"0%\" />\n        <stop stop-color=\"#AF73D8\" offset=\"100%\" />\n      </radialGradient>\n      <radialGradient\n        cx=\"99.122%\"\n        cy=\"34.222%\"\n        fx=\"99.122%\"\n        fy=\"34.222%\"\n        r=\"42.521%\"\n        gradientTransform=\"translate(0 -56809933.375) skewY(90)\"\n        id=\"c\"\n      >\n        <stop stop-color=\"#845CE7\" offset=\"0%\" />\n        <stop stop-color=\"#AF73D8\" offset=\"100%\" />\n      </radialGradient>\n      <radialGradient\n        cx=\".878%\"\n        cy=\"34.21%\"\n        fx=\".878%\"\n        fy=\"34.21%\"\n        r=\"42.506%\"\n        gradientTransform=\"translate(0 -5447320.88) skewY(90)\"\n        id=\"d\"\n      >\n        <stop stop-color=\"#845CE7\" offset=\"0%\" />\n        <stop stop-color=\"#AF73D8\" offset=\"100%\" />\n      </radialGradient>\n    </defs>\n    <path\n      d=\"M64.995 153.355c11.777-16.858 35.745-28.399 63.396-28.399 27.65 0 51.62 11.54 63.397 28.4-11.778 16.856-35.746 28.397-63.397 28.397-27.651 0-51.619-11.54-63.396-28.398Z\"\n      fill=\"url(#a)\"\n    />\n    <path\n      d=\"M64.567 28.097C76.337 11.418 100.289 0 127.923 0c27.633 0 51.586 11.418 63.356 28.097-11.77 16.679-35.723 28.097-63.356 28.097-27.634 0-51.586-11.418-63.356-28.097Z\"\n      fill=\"url(#b)\"\n    />\n    <path\n      d=\"M129.133 91.209c-17.124 16.54-40.349 25.831-64.566 25.831-24.217 0-47.443-9.292-64.567-25.831l64.567-63.112 64.566 63.112Z\"\n      fill=\"url(#c)\"\n    />\n    <path\n      d=\"M256 91.24c-17.124 16.54-40.35 25.831-64.567 25.831-24.217 0-47.443-9.292-64.567-25.831l64.567-63.143L256 91.24Z\"\n      fill=\"url(#d)\"\n    />\n  </svg>\n);\n\nexport { Million };\n",
+      "type": "registry:component",
+      "target": "components/ui/svgs/million.tsx"
+    }
+  ],
+  "type": "registry:component"
+}

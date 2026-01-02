@@ -1,0 +1,24 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "hero232",
+  "url": "https://shadcnblocks.com/r/hero232.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "hero232",
+    "type": "registry:block",
+    "title": "Hero",
+    "description": "A component featuring centered text and buttons within a full-screen background, complemented by animated SVG illustrations on sides.",
+    "dependencies": ["framer-motion", "lucide-react", "react"],
+    "registryDependencies": [
+      "https://magicui.design/r/line-shadow-text",
+      "button"
+    ],
+    "files": [
+      {
+        "path": "code/block/hero232.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:37.333Z"
+}

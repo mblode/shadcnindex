@@ -1,0 +1,13 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "input-types-demo",
+  "type": "registry:example",
+  "registryDependencies": ["input"],
+  "files": [
+    {
+      "path": "src/registry/pure-ui/examples/input/input-types-demo.tsx",
+      "content": "import { Input } from \"@/registry/pure-ui/ui/input\";\n\nexport function InputTypesDemo() {\n  return (\n    <div className=\"flex w-80 flex-col gap-4\">\n      <div className=\"flex flex-col gap-1\">\n        <label\n          htmlFor=\"input-type-email\"\n          className=\"text-sm text-muted-foreground\"\n        >\n          Email\n        </label>\n        <Input\n          id=\"input-type-email\"\n          placeholder=\"jane@example.com\"\n          type=\"email\"\n        />\n      </div>\n      <div className=\"flex flex-col gap-1\">\n        <label\n          htmlFor=\"input-type-number\"\n          className=\"text-sm text-muted-foreground\"\n        >\n          Age\n        </label>\n        <Input id=\"input-type-number\" min={0} placeholder=\"30\" type=\"number\" />\n      </div>\n      <div className=\"flex flex-col gap-1\">\n        <label\n          htmlFor=\"input-type-password\"\n          className=\"text-sm text-muted-foreground\"\n        >\n          Password\n        </label>\n        <Input\n          id=\"input-type-password\"\n          placeholder=\"••••••••\"\n          type=\"password\"\n        />\n      </div>\n    </div>\n  );\n}\n",
+      "type": "registry:example"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "navigation-menu-navigation-menu-features-4",
+  "url": "https://shadcnblocks.com/r/navigation-menu-navigation-menu-features-4.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "navigation-menu-navigation-menu-features-4",
+    "type": "registry:block",
+    "title": "Navigation-menu/navigation-menu-features-",
+    "description": "A navigation-menu/navigation-menu-features- example",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["badge", "navigation-menu"],
+    "files": [
+      {
+        "path": "code/example/navigation-menu/navigation-menu-features-4.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:15:28.252Z"
+}

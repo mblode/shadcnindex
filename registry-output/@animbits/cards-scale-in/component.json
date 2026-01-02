@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "cards-scale-in",
+  "type": "registry:component",
+  "title": "Scale In Card",
+  "description": "Card with scale-in animation on mount",
+  "dependencies": ["motion"],
+  "files": [
+    {
+      "path": "registry/new-york/animations/cards/scale-in.tsx",
+      "content": "\"use client\";\nimport * as React from \"react\";\nimport { motion, HTMLMotionProps } from \"motion/react\";\nimport { cn } from \"@/lib/utils\";\nimport { useScaleIn } from \"@/lib/use-scale-in\";\nexport interface CardScaleInProps extends HTMLMotionProps<\"div\"> {\n  duration?: number;\n  delay?: number;\n  initialScale?: number;\n}\nexport function CardScaleIn({\n  children,\n  className,\n  duration = 0.5,\n  delay = 0,\n  initialScale = 0.8,\n  ...props\n}: CardScaleInProps) {\n  const scaleProps = useScaleIn({\n    duration,\n    delay,\n    from: initialScale,\n  });\n  return (\n    <motion.div {...scaleProps} className={cn(className)} {...props}>\n      {children}\n    </motion.div>\n  );\n}\n",
+      "type": "registry:component"
+    },
+    {
+      "path": "lib/use-scale-in.ts",
+      "content": "import { type MotionProps, type Easing } from \"motion/react\";\n\nexport interface UseScaleInOptions {\n  duration?: number;\n\n  delay?: number;\n\n  from?: number;\n\n  to?: number;\n\n  initialOpacity?: number;\n\n  ease?: Easing | Easing[];\n\n  viewport?: \"once\" | \"always\";\n}\n\nexport function useScaleIn(options: UseScaleInOptions = {}): MotionProps {\n  const {\n    duration = 0.5,\n    delay = 0,\n    from = 0.8,\n    to = 1,\n    initialOpacity = 0,\n    ease = \"easeOut\",\n    viewport = \"once\",\n  } = options;\n\n  return {\n    initial: {\n      scale: from,\n      opacity: initialOpacity,\n    },\n    whileInView: {\n      scale: to,\n      opacity: 1,\n    },\n    viewport: {\n      once: viewport === \"once\",\n    },\n    transition: {\n      duration,\n      delay,\n      ease,\n    },\n  };\n}\n",
+      "type": "registry:lib"
+    }
+  ]
+}

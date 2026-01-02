@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "compare4",
+  "url": "https://shadcnblocks.com/r/compare4.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "compare4",
+    "type": "registry:block",
+    "title": "Compare",
+    "description": "A comparison component contrasting traditional vs cloud-native approaches across multiple metrics with hover-to-highlight functionality and a \"Get Started\" button.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["button"],
+    "files": [
+      {
+        "path": "code/block/compare4.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:16.956Z"
+}

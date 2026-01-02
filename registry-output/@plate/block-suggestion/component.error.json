@@ -1,0 +1,13 @@
+{
+  "registry": "@plate",
+  "component": "block-suggestion",
+  "url": "https://platejs.org/r/block-suggestion.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "block-suggestion",
+    "type": "registry:ui",
+    "title": "Block Suggestion",
+    "dependencies": ["@platejs/suggestion"]
+  },
+  "fetchedAt": "2026-01-02T11:11:23.839Z"
+}

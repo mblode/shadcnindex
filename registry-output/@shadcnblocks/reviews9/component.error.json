@@ -1,0 +1,25 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "reviews9",
+  "url": "https://shadcnblocks.com/r/reviews9.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "reviews9",
+    "type": "registry:block",
+    "title": "Reviews",
+    "description": "This component displays a carousel of user reviews, featuring ratings, comments, authors, dates, and associated images. It's designed to easily integrate user feedback into applications, providing an interactive way to showcase testimonials.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": [
+      "https://shadcnblocks.com/r/rating",
+      "card",
+      "carousel"
+    ],
+    "files": [
+      {
+        "path": "code/block/reviews9.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:49.810Z"
+}

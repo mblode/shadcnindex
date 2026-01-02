@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "planetscale",
+  "title": "planetscale",
+  "files": [
+    {
+      "path": "././static/components-generated/planetscale.tsx",
+      "content": "import type { SVGProps } from \"react\";\n\nconst Planetscale = (props: SVGProps<SVGSVGElement>) => (\n  <svg {...props} preserveAspectRatio=\"xMidYMid\" viewBox=\"0 0 256 256\">\n    <path d=\"M256 128a128 128 0 01-128 128zM128 0c52 0 96.7 31 116.8 75.5L75.5 244.8c-7.3-3.3-14.2-7.2-20.7-11.7L160 128h-32l-90.5 90.5A128 128 0 01128 0z\" />\n  </svg>\n);\n\nexport { Planetscale };\n",
+      "type": "registry:component",
+      "target": "components/ui/svgs/planetscale.tsx"
+    },
+    {
+      "path": "././static/components-generated/planetscaleDark.tsx",
+      "content": "import type { SVGProps } from \"react\";\n\nconst PlanetscaleDark = (props: SVGProps<SVGSVGElement>) => (\n  <svg {...props} preserveAspectRatio=\"xMidYMid\" viewBox=\"0 0 256 256\">\n    <path\n      fill=\"#fff\"\n      d=\"M256 128a128 128 0 01-128 128zM128 0c52 0 96.7 31 116.8 75.5L75.5 244.8c-7.3-3.3-14.2-7.2-20.7-11.7L160 128h-32l-90.5 90.5A128 128 0 01128 0z\"\n    />\n  </svg>\n);\n\nexport { PlanetscaleDark };\n",
+      "type": "registry:component",
+      "target": "components/ui/svgs/planetscaleDark.tsx"
+    }
+  ],
+  "type": "registry:component"
+}

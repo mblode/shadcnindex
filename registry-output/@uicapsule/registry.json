@@ -1,0 +1,812 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "uicapsule",
+  "homepage": "https://uicapsule.com",
+  "items": [
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry.json",
+      "homepage": "https://uicapsule.com/ui/ascii-renderer",
+      "name": "ascii-renderer",
+      "type": "registry:block",
+      "author": "Kaiyu Hsu <uicapsule@kyh.io>",
+      "dependencies": ["@react-three/drei", "@react-three/fiber", "three"],
+      "devDependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "type": "registry:file",
+          "path": "/ascii-renderer.tsx",
+          "target": "uicapsule/ascii-renderer/ascii-renderer.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry.json",
+      "homepage": "https://uicapsule.com/ui/background-pixel-stars",
+      "name": "background-pixel-stars",
+      "type": "registry:block",
+      "author": "Kaiyu Hsu <uicapsule@kyh.io>",
+      "dependencies": [],
+      "devDependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "type": "registry:file",
+          "path": "/background-pixel-stars.tsx",
+          "target": "uicapsule/background-pixel-stars/background-pixel-stars.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry.json",
+      "homepage": "https://uicapsule.com/ui/background-shapes",
+      "name": "background-shapes",
+      "type": "registry:block",
+      "author": "Kaiyu Hsu <uicapsule@kyh.io>",
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "type": "registry:file",
+          "path": "/background-shapes.tsx",
+          "target": "uicapsule/background-shapes/background-shapes.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry.json",
+      "homepage": "https://uicapsule.com/ui/card-stack",
+      "name": "card-stack",
+      "type": "registry:block",
+      "author": "Kaiyu Hsu <uicapsule@kyh.io>",
+      "dependencies": ["@gsap/react", "gsap"],
+      "devDependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "type": "registry:file",
+          "path": "/card-stack.tsx",
+          "target": "uicapsule/card-stack/card-stack.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry.json",
+      "homepage": "https://uicapsule.com/ui/carousel-3d",
+      "name": "carousel-3d",
+      "type": "registry:block",
+      "author": "Kaiyu Hsu <uicapsule@kyh.io>",
+      "dependencies": ["@react-three/drei", "@react-three/fiber", "three"],
+      "devDependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "type": "registry:file",
+          "path": "/carousel-3d.tsx",
+          "target": "uicapsule/carousel-3d/carousel-3d.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry.json",
+      "homepage": "https://uicapsule.com/ui/emerald-template",
+      "name": "emerald-template",
+      "type": "registry:block",
+      "author": "Kaiyu Hsu <uicapsule@kyh.io>",
+      "dependencies": [
+        "@headless-tree/core",
+        "@headless-tree/react",
+        "@hookform/resolvers",
+        "@tanstack/react-table",
+        "class-variance-authority",
+        "cmdk",
+        "date-fns",
+        "lucide-react",
+        "motion",
+        "next-themes",
+        "radix-ui",
+        "react-day-picker",
+        "react-hook-form",
+        "shiki",
+        "sonner",
+        "tailwind-merge",
+        "tw-animate-css",
+        "vaul"
+      ],
+      "devDependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "type": "registry:file",
+          "path": "/preview.css",
+          "target": "uicapsule/emerald-template/preview.css"
+        },
+        {
+          "type": "registry:file",
+          "path": "/_components/chain-of-thought.tsx",
+          "target": "uicapsule/emerald-template/_components/chain-of-thought.tsx"
+        },
+        {
+          "type": "registry:file",
+          "path": "/_components/features-section.tsx",
+          "target": "uicapsule/emerald-template/_components/features-section.tsx"
+        },
+        {
+          "type": "registry:file",
+          "path": "/_components/footer.tsx",
+          "target": "uicapsule/emerald-template/_components/footer.tsx"
+        },
+        {
+          "type": "registry:file",
+          "path": "/_components/grid-pattern.tsx",
+          "target": "uicapsule/emerald-template/_components/grid-pattern.tsx"
+        },
+        {
+          "type": "registry:file",
+          "path": "/_components/header.tsx",
+          "target": "uicapsule/emerald-template/_components/header.tsx"
+        },
+        {
+          "type": "registry:file",
+          "path": "/_components/hero-section.tsx",
+          "target": "uicapsule/emerald-template/_components/hero-section.tsx"
+        },
+        {
+          "type": "registry:file",
+          "path": "/_components/hero-example.tsx",
+          "target": "uicapsule/emerald-template/_components/hero-example.tsx"
+        },
+        {
+          "type": "registry:file",
+          "path": "/_components/highlight-card.tsx",
+          "target": "uicapsule/emerald-template/_components/highlight-card.tsx"
+        },
+        {
+          "type": "registry:file",
+          "path": "/_components/infinite-loop.tsx",
+          "target": "uicapsule/emerald-template/_components/infinite-loop.tsx"
+        },
+        {
+          "type": "registry:file",
+          "path": "/_components/integrations-section.tsx",
+          "target": "uicapsule/emerald-template/_components/integrations-section.tsx"
+        },
+        {
+          "type": "registry:file",
+          "path": "/_components/logo.tsx",
+          "target": "uicapsule/emerald-template/_components/logo.tsx"
+        },
+        {
+          "type": "registry:file",
+          "path": "/_components/waitlist-form.tsx",
+          "target": "uicapsule/emerald-template/_components/waitlist-form.tsx"
+        },
+        {
+          "type": "registry:file",
+          "path": "/_components/workflow-section.tsx",
+          "target": "uicapsule/emerald-template/_components/workflow-section.tsx"
+        },
+        {
+          "type": "registry:file",
+          "path": "/ui/utils.tsx",
+          "target": "uicapsule/emerald-template/ui/utils.tsx"
+        },
+        {
+          "type": "registry:file",
+          "path": "/ui/badge.tsx",
+          "target": "uicapsule/emerald-template/ui/badge.tsx"
+        },
+        {
+          "type": "registry:file",
+          "path": "/ui/collapsible.tsx",
+          "target": "uicapsule/emerald-template/ui/collapsible.tsx"
+        },
+        {
+          "type": "registry:file",
+          "path": "/ui/spinner.tsx",
+          "target": "uicapsule/emerald-template/ui/spinner.tsx"
+        },
+        {
+          "type": "registry:file",
+          "path": "/ui/button.tsx",
+          "target": "uicapsule/emerald-template/ui/button.tsx"
+        },
+        {
+          "type": "registry:file",
+          "path": "/ui/label.tsx",
+          "target": "uicapsule/emerald-template/ui/label.tsx"
+        },
+        {
+          "type": "registry:file",
+          "path": "/ui/form.tsx",
+          "target": "uicapsule/emerald-template/ui/form.tsx"
+        },
+        {
+          "type": "registry:file",
+          "path": "/ui/toast.tsx",
+          "target": "uicapsule/emerald-template/ui/toast.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry.json",
+      "homepage": "https://uicapsule.com/ui/expanding-header-menu",
+      "name": "expanding-header-menu",
+      "type": "registry:block",
+      "author": "Kaiyu Hsu <uicapsule@kyh.io>",
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react",
+        "motion",
+        "tailwind-merge"
+      ],
+      "devDependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "type": "registry:file",
+          "path": "/expanding-header-menu.tsx",
+          "target": "uicapsule/expanding-header-menu/expanding-header-menu.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry.json",
+      "homepage": "https://uicapsule.com/ui/filter-bar",
+      "name": "filter-bar",
+      "type": "registry:block",
+      "author": "Kaiyu Hsu <uicapsule@kyh.io>",
+      "dependencies": [
+        "@ai-sdk/react",
+        "@loremllm/transport",
+        "zod",
+        "@headless-tree/core",
+        "@headless-tree/react",
+        "@hookform/resolvers",
+        "@tanstack/react-table",
+        "class-variance-authority",
+        "cmdk",
+        "date-fns",
+        "lucide-react",
+        "motion",
+        "next-themes",
+        "radix-ui",
+        "react-day-picker",
+        "react-hook-form",
+        "shiki",
+        "sonner",
+        "tailwind-merge",
+        "tw-animate-css",
+        "vaul"
+      ],
+      "devDependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "type": "registry:file",
+          "path": "/filters.tsx",
+          "target": "uicapsule/filter-bar/filters.tsx"
+        },
+        {
+          "type": "registry:file",
+          "path": "/types.ts",
+          "target": "uicapsule/filter-bar/types.ts"
+        },
+        {
+          "type": "registry:file",
+          "path": "/_components/active-filters.tsx",
+          "target": "uicapsule/filter-bar/_components/active-filters.tsx"
+        },
+        {
+          "type": "registry:file",
+          "path": "/_components/data-table-filter.tsx",
+          "target": "uicapsule/filter-bar/_components/data-table-filter.tsx"
+        },
+        {
+          "type": "registry:file",
+          "path": "/_components/filter-actions.tsx",
+          "target": "uicapsule/filter-bar/_components/filter-actions.tsx"
+        },
+        {
+          "type": "registry:file",
+          "path": "/_components/filter-operator.tsx",
+          "target": "uicapsule/filter-bar/_components/filter-operator.tsx"
+        },
+        {
+          "type": "registry:file",
+          "path": "/_components/filter-selector.tsx",
+          "target": "uicapsule/filter-bar/_components/filter-selector.tsx"
+        },
+        {
+          "type": "registry:file",
+          "path": "/_components/filter-subject.tsx",
+          "target": "uicapsule/filter-bar/_components/filter-subject.tsx"
+        },
+        {
+          "type": "registry:file",
+          "path": "/_components/use-ai-filter-simulation.ts",
+          "target": "uicapsule/filter-bar/_components/use-ai-filter-simulation.ts"
+        },
+        {
+          "type": "registry:file",
+          "path": "/_components/filter-value.tsx",
+          "target": "uicapsule/filter-bar/_components/filter-value.tsx"
+        },
+        {
+          "type": "registry:file",
+          "path": "/filter-package/index.ts",
+          "target": "uicapsule/filter-bar/filter-package/index.ts"
+        },
+        {
+          "type": "registry:file",
+          "path": "/filter-package/core/filters.ts",
+          "target": "uicapsule/filter-bar/filter-package/core/filters.ts"
+        },
+        {
+          "type": "registry:file",
+          "path": "/filter-package/core/operators.ts",
+          "target": "uicapsule/filter-bar/filter-package/core/operators.ts"
+        },
+        {
+          "type": "registry:file",
+          "path": "/filter-package/core/types.ts",
+          "target": "uicapsule/filter-bar/filter-package/core/types.ts"
+        },
+        {
+          "type": "registry:file",
+          "path": "/filter-package/hooks/use-data-table-filters.ts",
+          "target": "uicapsule/filter-bar/filter-package/hooks/use-data-table-filters.ts"
+        },
+        {
+          "type": "registry:file",
+          "path": "/filter-package/lib/array.ts",
+          "target": "uicapsule/filter-bar/filter-package/lib/array.ts"
+        },
+        {
+          "type": "registry:file",
+          "path": "/filter-package/lib/filter-fns.ts",
+          "target": "uicapsule/filter-bar/filter-package/lib/filter-fns.ts"
+        },
+        {
+          "type": "registry:file",
+          "path": "/filter-package/lib/helpers.ts",
+          "target": "uicapsule/filter-bar/filter-package/lib/helpers.ts"
+        },
+        {
+          "type": "registry:file",
+          "path": "/filter-package/lib/memo.ts",
+          "target": "uicapsule/filter-bar/filter-package/lib/memo.ts"
+        },
+        {
+          "type": "registry:file",
+          "path": "/filter-package/lib/order-fns.ts",
+          "target": "uicapsule/filter-bar/filter-package/lib/order-fns.ts"
+        },
+        {
+          "type": "registry:file",
+          "path": "/filter-package/core/columns/column-builder.ts",
+          "target": "uicapsule/filter-bar/filter-package/core/columns/column-builder.ts"
+        },
+        {
+          "type": "registry:file",
+          "path": "/filter-package/core/columns/column-data-service.ts",
+          "target": "uicapsule/filter-bar/filter-package/core/columns/column-data-service.ts"
+        },
+        {
+          "type": "registry:file",
+          "path": "/filter-package/core/columns/column-factory.ts",
+          "target": "uicapsule/filter-bar/filter-package/core/columns/column-factory.ts"
+        },
+        {
+          "type": "registry:file",
+          "path": "/filter-package/core/columns/index.ts",
+          "target": "uicapsule/filter-bar/filter-package/core/columns/index.ts"
+        },
+        {
+          "type": "registry:file",
+          "path": "/filter-package/integrations/tanstack-table/filter-fns.ts",
+          "target": "uicapsule/filter-bar/filter-package/integrations/tanstack-table/filter-fns.ts"
+        },
+        {
+          "type": "registry:file",
+          "path": "/filter-package/integrations/tanstack-table/index.ts",
+          "target": "uicapsule/filter-bar/filter-package/integrations/tanstack-table/index.ts"
+        },
+        {
+          "type": "registry:file",
+          "path": "/ui/utils.tsx",
+          "target": "uicapsule/filter-bar/ui/utils.tsx"
+        },
+        {
+          "type": "registry:file",
+          "path": "/ui/spinner.tsx",
+          "target": "uicapsule/filter-bar/ui/spinner.tsx"
+        },
+        {
+          "type": "registry:file",
+          "path": "/ui/button.tsx",
+          "target": "uicapsule/filter-bar/ui/button.tsx"
+        },
+        {
+          "type": "registry:file",
+          "path": "/ui/separator.tsx",
+          "target": "uicapsule/filter-bar/ui/separator.tsx"
+        },
+        {
+          "type": "registry:file",
+          "path": "/ui/dialog.tsx",
+          "target": "uicapsule/filter-bar/ui/dialog.tsx"
+        },
+        {
+          "type": "registry:file",
+          "path": "/ui/command.tsx",
+          "target": "uicapsule/filter-bar/ui/command.tsx"
+        },
+        {
+          "type": "registry:file",
+          "path": "/ui/popover.tsx",
+          "target": "uicapsule/filter-bar/ui/popover.tsx"
+        },
+        {
+          "type": "registry:file",
+          "path": "/ui/checkbox.tsx",
+          "target": "uicapsule/filter-bar/ui/checkbox.tsx"
+        },
+        {
+          "type": "registry:file",
+          "path": "/ui/calendar.tsx",
+          "target": "uicapsule/filter-bar/ui/calendar.tsx"
+        },
+        {
+          "type": "registry:file",
+          "path": "/ui/input.tsx",
+          "target": "uicapsule/filter-bar/ui/input.tsx"
+        },
+        {
+          "type": "registry:file",
+          "path": "/ui/slider.tsx",
+          "target": "uicapsule/filter-bar/ui/slider.tsx"
+        },
+        {
+          "type": "registry:file",
+          "path": "/ui/switch.tsx",
+          "target": "uicapsule/filter-bar/ui/switch.tsx"
+        },
+        {
+          "type": "registry:file",
+          "path": "/ui/tabs.tsx",
+          "target": "uicapsule/filter-bar/ui/tabs.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry.json",
+      "homepage": "https://uicapsule.com/ui/infinite-grid",
+      "name": "infinite-grid",
+      "type": "registry:block",
+      "author": "Kaiyu Hsu <uicapsule@kyh.io>",
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "type": "registry:file",
+          "path": "/infinite-grid.tsx",
+          "target": "uicapsule/infinite-grid/infinite-grid.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry.json",
+      "homepage": "https://uicapsule.com/ui/ios-volume-slider",
+      "name": "ios-volume-slider",
+      "type": "registry:block",
+      "author": "Kaiyu Hsu <uicapsule@kyh.io>",
+      "dependencies": ["@radix-ui/react-slider", "motion"],
+      "devDependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "type": "registry:file",
+          "path": "/ios-volume-slider.tsx",
+          "target": "uicapsule/ios-volume-slider/ios-volume-slider.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry.json",
+      "homepage": "https://uicapsule.com/ui/light-dark-toggle",
+      "name": "light-dark-toggle",
+      "type": "registry:block",
+      "author": "Kaiyu Hsu <uicapsule@kyh.io>",
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "type": "registry:file",
+          "path": "/light-dark-toggle.tsx",
+          "target": "uicapsule/light-dark-toggle/light-dark-toggle.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry.json",
+      "homepage": "https://uicapsule.com/ui/like-button",
+      "name": "like-button",
+      "type": "registry:block",
+      "author": "Kaiyu Hsu <uicapsule@kyh.io>",
+      "dependencies": ["@number-flow/react", "motion"],
+      "devDependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "type": "registry:file",
+          "path": "/like-button.tsx",
+          "target": "uicapsule/like-button/like-button.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry.json",
+      "homepage": "https://uicapsule.com/ui/radial-slider",
+      "name": "radial-slider",
+      "type": "registry:block",
+      "author": "Kaiyu Hsu <uicapsule@kyh.io>",
+      "dependencies": ["@number-flow/react", "motion"],
+      "devDependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "type": "registry:file",
+          "path": "/radial-slider.tsx",
+          "target": "uicapsule/radial-slider/radial-slider.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry.json",
+      "homepage": "https://uicapsule.com/ui/sidebar",
+      "name": "sidebar",
+      "type": "registry:block",
+      "author": "Kaiyu Hsu <uicapsule@kyh.io>",
+      "dependencies": ["lucide-react"],
+      "devDependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "type": "registry:file",
+          "path": "/dashboard.tsx",
+          "target": "uicapsule/sidebar/dashboard.tsx"
+        },
+        {
+          "type": "registry:file",
+          "path": "/resizable-demo.tsx",
+          "target": "uicapsule/sidebar/resizable-demo.tsx"
+        },
+        {
+          "type": "registry:file",
+          "path": "/sidebar.css",
+          "target": "uicapsule/sidebar/sidebar.css"
+        },
+        {
+          "type": "registry:file",
+          "path": "/sidebar.tsx",
+          "target": "uicapsule/sidebar/sidebar.tsx"
+        },
+        {
+          "type": "registry:file",
+          "path": "/use-resizable-sidebar.ts",
+          "target": "uicapsule/sidebar/use-resizable-sidebar.ts"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry.json",
+      "homepage": "https://uicapsule.com/ui/snail-timer",
+      "name": "snail-timer",
+      "type": "registry:block",
+      "author": "Kaiyu Hsu <uicapsule@kyh.io>",
+      "dependencies": [],
+      "devDependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "type": "registry:file",
+          "path": "/snail-timer.css",
+          "target": "uicapsule/snail-timer/snail-timer.css"
+        },
+        {
+          "type": "registry:file",
+          "path": "/snail-timer.tsx",
+          "target": "uicapsule/snail-timer/snail-timer.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry.json",
+      "homepage": "https://uicapsule.com/ui/sphere",
+      "name": "sphere",
+      "type": "registry:block",
+      "author": "Kaiyu Hsu <uicapsule@kyh.io>",
+      "dependencies": ["three"],
+      "devDependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "type": "registry:file",
+          "path": "/sphere.tsx",
+          "target": "uicapsule/sphere/sphere.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry.json",
+      "homepage": "https://uicapsule.com/ui/spreadsheet",
+      "name": "spreadsheet",
+      "type": "registry:block",
+      "author": "Kaiyu Hsu <uicapsule@kyh.io>",
+      "dependencies": [
+        "@ai-sdk/react",
+        "@loremllm/transport",
+        "@tanstack/react-table",
+        "@tanstack/react-virtual",
+        "zod",
+        "zustand",
+        "@headless-tree/core",
+        "@headless-tree/react",
+        "@hookform/resolvers",
+        "class-variance-authority",
+        "cmdk",
+        "date-fns",
+        "lucide-react",
+        "motion",
+        "next-themes",
+        "radix-ui",
+        "react-day-picker",
+        "react-hook-form",
+        "shiki",
+        "sonner",
+        "tailwind-merge",
+        "tw-animate-css",
+        "vaul"
+      ],
+      "devDependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "type": "registry:file",
+          "path": "/components/editable-cell.tsx",
+          "target": "uicapsule/spreadsheet/components/editable-cell.tsx"
+        },
+        {
+          "type": "registry:file",
+          "path": "/components/memoized-table-body.tsx",
+          "target": "uicapsule/spreadsheet/components/memoized-table-body.tsx"
+        },
+        {
+          "type": "registry:file",
+          "path": "/components/resize-handle.tsx",
+          "target": "uicapsule/spreadsheet/components/resize-handle.tsx"
+        },
+        {
+          "type": "registry:file",
+          "path": "/components/spreadsheet.tsx",
+          "target": "uicapsule/spreadsheet/components/spreadsheet.tsx"
+        },
+        {
+          "type": "registry:file",
+          "path": "/components/status-bar.tsx",
+          "target": "uicapsule/spreadsheet/components/status-bar.tsx"
+        },
+        {
+          "type": "registry:file",
+          "path": "/components/toolbar.tsx",
+          "target": "uicapsule/spreadsheet/components/toolbar.tsx"
+        },
+        {
+          "type": "registry:file",
+          "path": "/lib/spreadsheet-store.ts",
+          "target": "uicapsule/spreadsheet/lib/spreadsheet-store.ts"
+        },
+        {
+          "type": "registry:file",
+          "path": "/lib/spreadsheet-utils.ts",
+          "target": "uicapsule/spreadsheet/lib/spreadsheet-utils.ts"
+        },
+        {
+          "type": "registry:file",
+          "path": "/lib/use-ai-enrichment.ts",
+          "target": "uicapsule/spreadsheet/lib/use-ai-enrichment.ts"
+        },
+        {
+          "type": "registry:file",
+          "path": "/lib/use-spreadsheet-handlers.ts",
+          "target": "uicapsule/spreadsheet/lib/use-spreadsheet-handlers.ts"
+        },
+        {
+          "type": "registry:file",
+          "path": "/ui/utils.tsx",
+          "target": "uicapsule/spreadsheet/ui/utils.tsx"
+        },
+        {
+          "type": "registry:file",
+          "path": "/ui/input.tsx",
+          "target": "uicapsule/spreadsheet/ui/input.tsx"
+        },
+        {
+          "type": "registry:file",
+          "path": "/ui/spinner.tsx",
+          "target": "uicapsule/spreadsheet/ui/spinner.tsx"
+        },
+        {
+          "type": "registry:file",
+          "path": "/ui/button.tsx",
+          "target": "uicapsule/spreadsheet/ui/button.tsx"
+        },
+        {
+          "type": "registry:file",
+          "path": "/ui/dropdown-menu.tsx",
+          "target": "uicapsule/spreadsheet/ui/dropdown-menu.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry.json",
+      "homepage": "https://uicapsule.com/ui/timeline",
+      "name": "timeline",
+      "type": "registry:block",
+      "author": "Kaiyu Hsu <uicapsule@kyh.io>",
+      "dependencies": [],
+      "devDependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "type": "registry:file",
+          "path": "/timeline.tsx",
+          "target": "uicapsule/timeline/timeline.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry.json",
+      "homepage": "https://uicapsule.com/ui/tooltip-grid",
+      "name": "tooltip-grid",
+      "type": "registry:block",
+      "author": "Kaiyu Hsu <uicapsule@kyh.io>",
+      "dependencies": ["@floating-ui/react", "motion"],
+      "devDependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "type": "registry:file",
+          "path": "/tooltip.css",
+          "target": "uicapsule/tooltip-grid/tooltip.css"
+        },
+        {
+          "type": "registry:file",
+          "path": "/tooltip.tsx",
+          "target": "uicapsule/tooltip-grid/tooltip.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry.json",
+      "homepage": "https://uicapsule.com/ui/voice-dictator",
+      "name": "voice-dictator",
+      "type": "registry:block",
+      "author": "Kaiyu Hsu <uicapsule@kyh.io>",
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "type": "registry:file",
+          "path": "/voice-dictator.tsx",
+          "target": "uicapsule/voice-dictator/voice-dictator.tsx"
+        }
+      ]
+    }
+  ]
+}

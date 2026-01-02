@@ -1,0 +1,14 @@
+{
+  "name": "use-creation",
+  "author": "Brendan Dash (https://shadcn-hooks.vercel.app)",
+  "description": "A hook to create a value only once",
+  "dependencies": ["es-toolkit"],
+  "files": [
+    {
+      "path": "registry/hooks/use-creation.ts",
+      "content": "import { isEqual } from 'es-toolkit/predicate'\nimport { useRef } from 'react'\nimport type { DependencyList } from 'react'\n\nexport function useCreation<T>(factory: () => T, deps: DependencyList) {\n  const { current } = useRef({\n    deps,\n    obj: undefined as T,\n    initialized: false,\n  })\n\n  if (current.initialized === false || !isEqual(current.deps, deps)) {\n    current.deps = deps\n    current.obj = factory()\n    current.initialized = true\n  }\n\n  return current.obj\n}\n",
+      "type": "registry:hook"
+    }
+  ],
+  "type": "registry:hook"
+}

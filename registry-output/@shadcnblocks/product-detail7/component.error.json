@@ -1,0 +1,36 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "product-detail7",
+  "url": "https://shadcnblocks.com/r/product-detail7.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "product-detail7",
+    "type": "registry:block",
+    "title": "Product-detail",
+    "description": "This component showcases detailed product information, integrating a carousel for engaging image displays and a dynamic form for quantity selection. It features an accordion for organizing sections like product details and application tips, and presents badges for promotional messages such as discounts or new arrivals.",
+    "dependencies": [
+      "@hookform/resolvers",
+      "lucide-react",
+      "photoswipe",
+      "react",
+      "react-hook-form",
+      "zod"
+    ],
+    "registryDependencies": [
+      "accordion",
+      "aspect-ratio",
+      "badge",
+      "button",
+      "carousel",
+      "form",
+      "input"
+    ],
+    "files": [
+      {
+        "path": "code/block/product-detail7.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:45.776Z"
+}

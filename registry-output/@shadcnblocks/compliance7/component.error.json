@@ -1,0 +1,24 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "compliance7",
+  "url": "https://shadcnblocks.com/r/compliance7.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "compliance7",
+    "type": "registry:block",
+    "title": "Compliance",
+    "description": "The Compliance7 component is a customizable block showcasing key features and certifications related to cloud infrastructure, emphasizing security and performance. It includes detailed descriptions of features and displays certification status badges, making it ideal for highlighting compliance and technical capabilities.",
+    "dependencies": [],
+    "registryDependencies": [
+      "https://ui.aceternity.com/registry/dotted-glow-background.json",
+      "badge"
+    ],
+    "files": [
+      {
+        "path": "code/block/compliance7.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:17.285Z"
+}

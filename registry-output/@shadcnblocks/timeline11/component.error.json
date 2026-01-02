@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "timeline11",
+  "url": "https://shadcnblocks.com/r/timeline11.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "timeline11",
+    "type": "registry:block",
+    "title": "Timeline",
+    "description": "A 4-column timeline component showcasing phases with icons, dates, titles, and descriptions. Features an animated progress indicator.",
+    "dependencies": ["framer-motion", "lucide-react", "react"],
+    "registryDependencies": ["card", "separator"],
+    "files": [
+      {
+        "path": "code/block/timeline11.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:54.473Z"
+}

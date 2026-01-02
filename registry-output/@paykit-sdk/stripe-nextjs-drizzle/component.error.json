@@ -1,0 +1,31 @@
+{
+  "registry": "@paykit-sdk",
+  "component": "stripe-nextjs-drizzle",
+  "url": "https://www.usepaykit.dev/r/stripe-nextjs-drizzle.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "stripe-nextjs-drizzle",
+    "type": "registry:block",
+    "description": "Stripe integration for Next.js with Drizzle ORM schemas for payments and subscriptions",
+    "dependencies": ["drizzle-orm"],
+    "devDependencies": ["drizzle-kit"],
+    "registryDependencies": ["https://usepaykit.dev/r/stripe-nextjs"],
+    "files": [
+      {
+        "type": "registry:file",
+        "target": "src/db/schema/payments.ts",
+        "path": "shared/schema/drizzle.ts",
+        "content": "import {\n  pgTable,\n  text,\n  timestamp,\n  integer,\n  json,\n  pgEnum,\n  index,\n  boolean,\n} from 'drizzle-orm/pg-core';\n\n// Enums\nexport const paymentStatusEnum = pgEnum('payment_status', [\n  'pending',\n  'processing',\n  'requires_action',\n  'requires_capture',\n  'succeeded',\n  'canceled',\n  'failed',\n]);\n\nexport const subscriptionStatusEnum = pgEnum('subscription_status', [\n  'active',\n  'past_due',\n  'canceled',\n  'expired',\n  'pending',\n]);\n\nexport const invoiceStatusEnum = pgEnum('invoice_status', ['paid', 'open']);\n\n// Tables\nexport const customers = pgTable('customers', {\n  id: text('id').primaryKey(),\n  email: text('email').notNull().unique(),\n  name: text('name').notNull(),\n  phone: text('phone').notNull(),\n  metadata: json('metadata'),\n  createdAt: timestamp('created_at').defaultNow().notNull(),\n  updatedAt: timestamp('updated_at').defaultNow().notNull(),\n});\n\nexport const payments = pgTable(\n  'payments',\n  {\n    id: text('id').primaryKey(),\n    amount: integer('amount').notNull(),\n    currency: text('currency').notNull(),\n    status: paymentStatusEnum('status').notNull(),\n    itemId: text('item_id'),\n    metadata: json('metadata').notNull(),\n    createdAt: timestamp('created_at').defaultNow().notNull(),\n    updatedAt: timestamp('updated_at').defaultNow().notNull(),\n\n    // Optional customer relationship\n    customerId: text('customer_id').references(() => customers.id, {\n      onDelete: 'cascade',\n    }),\n\n    // Guest checkout for when the customer is not yet determined\n    customerEmail: text('customer_email'),\n\n    paymentUrl: text('payment_url'),\n    requiresAction: boolean('requires_action').default(false),\n  },\n  table => ({\n    customerIdIdx: index('payments_customer_id_idx').on(table.customerId),\n    statusIdx: index('payments_status_idx').on(table.status),\n    customerEmailIdx: index('payments_customer_email_idx').on(table.customerEmail),\n  }),\n);\n\nexport const subscriptions = pgTable(\n  'subscriptions',\n  {\n    id: text('id').primaryKey(),\n    amount: integer('amount').notNull(),\n    currency: text('currency').notNull(),\n    status: subscriptionStatusEnum('status').notNull(),\n    itemId: text('item_id').notNull(),\n    billingInterval: text('billing_interval').notNull(),\n    currentPeriodStart: timestamp('current_period_start').notNull(),\n    currentPeriodEnd: timestamp('current_period_end').notNull(),\n    metadata: json('metadata'),\n    customFields: json('custom_fields'),\n    createdAt: timestamp('created_at').defaultNow().notNull(),\n    updatedAt: timestamp('updated_at').defaultNow().notNull(),\n\n    // Optional customer relationship\n    customerId: text('customer_id').references(() => customers.id, {\n      onDelete: 'cascade',\n    }),\n\n    // Guest checkout for when the customer is not yet determined\n    customerEmail: text('customer_email'),\n  },\n  table => ({\n    customerIdIdx: index('subscriptions_customer_id_idx').on(table.customerId),\n    statusIdx: index('subscriptions_status_idx').on(table.status),\n    customerEmailIdx: index('subscriptions_customer_email_idx').on(table.customerEmail),\n  }),\n);\n\nexport const refunds = pgTable(\n  'refunds',\n  {\n    id: text('id').primaryKey(),\n    amount: integer('amount').notNull(),\n    currency: text('currency').notNull(),\n    reason: text('reason'),\n    metadata: json('metadata'),\n    createdAt: timestamp('created_at').defaultNow().notNull(),\n\n    paymentId: text('payment_id')\n      .notNull()\n      .references(() => payments.id, { onDelete: 'cascade' }),\n  },\n  table => ({\n    paymentIdIdx: index('refunds_payment_id_idx').on(table.paymentId),\n  }),\n);\n\nexport const invoices = pgTable(\n  'invoices',\n  {\n    id: text('id').primaryKey(),\n    subscriptionId: text('subscription_id').references(() => subscriptions.id, {\n      onDelete: 'set null',\n    }),\n    billingMode: text('billing_mode').notNull(),\n    amountPaid: integer('amount_paid').notNull(),\n    currency: text('currency').notNull(),\n    status: invoiceStatusEnum('status').notNull(),\n    paidAt: timestamp('paid_at'),\n    lineItems: json('line_items'),\n    metadata: json('metadata'),\n    customFields: json('custom_fields'),\n    createdAt: timestamp('created_at').defaultNow().notNull(),\n    updatedAt: timestamp('updated_at').defaultNow().notNull(),\n\n    customerId: text('customer_id').references(() => customers.id, {\n      onDelete: 'cascade',\n    }),\n\n    // Guest checkout for when the customer is not yet determined\n    customerEmail: text('customer_email'),\n  },\n  table => ({\n    customerIdIdx: index('invoices_customer_id_idx').on(table.customerId),\n    subscriptionIdIdx: index('invoices_subscription_id_idx').on(table.subscriptionId),\n    statusIdx: index('invoices_status_idx').on(table.status),\n    customerEmailIdx: index('invoices_customer_email_idx').on(table.customerEmail),\n  }),\n);\n\nexport type Invoice = typeof invoices.$inferSelect;\nexport type Customer = typeof customers.$inferSelect;\nexport type Payment = typeof payments.$inferSelect;\nexport type Subscription = typeof subscriptions.$inferSelect;\nexport type Refund = typeof refunds.$inferSelect;\n"
+      }
+    ],
+    "docs": "Copy the content from src/db/schema/payments.ts to your own schema.ts file. \n Run 'drizzle-kit push' to sync with your database.",
+    "meta": {
+      "backend": "nextjs",
+      "provider": "stripe",
+      "orm": "drizzle",
+      "database": "postgres",
+      "auth": "none"
+    }
+  },
+  "fetchedAt": "2026-01-02T11:17:42.148Z"
+}

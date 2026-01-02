@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "extends": "none",
+  "name": "switch-controlled-demo",
+  "title": "Switch Controlled",
+  "description": "switch-controlled-demo",
+  "registryDependencies": [
+    "https://intentui.com/r/field",
+    "https://intentui.com/r/switch"
+  ],
+  "files": [
+    {
+      "path": "src/components/docs/controls/switch/switch-controlled-demo.tsx",
+      "content": "\"use client\"\n\nimport { useState } from \"react\"\n\nimport { Description } from \"@/components/ui/field\"\nimport { Switch, SwitchLabel } from \"@/components/ui/switch\"\n\nexport default function SwitchControlledDemo() {\n  const [darkMode, setDarkMode] = useState(false)\n  return (\n    <Switch isSelected={darkMode} onChange={setDarkMode} value=\"dark_mode\">\n      {({ isSelected }) => (\n        <>\n          <SwitchLabel>Dark mode</SwitchLabel>\n          <Description>Dark mode is {isSelected ? \"enabled\" : \"disabled\"}.</Description>\n        </>\n      )}\n    </Switch>\n  )\n}\n",
+      "type": "registry:page",
+      "target": "app/switch-controlled-demo/page.tsx"
+    }
+  ],
+  "type": "registry:page"
+}

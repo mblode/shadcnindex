@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "loaders-orbit",
+  "type": "registry:component",
+  "title": "Orbit Loader",
+  "description": "Spinning particles in orbit animation",
+  "dependencies": ["motion"],
+  "files": [
+    {
+      "path": "registry/new-york/animations/loaders/orbit.tsx",
+      "content": "\"use client\";\nimport * as React from \"react\";\nimport { motion, HTMLMotionProps } from \"motion/react\";\nimport { cn } from \"@/lib/utils\";\nexport interface LoaderOrbitProps\n  extends Omit<HTMLMotionProps<\"div\">, \"children\"> {\n  size?: number;\n  particleSize?: number;\n  particleCount?: number;\n  color?: string;\n  duration?: number;\n}\nexport function LoaderOrbit({\n  className,\n  size = 40,\n  particleSize = 8,\n  particleCount = 3,\n  color = \"currentColor\",\n  duration = 1.5,\n  ...props\n}: LoaderOrbitProps) {\n  return (\n    <motion.div\n      className={cn(\"relative\", className)}\n      style={{ width: size, height: size } as React.CSSProperties}\n      animate={{ rotate: 360 }}\n      transition={{\n        duration,\n        ease: \"linear\",\n        repeat: Infinity,\n      }}\n    >\n      {Array.from({ length: particleCount }).map((_, index) => {\n        const angle = (360 / particleCount) * index;\n        const radius = size / 2 - particleSize;\n        const x = Math.cos((angle * Math.PI) / 180) * radius;\n        const y = Math.sin((angle * Math.PI) / 180) * radius;\n        return (\n          <div\n            key={index}\n            className=\"absolute rounded-full\"\n            style={\n              {\n                width: particleSize,\n                height: particleSize,\n                backgroundColor: color,\n                left: \"50%\",\n                top: \"50%\",\n                transform: `translate(${x}px, ${y}px) translate(-50%, -50%)`,\n              } as React.CSSProperties\n            }\n          />\n        );\n      })}\n    </motion.div>\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ]
+}

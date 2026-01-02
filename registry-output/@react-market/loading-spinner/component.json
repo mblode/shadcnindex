@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "loading-spinner",
+  "type": "registry:component",
+  "title": "Simple loading spinner",
+  "author": "Benjamin",
+  "description": "Very basic loading spinner with 0 dependencies!",
+  "dependencies": [],
+  "devDependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "id": 8,
+      "path": "loading-spinner.tsx",
+      "content": "import { cn } from \"@/lib/utils\";\n\ninterface Props {\n  classNameSpinner?: string;\n}\n\nexport default function LoadingSpinner(props: Props) {\n  return (\n    <div className=\"flex justify-center items-center h-full\">\n      <div\n        className={cn(\n          \"animate-spin rounded-full size-32 border-t-2 border-b-2 border-primary\",\n          props.classNameSpinner,\n        )}\n      />\n    </div>\n  );\n}",
+      "type": "registry:component"
+    }
+  ],
+  "categories": ["Loading Indicator"]
+}

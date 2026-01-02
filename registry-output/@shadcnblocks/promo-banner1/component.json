@@ -1,0 +1,33 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "promo-banner1",
+  "title": "Promo-banner",
+  "description": "This component displays a promotional banner indicating progress towards unlocking a free shipping offer based on a spending threshold. It features a progress bar and dynamically updates the user's remaining balance to qualify for free shipping.",
+  "dependencies": [
+    "lucide-react",
+    "clsx",
+    "tailwind-merge",
+    "@radix-ui/react-progress"
+  ],
+  "registryDependencies": ["progress"],
+  "files": [
+    {
+      "path": "code/block/promo-banner1.tsx",
+      "content": "import { Truck, X } from \"lucide-react\";\n\nimport { cn } from \"@/lib/utils\";\n\nimport { Progress } from \"@/components/ui/progress\";\n\ninterface PromoBanner1Props {\n  threshold?: number;\n  currentAmount?: number;\n  className?: string;\n}\n\nconst PromoBanner1 = ({\n  threshold = 75,\n  currentAmount = 45,\n  className,\n}: PromoBanner1Props) => {\n  const progress = Math.min((currentAmount / threshold) * 100, 100);\n  const remaining = threshold - currentAmount;\n  const hasQualified = remaining <= 0;\n\n  return (\n    <div\n      className={cn(\n        \"w-full bg-emerald-600 text-emerald-50\",\n        className,\n      )}\n    >\n      <div className=\"container flex items-center justify-center gap-3 py-2.5\">\n        <Truck className=\"size-4 shrink-0\" />\n        {hasQualified ? (\n          <p className=\"text-sm font-medium\">\n            🎉 You&apos;ve unlocked FREE shipping!\n          </p>\n        ) : (\n          <div className=\"flex items-center gap-3\">\n            <p className=\"text-sm\">\n              Spend <span className=\"font-semibold\">${remaining.toFixed(2)}</span>{\" \"}\n              more for <span className=\"font-semibold\">FREE shipping</span>\n            </p>\n            <Progress\n              value={progress}\n              className=\"hidden h-1.5 w-24 bg-emerald-500 sm:block [&>div]:bg-white\"\n            />\n          </div>\n        )}\n      </div>\n    </div>\n  );\n};\n\nexport { PromoBanner1 };\n\n",
+      "type": "registry:block"
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "content": "import { type ClassValue, clsx } from 'clsx';\nimport { twMerge } from 'tailwind-merge';\n\nexport function cn(...inputs: ClassValue[]) {\n  return twMerge(clsx(inputs));\n}\n",
+      "type": "registry:lib",
+      "target": ""
+    },
+    {
+      "path": "src/components/ui/progress.tsx",
+      "content": "import * as React from \"react\"\nimport * as ProgressPrimitive from \"@radix-ui/react-progress\"\n\nimport { cn } from \"@/lib/utils\"\n\nfunction Progress({\n  className,\n  value,\n  ...props\n}: React.ComponentProps<typeof ProgressPrimitive.Root>) {\n  return (\n    <ProgressPrimitive.Root\n      data-slot=\"progress\"\n      className={cn(\n        \"bg-primary/20 relative h-2 w-full overflow-hidden rounded-full\",\n        className\n      )}\n      {...props}\n    >\n      <ProgressPrimitive.Indicator\n        data-slot=\"progress-indicator\"\n        className=\"bg-primary h-full w-full flex-1 transition-all\"\n        style={{ transform: `translateX(-${100 - (value || 0)}%)` }}\n      />\n    </ProgressPrimitive.Root>\n  )\n}\n\nexport { Progress }\n",
+      "type": "registry:ui",
+      "target": ""
+    }
+  ],
+  "type": "registry:block"
+}

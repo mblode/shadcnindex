@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "contact1",
+  "url": "https://shadcnblocks.com/r/contact1.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "contact1",
+    "type": "registry:block",
+    "title": "Contact",
+    "description": "A component with a two-column layout, integrating a promotional header, bullet points with icons, overlapping avatars, company logos, and a detailed form for demo booking.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["avatar", "button", "input", "select"],
+    "files": [
+      {
+        "path": "code/block/contact1.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:17.439Z"
+}

@@ -1,0 +1,37 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "product-quick-view6",
+  "url": "https://shadcnblocks.com/r/product-quick-view6.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "product-quick-view6",
+    "type": "registry:block",
+    "title": "Product-quick-view",
+    "description": "This React component provides a quick view feature for a product, displaying product details like images, price, reviews, and availability. It includes interactive elements such as an image carousel, quantity selector, and buttons for adding products to a cart or purchasing immediately.",
+    "dependencies": [
+      "@hookform/resolvers",
+      "lucide-react",
+      "react-hook-form",
+      "zod"
+    ],
+    "registryDependencies": [
+      "https://shadcnblocks.com/r/price",
+      "https://shadcnblocks.com/r/rating",
+      "aspect-ratio",
+      "badge",
+      "button",
+      "carousel",
+      "form",
+      "input",
+      "separator",
+      "sheet"
+    ],
+    "files": [
+      {
+        "path": "code/block/product-quick-view6.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:46.509Z"
+}

@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature62",
+  "url": "https://shadcnblocks.com/r/feature62.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature62",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A three-row component featuring alternating image-text layouts with descriptive text blocks and images in bordered, rounded frames.",
+    "dependencies": [],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/feature62.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:29.569Z"
+}

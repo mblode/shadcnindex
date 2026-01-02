@@ -1,0 +1,372 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "solaceui",
+  "homepage": "https://www.solaceui.com",
+  "items": [
+    {
+      "name": "hero-video",
+      "type": "registry:ui",
+      "title": "Hero Video",
+      "description": "An immersive hero video dialog ideal for landing pages and product highlights",
+      "dependencies": [],
+      "registryDependencies": [],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "src/components/docs-components/hero-video.tsx",
+          "type": "registry:component",
+          "target": "components/ui/hero-video.tsx"
+        }
+      ],
+      "author": "Harshit: @harshitlog"
+    },
+    {
+      "name": "hero-video-default",
+      "type": "registry:ui",
+      "title": "Hero Video Default",
+      "description": "An immersive hero video dialog ideal for landing pages and product highlights",
+      "dependencies": [],
+      "registryDependencies": [],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "src/app/docs/hero-video/hero-video-default.tsx",
+          "type": "registry:component",
+          "target": "components/ui/hero-video-default.tsx"
+        },
+        {
+          "path": "src/components/docs-components/hero-video.tsx",
+          "type": "registry:component",
+          "target": "components/ui/hero-video.tsx"
+        }
+      ],
+      "author": "Harshit: @harshitlog"
+    },
+    {
+      "name": "hero-video-sound",
+      "type": "registry:ui",
+      "title": "Hero Video Sound",
+      "description": "An immersive hero video dialog ideal for landing pages and product highlights",
+      "dependencies": [],
+      "registryDependencies": [],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "src/app/docs/hero-video/hero-video-sound.tsx",
+          "type": "registry:component",
+          "target": "components/ui/hero-video-sound.tsx"
+        },
+        {
+          "path": "src/components/docs-components/hero-video.tsx",
+          "type": "registry:component",
+          "target": "components/ui/hero-video.tsx"
+        }
+      ],
+      "author": "Harshit: @harshitlog"
+    },
+    {
+      "name": "phone-mockup",
+      "type": "registry:ui",
+      "title": "Phone Mockup",
+      "description": "A versatile phone carousel component ideal for showcasing app screens, features, and product highlights.",
+      "dependencies": [],
+      "registryDependencies": ["button"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "src/components/docs-components/phone-carousel.tsx",
+          "type": "registry:component",
+          "target": "components/ui/phone-carousel.tsx"
+        },
+        {
+          "path": "src/hooks/use-mobile.tsx",
+          "type": "registry:hook",
+          "target": "hooks/use-mobile.tsx"
+        }
+      ],
+      "author": "Harshit: @harshitlog"
+    },
+    {
+      "name": "phone-mockup-basic",
+      "type": "registry:ui",
+      "title": "Phone Mockup Basic",
+      "description": "A versatile phone carousel component ideal for showcasing app screens, features, and product highlights.",
+      "dependencies": [],
+      "registryDependencies": ["button"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "src/app/docs/phone-mockup/phone-mockup-basic.tsx",
+          "type": "registry:component",
+          "target": "components/ui/phone-mockup-basic.tsx"
+        },
+        {
+          "path": "src/components/docs-components/phone-carousel.tsx",
+          "type": "registry:component",
+          "target": "components/ui/phone-carousel.tsx"
+        },
+        {
+          "path": "src/hooks/use-mobile.tsx",
+          "type": "registry:hook",
+          "target": "hooks/use-mobile.tsx"
+        }
+      ],
+      "author": "Harshit: @harshitlog"
+    },
+    {
+      "name": "chat-messages",
+      "type": "registry:ui",
+      "title": "Chat Messages",
+      "description": "An interactive chat messages component designed for iPhone mockups. It demonstrates smooth message animations with realistic conversation flows.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "src/components/docs-components/chat.tsx",
+          "type": "registry:component",
+          "target": "components/ui/chat.tsx"
+        },
+        {
+          "path": "src/components/docs-components/chat-message.tsx",
+          "type": "registry:component",
+          "target": "components/ui/chat-message.tsx"
+        },
+        {
+          "path": "src/components/docs-components/iphone-frame.tsx",
+          "type": "registry:component",
+          "target": "components/ui/iphone-frame.tsx"
+        }
+      ],
+      "author": "Harshit: @harshitlog"
+    },
+    {
+      "name": "chat-messages-demo",
+      "type": "registry:ui",
+      "title": "Chat Messages Demo",
+      "description": "An interactive incoming chat messages component designed for iPhone mockups. It demonstrates smooth message animations with realistic conversation flows.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "src/app/docs/chat-messages/chat-messages-demo.tsx",
+          "type": "registry:component",
+          "target": "components/ui/chat-messages-demo.tsx"
+        },
+        {
+          "path": "src/components/docs-components/chat.tsx",
+          "type": "registry:component",
+          "target": "components/ui/chat.tsx"
+        },
+        {
+          "path": "src/components/docs-components/chat-message.tsx",
+          "type": "registry:component",
+          "target": "components/ui/chat-message.tsx"
+        },
+        {
+          "path": "src/components/docs-components/iphone-frame.tsx",
+          "type": "registry:component",
+          "target": "components/ui/iphone-frame.tsx"
+        }
+      ],
+      "author": "Harshit: @harshitlog"
+    },
+    {
+      "name": "chat-messages-reverse",
+      "type": "registry:ui",
+      "title": "Chat Messages Reverse",
+      "description": "An interactive outgoing chat messages component designed for iPhone mockups. It demonstrates smooth message animations with realistic conversation flows.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "src/app/docs/chat-messages/chat-messages-reverse.tsx",
+          "type": "registry:component",
+          "target": "components/ui/chat-messages-reverse.tsx"
+        },
+        {
+          "path": "src/components/docs-components/chat.tsx",
+          "type": "registry:component",
+          "target": "components/ui/chat.tsx"
+        },
+        {
+          "path": "src/components/docs-components/chat-message.tsx",
+          "type": "registry:component",
+          "target": "components/ui/chat-message.tsx"
+        },
+        {
+          "path": "src/components/docs-components/iphone-frame.tsx",
+          "type": "registry:component",
+          "target": "components/ui/iphone-frame.tsx"
+        }
+      ],
+      "author": "Harshit: @harshitlog"
+    },
+    {
+      "name": "hero-section-1",
+      "type": "registry:block",
+      "title": "Modern Spotlight Hero",
+      "description": "Full-width Spotlight hero with centered copy and rotating cards. Perfect for showcasing multiple features or products.",
+      "dependencies": ["ogl"],
+      "registryDependencies": ["button"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "src/app/sections/hero-section/hero-section-1.tsx",
+          "type": "registry:component",
+          "target": "components/ui/hero-section-1.tsx"
+        },
+        {
+          "path": "src/components/section-components/circular-gallery.tsx",
+          "type": "registry:component",
+          "target": "components/ui/circular-gallery.tsx"
+        },
+        {
+          "path": "src/components/TextEffect.tsx",
+          "type": "registry:component",
+          "target": "components/ui/TextEffect.tsx"
+        },
+        {
+          "path": "src/components/AnimatedGroup.tsx",
+          "type": "registry:component",
+          "target": "components/ui/AnimatedGroup.tsx"
+        }
+      ],
+      "author": "Harshit: @harshitlog"
+    },
+    {
+      "name": "hero-section-2",
+      "type": "registry:block",
+      "title": "Mobile Marketing Hero",
+      "description": "Hero section with showcasing 3 mobile screens with clean animation and bold app intro. Ideal for showcasing app features for landing pages.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "src/app/sections/hero-section/hero-section-2.tsx",
+          "type": "registry:component",
+          "target": "components/ui/hero-section-2.tsx"
+        },
+        {
+          "path": "src/components/section-components/triple-phone.tsx",
+          "type": "registry:component",
+          "target": "components/ui/triple-phone.tsx"
+        },
+        {
+          "path": "src/components/AnimatedGroup.tsx",
+          "type": "registry:component",
+          "target": "components/ui/AnimatedGroup.tsx"
+        }
+      ],
+      "author": "Harshit: @harshitlog"
+    },
+    {
+      "name": "team-1",
+      "type": "registry:block",
+      "title": "Team Section 1",
+      "description": "A visually appealing aesthetic B/W team section as Identity Card Roster.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "src/app/sections/team/team-1.tsx",
+          "type": "registry:component",
+          "target": "components/ui/team-1.tsx"
+        },
+        {
+          "path": "src/components/section-components/team-card.tsx",
+          "type": "registry:component",
+          "target": "components/ui/team-card.tsx"
+        }
+      ],
+      "author": "Harshit: @harshitlog"
+    },
+    {
+      "name": "team-2",
+      "type": "registry:block",
+      "title": "Team Section 2",
+      "description": "A clean and modern team section for Professional landing pages.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "src/app/sections/team/team-2.tsx",
+          "type": "registry:component",
+          "target": "components/ui/team-2.tsx"
+        },
+        {
+          "path": "src/components/section-components/team-card-2.tsx",
+          "type": "registry:component",
+          "target": "components/ui/team-card-2.tsx"
+        }
+      ],
+      "author": "Harshit: @harshitlog"
+    },
+    {
+      "name": "team-3",
+      "type": "registry:block",
+      "title": "Team Section 3",
+      "description": "A team section with spotlighted profiles and interactive member focus.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "src/app/sections/team/team-3.tsx",
+          "type": "registry:component",
+          "target": "components/ui/team-3.tsx"
+        }
+      ],
+      "author": "Harshit: @harshitlog"
+    },
+    {
+      "name": "bento-grid-1",
+      "type": "registry:block",
+      "title": "Bento Grid 1",
+      "description": "Bento-style grid with 3 bold sections, crafted for dark themes. Ideal for showcasing app features or product highlights.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "src/app/sections/bento-grid/bento-grid-1.tsx",
+          "type": "registry:component",
+          "target": "components/ui/bento-grid-1.tsx"
+        },
+        {
+          "path": "src/components/section-components/bento-grid-template-one.tsx",
+          "type": "registry:component",
+          "target": "components/ui/bento-grid-template-one.tsx"
+        }
+      ],
+      "author": "Harshit: @harshitlog"
+    },
+    {
+      "name": "bento-grid-2",
+      "type": "registry:block",
+      "title": "Bento Grid 2",
+      "description": "A vibrant 8-part bento grid to showcase standout features with color-rich blocks. Perfect for product highlights.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "src/app/sections/bento-grid/bento-grid-2.tsx",
+          "type": "registry:component",
+          "target": "components/ui/bento-grid-2.tsx"
+        },
+        {
+          "path": "src/components/section-components/bento-grid-template-two.tsx",
+          "type": "registry:component",
+          "target": "components/ui/bento-grid-template-two.tsx"
+        }
+      ],
+      "author": "Harshit: @harshitlog"
+    }
+  ]
+}

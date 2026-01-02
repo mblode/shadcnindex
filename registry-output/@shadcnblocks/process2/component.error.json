@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "process2",
+  "url": "https://shadcnblocks.com/r/process2.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "process2",
+    "type": "registry:block",
+    "title": "Process",
+    "description": "A component visualizing a 4-step process with dynamic image transitions and a contact button, spread over 2 columns in a larger view.",
+    "dependencies": ["framer-motion", "lucide-react", "react"],
+    "registryDependencies": ["button"],
+    "files": [
+      {
+        "path": "code/block/process2.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:44.801Z"
+}

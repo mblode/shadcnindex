@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "extends": "none",
+  "name": "radio-group-disabled-demo",
+  "title": "Radio Group Disabled",
+  "description": "radio-group-disabled-demo",
+  "registryDependencies": [
+    "https://intentui.com/r/field",
+    "https://intentui.com/r/radio"
+  ],
+  "files": [
+    {
+      "path": "src/components/docs/forms/radio-group/radio-group-disabled-demo.tsx",
+      "content": "\"use client\"\n\nimport { Label } from \"@/components/ui/field\"\nimport { Radio, RadioGroup } from \"@/components/ui/radio\"\n\nexport default function RadioGroupDisabledDemo() {\n  return (\n    <RadioGroup isDisabled>\n      <Label>Features</Label>\n      <Radio value=\"fs\">Font size: Small, Medium, Large</Radio>\n      <Radio value=\"dr\">Display resolution: 1080p, 1440p, 4K</Radio>\n      <Radio value=\"ss\">Sound settings: Mute, Low, Medium, High</Radio>\n      <Radio value=\"bi\">Background image: Default, Custom</Radio>\n      <Radio value=\"ks\">Keyboard shortcuts: Enabled, Disabled</Radio>\n    </RadioGroup>\n  )\n}\n",
+      "type": "registry:page",
+      "target": "app/radio-group-disabled-demo/page.tsx"
+    }
+  ],
+  "type": "registry:page"
+}

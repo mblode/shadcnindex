@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "hero164",
+  "url": "https://shadcnblocks.com/r/hero164.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "hero164",
+    "type": "registry:block",
+    "title": "Hero",
+    "description": "A component showcasing a dual-column layout with a pitch and a playable video teaser. The left column has text and sign-up, while the right shows an image. Features a popup for video.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": ["aspect-ratio", "button", "dialog"],
+    "files": [
+      {
+        "path": "code/block/hero164.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:34.840Z"
+}

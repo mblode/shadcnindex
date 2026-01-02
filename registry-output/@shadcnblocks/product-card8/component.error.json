@@ -1,0 +1,38 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "product-card8",
+  "url": "https://shadcnblocks.com/r/product-card8.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "product-card8",
+    "type": "registry:block",
+    "title": "Product-card",
+    "description": "This component is a dynamic product display block that features an interactive card for showcasing a product with options for selecting size, color, and quantity directly from the card. It includes a detailed product form, image carousel, and controls for managing user selections, all within a visually appealing card layout.",
+    "dependencies": [
+      "@hookform/resolvers",
+      "lucide-react",
+      "react",
+      "react-hook-form",
+      "zod"
+    ],
+    "registryDependencies": [
+      "https://shadcnblocks.com/r/price",
+      "aspect-ratio",
+      "badge",
+      "button",
+      "card",
+      "collapsible",
+      "form",
+      "input",
+      "radio-group",
+      "scroll-area"
+    ],
+    "files": [
+      {
+        "path": "code/block/product-card8.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:45.233Z"
+}

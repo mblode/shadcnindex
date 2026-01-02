@@ -1,0 +1,47 @@
+{
+  "registry": "@paykit-sdk",
+  "component": "stripe-nextjs",
+  "url": "https://www.usepaykit.dev/r/stripe-nextjs.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "stripe-nextjs",
+    "type": "registry:block",
+    "description": "Stripe payment integration for Next.js App Router with type-safe API routes and webhook handling",
+    "dependencies": ["@paykit-sdk/core", "@paykit-sdk/stripe"],
+    "devDependencies": [],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "providers/stripe.ts",
+        "type": "registry:lib",
+        "target": "lib/paykit.ts",
+        "content": "import { PayKit, createEndpointHandlers } from '@paykit-sdk/core';\nimport { stripe } from '@paykit-sdk/stripe';\n\nexport const paykit = new PayKit(stripe());\nexport const endpoints = createEndpointHandlers(paykit);\n"
+      },
+      {
+        "path": "shared/routers/nextjs/catch-all.ts",
+        "type": "registry:page",
+        "target": "app/api/paykit/[...endpoint]/route.ts",
+        "content": "import { endpoints } from '@/lib/paykit';\nimport type { EndpointArgs, EndpointHandler, EndpointPath } from '@paykit-sdk/core';\nimport { NextResponse, NextRequest } from 'next/server';\n\nexport async function POST(\n  request: NextRequest,\n  { params }: { params: Promise<{ endpoint: string[] }> },\n) {\n  const { endpoint: endpointArray } = await params;\n\n  const endpoint = ('/' + endpointArray.join('/')) as EndpointPath;\n\n  const handler = endpoints[endpoint] as EndpointHandler<typeof endpoint>;\n\n  if (!handler) {\n    return NextResponse.json({ message: 'Endpoint not found' }, { status: 404 });\n  }\n\n  const body = await request.json();\n\n  const { args } = body as { args: EndpointArgs<typeof endpoint> };\n\n  try {\n    const result = await handler(...args);\n    return NextResponse.json({ result });\n  } catch (error) {\n    console.error('PayKit API Error:', error);\n    const message = error instanceof Error ? error.message : 'Internal server error';\n    return NextResponse.json({ message }, { status: 500 });\n  }\n}\n"
+      },
+      {
+        "path": "shared/routers/nextjs/webhook.ts",
+        "type": "registry:page",
+        "target": "app/api/paykit/webhooks/route.ts",
+        "content": "import { paykit } from '@/lib/paykit';\nimport type { NextRequest } from 'next/server';\nimport { NextResponse } from 'next/server';\n\nexport async function POST(request: NextRequest) {\n  const webhookSecret = process.env.STRIPE_WEBHOOK_SECRET;\n\n  if (!webhookSecret) {\n    return NextResponse.json({ error: 'Webhook secret not configured' }, { status: 500 });\n  }\n\n  const webhook = paykit.webhooks\n    .setup({ webhookSecret })\n    .on('customer.created', async event => {\n      console.log('Customer created:', event.data);\n    })\n    .on('subscription.created', async event => {\n      console.log('Subscription created:', event.data);\n    })\n    .on('payment.created', async event => {\n      console.log('Payment created:', event.data);\n    })\n    .on('refund.created', async event => {\n      console.log('Refund created:', event.data);\n    })\n    .on('invoice.generated', async event => {\n      console.log('Invoice generated:', event.data);\n    });\n\n  const body = await request.text();\n  const headers = request.headers;\n  const url = request.url;\n\n  try {\n    await webhook.handle({ body, headers, fullUrl: url });\n    return NextResponse.json({ success: true });\n  } catch (error) {\n    console.log('Webhook Error', error);\n    return NextResponse.json({ success: false });\n  }\n}\n"
+      }
+    ],
+    "envVars": {
+      "STRIPE_SECRET_KEY": "sk_test_...",
+      "STRIPE_WEBHOOK_SECRET": "whsec_..."
+    },
+    "docs": "Get your Stripe Secret Key from https://dashboard.stripe.com/apikeys \n Create a webhook endpoint at https://dashboard.stripe.com/webhooks to get your webhook secret.",
+    "meta": {
+      "backend": "nextjs",
+      "provider": "stripe",
+      "orm": "none",
+      "database": "none",
+      "auth": "none"
+    }
+  },
+  "fetchedAt": "2026-01-02T11:17:42.014Z"
+}

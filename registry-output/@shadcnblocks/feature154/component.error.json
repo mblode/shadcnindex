@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature154",
+  "url": "https://shadcnblocks.com/r/feature154.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature154",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A component featuring dual infinite sliders with badges for features like Integrations, Automation, etc., inside a styled section with a gradient and wave overlay.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["https://magicui.design/r/marquee", "badge"],
+    "files": [
+      {
+        "path": "code/block/feature154.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:22.788Z"
+}

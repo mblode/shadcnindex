@@ -1,0 +1,14 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "esbuild",
+  "title": "esbuild",
+  "files": [
+    {
+      "path": "././static/components-generated/esbuild.tsx",
+      "content": "import type { SVGProps } from \"react\";\n\nconst Esbuild = (props: SVGProps<SVGSVGElement>) => (\n  <svg {...props} viewBox=\"0 0 256 256\" preserveAspectRatio=\"xMidYMid\">\n    <circle fill=\"#FFCF00\" cx=\"128\" cy=\"128\" r=\"128\" />\n    <path\n      d=\"M69.285 58.715 138.571 128l-69.286 69.285-16.97-16.97L104.629 128 52.315 75.685l16.97-16.97Zm76.8 0L215.371 128l-69.286 69.285-16.97-16.97L181.429 128l-52.314-52.315 16.97-16.97Z\"\n      fill=\"#191919\"\n    />\n  </svg>\n);\n\nexport { Esbuild };\n",
+      "type": "registry:component",
+      "target": "components/ui/svgs/esbuild.tsx"
+    }
+  ],
+  "type": "registry:component"
+}

@@ -1,0 +1,15 @@
+{
+  "name": "use-debounce-fn",
+  "author": "Brendan Dash (https://shadcn-hooks.vercel.app)",
+  "description": "A hook to debounce a function",
+  "dependencies": ["es-toolkit"],
+  "registryDependencies": ["@hooks/use-latest", "@hooks/use-unmount"],
+  "files": [
+    {
+      "path": "registry/hooks/use-debounce-fn.ts",
+      "content": "import { debounce } from 'es-toolkit'\nimport { useMemo } from 'react'\nimport { useLatest } from '@/registry/hooks/use-latest'\nimport { useUnmount } from '@/registry/hooks/use-unmount'\nimport type { DebounceOptions } from 'es-toolkit'\n\nexport type { DebounceOptions }\n\nexport function useDebounceFn<Fn extends (...args: any[]) => any>(\n  fn: Fn,\n  debounceMs?: number,\n  options?: DebounceOptions,\n) {\n  const fnRef = useLatest(fn)\n\n  const debouncedFn = useMemo(\n    () =>\n      debounce(\n        (...args: Parameters<Fn>) => fnRef.current(...args),\n        debounceMs ?? 1000,\n        options,\n      ),\n    [],\n  )\n\n  useUnmount(() => debouncedFn.cancel())\n\n  return {\n    run: debouncedFn,\n    cancel: debouncedFn.cancel,\n    flush: debouncedFn.flush,\n  }\n}\n",
+      "type": "registry:hook"
+    }
+  ],
+  "type": "registry:hook"
+}

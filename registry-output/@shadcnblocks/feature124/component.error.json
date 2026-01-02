@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature124",
+  "url": "https://shadcnblocks.com/r/feature124.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature124",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A dual-section block featuring a text column with a heading, description, checklist, and button, alongside an image column with a decorative background pattern and gradient overlays.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["button"],
+    "files": [
+      {
+        "path": "code/block/feature124.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:21.497Z"
+}

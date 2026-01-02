@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "promo-banner2",
+  "url": "https://shadcnblocks.com/r/promo-banner2.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "promo-banner2",
+    "type": "registry:block",
+    "title": "Promo-banner",
+    "description": "This component displays a promotional banner with customizable text for a message, discount, and a call-to-action link. It is designed to enhance user engagement by offering a clickable area that leads to more details or a shopping page.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/promo-banner2.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:48.895Z"
+}

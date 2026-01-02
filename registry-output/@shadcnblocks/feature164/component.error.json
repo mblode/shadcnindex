@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature164",
+  "url": "https://shadcnblocks.com/r/feature164.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature164",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "This component consists of a tabbed gallery (with 3 items) alongside descriptive text and a &#x27;Learn more&#x27; button, arranged in a two-column layout.",
+    "dependencies": ["react"],
+    "registryDependencies": ["button", "tabs"],
+    "files": [
+      {
+        "path": "code/block/feature164.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:23.222Z"
+}

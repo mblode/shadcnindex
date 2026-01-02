@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "loaders-dots",
+  "type": "registry:component",
+  "title": "Dots Loader",
+  "description": "Bouncing dots loader",
+  "dependencies": ["motion"],
+  "files": [
+    {
+      "path": "registry/new-york/animations/loaders/dots.tsx",
+      "content": "\"use client\";\nimport * as React from \"react\";\nimport { motion, HTMLMotionProps } from \"motion/react\";\nimport { cn } from \"@/lib/utils\";\nexport interface LoaderDotsProps\n  extends Omit<HTMLMotionProps<\"div\">, \"children\"> {\n  size?: number;\n  color?: string;\n  count?: number;\n  gap?: number;\n  duration?: number;\n}\nexport function LoaderDots({\n  className,\n  size = 10,\n  color = \"currentColor\",\n  count = 3,\n  gap = 8,\n  duration = 1.2,\n  ...props\n}: LoaderDotsProps) {\n  return (\n    <div className={cn(\"flex items-center\", className)} style={{ gap: gap }}>\n      {Array.from({ length: count }).map((_, index) => (\n        <motion.div\n          key={index}\n          className=\"rounded-full\"\n          style={{\n            width: size,\n            height: size,\n            backgroundColor: color,\n          }}\n          animate={{\n            y: [0, -size * 1.5, 0],\n          }}\n          transition={{\n            duration,\n            ease: \"easeInOut\",\n            repeat: Infinity,\n            delay: index * (duration / count),\n          }}\n        />\n      ))}\n    </div>\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ]
+}

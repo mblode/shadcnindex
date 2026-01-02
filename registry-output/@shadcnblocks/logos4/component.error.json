@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "logos4",
+  "url": "https://shadcnblocks.com/r/logos4.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "logos4",
+    "type": "registry:block",
+    "title": "Logos",
+    "description": "A component displays a section with a title, description, button, and a grid of logos. It includes a badge, central text block, and logos arranged in up to 4 columns.",
+    "dependencies": [],
+    "registryDependencies": ["badge", "button"],
+    "files": [
+      {
+        "path": "code/block/logos4.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:41.895Z"
+}

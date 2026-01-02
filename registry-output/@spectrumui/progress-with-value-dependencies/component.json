@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "progress-with-value-dependencies",
+  "type": "registry:component",
+  "title": "Progress With Value Dependencies",
+  "description": "component for the Progress With Value Dependencies",
+  "dependencies": ["@radix-ui/react-progress"],
+  "files": [
+    {
+      "path": "app/registry/spectrumui/progress-with-value-dependencies.tsx",
+      "content": "\"use client\";\n\nimport * as React from \"react\";\nimport * as ProgressPrimitive from \"@radix-ui/react-progress\";\n\nimport { cn } from \"@/lib/utils\";\n\ninterface ProgressWithValueProps\n  extends React.ComponentPropsWithoutRef<typeof ProgressPrimitive.Root> {\n  position?: \"start\" | \"start-outside\" | \"follow\" | \"end\" | \"end-outside\";\n  label?: (value?: number | null) => React.ReactNode;\n  valueClassName?: string;\n}\n\nconst ProgressWithValue = React.forwardRef<\n  React.ElementRef<typeof ProgressPrimitive.Root>,\n  ProgressWithValueProps\n>(\n  (\n    { className, valueClassName, value, position = \"end\", label, ...props },\n    ref,\n  ) => {\n    const valueCommonClass = cn(\n      \"absolute -top-0.5 left-0 h-fit px-4 w-full items-center hidden\",\n    );\n\n    const ProgressValue = () => (\n      <span\n        className={cn(\n          \"hidden\",\n          position === \"start-outside\" && \"block text-primary\",\n          position === \"follow\" &&\n            cn(valueCommonClass, \"flex justify-end text-primary-foreground\"),\n          position === \"start\" &&\n            cn(valueCommonClass, \"flex justify-start text-primary-foreground\"),\n          position === \"end\" &&\n            cn(valueCommonClass, \"flex justify-end text-primary\"),\n          position === \"end-outside\" && \"block text-primary\",\n          valueClassName,\n        )}\n      >\n        {typeof label === \"function\" ? label(value) : `${value}%`}\n      </span>\n    );\n\n    return (\n      <div className=\"flex items-center gap-2\">\n        {position === \"start-outside\" && <ProgressValue />}\n        <ProgressPrimitive.Root\n          ref={ref}\n          className={cn(\n            \"relative h-5 w-full overflow-hidden rounded-full bg-secondary\",\n            className,\n          )}\n          {...props}\n        >\n          <ProgressPrimitive.Indicator\n            className=\"h-full w-full flex-1 bg-primary transition-all\"\n            style={{ transform: `translateX(-${100 - (value || 0)}%)` }}\n          >\n            {position === \"follow\" && <ProgressValue />}\n          </ProgressPrimitive.Indicator>\n          {(position === \"start\" || position === \"end\") && <ProgressValue />}\n        </ProgressPrimitive.Root>\n        {position === \"end-outside\" && <ProgressValue />}\n      </div>\n    );\n  },\n);\nProgressWithValue.displayName = \"ProgressWithValue\";\n\nexport { ProgressWithValue };\n",
+      "type": "registry:component",
+      "target": "components/spectrumui/progress-with-value-dependencies.tsx"
+    }
+  ]
+}

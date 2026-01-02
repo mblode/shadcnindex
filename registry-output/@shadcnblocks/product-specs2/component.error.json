@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "product-specs2",
+  "url": "https://shadcnblocks.com/r/product-specs2.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "product-specs2",
+    "type": "registry:block",
+    "title": "Product-specs",
+    "description": "This component displays detailed product specifications organized into tabs for easy navigation and comparison, allowing users to switch between categories like Overview, Display, and Performance. Each spec group highlights key features and uses visual indicators to show boolean values with check and cross icons.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": ["badge", "tabs"],
+    "files": [
+      {
+        "path": "code/block/product-specs2.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:46.609Z"
+}

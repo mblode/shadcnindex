@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "extends": "none",
+  "name": "breadcrumbs-separator-demo",
+  "title": "Breadcrumbs Separator",
+  "description": "breadcrumbs-separator-demo",
+  "registryDependencies": ["https://intentui.com/r/breadcrumbs"],
+  "files": [
+    {
+      "path": "src/components/docs/navigation/breadcrumbs/breadcrumbs-separator-demo.tsx",
+      "content": "\"use client\"\n\nimport { Breadcrumbs, BreadcrumbsItem } from \"@/components/ui/breadcrumbs\"\n\nexport default function BreadcrumbsSeparatorDemo() {\n  return (\n    <Breadcrumbs separator=\"slash\">\n      <BreadcrumbsItem separator=\"slash\" href=\"#\">\n        Home\n      </BreadcrumbsItem>\n      <BreadcrumbsItem href=\"#\">Design System</BreadcrumbsItem>\n      <BreadcrumbsItem>Collections</BreadcrumbsItem>\n    </Breadcrumbs>\n  )\n}\n",
+      "type": "registry:page",
+      "target": "app/breadcrumbs-separator-demo/page.tsx"
+    }
+  ],
+  "type": "registry:page"
+}

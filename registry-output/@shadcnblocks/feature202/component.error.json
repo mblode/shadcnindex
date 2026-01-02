@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature202",
+  "url": "https://shadcnblocks.com/r/feature202.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature202",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A component showcasing 7 architectural solutions each with an icon, title, and description, arranged in a 3-column grid format, with one covering two columns.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/feature202.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:24.547Z"
+}

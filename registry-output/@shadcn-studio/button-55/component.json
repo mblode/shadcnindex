@@ -1,0 +1,30 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "button-55",
+  "type": "registry:component",
+  "title": "Button 55",
+  "description": "Button with stitched border design using layered shadow effects",
+  "dependencies": ["class-variance-authority"],
+  "registryDependencies": ["button", "utils"],
+  "files": [
+    {
+      "path": "src/registry/new-york/components/button/button-55.tsx",
+      "content": "import { GlassButton } from '@/registry/new-york/ui/glass-button'\n\nconst GlassButtonDemo = () => {\n  return (\n    <div className='flex size-full items-center justify-center rounded-xl bg-gray-800'>\n      <GlassButton>Glass Button</GlassButton>\n    </div>\n  )\n}\n\nexport default GlassButtonDemo\n",
+      "type": "registry:component",
+      "target": "components/shadcn-studio/button/button-55.tsx"
+    },
+    {
+      "path": "src/registry/new-york/ui/glass-button.tsx",
+      "content": "'use client'\n\nimport * as React from 'react'\n\nimport type { VariantProps } from 'class-variance-authority'\n\nimport { cn } from '@/registry/new-york/lib/utils'\n\nimport { Button, type buttonVariants } from '@/registry/new-york/ui/button'\n\ninterface GlassButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {\n  size?: VariantProps<typeof buttonVariants>['size']\n  children: React.ReactNode\n  className?: string\n  asChild?: boolean\n}\n\nfunction GlassButton({ children, size, asChild = false, className, ...props }: GlassButtonProps) {\n  return (\n    <Button\n      size={size}\n      asChild={asChild}\n      className={cn(\n        size === 'lg' && 'text-base has-[>svg]:px-6',\n        'relative inline-flex shrink-0 rounded-lg !bg-transparent bg-clip-padding text-white!',\n\n        // Glass effect\n        'bg-linear-to-l from-white/15 to-white/25 backdrop-blur-xs',\n\n        'before:pointer-events-none before:absolute before:inset-0 before:size-full before:rounded-[inherit] before:border before:border-transparent before:bg-origin-border',\n\n        // Conic gradient\n        'before:bg-[conic-gradient(from_var(--button-angle)_at_50%_50%,rgba(255,255,255,0.5),rgba(255,255,255,0)_10%_43%,rgba(255,255,255,0.5)_50%,rgba(255,255,255,0)_73%_93%,rgba(255,255,255,0.5))]',\n\n        //masking\n        'before:[mask-image:linear-gradient(#fff_0_0),linear-gradient(#fff_0_0)] before:mask-exclude before:[mask-clip:content-box,border-box]',\n\n        // Hover\n        'before:transition-[--button-angle] before:duration-500 before:ease-in-out hover:before:[--button-angle:-125deg]',\n\n        className\n      )}\n      {...props}\n    >\n      {children}\n    </Button>\n  )\n}\n\nexport { GlassButton, type GlassButtonProps }\n",
+      "type": "registry:ui",
+      "target": "components/ui/glass-button.tsx"
+    }
+  ],
+  "css": {
+    "@property --button-angle": {
+      "syntax": "'<angle>'",
+      "inherits": "false",
+      "initial-value": "-75deg"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "hero166",
+  "url": "https://shadcnblocks.com/r/hero166.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "hero166",
+    "type": "registry:block",
+    "title": "Hero",
+    "description": "A 2-column layout block with animated images on one side and text elements, including a headline, paragraph, and button on the other.",
+    "dependencies": [],
+    "registryDependencies": ["aspect-ratio", "button"],
+    "files": [
+      {
+        "path": "code/block/hero166.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:35.008Z"
+}

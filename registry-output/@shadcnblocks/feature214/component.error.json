@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature214",
+  "url": "https://shadcnblocks.com/r/feature214.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature214",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A carousel showcasing AI-powered features with autoplaying video cards on hover, including icons and brief descriptions.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": ["card", "carousel"],
+    "files": [
+      {
+        "path": "code/block/feature214.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:25.070Z"
+}

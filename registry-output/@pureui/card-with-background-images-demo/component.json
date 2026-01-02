@@ -1,0 +1,13 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "card-with-background-images-demo",
+  "type": "registry:example",
+  "registryDependencies": ["card"],
+  "files": [
+    {
+      "path": "src/registry/pure-ui/examples/card/card-with-background-images-demo.tsx",
+      "content": "import { ArrowUpRight } from \"lucide-react\";\n\nimport { Card, CardHeader } from \"@/registry/pure-ui/ui/card\";\nimport { Button } from \"@/registry/pure-ui/ui/button\";\n\nexport function CardWithBackgroundImagesDemo() {\n  return (\n    <div className=\"flex flex-col gap-6 md:flex-row\">\n      <Card className=\"w-[320px] aspect-square before:absolute before:left-0 before:right-0 before:top-0 before:h-[44px] before:bg-linear-to-b before:from-black/80 before:to-transparent before:z-10\">\n        <img\n          alt=\"Beautiful aerial view of Buenos Aires cityscape\"\n          aria-hidden=\"true\"\n          className=\"pointer-events-none absolute inset-0 h-full w-full select-none object-cover\"\n          src=\"https://pbs.twimg.com/media/G2gchvnWoAAvkGG?format=jpg&name=large\"\n        />\n        <CardHeader className=\"z-10 flex flex-row items-center justify-between w-full\">\n          <div>\n            <div className=\"text-sm font-medium text-white\">Naruto</div>\n            <div className=\"text-xs text-white/60\">Shonen</div>\n          </div>\n          <Button\n            aria-label=\"View Buenos Aires on map\"\n            size=\"sm\"\n            variant=\"link\"\n            className=\"text-white\"\n          >\n            Season 2\n            <ArrowUpRight className=\"size-4 ml-2\" />\n          </Button>\n        </CardHeader>\n      </Card>\n    </div>\n  );\n}\n",
+      "type": "registry:example"
+    }
+  ]
+}

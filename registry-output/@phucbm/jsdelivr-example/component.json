@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "jsdelivr-example",
+  "type": "registry:component",
+  "title": "jsDelivr Package Stats Example",
+  "description": "Display jsDelivr packages from a provided namespace and package names with real-time stats, rankings, and bandwidth usage.",
+  "dependencies": ["react", "@tabler/icons-react"],
+  "registryDependencies": ["https://ui.phucbm.com/r/jsdelivr.json"],
+  "files": [
+    {
+      "path": "registry/phucbm/blocks/jsdelivr/example.transformed.tsx",
+      "content": "'use client'\n\nimport {useEffect, useState} from 'react';\nimport {JsDelivrPackage, JsDelivrPackages} from \"@/components/phucbm/jsdelivr\";\nimport {getJsDelivrPackages} from \"@/lib/getJsDelivrPackages\";\n\nexport default function Example() {\n    const [packages, setPackages] = useState<JsDelivrPackage[]>([])\n    const [loading, setLoading] = useState(true)\n    const [error, setError] = useState<string | null>(null)\n\n    // jsDelivr package names to display\n    const names = [\n        'flickity-responsive',\n        'jquery-scroll-direction-plugin',\n        'cursorjs',\n        'scroll-snooper',\n        'pia',\n        'cuajs',\n        'magnetic-button'\n    ];\n\n    useEffect(() => {\n        getJsDelivrPackages(names, 'phucbm', 'month', 10)\n            .then(data => {\n                setPackages(data)\n                setLoading(false)\n            })\n            .catch(err => {\n                setError(err instanceof Error ? err.message : 'Failed to load packages')\n                setLoading(false)\n            })\n    }, [])\n\n    if (loading) {\n        return <div className=\"h-screen flex items-center justify-center bg-slate-50\">Loading...</div>\n    }\n\n    if (error) {\n        return (\n            <div className=\"h-screen flex items-center justify-center bg-slate-50\">\n                <div className=\"text-red-600\">Error: {error}</div>\n            </div>\n        )\n    }\n\n    return (\n        <div className=\"bg-slate-50\">\n            <div className=\"max-w-[600px] mx-auto py-6\">\n                <JsDelivrPackages packages={packages}/>\n            </div>\n        </div>\n    );\n}",
+      "type": "registry:component",
+      "target": "index.tsx"
+    }
+  ]
+}

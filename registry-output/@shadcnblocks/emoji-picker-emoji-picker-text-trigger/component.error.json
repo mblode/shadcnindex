@@ -1,0 +1,24 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "emoji-picker-emoji-picker-text-trigger",
+  "url": "https://shadcnblocks.com/r/emoji-picker-emoji-picker-text-trigger.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "emoji-picker-emoji-picker-text-trigger",
+    "type": "registry:block",
+    "title": "Emoji-picker/emoji-picker-text-trigger",
+    "description": "A emoji-picker/emoji-picker-text-trigger example",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": [
+      "https://shadcnblocks.com/r/emoji-picker",
+      "button"
+    ],
+    "files": [
+      {
+        "path": "code/example/emoji-picker/emoji-picker-text-trigger.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:15:17.184Z"
+}

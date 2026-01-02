@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "autosize-textarea-max-height",
+  "type": "registry:component",
+  "title": "Autosize Textarea Max Height",
+  "description": "component for the Autosize Textarea Max Height",
+  "registryDependencies": ["@spectrumui/autosize-textarea-dependecies"],
+  "files": [
+    {
+      "path": "app/registry/autosize-textarea/usage/autosize-textarea-with-max-height.tsx",
+      "content": "import React from \"react\";\nimport { AutosizeTextarea } from \"@/components/ui/autosize-textarea\";\n\nconst AutosizeTextareaWithMaxHeight = () => {\n  return (\n    <div className=\"w-full px-10\">\n      <AutosizeTextarea\n        placeholder=\"This textarea with min height 52 and max height 200.\"\n        maxHeight={200}\n      />\n    </div>\n  );\n};\n\nexport default AutosizeTextareaWithMaxHeight;\n",
+      "type": "registry:component",
+      "target": "components/spectrumui/autosize-textarea-with-max-height.tsx"
+    }
+  ]
+}

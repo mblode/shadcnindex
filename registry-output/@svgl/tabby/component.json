@@ -1,0 +1,14 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "tabby",
+  "title": "tabby",
+  "files": [
+    {
+      "path": "././static/components-generated/tabby.tsx",
+      "content": "import type { SVGProps } from \"react\";\n\nconst Tabby = (props: SVGProps<SVGSVGElement>) => (\n  <svg\n    {...props}\n    xmlnsXlink=\"http://www.w3.org/1999/xlink\"\n    id=\"Layer_1\"\n    x=\"0\"\n    y=\"0\"\n    version=\"1.1\"\n    viewBox=\"0 0 1024 1024\"\n    xmlSpace=\"preserve\"\n  >\n    <g>\n      <polygon points=\"297.54 934.52 882.6 596.72 882.61 427.82 297.54 765.65\" />\n      <polygon points=\"297.54 934.52 882.6 596.72 882.61 427.82 297.54 765.65\" />\n    </g>\n    <g>\n      <polygon points=\"151.23 681.18 151.22 850.09 297.54 934.52 297.54 765.65\" />\n      <polygon points=\"151.23 681.18 151.22 850.09 297.54 934.52 297.54 765.65\" />\n    </g>\n    <g>\n      <polygon points=\"151.23 174.45 151.21 343.36 443.79 512.27 590.08 427.81\" />\n      <polygon points=\"151.23 174.45 151.21 343.36 443.79 512.27 590.08 427.81\" />\n    </g>\n    <polygon points=\"297.51 765.64 151.23 681.18 590.08 427.81 151.23 174.45 297.5 90 882.61 427.82\" />\n  </svg>\n);\n\nexport { Tabby };\n",
+      "type": "registry:component",
+      "target": "components/ui/svgs/tabby.tsx"
+    }
+  ],
+  "type": "registry:component"
+}

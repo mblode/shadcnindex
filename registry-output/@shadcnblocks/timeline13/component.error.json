@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "timeline13",
+  "url": "https://shadcnblocks.com/r/timeline13.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "timeline13",
+    "type": "registry:block",
+    "title": "Timeline",
+    "description": "A component displaying a product launch timeline with 3 phases, progress bars, and durations. Features an animated timeline indicator.",
+    "dependencies": [],
+    "registryDependencies": ["button", "progress"],
+    "files": [
+      {
+        "path": "code/block/timeline13.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:54.638Z"
+}

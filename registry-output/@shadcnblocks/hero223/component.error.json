@@ -1,0 +1,24 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "hero223",
+  "url": "https://shadcnblocks.com/r/hero223.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "hero223",
+    "type": "registry:block",
+    "title": "Hero",
+    "description": "A component featuring a centered headline with shadow text effect, background animation, and two action buttons, all within a radial gradient mask.",
+    "dependencies": ["lucide-react", "motion", "react"],
+    "registryDependencies": [
+      "https://magicui.design/r/line-shadow-text",
+      "button"
+    ],
+    "files": [
+      {
+        "path": "code/block/hero223.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:36.837Z"
+}

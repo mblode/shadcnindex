@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "service5",
+  "url": "https://shadcnblocks.com/r/service5.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "service5",
+    "type": "registry:block",
+    "title": "Service",
+    "description": "A component showcasing UX/UI design services, with a 2:1 column layout. Features text descriptions, expertise stats, and related services with icons.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/service5.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:49.955Z"
+}

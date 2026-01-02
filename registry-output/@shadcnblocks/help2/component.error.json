@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "help2",
+  "url": "https://shadcnblocks.com/r/help2.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "help2",
+    "type": "registry:block",
+    "title": "Help",
+    "description": "This component, named Help2, provides an FAQ and support interface with searchable questions and categorized answers to assist users in finding solutions to common inquiries. It also includes options to contact support via live chat, email, or phone for further assistance.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": ["accordion", "button", "card", "input"],
+    "files": [
+      {
+        "path": "code/block/help2.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:33.403Z"
+}

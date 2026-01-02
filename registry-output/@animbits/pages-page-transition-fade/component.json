@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "pages-page-transition-fade",
+  "type": "registry:component",
+  "title": "Page Transition Fade",
+  "description": "Page transition component with fade effect using View Transitions API.",
+  "dependencies": [],
+  "files": [
+    {
+      "path": "registry/new-york/animations/pages/page-transition-fade.tsx",
+      "content": "\"use client\";\nimport * as React from \"react\";\nimport { usePathname } from \"next/navigation\";\nexport interface PageTransitionFadeProps {\n  children: React.ReactNode;\n  duration?: number;\n  ease?: string;\n}\nexport function PageTransitionFade({\n  children,\n  duration = 0.3,\n  ease = \"ease-in-out\",\n}: PageTransitionFadeProps) {\n  const pathname = usePathname();\n  React.useEffect(() => {\n    if (typeof document === \"undefined\" || !document.startViewTransition) {\n      return;\n    }\n    document.documentElement.style.setProperty(\n      \"--page-transition-duration\",\n      `${duration}s`,\n    );\n    document.documentElement.style.setProperty(\"--page-transition-ease\", ease);\n  }, [pathname, duration, ease]);\n  return <>{children}</>;\n}\n",
+      "type": "registry:component"
+    }
+  ]
+}

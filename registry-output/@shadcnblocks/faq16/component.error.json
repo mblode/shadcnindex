@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "faq16",
+  "url": "https://shadcnblocks.com/r/faq16.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "faq16",
+    "type": "registry:block",
+    "title": "Faq",
+    "description": "An accordion-style FAQ block with a title and expandable question items, set in a centered layout with a max-width.",
+    "dependencies": ["react"],
+    "registryDependencies": ["accordion"],
+    "files": [
+      {
+        "path": "code/block/faq16.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:20.118Z"
+}

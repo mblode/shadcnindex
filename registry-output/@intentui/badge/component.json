@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "extends": "none",
+  "name": "badge",
+  "title": "badge",
+  "description": "badge",
+  "dependencies": ["tailwind-variants"],
+  "files": [
+    {
+      "path": "src/components/ui/badge.tsx",
+      "content": "import { tv, type VariantProps } from \"tailwind-variants\"\n\nconst badgeStyles = tv({\n  base: [\n    \"inline-flex items-center gap-x-1.5 py-0.5 font-medium text-xs/5 forced-colors:outline\",\n    \"inset-ring inset-ring-(--badge-ring) bg-(--badge-bg) text-(--badge-fg) [--badge-ring:transparent]\",\n    \"group-hover:bg-(--badge-overlay) group-focus:bg-(--badge-overlay)\",\n    \"*:data-[slot=icon]:size-3 *:data-[slot=icon]:shrink-0\",\n    \"duration-200\",\n  ],\n  variants: {\n    intent: {\n      primary:\n        \"[--badge-bg:var(--color-primary-subtle)] [--badge-fg:var(--color-primary-subtle-fg)] [--badge-overlay:var(--color-primary)]/20\",\n      secondary:\n        \"[--badge-bg:var(--color-secondary)] [--badge-fg:var(--color-secondary-fg)] [--badge-overlay:var(--color-muted-fg)]/25\",\n      success:\n        \"[--badge-bg:var(--color-success-subtle)] [--badge-fg:var(--color-success-subtle-fg)] [--badge-overlay:var(--color-success)]/20\",\n      info: \"[--badge-bg:var(--color-info-subtle)] [--badge-fg:var(--color-info-subtle-fg)] [--badge-overlay:var(--color-sky-500)]/20\",\n      warning:\n        \"[--badge-bg:var(--color-warning-subtle)] [--badge-fg:var(--color-warning-subtle-fg)] [--badge-overlay:var(--color-warning)]/20\",\n      danger:\n        \"[--badge-bg:var(--color-danger-subtle)] [--badge-fg:var(--color-danger-subtle-fg)] [--badge-overlay:var(--color-danger)]/20\",\n      outline: \"[--badge-overlay:var(--color-secondary)]/20 [--badge-ring:var(--color-border)]\",\n    },\n    isCircle: {\n      true: \"rounded-full px-2\",\n      false: \"rounded-sm px-1.5\",\n    },\n  },\n  defaultVariants: {\n    intent: \"primary\",\n    isCircle: true,\n  },\n})\n\ninterface BadgeProps\n  extends React.HTMLAttributes<HTMLDivElement>,\n    VariantProps<typeof badgeStyles> {\n  className?: string\n  children: React.ReactNode\n}\n\nconst Badge = ({ children, intent, isCircle = true, className, ...props }: BadgeProps) => {\n  return (\n    <span {...props} className={badgeStyles({ intent, isCircle, className })}>\n      {children}\n    </span>\n  )\n}\n\nexport type { BadgeProps }\nexport { Badge, badgeStyles }\n",
+      "type": "registry:ui"
+    }
+  ],
+  "type": "registry:ui"
+}

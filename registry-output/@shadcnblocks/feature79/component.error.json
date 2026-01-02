@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature79",
+  "url": "https://shadcnblocks.com/r/feature79.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature79",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A feature block with a tagline, title, and description, followed by a grid of one main and three smaller linked feature items, each with hover effects and directional arrows.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/feature79.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:30.257Z"
+}

@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "careers9",
+  "url": "https://shadcnblocks.com/r/careers9.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "careers9",
+    "type": "registry:block",
+    "title": "Careers",
+    "description": "A component listing job openings with department, role, location, and a link, featuring a heading, introduction, and a call-to-action for unsolicited applications.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": ["badge", "separator"],
+    "files": [
+      {
+        "path": "code/block/careers9.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:15.432Z"
+}

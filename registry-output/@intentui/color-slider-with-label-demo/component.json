@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "extends": "none",
+  "name": "color-slider-with-label-demo",
+  "title": "Color Slider With Label",
+  "description": "color-slider-with-label-demo",
+  "registryDependencies": [
+    "https://intentui.com/r/color-slider",
+    "https://intentui.com/r/color-thumb",
+    "https://intentui.com/r/field"
+  ],
+  "files": [
+    {
+      "path": "src/components/docs/colors/color-slider/color-slider-with-label-demo.tsx",
+      "content": "\"use client\"\n\nimport { ColorSlider, ColorSliderOutput, ColorSliderTrack } from \"@/components/ui/color-slider\"\nimport { ColorThumb } from \"@/components/ui/color-thumb\"\nimport { Label } from \"@/components/ui/field\"\n\nexport default function ColorSliderWithLabelDemo() {\n  return (\n    <ColorSlider channel=\"hue\" defaultValue=\"hsl(0, 100%, 50%)\">\n      <Label>Color Customizer</Label>\n      <ColorSliderOutput />\n      <ColorSliderTrack>\n        <ColorThumb />\n      </ColorSliderTrack>\n    </ColorSlider>\n  )\n}\n",
+      "type": "registry:page",
+      "target": "app/color-slider-with-label-demo/page.tsx"
+    }
+  ],
+  "type": "registry:page"
+}

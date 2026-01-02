@@ -1,0 +1,28 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "input-otp-input-otp-use-cases-3",
+  "url": "https://shadcnblocks.com/r/input-otp-input-otp-use-cases-3.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "input-otp-input-otp-use-cases-3",
+    "type": "registry:block",
+    "title": "Input-otp/input-otp-use-cases-",
+    "description": "A input-otp/input-otp-use-cases- example",
+    "dependencies": [
+      "@hookform/resolvers",
+      "lucide-react",
+      "react",
+      "react-hook-form",
+      "sonner",
+      "zod"
+    ],
+    "registryDependencies": ["button", "form", "input-otp"],
+    "files": [
+      {
+        "path": "code/example/input-otp/input-otp-use-cases-3.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:15:25.096Z"
+}

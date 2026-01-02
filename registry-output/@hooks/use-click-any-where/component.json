@@ -1,0 +1,14 @@
+{
+  "name": "use-click-any-where",
+  "author": "Brendan Dash (https://shadcn-hooks.vercel.app)",
+  "description": "A hook to click anywhere",
+  "registryDependencies": ["@hooks/use-event-listener"],
+  "files": [
+    {
+      "path": "registry/hooks/use-click-any-where.ts",
+      "content": "import { useEventListener } from '@/registry/hooks/use-event-listener'\n\nexport function useClickAnyWhere(handler: (event: MouseEvent) => void) {\n  useEventListener('click', handler)\n}\n",
+      "type": "registry:hook"
+    }
+  ],
+  "type": "registry:hook"
+}

@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "pages-page-transition-slide",
+  "type": "registry:component",
+  "title": "Page Transition Slide",
+  "description": "Page transition component with slide effect using View Transitions API.",
+  "dependencies": [],
+  "files": [
+    {
+      "path": "registry/new-york/animations/pages/page-transition-slide.tsx",
+      "content": "\"use client\";\nimport * as React from \"react\";\nimport { usePathname } from \"next/navigation\";\nexport type SlideDirection = \"left\" | \"right\" | \"top\" | \"bottom\";\nexport interface PageTransitionSlideProps {\n  children: React.ReactNode;\n  direction?: SlideDirection;\n  duration?: number;\n  ease?: string;\n}\nexport function PageTransitionSlide({\n  children,\n  direction = \"left\",\n  duration = 0.4,\n  ease = \"ease-in-out\",\n}: PageTransitionSlideProps) {\n  const pathname = usePathname();\n  React.useEffect(() => {\n    if (typeof document === \"undefined\" || !document.startViewTransition) {\n      return;\n    }\n    document.documentElement.style.setProperty(\n      \"--page-transition-duration\",\n      `${duration}s`,\n    );\n    document.documentElement.style.setProperty(\"--page-transition-ease\", ease);\n    document.documentElement.setAttribute(\"data-slide-direction\", direction);\n  }, [pathname, duration, ease, direction]);\n  return <>{children}</>;\n}\n",
+      "type": "registry:component"
+    }
+  ]
+}

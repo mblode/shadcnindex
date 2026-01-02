@@ -1,0 +1,22 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "extends": "none",
+  "name": "radio-group-validation-demo",
+  "title": "Radio Group Validation",
+  "description": "radio-group-validation-demo",
+  "dependencies": ["react-aria-components"],
+  "registryDependencies": [
+    "https://intentui.com/r/button",
+    "https://intentui.com/r/field",
+    "https://intentui.com/r/radio"
+  ],
+  "files": [
+    {
+      "path": "src/components/docs/forms/radio-group/radio-group-validation-demo.tsx",
+      "content": "\"use client\"\n\nimport { Form } from \"react-aria-components\"\nimport { Button } from \"@/components/ui/button\"\nimport { Description, Label } from \"@/components/ui/field\"\nimport { Radio, RadioGroup } from \"@/components/ui/radio\"\n\nexport default function RadioGroupValidationDemo() {\n  return (\n    <Form onSubmit={() => {}} className=\"space-y-4\">\n      <RadioGroup isRequired name=\"feature\">\n        <Label>Features</Label>\n        <Description>Choose one of the available features</Description>\n        <Radio value=\"analytics\">\n          <Label>Advanced Analytics</Label>\n          <Description>Gain insights with real-time data reports.</Description>\n        </Radio>\n\n        <Radio value=\"automation\">\n          <Label>Workflow Automation</Label>\n          <Description>Automate repetitive tasks to save time.</Description>\n        </Radio>\n\n        <Radio value=\"integrations\">\n          <Label>Third-party Integrations</Label>\n          <Description>Connect with your favorite tools and services.</Description>\n        </Radio>\n      </RadioGroup>\n      <Button type=\"submit\" intent=\"secondary\">\n        Submit\n      </Button>\n    </Form>\n  )\n}\n",
+      "type": "registry:page",
+      "target": "app/radio-group-validation-demo/page.tsx"
+    }
+  ],
+  "type": "registry:page"
+}

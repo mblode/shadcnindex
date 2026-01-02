@@ -1,0 +1,23 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "gallery31",
+  "url": "https://shadcnblocks.com/r/gallery31.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "gallery31",
+    "type": "registry:block",
+    "title": "Gallery",
+    "description": "A product showcase block with a dynamic grid layout of 1-4 columns, displaying items with hover effects, titles, and prices.",
+    "dependencies": [],
+    "registryDependencies": [
+      "https://ui.aceternity.com/registry/direction-aware-hover.json"
+    ],
+    "files": [
+      {
+        "path": "code/block/gallery31.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:33.002Z"
+}

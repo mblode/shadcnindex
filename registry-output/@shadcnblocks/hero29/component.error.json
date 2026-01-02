@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "hero29",
+  "url": "https://shadcnblocks.com/r/hero29.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "hero29",
+    "type": "registry:block",
+    "title": "Hero",
+    "description": "A welcome block with centered text, two call-to-action buttons, a 5-star rating display, and a large image placeholder. Features a detailed background design.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["button"],
+    "files": [
+      {
+        "path": "code/block/hero29.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:38.126Z"
+}

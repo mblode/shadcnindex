@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "extends": "none",
+  "name": "text-field",
+  "title": "text-field",
+  "description": "text-field",
+  "dependencies": ["react-aria-components"],
+  "registryDependencies": [
+    "https://intentui.com/r/primitive",
+    "https://intentui.com/r/field"
+  ],
+  "files": [
+    {
+      "path": "src/components/ui/text-field.tsx",
+      "content": "\"use client\"\n\nimport type { TextFieldProps } from \"react-aria-components\"\nimport { TextField as TextFieldPrimitive } from \"react-aria-components\"\nimport { cx } from \"@/lib/primitive\"\nimport { fieldStyles } from \"./field\"\n\nconst TextField = ({ className, ...props }: TextFieldProps) => {\n  return (\n    <TextFieldPrimitive data-slot=\"control\" className={cx(fieldStyles(), className)} {...props} />\n  )\n}\n\nexport { TextField }\n",
+      "type": "registry:ui"
+    }
+  ],
+  "type": "registry:ui"
+}

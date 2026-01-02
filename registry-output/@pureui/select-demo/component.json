@@ -1,0 +1,13 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "select-demo",
+  "type": "registry:example",
+  "registryDependencies": ["select"],
+  "files": [
+    {
+      "path": "src/registry/pure-ui/examples/select/select-demo.tsx",
+      "content": "import { CheckIcon, ChevronsUpDownIcon } from \"lucide-react\";\n\nimport {\n  Select,\n  SelectTrigger,\n  SelectValue,\n  SelectIcon,\n  SelectPopup,\n  SelectList,\n  SelectItem,\n  SelectItemText,\n  SelectItemIndicator,\n} from \"@/registry/pure-ui/ui/select\";\n\nconst fonts = [\n  { label: \"JavaScript\", value: \"javascript\" },\n  { label: \"TypeScript\", value: \"typescript\" },\n  { label: \"Python\", value: \"python\" },\n  { label: \"Java\", value: \"java\" },\n  { label: \"C#\", value: \"csharp\" },\n  { label: \"PHP\", value: \"php\" },\n  { label: \"C++\", value: \"cpp\" },\n  { label: \"Rust\", value: \"rust\" },\n  { label: \"Go\", value: \"go\" },\n  { label: \"Swift\", value: \"swift\" },\n];\n\nexport const SelectDemo = () => {\n  return (\n    <Select items={fonts}>\n      <SelectTrigger className=\"min-w-46\">\n        <SelectValue />\n        <SelectIcon>\n          <ChevronsUpDownIcon className=\"size-3.5\" />\n        </SelectIcon>\n      </SelectTrigger>\n      <SelectPopup>\n        <SelectList>\n          {fonts.map(({ label, value }) => {\n            return (\n              <SelectItem key={value} value={value}>\n                <SelectItemText>{label}</SelectItemText>\n                <SelectItemIndicator>\n                  <CheckIcon className=\"size-3\" />\n                </SelectItemIndicator>\n              </SelectItem>\n            );\n          })}\n        </SelectList>\n      </SelectPopup>\n    </Select>\n  );\n};\n",
+      "type": "registry:example"
+    }
+  ]
+}

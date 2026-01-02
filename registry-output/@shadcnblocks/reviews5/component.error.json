@@ -1,0 +1,28 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "reviews5",
+  "url": "https://shadcnblocks.com/r/reviews5.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "reviews5",
+    "type": "registry:block",
+    "title": "Reviews",
+    "description": "This component displays a list of customer reviews with features like sorting options by helpfulness, date, and rating, and includes visual elements such as avatars, ratings, and progress bars for rating distribution. It provides an interactive user interface where users can view detailed customer feedback and load additional reviews.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": [
+      "https://shadcnblocks.com/r/rating",
+      "avatar",
+      "button",
+      "dropdown-menu",
+      "progress",
+      "separator"
+    ],
+    "files": [
+      {
+        "path": "code/block/reviews5.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:49.673Z"
+}

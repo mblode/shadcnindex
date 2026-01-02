@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "background-pattern18",
+  "url": "https://shadcnblocks.com/r/background-pattern18.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "background-pattern18",
+    "type": "registry:block",
+    "title": "Background-pattern",
+    "description": "This component creates a visually engaging background pattern using diagonal cross grids and a center fade effect, perfect for dynamic and modern UX designs. It supports customizable styles with a `className` prop and integrates a pattern placeholder for further customization.",
+    "dependencies": [],
+    "registryDependencies": ["https://shadcnblocks.com/r/pattern-placeholder"],
+    "files": [
+      {
+        "path": "code/block/background-pattern18.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:12.341Z"
+}

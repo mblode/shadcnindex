@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature314",
+  "url": "https://shadcnblocks.com/r/feature314.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature314",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "This component displays a dynamic gallery featuring a combination of multiple small cards and a prominent larger card, perfect for showcasing content with distinct headings, images, and descriptions. Equipped with interactive features, it includes motion effects on hover and the flexibility to integrate call-to-action buttons, making it suitable for both informative displays and promotional purposes.",
+    "dependencies": ["framer-motion", "lucide-react"],
+    "registryDependencies": ["button", "card"],
+    "files": [
+      {
+        "path": "code/block/feature314.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:28.453Z"
+}

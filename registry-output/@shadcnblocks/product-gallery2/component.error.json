@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "product-gallery2",
+  "url": "https://shadcnblocks.com/r/product-gallery2.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "product-gallery2",
+    "type": "registry:block",
+    "title": "Product-gallery",
+    "description": "This component provides an interactive carousel gallery for displaying a collection of product images, supporting functionalities like zoom and navigation controls. It integrates with a lightbox library to enhance image viewing, allowing users to browse through images with next-prev buttons and a custom close option.",
+    "dependencies": ["lucide-react", "photoswipe", "react"],
+    "registryDependencies": ["aspect-ratio", "badge", "button", "carousel"],
+    "files": [
+      {
+        "path": "code/block/product-gallery2.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:45.844Z"
+}

@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "compare1",
+  "url": "https://shadcnblocks.com/r/compare1.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "compare1",
+    "type": "registry:block",
+    "title": "Compare",
+    "description": "A comparative block showcasing features between two entities in a 3-column layout with icons to highlight specific traits.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/compare1.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:16.774Z"
+}

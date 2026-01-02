@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature270",
+  "url": "https://shadcnblocks.com/r/feature270.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature270",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A component displaying customizable feature blocks with images, titles, and descriptions in a grid of 2 or 3 columns, depending on screen size.",
+    "dependencies": ["motion", "react"],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/feature270.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:27.212Z"
+}

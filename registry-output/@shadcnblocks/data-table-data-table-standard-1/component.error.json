@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "data-table-data-table-standard-1",
+  "url": "https://shadcnblocks.com/r/data-table-data-table-standard-1.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "data-table-data-table-standard-1",
+    "type": "registry:block",
+    "title": "Data-table/data-table-standard-",
+    "description": "A data-table/data-table-standard- example",
+    "dependencies": ["@tanstack/react-table", "lucide-react", "react"],
+    "registryDependencies": ["button", "checkbox", "table"],
+    "files": [
+      {
+        "path": "code/example/data-table/data-table-standard-1.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:15:14.018Z"
+}

@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature218",
+  "url": "https://shadcnblocks.com/r/feature218.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature218",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A component featuring two columns with a 1:2 ratio, showcasing a promotional message and a call-to-action button on the left, and an image with a unique fade effect on the right.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["aspect-ratio", "button"],
+    "files": [
+      {
+        "path": "code/block/feature218.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:25.391Z"
+}

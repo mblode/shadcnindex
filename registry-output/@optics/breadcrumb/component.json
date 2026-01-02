@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "breadcrumb",
+  "title": "Breadcrumb",
+  "description": "Displays the path to the current resource using a hierarchy of links.",
+  "dependencies": ["@base-ui/react", "lucide-react", "clsx", "tailwind-merge"],
+  "registryDependencies": [
+    "https://optics.agusmayol.com.ar/r/button.json",
+    "https://optics.agusmayol.com.ar/r/utils.json"
+  ],
+  "files": [
+    {
+      "path": "registry/optics/breadcrumb.jsx",
+      "content": "import * as React from \"react\"\nimport { mergeProps } from \"@base-ui/react/merge-props\"\nimport { useRender } from \"@base-ui/react/use-render\"\n\nimport { cn } from \"@/lib/utils\"\nimport { ChevronRightIcon, MoreHorizontalIcon } from \"lucide-react\"\n\nfunction Breadcrumb({\n  className = \"\",\n  ...props\n}) {\n  return (\n    <nav\n      aria-label=\"breadcrumb\"\n      data-slot=\"breadcrumb\"\n      className={cn(className)}\n      {...props} />\n  );\n}\n\nfunction BreadcrumbList({\n  className = \"\",\n  ...props\n}) {\n  return (\n    <ol\n      data-slot=\"breadcrumb-list\"\n      className={cn(\n        \"text-muted-foreground gap-1.5 text-xs/relaxed flex flex-wrap items-center break-words\",\n        className\n      )}\n      {...props} />\n  );\n}\n\nfunction BreadcrumbItem({\n  className = \"\",\n  ...props\n}) {\n  return (\n    <li\n      data-slot=\"breadcrumb-item\"\n      className={cn(\"gap-1 inline-flex items-center\", className)}\n      {...props} />\n  );\n}\n\nfunction BreadcrumbLink({\n  className = \"\",\n  render = undefined,\n  ...props\n}) {\n  return useRender({\n    defaultTagName: \"a\",\n    props: mergeProps({\n      className: cn(\"hover:text-foreground transition-colors\", className),\n    }, props),\n    render,\n    state: {\n      slot: \"breadcrumb-link\",\n    },\n  });\n}\n\nfunction BreadcrumbPage({\n  className = \"\",\n  ...props\n}) {\n  return (\n    <span\n      data-slot=\"breadcrumb-page\"\n      role=\"link\"\n      aria-disabled=\"true\"\n      aria-current=\"page\"\n      className={cn(\"text-foreground font-normal\", className)}\n      {...props} />\n  );\n}\n\nfunction BreadcrumbSeparator({\n  children = null,\n  className = \"\",\n  ...props\n}) {\n  return (\n    <li\n      data-slot=\"breadcrumb-separator\"\n      role=\"presentation\"\n      aria-hidden=\"true\"\n      className={cn(\"[&>svg]:size-3.5\", className)}\n      {...props}>\n      {children ?? (\n        <ChevronRightIcon />\n      )}\n    </li>\n  );\n}\n\nfunction BreadcrumbEllipsis({\n  className = \"\",\n  ...props\n}) {\n  return (\n    <span\n      data-slot=\"breadcrumb-ellipsis\"\n      role=\"presentation\"\n      aria-hidden=\"true\"\n      className={cn(\"size-4 [&>svg]:size-3.5 flex items-center justify-center\", className)}\n      {...props}>\n      <MoreHorizontalIcon />\n      <span className=\"sr-only\">More</span>\n    </span>\n  );\n}\n\nexport {\n  Breadcrumb,\n  BreadcrumbList,\n  BreadcrumbItem,\n  BreadcrumbLink,\n  BreadcrumbPage,\n  BreadcrumbSeparator,\n  BreadcrumbEllipsis,\n}\n",
+      "type": "registry:component",
+      "target": "components/optics/breadcrumb.jsx"
+    }
+  ],
+  "type": "registry:component"
+}

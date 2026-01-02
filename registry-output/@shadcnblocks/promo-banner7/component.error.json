@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "promo-banner7",
+  "url": "https://shadcnblocks.com/r/promo-banner7.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "promo-banner7",
+    "type": "registry:block",
+    "title": "Promo-banner",
+    "description": "This component displays a promotional banner featuring a countdown timer and stock progress bar, ideal for showcasing limited-time offers. Users can customize the end time and stock values, while it dynamically updates to indicate time left and items remaining.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": ["progress"],
+    "files": [
+      {
+        "path": "code/block/promo-banner7.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:49.010Z"
+}

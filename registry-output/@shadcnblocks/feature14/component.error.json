@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature14",
+  "url": "https://shadcnblocks.com/r/feature14.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature14",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A two-column component featuring secure payments and automated invoicing, with text descriptions and check-marked features, complemented by numbered image placeholders.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/feature14.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:22.201Z"
+}

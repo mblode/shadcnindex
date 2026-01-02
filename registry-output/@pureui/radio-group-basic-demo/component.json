@@ -1,0 +1,13 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "radio-group-basic-demo",
+  "type": "registry:example",
+  "registryDependencies": ["radio-group"],
+  "files": [
+    {
+      "path": "src/registry/pure-ui/examples/radio-group/radio-group-basic-demo.tsx",
+      "content": "import { Label } from \"@/registry/pure-ui/ui/label\";\nimport { Radio, RadioGroup } from \"@/registry/pure-ui/ui/radio-group\";\n\nexport function RadioGroupBasicDemo() {\n  return (\n    <RadioGroup defaultValue=\"light\">\n      <Label>\n        <Radio value=\"light\" /> Light Theme\n      </Label>\n      <Label>\n        <Radio value=\"dark\" /> Dark Theme\n      </Label>\n      <Label>\n        <Radio value=\"system\" /> System Default\n      </Label>\n    </RadioGroup>\n  );\n}\n",
+      "type": "registry:example"
+    }
+  ]
+}

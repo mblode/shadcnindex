@@ -1,0 +1,27 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "order-summary2",
+  "url": "https://shadcnblocks.com/r/order-summary2.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "order-summary2",
+    "type": "registry:block",
+    "title": "Order-summary",
+    "description": "This component displays a comprehensive order summary, including order details, itemized lists, payment method, and shipping information. Users can easily track their orders and access options to download a receipt or print the summary.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": [
+      "aspect-ratio",
+      "badge",
+      "button",
+      "card",
+      "separator"
+    ],
+    "files": [
+      {
+        "path": "code/block/order-summary2.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:43.153Z"
+}

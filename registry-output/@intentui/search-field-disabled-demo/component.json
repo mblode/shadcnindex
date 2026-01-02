@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "extends": "none",
+  "name": "search-field-disabled-demo",
+  "title": "Search Field Disabled",
+  "description": "search-field-disabled-demo",
+  "registryDependencies": ["https://intentui.com/r/search-field"],
+  "files": [
+    {
+      "path": "src/components/docs/forms/search-field/search-field-disabled-demo.tsx",
+      "content": "\"use client\"\n\nimport { SearchField, SearchInput } from \"@/components/ui/search-field\"\n\nexport default function SearchFieldDisabledDemo() {\n  return (\n    <SearchField isDisabled>\n      <SearchInput />\n    </SearchField>\n  )\n}\n",
+      "type": "registry:page",
+      "target": "app/search-field-disabled-demo/page.tsx"
+    }
+  ],
+  "type": "registry:page"
+}

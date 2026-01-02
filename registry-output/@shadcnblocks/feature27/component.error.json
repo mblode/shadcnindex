@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature27",
+  "url": "https://shadcnblocks.com/r/feature27.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature27",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A component featuring an \"Overview\" badge, centered title, and text, followed by two columns of images with captions, and a full-width image with a caption.",
+    "dependencies": [],
+    "registryDependencies": ["badge"],
+    "files": [
+      {
+        "path": "code/block/feature27.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:27.186Z"
+}

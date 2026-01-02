@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "project13a",
+  "url": "https://shadcnblocks.com/r/project13a.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "project13a",
+    "type": "registry:block",
+    "title": "Project13a",
+    "description": "A visual storytelling component with a parallax hero section, project details, full-width images, and a concept overview. Uses staggered animations.",
+    "dependencies": ["framer-motion"],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/project13a.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:46.798Z"
+}

@@ -1,0 +1,27 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "order-summary4",
+  "url": "https://shadcnblocks.com/r/order-summary4.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "order-summary4",
+    "type": "registry:block",
+    "title": "Order-summary",
+    "description": "This component is designed to display a comprehensive order summary, including order details, timeline tracking, payment information, and shipping address, enhancing the user experience by providing a clear overview of their purchase. It allows users to interact with various elements such as timeline steps and provides progress visualization, making it easier to track the order's status and history.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": [
+      "aspect-ratio",
+      "badge",
+      "button",
+      "card",
+      "separator"
+    ],
+    "files": [
+      {
+        "path": "code/block/order-summary4.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:43.199Z"
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "moving-border-example",
+  "type": "registry:component",
+  "title": "Moving Border Example",
+  "description": "Animated gradient border that smoothly travels around any element, from rounded rectangles to perfect circles.",
+  "dependencies": ["gsap", "react", "@gsap/react", "tailwind-merge", "clsx"],
+  "registryDependencies": ["https://ui.phucbm.com/r/moving-border.json"],
+  "files": [
+    {
+      "path": "registry/phucbm/blocks/moving-border/example.transformed.tsx",
+      "content": "import {MovingBorder} from \"@/components/phucbm/moving-border\";\n\nexport default function Example() {\n    return (\n        <div className=\"flex justify-center items-center flex-wrap h-screen gap-x-12 gap-y-6 bg-emerald-50\">\n\n            <div className=\"flex flex-col gap-3 justify-center items-center\">\n\n                {/* The radius prop should be identical with your rounded value */}\n                <MovingBorder radius={10} borderWidth={2} gradientWidth={60} duration={3}\n                              colors={[\"#dce817\", \"#10f400\", \"#75ba33\"]}>\n                    <button\n                        className=\"rounded-[10px] w-[100px] aspect-video bg-emerald-200 flex justify-center items-center transition-all duration-500 hover:bg-emerald-300\">\n                        <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\"\n                             stroke=\"currentColor\" strokeWidth=\"2\" strokeLinecap=\"round\" strokeLinejoin=\"round\"\n                             className=\"icon icon-tabler icons-tabler-outline icon-tabler-mood-sing\">\n                            <path stroke=\"none\" d=\"M0 0h24v24H0z\" fill=\"none\"/>\n                            <path d=\"M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0\"/>\n                            <path d=\"M9 9h.01\"/>\n                            <path d=\"M15 9h.01\"/>\n                            <path d=\"M15 15m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0\"/>\n                        </svg>\n                    </button>\n                </MovingBorder>\n\n                <div>Button</div>\n            </div>\n\n            <div className=\"flex flex-col gap-3 justify-center items-center\">\n\n                {/* Circle */}\n                <MovingBorder isCircle={true}\n                              borderWidth={4}\n                              gradientWidth={150}\n                              duration={4}\n                              colors={[\"#84b5ff\", \"#dad7f8\", \"#cb92ff\"]}>\n                    <div\n                        className=\"w-[200px] aspect-square bg-accent rounded-full overflow-hidden flex justify-center items-center\">\n                        <img\n                            className=\"object-cover w-full h-full\"\n                            src=\"https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExcGJrZ3NlejZ4ZXlvaDRnbTR1b2VmcG1waGM1Y3hvNGU4aGE0aHcweSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/26BkNnO2qmCWTQuac/giphy.gif\"\n                            alt=\"A blurry photo of white flowers in a field\"/>\n                    </div>\n                </MovingBorder>\n\n                <div>Avatar</div>\n            </div>\n        </div>\n    );\n}",
+      "type": "registry:component",
+      "target": "index.tsx"
+    }
+  ]
+}

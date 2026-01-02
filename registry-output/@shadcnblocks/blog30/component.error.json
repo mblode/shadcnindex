@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "blog30",
+  "url": "https://shadcnblocks.com/r/blog30.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "blog30",
+    "type": "registry:block",
+    "title": "Blog",
+    "description": "A component displaying blog posts in a column layout, including images, titles, dates, and descriptions. Features a \"Read\" button with an arrow icon.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": ["button", "card"],
+    "files": [
+      {
+        "path": "code/block/blog30.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:14.560Z"
+}

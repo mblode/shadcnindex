@@ -1,0 +1,26 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "product-list4",
+  "url": "https://shadcnblocks.com/r/product-list4.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "product-list4",
+    "type": "registry:block",
+    "title": "Product-list",
+    "description": "This component displays a dynamic product showcase with promotional information, allowing users to view a collection of products with details such as images, prices, brands, and ratings. It includes a promo card that highlights special offers and a list of individual product cards that provide quick access through clickable links.",
+    "dependencies": [],
+    "registryDependencies": [
+      "https://shadcnblocks.com/r/price",
+      "https://shadcnblocks.com/r/rating",
+      "button",
+      "card"
+    ],
+    "files": [
+      {
+        "path": "code/block/product-list4.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:46.134Z"
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "markdown",
+  "title": "markdown",
+  "files": [
+    {
+      "path": "././static/components-generated/markdownLight.tsx",
+      "content": "import type { SVGProps } from \"react\";\n\nconst MarkdownLight = (props: SVGProps<SVGSVGElement>) => (\n  <svg {...props} viewBox=\"0 0 208 128\" fill=\"none\">\n    <g fill=\"#000\">\n      <path\n        fillRule=\"evenodd\"\n        d=\"M15 10a5 5 0 0 0-5 5v98a5 5 0 0 0 5 5h178a5 5 0 0 0 5-5V15a5 5 0 0 0-5-5zM0 15A15 15 0 0 1 15 0h178a15 15 0 0 1 15 15v98a15 15 0 0 1-15 15H15a15 15 0 0 1-15-15z\"\n        clipRule=\"evenodd\"\n      />\n      <path d=\"M30 98V30h20l20 25 20-25h20v68H90V59L70 84 50 59v39zm125 0-30-33h20V30h20v35h20z\" />\n    </g>\n  </svg>\n);\n\nexport { MarkdownLight };\n",
+      "type": "registry:component",
+      "target": "components/ui/svgs/markdownLight.tsx"
+    },
+    {
+      "path": "././static/components-generated/markdownDark.tsx",
+      "content": "import type { SVGProps } from \"react\";\n\nconst MarkdownDark = (props: SVGProps<SVGSVGElement>) => (\n  <svg {...props} viewBox=\"0 0 208 128\" xmlSpace=\"preserve\">\n    <path\n      fill=\"none\"\n      stroke=\"#FFF\"\n      strokeWidth=\"10\"\n      d=\"M15 5h178a10 10 0 0 1 10 10v98a10 10 0 0 1-10 10H15a10 10 0 0 1-10-10V15A10 10 0 0 1 15 5z\"\n    />\n    <path\n      fill=\"#FFF\"\n      d=\"M30 98V30h20l20 25 20-25h20v68H90V59L70 84 50 59v39H30zm125 0-30-33h20V30h20v35h20l-30 33z\"\n    />\n  </svg>\n);\n\nexport { MarkdownDark };\n",
+      "type": "registry:component",
+      "target": "components/ui/svgs/markdownDark.tsx"
+    }
+  ],
+  "type": "registry:component"
+}

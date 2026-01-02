@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "testimonial9",
+  "url": "https://shadcnblocks.com/r/testimonial9.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "testimonial9",
+    "type": "registry:block",
+    "title": "Testimonial",
+    "description": "A testimonials grid with dynamic columns, showcasing clients&#x27; feedback, names, roles, and avatars, along with a headline and subtext.",
+    "dependencies": ["react-responsive-masonry"],
+    "registryDependencies": ["avatar", "card"],
+    "files": [
+      {
+        "path": "code/block/testimonial9.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:54.432Z"
+}

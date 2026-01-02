@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "banner3",
+  "url": "https://shadcnblocks.com/r/banner3.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "banner3",
+    "type": "registry:block",
+    "title": "Banner",
+    "description": "A subscription block featuring a title, description, email input, and subscribe button. Includes a dismissible icon and adapts layout between single and multi-column views.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": ["button"],
+    "files": [
+      {
+        "path": "code/block/banner3.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:13.815Z"
+}

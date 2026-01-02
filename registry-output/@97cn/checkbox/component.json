@@ -1,0 +1,39 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "checkbox",
+  "type": "registry:ui",
+  "title": "Checkbox",
+  "description": "Windows 95 styled checkbox component",
+  "dependencies": ["@radix-ui/react-checkbox"],
+  "files": [
+    {
+      "path": "components/97cn/checkbox.tsx",
+      "content": "\"use client\"\n\nimport * as React from \"react\"\nimport * as CheckboxPrimitive from \"@radix-ui/react-checkbox\"\nimport { Check } from \"lucide-react\"\nimport { cn } from \"@/lib/utils\"\n\nconst Win95Checkbox = React.forwardRef<\n  React.ElementRef<typeof CheckboxPrimitive.Root>,\n  React.ComponentPropsWithoutRef<typeof CheckboxPrimitive.Root>\n>(({ className, ...props }, ref) => (\n  <CheckboxPrimitive.Root\n    ref={ref}\n    className={cn(\n      \"peer h-4 w-4 shrink-0 bg-win95-white win95-sunken focus-visible:outline-none focus:outline-1 focus:outline-dotted focus:outline-win95-black focus:outline-offset-[-2px] disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-win95-white data-[state=checked]:text-win95-black rounded-none\",\n      className,\n    )}\n    {...props}\n  >\n    <CheckboxPrimitive.Indicator className={cn(\"flex items-center justify-center text-current\")}>\n      <Check className=\"h-3 w-3 stroke-[3]\" />\n    </CheckboxPrimitive.Indicator>\n  </CheckboxPrimitive.Root>\n))\nWin95Checkbox.displayName = CheckboxPrimitive.Root.displayName\n\nexport { Win95Checkbox }\n",
+      "type": "registry:ui"
+    }
+  ],
+  "cssVars": {
+    "light": {
+      "win95-white": "#ffffff",
+      "win95-black": "#000000",
+      "win95-button-shadow": "#808080",
+      "win95-button-highlight": "#ffffff"
+    },
+    "dark": {
+      "win95-white": "#ffffff",
+      "win95-black": "#000000",
+      "win95-button-shadow": "#808080",
+      "win95-button-highlight": "#ffffff"
+    }
+  },
+  "css": {
+    "@layer utilities": {
+      ".win95-sunken": {
+        "border-top": "2px solid var(--win95-button-shadow)",
+        "border-left": "2px solid var(--win95-button-shadow)",
+        "border-right": "2px solid var(--win95-button-highlight)",
+        "border-bottom": "2px solid var(--win95-button-highlight)"
+      }
+    }
+  }
+}

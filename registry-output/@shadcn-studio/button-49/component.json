@@ -1,0 +1,23 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "button-49",
+  "type": "registry:component",
+  "title": "Button 49",
+  "description": "Button with stitched border design using layered shadow effects",
+  "dependencies": ["lucide-react", "class-variance-authority"],
+  "registryDependencies": ["button", "utils"],
+  "files": [
+    {
+      "path": "src/registry/new-york/components/button/button-49.tsx",
+      "content": "import { ArrowUpRightIcon } from 'lucide-react'\n\nimport { CraftButton, CraftButtonLabel, CraftButtonIcon } from '@/registry/new-york/ui/craft-button'\n\nconst CraftButtonDemo = () => {\n  return (\n    <CraftButton>\n      <CraftButtonLabel>Click me</CraftButtonLabel>\n      <CraftButtonIcon>\n        <ArrowUpRightIcon className='size-3 stroke-2 transition-transform duration-500 group-hover:rotate-45' />\n      </CraftButtonIcon>\n    </CraftButton>\n  )\n}\n\nexport default CraftButtonDemo\n",
+      "type": "registry:component",
+      "target": "components/shadcn-studio/button/button-49.tsx"
+    },
+    {
+      "path": "src/registry/new-york/ui/craft-button.tsx",
+      "content": "'use client'\n\nimport * as React from 'react'\n\nimport type { VariantProps } from 'class-variance-authority'\n\nimport { Button, type buttonVariants } from '@/registry/new-york/ui/button'\n\nimport { cn } from '@/registry/new-york/lib/utils'\n\nconst CraftButtonContext = React.createContext<{\n  size?: VariantProps<typeof buttonVariants>['size']\n}>({})\n\ninterface CraftButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {\n  size?: VariantProps<typeof buttonVariants>['size']\n  children?: React.ReactNode\n  asChild?: boolean\n}\n\ninterface CraftButtonLabelProps {\n  children: React.ReactNode\n  className?: string\n}\n\ninterface CraftButtonIconProps {\n  children: React.ReactNode\n  className?: string\n}\n\nfunction CraftButtonLabel({ children, className }: CraftButtonLabelProps) {\n  return (\n    <span className={cn('group-hover:text-foreground relative z-2 transition-colors duration-500', className)}>\n      {children}\n    </span>\n  )\n}\n\nfunction CraftButtonIcon({ children, className }: CraftButtonIconProps) {\n  const { size } = React.useContext(CraftButtonContext)\n  const iconSize = size === 'lg' ? 'size-6' : size === 'sm' ? 'size-4' : 'size-5'\n\n  return (\n    <span className={cn('relative z-1', iconSize, className)}>\n      <span\n        className={cn(\n          'bg-background absolute inset-0 -z-1 rounded-full transition-transform duration-500 group-hover:scale-[15]',\n          iconSize\n        )}\n      />\n      <span\n        className={cn(\n          'bg-background text-primary group-hover:bg-primary group-hover:text-background relative z-2 flex items-center justify-center rounded-full transition-all duration-500',\n          iconSize\n        )}\n      >\n        {children}\n      </span>\n    </span>\n  )\n}\n\nfunction CraftButton(props: CraftButtonProps) {\n  const { children, size, asChild = false, className, ...rest } = props\n\n  return (\n    <CraftButtonContext.Provider value={{ size }}>\n      <Button\n        size={size}\n        asChild={asChild}\n        className={cn(\n          'group hover:bg-background dark:hover:border-primary/30 relative cursor-pointer overflow-hidden rounded-full duration-500 hover:shadow-md dark:border dark:border-transparent',\n          className\n        )}\n        {...rest}\n      >\n        {children}\n      </Button>\n    </CraftButtonContext.Provider>\n  )\n}\n\nexport {\n  CraftButton,\n  CraftButtonLabel,\n  CraftButtonIcon,\n  type CraftButtonProps,\n  type CraftButtonLabelProps,\n  type CraftButtonIconProps\n}\n",
+      "type": "registry:ui",
+      "target": "components/ui/craft-button.tsx"
+    }
+  ]
+}

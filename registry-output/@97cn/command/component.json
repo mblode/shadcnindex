@@ -1,0 +1,51 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "command",
+  "type": "registry:ui",
+  "title": "Command",
+  "description": "Windows 95 styled command palette component",
+  "dependencies": ["cmdk"],
+  "files": [
+    {
+      "path": "components/97cn/command.tsx",
+      "content": "\"use client\"\n\nimport * as React from \"react\"\nimport { Command as CommandPrimitive } from \"cmdk\"\nimport { Search } from \"lucide-react\"\nimport { cn } from \"@/lib/utils\"\n\nconst Win95Command = React.forwardRef<\n  React.ElementRef<typeof CommandPrimitive>,\n  React.ComponentPropsWithoutRef<typeof CommandPrimitive>\n>(({ className, ...props }, ref) => (\n  <CommandPrimitive\n    ref={ref}\n    className={cn(\"flex h-full w-full flex-col overflow-hidden bg-win95-white win95-sunken border-0\", className)}\n    {...props}\n  />\n))\nWin95Command.displayName = CommandPrimitive.displayName\n\nconst Win95CommandInput = React.forwardRef<\n  React.ElementRef<typeof CommandPrimitive.Input>,\n  React.ComponentPropsWithoutRef<typeof CommandPrimitive.Input>\n>(({ className, ...props }, ref) => (\n  <div className=\"flex items-center bg-win95-white px-3 py-2 border-b border-win95-dark-gray\" cmdk-input-wrapper=\"\">\n    <Search className=\"mr-2 h-4 w-4 shrink-0 text-win95-dark-gray\" />\n    <CommandPrimitive.Input\n      ref={ref}\n      className={cn(\n        \"flex h-5 w-full bg-transparent text-sm font-sans text-win95-black outline-none placeholder:text-win95-dark-gray disabled:cursor-not-allowed disabled:opacity-50\",\n        className,\n      )}\n      {...props}\n    />\n  </div>\n))\nWin95CommandInput.displayName = CommandPrimitive.Input.displayName\n\nconst Win95CommandList = React.forwardRef<\n  React.ElementRef<typeof CommandPrimitive.List>,\n  React.ComponentPropsWithoutRef<typeof CommandPrimitive.List>\n>(({ className, ...props }, ref) => (\n  <CommandPrimitive.List\n    ref={ref}\n    className={cn(\"max-h-[300px] overflow-y-auto overflow-x-hidden bg-win95-white\", className)}\n    {...props}\n  />\n))\nWin95CommandList.displayName = CommandPrimitive.List.displayName\n\nconst Win95CommandEmpty = React.forwardRef<\n  React.ElementRef<typeof CommandPrimitive.Empty>,\n  React.ComponentPropsWithoutRef<typeof CommandPrimitive.Empty>\n>(({ className, ...props }, ref) => (\n  <CommandPrimitive.Empty\n    ref={ref}\n    className={cn(\"py-6 text-center text-xs text-win95-dark-gray\", className)}\n    {...props}\n  />\n))\nWin95CommandEmpty.displayName = CommandPrimitive.Empty.displayName\n\nconst Win95CommandGroup = React.forwardRef<\n  React.ElementRef<typeof CommandPrimitive.Group>,\n  React.ComponentPropsWithoutRef<typeof CommandPrimitive.Group>\n>(({ className, ...props }, ref) => (\n  <CommandPrimitive.Group\n    ref={ref}\n    className={cn(\n      \"overflow-hidden text-win95-black [&_[cmdk-group-heading]]:px-3 [&_[cmdk-group-heading]]:py-2 [&_[cmdk-group-heading]]:text-sm [&_[cmdk-group-heading]]:font-bold [&_[cmdk-group-heading]]:text-win95-black [&_[cmdk-group-heading]]:bg-win95-button-face [&_[cmdk-group-heading]]:border-b [&_[cmdk-group-heading]]:border-win95-dark-gray\",\n      className,\n    )}\n    {...props}\n  />\n))\nWin95CommandGroup.displayName = CommandPrimitive.Group.displayName\n\nconst Win95CommandSeparator = React.forwardRef<\n  React.ElementRef<typeof CommandPrimitive.Separator>,\n  React.ComponentPropsWithoutRef<typeof CommandPrimitive.Separator>\n>(({ className, ...props }, ref) => (\n  <CommandPrimitive.Separator ref={ref} className={cn(\"h-px bg-win95-dark-gray mx-1 my-1\", className)} {...props} />\n))\nWin95CommandSeparator.displayName = CommandPrimitive.Separator.displayName\n\nconst Win95CommandItem = React.forwardRef<\n  React.ElementRef<typeof CommandPrimitive.Item>,\n  React.ComponentPropsWithoutRef<typeof CommandPrimitive.Item>\n>(({ className, ...props }, ref) => (\n  <CommandPrimitive.Item\n    ref={ref}\n    className={cn(\n      \"relative flex cursor-default select-none items-center px-3 py-2 text-sm font-sans text-win95-black outline-none aria-selected:bg-win95-highlight aria-selected:text-win95-highlight-text data-[disabled]:pointer-events-none data-[disabled]:opacity-50 hover:bg-win95-light-gray\",\n      className,\n    )}\n    {...props}\n  />\n))\nWin95CommandItem.displayName = CommandPrimitive.Item.displayName\n\nconst Win95CommandShortcut = ({ className, ...props }: React.HTMLAttributes<HTMLSpanElement>) => {\n  return <span className={cn(\"ml-auto text-xs tracking-widest text-win95-dark-gray\", className)} {...props} />\n}\nWin95CommandShortcut.displayName = \"Win95CommandShortcut\"\n\nconst Win95CommandDialog = ({ children, ...props }: React.ComponentProps<typeof CommandPrimitive.Dialog>) => {\n  return (\n    <CommandPrimitive.Dialog\n      {...props}\n      className=\"fixed inset-0 z-50 bg-black/50 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0\"\n    >\n      <div className=\"fixed left-[50%] top-[50%] z-50 grid w-full max-w-lg translate-x-[-50%] translate-y-[-50%] bg-win95-button-face win95-raised shadow-lg duration-200 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[state=closed]:slide-out-to-left-1/2 data-[state=closed]:slide-out-to-top-[48%] data-[state=open]:slide-in-from-left-1/2 data-[state=open]:slide-in-from-top-[48%]\">\n        {children}\n      </div>\n    </CommandPrimitive.Dialog>\n  )\n}\nWin95CommandDialog.displayName = \"Win95CommandDialog\"\n\nexport {\n  Win95Command,\n  Win95CommandInput,\n  Win95CommandList,\n  Win95CommandEmpty,\n  Win95CommandGroup,\n  Win95CommandItem,\n  Win95CommandShortcut,\n  Win95CommandSeparator,\n  Win95CommandDialog,\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "cssVars": {
+    "light": {
+      "win95-button-face": "#c0c0c0",
+      "win95-white": "#ffffff",
+      "win95-black": "#000000",
+      "win95-highlight": "#0000ff",
+      "win95-highlight-text": "#ffffff",
+      "win95-button-shadow": "#808080",
+      "win95-button-highlight": "#ffffff"
+    },
+    "dark": {
+      "win95-button-face": "#c0c0c0",
+      "win95-white": "#ffffff",
+      "win95-black": "#000000",
+      "win95-highlight": "#0000ff",
+      "win95-highlight-text": "#ffffff",
+      "win95-button-shadow": "#808080",
+      "win95-button-highlight": "#ffffff"
+    }
+  },
+  "css": {
+    "@layer utilities": {
+      ".win95-raised": {
+        "border-top": "2px solid var(--win95-button-highlight)",
+        "border-left": "2px solid var(--win95-button-highlight)",
+        "border-right": "2px solid var(--win95-button-shadow)",
+        "border-bottom": "2px solid var(--win95-button-shadow)"
+      },
+      ".win95-sunken": {
+        "border-top": "2px solid var(--win95-button-shadow)",
+        "border-left": "2px solid var(--win95-button-shadow)",
+        "border-right": "2px solid var(--win95-button-highlight)",
+        "border-bottom": "2px solid var(--win95-button-highlight)"
+      }
+    }
+  }
+}

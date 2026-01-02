@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "hero14",
+  "url": "https://shadcnblocks.com/r/hero14.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "hero14",
+    "type": "registry:block",
+    "title": "Hero",
+    "description": "A carousel component showing tech logos with commands. Includes auto-cycle, fade transitions, and manual selection. Displays 3-6 items per view.",
+    "dependencies": ["embla-carousel-autoplay", "react"],
+    "registryDependencies": ["carousel"],
+    "files": [
+      {
+        "path": "code/block/hero14.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:34.270Z"
+}

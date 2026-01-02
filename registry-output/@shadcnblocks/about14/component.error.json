@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "about14",
+  "url": "https://shadcnblocks.com/r/about14.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "about14",
+    "type": "registry:block",
+    "title": "About",
+    "description": "An About component showcasing a title, philosophy, team image, and profiles in a multi-column layout with dynamic text adjustments.",
+    "dependencies": ["react"],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/about14.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:11.126Z"
+}

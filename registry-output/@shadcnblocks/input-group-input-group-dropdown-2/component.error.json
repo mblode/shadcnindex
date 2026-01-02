@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "input-group-input-group-dropdown-2",
+  "url": "https://shadcnblocks.com/r/input-group-input-group-dropdown-2.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "input-group-input-group-dropdown-2",
+    "type": "registry:block",
+    "title": "Input-group/input-group-dropdown-",
+    "description": "A input-group/input-group-dropdown- example",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["dropdown-menu", "input-group"],
+    "files": [
+      {
+        "path": "code/example/input-group/input-group-dropdown-2.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:15:23.578Z"
+}

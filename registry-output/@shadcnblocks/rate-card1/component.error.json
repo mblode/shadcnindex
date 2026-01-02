@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "rate-card1",
+  "url": "https://shadcnblocks.com/r/rate-card1.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "rate-card1",
+    "type": "registry:block",
+    "title": "Rate-card",
+    "description": "This component displays a detailed pricing plan with a step-by-step breakdown of the process, including revision, strategy refinement, and implementation over specified timelines. It features a clear pricing structure, booking conditions, and utilizes illustrative elements to enhance visual representation.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/rate-card1.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:49.012Z"
+}

@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature10",
+  "url": "https://shadcnblocks.com/r/feature10.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature10",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A block titled \"Why Us?\" with a subtitle, arranged in up to 4 columns featuring icons for Performance, Innovation, Quality, and Accessibility, each with a brief description.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/feature10.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:20.642Z"
+}

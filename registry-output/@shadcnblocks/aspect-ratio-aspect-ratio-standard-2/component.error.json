@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "aspect-ratio-aspect-ratio-standard-2",
+  "url": "https://shadcnblocks.com/r/aspect-ratio-aspect-ratio-standard-2.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "aspect-ratio-aspect-ratio-standard-2",
+    "type": "registry:block",
+    "title": "Aspect-ratio/aspect-ratio-standard-",
+    "description": "A aspect-ratio/aspect-ratio-standard- example",
+    "dependencies": [],
+    "registryDependencies": ["aspect-ratio"],
+    "files": [
+      {
+        "path": "code/example/aspect-ratio/aspect-ratio-standard-2.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:59.256Z"
+}

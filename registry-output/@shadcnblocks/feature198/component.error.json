@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature198",
+  "url": "https://shadcnblocks.com/r/feature198.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature198",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A component showcasing 3 cards with icons, titles, and descriptions, each highlighting unique software benefits. Positioned dynamically for visual interest.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["card"],
+    "files": [
+      {
+        "path": "code/block/feature198.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:24.491Z"
+}

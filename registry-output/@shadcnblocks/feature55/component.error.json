@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature55",
+  "url": "https://shadcnblocks.com/r/feature55.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature55",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A centered feature block with a title, description, and button. Uses a single-column layout with adjustable text sizes.",
+    "dependencies": [],
+    "registryDependencies": ["button"],
+    "files": [
+      {
+        "path": "code/block/feature55.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:29.285Z"
+}

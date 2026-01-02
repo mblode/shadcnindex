@@ -1,0 +1,29 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "navbar10",
+  "url": "https://shadcnblocks.com/r/navbar10.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "navbar10",
+    "type": "registry:block",
+    "title": "Navbar",
+    "description": "A navigation bar component featuring a logo, links to products, solutions, platform, resources, pricing, a sign-up button, and a mobile menu trigger. It includes dropdown menus for extensive categories with featured links, images, and company logos arranged in various layouts.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": [
+      "accordion",
+      "aspect-ratio",
+      "badge",
+      "button",
+      "navigation-menu",
+      "separator",
+      "sheet"
+    ],
+    "files": [
+      {
+        "path": "code/block/navbar10.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:42.086Z"
+}

@@ -1,0 +1,1873 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "scrollxui",
+  "homepage": "https://scrollxui.dev",
+  "dependencies": ["clsx", "tailwind-merge"],
+  "items": [
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "utils",
+      "title": "Utils",
+      "type": "registry:lib",
+      "dependencies": ["clsx", "tailwind-merge"],
+      "files": [
+        {
+          "path": "lib/utils.ts",
+          "type": "registry:lib"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "accordion",
+      "title": "Accordion",
+      "description": "A collapsible component for showing and hiding content sections.",
+      "type": "registry:component",
+      "dependencies": ["@radix-ui/react-accordion", "lucide-react"],
+      "files": [
+        {
+          "path": "components/ui/accordion.tsx",
+          "target": "components/ui/accordion.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "alert-dialog",
+      "title": "Alert Dialog",
+      "description": "A modal dialog used to convey critical information and require a user response before proceeding..",
+      "type": "registry:component",
+      "dependencies": ["@radix-ui/react-alert-dialog", "framer-motion"],
+      "files": [
+        {
+          "path": "components/ui/alert-dialog.tsx",
+          "target": "components/ui/alert-dialog.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "animated-button",
+      "title": "Animated Button",
+      "description": "AnimatedButton is a highly customizable animated button component with shimmer effects, glow, and visual styling options.",
+      "type": "registry:component",
+      "dependencies": ["@radix-ui/react-slot", "class-variance-authority"],
+      "files": [
+        {
+          "path": "components/ui/animated-button.tsx",
+          "target": "components/ui/animated-button.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "animated-tabs",
+      "title": "Animated Tabs",
+      "description": "A headless and styled tab UI component set for switching content views.",
+      "type": "registry:component",
+      "dependencies": ["tailwind-merge"],
+      "files": [
+        {
+          "path": "components/ui/animated-tabs.tsx",
+          "target": "components/ui/animated-tabs.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "animated-testimonials",
+      "title": "Animated Testimonials",
+      "description": "Minimal testimonials with image and quote for clean, modern design.",
+      "type": "registry:component",
+      "dependencies": [""],
+      "files": [
+        {
+          "path": "components/ui/animated-testimonials.tsx",
+          "target": "components/ui/animated-testimonials.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "animated-textgenerate",
+      "title": "Animated TextGenerate",
+      "description": "Generates animated text word-by-word with blur, highlights, links, and smooth effects.",
+      "type": "registry:component",
+      "dependencies": ["framer-motion"],
+      "files": [
+        {
+          "path": "components/ui/animated-textgenerate.tsx",
+          "target": "components/ui/animated-textgenerate.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "announcement",
+      "title": "Announcement",
+      "description": "An announcement component that highlights key info with icons, effects, and expandable content.",
+      "type": "registry:component",
+      "dependencies": ["framer-motion"],
+      "files": [
+        {
+          "path": "components/ui/announcement.tsx",
+          "target": "components/ui/announcement.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "aspect-ratio",
+      "title": "Aspect Ratio",
+      "description": "A responsive container component that maintains a fixed aspect ratio, commonly used for media like images and videos.",
+      "type": "registry:component",
+      "dependencies": ["@radix-ui/react-aspect-ratio"],
+      "files": [
+        {
+          "path": "components/ui/aspect-ratio.tsx",
+          "target": "components/ui/aspect-ratio.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "avatar",
+      "title": "Avatar",
+      "description": "Customizable Avatar component with animated borders for status indicators like \"close friends\" or \"normal story\".",
+      "type": "registry:component",
+      "dependencies": ["@radix-ui/react-avatar"],
+      "files": [
+        {
+          "path": "components/ui/avatar.tsx",
+          "target": "components/ui/avatar.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "avatar-group",
+      "title": "Avatar Group",
+      "description": "Overlapping avatar circles that expand smoothly to reveal each user's name on hover.",
+      "type": "registry:component",
+      "dependencies": [""],
+      "files": [
+        {
+          "path": "components/ui/avatar-group.tsx",
+          "target": "components/ui/avatar-group.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "aurora-dots",
+      "title": "Aurora Dots",
+      "description": "A captivating background effect featuring softly glowing, animated dots that mimic the ethereal beauty of the aurora borealis.",
+      "type": "registry:component",
+      "dependencies": [""],
+      "files": [
+        {
+          "path": "components/ui/aurora-dots.tsx",
+          "target": "components/ui/aurora-dots.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "backgroundmeteors",
+      "title": "Background Meteors",
+      "description": "animated background featuring vertical meteor-like beams falling from the top to the bottom of the screen over a grid pattern.",
+      "type": "registry:component",
+      "dependencies": ["framer-motion"],
+      "files": [
+        {
+          "path": "components/ui/backgroundmeteors.tsx",
+          "target": "components/ui/backgroundmeteors.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "background-paths",
+      "title": "Background Paths",
+      "description": "A set of SVG paths that animate as if being drawn. Great for tech hero backgrounds.",
+      "type": "registry:component",
+      "dependencies": ["framer-motion"],
+      "files": [
+        {
+          "path": "components/ui/background-paths.tsx",
+          "target": "components/ui/background-paths.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "badge",
+      "title": "Badge",
+      "description": "A small badge component with customizable variants and shiny animation effects.",
+      "type": "registry:component",
+      "dependencies": ["class-variance-authority"],
+      "files": [
+        {
+          "path": "components/ui/badge.tsx",
+          "target": "components/ui/badge.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "barswave",
+      "title": "BarsWave",
+      "description": "Vertical wave bars animate in symmetry, forming a subtle motion-driven background layer.",
+      "type": "registry:component",
+      "dependencies": ["framer-motion"],
+      "files": [
+        {
+          "path": "components/ui/barswave.tsx",
+          "target": "components/ui/barswave.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "beams-upstream",
+      "title": "Beams Upstream",
+      "description": "Multiple background beams travel upstream, forming a hero section background.",
+      "type": "registry:component",
+      "dependencies": ["framer-motion"],
+      "files": [
+        {
+          "path": "components/ui/beams-upstream.tsx",
+          "target": "components/ui/beams-upstream.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "bolt-strike",
+      "title": "Bolt Strike",
+      "description": "lightning bolts burst randomly with sparks and particles, creating a high-energy, reactive background effect.",
+      "type": "registry:component",
+      "dependencies": [""],
+      "files": [
+        {
+          "path": "components/ui/bolt-strike.tsx",
+          "target": "components/ui/bolt-strike.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "border-glide",
+      "title": "Border Glide",
+      "description": "Modern UI cards with a moving border and smooth transitions.",
+      "type": "registry:component",
+      "dependencies": ["framer-motion"],
+      "files": [
+        {
+          "path": "components/ui/border-glide.tsx",
+          "target": "components/ui/border-glide.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "button",
+      "title": "Button",
+      "description": "Reusable button component with multiple variants and sizes.",
+      "type": "registry:component",
+      "dependencies": ["class-variance-authority", "@radix-ui/react-slot"],
+      "files": [
+        {
+          "path": "components/ui/button.tsx",
+          "target": "components/ui/button.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "card",
+      "title": "Card",
+      "description": "Renders a card component comprising a header, content section, and footer...",
+      "type": "registry:component",
+      "dependencies": [""],
+      "files": [
+        {
+          "path": "components/ui/card.tsx",
+          "target": "components/ui/card.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "card-flip",
+      "title": "Card Flip",
+      "description": "Renders a card component with flip animation, supporting front/back content.",
+      "type": "registry:component",
+      "dependencies": ["framer-motion", "lucide-react"],
+      "files": [
+        {
+          "path": "components/ui/card-flip.tsx",
+          "target": "components/ui/card-flip.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "card-tilt",
+      "title": "Card Tilt",
+      "description": "smooth card tilt that responds naturally to your cursor, giving the card a more polished, modern look.",
+      "type": "registry:component",
+      "dependencies": ["framer-motion"],
+      "files": [
+        {
+          "path": "components/ui/card-tilt.tsx",
+          "target": "components/ui/card-tilt.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "carousel",
+      "title": "Carousel",
+      "description": "A carousel component with card stack visualization for cycling through content.",
+      "type": "registry:component",
+      "dependencies": ["lucide-react"],
+      "files": [
+        {
+          "path": "components/ui/carousel.tsx",
+          "target": "components/ui/carousel.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "calendar",
+      "title": "Calendar",
+      "description": "A date field component that enables users to choose and edit a date.",
+      "type": "registry:component",
+      "dependencies": [""],
+      "files": [
+        {
+          "path": "components/ui/calendar.tsx",
+          "target": "components/ui/calendar.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "checkbox-pro",
+      "title": "Checkbox Pro",
+      "description": "A customizable checkbox component with animated checkmark and indeterminate states.",
+      "type": "registry:component",
+      "dependencies": ["framer-motion"],
+      "files": [
+        {
+          "path": "components/ui/checkbox-pro.tsx",
+          "target": "components/ui/checkbox-pro.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "clock",
+      "title": "Clock",
+      "description": "clock component with rotating hands and glowing effects, perfect for CTA sections.",
+      "type": "registry:component",
+      "dependencies": ["framer-motion"],
+      "files": [
+        {
+          "path": "components/ui/clock.tsx",
+          "target": "components/ui/clock.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "codeblock",
+      "title": "CodeBlock",
+      "description": "Syntax-highlighted codeblock component built on top of react-syntax-highlighter.",
+      "type": "registry:component",
+      "dependencies": [
+        "react-syntax-highlighter",
+        "@types/react-syntax-highlighter"
+      ],
+      "files": [
+        {
+          "path": "components/ui/codeblock.tsx",
+          "target": "components/ui/codeblock.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "collapsible",
+      "title": "Collapsible",
+      "description": "An interactive component which expands/collapses a panel with a smooth motion.",
+      "type": "registry:component",
+      "dependencies": ["framer-motion", "@radix-ui/react-collapsible"],
+      "files": [
+        {
+          "path": "components/ui/collapsible.tsx",
+          "target": "components/ui/collapsible.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "cursor-highlight",
+      "title": "Cursor Highlight",
+      "description": "Text is revealed on scroll with pointer, gradient, and border effects.",
+      "type": "registry:component",
+      "dependencies": ["framer-motion"],
+      "files": [
+        {
+          "path": "components/ui/cursor-highlight.tsx",
+          "target": "components/ui/cursor-highlight.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "cursorimagetrail",
+      "title": "Cursor ImageTrail",
+      "description": "The CursorImageTrail component creates an interactive mouse trail effect with animated images.",
+      "type": "registry:component",
+      "dependencies": ["framer-motion"],
+      "files": [
+        {
+          "path": "components/ui/cursorimagetrail.tsx",
+          "target": "components/ui/cursorimagetrail.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "decorated-text",
+      "title": "Decorated Text",
+      "description": "decorative text frame with corner accents and a compact entrance effect.",
+      "type": "registry:component",
+      "dependencies": ["framer-motion"],
+      "files": [
+        {
+          "path": "components/ui/decorated-text.tsx",
+          "target": "components/ui/decorated-text.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "dot-wave",
+      "title": "Dot Wave",
+      "description": "Dot-based waves ripple outward in symmetry, creating a subtle, motion-driven background layer",
+      "type": "registry:component",
+      "dependencies": [""],
+      "files": [
+        {
+          "path": "components/ui/dot-wave.tsx",
+          "target": "components/ui/dot-wave.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "draggable-avatar",
+      "title": "Draggable Avatar",
+      "description": "It displays a circular, draggable avatar with customizable size and style.",
+      "type": "registry:component",
+      "dependencies": ["framer-motion"],
+      "files": [
+        {
+          "path": "components/ui/draggable-avatar.tsx",
+          "target": "components/ui/draggable-avatar.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "drift-card",
+      "title": "Drift Card",
+      "description": "An interactive card with a drift hover effect that visually highlights content.",
+      "type": "registry:component",
+      "dependencies": [""],
+      "files": [
+        {
+          "path": "components/ui/drift-card.tsx",
+          "target": "components/ui/drift-card.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "dropdown-menu",
+      "title": "Dropdown Menu",
+      "description": "Animated Dropdown Menu Reveals a menu of options or actions when activated by a button.",
+      "type": "registry:component",
+      "dependencies": ["framer-motion", "@radix-ui/react-dropdown-menu"],
+      "files": [
+        {
+          "path": "components/ui/dropdown-menu.tsx",
+          "target": "components/ui/dropdown-menu.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "electric-text",
+      "title": "Electric Text",
+      "description": "Animated electric text with glowing, distorted outline for dynamic neon effects.",
+      "type": "registry:component",
+      "dependencies": [""],
+      "files": [
+        {
+          "path": "components/ui/electric-text.tsx",
+          "target": "components/ui/electric-text.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "expandable-cards",
+      "title": "Expandable Cards",
+      "description": "Interactive card layout where hovered cards expand smoothly for focused content viewing.",
+      "type": "registry:component",
+      "dependencies": ["framer-motion"],
+      "files": [
+        {
+          "path": "components/ui/expandable-cards.tsx",
+          "target": "components/ui/expandable-cards.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "expandable-dock",
+      "title": "Expandable Dock",
+      "description": "A customizable expandable dock component.",
+      "type": "registry:component",
+      "dependencies": ["framer-motion"],
+      "files": [
+        {
+          "path": "components/ui/expandable-dock.tsx",
+          "target": "components/ui/expandable-dock.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "facescape",
+      "title": "Facescape",
+      "description": "Interactive, animated user avatars with hover effects and responsive layout.",
+      "type": "registry:component",
+      "dependencies": [""],
+      "files": [
+        {
+          "path": "components/ui/facescape.tsx",
+          "target": "components/ui/facescape.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "flashy-card",
+      "title": "Flashy Card",
+      "description": "Interactive card with smooth animated activation and visual effects.",
+      "type": "registry:component",
+      "dependencies": [""],
+      "files": [
+        {
+          "path": "components/ui/flashy-card.tsx",
+          "target": "components/ui/flashy-card.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "flipstack",
+      "title": "FlipStack",
+      "description": "A stylish and animated card stack UI for showcasing content in layered views.",
+      "type": "registry:component",
+      "dependencies": ["framer-motion"],
+      "files": [
+        {
+          "path": "components/ui/flipstack.tsx",
+          "target": "components/ui/flipstack.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "flowing-logos",
+      "title": "Flowing Logos",
+      "description": "Flowing logo showcase with smooth animations, hover effects, and modern UI.",
+      "type": "registry:component",
+      "dependencies": [""],
+      "files": [
+        {
+          "path": "components/ui/flowing-logos.tsx",
+          "target": "components/ui/flowing-logos.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "folder",
+      "title": "Folder",
+      "description": "Interactive 3D Folder UI component with hover & click animations for modern apps.",
+      "type": "registry:component",
+      "dependencies": [""],
+      "files": [
+        {
+          "path": "components/ui/folder.tsx",
+          "target": "components/ui/folder.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "folder-tree",
+      "title": "Folder Tree",
+      "description": "A customizable folder tree component for displaying hierarchical data with expandable nodes.",
+      "type": "registry:component",
+      "dependencies": ["framer-motion"],
+      "files": [
+        {
+          "path": "components/ui/folder-tree.tsx",
+          "target": "components/ui/folder-tree.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "followcursor",
+      "title": "Follow Cursor",
+      "description": "Colorful, fluid cursor trails that respond to mouse movement.",
+      "type": "registry:component",
+      "dependencies": ["ogl"],
+      "files": [
+        {
+          "path": "components/ui/followcursor.tsx",
+          "target": "components/ui/followcursor.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "glass",
+      "title": "Glass",
+      "description": "glass surface with interactive ripple and dynamic cursor effects.",
+      "type": "registry:component",
+      "dependencies": ["framer-motion"],
+      "files": [
+        {
+          "path": "components/ui/glass.tsx",
+          "target": "components/ui/glass.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "glowingbordercard",
+      "title": "Glowing Border Card",
+      "description": "A customizable card with a glowing border effect that changes colors based on light and dark modes.",
+      "type": "registry:component",
+      "dependencies": [""],
+      "files": [
+        {
+          "path": "components/ui/glowingbordercard.tsx",
+          "target": "components/ui/glowingbordercard.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "globe",
+      "title": "Globe",
+      "description": "The Globe component creates beautiful 5kb WebGL Globe.",
+      "type": "registry:component",
+      "dependencies": ["@react-spring/web cobe", "cobe"],
+      "files": [
+        {
+          "path": "components/ui/globe.tsx",
+          "target": "components/ui/globe.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "gravity",
+      "title": "Gravity",
+      "description": "Gravity pulls objects as they launch, soar, and fall inside a container.",
+      "type": "registry:component",
+      "dependencies": ["framer-motion"],
+      "files": [
+        {
+          "path": "components/ui/gravity.tsx",
+          "target": "components/ui/gravity.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "heroui",
+      "title": "Hero Sections",
+      "description": "A set of hero sections ranging from simple to complex layouts.",
+      "type": "registry:component",
+      "dependencies": ["framer-motion", "next-themes"],
+      "files": [
+        {
+          "path": "components/ui/heroui.tsx",
+          "target": "components/ui/heroui.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "hold-toconfirm",
+      "title": "Hold ToConfirm",
+      "description": "A button that requires holding down to confirm irreversible or critical actions.",
+      "type": "registry:component",
+      "dependencies": ["framer-motion"],
+      "files": [
+        {
+          "path": "components/ui/hold-toconfirm.tsx",
+          "target": "components/ui/hold-toconfirm.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "hyperlink",
+      "title": "Hyperlink",
+      "description": "hyperlink component with animated underline, smooth hover & customizable style.",
+      "type": "registry:component",
+      "dependencies": [""],
+      "files": [
+        {
+          "path": "components/ui/hyperlink.tsx",
+          "target": "components/ui/hyperlink.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iphone",
+      "title": "Iphone",
+      "description": "IPhone mockup with screen, header, and custom children content.",
+      "type": "registry:component",
+      "dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/iphone.tsx",
+          "target": "components/ui/iphone.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "input-otp",
+      "title": "Input Otp",
+      "description": "A flexible Accessible one-time password component",
+      "type": "registry:component",
+      "dependencies": ["framer-motion", "lucide-react"],
+      "files": [
+        {
+          "path": "components/ui/input-otp.tsx",
+          "target": "components/ui/input-otp.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "interactive-input",
+      "title": "Interactive input",
+      "description": "A highly customizable interactive input component with shimmer effects, glow, and visual styling options.",
+      "type": "registry:component",
+      "dependencies": ["@radix-ui/react-slot", "class-variance-authority"],
+      "files": [
+        {
+          "path": "components/ui/interactive-input.tsx",
+          "target": "components/ui/interactive-input.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "kbd",
+      "title": "Kbd",
+      "description": "A component for displaying keyboard shortcuts and key combinations.",
+      "type": "registry:component",
+      "dependencies": [""],
+      "files": [
+        {
+          "path": "components/ui/kbd.tsx",
+          "target": "components/ui/kbd.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "kinetic-testimonials",
+      "title": "Kinetic Testimonials",
+      "description": "Smoothly scrolling, animated testimonials for modern developer websites to showcase user feedback visually.",
+      "type": "registry:component",
+      "dependencies": [""],
+      "files": [
+        {
+          "path": "components/ui/kinetic-testimonials.tsx",
+          "target": "components/ui/kinetic-testimonials.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "label",
+      "title": "Label",
+      "description": "Displays an accessible label associated with controls.",
+      "type": "registry:component",
+      "dependencies": ["framer-motion", "@radix-ui/react-label"],
+      "files": [
+        {
+          "path": "components/ui/label.tsx",
+          "target": "components/ui/label.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "lamphome",
+      "title": "Lamphome",
+      "description": "A stylish, animated header component with dark/light mode toggle functionality.",
+      "type": "registry:component",
+      "dependencies": ["framer-motion", "next-themes"],
+      "files": [
+        {
+          "path": "components/ui/lamphome.tsx",
+          "target": "components/ui/lamphome.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "layered-button",
+      "title": "Layered Button",
+      "description": "A layered button with a radial expand effect and smooth sliding hover label animation.",
+      "type": "registry:component",
+      "dependencies": ["@radix-ui/react-slot"],
+      "files": [
+        {
+          "path": "components/ui/layered-button.tsx",
+          "target": "components/ui/layered-button.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "layered-text",
+      "title": "Layered Text",
+      "description": "Layered text effect with offset shadows, customizable styling, and animations.",
+      "type": "registry:component",
+      "dependencies": ["framer-motion"],
+      "files": [
+        {
+          "path": "components/ui/layered-text.tsx",
+          "target": "components/ui/layered-text.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "loader",
+      "title": "Loader",
+      "description": "Animated versatile loader with different variants, customizable size and content.",
+      "type": "registry:component",
+      "dependencies": ["framer-motion"],
+      "files": [
+        {
+          "path": "components/ui/loader.tsx",
+          "target": "components/ui/loader.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "loginform",
+      "title": "Login Form",
+      "description": "Modern, responsive login form with smooth transitions and gradient accents.",
+      "type": "registry:component",
+      "dependencies": ["framer-motion"],
+      "files": [
+        {
+          "path": "components/ui/loginform.tsx",
+          "target": "components/ui/loginform.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "logo-stepper",
+      "title": "Logo Stepper",
+      "description": "logo showcase with names, smooth animations, hover effects, and modern UI.",
+      "type": "registry:component",
+      "dependencies": ["framer-motion"],
+      "files": [
+        {
+          "path": "components/ui/logo-stepper.tsx",
+          "target": "components/ui/logo-stepper.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "lustretext",
+      "title": "Lustre Text",
+      "description": "A lustrous text component with animated gradient shine.",
+      "type": "registry:component",
+      "dependencies": ["class-variance-authority"],
+      "files": [
+        {
+          "path": "components/ui/lustretext.tsx",
+          "target": "components/ui/lustretext.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "magicdock",
+      "title": "Magic Dock",
+      "description": "MacOS-style React dock with smooth animation and customizable magnification.",
+      "type": "registry:component",
+      "dependencies": ["framer-motion", "lucide-react"],
+      "files": [
+        {
+          "path": "components/ui/magicdock.tsx",
+          "target": "components/ui/magicdock.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "media-card",
+      "title": "Media Card",
+      "description": "An Interactive media cards with a fluid cursor and a polished, modern aesthetic.",
+      "type": "registry:component",
+      "dependencies": ["framer-motion"],
+      "files": [
+        {
+          "path": "components/ui/media-card.tsx",
+          "target": "components/ui/media-card.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "meteor-orbit",
+      "title": "Meteor Orbit",
+      "description": "orbit system featuring rotating meteors and gracefully animated icons.",
+      "type": "registry:component",
+      "dependencies": ["framer-motion"],
+      "files": [
+        {
+          "path": "components/ui/meteor-orbit.tsx",
+          "target": "components/ui/meteor-orbit.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "modern-loader",
+      "title": "Modern Loader",
+      "description": "A modern, dynamic code loader designed for AI-powered coding environments.",
+      "type": "registry:component",
+      "dependencies": ["framer-motion"],
+      "files": [
+        {
+          "path": "components/ui/modern-loader.tsx",
+          "target": "components/ui/modern-loader.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "movinglines-background",
+      "title": "MovingLines Background",
+      "description": "A set of diagonal lines that move continuously. Great for hero backgrounds.",
+      "type": "registry:component",
+      "dependencies": ["framer-motion"],
+      "files": [
+        {
+          "path": "components/ui/movinglines-background.tsx",
+          "target": "components/ui/movinglines-background.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "motioncards",
+      "title": "MotionCards",
+      "description": "Elegant cards in seamless flow for clean web design.",
+      "type": "registry:component",
+      "dependencies": ["framer-motion"],
+      "files": [
+        {
+          "path": "components/ui/motioncards.tsx",
+          "target": "components/ui/motioncards.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "motion-grid",
+      "title": "Motion Grid",
+      "description": "A set of diagonal lines that move continuously with gradientglow.",
+      "type": "registry:component",
+      "dependencies": ["framer-motion"],
+      "files": [
+        {
+          "path": "components/ui/motion-grid.tsx",
+          "target": "components/ui/motion-grid.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "motion-navbar",
+      "title": "Motion Navbar",
+      "description": "modern react navbar with smooth animations, dropdown menus, and mobile-friendly design.",
+      "type": "registry:component",
+      "dependencies": ["framer-motion", "lucide-react"],
+      "files": [
+        {
+          "path": "components/ui/motion-navbar.tsx",
+          "target": "components/ui/motion-navbar.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "morphotextflip",
+      "title": "MorphoText Flip",
+      "description": "Animated text component that flips between words with smooth transitions.",
+      "type": "registry:component",
+      "dependencies": ["framer-motion"],
+      "files": [
+        {
+          "path": "components/ui/morphotextflip.tsx",
+          "target": "components/ui/morphotextflip.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "morphy-button",
+      "title": "Morphy Button",
+      "description": "Morphing button with dynamic dot motion, reversible animation.",
+      "type": "registry:component",
+      "dependencies": ["class-variance-authority", "@radix-ui/react-slot"],
+      "files": [
+        {
+          "path": "components/ui/morphy-button.tsx",
+          "target": "components/ui/morphy-button.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "navbar-flow",
+      "title": "Navbar Flow",
+      "description": "A customizable, animated navigation bar with hover effects and dropdowns.",
+      "type": "registry:component",
+      "dependencies": ["framer-motion", "lucide-react"],
+      "files": [
+        {
+          "path": "components/ui/navbar-flow.tsx",
+          "target": "components/ui/navbar-flow.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "not-found",
+      "title": "Not Found",
+      "description": "A beautifully designed 404 page to guide users when content is missing.",
+      "type": "registry:component",
+      "dependencies": [""],
+      "files": [
+        {
+          "path": "components/ui/not-found.tsx",
+          "target": "components/ui/not-found.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "pagination",
+      "title": "Pagination",
+      "description": "A flexible and animated pagination component with active and hover states.",
+      "type": "registry:component",
+      "dependencies": ["framer-motion", "lucide-react"],
+      "files": [
+        {
+          "path": "components/ui/pagination.tsx",
+          "target": "components/ui/pagination.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "particles",
+      "title": "Particles",
+      "description": "Dynamic 3D particle system with customizable properties",
+      "type": "registry:component",
+      "dependencies": ["three", "@types/three"],
+      "files": [
+        {
+          "path": "components/ui/particles.tsx",
+          "target": "components/ui/particles.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "parallaxcards",
+      "title": "Parallax Cards",
+      "description": "A vertical sticky-scroll component that displays stacked cards with parallax behavior.",
+      "type": "registry:component",
+      "dependencies": [""],
+      "files": [
+        {
+          "path": "components/ui/parallaxcards.tsx",
+          "target": "components/ui/parallaxcards.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "pixel-background",
+      "title": "Pixel Background",
+      "description": "A flexible pixel animation background with customizable origins and smooth atmospheric motion.",
+      "type": "registry:component",
+      "dependencies": [""],
+      "files": [
+        {
+          "path": "components/ui/pixel-background.tsx",
+          "target": "components/ui/pixel-background.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "pixel-highlight",
+      "title": "Pixel Highlight",
+      "description": "Animated pixel-based text reveal with directional shimmer using canvas-rendered particles.",
+      "type": "registry:component",
+      "dependencies": ["framer-motion"],
+      "files": [
+        {
+          "path": "components/ui/pixel-highlight.tsx",
+          "target": "components/ui/pixel-highlight.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "popover",
+      "title": "Popover",
+      "description": "Displays rich content in a animated portal, triggered by a button.",
+      "type": "registry:component",
+      "dependencies": ["framer-motion", "@radix-ui/react-popover"],
+      "files": [
+        {
+          "path": "components/ui/popover.tsx",
+          "target": "components/ui/popover.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "profilecard",
+      "title": "Profile Card",
+      "description": "A reusable profile card component displaying a user's image, name, bio, skills, and social links with interactive animations.",
+      "type": "registry:component",
+      "dependencies": ["framer-motion", "lucide-react"],
+      "files": [
+        {
+          "path": "components/ui/profilecard.tsx",
+          "target": "components/ui/profilecard.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "progress",
+      "title": "Progress",
+      "description": "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
+      "type": "registry:component",
+      "dependencies": ["@radix-ui/react-progress"],
+      "files": [
+        {
+          "path": "components/ui/progress.tsx",
+          "target": "components/ui/progress.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "radialflow",
+      "title": "Radial Flow",
+      "description": "Dynamic radial graph for visualizing networks & hierarchies with animated nodes.",
+      "type": "registry:component",
+      "dependencies": ["framer-motion"],
+      "files": [
+        {
+          "path": "components/ui/radialflow.tsx",
+          "target": "components/ui/radialflow.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "radio-group",
+      "title": "Radio Group",
+      "description": "A group of radio buttons that lets you pick only one option at a time.",
+      "type": "registry:component",
+      "dependencies": ["framer-motion", "@radix-ui/react-radio-group"],
+      "files": [
+        {
+          "path": "components/ui/radio-group.tsx",
+          "target": "components/ui/radio-group.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "radial-socials",
+      "title": "Radial Socials",
+      "description": "radial social icons arranged in circles, with smooth expansion and rotation",
+      "type": "registry:component",
+      "dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/radial-socials.tsx",
+          "target": "components/ui/radial-socials.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "reveal-text",
+      "title": "Reveal Text",
+      "description": "a clean text reveal component providing directional animation and stagger options.",
+      "type": "registry:component",
+      "dependencies": ["framer-motion"],
+      "files": [
+        {
+          "path": "components/ui/reveal-text.tsx",
+          "target": "components/ui/reveal-text.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "shiny-button",
+      "title": "Shiny Button",
+      "description": "Interactive button with spotlight effect that follows mouse cursor and highlights borders on hover.",
+      "type": "registry:component",
+      "dependencies": ["framer-motion", "@radix-ui/react-slot"],
+      "files": [
+        {
+          "path": "components/ui/shiny-button.tsx",
+          "target": "components/ui/shiny-button.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "side-sheet",
+      "title": "Side Sheet",
+      "description": "A customizable sheet component for creating elegant slide-out interfaces.",
+      "type": "registry:component",
+      "dependencies": ["framer-motion"],
+      "files": [
+        {
+          "path": "components/ui/side-sheet.tsx",
+          "target": "components/ui/side-sheet.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "signupform",
+      "title": "Signup Form",
+      "description": "Modern, responsive signup form with smooth transitions and gradient accents.",
+      "type": "registry:component",
+      "dependencies": ["framer-motion"],
+      "files": [
+        {
+          "path": "components/ui/signupform.tsx",
+          "target": "components/ui/signupform.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "slider",
+      "title": "Slider",
+      "description": "An interactive slider with glass effects for selecting values smoothly within a range.",
+      "type": "registry:component",
+      "dependencies": ["@radix-ui/react-slider"],
+      "files": [
+        {
+          "path": "components/ui/slider.tsx",
+          "target": "components/ui/slider.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "status",
+      "title": "Status",
+      "description": "A small status component with customizable variants, indicator and shiny animation effects.",
+      "type": "registry:component",
+      "dependencies": [""],
+      "files": [
+        {
+          "path": "components/ui/status.tsx",
+          "target": "components/ui/status.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "statscount",
+      "title": "StatsCount",
+      "description": "Animated statistics counter with responsive layout and scroll triggers.",
+      "type": "registry:component",
+      "dependencies": ["framer-motion"],
+      "files": [
+        {
+          "path": "components/ui/statscount.tsx",
+          "target": "components/ui/statscount.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "stagger-button",
+      "title": "Stagger Button",
+      "description": "Interactive button with animated stagger text and customizable styles for modern uis.",
+      "type": "registry:component",
+      "dependencies": ["framer-motion", "@radix-ui/react-slot"],
+      "files": [
+        {
+          "path": "components/ui/stagger-button.tsx",
+          "target": "components/ui/stagger-button.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "stagger-chars",
+      "title": "Stagger Chars",
+      "description": "An animated text component that creates a smooth, staggered character animation effect when hovered",
+      "type": "registry:component",
+      "dependencies": ["framer-motion"],
+      "files": [
+        {
+          "path": "components/ui/stagger-chars.tsx",
+          "target": "components/ui/stagger-chars.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "statscarousel",
+      "title": "Stats Carousel",
+      "description": "Animated statistics counter in stacked carousel for modern websites.",
+      "type": "registry:component",
+      "dependencies": ["framer-motion"],
+      "files": [
+        {
+          "path": "components/ui/statscarousel.tsx",
+          "target": "components/ui/statscarousel.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "striped-grid",
+      "title": "Striped Grid",
+      "description": "Animated diagonal stripes with optional base grid, creating a dynamic textured background.",
+      "type": "registry:component",
+      "dependencies": ["framer-motion"],
+      "files": [
+        {
+          "path": "components/ui/striped-grid.tsx",
+          "target": "components/ui/striped-grid.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "spark-waves",
+      "title": "Spark Waves",
+      "description": "Vertical wave bars animate in symmetry, forming a subtle motion-driven background layer.",
+      "type": "registry:component",
+      "dependencies": [""],
+      "files": [
+        {
+          "path": "components/ui/spark-waves.tsx",
+          "target": "components/ui/spark-waves.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "splitter",
+      "title": "Splitter",
+      "description": "A customizable splitter component with collapsible panels and smooth animations.",
+      "type": "registry:component",
+      "dependencies": ["framer-motion", "lucide-react"],
+      "files": [
+        {
+          "path": "components/ui/splitter.tsx",
+          "target": "components/ui/splitter.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "spotlightcard",
+      "title": "Spotlight Card",
+      "description": "An interactive card with a spotlight hover effect that highlights content and enhances user engagement visually.",
+      "type": "registry:component",
+      "dependencies": ["framer-motion"],
+      "files": [
+        {
+          "path": "components/ui/spotlightcard.tsx",
+          "target": "components/ui/spotlightcard.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "seperatorpro",
+      "title": "Seperator Pro",
+      "description": "Separates layout sections with customizable styles and orientations.",
+      "type": "registry:component",
+      "dependencies": ["@radix-ui/react-separator"],
+      "files": [
+        {
+          "path": "components/ui/seperatorpro.tsx",
+          "target": "components/ui/seperatorpro.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "scroll-areapro",
+      "title": "ScrollArea Pro",
+      "description": "advanced scrollarea with auto-hide scrollbars, progress bars, and cross-axis scroll.",
+      "type": "registry:component",
+      "dependencies": ["@radix-ui/react-scroll-area", "framer-motion"],
+      "files": [
+        {
+          "path": "components/ui/scroll-areapro.tsx",
+          "target": "components/ui/scroll-areapro.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "social-orbit",
+      "title": "Social Orbit",
+      "description": "orbits your socials in smooth motion where icons spin, ripple, and glow with purpose.",
+      "type": "registry:component",
+      "dependencies": ["framer-motion"],
+      "files": [
+        {
+          "path": "components/ui/social-orbit.tsx",
+          "target": "components/ui/social-orbit.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "table",
+      "title": "Table",
+      "description": "Powerful responsive data table with sticky headers, smooth scrolling, sorting, and pagination.",
+      "type": "registry:component",
+      "dependencies": ["framer-motion", "@tanstack/react-table"],
+      "files": [
+        {
+          "path": "components/ui/table.tsx",
+          "target": "components/ui/table.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "testimonial-carousel",
+      "title": "Testimonial Carousel",
+      "description": "Minimal, responsive testimonial slider with avatars, names, and quotes for clean, modern design.",
+      "type": "registry:component",
+      "dependencies": ["embla-carousel-react"],
+      "files": [
+        {
+          "path": "components/ui/testimonial-carousel.tsx",
+          "target": "components/ui/testimonial-carousel.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "text-highlighter",
+      "title": "Text Highlighter",
+      "description": "A customizable text highlighter with smooth animated highlights to emphasize key text.",
+      "type": "registry:component",
+      "dependencies": ["framer-motion"],
+      "files": [
+        {
+          "path": "components/ui/text-highlighter.tsx",
+          "target": "components/ui/text-highlighter.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "text-modifier",
+      "title": "Text Modifier",
+      "description": "text highlighter with solid background and decorative markers for emphasis..",
+      "type": "registry:component",
+      "dependencies": ["framer-motion"],
+      "files": [
+        {
+          "path": "components/ui/text-modifier.tsx",
+          "target": "components/ui/text-modifier.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "text-spotlight",
+      "title": "Text Spotlight",
+      "description": "spotlight text effect with hover and mobile reveal, customizable size and color.",
+      "type": "registry:component",
+      "dependencies": ["framer-motion"],
+      "files": [
+        {
+          "path": "components/ui/text-spotlight.tsx",
+          "target": "components/ui/text-spotlight.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "theme-switch",
+      "title": "Theme Switch",
+      "description": "A flexible and accessible theme mode switcher component for Next.js projects using next-themes. ",
+      "type": "registry:component",
+      "dependencies": ["next-themes", "lucide-react"],
+      "files": [
+        {
+          "path": "components/ui/theme-switch.tsx",
+          "target": "components/ui/theme-switch.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "thunder-loader",
+      "title": "Thunder Loader",
+      "description": "Animated thunderbolt loader with glow and shimmer effects, customizable sizes and colors.",
+      "type": "registry:component",
+      "dependencies": ["framer-motion"],
+      "files": [
+        {
+          "path": "components/ui/thunder-loader.tsx",
+          "target": "components/ui/thunder-loader.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "timeline",
+      "title": "Timeline",
+      "description": "Smoothly animated timeline slider with resizable handles for interactive use.",
+      "type": "registry:component",
+      "dependencies": ["framer-motion"],
+      "files": [
+        {
+          "path": "components/ui/timeline.tsx",
+          "target": "components/ui/timeline.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "top-sheet",
+      "title": "Top Sheet",
+      "description": "A customizable component for creating elegant, slide-out panels from the top of the screen.",
+      "type": "registry:component",
+      "dependencies": ["framer-motion"],
+      "files": [
+        {
+          "path": "components/ui/top-sheet.tsx",
+          "target": "components/ui/top-sheet.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "toast",
+      "title": "Toast",
+      "description": "A customizable and responsive toast notification system.",
+      "type": "registry:component",
+      "dependencies": [
+        "framer-motion",
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "components/ui/toast.tsx",
+          "target": "components/ui/toast.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "toggle-vault",
+      "title": "Toggle Vault",
+      "description": "Expandable vault component with animated open/close, trigger button, and content panel.",
+      "type": "registry:component",
+      "dependencies": ["framer-motion"],
+      "files": [
+        {
+          "path": "components/ui/toggle-vault.tsx",
+          "target": "components/ui/toggle-vault.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "tooltip",
+      "title": "Tooltip",
+      "description": "An interactive, animated popup that displays information related to an element when it receives keyboard focus or when the mouse hovers over it.",
+      "type": "registry:component",
+      "dependencies": ["framer-motion", "@radix-ui/react-tooltip"],
+      "files": [
+        {
+          "path": "components/ui/tooltip.tsx",
+          "target": "components/ui/tooltip.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "transition",
+      "title": "Transition",
+      "description": "Smooth page transitions with curved or slide effects.",
+      "type": "registry:component",
+      "dependencies": ["framer-motion"],
+      "files": [
+        {
+          "path": "components/ui/transition.tsx",
+          "target": "components/ui/transition.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "typeanimation",
+      "title": "Type Animation",
+      "description": "Displays an animated typing effect.",
+      "type": "registry:component",
+      "dependencies": ["framer-motion", "react-type-animation"],
+      "files": [
+        {
+          "path": "components/ui/typeanimation.tsx",
+          "target": "components/ui/typeanimation.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "venom-beam",
+      "title": "Venom Beam",
+      "description": "A glowing particle canvas with motion-reactive trails. Perfect for immersive, high-tech hero sections.",
+      "type": "registry:component",
+      "dependencies": [""],
+      "files": [
+        {
+          "path": "components/ui/venom-beam.tsx",
+          "target": "components/ui/venom-beam.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "vercel-card",
+      "title": "Vercel Card",
+      "description": "A smooth interactive vercel inspired card.",
+      "type": "registry:component",
+      "dependencies": ["framer-motion"],
+      "files": [
+        {
+          "path": "components/ui/vercel-card.tsx",
+          "target": "components/ui/vercel-card.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "wavy-button",
+      "title": "Wavy Button",
+      "description": "Interactive wavybutton with animated text and customizable styles for modern uis.",
+      "type": "registry:component",
+      "dependencies": ["framer-motion", "@radix-ui/react-slot"],
+      "files": [
+        {
+          "path": "components/ui/wavy-button.tsx",
+          "target": "components/ui/wavy-button.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "whitestripes",
+      "title": "Whitestripes",
+      "description": "Dynamic motion background for hero sections and modern layouts.",
+      "type": "registry:component",
+      "dependencies": ["framer-motion"],
+      "files": [
+        {
+          "path": "components/ui/whitestripes.tsx",
+          "target": "components/ui/whitestripes.tsx",
+          "type": "registry:component"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature220",
+  "url": "https://shadcnblocks.com/r/feature220.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature220",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A component showcasing user stats, a customer testimonial with avatar, and an autoplaying video in a 2-column layout. It includes styled text and a button.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["aspect-ratio", "button"],
+    "files": [
+      {
+        "path": "code/block/feature220.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:25.395Z"
+}

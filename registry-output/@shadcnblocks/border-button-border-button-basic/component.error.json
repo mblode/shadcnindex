@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "border-button-border-button-basic",
+  "url": "https://shadcnblocks.com/r/border-button-border-button-basic.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "border-button-border-button-basic",
+    "type": "registry:block",
+    "title": "Border-button/border-button-basic",
+    "description": "A border-button/border-button-basic example",
+    "dependencies": [],
+    "registryDependencies": ["https://shadcnblocks.com/r/border-button"],
+    "files": [
+      {
+        "path": "code/example/border-button/border-button-basic.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:15:02.031Z"
+}

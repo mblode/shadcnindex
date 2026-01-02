@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "hero74",
+  "url": "https://shadcnblocks.com/r/hero74.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "hero74",
+    "type": "registry:block",
+    "title": "Hero",
+    "description": "A component promoting a business OS, featuring a headline, description, sign-up form, and a 6-icon feature grid. Also includes layered images at the bottom.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["button", "input"],
+    "files": [
+      {
+        "path": "code/block/hero74.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:39.303Z"
+}

@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature89",
+  "url": "https://shadcnblocks.com/r/feature89.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature89",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A component with a promotional section and 3-column feature display, incorporating text blocks, an image placeholder, and icons for efficiency, resource optimization, and simplified operations.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/feature89.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:30.550Z"
+}

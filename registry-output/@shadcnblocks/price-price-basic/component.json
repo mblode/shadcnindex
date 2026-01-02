@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "price-price-basic",
+  "title": "Price/price-basic",
+  "description": "A price/price-basic example",
+  "dependencies": ["clsx", "tailwind-merge"],
+  "registryDependencies": ["https://shadcnblocks.com/r/price"],
+  "files": [
+    {
+      "path": "code/example/price/price-basic.tsx",
+      "content": "\"use client\";\n\nimport { Price, PriceValue } from \"@/components/shadcnblocks/price\";\n\nconst PriceExample = () => {\n  return (\n    <Price>\n      <PriceValue price={100} currency=\"USD\" />\n    </Price>\n  );\n};\n\nexport default PriceExample;\n",
+      "type": "registry:block"
+    },
+    {
+      "path": "src/components/shadcnblocks/price.tsx",
+      "content": "\"use client\";\n\nimport { ReactNode } from \"react\";\nimport { createContext, useContext } from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\nconst PriceContext = createContext<{ onSale?: boolean }>({ onSale: false });\nexport const usePriceContext = () => useContext(PriceContext);\n\ninterface PriceProps {\n  className?: string;\n  children: ReactNode;\n  onSale?: boolean;\n}\n\ninterface PriceValueProps {\n  price?: number;\n  currency?: string;\n  variant?: \"regular\" | \"sale\";\n  className?: string;\n}\n\nexport type PriceType = {\n  currency?: string;\n  regular: number;\n  sale?: number;\n};\n\nconst formatterCache = new Map<string, Intl.NumberFormat>();\n\nfunction formatCurrency(value: number, currency = \"USD\", locale = \"en-US\") {\n  const key = `${locale}-${currency}`;\n  if (!formatterCache.has(key)) {\n    formatterCache.set(\n      key,\n      new Intl.NumberFormat(locale, { style: \"currency\", currency }),\n    );\n  }\n  return formatterCache.get(key)!.format(value);\n}\n\nconst Price = ({ className, children, onSale }: PriceProps) => {\n  return (\n    <PriceContext.Provider value={{ onSale }}>\n      <div className={cn(\"flex flex-wrap items-center gap-x-2\", className)}>\n        {children}\n      </div>\n    </PriceContext.Provider>\n  );\n};\n\nconst PriceValue = ({\n  price,\n  currency = \"USD\",\n  variant = \"regular\",\n  className,\n}: PriceValueProps) => {\n  const { onSale } = usePriceContext();\n\n  if (price == null) return null;\n\n  return (\n    <span\n      className={cn(\n        \"leading-tight\",\n        variant === \"regular\"\n          ? onSale\n            ? \"text-muted-foreground line-through\"\n            : \"text-foreground\"\n          : \"text-foreground\",\n        className,\n      )}\n    >\n      {formatCurrency(price, currency)}\n    </span>\n  );\n};\n\nexport { Price, PriceValue };\n",
+      "type": "registry:component",
+      "target": ""
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "content": "import { type ClassValue, clsx } from 'clsx';\nimport { twMerge } from 'tailwind-merge';\n\nexport function cn(...inputs: ClassValue[]) {\n  return twMerge(clsx(inputs));\n}\n",
+      "type": "registry:lib",
+      "target": ""
+    }
+  ],
+  "type": "registry:block"
+}

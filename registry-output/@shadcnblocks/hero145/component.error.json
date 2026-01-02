@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "hero145",
+  "url": "https://shadcnblocks.com/r/hero145.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "hero145",
+    "type": "registry:block",
+    "title": "Hero",
+    "description": "This component displays a full-width background with a dynamic, animated heading that changes text over time and includes a description with buttons for user actions.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["button"],
+    "files": [
+      {
+        "path": "code/block/hero145.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:34.501Z"
+}

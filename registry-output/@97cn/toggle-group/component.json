@@ -1,0 +1,47 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "toggle-group",
+  "type": "registry:ui",
+  "title": "Toggle Group",
+  "description": "Windows 95 styled toggle group component",
+  "dependencies": ["@radix-ui/react-toggle-group"],
+  "files": [
+    {
+      "path": "components/97cn/toggle-group.tsx",
+      "content": "\"use client\"\n\nimport * as React from \"react\"\nimport * as ToggleGroupPrimitive from \"@radix-ui/react-toggle-group\"\nimport { cn } from \"@/lib/utils\"\nimport { toggleVariants } from \"@/components/97cn/toggle\"\n\nconst ToggleGroupContext = React.createContext<{\n  size?: \"default\" | \"sm\" | \"lg\"\n  variant?: \"default\" | \"outline\"\n}>({})\n\nconst ToggleGroup = React.forwardRef<\n  React.ElementRef<typeof ToggleGroupPrimitive.Root>,\n  React.ComponentPropsWithoutRef<typeof ToggleGroupPrimitive.Root> & {\n    variant?: \"default\" | \"outline\"\n    size?: \"default\" | \"sm\" | \"lg\"\n  }\n>(({ className, variant = \"default\", size = \"default\", children, ...props }, ref) => (\n  <ToggleGroupPrimitive.Root ref={ref} className={cn(\"flex items-center justify-center gap-1\", className)} {...props}>\n    <ToggleGroupContext.Provider value={{ variant, size }}>{children}</ToggleGroupContext.Provider>\n  </ToggleGroupPrimitive.Root>\n))\n\nToggleGroup.displayName = ToggleGroupPrimitive.Root.displayName\n\nconst ToggleGroupItem = React.forwardRef<\n  React.ElementRef<typeof ToggleGroupPrimitive.Item>,\n  React.ComponentPropsWithoutRef<typeof ToggleGroupPrimitive.Item>\n>(({ className, children, ...props }, ref) => {\n  const context = React.useContext(ToggleGroupContext)\n\n  return (\n    <ToggleGroupPrimitive.Item\n      ref={ref}\n      className={cn(\n        toggleVariants({\n          variant: context.variant,\n          size: context.size,\n        }),\n        className,\n      )}\n      {...props}\n    >\n      {children}\n    </ToggleGroupPrimitive.Item>\n  )\n})\n\nToggleGroupItem.displayName = ToggleGroupPrimitive.Item.displayName\n\nexport { ToggleGroup, ToggleGroupItem }\n",
+      "type": "registry:ui"
+    }
+  ],
+  "cssVars": {
+    "light": {
+      "win95-button-face": "#c0c0c0",
+      "win95-black": "#000000",
+      "win95-light-gray": "#dfdfdf",
+      "win95-button-shadow": "#808080",
+      "win95-button-highlight": "#ffffff"
+    },
+    "dark": {
+      "win95-button-face": "#c0c0c0",
+      "win95-black": "#000000",
+      "win95-light-gray": "#dfdfdf",
+      "win95-button-shadow": "#808080",
+      "win95-button-highlight": "#ffffff"
+    }
+  },
+  "css": {
+    "@layer utilities": {
+      ".win95-raised": {
+        "border-top": "2px solid var(--win95-button-highlight)",
+        "border-left": "2px solid var(--win95-button-highlight)",
+        "border-right": "2px solid var(--win95-button-shadow)",
+        "border-bottom": "2px solid var(--win95-button-shadow)"
+      },
+      ".win95-sunken": {
+        "border-top": "2px solid var(--win95-button-shadow)",
+        "border-left": "2px solid var(--win95-button-shadow)",
+        "border-right": "2px solid var(--win95-button-highlight)",
+        "border-bottom": "2px solid var(--win95-button-highlight)"
+      }
+    }
+  }
+}

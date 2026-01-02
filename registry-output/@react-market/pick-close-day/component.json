@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "pick-close-day",
+  "type": "registry:component",
+  "title": "Pick Close Day - a tiny calendar",
+  "author": "Benjamin",
+  "description": "",
+  "dependencies": ["date-fns", "motion", "lucide-react"],
+  "devDependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "id": 48,
+      "path": "pick-close-day.tsx",
+      "content": "'use client'\n\nimport { cn } from '@/lib/utils'\nimport { addDays, differenceInCalendarDays } from 'date-fns'\nimport { ChevronLeft, ChevronRight } from 'lucide-react'\nimport React from 'react'\nimport { motion as m, AnimatePresence } from 'motion/react'\n\ninterface PickCloseDayProps extends React.HTMLAttributes<HTMLDivElement> {\n    /** Initial or controlled date (defaults to today) */\n    date?: Date\n    /** Fires whenever the date changes */\n    onDateChange?: (date: Date) => void\n}\n\nexport function PickCloseDay({\n    date: controlledDate,\n    onDateChange,\n    className,\n    ...rest\n}: PickCloseDayProps) {\n    // Uncontrolled fallback\n    const [internalDate, setInternalDate] = React.useState(new Date())\n    const date = controlledDate ?? internalDate\n\n    // Compute slide direction based on previous date\n    const prevDateRef = React.useRef(date)\n    const direction =\n        date.getTime() - prevDateRef.current.getTime() > 0 ? 1 : -1\n    React.useEffect(() => {\n        prevDateRef.current = date\n    }, [date])\n\n    // Variants for sliding transition\n    const variants = {\n        enter: (direction: number) => ({\n            x: direction > 0 ? 20 : -20,\n            opacity: 0,\n        }),\n        center: { x: 0, opacity: 1 },\n        exit: (direction: number) => ({\n            x: direction > 0 ? -20 : 20,\n            opacity: 0,\n        }),\n    }\n\n    const label = React.useMemo(() => {\n        const delta = differenceInCalendarDays(date, new Date())\n        if (delta === 0) return 'Today'\n        if (delta === -1) return 'Yesterday'\n        if (delta === 1) return 'Tomorrow'\n        if (delta < 0) return `${Math.abs(delta)} days ago`\n        return `In ${delta} days`\n    }, [date])\n\n    const shift = (by: number) => {\n        const next = addDays(date, by)\n        if (!controlledDate) setInternalDate(next)\n        onDateChange?.(next)\n    }\n\n    return (\n        <div\n            {...rest}\n            className={cn(\n                'inline-flex items-center gap-2 select-none',\n                'bg-accent text-accent-foreground rounded-md px-3 py-1.5',\n                className\n            )}\n        >\n            <button\n                type=\"button\"\n                aria-label=\"Previous day\"\n                onClick={() => shift(-1)}\n            >\n                <ChevronLeft className=\"h-4 w-4\" />\n            </button>\n\n            <AnimatePresence mode=\"wait\">\n                <m.span\n                    key={date.toISOString()}\n                    custom={direction}\n                    variants={variants}\n                    initial=\"enter\"\n                    animate=\"center\"\n                    exit=\"exit\"\n                    transition={{ duration: 0.3 }}\n                    style={{ display: 'inline-block' }}\n                >\n                    {label}\n                </m.span>\n            </AnimatePresence>\n\n            <button\n                type=\"button\"\n                aria-label=\"Next day\"\n                onClick={() => shift(1)}\n            >\n                <ChevronRight className=\"h-4 w-4\" />\n            </button>\n        </div>\n    )\n}",
+      "type": "registry:component"
+    }
+  ],
+  "categories": ["Calendar"]
+}

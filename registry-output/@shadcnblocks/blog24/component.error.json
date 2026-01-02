@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "blog24",
+  "url": "https://shadcnblocks.com/r/blog24.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "blog24",
+    "type": "registry:block",
+    "title": "Blog",
+    "description": "A component displaying a collection of blog posts with images, titles, summaries, labels, authors, and dates, plus a view-all button.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["badge", "button", "card"],
+    "files": [
+      {
+        "path": "code/block/blog24.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:14.378Z"
+}

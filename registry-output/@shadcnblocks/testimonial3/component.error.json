@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "testimonial3",
+  "url": "https://shadcnblocks.com/r/testimonial3.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "testimonial3",
+    "type": "registry:block",
+    "title": "Testimonial",
+    "description": "A testimonial component with a quote, image logo, and author attribution centered in a bordered block with adjustable padding.",
+    "dependencies": [],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/testimonial3.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:54.169Z"
+}

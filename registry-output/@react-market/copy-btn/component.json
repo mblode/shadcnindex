@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "copy-btn",
+  "type": "registry:component",
+  "title": "Copy button",
+  "author": "Benjamin",
+  "description": "Simple copy button that can be modified according to your needs!",
+  "dependencies": ["lucide-react", "sonner"],
+  "devDependencies": [],
+  "registryDependencies": ["button"],
+  "files": [
+    {
+      "id": 11,
+      "path": "copy-button.tsx",
+      "content": "\"use client\";\n\nimport { useState } from \"react\";\nimport { Check, Copy } from \"lucide-react\";\nimport { Button } from \"@/components/ui/button\";\nimport { toast } from \"sonner\";\n\ninterface Props {\n  name: string;\n}\n\nexport function CopyButton(props: Props) {\n  const [copied, setCopied] = useState(false);\n\n  const handleCopy = () => {\n    void navigator.clipboard.writeText(\"anything\");\n    toast.success(\"Copied to clipboard\");\n    setCopied(true);\n    setTimeout(() => setCopied(false), 3000);\n  };\n\n  return (\n    <Button size={\"icon\"} onClick={handleCopy} variant={\"ghost\"} name=\"Copy\">\n      {copied ? <Check className=\"h-5 w-5\" /> : <Copy className=\"h-5 w-5\" />}\n    </Button>\n  );\n}",
+      "type": "registry:component"
+    }
+  ],
+  "categories": ["Button"]
+}

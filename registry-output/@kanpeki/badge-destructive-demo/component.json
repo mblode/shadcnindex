@@ -1,0 +1,13 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "files": [
+    {
+      "content": "import { Badge } from \"~/registry/ui/badge\";\n\nexport function BadgeDestructiveDemo() {\n  return <Badge variant=\"destructive\">Badge</Badge>;\n}\n",
+      "path": "src/registry/examples/badge/badge-destructive-demo.tsx",
+      "type": "registry:example"
+    }
+  ],
+  "name": "badge-destructive-demo",
+  "registryDependencies": ["@kanpeki/badge"],
+  "type": "registry:example"
+}

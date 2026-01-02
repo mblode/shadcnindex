@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature90",
+  "url": "https://shadcnblocks.com/r/feature90.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature90",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A marketing component featuring a title, description, button, a row of logos, and a link to more integrations.",
+    "dependencies": [],
+    "registryDependencies": ["button"],
+    "files": [
+      {
+        "path": "code/block/feature90.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:30.672Z"
+}

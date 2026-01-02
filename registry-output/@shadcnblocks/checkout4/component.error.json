@@ -1,0 +1,35 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "checkout4",
+  "url": "https://shadcnblocks.com/r/checkout4.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "checkout4",
+    "type": "registry:block",
+    "title": "Checkout",
+    "description": "This component serves as a comprehensive checkout block that handles both shopping cart management and payment processing. Users can manage item quantities, view total prices, and choose from multiple payment methods, including credit card and PayPal, while ensuring form validation using Zod and React Hook Form.",
+    "dependencies": [
+      "@hookform/resolvers",
+      "lucide-react",
+      "react",
+      "react-hook-form",
+      "zod"
+    ],
+    "registryDependencies": [
+      "https://shadcnblocks.com/r/price",
+      "https://shadcnblocks.com/r/quantity-input",
+      "aspect-ratio",
+      "button",
+      "field",
+      "input",
+      "separator"
+    ],
+    "files": [
+      {
+        "path": "code/block/checkout4.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:16.160Z"
+}

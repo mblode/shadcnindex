@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "extends": "none",
+  "name": "breadcrumbs-demo",
+  "title": "Breadcrumbs",
+  "description": "breadcrumbs-demo",
+  "registryDependencies": ["https://intentui.com/r/breadcrumbs"],
+  "files": [
+    {
+      "path": "src/components/docs/navigation/breadcrumbs/breadcrumbs-demo.tsx",
+      "content": "\"use client\"\n\nimport { Breadcrumbs, BreadcrumbsItem } from \"@/components/ui/breadcrumbs\"\n\nexport default function BreadcrumbsDemo() {\n  return (\n    <Breadcrumbs>\n      <BreadcrumbsItem href=\"#\">Home</BreadcrumbsItem>\n\n      <BreadcrumbsItem href=\"#\">Design System</BreadcrumbsItem>\n\n      <BreadcrumbsItem>Collections</BreadcrumbsItem>\n    </Breadcrumbs>\n  )\n}\n",
+      "type": "registry:page",
+      "target": "app/breadcrumbs-demo/page.tsx"
+    }
+  ],
+  "type": "registry:page"
+}

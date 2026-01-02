@@ -1,0 +1,22 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "awards1",
+  "title": "Awards",
+  "description": "A component displaying a \"Milestones\" heading and a table listing awards with names, descriptions, and years, across 5 columns.",
+  "dependencies": ["react", "clsx", "tailwind-merge"],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "code/block/awards1.tsx",
+      "content": "import React from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\ninterface Awards1Props {\n  className?: string;\n}\n\nconst Awards1 = ({ className }: Awards1Props) => {\n  const awards = [\n    {\n      name: \"CSS Design Awards Winner\",\n      description: \"Recognized for excellence in web design and functionality.\",\n      year: \"2024\",\n    },\n    {\n      name: \"Awwwards Site of the Day\",\n      description:\n        \"Featured for outstanding creativity and innovation in web development.\",\n      year: \"2023\",\n    },\n    {\n      name: \"Best UI/UX Design\",\n      description:\n        \"Awarded for exceptional user experience and interface design.\",\n      year: \"2023\",\n    },\n    {\n      name: \"Web Design Excellence\",\n      description:\n        \"Honored for superior design quality and technical implementation.\",\n      year: \"2022\",\n    },\n  ];\n\n  return (\n    <section className={cn(\"py-32\", className)}>\n      <div className=\"container space-y-10 lg:space-y-20\">\n        <div className=\"w-full grid-cols-6 gap-10 lg:grid\">\n          <div />\n          <h1 className=\"col-span-4 text-5xl font-semibold tracking-tighter lg:pl-10 lg:text-8xl\">\n            Milestones\n          </h1>\n        </div>\n        <div className=\"grid-cols-6 gap-10 space-y-12 lg:grid lg:space-y-0\">\n          <p className=\"flex-center hidden h-12 items-center text-foreground/40 lg:flex\">\n            Achievements\n          </p>\n          <div className=\"col-span-5 lg:pl-10\">\n            <table className=\"w-full border-collapse\">\n              <thead>\n                <tr className=\"h-12 border-b text-left text-sm text-foreground/40\">\n                  <th className=\"font-normal\">Name of the Award</th>\n                  <th className=\"font-normal\">Description</th>\n                  <th className=\"text-left text-right font-normal\">Year</th>\n                </tr>\n              </thead>\n              <tbody>\n                {awards.map((award, index) => (\n                  <tr\n                    key={index}\n                    className=\"h-20 border-b text-left text-sm text-foreground/40\"\n                  >\n                    <td className=\"text-lg font-medium tracking-tight text-foreground lg:text-xl\">\n                      {award.name}\n                    </td>\n                    <td>{award.description}</td>\n                    <td className=\"text-right text-foreground\">{award.year}</td>\n                  </tr>\n                ))}\n              </tbody>\n            </table>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Awards1 };\n",
+      "type": "registry:block"
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "content": "import { type ClassValue, clsx } from 'clsx';\nimport { twMerge } from 'tailwind-merge';\n\nexport function cn(...inputs: ClassValue[]) {\n  return twMerge(clsx(inputs));\n}\n",
+      "type": "registry:lib",
+      "target": ""
+    }
+  ],
+  "type": "registry:block"
+}

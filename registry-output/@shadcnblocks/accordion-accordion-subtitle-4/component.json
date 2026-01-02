@@ -1,0 +1,35 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "accordion-accordion-subtitle-4",
+  "title": "Accordion/accordion-subtitle-",
+  "description": "A accordion/accordion-subtitle- example",
+  "dependencies": [
+    "@faker-js/faker",
+    "lucide-react",
+    "react",
+    "@radix-ui/react-accordion",
+    "clsx",
+    "tailwind-merge"
+  ],
+  "registryDependencies": ["accordion"],
+  "files": [
+    {
+      "path": "code/example/accordion/accordion-subtitle-4.tsx",
+      "content": "import { faker } from \"@faker-js/faker\";\nimport { FileText, Folder, Settings, Users } from \"lucide-react\";\nimport type { ReactNode } from \"react\";\n\nimport {\n  Accordion,\n  AccordionContent,\n  AccordionItem,\n  AccordionTrigger,\n} from \"@/components/ui/accordion\";\n\nexport const title = \"Icon, Subtitle, and Chevron\";\n\nconst icons = [FileText, Folder, Settings, Users];\n\nconst data: {\n  value: string;\n  title: string;\n  subtitle: string;\n  content: string;\n  icon: ReactNode;\n}[] = [];\n\nfor (let i = 0; i < 4; i++) {\n  const Icon = icons[i];\n  data.push({\n    value: faker.string.uuid(),\n    title: faker.company.catchPhrase(),\n    subtitle: faker.company.buzzPhrase(),\n    content: faker.lorem.paragraph(),\n    icon: <Icon className=\"size-4 text-muted-foreground\" />,\n  });\n}\n\nconst Example = () => (\n  <Accordion\n    className=\"w-full max-w-md -space-y-px\"\n    collapsible\n    defaultValue={data[0].value}\n    type=\"single\"\n  >\n    {data.map((item) => (\n      <AccordionItem\n        className=\"overflow-hidden border bg-background px-4 first:rounded-t-lg last:rounded-b-lg last:border-b\"\n        key={item.value}\n        value={item.value}\n      >\n        <AccordionTrigger className=\"hover:no-underline\">\n          <div className=\"flex items-center gap-3\">\n            {item.icon}\n            <div className=\"flex flex-col items-start text-left\">\n              <span>{item.title}</span>\n              <span className=\"text-sm text-muted-foreground\">\n                {item.subtitle}\n              </span>\n            </div>\n          </div>\n        </AccordionTrigger>\n        <AccordionContent className=\"ps-7\">\n          <p className=\"text-muted-foreground\">{item.content}</p>\n        </AccordionContent>\n      </AccordionItem>\n    ))}\n  </Accordion>\n);\n\nexport default Example;\n",
+      "type": "registry:block"
+    },
+    {
+      "path": "src/components/ui/accordion.tsx",
+      "content": "import * as React from \"react\"\nimport * as AccordionPrimitive from \"@radix-ui/react-accordion\"\nimport { ChevronDownIcon } from \"lucide-react\"\n\nimport { cn } from \"@/lib/utils\"\n\nfunction Accordion({\n  ...props\n}: React.ComponentProps<typeof AccordionPrimitive.Root>) {\n  return <AccordionPrimitive.Root data-slot=\"accordion\" {...props} />\n}\n\nfunction AccordionItem({\n  className,\n  ...props\n}: React.ComponentProps<typeof AccordionPrimitive.Item>) {\n  return (\n    <AccordionPrimitive.Item\n      data-slot=\"accordion-item\"\n      className={cn(\"border-b last:border-b-0\", className)}\n      {...props}\n    />\n  )\n}\n\nfunction AccordionTrigger({\n  className,\n  children,\n  ...props\n}: React.ComponentProps<typeof AccordionPrimitive.Trigger>) {\n  return (\n    <AccordionPrimitive.Header className=\"flex\">\n      <AccordionPrimitive.Trigger\n        data-slot=\"accordion-trigger\"\n        className={cn(\n          \"focus-visible:border-ring focus-visible:ring-ring/50 flex flex-1 items-start justify-between gap-4 rounded-md py-4 text-left text-sm font-medium transition-all outline-none hover:underline focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 [&[data-state=open]>svg]:rotate-180\",\n          className\n        )}\n        {...props}\n      >\n        {children}\n        <ChevronDownIcon className=\"text-muted-foreground pointer-events-none size-4 shrink-0 translate-y-0.5 transition-transform duration-200\" />\n      </AccordionPrimitive.Trigger>\n    </AccordionPrimitive.Header>\n  )\n}\n\nfunction AccordionContent({\n  className,\n  children,\n  ...props\n}: React.ComponentProps<typeof AccordionPrimitive.Content>) {\n  return (\n    <AccordionPrimitive.Content\n      data-slot=\"accordion-content\"\n      className=\"data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down overflow-hidden text-sm\"\n      {...props}\n    >\n      <div className={cn(\"pt-0 pb-4\", className)}>{children}</div>\n    </AccordionPrimitive.Content>\n  )\n}\n\nexport { Accordion, AccordionItem, AccordionTrigger, AccordionContent }\n",
+      "type": "registry:ui",
+      "target": ""
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "content": "import { type ClassValue, clsx } from 'clsx';\nimport { twMerge } from 'tailwind-merge';\n\nexport function cn(...inputs: ClassValue[]) {\n  return twMerge(clsx(inputs));\n}\n",
+      "type": "registry:lib",
+      "target": ""
+    }
+  ],
+  "type": "registry:block"
+}

@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "input-otp-input-otp-variants-3",
+  "url": "https://shadcnblocks.com/r/input-otp-input-otp-variants-3.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "input-otp-input-otp-variants-3",
+    "type": "registry:block",
+    "title": "Input-otp/input-otp-variants-",
+    "description": "A input-otp/input-otp-variants- example",
+    "dependencies": [],
+    "registryDependencies": ["input-otp"],
+    "files": [
+      {
+        "path": "code/example/input-otp/input-otp-variants-3.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:15:25.308Z"
+}

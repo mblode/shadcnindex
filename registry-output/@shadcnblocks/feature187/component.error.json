@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature187",
+  "url": "https://shadcnblocks.com/r/feature187.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature187",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A component displays a 3-step process with titles and descriptions in a three-column layout. Each step is uniquely marked and connected by a visual guide.",
+    "dependencies": ["react"],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/feature187.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:23.870Z"
+}

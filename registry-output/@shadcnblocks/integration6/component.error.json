@@ -1,0 +1,25 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "integration6",
+  "url": "https://shadcnblocks.com/r/integration6.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "integration6",
+    "type": "registry:block",
+    "title": "Integration",
+    "description": "A component with a headline, description, interactive button leading to more content, and two logo carousels separated by dividers, all within a dark-themed layout.",
+    "dependencies": [
+      "embla-carousel-auto-scroll",
+      "embla-carousel-autoplay",
+      "lucide-react"
+    ],
+    "registryDependencies": ["button", "carousel", "separator"],
+    "files": [
+      {
+        "path": "code/block/integration6.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:40.845Z"
+}

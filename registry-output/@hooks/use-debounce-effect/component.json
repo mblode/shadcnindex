@@ -1,0 +1,17 @@
+{
+  "name": "use-debounce-effect",
+  "author": "Brendan Dash (https://shadcn-hooks.vercel.app)",
+  "description": "A hook to debounce an effect",
+  "registryDependencies": [
+    "@hooks/use-debounce-fn",
+    "@hooks/use-update-effect"
+  ],
+  "files": [
+    {
+      "path": "registry/hooks/use-debounce-effect.ts",
+      "content": "import { useEffect, useState } from 'react'\nimport { useDebounceFn } from '@/registry/hooks/use-debounce-fn'\nimport { useUpdateEffect } from '@/registry/hooks/use-update-effect'\nimport type { DependencyList, EffectCallback } from 'react'\nimport type { DebounceOptions } from '@/registry/hooks/use-debounce-fn'\n\nexport function useDebounceEffect(\n  effect: EffectCallback,\n  deps: DependencyList,\n  debounceMs?: number,\n  options?: DebounceOptions,\n) {\n  const [flag, setFlag] = useState({})\n  const { run } = useDebounceFn(\n    () => {\n      setFlag({})\n    },\n    debounceMs,\n    options,\n  )\n\n  useEffect(() => {\n    return run()\n  }, deps)\n\n  useUpdateEffect(() => {\n    return effect()\n  }, [flag])\n}\n",
+      "type": "registry:hook"
+    }
+  ],
+  "type": "registry:hook"
+}

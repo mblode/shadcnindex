@@ -1,0 +1,49 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "shopping-cart1",
+  "title": "Shopping-cart",
+  "description": "This component, named \"ShoppingCart1,\" provides a user interface for displaying and managing items in a shopping cart. It supports functionality like removing items, viewing the item list with images, and calculating the total cost dynamically.",
+  "dependencies": [
+    "lucide-react",
+    "react",
+    "@radix-ui/react-aspect-ratio",
+    "@radix-ui/react-slot",
+    "class-variance-authority",
+    "clsx",
+    "tailwind-merge",
+    "@radix-ui/react-separator"
+  ],
+  "registryDependencies": ["aspect-ratio", "button", "separator"],
+  "files": [
+    {
+      "path": "code/block/shopping-cart1.tsx",
+      "content": "\"use client\";\n\nimport { Trash2, X } from \"lucide-react\";\nimport { useState } from \"react\";\n\nimport { AspectRatio } from \"@/components/ui/aspect-ratio\";\nimport { Button } from \"@/components/ui/button\";\nimport { Separator } from \"@/components/ui/separator\";\n\ninterface CartItem {\n  id: string;\n  name: string;\n  image: string;\n  price: number;\n  quantity: number;\n}\n\nconst DEFAULT_ITEMS: CartItem[] = [\n  {\n    id: \"1\",\n    name: \"Minimalist Beige Sneakers\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/ecommerce/clothes/Minimalist-Beige-Sneakers-2.png\",\n    price: 120.0,\n    quantity: 1,\n  },\n  {\n    id: \"2\",\n    name: \"Embroidered Blue Top\",\n    image:\n      \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/ecommerce/clothes/Woman-in-Embroidered-Blue-Top-2.png\",\n    price: 140.0,\n    quantity: 1,\n  },\n  {\n    id: \"3\",\n    name: \"Classic Fedora Hat\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/ecommerce/accessories/Classic-Fedora-Hat-2.png\",\n    price: 84.0,\n    quantity: 1,\n  },\n];\n\nconst ShoppingCart1 = ({\n  initialItems = DEFAULT_ITEMS,\n}: {\n  initialItems?: CartItem[];\n}) => {\n  const [items, setItems] = useState(initialItems);\n\n  const removeItem = (id: string) => {\n    setItems(items.filter((item) => item.id !== id));\n  };\n\n  const subtotal = items.reduce(\n    (sum, item) => sum + item.price * item.quantity,\n    0,\n  );\n\n  const formatPrice = (price: number) => {\n    return new Intl.NumberFormat(\"en-US\", {\n      style: \"currency\",\n      currency: \"USD\",\n    }).format(price);\n  };\n\n  if (items.length === 0) {\n    return (\n      <section className=\"py-32\">\n        <div className=\"container max-w-lg text-center\">\n          <h1 className=\"mb-4 text-2xl font-semibold\">Your cart is empty</h1>\n          <p className=\"mb-8 text-muted-foreground\">\n            Looks like you haven't added anything yet.\n          </p>\n          <Button asChild>\n            <a href=\"#\">Continue Shopping</a>\n          </Button>\n        </div>\n      </section>\n    );\n  }\n\n  return (\n    <section className=\"py-32\">\n      <div className=\"container max-w-2xl\">\n        <h1 className=\"mb-8 text-3xl font-semibold\">Shopping Cart</h1>\n\n        <div className=\"space-y-4\">\n          {items.map((item) => (\n            <div\n              key={item.id}\n              className=\"flex items-center gap-4 rounded-lg border p-4\"\n            >\n              <div className=\"w-20 shrink-0\">\n                <AspectRatio ratio={1} className=\"overflow-hidden rounded-md\">\n                  <img\n                    src={item.image}\n                    alt={item.name}\n                    className=\"size-full object-cover\"\n                  />\n                </AspectRatio>\n              </div>\n\n              <div className=\"flex-1\">\n                <h3 className=\"font-medium\">{item.name}</h3>\n                <p className=\"text-sm text-muted-foreground\">\n                  Qty: {item.quantity}\n                </p>\n              </div>\n\n              <div className=\"text-right\">\n                <p className=\"font-semibold\">\n                  {formatPrice(item.price * item.quantity)}\n                </p>\n              </div>\n\n              <Button\n                variant=\"ghost\"\n                size=\"icon\"\n                className=\"shrink-0\"\n                onClick={() => removeItem(item.id)}\n              >\n                <X className=\"size-4\" />\n              </Button>\n            </div>\n          ))}\n        </div>\n\n        <Separator className=\"my-6\" />\n\n        <div className=\"space-y-4\">\n          <div className=\"flex justify-between text-lg font-semibold\">\n            <span>Total</span>\n            <span>{formatPrice(subtotal)}</span>\n          </div>\n\n          <Button size=\"lg\" className=\"w-full\">\n            Checkout\n          </Button>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { ShoppingCart1 };\n",
+      "type": "registry:block"
+    },
+    {
+      "path": "src/components/ui/aspect-ratio.tsx",
+      "content": "\"use client\"\n\nimport * as AspectRatioPrimitive from \"@radix-ui/react-aspect-ratio\"\n\nfunction AspectRatio({\n  ...props\n}: React.ComponentProps<typeof AspectRatioPrimitive.Root>) {\n  return <AspectRatioPrimitive.Root data-slot=\"aspect-ratio\" {...props} />\n}\n\nexport { AspectRatio }\n",
+      "type": "registry:ui",
+      "target": ""
+    },
+    {
+      "path": "src/components/ui/button.tsx",
+      "content": "import * as React from \"react\"\nimport { Slot } from \"@radix-ui/react-slot\"\nimport { cva, type VariantProps } from \"class-variance-authority\"\n\nimport { cn } from \"@/lib/utils\"\n\nconst buttonVariants = cva(\n  \"inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive\",\n  {\n    variants: {\n      variant: {\n        default: \"bg-primary text-primary-foreground hover:bg-primary/90\",\n        destructive:\n          \"bg-destructive text-white hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/60\",\n        outline:\n          \"border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50\",\n        secondary:\n          \"bg-secondary text-secondary-foreground hover:bg-secondary/80\",\n        ghost:\n          \"hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50\",\n        link: \"text-primary underline-offset-4 hover:underline\",\n      },\n      size: {\n        default: \"h-9 px-4 py-2 has-[>svg]:px-3\",\n        sm: \"h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5\",\n        lg: \"h-10 rounded-md px-6 has-[>svg]:px-4\",\n        icon: \"size-9\",\n        \"icon-sm\": \"size-8\",\n        \"icon-lg\": \"size-10\",\n      },\n    },\n    defaultVariants: {\n      variant: \"default\",\n      size: \"default\",\n    },\n  }\n)\n\nfunction Button({\n  className,\n  variant,\n  size,\n  asChild = false,\n  ...props\n}: React.ComponentProps<\"button\"> &\n  VariantProps<typeof buttonVariants> & {\n    asChild?: boolean\n  }) {\n  const Comp = asChild ? Slot : \"button\"\n\n  return (\n    <Comp\n      data-slot=\"button\"\n      className={cn(buttonVariants({ variant, size, className }))}\n      {...props}\n    />\n  )\n}\n\nexport { Button, buttonVariants }\n",
+      "type": "registry:ui",
+      "target": ""
+    },
+    {
+      "path": "src/components/ui/separator.tsx",
+      "content": "\"use client\"\n\nimport * as React from \"react\"\nimport * as SeparatorPrimitive from \"@radix-ui/react-separator\"\n\nimport { cn } from \"@/lib/utils\"\n\nfunction Separator({\n  className,\n  orientation = \"horizontal\",\n  decorative = true,\n  ...props\n}: React.ComponentProps<typeof SeparatorPrimitive.Root>) {\n  return (\n    <SeparatorPrimitive.Root\n      data-slot=\"separator\"\n      decorative={decorative}\n      orientation={orientation}\n      className={cn(\n        \"bg-border shrink-0 data-[orientation=horizontal]:h-px data-[orientation=horizontal]:w-full data-[orientation=vertical]:h-full data-[orientation=vertical]:w-px\",\n        className\n      )}\n      {...props}\n    />\n  )\n}\n\nexport { Separator }\n",
+      "type": "registry:ui",
+      "target": ""
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "content": "import { type ClassValue, clsx } from 'clsx';\nimport { twMerge } from 'tailwind-merge';\n\nexport function cn(...inputs: ClassValue[]) {\n  return twMerge(clsx(inputs));\n}\n",
+      "type": "registry:lib",
+      "target": ""
+    }
+  ],
+  "type": "registry:block"
+}

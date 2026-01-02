@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature24",
+  "url": "https://shadcnblocks.com/r/feature24.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature24",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A component showcasing UI components with a title, description, and placeholder image. Includes a \"Learn more\" link and icons. Two-column layout for text.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["separator"],
+    "files": [
+      {
+        "path": "code/block/feature24.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:26.315Z"
+}

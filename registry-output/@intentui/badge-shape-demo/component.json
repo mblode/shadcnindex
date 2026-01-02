@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "extends": "none",
+  "name": "badge-shape-demo",
+  "title": "Badge Shape",
+  "description": "badge-shape-demo",
+  "registryDependencies": ["https://intentui.com/r/badge"],
+  "files": [
+    {
+      "path": "src/components/docs/statuses/badge/badge-shape-demo.tsx",
+      "content": "\"use client\"\n\nimport { Badge } from \"@/components/ui/badge\"\n\nexport default function BadgeShapeDemo() {\n  return <Badge isCircle>Label</Badge>\n}\n",
+      "type": "registry:page",
+      "target": "app/badge-shape-demo/page.tsx"
+    }
+  ],
+  "type": "registry:page"
+}

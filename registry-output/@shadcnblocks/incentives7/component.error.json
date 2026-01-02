@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "incentives7",
+  "url": "https://shadcnblocks.com/r/incentives7.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "incentives7",
+    "type": "registry:block",
+    "title": "Incentives",
+    "description": "This component displays a carousel of incentives, highlighting key features with icons and descriptions to engage users with compelling information. It includes customizable options for titles, descriptions, icons, and a call-to-action button that links to additional content.",
+    "dependencies": ["react"],
+    "registryDependencies": ["button", "card", "carousel"],
+    "files": [
+      {
+        "path": "code/block/incentives7.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:40.362Z"
+}

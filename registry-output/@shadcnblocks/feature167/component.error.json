@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature167",
+  "url": "https://shadcnblocks.com/r/feature167.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature167",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A feature presentation block with tabs for \"Smart Task Management,\" \"Automated Scheduling,\" and \"Personalized Insights.\" Includes badges, animated tab indicators, and images for each feature.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["badge", "tabs"],
+    "files": [
+      {
+        "path": "code/block/feature167.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:23.257Z"
+}

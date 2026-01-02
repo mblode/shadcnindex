@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "extends": "none",
+  "name": "date-field-disabled-demo",
+  "title": "Date Field Disabled",
+  "description": "date-field-disabled-demo",
+  "registryDependencies": [
+    "https://intentui.com/r/date-field",
+    "https://intentui.com/r/field"
+  ],
+  "files": [
+    {
+      "path": "src/components/docs/date-and-time/date-field/date-field-disabled-demo.tsx",
+      "content": "\"use client\"\n\nimport { DateField, DateInput } from \"@/components/ui/date-field\"\nimport { Label } from \"@/components/ui/field\"\n\nexport default function DateFieldDisabledDemo() {\n  return (\n    <DateField isDisabled>\n      <Label>Event date</Label>\n      <DateInput />\n    </DateField>\n  )\n}\n",
+      "type": "registry:page",
+      "target": "app/date-field-disabled-demo/page.tsx"
+    }
+  ],
+  "type": "registry:page"
+}

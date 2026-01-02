@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "extends": "none",
+  "name": "avatar-shape-demo",
+  "title": "Avatar Shape",
+  "description": "avatar-shape-demo",
+  "registryDependencies": ["https://intentui.com/r/avatar"],
+  "files": [
+    {
+      "path": "src/components/docs/media/avatar/avatar-shape-demo.tsx",
+      "content": "import { Avatar } from \"@/components/ui/avatar\"\n\nexport default function AvatarShapeDemo() {\n  return (\n    <div className=\"flex items-end gap-4\">\n      <Avatar src=\"/images/avatar/slash.jpg\" />\n      <Avatar src=\"https://intentui.com/images/avatar/cobain.jpg\" isSquare />\n    </div>\n  )\n}\n",
+      "type": "registry:page",
+      "target": "app/avatar-shape-demo/page.tsx"
+    }
+  ],
+  "type": "registry:page"
+}

@@ -1,0 +1,13 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "switch-controlled-demo",
+  "type": "registry:example",
+  "registryDependencies": ["switch"],
+  "files": [
+    {
+      "path": "src/registry/pure-ui/examples/switch/switch-controlled-demo.tsx",
+      "content": "\"use client\";\n\nimport { useState } from \"react\";\nimport { Switch } from \"@/registry/pure-ui/ui/switch\";\nimport { Label } from \"@/registry/pure-ui/ui/label\";\n\nexport function SwitchControlledDemo() {\n  const [checked, setChecked] = useState(false);\n\n  return (\n    <div className=\"flex flex-col gap-3\">\n      <Label className=\"cursor-pointer\">\n        <Switch isInteractive checked={checked} onCheckedChange={setChecked} />\n        <span>Airplane Mode</span>\n      </Label>\n\n      <div className=\"flex items-center gap-2 text-sm text-muted-foreground\">\n        <span>Checked: {checked ? \"Yes\" : \"No\"}</span>\n      </div>\n    </div>\n  );\n}\n",
+      "type": "registry:example"
+    }
+  ]
+}

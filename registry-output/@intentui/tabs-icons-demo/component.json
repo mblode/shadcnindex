@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "extends": "none",
+  "name": "tabs-icons-demo",
+  "title": "Tabs Icons",
+  "description": "tabs-icons-demo",
+  "dependencies": ["@heroicons/react"],
+  "registryDependencies": ["https://intentui.com/r/tabs"],
+  "files": [
+    {
+      "path": "src/components/docs/navigation/tabs/tabs-icons-demo.tsx",
+      "content": "\"use client\"\n\nimport { CheckIcon, FaceSmileIcon, ScissorsIcon } from \"@heroicons/react/24/outline\"\nimport { Tab, TabList, TabPanel, Tabs } from \"@/components/ui/tabs\"\n\nexport default function TabsIconsDemo() {\n  return (\n    <Tabs aria-label=\"Fitness App\">\n      <TabList>\n        <Tab id=\"w\">\n          <ScissorsIcon /> Workouts\n        </Tab>\n        <Tab id=\"n\">\n          <FaceSmileIcon /> Nutrition\n        </Tab>\n        <Tab id=\"t\">\n          <CheckIcon /> Tracker\n        </Tab>\n      </TabList>\n      <TabPanel id=\"w\">Workouts</TabPanel>\n      <TabPanel id=\"n\">Nutrition</TabPanel>\n      <TabPanel id=\"t\">Tracker</TabPanel>\n    </Tabs>\n  )\n}\n",
+      "type": "registry:page",
+      "target": "app/tabs-icons-demo/page.tsx"
+    }
+  ],
+  "type": "registry:page"
+}

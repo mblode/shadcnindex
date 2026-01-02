@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "lists-stagger-fade",
+  "type": "registry:component",
+  "title": "Stagger Fade List",
+  "description": "List with staggered fade-in animation for items",
+  "dependencies": ["motion"],
+  "files": [
+    {
+      "path": "registry/new-york/animations/lists/stagger-fade.tsx",
+      "content": "\"use client\";\nimport * as React from \"react\";\nimport { motion, HTMLMotionProps } from \"motion/react\";\nimport { cn } from \"@/lib/utils\";\nexport interface StaggerFadeListProps\n  extends Omit<HTMLMotionProps<\"div\">, \"children\"> {\n  children: React.ReactNode[];\n  staggerDelay?: number;\n  duration?: number;\n  from?: number;\n  as?: \"div\" | \"ul\" | \"ol\" | \"section\" | \"article\";\n}\nexport function StaggerFadeList({\n  children,\n  staggerDelay = 0.1,\n  duration = 0.4,\n  from = 0,\n  as: Component = \"div\",\n  className,\n  ...props\n}: StaggerFadeListProps) {\n  const childrenArray = React.Children.toArray(children);\n  const MotionComponent = motion[Component as keyof typeof motion] as any;\n  return (\n    <MotionComponent className={cn(className)} {...props}>\n      {childrenArray.map((child, index) => (\n        <motion.div\n          key={index}\n          initial={{ opacity: from }}\n          animate={{ opacity: 1 }}\n          transition={{\n            duration,\n            delay: index * staggerDelay,\n            ease: \"easeOut\",\n          }}\n        >\n          {child}\n        </motion.div>\n      ))}\n    </MotionComponent>\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ]
+}

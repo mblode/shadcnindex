@@ -1,0 +1,82 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "transitions-theme-toggle-circular",
+  "type": "registry:component",
+  "title": "Theme Toggle Circular",
+  "description": "Circular ripple animation for theme toggle using View Transitions API.",
+  "dependencies": [],
+  "files": [
+    {
+      "path": "registry/new-york/animations/transitions/theme-toggle-circular.tsx",
+      "content": "\"use client\";\nimport * as React from \"react\";\nexport interface ThemeToggleCircularProps {\n  children: React.ReactNode;\n  onToggle?: () => void;\n  theme?: \"light\" | \"dark\";\n  className?: string;\n  speed?: number;\n  blur?: number;\n}\nexport function ThemeToggleCircular({\n  children,\n  onToggle,\n  theme,\n  className,\n  speed = 0.5,\n  blur = 0,\n}: ThemeToggleCircularProps) {\n  const [isTransitioning, setIsTransitioning] = React.useState(false);\n  const handleClick = async (e: React.MouseEvent<HTMLDivElement>) => {\n    if (isTransitioning) return;\n    if (!document.startViewTransition) {\n      onToggle?.();\n      return;\n    }\n    setIsTransitioning(true);\n    const x = e.clientX;\n    const y = e.clientY;\n    const isDark = document.documentElement.classList.contains(\"dark\");\n    const targetTheme = isDark ? \"to-light\" : \"to-dark\";\n    document.documentElement.style.setProperty(\"--x\", `${x}px`);\n    document.documentElement.style.setProperty(\"--y\", `${y}px`);\n    document.documentElement.style.setProperty(\n      \"--transition-speed\",\n      `${speed}s`,\n    );\n    document.documentElement.style.setProperty(\n      \"--transition-blur\",\n      `${blur}px`,\n    );\n    document.documentElement.setAttribute(\"data-theme-transition\", targetTheme);\n    try {\n      const transition = document.startViewTransition(() => {\n        onToggle?.();\n      });\n      await transition.finished;\n    } catch (error) {\n      console.error(\"Theme transition error:\", error);\n    } finally {\n      document.documentElement.removeAttribute(\"data-theme-transition\");\n      setIsTransitioning(false);\n    }\n  };\n  return (\n    <div\n      onClick={handleClick}\n      className={className}\n      style={{ pointerEvents: isTransitioning ? \"none\" : \"auto\" }}\n    >\n      {children}\n    </div>\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ],
+  "css": {
+    ":root": {
+      "--transition-speed": "0.5s",
+      "--transition-blur": "0px",
+      "--x": "50%",
+      "--y": "50%"
+    },
+    "::view-transition-group(root)": {
+      "animation": "none",
+      "isolation": "isolate",
+      "overflow": "hidden"
+    },
+    "::view-transition-image-pair(root)": {
+      "isolation": "isolate",
+      "overflow": "hidden"
+    },
+    "::view-transition-old(root), ::view-transition-new(root)": {
+      "filter": "blur(var(--transition-blur))",
+      "overflow": "hidden",
+      "backface-visibility": "hidden",
+      "contain": "paint"
+    },
+    "[data-theme-transition=\"to-dark\"]::view-transition-old(root)": {
+      "animation": "none",
+      "z-index": "-1",
+      "mix-blend-mode": "normal"
+    },
+    "[data-theme-transition=\"to-dark\"]::view-transition-new(root)": {
+      "animation": "circle var(--transition-speed) ease-in-out",
+      "will-change": "clip-path",
+      "mix-blend-mode": "normal",
+      "z-index": "1",
+      "transform": "translateZ(0)"
+    },
+    "[data-theme-transition=\"to-light\"]::view-transition-old(root)": {
+      "animation": "circle-reverse var(--transition-speed) ease-in-out",
+      "will-change": "clip-path",
+      "z-index": "1",
+      "transform": "translateZ(0)"
+    },
+    "[data-theme-transition=\"to-light\"]::view-transition-new(root)": {
+      "animation": "none",
+      "mix-blend-mode": "normal",
+      "z-index": "-1"
+    },
+    "@keyframes circle": {
+      "from": {
+        "clip-path": "circle(0% at var(--x) var(--y))"
+      },
+      "to": {
+        "clip-path": "circle(150% at var(--x) var(--y))"
+      }
+    },
+    "@keyframes circle-reverse": {
+      "from": {
+        "clip-path": "circle(150% at var(--x) var(--y))"
+      },
+      "to": {
+        "clip-path": "circle(0% at var(--x) var(--y))"
+      }
+    },
+    "@media (prefers-reduced-motion: reduce)": {
+      "::view-transition-group(*), ::view-transition-old(*), ::view-transition-new(*)": {
+        "animation": "none !important"
+      }
+    }
+  }
+}

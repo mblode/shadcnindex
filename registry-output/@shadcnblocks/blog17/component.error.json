@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "blog17",
+  "url": "https://shadcnblocks.com/r/blog17.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "blog17",
+    "type": "registry:block",
+    "title": "Blog",
+    "description": "A component showcases blog articles with filtering. Layout includes an article display area (3-column wide) and a category filter sidebar (1-column), plus introductory text. Features dynamic filtering by category.",
+    "dependencies": ["react"],
+    "registryDependencies": ["badge", "button", "separator"],
+    "files": [
+      {
+        "path": "code/block/blog17.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:14.121Z"
+}

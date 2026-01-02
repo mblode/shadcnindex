@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "hero112",
+  "url": "https://shadcnblocks.com/r/hero112.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "hero112",
+    "type": "registry:block",
+    "title": "Hero",
+    "description": "A component showcases tutorials with a video dialog, user join counter, course stats, and membership CTA. It uses a two-column layout with icons and avatars.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": ["avatar", "button", "dialog"],
+    "files": [
+      {
+        "path": "code/block/hero112.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:33.927Z"
+}

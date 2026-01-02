@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "testimonial1",
+  "url": "https://shadcnblocks.com/r/testimonial1.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "testimonial1",
+    "type": "registry:block",
+    "title": "Testimonial",
+    "description": "A testimonial block displaying client feedback with navigation buttons, responsive carousel for mobile, and a 4-column masonry layout for larger screens.",
+    "dependencies": ["lucide-react", "react-responsive-masonry"],
+    "registryDependencies": ["avatar", "badge", "button", "card", "carousel"],
+    "files": [
+      {
+        "path": "code/block/testimonial1.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:53.450Z"
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "form",
+  "type": "registry:item",
+  "title": "Form",
+  "description": "A form component for handling user input.",
+  "files": [
+    {
+      "path": "registry/brook/ui/form/form.tsx",
+      "content": "\"use client\";\n\nimport { Form } from \"@base-ui/react/form\";\nimport type React from \"react\";\nimport { cn } from \"@/lib/utils\";\nimport styles from \"./form.module.css\";\n\nfunction FormRoot({ className, ...props }: Form.Props) {\n  return <Form className={cn(styles.root, className)} {...props} />;\n}\n\nfunction FormGroup({ className, ...props }: React.ComponentProps<\"div\">) {\n  return <div className={cn(styles.formGroup, className)} {...props} />;\n}\n\nfunction FormRow({ className, ...props }: React.ComponentProps<\"div\">) {\n  return <div className={cn(styles.formRow, className)} {...props} />;\n}\n\nfunction FormActions({ className, ...props }: React.ComponentProps<\"div\">) {\n  return <div className={cn(styles.formActions, className)} {...props} />;\n}\n\nexport { FormRoot as Form, FormActions, FormGroup, FormRow };\n",
+      "type": "registry:file",
+      "target": "~/components/ui/form/form.tsx"
+    },
+    {
+      "path": "registry/brook/ui/form/form.module.css",
+      "content": ".root {\n  width: 100%;\n  margin-top: 1rem;\n}\n\n.formGroup {\n  display: flex;\n  flex-direction: column;\n  gap: 0.5rem;\n}\n\n.formRow {\n  display: flex;\n  gap: 1rem;\n  align-items: center;\n\n  @media (max-width: 640px) {\n    flex-direction: column;\n    align-items: stretch;\n  }\n}\n\n.formActions {\n  display: flex;\n  gap: 0.75rem;\n  justify-content: flex-end;\n  margin-top: 1.5rem;\n\n  @media (max-width: 640px) {\n    flex-direction: column;\n    justify-content: stretch;\n  }\n}\n",
+      "type": "registry:file",
+      "target": "~/components/ui/form/form.module.css"
+    }
+  ]
+}

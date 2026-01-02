@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature95",
+  "url": "https://shadcnblocks.com/r/feature95.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature95",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A component with a badge, a title, and a paragraph, followed by a 4-column tabbed interface that switches content views.",
+    "dependencies": ["@radix-ui/react-tabs"],
+    "registryDependencies": ["badge"],
+    "files": [
+      {
+        "path": "code/block/feature95.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:30.814Z"
+}

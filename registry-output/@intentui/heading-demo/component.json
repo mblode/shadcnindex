@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "extends": "none",
+  "name": "heading-demo",
+  "title": "Heading",
+  "description": "heading-demo",
+  "registryDependencies": ["https://intentui.com/r/heading"],
+  "files": [
+    {
+      "path": "src/components/docs/surfaces/heading/heading-demo.tsx",
+      "content": "\"use client\"\n\nimport { Heading } from \"@/components/ui/heading\"\n\nexport default function HeadingDemo() {\n  return <Heading level={2}>The quick brown fox jumps over the lazy dog</Heading>\n}\n",
+      "type": "registry:page",
+      "target": "app/heading-demo/page.tsx"
+    }
+  ],
+  "type": "registry:page"
+}

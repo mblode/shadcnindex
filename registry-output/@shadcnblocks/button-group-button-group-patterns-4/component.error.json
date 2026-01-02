@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "button-group-button-group-patterns-4",
+  "url": "https://shadcnblocks.com/r/button-group-button-group-patterns-4.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "button-group-button-group-patterns-4",
+    "type": "registry:block",
+    "title": "Button-group/button-group-patterns-",
+    "description": "A button-group/button-group-patterns- example",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["button", "button-group", "kbd"],
+    "files": [
+      {
+        "path": "code/example/button-group/button-group-patterns-4.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:15:05.151Z"
+}

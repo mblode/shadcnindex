@@ -1,0 +1,8 @@
+{
+  "name": "use-stick-to-bottom",
+  "author": "Brendan Dash (https://shadcn-hooks.vercel.app)",
+  "description": "A lightweight React Hook intended mainly for AI chat applications, for smoothly sticking to bottom of messages",
+  "dependencies": ["use-stick-to-bottom"],
+  "files": [],
+  "type": "registry:hook"
+}

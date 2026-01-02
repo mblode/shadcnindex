@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "loaders-pulse",
+  "type": "registry:component",
+  "title": "Pulse Loader",
+  "description": "Pulsing circle loader",
+  "dependencies": ["motion"],
+  "files": [
+    {
+      "path": "registry/new-york/animations/loaders/pulse.tsx",
+      "content": "\"use client\";\nimport * as React from \"react\";\nimport { motion, HTMLMotionProps } from \"motion/react\";\nimport { cn } from \"@/lib/utils\";\nexport interface LoaderPulseProps extends HTMLMotionProps<\"div\"> {\n  size?: number;\n  color?: string;\n  duration?: number;\n}\nexport function LoaderPulse({\n  className,\n  size = 60,\n  color = \"currentColor\",\n  duration = 1.5,\n  ...props\n}: LoaderPulseProps) {\n  return (\n    <motion.div\n      className={cn(\"rounded-full\", className)}\n      style={{\n        width: size,\n        height: size,\n        backgroundColor: color,\n      }}\n      animate={{\n        scale: [1, 1.2, 1],\n        opacity: [0.5, 1, 0.5],\n      }}\n      transition={{\n        duration,\n        ease: \"easeInOut\",\n        repeat: Infinity,\n      }}\n      {...props}\n    />\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ]
+}

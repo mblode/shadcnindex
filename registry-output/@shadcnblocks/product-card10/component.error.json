@@ -1,0 +1,30 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "product-card10",
+  "url": "https://shadcnblocks.com/r/product-card10.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "product-card10",
+    "type": "registry:block",
+    "title": "Product-card",
+    "description": "This component displays a product card that includes features like image galleries, stock status indicators, and a price display with sale and regular prices. It also offers functionality for selecting product variants, adding the item to a cart, and viewing quick product details through interactive buttons and tooltips.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": [
+      "https://shadcnblocks.com/r/price",
+      "aspect-ratio",
+      "badge",
+      "button",
+      "card",
+      "label",
+      "radio-group",
+      "tooltip"
+    ],
+    "files": [
+      {
+        "path": "code/block/product-card10.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:44.988Z"
+}

@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "about5",
+  "url": "https://shadcnblocks.com/r/about5.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "about5",
+    "type": "registry:block",
+    "title": "About",
+    "description": "A component showcasing an about section with a 2-column layout featuring a title, description, an image, statistics, and logos, aimed at illustrating workflow simplification by a developer-centric platform.",
+    "dependencies": [],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/about5.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:11.427Z"
+}

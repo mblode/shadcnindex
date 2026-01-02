@@ -1,0 +1,22 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "feature15",
+  "title": "Feature",
+  "description": "A component with a title/description header and a 2-column grid of features, each with icons, titles, and text.",
+  "dependencies": ["lucide-react", "clsx", "tailwind-merge"],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "code/block/feature15.tsx",
+      "content": "import {\n  Infinity as InfinityIcon,\n  MessagesSquare,\n  Zap,\n  ZoomIn,\n} from \"lucide-react\";\n\nimport { cn } from \"@/lib/utils\";\n\nconst feature = [\n  {\n    title: \"Quality\",\n    description:\n      \"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi necessitatibus, culpa at vitae molestias tenetur explicabo.\",\n    icon: <ZoomIn className=\"size-6\" />,\n  },\n  {\n    title: \"Innovation\",\n    description:\n      \"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi necessitatibus, culpa at vitae molestias tenetur explicabo.\",\n    icon: <Zap className=\"size-6\" />,\n  },\n  {\n    title: \"Customer Support\",\n    description:\n      \"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi necessitatibus, culpa at vitae molestias tenetur explicabo.\",\n    icon: <MessagesSquare className=\"size-6\" />,\n  },\n  {\n    title: \"Reliability\",\n    description:\n      \"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi necessitatibus, culpa at vitae molestias tenetur explicabo.\",\n    icon: <InfinityIcon className=\"size-6\" />,\n  },\n];\n\ninterface Feature15Props {\n  className?: string;\n}\n\nconst Feature15 = ({ className }: Feature15Props) => {\n  return (\n    <section className={cn(\"py-32\", className)}>\n      <div className=\"container\">\n        <div className=\"flex w-full flex-col items-center\">\n          <div className=\"flex flex-col items-center space-y-4 text-center sm:space-y-6 md:max-w-3xl md:text-center\">\n            <p className=\"text-sm text-muted-foreground\">WHY WE ARE UNIQUE</p>\n            <h2 className=\"text-3xl font-medium md:text-5xl\">\n              Bringing the best to you by the best in the industry\n            </h2>\n\n            <p className=\"text-muted-foreground md:max-w-2xl\">\n              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi\n              necessitatibus, culpa at vitae molestias tenetur explicabo.\n              Voluptatum amet architecto suscipit pariatur eligendi repellendus\n              mollitia dolore unde sint?\n            </p>\n          </div>\n        </div>\n        <div className=\"mx-auto mt-20 grid max-w-5xl gap-6 md:grid-cols-2\">\n          {feature.map((feature, idx) => (\n            <div\n              className=\"flex flex-col justify-between rounded-lg bg-accent p-6 md:min-h-[300px] md:p-8\"\n              key={idx}\n            >\n              <span className=\"mb-6 flex size-11 items-center justify-center rounded-full bg-background\">\n                {feature.icon}\n              </span>\n              <div>\n                <h3 className=\"text-lg font-medium md:text-2xl\">\n                  {feature.title}\n                </h3>\n                <p className=\"mt-2 text-muted-foreground\">\n                  {feature.description}\n                </p>\n              </div>\n            </div>\n          ))}\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature15 };\n",
+      "type": "registry:block"
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "content": "import { type ClassValue, clsx } from 'clsx';\nimport { twMerge } from 'tailwind-merge';\n\nexport function cn(...inputs: ClassValue[]) {\n  return twMerge(clsx(inputs));\n}\n",
+      "type": "registry:lib",
+      "target": ""
+    }
+  ],
+  "type": "registry:block"
+}

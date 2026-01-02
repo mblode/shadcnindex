@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature217b",
+  "url": "https://shadcnblocks.com/r/feature217b.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature217b",
+    "type": "registry:block",
+    "title": "Feature217b",
+    "description": "This component showcases three accessibility features with icons in a 3-column layout, including titles and summaries, against a dynamic background.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/feature217b.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:25.418Z"
+}

@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "testimonial7",
+  "url": "https://shadcnblocks.com/r/testimonial7.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "testimonial7",
+    "type": "registry:block",
+    "title": "Testimonial",
+    "description": "A component showcasing two auto-scrolling carousels of client testimonials, with avatars, names, roles, and quotes, plus a section header.",
+    "dependencies": ["embla-carousel-auto-scroll", "react"],
+    "registryDependencies": ["avatar", "button", "card", "carousel"],
+    "files": [
+      {
+        "path": "code/block/testimonial7.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:54.284Z"
+}

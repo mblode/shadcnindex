@@ -1,0 +1,25 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "navbar2",
+  "url": "https://shadcnblocks.com/r/navbar2.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "navbar2",
+    "type": "registry:block",
+    "title": "Navbar",
+    "description": "A dual-layout navigation block with dynamic accordion submenus for mobile and horizontal list for desktop, featuring authentication links and a slide-in menu.",
+    "dependencies": [
+      "@radix-ui/react-navigation-menu",
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": ["accordion", "button", "navigation-menu", "sheet"],
+    "files": [
+      {
+        "path": "code/block/navbar2.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:42.334Z"
+}

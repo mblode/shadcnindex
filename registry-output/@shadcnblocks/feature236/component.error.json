@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature236",
+  "url": "https://shadcnblocks.com/r/feature236.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature236",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "This component displays a centralized promotional message for a website builder with interactive elements, including animated buttons and dynamic borders, spanning multiple text sizes and has animated ping effects.",
+    "dependencies": ["framer-motion", "lucide-react", "react"],
+    "registryDependencies": ["https://magicui.design/r/shine-border", "button"],
+    "files": [
+      {
+        "path": "code/block/feature236.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:26.064Z"
+}

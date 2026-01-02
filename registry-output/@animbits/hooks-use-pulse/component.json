@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "hooks-use-pulse",
+  "type": "registry:lib",
+  "title": "Use Pulse",
+  "description": "The use-pulse hook.",
+  "dependencies": ["motion"],
+  "files": [
+    {
+      "path": "lib/use-pulse.ts",
+      "content": "import { type MotionProps, type Easing } from \"motion/react\";\n\nexport interface UsePulseOptions {\n  scaleFrom?: number;\n\n  scaleTo?: number;\n\n  duration?: number;\n\n  ease?: Easing | Easing[];\n\n  repeat?: number;\n\n  delay?: number;\n}\n\nexport function usePulse(options: UsePulseOptions = {}): MotionProps {\n  const {\n    scaleFrom = 1,\n    scaleTo = 1.05,\n    duration = 1,\n    ease = \"easeInOut\",\n    repeat = Infinity,\n    delay = 0,\n  } = options;\n\n  return {\n    animate: {\n      scale: [scaleFrom, scaleTo, scaleFrom],\n    },\n    transition: {\n      duration,\n      ease,\n      repeat,\n      delay,\n    },\n  };\n}\n",
+      "type": "registry:lib"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "registry": "@magicui-pro",
+  "component": "social-proof-press-2",
+  "url": "https://pro.magicui.design/registry/social-proof-press-2",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "social-proof-press-2",
+    "type": "registry:block",
+    "files": [
+      {
+        "path": "registry/blocks/social-proof-press-2.tsx",
+        "type": "registry:component"
+      }
+    ],
+    "meta": {
+      "height": 252
+    }
+  },
+  "fetchedAt": "2026-01-02T11:10:49.381Z"
+}

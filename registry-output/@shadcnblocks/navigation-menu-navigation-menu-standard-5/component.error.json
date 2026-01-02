@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "navigation-menu-navigation-menu-standard-5",
+  "url": "https://shadcnblocks.com/r/navigation-menu-navigation-menu-standard-5.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "navigation-menu-navigation-menu-standard-5",
+    "type": "registry:block",
+    "title": "Navigation-menu/navigation-menu-standard-",
+    "description": "A navigation-menu/navigation-menu-standard- example",
+    "dependencies": [],
+    "registryDependencies": ["navigation-menu"],
+    "files": [
+      {
+        "path": "code/example/navigation-menu/navigation-menu-standard-5.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:15:28.598Z"
+}

@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "hero76",
+  "url": "https://shadcnblocks.com/r/hero76.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "hero76",
+    "type": "registry:block",
+    "title": "Hero",
+    "description": "A component features a centered layout with a logo, headlining text for a UI library, descriptive subtext, and a download button, above an aspect-ratio constrained image.",
+    "dependencies": [],
+    "registryDependencies": ["aspect-ratio", "button"],
+    "files": [
+      {
+        "path": "code/block/hero76.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:39.421Z"
+}

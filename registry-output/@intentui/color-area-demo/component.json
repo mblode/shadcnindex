@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "extends": "none",
+  "name": "color-area-demo",
+  "title": "Color Area",
+  "description": "color-area-demo",
+  "registryDependencies": ["https://intentui.com/r/color-area"],
+  "files": [
+    {
+      "path": "src/components/docs/colors/color-area/color-area-demo.tsx",
+      "content": "\"use client\"\n\nimport { ColorArea } from \"@/components/ui/color-area\"\n\nexport default function ColorAreaDemo() {\n  return <ColorArea />\n}\n",
+      "type": "registry:page",
+      "target": "app/color-area-demo/page.tsx"
+    }
+  ],
+  "type": "registry:page"
+}

@@ -1,0 +1,25 @@
+{
+  "registry": "@efferd",
+  "component": "cta-9",
+  "url": "https://efferd.com/r/cta-9.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "cta-9",
+    "description": "Ethereal shadow effect with number ticker and dual action buttons.",
+    "dependencies": ["motion"],
+    "registryDependencies": ["button", "@magicui/number-ticker"],
+    "files": [
+      {
+        "path": "registry/cta/9/call-to-action.tsx",
+        "type": "registry:component"
+      },
+      {
+        "path": "registry/cta/9/etheral-shadow.tsx",
+        "type": "registry:component"
+      }
+    ],
+    "categories": ["cta"],
+    "type": "registry:block"
+  },
+  "fetchedAt": "2026-01-02T11:08:57.543Z"
+}

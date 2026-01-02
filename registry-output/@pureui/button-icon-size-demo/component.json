@@ -1,0 +1,13 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "button-icon-size-demo",
+  "type": "registry:example",
+  "registryDependencies": ["button"],
+  "files": [
+    {
+      "path": "src/registry/pure-ui/examples/button/button-icon-size-demo.tsx",
+      "content": "import { MailIcon } from \"lucide-react\";\n\nimport { Button } from \"@/registry/pure-ui/ui/button\";\n\nexport function ButtonIconSizeDemo() {\n  const iconSizes = [\"icon-sm\", \"icon\", \"icon-lg\", \"icon-xl\"] as const;\n\n  return (\n    <div className=\"flex items-center gap-5\">\n      {iconSizes.map((iconSize) => {\n        return (\n          <div key={iconSize} className=\"flex flex-col items-center gap-3\">\n            <Button variant=\"outline\" size={iconSize}>\n              <MailIcon />\n            </Button>\n\n            <span className=\"text-sm text-muted-foreground\">{iconSize}</span>\n          </div>\n        );\n      })}\n    </div>\n  );\n}\n",
+      "type": "registry:example"
+    }
+  ]
+}

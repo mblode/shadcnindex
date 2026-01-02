@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "hero8",
+  "url": "https://shadcnblocks.com/r/hero8.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "hero8",
+    "type": "registry:block",
+    "title": "Hero",
+    "description": "A centered text block with a large title, paragraph, two buttons, and a full-width image below.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["button"],
+    "files": [
+      {
+        "path": "code/block/hero8.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:39.715Z"
+}

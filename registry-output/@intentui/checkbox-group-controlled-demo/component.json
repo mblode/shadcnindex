@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "extends": "none",
+  "name": "checkbox-group-controlled-demo",
+  "title": "Checkbox Group Controlled",
+  "description": "checkbox-group-controlled-demo",
+  "registryDependencies": [
+    "https://intentui.com/r/checkbox",
+    "https://intentui.com/r/field"
+  ],
+  "files": [
+    {
+      "path": "src/components/docs/forms/checkbox/checkbox-group-controlled-demo.tsx",
+      "content": "\"use client\"\n\nimport { useState } from \"react\"\n\nimport { Checkbox, CheckboxGroup } from \"@/components/ui/checkbox\"\nimport { Description, Label } from \"@/components/ui/field\"\n\nexport default function CheckboxGroupControlledDemo() {\n  const [values, setValues] = useState<string[]>([])\n  return (\n    <>\n      <CheckboxGroup value={values} onChange={setValues}>\n        <Label>Options</Label>\n        <Checkbox value=\"sound\">Sound</Checkbox>\n        <Checkbox value=\"wifi\">Wi-Fi</Checkbox>\n        <Checkbox value=\"sync\">Sync</Checkbox>\n      </CheckboxGroup>\n\n      <Description className=\"mt-2 flex h-10 flex-col gap-y-1 [&>strong]:font-medium [&>strong]:text-fg\">\n        {values.length > 0 ? (\n          <>\n            Selected values <strong className=\"font-medium\">{values.join(\", \")}</strong>\n          </>\n        ) : (\n          \"No values selected\"\n        )}\n      </Description>\n    </>\n  )\n}\n",
+      "type": "registry:page",
+      "target": "app/checkbox-group-controlled-demo/page.tsx"
+    }
+  ],
+  "type": "registry:page"
+}

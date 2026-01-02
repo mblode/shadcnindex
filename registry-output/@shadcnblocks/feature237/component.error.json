@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature237",
+  "url": "https://shadcnblocks.com/r/feature237.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature237",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "This component displays a grid of cards detailing system features, each with metrics, status, and deployment info. Two-column layout on medium screens.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/feature237.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:26.082Z"
+}

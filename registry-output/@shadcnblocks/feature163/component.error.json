@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature163",
+  "url": "https://shadcnblocks.com/r/feature163.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature163",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A component with a 5-column grid layout, featuring 4 blocks each with text, images, and varying column spans. Unique rounded image integration.",
+    "dependencies": [],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/feature163.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:23.166Z"
+}

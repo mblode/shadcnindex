@@ -1,0 +1,36 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "product-detail3",
+  "url": "https://shadcnblocks.com/r/product-detail3.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "product-detail3",
+    "type": "registry:block",
+    "title": "Product-detail",
+    "description": "This component provides a detailed layout for showcasing a product with an interactive image carousel, customizable options for color, size, and quantity, and options to add the product to a cart or purchase it immediately. It features elements such as a title and description, a pricing display, and form controls to update product specifications, making it ideal for integrating into an e-commerce platform to facilitate product browsing and purchasing.",
+    "dependencies": [
+      "@hookform/resolvers",
+      "lucide-react",
+      "photoswipe",
+      "react",
+      "react-hook-form",
+      "zod"
+    ],
+    "registryDependencies": [
+      "aspect-ratio",
+      "badge",
+      "button",
+      "carousel",
+      "form",
+      "input",
+      "radio-group"
+    ],
+    "files": [
+      {
+        "path": "code/block/product-detail3.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:45.571Z"
+}

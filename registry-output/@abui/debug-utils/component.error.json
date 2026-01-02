@@ -1,0 +1,36 @@
+{
+  "registry": "@abui",
+  "component": "debug-utils",
+  "url": "https://abui.io/r/debug-utils.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "debug-utils",
+    "type": "registry:style",
+    "title": "Debug Utils",
+    "description": "A set of debug utility classes.",
+    "css": {
+      "@utility debug-red": {
+        "border": "1px dashed red"
+      },
+      "@utility debug-blue": {
+        "border": "1px dashed blue"
+      },
+      "@utility debug-green": {
+        "border": "1px dashed green"
+      },
+      "@utility debug-yellow": {
+        "border": "1px dashed yellow"
+      },
+      "@utility debug-purple": {
+        "border": "1px dashed purple"
+      },
+      "@utility debug-orange": {
+        "border": "1px dashed orange"
+      },
+      "@utility debug-pink": {
+        "border": "1px dashed pink"
+      }
+    }
+  },
+  "fetchedAt": "2026-01-02T11:07:00.214Z"
+}

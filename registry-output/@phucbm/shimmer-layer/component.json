@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "shimmer-layer",
+  "type": "registry:component",
+  "title": "Shimmer Layer",
+  "description": "Pure CSS to add an animated shimmer effect that activates on hover.",
+  "dependencies": [],
+  "files": [
+    {
+      "path": "registry/phucbm/blocks/shimmer-layer/shimmer-layer.tsx",
+      "content": "export interface ShimmerLayerProps {\n    /** Width of each shine stripe in pixels. @default 10 */\n    width?: number;\n    /** Skew angle of the shine effect in degrees. @default -12 */\n    skew?: number;\n    /** Duration of the shine animation in milliseconds. @default 650 */\n    duration?: number;\n    /** Color of the shine effect. @default \"#fff\" */\n    color?: string;\n}\n\nexport function ShimmerLayer({\n                                 width = 10,\n                                 skew = -12,\n                                 duration = 650,\n                                 color = '#fff'\n                             }: ShimmerLayerProps) {\n    return (\n        <>\n            <style>{`\n                @keyframes shine {\n                    0% {\n                        right:100%; left:auto; opacity:0;\n                    }\n                    50% {\n                       opacity:0.4;\n                    }\n                    to {\n                       right:-100%; left:auto; opacity:0;\n                    }\n                }\n            `}</style>\n\n            <i className=\"absolute top-1/2 right-full h-[150%] z-20 pointer-events-none opacity-0 blur-lg\n            group-hover/shimmer:[animation:shine_600ms_ease-in-out]\n            \"\n               style={{\n                   width: `${width * 4}px`,\n                   transform: `translate(-50%,-50%) skewX(${skew}deg)`,\n                   background: `repeating-linear-gradient(to right, ${color}, ${color} ${width}px, transparent ${width}px, transparent ${width * 2.5}px)`,\n                   animationDuration: `${duration}ms`\n               }}\n            >\n            </i>\n        </>\n    );\n}",
+      "type": "registry:component",
+      "target": "components/phucbm/shimmer-layer.tsx"
+    }
+  ]
+}

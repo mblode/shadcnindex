@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "gallery12",
+  "url": "https://shadcnblocks.com/r/gallery12.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "gallery12",
+    "type": "registry:block",
+    "title": "Gallery",
+    "description": "A component displaying a carousel of features with images, titles, and descriptions, navigable via prev/next buttons. It includes a heading and subtext above the carousel.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": ["button", "carousel"],
+    "files": [
+      {
+        "path": "code/block/gallery12.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:32.191Z"
+}

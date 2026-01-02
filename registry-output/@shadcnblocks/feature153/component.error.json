@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature153",
+  "url": "https://shadcnblocks.com/r/feature153.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature153",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A carousel component displaying key features of various platforms, allowing users to navigate through items with previous and next buttons. Each item presents an image, title, description, and a list of detailed info.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": ["carousel"],
+    "files": [
+      {
+        "path": "code/block/feature153.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:22.740Z"
+}

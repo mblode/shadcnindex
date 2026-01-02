@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "background-pattern31",
+  "url": "https://shadcnblocks.com/r/background-pattern31.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "background-pattern31",
+    "type": "registry:block",
+    "title": "Background-pattern",
+    "description": "This component renders a full-screen background featuring a circuit board pattern using CSS gradients, ideal for creating a visually engaging backdrop. It includes the ability to integrate additional styles through a customizable className property and incorporates a pattern placeholder for potential content.",
+    "dependencies": [],
+    "registryDependencies": ["https://shadcnblocks.com/r/pattern-placeholder"],
+    "files": [
+      {
+        "path": "code/block/background-pattern31.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:13.032Z"
+}

@@ -1,0 +1,13 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "button-group-select-demo",
+  "type": "registry:example",
+  "registryDependencies": ["button-group"],
+  "files": [
+    {
+      "path": "src/registry/pure-ui/examples/button-group/button-group-select-demo.tsx",
+      "content": "\"use client\";\n\nimport * as React from \"react\";\nimport { ArrowRightIcon, ChevronsUpDownIcon } from \"lucide-react\";\n\nimport { Button } from \"@/registry/pure-ui/ui/button\";\nimport { ButtonGroup } from \"@/registry/pure-ui/ui/button-group\";\nimport { Input } from \"@/registry/pure-ui/ui/input\";\nimport {\n  Select,\n  SelectPopup,\n  SelectItem,\n  SelectTrigger,\n  SelectValue,\n  SelectList,\n  SelectIcon,\n} from \"@/registry/pure-ui/ui/select\";\n\ninterface Currency {\n  value: string;\n  label: string;\n}\n\nconst CURRENCIES = [\n  {\n    value: \"$\",\n    label: \"US Dollar\",\n  },\n  {\n    value: \"€\",\n    label: \"Euro\",\n  },\n  {\n    value: \"£\",\n    label: \"British Pound\",\n  },\n];\n\nexport function ButtonGroupSelectDemo() {\n  return (\n    <ButtonGroup>\n      <ButtonGroup>\n        <Select\n          defaultValue={CURRENCIES[0]}\n          itemToStringValue={(currency) => (currency as Currency)?.value}\n        >\n          <SelectTrigger className=\"w-fit min-w-none\">\n            <SelectValue>{(currency: Currency) => currency.value}</SelectValue>\n            <SelectIcon>\n              <ChevronsUpDownIcon className=\"size-3.5\" />\n            </SelectIcon>\n          </SelectTrigger>\n          <SelectPopup className=\"min-w-48\" alignItemWithTrigger>\n            <SelectList>\n              {CURRENCIES.map((curr) => (\n                <SelectItem key={curr.value} value={curr}>\n                  {curr.value}{\" \"}\n                  <span className=\"text-muted-foreground\">{curr.label}</span>\n                </SelectItem>\n              ))}\n            </SelectList>\n          </SelectPopup>\n        </Select>\n        <Input placeholder=\"10.00\" pattern=\"[0-9]*\" />\n      </ButtonGroup>\n      <ButtonGroup>\n        <Button aria-label=\"Send\" size=\"icon\" variant=\"outline\">\n          <ArrowRightIcon />\n        </Button>\n      </ButtonGroup>\n    </ButtonGroup>\n  );\n}\n",
+      "type": "registry:example"
+    }
+  ]
+}

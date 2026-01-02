@@ -1,0 +1,13 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "menu-checkboxes-demo",
+  "type": "registry:example",
+  "registryDependencies": ["menu"],
+  "files": [
+    {
+      "path": "src/registry/pure-ui/examples/menu/menu-checkboxes-demo.tsx",
+      "content": "\"use client\";\n\nimport { useState } from \"react\";\n\nimport { Button } from \"@/registry/pure-ui/ui/button\";\nimport {\n  Menu,\n  MenuTrigger,\n  MenuPopup,\n  MenuItem,\n  MenuSeparator,\n  MenuCheckboxItem,\n  MenuGroup,\n  MenuSub,\n  MenuSubTrigger,\n  MenuSubPopup,\n  MenuLabel,\n} from \"@/registry/pure-ui/ui/menu\";\n\nexport const MenuCheckboxesDemo = () => {\n  const [open, setOpen] = useState(false);\n  const [showStatusBar, setShowStatusBar] = useState(true);\n  const [showPanel, setShowPanel] = useState(false);\n\n  return (\n    <Menu open={open} onOpenChange={setOpen}>\n      <MenuTrigger render={<Button variant=\"outline\" />}>\n        <span>Open</span>\n      </MenuTrigger>\n      <MenuPopup className=\"w-56\" align=\"center\">\n        <MenuLabel>My Account</MenuLabel>\n        <MenuGroup>\n          <MenuItem onSelect={(event) => event.preventDefault()}>\n            Profile\n          </MenuItem>\n        </MenuGroup>\n        <MenuSeparator />\n        <MenuSub>\n          <MenuSubTrigger>Appearance</MenuSubTrigger>\n          <MenuSubPopup>\n            <MenuCheckboxItem\n              checked={showStatusBar}\n              onCheckedChange={(checked) => setShowStatusBar(checked)}\n              onSelect={(event) => event.preventDefault()}\n            >\n              Status Bar\n            </MenuCheckboxItem>\n            <MenuCheckboxItem\n              checked={showPanel}\n              onCheckedChange={(checked) => setShowPanel(checked)}\n              onSelect={(event) => event.preventDefault()}\n            >\n              Panel\n            </MenuCheckboxItem>\n          </MenuSubPopup>\n        </MenuSub>\n      </MenuPopup>\n    </Menu>\n  );\n};\n",
+      "type": "registry:example"
+    }
+  ]
+}

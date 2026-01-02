@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature81",
+  "url": "https://shadcnblocks.com/r/feature81.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature81",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A component showcasing a feature group with a tagline, title, and description. Includes a 4-column grid with clickable images and \"Read more\" links.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/feature81.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:30.301Z"
+}

@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "project5f",
+  "url": "https://shadcnblocks.com/r/project5f.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "project5f",
+    "type": "registry:block",
+    "title": "Project5f",
+    "description": "A component displaying an art piece description, details, and images in a 2-column layout with fading animations and a booking button.",
+    "dependencies": ["framer-motion"],
+    "registryDependencies": ["button"],
+    "files": [
+      {
+        "path": "code/block/project5f.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:47.460Z"
+}

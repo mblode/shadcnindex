@@ -1,0 +1,21 @@
+{
+  "registry": "@efferd",
+  "component": "cta-15",
+  "url": "https://efferd.com/r/cta-15.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "cta-15",
+    "description": "Open-source showcase with animated notification cards and GitHub link.",
+    "dependencies": ["motion"],
+    "registryDependencies": ["button"],
+    "files": [
+      {
+        "path": "registry/cta/15/call-to-action.tsx",
+        "type": "registry:component"
+      }
+    ],
+    "categories": ["cta"],
+    "type": "registry:block"
+  },
+  "fetchedAt": "2026-01-02T11:08:57.765Z"
+}

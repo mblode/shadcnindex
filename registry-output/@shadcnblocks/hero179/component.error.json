@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "hero179",
+  "url": "https://shadcnblocks.com/r/hero179.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "hero179",
+    "type": "registry:block",
+    "title": "Hero",
+    "description": "A component with a 2-column layout. The left column contains text layers, and the right has overlapping images with unique aspect ratios.",
+    "dependencies": [],
+    "registryDependencies": ["aspect-ratio"],
+    "files": [
+      {
+        "path": "code/block/hero179.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:35.381Z"
+}

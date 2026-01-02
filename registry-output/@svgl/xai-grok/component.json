@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "xai-grok",
+  "title": "xai-grok",
+  "files": [
+    {
+      "path": "././static/components-generated/xaiLight.tsx",
+      "content": "import type { SVGProps } from \"react\";\n\nconst XaiLight = (props: SVGProps<SVGSVGElement>) => (\n  <svg {...props} xmlSpace=\"preserve\" viewBox=\"0 0 841.89 595.28\">\n    <path d=\"m557.09 211.99 8.31 326.37h66.56l8.32-445.18zM640.28 56.91H538.72L379.35 284.53l50.78 72.52zM201.61 538.36h101.56l50.79-72.52-50.79-72.53zM201.61 211.99l228.52 326.37h101.56L303.17 211.99z\" />\n  </svg>\n);\n\nexport { XaiLight };\n",
+      "type": "registry:component",
+      "target": "components/ui/svgs/xaiLight.tsx"
+    },
+    {
+      "path": "././static/components-generated/xaiDark.tsx",
+      "content": "import type { SVGProps } from \"react\";\n\nconst XaiDark = (props: SVGProps<SVGSVGElement>) => (\n  <svg {...props} xmlSpace=\"preserve\" fill=\"#ffff\" viewBox=\"0 0 841.89 595.28\">\n    <path d=\"m557.09 211.99 8.31 326.37h66.56l8.32-445.18zM640.28 56.91H538.72L379.35 284.53l50.78 72.52zM201.61 538.36h101.56l50.79-72.52-50.79-72.53zM201.61 211.99l228.52 326.37h101.56L303.17 211.99z\" />\n  </svg>\n);\n\nexport { XaiDark };\n",
+      "type": "registry:component",
+      "target": "components/ui/svgs/xaiDark.tsx"
+    }
+  ],
+  "type": "registry:component"
+}

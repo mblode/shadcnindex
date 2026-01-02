@@ -1,0 +1,22 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "rating",
+  "title": "Rating",
+  "description": "A rating component",
+  "dependencies": ["lucide-react", "clsx", "tailwind-merge"],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "code/component/rating.tsx",
+      "content": "\"use client\";\n\nimport { Star, StarHalf } from \"lucide-react\";\n\nimport { cn } from \"@/lib/utils\";\n\nconst MAX_STARS = 5;\n\ninterface RatingProps {\n  rate: number;\n  className?: string;\n}\n\nconst Rating = ({ rate, className }: RatingProps) => {\n  if (!rate) return;\n\n  const renderStars = () => {\n    const fullStars = Math.floor(rate);\n    const hasHalfStar = rate % 1 >= 0.5;\n    const emptyStars = MAX_STARS - fullStars - (hasHalfStar ? 1 : 0);\n\n    const stars = [];\n\n    for (let i = 0; i < fullStars; i++) {\n      stars.push(\n        <Star\n          key={`rating-star-full-${i}`}\n          className=\"fill-foreground stroke-foreground\"\n        />,\n      );\n    }\n\n    if (hasHalfStar) {\n      stars.push(\n        <div key=\"rating-half-star\" className=\"relative\">\n          <StarHalf className=\"absolute top-0 right-0 fill-foreground stroke-foreground\" />\n          <StarHalf className=\"absolute top-0 left-0 -scale-x-100 fill-foreground/15 stroke-foreground/15\" />\n        </div>,\n      );\n    }\n\n    for (let i = 0; i < emptyStars; i++) {\n      stars.push(\n        <Star\n          key={`rating-star-empty-${i}`}\n          className=\"fill-foreground/15 stroke-foreground/15\"\n        />,\n      );\n    }\n\n    return stars;\n  };\n\n  return (\n    <div\n      className={cn(\n        \"flex items-center gap-1 [&_svg]:size-5 [&>div]:size-5\",\n        className,\n      )}\n    >\n      {renderStars()}\n    </div>\n  );\n};\n\nexport { Rating };\n",
+      "type": "registry:component"
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "content": "import { type ClassValue, clsx } from 'clsx';\nimport { twMerge } from 'tailwind-merge';\n\nexport function cn(...inputs: ClassValue[]) {\n  return twMerge(clsx(inputs));\n}\n",
+      "type": "registry:lib",
+      "target": ""
+    }
+  ],
+  "type": "registry:component"
+}

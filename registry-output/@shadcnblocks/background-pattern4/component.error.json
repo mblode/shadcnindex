@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "background-pattern4",
+  "url": "https://shadcnblocks.com/r/background-pattern4.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "background-pattern4",
+    "type": "registry:block",
+    "title": "Background-pattern",
+    "description": "This component creates a full-screen background with a diagonal fade grid pattern using CSS gradients and masking techniques. It allows for additional styling through an optional className prop and includes a placeholder for pattern customization.",
+    "dependencies": [],
+    "registryDependencies": ["https://shadcnblocks.com/r/pattern-placeholder"],
+    "files": [
+      {
+        "path": "code/block/background-pattern4.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:13.385Z"
+}

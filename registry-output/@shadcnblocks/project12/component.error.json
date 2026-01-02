@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "project12",
+  "url": "https://shadcnblocks.com/r/project12.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "project12",
+    "type": "registry:block",
+    "title": "Project",
+    "description": "A component with dynamic text animations, back button, detailed project information, and a large image; layout includes columns with animations for elements.",
+    "dependencies": ["lucide-react", "motion"],
+    "registryDependencies": ["button"],
+    "files": [
+      {
+        "path": "code/block/project12.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:46.665Z"
+}

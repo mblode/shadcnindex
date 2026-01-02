@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "blogpost7",
+  "url": "https://shadcnblocks.com/r/blogpost7.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "blogpost7",
+    "type": "registry:block",
+    "title": "Blogpost",
+    "description": "This component displays a blog post layout with animated transitions for various elements such as the title, author information, and descriptions. It features an image, a publication date, content descriptions, and an author's avatar with details, making it suitable for showcasing articles or stories.",
+    "dependencies": ["framer-motion"],
+    "registryDependencies": ["avatar", "separator"],
+    "files": [
+      {
+        "path": "code/block/blogpost7.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:15.052Z"
+}

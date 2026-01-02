@@ -1,0 +1,26 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "hero196",
+  "url": "https://shadcnblocks.com/r/hero196.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "hero196",
+    "type": "registry:block",
+    "title": "Hero",
+    "description": "A component with an email form, announcement badge, headline, descriptive text, and a tabbed interface showcasing features through icons and images.",
+    "dependencies": [
+      "@hookform/resolvers",
+      "lucide-react",
+      "react-hook-form",
+      "zod"
+    ],
+    "registryDependencies": ["badge", "button", "form", "input", "tabs"],
+    "files": [
+      {
+        "path": "code/block/hero196.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:35.863Z"
+}

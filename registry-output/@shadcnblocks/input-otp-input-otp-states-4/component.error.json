@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "input-otp-input-otp-states-4",
+  "url": "https://shadcnblocks.com/r/input-otp-input-otp-states-4.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "input-otp-input-otp-states-4",
+    "type": "registry:block",
+    "title": "Input-otp/input-otp-states-",
+    "description": "A input-otp/input-otp-states- example",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": ["input-otp"],
+    "files": [
+      {
+        "path": "code/example/input-otp/input-otp-states-4.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:15:25.038Z"
+}

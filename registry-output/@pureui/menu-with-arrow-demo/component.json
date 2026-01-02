@@ -1,0 +1,13 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "menu-with-arrow-demo",
+  "type": "registry:example",
+  "registryDependencies": ["menu"],
+  "files": [
+    {
+      "path": "src/registry/pure-ui/examples/menu/menu-with-arrow-demo.tsx",
+      "content": "\"use client\";\n\nimport {\n  LayoutGridIcon,\n  TrashIcon,\n  Building2,\n  UserCircleIcon,\n  BellIcon,\n  SettingsIcon,\n  LogOutIcon,\n} from \"lucide-react\";\n\nimport {\n  MenuTrigger,\n  Menu,\n  MenuPopup,\n  MenuItem,\n  MenuSeparator,\n  MenuShortcut,\n} from \"@/registry/pure-ui/ui/menu\";\nimport { Button } from \"@/registry/pure-ui/ui/button\";\n\nimport { cn } from \"@/lib/classes\";\n\nconst MENU_ITEMS = [\n  { icon: <UserCircleIcon size={16} />, name: \"Profile\", shortcut: \"⌘P\" },\n  { icon: <LayoutGridIcon size={16} />, name: \"Applications\", shortcut: \"⌘A\" },\n  { icon: <Building2 size={16} />, name: \"Teams\", shortcut: \"⌘T\" },\n  { icon: <BellIcon size={16} />, name: \"Notifications\", shortcut: \"⌘N\" },\n];\n\nconst DANGER_ITEMS = [\n  {\n    icon: <LogOutIcon size={16} />,\n    name: \"Sign out\",\n    className: \"text-muted-foreground hover:text-foreground\",\n  },\n  {\n    icon: <TrashIcon size={16} />,\n    name: \"Delete account\",\n    className:\n      \"text-red-400 data-highlighted:before:bg-red-500/20! data-highlighted:text-red-400! data-highlighted:before:border-red-400/30!\",\n  },\n];\n\nexport const MenuWithArrowDemo = () => {\n  return (\n    <Menu>\n      <MenuTrigger\n        render={\n          <Button\n            variant=\"ghost\"\n            className=\"flex items-center gap-2 active:scale-100\"\n            size=\"sm\"\n          />\n        }\n      >\n        <SettingsIcon size={16} />\n        <span className=\"text-sm\">Account settings</span>\n      </MenuTrigger>\n      <MenuPopup showArrow sideOffset={8} className=\"w-56\">\n        {MENU_ITEMS.map(({ icon, name, shortcut }, index) => (\n          <MenuItem key={index} className=\"cursor-pointer\">\n            <div className=\"flex items-center gap-3 w-full\">\n              {icon}\n              <span className=\"flex-1\">{name}</span>\n              <MenuShortcut>{shortcut}</MenuShortcut>\n            </div>\n          </MenuItem>\n        ))}\n        <MenuSeparator />\n        {DANGER_ITEMS.map(({ icon, name, className }, index) => (\n          <MenuItem key={index} className={cn(\"cursor-pointer\", className)}>\n            <div className=\"flex items-center gap-3\">\n              {icon}\n              <span>{name}</span>\n            </div>\n          </MenuItem>\n        ))}\n      </MenuPopup>\n    </Menu>\n  );\n};\n",
+      "type": "registry:example"
+    }
+  ]
+}

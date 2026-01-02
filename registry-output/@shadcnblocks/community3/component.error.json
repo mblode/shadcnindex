@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "community3",
+  "url": "https://shadcnblocks.com/r/community3.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "community3",
+    "type": "registry:block",
+    "title": "Community",
+    "description": "A component showcasing a community invitation with social icons, descriptions, and a 1-3 column layout of cards for different platforms.",
+    "dependencies": ["lucide-react", "react-icons"],
+    "registryDependencies": ["badge", "card"],
+    "files": [
+      {
+        "path": "code/block/community3.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:16.478Z"
+}

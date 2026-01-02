@@ -1,0 +1,14 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "switch",
+  "type": "registry:ui",
+  "dependencies": ["@radix-ui/react-switch"],
+  "files": [
+    {
+      "path": "components/ha-ui/ui/switch.tsx",
+      "content": "\"use client\";\n\nimport * as React from \"react\";\nimport * as SwitchPrimitive from \"@radix-ui/react-switch\";\n\nimport { cn } from \"@/lib/utils\";\n\nfunction Switch({ className, style, ...props }: React.ComponentProps<typeof SwitchPrimitive.Root>) {\n    const defaultStyle: React.CSSProperties = {\n        \"--switch-width\": \"4rem\",\n        \"--switch-height\": \"calc(var(--switch-width) * (23 / 40))\",\n        \"--switch-padding\": \"1px\", // always set as a whole number to prevent visual bugs\n        \"--switch-thumb-size\": \"calc(var(--switch-height) - 2 * var(--switch-padding))\",\n        \"--switch-thumb-travel\": \"calc(var(--switch-width) - 2 * var(--switch-padding) - var(--switch-thumb-size))\",\n    } as React.CSSProperties;\n\n    const mergedStyle = { ...defaultStyle, ...(style as React.CSSProperties | undefined) } as React.CSSProperties;\n    return (\n        <SwitchPrimitive.Root\n            style={mergedStyle}\n            data-slot=\"switch\"\n            className={cn(\n                \"peer data-[state=checked]:bg-primary data-[state=unchecked]:bg-input focus-visible:border-ring focus-visible:ring-ring/50 dark:data-[state=unchecked]:bg-input/80 inline-flex h-(--switch-height) w-(--switch-width) shrink-0 items-center rounded-full border-(length:--switch-padding) border-transparent shadow-xs transition-all outline-none focus-visible:ring-[3px] disabled:cursor-not-allowed disabled:opacity-50\",\n                className,\n            )}\n            {...props}\n        >\n            <SwitchPrimitive.Thumb\n                data-slot=\"switch-thumb\"\n                className={cn(\n                    \"data-[state=checked]:bg-background dark:data-[state=unchecked]:bg-foreground dark:data-[state=checked]:bg-primary-foreground pointer-events-none block size-(--switch-thumb-size) rounded-full ring-0 transition-transform data-[state=checked]:translate-x-(--switch-thumb-travel) data-[state=unchecked]:translate-x-0 data-[state=unchecked]:bg-indigo-950 rtl:data-[state=checked]:-translate-x-(--switch-thumb-travel)\",\n                )}\n            />\n        </SwitchPrimitive.Root>\n    );\n}\n\nexport { Switch };\n",
+      "type": "registry:component",
+      "target": "components/ha-ui/ui/switch.tsx"
+    }
+  ]
+}

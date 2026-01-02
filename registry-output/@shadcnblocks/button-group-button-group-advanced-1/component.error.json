@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "button-group-button-group-advanced-1",
+  "url": "https://shadcnblocks.com/r/button-group-button-group-advanced-1.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "button-group-button-group-advanced-1",
+    "type": "registry:block",
+    "title": "Button-group/button-group-advanced-",
+    "description": "A button-group/button-group-advanced- example",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["button", "button-group", "dropdown-menu"],
+    "files": [
+      {
+        "path": "code/example/button-group/button-group-advanced-1.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:15:04.133Z"
+}

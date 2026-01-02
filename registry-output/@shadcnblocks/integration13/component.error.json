@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "integration13",
+  "url": "https://shadcnblocks.com/r/integration13.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "integration13",
+    "type": "registry:block",
+    "title": "Integration",
+    "description": "A component showcasing a collection of integrations with iconic apps, featuring hover-activated animation for emphasis and links for more details.",
+    "dependencies": ["framer-motion", "react"],
+    "registryDependencies": ["button"],
+    "files": [
+      {
+        "path": "code/block/integration13.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:40.743Z"
+}

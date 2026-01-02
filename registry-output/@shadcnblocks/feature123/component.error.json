@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature123",
+  "url": "https://shadcnblocks.com/r/feature123.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature123",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A component with a title and text block on one side, and a column of features with titles and descriptions on the other. Features highlighted by a color gradient bar.",
+    "dependencies": [],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/feature123.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:21.612Z"
+}

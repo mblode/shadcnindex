@@ -1,0 +1,22 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "text-ripple",
+  "type": "registry:component",
+  "title": "Text Ripple",
+  "description": "Mouse-tracked ripple effect applied to headline text.",
+  "dependencies": [
+    "gsap",
+    "react",
+    "@gsap/react",
+    "normalized-mouse-position",
+    "@phucbm/ripple-effect"
+  ],
+  "files": [
+    {
+      "path": "registry/phucbm/blocks/text-ripple/text-ripple.tsx",
+      "content": "\"use client\";\n\nimport gsap from \"gsap\";\nimport Observer from \"gsap/Observer\";\nimport {useRef} from \"react\";\nimport {useGSAP} from \"@gsap/react\";\nimport {getNormalizedMousePosition} from \"normalized-mouse-position\";\nimport {applyRippleEffect} from \"@phucbm/ripple-effect\";\n\ngsap.registerPlugin(Observer);\n\nexport type TextRippleProps = {\n    /** Top line text (split into characters). @default \"technical.architect\" */\n    line1?: string;\n    /** Bottom line text (split into characters). @default \"creative.developer\" */\n    line2?: string;\n    /** Optional extra classes applied to the wrapper */\n    className?: string;\n};\n\nexport function TextRipple({line1 = \"technical.architect\", line2 = \"creative.developer\", className}: TextRippleProps) {\n    const scope = useRef<HTMLDivElement | null>(null);\n\n    useGSAP(\n        () => {\n            const root = scope.current;\n            if (!root) return;\n\n            const line1 = root.querySelectorAll(\".hero-heading.is-top\");\n            const line2 = root.querySelectorAll(\".hero-heading.is-bottom\");\n            const n = Math.max(line1.length, line2.length);\n            if (!n) return;\n\n            const getAreaIndex = (x: number, num: number) =>\n                Math.min(Math.floor(Math.max(0, Math.min(1, x)) * num), num - 1);\n\n            const observer = Observer.create({\n                target: window,\n                type: \"pointer\",\n                onMove: ({x = 0, y = 0}) => {\n                    const pos = getNormalizedMousePosition({x, y, origin: \"0% 50%\"});\n                    const center = getAreaIndex(pos.x, n);\n\n                    const anim = (val: number, i: number) => {\n                        const s = 1 + val * 2.5 * Math.abs(pos.y);\n                        gsap.to([line1[i], line2[i]].filter(Boolean), {scaleY: s, duration: 0.2, overwrite: \"auto\"});\n                    };\n\n                    applyRippleEffect({\n                        length: n,\n                        centerIndex: center,\n                        rippleRadius: 6,\n                        callback: anim,\n                    });\n                },\n            });\n\n            return () => observer.kill();\n        },\n        {scope}\n    );\n\n    return (\n        <div\n            ref={scope}\n            className={`flex flex-col items-center justify-center w-full overflow-hidden\n            font-bold leading-[0.7em] uppercase\n         \n            h-[300px]\n            text-[30px] md:text-[60px] xl:text-[100px]\n            gap-2 md:gap-4\n         \n          ${className}\n         `}\n        >\n            <div className=\"flex\">\n                {line1.split(\"\").map((char, i) => (\n                    <div key={`t-${i}`} className=\"hero-heading is-top text-[#06f] origin-bottom\">\n                        {char}\n                    </div>\n                ))}\n            </div>\n\n            <div className=\"flex\">\n                {line2.split(\"\").map((char, i) => (\n                    <div key={`c-${i}`} className=\"hero-heading is-bottom text-[#0f8] origin-top\">\n                        {char}\n                    </div>\n                ))}\n            </div>\n        </div>\n    );\n}",
+      "type": "registry:component",
+      "target": "components/phucbm/text-ripple.tsx"
+    }
+  ]
+}

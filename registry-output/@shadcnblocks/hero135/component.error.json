@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "hero135",
+  "url": "https://shadcnblocks.com/r/hero135.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "hero135",
+    "type": "registry:block",
+    "title": "Hero",
+    "description": "A component with a section for customer stories and a video. It has a 2-column layout with text-badges, headlines, paragraphs, and a play button overlaying a looped video. A dialog for fullscreen video playback is included.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": ["aspect-ratio", "button", "dialog"],
+    "files": [
+      {
+        "path": "code/block/hero135.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:34.223Z"
+}

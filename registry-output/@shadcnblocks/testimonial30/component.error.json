@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "testimonial30",
+  "url": "https://shadcnblocks.com/r/testimonial30.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "testimonial30",
+    "type": "registry:block",
+    "title": "Testimonial",
+    "description": "Dynamic slideshow component with auto-rotating testimonials, accented by logos and avatars. Features accordion items for detailed views, automated progress bars, and a call-to-action button.",
+    "dependencies": ["react"],
+    "registryDependencies": ["accordion", "button", "progress"],
+    "files": [
+      {
+        "path": "code/block/testimonial30.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:54.177Z"
+}

@@ -1,0 +1,27 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "emoji-picker-emoji-picker-in-form",
+  "url": "https://shadcnblocks.com/r/emoji-picker-emoji-picker-in-form.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "emoji-picker-emoji-picker-in-form",
+    "type": "registry:block",
+    "title": "Emoji-picker/emoji-picker-in-form",
+    "description": "A emoji-picker/emoji-picker-in-form example",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": [
+      "https://shadcnblocks.com/r/emoji-picker",
+      "button",
+      "input",
+      "label",
+      "textarea"
+    ],
+    "files": [
+      {
+        "path": "code/example/emoji-picker/emoji-picker-in-form.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:15:17.167Z"
+}

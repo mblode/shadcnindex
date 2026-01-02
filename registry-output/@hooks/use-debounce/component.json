@@ -1,0 +1,14 @@
+{
+  "name": "use-debounce",
+  "author": "Brendan Dash (https://shadcn-hooks.vercel.app)",
+  "description": "A hook to debounce a value",
+  "registryDependencies": ["@hooks/use-debounce-fn"],
+  "files": [
+    {
+      "path": "registry/hooks/use-debounce.ts",
+      "content": "import { useEffect, useState } from 'react'\nimport { useDebounceFn } from '@/registry/hooks/use-debounce-fn'\nimport type { DebounceOptions } from '@/registry/hooks/use-debounce-fn'\n\nexport function useDebounce<T>(\n  value: T,\n  debounceMs?: number,\n  options?: DebounceOptions,\n) {\n  const [debouncedValue, setDebouncedValue] = useState<T>(value)\n\n  const { run } = useDebounceFn(\n    () => {\n      setDebouncedValue(value)\n    },\n    debounceMs,\n    options,\n  )\n\n  useEffect(() => {\n    return run()\n  }, [value, run])\n\n  return debouncedValue\n}\n",
+      "type": "registry:hook"
+    }
+  ],
+  "type": "registry:hook"
+}

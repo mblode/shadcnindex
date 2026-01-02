@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature241",
+  "url": "https://shadcnblocks.com/r/feature241.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature241",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A component displaying a header and a grid of cards, each with an icon, title, and description about team features. Grid has 2 columns. Cards animate on hover.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": ["card"],
+    "files": [
+      {
+        "path": "code/block/feature241.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:26.326Z"
+}

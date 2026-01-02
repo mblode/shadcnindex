@@ -1,0 +1,27 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "product-list2",
+  "url": "https://shadcnblocks.com/r/product-list2.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "product-list2",
+    "type": "registry:block",
+    "title": "Product-list",
+    "description": "This component is designed to display a list of product cards, each containing details such as the product image, name, description, pricing, and an optional badge. It features a grid layout to organize multiple product listings, with each card providing an \"Add to cart\" button for quick shopping actions.",
+    "dependencies": [],
+    "registryDependencies": [
+      "https://shadcnblocks.com/r/price",
+      "aspect-ratio",
+      "badge",
+      "button",
+      "card"
+    ],
+    "files": [
+      {
+        "path": "code/block/product-list2.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:46.083Z"
+}

@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature33",
+  "url": "https://shadcnblocks.com/r/feature33.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature33",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "This component displays a main title, a subtitle, an image, and a three-column layout of cards, each containing a title, text, and link.",
+    "dependencies": [],
+    "registryDependencies": ["card"],
+    "files": [
+      {
+        "path": "code/block/feature33.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:28.452Z"
+}

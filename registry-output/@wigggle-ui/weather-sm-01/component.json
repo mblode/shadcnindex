@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "weather-sm-01",
+  "type": "registry:component",
+  "dependencies": ["lucide-react"],
+  "registryDependencies": [
+    "https://wigggle-ui.vercel.app/r/widget.json",
+    "https://wigggle-ui.vercel.app/r/label.json"
+  ],
+  "files": [
+    {
+      "path": "registry/default/widgets/weather/sm/weather-01.tsx",
+      "content": "import * as React from \"react\";\nimport { SunIcon } from \"lucide-react\";\n\nimport {\n  Widget,\n  WidgetContent,\n  WidgetFooter,\n} from \"@/registry/default/ui/widget\";\nimport { Label } from \"@/registry/default/ui/label\";\n\nexport default function WidgetDemo() {\n  return (\n    <Widget>\n      <WidgetContent className=\"flex-col gap-4\">\n        <SunIcon className=\"size-10\" strokeWidth={2} />\n        <Label className=\"text-4xl\">29&deg;</Label>\n      </WidgetContent>\n      <WidgetFooter className=\"justify-center\">\n        <Label className=\"text-lg font-semibold\">Mumbai</Label>\n      </WidgetFooter>\n    </Widget>\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ],
+  "meta": {
+    "tags": ["weather"],
+    "size": "sm"
+  }
+}

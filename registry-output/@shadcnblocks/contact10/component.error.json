@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "contact10",
+  "url": "https://shadcnblocks.com/r/contact10.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "contact10",
+    "type": "registry:block",
+    "title": "Contact",
+    "description": "A component featuring a contact form with a title, decorative dashed line separator, address/email/social links, and an inquiry form with fields for name, email, company, employee count, and message.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": ["button", "input", "label", "textarea"],
+    "files": [
+      {
+        "path": "code/block/contact10.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:17.448Z"
+}

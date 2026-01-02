@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature231",
+  "url": "https://shadcnblocks.com/r/feature231.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature231",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A component showcasing 4 features and a call-to-action, split into 2 columns on larger screens. Each feature is numbered and detailed.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["button"],
+    "files": [
+      {
+        "path": "code/block/feature231.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:25.960Z"
+}

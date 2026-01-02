@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "footer31",
+  "url": "https://shadcnblocks.com/r/footer31.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "footer31",
+    "type": "registry:block",
+    "title": "Footer",
+    "description": "A footer component with dynamic animation, featuring navigation, social links, subscription form, location, and privacy terms. Includes email contact, 2-column grid for links, and an animated logo.",
+    "dependencies": ["framer-motion", "lucide-react", "react"],
+    "registryDependencies": ["button", "input"],
+    "files": [
+      {
+        "path": "code/block/footer31.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:31.892Z"
+}

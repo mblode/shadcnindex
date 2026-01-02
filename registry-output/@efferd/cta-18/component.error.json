@@ -1,0 +1,21 @@
+{
+  "registry": "@efferd",
+  "component": "cta-18",
+  "url": "https://efferd.com/r/cta-18.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "cta-18",
+    "description": "Event registration with animated floating cards and emoji badges.",
+    "dependencies": ["motion"],
+    "registryDependencies": ["button"],
+    "files": [
+      {
+        "path": "registry/cta/18/call-to-action.tsx",
+        "type": "registry:component"
+      }
+    ],
+    "categories": ["cta"],
+    "type": "registry:block"
+  },
+  "fetchedAt": "2026-01-02T11:08:58.024Z"
+}

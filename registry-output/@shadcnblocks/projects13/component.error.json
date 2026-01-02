@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "projects13",
+  "url": "https://shadcnblocks.com/r/projects13.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "projects13",
+    "type": "registry:block",
+    "title": "Projects",
+    "description": "A component showcasing 4 projects with details: Title, Description, Launch Date & Image, in a 3-column layout emphasizing project highlights.",
+    "dependencies": ["react"],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/projects13.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:48.092Z"
+}

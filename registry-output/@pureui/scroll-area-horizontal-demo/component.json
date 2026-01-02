@@ -1,0 +1,13 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "scroll-area-horizontal-demo",
+  "type": "registry:example",
+  "registryDependencies": ["scroll-area"],
+  "files": [
+    {
+      "path": "src/registry/pure-ui/examples/scroll-area/scroll-area-horizontal-demo.tsx",
+      "content": "import { ScrollArea } from \"@/registry/pure-ui/ui/scroll-area\";\n\nconst legendaryIndianCricketers = [\n  \"Sachin Tendulkar\",\n  \"Virat Kohli\",\n  \"MS Dhoni\",\n  \"Kapil Dev\",\n  \"Sunil Gavaskar\",\n  \"Rahul Dravid\",\n  \"Sourav Ganguly\",\n  \"Virender Sehwag\",\n  \"Anil Kumble\",\n  \"Zaheer Khan\",\n  \"Harbhajan Singh\",\n  \"Yuvraj Singh\",\n  \"Gautam Gambhir\",\n  \"VVS Laxman\",\n  \"Javagal Srinath\",\n  \"Mohammad Azharuddin\",\n  \"Ravi Shastri\",\n  \"Jasprit Bumrah\",\n  \"Rohit Sharma\",\n  \"Hardik Pandya\",\n];\n\nexport function ScrollAreaHorizontalDemo() {\n  return (\n    <ScrollArea className=\"max-w-96 rounded-md border\" orientation=\"horizontal\">\n      <div className=\"flex w-max gap-4 p-4\">\n        {legendaryIndianCricketers.map((player) => (\n          <div\n            className=\"flex h-20 w-32 shrink-0 items-center justify-center rounded-md bg-muted\"\n            key={player}\n          >\n            <span className=\"font-medium text-center text-sm\">{player}</span>\n          </div>\n        ))}\n      </div>\n    </ScrollArea>\n  );\n}\n",
+      "type": "registry:example"
+    }
+  ]
+}

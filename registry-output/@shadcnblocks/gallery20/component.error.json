@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "gallery20",
+  "url": "https://shadcnblocks.com/r/gallery20.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "gallery20",
+    "type": "registry:block",
+    "title": "Gallery",
+    "description": "A gallery component displaying overlapping, draggable images with dynamic animation. Includes textual content and a button, all within a single column layout.",
+    "dependencies": ["framer-motion", "lucide-react", "react"],
+    "registryDependencies": ["button"],
+    "files": [
+      {
+        "path": "code/block/gallery20.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:32.466Z"
+}

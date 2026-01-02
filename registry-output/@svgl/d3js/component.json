@@ -1,0 +1,14 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "d3js",
+  "title": "d3js",
+  "files": [
+    {
+      "path": "././static/components-generated/d3.tsx",
+      "content": "import type { SVGProps } from \"react\";\n\nconst D3 = (props: SVGProps<SVGSVGElement>) => (\n  <svg\n    {...props}\n    viewBox=\"-10 -10 116 111\"\n    xmlnsXlink=\"http://www.w3.org/1999/xlink\"\n  >\n    <clipPath id=\"clip\">\n      <path d=\"M0,0h7.75a45.5,45.5 0 1 1 0,91h-7.75v-20h7.75a25.5,25.5 0 1 0 0,-51h-7.75zm36.2510,0h32a27.75,27.75 0 0 1 21.331,45.5a27.75,27.75 0 0 1 -21.331,45.5h-32a53.6895,53.6895 0 0 0 18.7464,-20h13.2526a7.75,7.75 0 1 0 0,-15.5h-7.75a53.6895,53.6895 0 0 0 0,-20h7.75a7.75,7.75 0 1 0 0,-15.5h-13.2526a53.6895,53.6895 0 0 0 -18.7464,-20z\" />\n    </clipPath>\n    <linearGradient\n      id=\"gradient-1\"\n      gradientUnits=\"userSpaceOnUse\"\n      x1=\"7\"\n      y1=\"64\"\n      x2=\"50\"\n      y2=\"107\"\n    >\n      <stop offset=\"0\" stop-color=\"#f9a03c\" />\n      <stop offset=\"1\" stop-color=\"#f7974e\" />\n    </linearGradient>\n    <linearGradient\n      id=\"gradient-2\"\n      gradientUnits=\"userSpaceOnUse\"\n      x1=\"2\"\n      y1=\"-2\"\n      x2=\"87\"\n      y2=\"84\"\n    >\n      <stop offset=\"0\" stop-color=\"#f26d58\" />\n      <stop offset=\"1\" stop-color=\"#f9a03c\" />\n    </linearGradient>\n    <linearGradient\n      id=\"gradient-3\"\n      gradientUnits=\"userSpaceOnUse\"\n      x1=\"45\"\n      y1=\"-10\"\n      x2=\"108\"\n      y2=\"53\"\n    >\n      <stop offset=\"0\" stop-color=\"#b84e51\" />\n      <stop offset=\"1\" stop-color=\"#f68e48\" />\n    </linearGradient>\n    <g clipPath=\"url(#clip)\">\n      <path d=\"M-100,-102m-28,0v300h300z\" fill=\"url(#gradient-1)\" />\n      <path d=\"M-100,-102m28,0h300v300z\" fill=\"url(#gradient-3)\" />\n      <path\n        d=\"M-100,-102l300,300\"\n        fill=\"none\"\n        stroke=\"url(#gradient-2)\"\n        strokeWidth=\"40\"\n      />\n    </g>\n  </svg>\n);\n\nexport { D3 };\n",
+      "type": "registry:component",
+      "target": "components/ui/svgs/d3.tsx"
+    }
+  ],
+  "type": "registry:component"
+}

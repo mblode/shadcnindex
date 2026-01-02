@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "resource3",
+  "url": "https://shadcnblocks.com/r/resource3.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "resource3",
+    "type": "registry:block",
+    "title": "Resource",
+    "description": "A component featuring a breadcrumb navigation, article content with an image and story, alongside a sidebar highlighting document features, reviewer info, and social share buttons. Includes a 2-column layout.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["avatar", "breadcrumb", "button", "separator"],
+    "files": [
+      {
+        "path": "code/block/resource3.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:49.238Z"
+}

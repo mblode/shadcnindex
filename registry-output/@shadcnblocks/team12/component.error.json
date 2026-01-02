@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "team12",
+  "url": "https://shadcnblocks.com/r/team12.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "team12",
+    "type": "registry:block",
+    "title": "Team",
+    "description": "A team showcase component with staggered animation for each member's photo, including name and role. Displays info in two columns with adjustable gaps.",
+    "dependencies": ["framer-motion", "lucide-react", "react"],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/team12.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:52.884Z"
+}

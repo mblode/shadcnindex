@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "compare5",
+  "url": "https://shadcnblocks.com/r/compare5.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "compare5",
+    "type": "registry:block",
+    "title": "Compare",
+    "description": "A component displays two options with images, text, and buttons, split across two columns, and features an \"OR\" marker centrally between columns.",
+    "dependencies": [],
+    "registryDependencies": ["button"],
+    "files": [
+      {
+        "path": "code/block/compare5.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:17.003Z"
+}

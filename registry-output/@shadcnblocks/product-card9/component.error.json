@@ -1,0 +1,30 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "product-card9",
+  "url": "https://shadcnblocks.com/r/product-card9.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "product-card9",
+    "type": "registry:block",
+    "title": "Product-card",
+    "description": "This component displays a product card showcasing a ceramic cup with pricing details, color variants, and customizable badges. It features interactive elements like an \"Add to cart\" button, a tooltip for color selection, and a dynamic image gallery that changes based on the selected color variant.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": [
+      "https://shadcnblocks.com/r/price",
+      "aspect-ratio",
+      "badge",
+      "button",
+      "card",
+      "label",
+      "radio-group",
+      "tooltip"
+    ],
+    "files": [
+      {
+        "path": "code/block/product-card9.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:45.273Z"
+}

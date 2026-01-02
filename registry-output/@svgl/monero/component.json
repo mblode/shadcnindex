@@ -1,0 +1,14 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "monero",
+  "title": "monero",
+  "files": [
+    {
+      "path": "././static/components-generated/monero.tsx",
+      "content": "import type { SVGProps } from \"react\";\n\nconst Monero = (props: SVGProps<SVGSVGElement>) => (\n  <svg {...props} viewBox=\"0 0 256 256\" preserveAspectRatio=\"xMidYMid\">\n    <path\n      fill=\"#F60\"\n      d=\"M128 0A128 128 0 0 0 7 168h38V61l83 83 83-83v107h38A128 128 0 0 0 128 0\"\n    />\n    <path\n      fill=\"#4C4C4C\"\n      d=\"m109 163-36-36v68H19a128 128 0 0 0 218 0h-54v-68l-36 36-19 19-19-19Z\"\n    />\n  </svg>\n);\n\nexport { Monero };\n",
+      "type": "registry:component",
+      "target": "components/ui/svgs/monero.tsx"
+    }
+  ],
+  "type": "registry:component"
+}

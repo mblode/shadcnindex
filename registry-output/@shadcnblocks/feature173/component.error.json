@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature173",
+  "url": "https://shadcnblocks.com/r/feature173.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature173",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A component showcasing metrics with icons in a 3-column layout, highlighting improvements in bugs, notifications, and chaos. Features gradient cards.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/feature173.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:23.517Z"
+}

@@ -1,0 +1,13 @@
+{
+  "name": "use-memoized-fn",
+  "author": "Brendan Dash (https://shadcn-hooks.vercel.app)",
+  "description": "A hook to declare a memoized function",
+  "files": [
+    {
+      "path": "registry/hooks/use-memoized-fn.ts",
+      "content": "import { useMemo, useRef } from 'react'\n\ntype noop = (this: any, ...args: any[]) => any\n\ntype PickFunction<T extends noop> = (\n  this: ThisParameterType<T>,\n  ...args: Parameters<T>\n) => ReturnType<T>\n\nexport function useMemoizedFn<T extends noop>(fn: T) {\n  const fnRef = useRef<T>(fn)\n\n  // why not write `fnRef.current = fn`?\n  // https://github.com/alibaba/hooks/issues/728\n  fnRef.current = useMemo<T>(() => fn, [fn])\n\n  const memoizedFn = useRef<PickFunction<T>>(undefined)\n\n  if (!memoizedFn.current) {\n    memoizedFn.current = function (this, ...args) {\n      return fnRef.current.apply(this, args)\n    }\n  }\n\n  return memoizedFn.current\n}\n",
+      "type": "registry:hook"
+    }
+  ],
+  "type": "registry:hook"
+}

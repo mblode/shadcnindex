@@ -1,0 +1,13 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "checkbox-sizes-demo",
+  "type": "registry:example",
+  "registryDependencies": ["checkbox"],
+  "files": [
+    {
+      "path": "src/registry/pure-ui/examples/checkbox/checkbox-sizes-demo.tsx",
+      "content": "import { Checkbox } from \"@/registry/pure-ui/ui/checkbox\";\n\nexport function CheckboxSizesDemo() {\n  return (\n    <div className=\"flex flex-col gap-5\">\n      <label className=\"flex items-center gap-2 cursor-pointer\">\n        <Checkbox size=\"sm\" />\n        <span>Make a choice</span>\n      </label>\n      <label className=\"flex items-center gap-2 cursor-pointer\">\n        <Checkbox size=\"default\" />\n        <span>Make a choice</span>\n      </label>\n\n      <label className=\"flex items-center gap-2 cursor-pointer\">\n        <Checkbox size=\"lg\" />\n        <span>Make a choice</span>\n      </label>\n    </div>\n  );\n}\n",
+      "type": "registry:example"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "shopping-cart14",
+  "url": "https://shadcnblocks.com/r/shopping-cart14.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "shopping-cart14",
+    "type": "registry:block",
+    "title": "Shopping-cart",
+    "description": "This component provides a comprehensive shopping cart interface, allowing users to view, modify, and manage items in their cart, such as adjusting quantities and removing products. It features integration with form handling to calculate the total price dynamically and supports easy navigation for cart and checkout actions.",
+    "dependencies": [
+      "@hookform/resolvers",
+      "lucide-react",
+      "react",
+      "react-hook-form",
+      "zod"
+    ],
+    "registryDependencies": [
+      "https://shadcnblocks.com/r/price",
+      "https://shadcnblocks.com/r/quantity-input",
+      "aspect-ratio",
+      "button",
+      "card",
+      "empty",
+      "form",
+      "sheet"
+    ],
+    "files": [
+      {
+        "path": "code/block/shopping-cart14.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:51.274Z"
+}

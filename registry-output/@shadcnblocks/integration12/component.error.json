@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "integration12",
+  "url": "https://shadcnblocks.com/r/integration12.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "integration12",
+    "type": "registry:block",
+    "title": "Integration",
+    "description": "A component features platform integration with a list of 5 permissions. Includes two logo comparisons, title, description, and buttons for actions.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["button"],
+    "files": [
+      {
+        "path": "code/block/integration12.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:40.649Z"
+}

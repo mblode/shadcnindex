@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "cta15",
+  "url": "https://shadcnblocks.com/r/cta15.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "cta15",
+    "type": "registry:block",
+    "title": "Cta",
+    "description": "A component featuring a call to action with gradient background, text, and buttons on one side, and an image with a subtle overlay effect on the other. Designed in a two-column layout that adjusts to single column on smaller screens.",
+    "dependencies": [],
+    "registryDependencies": ["button"],
+    "files": [
+      {
+        "path": "code/block/cta15.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:18.342Z"
+}

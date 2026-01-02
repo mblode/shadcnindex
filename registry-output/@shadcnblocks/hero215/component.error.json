@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "hero215",
+  "url": "https://shadcnblocks.com/r/hero215.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "hero215",
+    "type": "registry:block",
+    "title": "Hero",
+    "description": "A component featuring a large title and paragraph, alongside a &#x27;Contact Us&#x27; button and right-aligned image. Unique for its overlaid text and button on a full viewport height background.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": ["button"],
+    "files": [
+      {
+        "path": "code/block/hero215.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:36.548Z"
+}

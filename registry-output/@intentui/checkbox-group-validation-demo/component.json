@@ -1,0 +1,22 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "extends": "none",
+  "name": "checkbox-group-validation-demo",
+  "title": "Checkbox Group Validation",
+  "description": "checkbox-group-validation-demo",
+  "dependencies": ["react-aria-components"],
+  "registryDependencies": [
+    "https://intentui.com/r/button",
+    "https://intentui.com/r/checkbox",
+    "https://intentui.com/r/field"
+  ],
+  "files": [
+    {
+      "path": "src/components/docs/forms/checkbox/checkbox-group-validation-demo.tsx",
+      "content": "\"use client\"\n\nimport { Form } from \"react-aria-components\"\nimport { Button } from \"@/components/ui/button\"\nimport { Checkbox, CheckboxGroup } from \"@/components/ui/checkbox\"\nimport { Label } from \"@/components/ui/field\"\n\nexport default function CheckboxValidationDemo() {\n  return (\n    <Form onSubmit={() => {}} className=\"space-y-6\">\n      <CheckboxGroup isRequired>\n        <Label>Settings</Label>\n        <Checkbox value=\"notifications\">Enable notifications</Checkbox>\n        <Checkbox value=\"auto_update\">Auto-update applications</Checkbox>\n        <Checkbox value=\"dark_mode\">Enable dark mode</Checkbox>\n        <Checkbox value=\"location_access\">Allow location access</Checkbox>\n        <Checkbox value=\"two_factor_auth\">Enable two-factor authentication</Checkbox>\n      </CheckboxGroup>\n      <Button type=\"submit\">Submit</Button>\n    </Form>\n  )\n}\n",
+      "type": "registry:page",
+      "target": "app/checkbox-group-validation-demo/page.tsx"
+    }
+  ],
+  "type": "registry:page"
+}

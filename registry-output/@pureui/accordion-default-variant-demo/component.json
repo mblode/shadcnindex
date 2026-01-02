@@ -1,0 +1,13 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "accordion-default-variant-demo",
+  "type": "registry:example",
+  "registryDependencies": ["accordion"],
+  "files": [
+    {
+      "path": "src/registry/pure-ui/examples/accordion/accordion-default-variant-demo.tsx",
+      "content": "import {\n  Accordion,\n  AccordionPanel,\n  AccordionItem,\n  AccordionTrigger,\n} from \"@/registry/pure-ui/ui/accordion\";\n\nexport function AccordionDefaultVariantDemo() {\n  return (\n    <Accordion variant=\"default\" className=\"w-full max-w-xl\">\n      <AccordionItem value=\"item-1\">\n        <AccordionTrigger className=\"flex items-center gap-2\">\n          What Is Cricket?\n        </AccordionTrigger>\n        <AccordionPanel className=\"flex flex-col gap-4 text-balance\">\n          <p className=\"text-[15px] text-muted-foreground\">\n            A bat-and-ball sport played between two teams of eleven, focused on\n            scoring runs and taking wickets.\n          </p>\n        </AccordionPanel>\n      </AccordionItem>\n      <AccordionItem value=\"item-2\">\n        <AccordionTrigger className=\"flex items-center gap-2\">\n          Formats of the Game\n        </AccordionTrigger>\n        <AccordionPanel className=\"flex flex-col gap-4 text-balance\">\n          <p className=\"text-[15px] text-muted-foreground\">\n            Cricket has three main formats: Test, ODI, and T20—each with\n            different lengths and strategies.\n          </p>\n        </AccordionPanel>\n      </AccordionItem>\n      <AccordionItem value=\"item-3\">\n        <AccordionTrigger className=\"flex items-center gap-2\">\n          Basic Rules\n        </AccordionTrigger>\n        <AccordionPanel className=\"flex flex-col gap-4 text-balance\">\n          <p className=\"text-[15px] text-muted-foreground\">\n            Teams take turns batting and bowling. The batting side scores runs,\n            while the bowling side tries to dismiss batters.\n          </p>\n        </AccordionPanel>\n      </AccordionItem>\n      <AccordionItem value=\"item-4\">\n        <AccordionTrigger className=\"flex items-center gap-2\">\n          Key Player Roles\n        </AccordionTrigger>\n        <AccordionPanel className=\"flex flex-col gap-4 text-balance\">\n          <p className=\"text-[15px] text-muted-foreground\">\n            Players specialize as batters, bowlers, all-rounders, or\n            wicketkeepers—each contributing differently to the team.\n          </p>\n        </AccordionPanel>\n      </AccordionItem>\n    </Accordion>\n  );\n}\n",
+      "type": "registry:example"
+    }
+  ]
+}

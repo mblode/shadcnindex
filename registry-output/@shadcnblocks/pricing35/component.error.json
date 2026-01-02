@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "pricing35",
+  "url": "https://shadcnblocks.com/r/pricing35.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "pricing35",
+    "type": "registry:block",
+    "title": "Pricing",
+    "description": "A component displays 2 pricing plans with features like custom/standard pricing, toggle for billing frequency, and CTA buttons. Each card offers a descriptive text and chooses between a yearly or quarterly plan.",
+    "dependencies": ["react"],
+    "registryDependencies": ["badge", "button", "card", "toggle-group"],
+    "files": [
+      {
+        "path": "code/block/pricing35.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:44.413Z"
+}

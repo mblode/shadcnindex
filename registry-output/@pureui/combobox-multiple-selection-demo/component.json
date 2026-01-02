@@ -1,0 +1,13 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "combobox-multiple-selection-demo",
+  "type": "registry:example",
+  "registryDependencies": ["combobox"],
+  "files": [
+    {
+      "path": "src/registry/pure-ui/examples/combobox/combobox-multiple-selection-demo.tsx",
+      "content": "\"use client\";\n\nimport {\n  Combobox,\n  ComboboxChip,\n  ComboboxChips,\n  ComboboxEmpty,\n  ComboboxInput,\n  ComboboxItem,\n  ComboboxList,\n  ComboboxPopup,\n  ComboboxValue,\n} from \"@/registry/pure-ui/ui/combobox\";\nimport { useState } from \"react\";\n\nconst items = [\n  { label: \"Apple\", value: \"apple\" },\n  { label: \"Banana\", value: \"banana\" },\n  { label: \"Orange\", value: \"orange\" },\n  { label: \"Grape\", value: \"grape\" },\n  { label: \"Strawberry\", value: \"strawberry\" },\n  { label: \"Mango\", value: \"mango\" },\n  { label: \"Pineapple\", value: \"pineapple\" },\n  { label: \"Kiwi\", value: \"kiwi\" },\n  { label: \"Peach\", value: \"peach\" },\n  { label: \"Pear\", value: \"pear\" },\n];\n\ntype Item = (typeof items)[number];\n\nexport function ComboboxMultipleSelectionDemo() {\n  const [selectedItems, setSelectedItems] = useState<Item[]>([]);\n\n  return (\n    <div className=\"flex flex-col gap-5 max-w-xs w-full\">\n      <Combobox\n        value={selectedItems}\n        onValueChange={setSelectedItems}\n        items={items}\n        multiple\n      >\n        <ComboboxChips>\n          <ComboboxValue>\n            {(value: Item[]) => (\n              <>\n                {value?.map((item) => (\n                  <ComboboxChip aria-label={item.label} key={item.value}>\n                    {item.label}\n                  </ComboboxChip>\n                ))}\n                <ComboboxInput\n                  aria-label=\"Select a item\"\n                  placeholder={\n                    value.length > 0 ? undefined : \"Select a item...\"\n                  }\n                />\n              </>\n            )}\n          </ComboboxValue>\n        </ComboboxChips>\n\n        <ComboboxPopup>\n          <ComboboxEmpty>No items found.</ComboboxEmpty>\n          <ComboboxList>\n            {(item) => (\n              <ComboboxItem key={item.value} value={item}>\n                {item.label}\n              </ComboboxItem>\n            )}\n          </ComboboxList>\n        </ComboboxPopup>\n      </Combobox>\n\n      <div className=\"flex flex-col gap-2\">\n        <p className=\"text-sm text-muted-foreground\">Selected Items:</p>\n        <div className=\"relative bg-muted p-4 rounded-md\">\n          <pre>{JSON.stringify(selectedItems, null, 2)}</pre>\n        </div>\n      </div>\n    </div>\n  );\n}\n",
+      "type": "registry:example"
+    }
+  ]
+}

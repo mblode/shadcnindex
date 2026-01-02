@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "project6",
+  "url": "https://shadcnblocks.com/r/project6.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "project6",
+    "type": "registry:block",
+    "title": "Project",
+    "description": "A component displaying a sticky description section alongside a grid of images, followed by another grid featuring project cards with hover effects.",
+    "dependencies": ["framer-motion"],
+    "registryDependencies": ["badge"],
+    "files": [
+      {
+        "path": "code/block/project6.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:47.559Z"
+}

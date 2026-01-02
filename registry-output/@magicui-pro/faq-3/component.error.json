@@ -1,0 +1,20 @@
+{
+  "registry": "@magicui-pro",
+  "component": "faq-3",
+  "url": "https://pro.magicui.design/registry/faq-3",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "faq-3",
+    "type": "registry:block",
+    "files": [
+      {
+        "path": "registry/blocks/faq-3.tsx",
+        "type": "registry:component"
+      }
+    ],
+    "meta": {
+      "height": 904
+    }
+  },
+  "fetchedAt": "2026-01-02T11:10:50.106Z"
+}

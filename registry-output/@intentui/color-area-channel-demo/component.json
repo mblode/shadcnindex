@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "extends": "none",
+  "name": "color-area-channel-demo",
+  "title": "Color Area Channel",
+  "description": "color-area-channel-demo",
+  "registryDependencies": ["https://intentui.com/r/color-area"],
+  "files": [
+    {
+      "path": "src/components/docs/colors/color-area/color-area-channel-demo.tsx",
+      "content": "\"use client\"\n\nimport { ColorArea } from \"@/components/ui/color-area\"\n\nexport default function ColorAreaChannelDemo() {\n  return <ColorArea xChannel=\"alpha\" yChannel=\"blue\" />\n}\n",
+      "type": "registry:page",
+      "target": "app/color-area-channel-demo/page.tsx"
+    }
+  ],
+  "type": "registry:page"
+}

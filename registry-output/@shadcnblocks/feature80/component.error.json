@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature80",
+  "url": "https://shadcnblocks.com/r/feature80.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature80",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A component displaying an image next to descriptive text, links with icons, and overlapping avatars, arranged in a flex layout with a 2-column format for widescreens.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["avatar"],
+    "files": [
+      {
+        "path": "code/block/feature80.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:30.263Z"
+}

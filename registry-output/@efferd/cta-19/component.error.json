@@ -1,0 +1,21 @@
+{
+  "registry": "@efferd",
+  "component": "cta-19",
+  "url": "https://efferd.com/r/cta-19.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "cta-19",
+    "description": "Floating tool icons surrounding centered headline and action buttons.",
+    "dependencies": ["motion"],
+    "registryDependencies": ["button"],
+    "files": [
+      {
+        "path": "registry/cta/19/call-to-action.tsx",
+        "type": "registry:component"
+      }
+    ],
+    "categories": ["cta"],
+    "type": "registry:block"
+  },
+  "fetchedAt": "2026-01-02T11:08:57.981Z"
+}

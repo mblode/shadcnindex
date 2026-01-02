@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "extends": "none",
+  "name": "radio-group-orientation-demo",
+  "title": "Radio Group Orientation",
+  "description": "radio-group-orientation-demo",
+  "registryDependencies": [
+    "https://intentui.com/r/field",
+    "https://intentui.com/r/radio"
+  ],
+  "files": [
+    {
+      "path": "src/components/docs/forms/radio-group/radio-group-orientation-demo.tsx",
+      "content": "\"use client\"\n\nimport { Label } from \"@/components/ui/field\"\nimport { Radio, RadioGroup } from \"@/components/ui/radio\"\n\nexport default function RadioGroupOrientationDemo() {\n  return (\n    <RadioGroup orientation=\"horizontal\">\n      <Label>Payment method</Label>\n      <Radio value=\"credit-card\">Credit Card</Radio>\n      <Radio value=\"paypal\">PayPal</Radio>\n      <Radio value=\"apple-pay\">Apple Pay</Radio>\n      <Radio value=\"google-pay\">Google Pay</Radio>\n      <Radio value=\"bank-transfer\">Bank Transfer</Radio>\n    </RadioGroup>\n  )\n}\n",
+      "type": "registry:page",
+      "target": "app/radio-group-orientation-demo/page.tsx"
+    }
+  ],
+  "type": "registry:page"
+}

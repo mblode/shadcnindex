@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "background-pattern10",
+  "url": "https://shadcnblocks.com/r/background-pattern10.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "background-pattern10",
+    "type": "registry:block",
+    "title": "Background-pattern",
+    "description": "This component creates a visually appealing background with a grid pattern using CSS gradients, which is centered and takes up the full width and height of the viewport. It allows for customization through additional class names and serves as a decorative backdrop that can be used in various user interfaces.",
+    "dependencies": [],
+    "registryDependencies": ["https://shadcnblocks.com/r/pattern-placeholder"],
+    "files": [
+      {
+        "path": "code/block/background-pattern10.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:12.062Z"
+}

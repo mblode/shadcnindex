@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "extends": "none",
+  "name": "number-field-uncontrolled-demo",
+  "title": "Number Field Uncontrolled",
+  "description": "number-field-uncontrolled-demo",
+  "registryDependencies": [
+    "https://intentui.com/r/field",
+    "https://intentui.com/r/number-field"
+  ],
+  "files": [
+    {
+      "path": "src/components/docs/forms/number-field/number-field-uncontrolled-demo.tsx",
+      "content": "\"use client\"\n\nimport { Label } from \"@/components/ui/field\"\nimport { NumberField, NumberInput } from \"@/components/ui/number-field\"\n\nexport default function NumberFieldUncontrolledDemo() {\n  return (\n    <NumberField defaultValue={1997}>\n      <Label>Width</Label>\n      <NumberInput />\n    </NumberField>\n  )\n}\n",
+      "type": "registry:page",
+      "target": "app/number-field-uncontrolled-demo/page.tsx"
+    }
+  ],
+  "type": "registry:page"
+}

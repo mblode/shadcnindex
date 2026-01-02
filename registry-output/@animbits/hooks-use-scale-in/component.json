@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "hooks-use-scale-in",
+  "type": "registry:lib",
+  "title": "Use Scale In",
+  "description": "The use-scale-in hook.",
+  "dependencies": ["motion"],
+  "files": [
+    {
+      "path": "lib/use-scale-in.ts",
+      "content": "import { type MotionProps, type Easing } from \"motion/react\";\n\nexport interface UseScaleInOptions {\n  duration?: number;\n\n  delay?: number;\n\n  from?: number;\n\n  to?: number;\n\n  initialOpacity?: number;\n\n  ease?: Easing | Easing[];\n\n  viewport?: \"once\" | \"always\";\n}\n\nexport function useScaleIn(options: UseScaleInOptions = {}): MotionProps {\n  const {\n    duration = 0.5,\n    delay = 0,\n    from = 0.8,\n    to = 1,\n    initialOpacity = 0,\n    ease = \"easeOut\",\n    viewport = \"once\",\n  } = options;\n\n  return {\n    initial: {\n      scale: from,\n      opacity: initialOpacity,\n    },\n    whileInView: {\n      scale: to,\n      opacity: 1,\n    },\n    viewport: {\n      once: viewport === \"once\",\n    },\n    transition: {\n      duration,\n      delay,\n      ease,\n    },\n  };\n}\n",
+      "type": "registry:lib"
+    }
+  ]
+}

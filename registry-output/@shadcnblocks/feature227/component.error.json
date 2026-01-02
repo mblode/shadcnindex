@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature227",
+  "url": "https://shadcnblocks.com/r/feature227.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature227",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A 2-column block featuring a large title, descriptive text, and bullet points with icons on one side, and an image with overlaid gradients on the other.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/feature227.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:25.691Z"
+}

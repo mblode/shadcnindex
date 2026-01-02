@@ -1,0 +1,14 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "microsoft-todo",
+  "title": "microsoft-todo",
+  "files": [
+    {
+      "path": "././static/components-generated/microsoftTodo.tsx",
+      "content": "import type { SVGProps } from \"react\";\n\nconst MicrosoftTodo = (props: SVGProps<SVGSVGElement>) => (\n  <svg\n    {...props}\n    xmlnsXlink=\"http://www.w3.org/1999/xlink\"\n    viewBox=\"0 0 1007.922 821.827\"\n  >\n    <title>Todo</title>\n    <rect\n      x=\"694.422\"\n      y=\"269.785\"\n      width=\"42.5\"\n      height=\"736.5\"\n      transform=\"translate(652.71 -435.701) rotate(45)\"\n    />\n    <g>\n      <circle cx=\"402.137\" cy=\"736.827\" r=\"85\" />\n    </g>\n    <g>\n      <circle cx=\"922.922\" cy=\"216.043\" r=\"85\" />\n    </g>\n    <rect\n      x=\"185.305\"\n      y=\"515.608\"\n      width=\"42.5\"\n      height=\"448.5\"\n      transform=\"translate(867.705 1000.439) rotate(135)\"\n    />\n    <g>\n      <circle cx=\"85\" cy=\"419.69\" r=\"85\" />\n    </g>\n    <rect\n      x=\"164.378\"\n      y=\"319.982\"\n      width=\"288\"\n      height=\"576\"\n      rx=\"42.5\"\n      transform=\"translate(-347.651 279.609) rotate(-45)\"\n    />\n    <rect\n      x=\"469.848\"\n      y=\"74.159\"\n      width=\"288\"\n      height=\"864\"\n      rx=\"42.5\"\n      transform=\"translate(529.636 -402.327) rotate(45)\"\n    />\n  </svg>\n);\n\nexport { MicrosoftTodo };\n",
+      "type": "registry:component",
+      "target": "components/ui/svgs/microsoftTodo.tsx"
+    }
+  ],
+  "type": "registry:component"
+}

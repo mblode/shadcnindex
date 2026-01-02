@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature136",
+  "url": "https://shadcnblocks.com/r/feature136.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature136",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A component featuring a productivity tools overview with stats (installs, active users, etc.), and 3 benefits. Layout includes a 2-column section with an image and a 3-column grid for benefits.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["badge", "separator"],
+    "files": [
+      {
+        "path": "code/block/feature136.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:22.024Z"
+}

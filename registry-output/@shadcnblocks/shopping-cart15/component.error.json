@@ -1,0 +1,42 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "shopping-cart15",
+  "url": "https://shadcnblocks.com/r/shopping-cart15.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "shopping-cart15",
+    "type": "registry:block",
+    "title": "Shopping-cart",
+    "description": "This component manages a shopping cart, showcasing items with functionalities for quantity management, item removal, variant selection, and promotional code application. It displays either an empty cart message or a detailed list of products, including variants and pricing, to facilitate user interactions and order adjustments.",
+    "dependencies": [
+      "@hookform/resolvers",
+      "@radix-ui/react-aspect-ratio",
+      "lucide-react",
+      "react",
+      "react-hook-form",
+      "zod"
+    ],
+    "registryDependencies": [
+      "https://shadcnblocks.com/r/price",
+      "https://shadcnblocks.com/r/quantity-input",
+      "alert",
+      "button",
+      "card",
+      "collapsible",
+      "empty",
+      "field",
+      "form",
+      "input",
+      "label",
+      "radio-group",
+      "select"
+    ],
+    "files": [
+      {
+        "path": "code/block/shopping-cart15.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:51.306Z"
+}

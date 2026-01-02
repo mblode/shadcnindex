@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "buttons-glow",
+  "type": "registry:component",
+  "title": "Glow Button",
+  "description": "Button with glow effect on hover",
+  "dependencies": ["motion"],
+  "files": [
+    {
+      "path": "registry/new-york/animations/buttons/glow.tsx",
+      "content": "\"use client\";\nimport { motion, type HTMLMotionProps } from \"motion/react\";\nimport { useHoverGlow } from \"@/lib/use-hover-glow\";\ninterface GlowButtonProps extends Omit<HTMLMotionProps<\"button\">, \"animate\"> {\n  children: React.ReactNode;\n  glowColor?: string;\n  intensity?: number;\n}\nexport function GlowButton({\n  children,\n  glowColor = \"rgba(59, 130, 246, 0.5)\",\n  intensity = 20,\n  ...props\n}: GlowButtonProps) {\n  const glowProps = useHoverGlow({\n    glowColor,\n    glowBlur: intensity,\n  });\n  return (\n    <motion.button {...glowProps} {...props}>\n      {children}\n    </motion.button>\n  );\n}\n",
+      "type": "registry:component"
+    },
+    {
+      "path": "lib/use-hover-glow.ts",
+      "content": "import { type MotionProps, type Easing } from \"motion/react\";\n\nexport interface UseHoverGlowOptions {\n  glowColor?: string;\n\n  glowBlur?: number;\n\n  glowSpread?: number;\n\n  duration?: number;\n\n  ease?: Easing | Easing[];\n\n  scale?: number;\n\n  innerGlow?: boolean;\n}\n\nexport function useHoverGlow(options: UseHoverGlowOptions = {}): MotionProps {\n  const {\n    glowColor = \"rgba(59, 130, 246, 0.5)\",\n    glowBlur = 20,\n    glowSpread = 5,\n    duration = 0.3,\n    ease = \"easeOut\",\n    scale = 1.02,\n    innerGlow = false,\n  } = options;\n\n  const baseShadow = \"0 2px 8px rgba(0, 0, 0, 0.1)\";\n  const glowShadow = `0 0 ${glowBlur}px ${glowSpread}px ${glowColor}`;\n  const innerGlowShadow = innerGlow\n    ? `inset 0 0 ${glowBlur / 2}px ${glowColor}`\n    : \"\";\n\n  const hoverShadow = innerGlow\n    ? `${baseShadow}, ${glowShadow}, ${innerGlowShadow}`\n    : `${baseShadow}, ${glowShadow}`;\n\n  return {\n    initial: {\n      scale: 1,\n      boxShadow: baseShadow,\n    },\n    whileHover: {\n      scale,\n      boxShadow: hoverShadow,\n    },\n    transition: {\n      duration,\n      ease,\n    },\n  };\n}\n",
+      "type": "registry:lib"
+    }
+  ]
+}

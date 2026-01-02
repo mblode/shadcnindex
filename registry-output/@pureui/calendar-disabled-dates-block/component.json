@@ -1,0 +1,14 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "calendar-disabled-dates-block",
+  "type": "registry:block",
+  "registryDependencies": ["calendar"],
+  "files": [
+    {
+      "path": "src/registry/pure-ui/blocks/calendar/calendar-7-block.tsx",
+      "content": "\"use client\";\n\nimport { useState } from \"react\";\n\nimport { Calendar } from \"@/registry/pure-ui/ui/calendar\";\n\nexport function Calendar7Block() {\n  const [date, setDate] = useState<Date | undefined>(new Date(2025, 5, 12));\n\n  return (\n    <div className=\"flex flex-col gap-2 items-center justify-center p-5 min-h-[500px]\">\n      <Calendar\n        animate\n        mode=\"single\"\n        defaultMonth={date}\n        selected={date}\n        onSelect={setDate}\n        disabled={{\n          before: new Date(2025, 5, 12),\n        }}\n      />\n    </div>\n  );\n}\n",
+      "type": "registry:file",
+      "target": "blocks/calendar/calendar-7-block.tsx"
+    }
+  ]
+}

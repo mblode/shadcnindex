@@ -1,0 +1,25 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "product-card5",
+  "url": "https://shadcnblocks.com/r/product-card5.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "product-card5",
+    "type": "registry:block",
+    "title": "Product-card",
+    "description": "This component displays a product card featuring an image, name, collection, and price of a product, offering a sale price option. It utilizes elements like a linked image, card structure, and price formatting to create an engaging product showcase block.",
+    "dependencies": [],
+    "registryDependencies": [
+      "https://shadcnblocks.com/r/price",
+      "aspect-ratio",
+      "card"
+    ],
+    "files": [
+      {
+        "path": "code/block/product-card5.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:45.087Z"
+}

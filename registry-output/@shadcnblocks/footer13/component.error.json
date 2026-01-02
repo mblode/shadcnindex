@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "footer13",
+  "url": "https://shadcnblocks.com/r/footer13.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "footer13",
+    "type": "registry:block",
+    "title": "Footer",
+    "description": "This component is a multi-section footer block featuring a call-to-action, newsletter signup, navigational links, and social media connections. It includes 4 columns of navigation links and uses buttons and input for interactions.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["button", "input"],
+    "files": [
+      {
+        "path": "code/block/footer13.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:31.202Z"
+}

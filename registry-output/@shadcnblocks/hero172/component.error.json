@@ -1,0 +1,26 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "hero172",
+  "url": "https://shadcnblocks.com/r/hero172.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "hero172",
+    "type": "registry:block",
+    "title": "Hero",
+    "description": "A two-column component with a heading, text, email submission form, and unique visual elements. The left column showcases the title, descriptive text, a form for email input with a \"Get Started\" button, and bullet points with checks. The right column features creative, overlapping images with dynamic shapes and icons for visual interest.",
+    "dependencies": [
+      "@hookform/resolvers",
+      "lucide-react",
+      "react-hook-form",
+      "zod"
+    ],
+    "registryDependencies": ["aspect-ratio", "button", "form", "input"],
+    "files": [
+      {
+        "path": "code/block/hero172.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:35.123Z"
+}

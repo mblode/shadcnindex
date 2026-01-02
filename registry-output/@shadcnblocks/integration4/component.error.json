@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "integration4",
+  "url": "https://shadcnblocks.com/r/integration4.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "integration4",
+    "type": "registry:block",
+    "title": "Integration",
+    "description": "A component depicting global connectivity with a central title, supportive text, and graphical illustrations of interconnected nodes, accented by a large background image.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/integration4.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:40.840Z"
+}

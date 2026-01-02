@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "shader2",
+  "url": "https://shadcnblocks.com/r/shader2.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "shader2",
+    "type": "registry:block",
+    "title": "Shader",
+    "description": "This component generates a dynamic, animated background using customizable vertex and fragment shaders, allowing for real-time visual effects driven by WebGL and three.js. Its parameters include shaders for fine-tuning graphics, uniform values for interactivity, and styling options to adapt to various layouts.",
+    "dependencies": ["@react-three/fiber", "react", "three"],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/shader2.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:50.821Z"
+}

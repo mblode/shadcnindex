@@ -1,0 +1,24 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature268",
+  "url": "https://shadcnblocks.com/r/feature268.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature268",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A component showing a title, description, two buttons, a list of features with icons, and a 3D-animated card displaying an image and a button. It uses a two-column layout on large screens.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": [
+      "https://ui.aceternity.com/registry/3d-card.json",
+      "button"
+    ],
+    "files": [
+      {
+        "path": "code/block/feature268.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:27.162Z"
+}

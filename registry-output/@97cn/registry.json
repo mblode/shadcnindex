@@ -1,0 +1,967 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "97cn",
+  "homepage": "https://97cn.itzik.co",
+  "items": [
+    {
+      "name": "button",
+      "type": "registry:ui",
+      "title": "Button",
+      "description": "Windows 95 styled button component with multiple variants",
+      "dependencies": ["@radix-ui/react-slot", "class-variance-authority"],
+      "files": [
+        {
+          "path": "components/97cn/button.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "cssVars": {
+        "light": {
+          "win95-button-face": "#c0c0c0",
+          "win95-black": "#000000",
+          "win95-light-gray": "#dfdfdf",
+          "win95-dark-gray": "#808080",
+          "win95-button-highlight": "#ffffff",
+          "win95-button-shadow": "#808080"
+        },
+        "dark": {
+          "win95-button-face": "#c0c0c0",
+          "win95-black": "#000000",
+          "win95-light-gray": "#dfdfdf",
+          "win95-dark-gray": "#808080",
+          "win95-button-highlight": "#ffffff",
+          "win95-button-shadow": "#808080"
+        }
+      },
+      "css": {
+        "@layer utilities": {
+          ".win95-raised": {
+            "border-top": "2px solid var(--win95-button-highlight)",
+            "border-left": "2px solid var(--win95-button-highlight)",
+            "border-right": "2px solid var(--win95-button-shadow)",
+            "border-bottom": "2px solid var(--win95-button-shadow)"
+          },
+          ".win95-sunken": {
+            "border-top": "2px solid var(--win95-button-shadow)",
+            "border-left": "2px solid var(--win95-button-shadow)",
+            "border-right": "2px solid var(--win95-button-highlight)",
+            "border-bottom": "2px solid var(--win95-button-highlight)"
+          }
+        }
+      }
+    },
+    {
+      "name": "input",
+      "type": "registry:ui",
+      "title": "Input",
+      "description": "Windows 95 styled text input component",
+      "dependencies": [],
+      "files": [
+        {
+          "path": "components/97cn/input.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "cssVars": {
+        "light": {
+          "win95-white": "#ffffff",
+          "win95-black": "#000000",
+          "win95-dark-gray": "#808080",
+          "win95-button-shadow": "#808080",
+          "win95-button-highlight": "#ffffff"
+        },
+        "dark": {
+          "win95-white": "#ffffff",
+          "win95-black": "#000000",
+          "win95-dark-gray": "#808080",
+          "win95-button-shadow": "#808080",
+          "win95-button-highlight": "#ffffff"
+        }
+      },
+      "css": {
+        "@layer utilities": {
+          ".win95-sunken": {
+            "border-top": "2px solid var(--win95-button-shadow)",
+            "border-left": "2px solid var(--win95-button-shadow)",
+            "border-right": "2px solid var(--win95-button-highlight)",
+            "border-bottom": "2px solid var(--win95-button-highlight)"
+          }
+        }
+      }
+    },
+    {
+      "name": "window",
+      "type": "registry:ui",
+      "title": "Window",
+      "description": "Windows 95 styled window container component",
+      "dependencies": ["lucide-react"],
+      "files": [
+        {
+          "path": "components/97cn/window.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "cssVars": {
+        "light": {
+          "win95-button-face": "#c0c0c0",
+          "win95-active-title": "#000080",
+          "win95-inactive-title": "#808080",
+          "win95-inactive-title-text": "#c0c0c0",
+          "win95-light-gray": "#dfdfdf",
+          "win95-button-highlight": "#ffffff",
+          "win95-button-shadow": "#808080"
+        },
+        "dark": {
+          "win95-button-face": "#c0c0c0",
+          "win95-active-title": "#000080",
+          "win95-inactive-title": "#808080",
+          "win95-inactive-title-text": "#c0c0c0",
+          "win95-light-gray": "#dfdfdf",
+          "win95-button-highlight": "#ffffff",
+          "win95-button-shadow": "#808080"
+        }
+      },
+      "css": {
+        "@layer utilities": {
+          ".win95-raised": {
+            "border-top": "2px solid var(--win95-button-highlight)",
+            "border-left": "2px solid var(--win95-button-highlight)",
+            "border-right": "2px solid var(--win95-button-shadow)",
+            "border-bottom": "2px solid var(--win95-button-shadow)"
+          },
+          ".win95-sunken": {
+            "border-top": "2px solid var(--win95-button-shadow)",
+            "border-left": "2px solid var(--win95-button-shadow)",
+            "border-right": "2px solid var(--win95-button-highlight)",
+            "border-bottom": "2px solid var(--win95-button-highlight)"
+          }
+        }
+      }
+    },
+    {
+      "name": "checkbox",
+      "type": "registry:ui",
+      "title": "Checkbox",
+      "description": "Windows 95 styled checkbox component",
+      "dependencies": ["@radix-ui/react-checkbox"],
+      "files": [
+        {
+          "path": "components/97cn/checkbox.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "cssVars": {
+        "light": {
+          "win95-white": "#ffffff",
+          "win95-black": "#000000",
+          "win95-button-shadow": "#808080",
+          "win95-button-highlight": "#ffffff"
+        },
+        "dark": {
+          "win95-white": "#ffffff",
+          "win95-black": "#000000",
+          "win95-button-shadow": "#808080",
+          "win95-button-highlight": "#ffffff"
+        }
+      },
+      "css": {
+        "@layer utilities": {
+          ".win95-sunken": {
+            "border-top": "2px solid var(--win95-button-shadow)",
+            "border-left": "2px solid var(--win95-button-shadow)",
+            "border-right": "2px solid var(--win95-button-highlight)",
+            "border-bottom": "2px solid var(--win95-button-highlight)"
+          }
+        }
+      }
+    },
+    {
+      "name": "textarea",
+      "type": "registry:ui",
+      "title": "Textarea",
+      "description": "Windows 95 styled textarea component",
+      "dependencies": [],
+      "files": [
+        {
+          "path": "components/97cn/textarea.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "cssVars": {
+        "light": {
+          "win95-white": "#ffffff",
+          "win95-black": "#000000",
+          "win95-dark-gray": "#808080",
+          "win95-button-shadow": "#808080",
+          "win95-button-highlight": "#ffffff"
+        },
+        "dark": {
+          "win95-white": "#ffffff",
+          "win95-black": "#000000",
+          "win95-dark-gray": "#808080",
+          "win95-button-shadow": "#808080",
+          "win95-button-highlight": "#ffffff"
+        }
+      },
+      "css": {
+        "@layer utilities": {
+          ".win95-sunken": {
+            "border-top": "2px solid var(--win95-button-shadow)",
+            "border-left": "2px solid var(--win95-button-shadow)",
+            "border-right": "2px solid var(--win95-button-highlight)",
+            "border-bottom": "2px solid var(--win95-button-highlight)"
+          }
+        }
+      }
+    },
+    {
+      "name": "select",
+      "type": "registry:ui",
+      "title": "Select",
+      "description": "Windows 95 styled select dropdown component",
+      "dependencies": ["@radix-ui/react-select"],
+      "files": [
+        {
+          "path": "components/97cn/select.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "cssVars": {
+        "light": {
+          "win95-white": "#ffffff",
+          "win95-black": "#000000",
+          "win95-button-face": "#c0c0c0",
+          "win95-button-shadow": "#808080",
+          "win95-button-highlight": "#ffffff",
+          "win95-light-gray": "#dfdfdf"
+        },
+        "dark": {
+          "win95-white": "#ffffff",
+          "win95-black": "#000000",
+          "win95-button-face": "#c0c0c0",
+          "win95-button-shadow": "#808080",
+          "win95-button-highlight": "#ffffff",
+          "win95-light-gray": "#dfdfdf"
+        }
+      },
+      "css": {
+        "@layer utilities": {
+          ".win95-raised": {
+            "border-top": "2px solid var(--win95-button-highlight)",
+            "border-left": "2px solid var(--win95-button-highlight)",
+            "border-right": "2px solid var(--win95-button-shadow)",
+            "border-bottom": "2px solid var(--win95-button-shadow)"
+          },
+          ".win95-sunken": {
+            "border-top": "2px solid var(--win95-button-shadow)",
+            "border-left": "2px solid var(--win95-button-shadow)",
+            "border-right": "2px solid var(--win95-button-highlight)",
+            "border-bottom": "2px solid var(--win95-button-highlight)"
+          }
+        }
+      }
+    },
+    {
+      "name": "radio-group",
+      "type": "registry:ui",
+      "title": "Radio Group",
+      "description": "Windows 95 styled radio group component",
+      "dependencies": ["@radix-ui/react-radio-group"],
+      "files": [
+        {
+          "path": "components/97cn/radio-group.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "cssVars": {
+        "light": {
+          "win95-white": "#ffffff",
+          "win95-black": "#000000",
+          "win95-button-shadow": "#808080",
+          "win95-button-highlight": "#ffffff"
+        },
+        "dark": {
+          "win95-white": "#ffffff",
+          "win95-black": "#000000",
+          "win95-button-shadow": "#808080",
+          "win95-button-highlight": "#ffffff"
+        }
+      },
+      "css": {
+        "@layer utilities": {
+          ".win95-sunken": {
+            "border-top": "2px solid var(--win95-button-shadow)",
+            "border-left": "2px solid var(--win95-button-shadow)",
+            "border-right": "2px solid var(--win95-button-highlight)",
+            "border-bottom": "2px solid var(--win95-button-highlight)"
+          }
+        }
+      }
+    },
+    {
+      "name": "progress",
+      "type": "registry:ui",
+      "title": "Progress",
+      "description": "Windows 95 styled progress bar component",
+      "dependencies": ["@radix-ui/react-progress"],
+      "files": [
+        {
+          "path": "components/97cn/progress.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "cssVars": {
+        "light": {
+          "win95-white": "#ffffff",
+          "win95-navy": "#000080",
+          "win95-button-shadow": "#808080",
+          "win95-button-highlight": "#ffffff"
+        },
+        "dark": {
+          "win95-white": "#ffffff",
+          "win95-navy": "#000080",
+          "win95-button-shadow": "#808080",
+          "win95-button-highlight": "#ffffff"
+        }
+      },
+      "css": {
+        "@layer utilities": {
+          ".win95-sunken": {
+            "border-top": "2px solid var(--win95-button-shadow)",
+            "border-left": "2px solid var(--win95-button-shadow)",
+            "border-right": "2px solid var(--win95-button-highlight)",
+            "border-bottom": "2px solid var(--win95-button-highlight)"
+          }
+        }
+      }
+    },
+    {
+      "name": "slider",
+      "type": "registry:ui",
+      "title": "Slider",
+      "description": "Windows 95 styled slider component",
+      "dependencies": ["@radix-ui/react-slider"],
+      "files": [
+        {
+          "path": "components/97cn/slider.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "cssVars": {
+        "light": {
+          "win95-button-face": "#c0c0c0",
+          "win95-button-shadow": "#808080",
+          "win95-button-highlight": "#ffffff",
+          "win95-light-gray": "#dfdfdf"
+        },
+        "dark": {
+          "win95-button-face": "#c0c0c0",
+          "win95-button-shadow": "#808080",
+          "win95-button-highlight": "#ffffff",
+          "win95-light-gray": "#dfdfdf"
+        }
+      },
+      "css": {
+        "@layer utilities": {
+          ".win95-raised": {
+            "border-top": "2px solid var(--win95-button-highlight)",
+            "border-left": "2px solid var(--win95-button-highlight)",
+            "border-right": "2px solid var(--win95-button-shadow)",
+            "border-bottom": "2px solid var(--win95-button-shadow)"
+          },
+          ".win95-sunken": {
+            "border-top": "2px solid var(--win95-button-shadow)",
+            "border-left": "2px solid var(--win95-button-shadow)",
+            "border-right": "2px solid var(--win95-button-highlight)",
+            "border-bottom": "2px solid var(--win95-button-highlight)"
+          }
+        }
+      }
+    },
+    {
+      "name": "switch",
+      "type": "registry:ui",
+      "title": "Switch",
+      "description": "Windows 95 styled switch component",
+      "dependencies": ["@radix-ui/react-switch"],
+      "files": [
+        {
+          "path": "components/97cn/switch.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "cssVars": {
+        "light": {
+          "win95-button-face": "#c0c0c0",
+          "win95-button-shadow": "#808080",
+          "win95-button-highlight": "#ffffff",
+          "win95-navy": "#000080"
+        },
+        "dark": {
+          "win95-button-face": "#c0c0c0",
+          "win95-button-shadow": "#808080",
+          "win95-button-highlight": "#ffffff",
+          "win95-navy": "#000080"
+        }
+      },
+      "css": {
+        "@layer utilities": {
+          ".win95-raised": {
+            "border-top": "2px solid var(--win95-button-highlight)",
+            "border-left": "2px solid var(--win95-button-highlight)",
+            "border-right": "2px solid var(--win95-button-shadow)",
+            "border-bottom": "2px solid var(--win95-button-shadow)"
+          },
+          ".win95-sunken": {
+            "border-top": "2px solid var(--win95-button-shadow)",
+            "border-left": "2px solid var(--win95-button-shadow)",
+            "border-right": "2px solid var(--win95-button-highlight)",
+            "border-bottom": "2px solid var(--win95-button-highlight)"
+          }
+        }
+      }
+    },
+    {
+      "name": "tabs",
+      "type": "registry:ui",
+      "title": "Tabs",
+      "description": "Windows 95 styled tabs component",
+      "dependencies": ["@radix-ui/react-tabs"],
+      "files": [
+        {
+          "path": "components/97cn/tabs.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "cssVars": {
+        "light": {
+          "win95-button-face": "#c0c0c0",
+          "win95-black": "#000000",
+          "win95-button-shadow": "#808080",
+          "win95-button-highlight": "#ffffff"
+        },
+        "dark": {
+          "win95-button-face": "#c0c0c0",
+          "win95-black": "#000000",
+          "win95-button-shadow": "#808080",
+          "win95-button-highlight": "#ffffff"
+        }
+      },
+      "css": {
+        "@layer utilities": {
+          ".win95-raised": {
+            "border-top": "2px solid var(--win95-button-highlight)",
+            "border-left": "2px solid var(--win95-button-highlight)",
+            "border-right": "2px solid var(--win95-button-shadow)",
+            "border-bottom": "2px solid var(--win95-button-shadow)"
+          }
+        }
+      }
+    },
+    {
+      "name": "toggle",
+      "type": "registry:ui",
+      "title": "Toggle",
+      "description": "Windows 95 styled toggle button component",
+      "dependencies": ["@radix-ui/react-toggle"],
+      "files": [
+        {
+          "path": "components/97cn/toggle.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "cssVars": {
+        "light": {
+          "win95-button-face": "#c0c0c0",
+          "win95-black": "#000000",
+          "win95-light-gray": "#dfdfdf",
+          "win95-button-shadow": "#808080",
+          "win95-button-highlight": "#ffffff"
+        },
+        "dark": {
+          "win95-button-face": "#c0c0c0",
+          "win95-black": "#000000",
+          "win95-light-gray": "#dfdfdf",
+          "win95-button-shadow": "#808080",
+          "win95-button-highlight": "#ffffff"
+        }
+      },
+      "css": {
+        "@layer utilities": {
+          ".win95-raised": {
+            "border-top": "2px solid var(--win95-button-highlight)",
+            "border-left": "2px solid var(--win95-button-highlight)",
+            "border-right": "2px solid var(--win95-button-shadow)",
+            "border-bottom": "2px solid var(--win95-button-shadow)"
+          },
+          ".win95-sunken": {
+            "border-top": "2px solid var(--win95-button-shadow)",
+            "border-left": "2px solid var(--win95-button-shadow)",
+            "border-right": "2px solid var(--win95-button-highlight)",
+            "border-bottom": "2px solid var(--win95-button-highlight)"
+          }
+        }
+      }
+    },
+    {
+      "name": "toggle-group",
+      "type": "registry:ui",
+      "title": "Toggle Group",
+      "description": "Windows 95 styled toggle group component",
+      "dependencies": ["@radix-ui/react-toggle-group"],
+      "files": [
+        {
+          "path": "components/97cn/toggle-group.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "cssVars": {
+        "light": {
+          "win95-button-face": "#c0c0c0",
+          "win95-black": "#000000",
+          "win95-light-gray": "#dfdfdf",
+          "win95-button-shadow": "#808080",
+          "win95-button-highlight": "#ffffff"
+        },
+        "dark": {
+          "win95-button-face": "#c0c0c0",
+          "win95-black": "#000000",
+          "win95-light-gray": "#dfdfdf",
+          "win95-button-shadow": "#808080",
+          "win95-button-highlight": "#ffffff"
+        }
+      },
+      "css": {
+        "@layer utilities": {
+          ".win95-raised": {
+            "border-top": "2px solid var(--win95-button-highlight)",
+            "border-left": "2px solid var(--win95-button-highlight)",
+            "border-right": "2px solid var(--win95-button-shadow)",
+            "border-bottom": "2px solid var(--win95-button-shadow)"
+          },
+          ".win95-sunken": {
+            "border-top": "2px solid var(--win95-button-shadow)",
+            "border-left": "2px solid var(--win95-button-shadow)",
+            "border-right": "2px solid var(--win95-button-highlight)",
+            "border-bottom": "2px solid var(--win95-button-highlight)"
+          }
+        }
+      }
+    },
+    {
+      "name": "command",
+      "type": "registry:ui",
+      "title": "Command",
+      "description": "Windows 95 styled command palette component",
+      "dependencies": ["cmdk"],
+      "files": [
+        {
+          "path": "components/97cn/command.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "cssVars": {
+        "light": {
+          "win95-button-face": "#c0c0c0",
+          "win95-white": "#ffffff",
+          "win95-black": "#000000",
+          "win95-highlight": "#0000ff",
+          "win95-highlight-text": "#ffffff",
+          "win95-button-shadow": "#808080",
+          "win95-button-highlight": "#ffffff"
+        },
+        "dark": {
+          "win95-button-face": "#c0c0c0",
+          "win95-white": "#ffffff",
+          "win95-black": "#000000",
+          "win95-highlight": "#0000ff",
+          "win95-highlight-text": "#ffffff",
+          "win95-button-shadow": "#808080",
+          "win95-button-highlight": "#ffffff"
+        }
+      },
+      "css": {
+        "@layer utilities": {
+          ".win95-raised": {
+            "border-top": "2px solid var(--win95-button-highlight)",
+            "border-left": "2px solid var(--win95-button-highlight)",
+            "border-right": "2px solid var(--win95-button-shadow)",
+            "border-bottom": "2px solid var(--win95-button-shadow)"
+          },
+          ".win95-sunken": {
+            "border-top": "2px solid var(--win95-button-shadow)",
+            "border-left": "2px solid var(--win95-button-shadow)",
+            "border-right": "2px solid var(--win95-button-highlight)",
+            "border-bottom": "2px solid var(--win95-button-highlight)"
+          }
+        }
+      }
+    },
+    {
+      "name": "otp-input",
+      "type": "registry:ui",
+      "title": "OTP Input",
+      "description": "Windows 95 styled OTP input component",
+      "dependencies": ["input-otp"],
+      "files": [
+        {
+          "path": "components/97cn/otp-input.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "cssVars": {
+        "light": {
+          "win95-white": "#ffffff",
+          "win95-black": "#000000",
+          "win95-button-shadow": "#808080",
+          "win95-button-highlight": "#ffffff"
+        },
+        "dark": {
+          "win95-white": "#ffffff",
+          "win95-black": "#000000",
+          "win95-button-shadow": "#808080",
+          "win95-button-highlight": "#ffffff"
+        }
+      },
+      "css": {
+        "@layer utilities": {
+          ".win95-sunken": {
+            "border-top": "2px solid var(--win95-button-shadow)",
+            "border-left": "2px solid var(--win95-button-shadow)",
+            "border-right": "2px solid var(--win95-button-highlight)",
+            "border-bottom": "2px solid var(--win95-button-highlight)"
+          }
+        }
+      }
+    },
+    {
+      "name": "group-box",
+      "type": "registry:ui",
+      "title": "Group Box",
+      "description": "Windows 95 styled group box component",
+      "dependencies": [],
+      "files": [
+        {
+          "path": "components/97cn/group-box.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "cssVars": {
+        "light": {
+          "win95-button-face": "#c0c0c0",
+          "win95-black": "#000000",
+          "win95-button-shadow": "#808080",
+          "win95-button-highlight": "#ffffff"
+        },
+        "dark": {
+          "win95-button-face": "#c0c0c0",
+          "win95-black": "#000000",
+          "win95-button-shadow": "#808080",
+          "win95-button-highlight": "#ffffff"
+        }
+      },
+      "css": {
+        "@layer utilities": {
+          ".win95-sunken": {
+            "border-top": "2px solid var(--win95-button-shadow)",
+            "border-left": "2px solid var(--win95-button-shadow)",
+            "border-right": "2px solid var(--win95-button-highlight)",
+            "border-bottom": "2px solid var(--win95-button-highlight)"
+          }
+        }
+      }
+    },
+    {
+      "name": "menu-bar",
+      "type": "registry:ui",
+      "title": "Menu Bar",
+      "description": "Windows 95 styled menu bar component",
+      "dependencies": ["@radix-ui/react-menubar"],
+      "files": [
+        {
+          "path": "components/97cn/menu-bar.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "cssVars": {
+        "light": {
+          "win95-button-face": "#c0c0c0",
+          "win95-black": "#000000",
+          "win95-highlight": "#0000ff",
+          "win95-highlight-text": "#ffffff",
+          "win95-button-shadow": "#808080",
+          "win95-button-highlight": "#ffffff"
+        },
+        "dark": {
+          "win95-button-face": "#c0c0c0",
+          "win95-black": "#000000",
+          "win95-highlight": "#0000ff",
+          "win95-highlight-text": "#ffffff",
+          "win95-button-shadow": "#808080",
+          "win95-button-highlight": "#ffffff"
+        }
+      },
+      "css": {
+        "@layer utilities": {
+          ".win95-raised": {
+            "border-top": "2px solid var(--win95-button-highlight)",
+            "border-left": "2px solid var(--win95-button-highlight)",
+            "border-right": "2px solid var(--win95-button-shadow)",
+            "border-bottom": "2px solid var(--win95-button-shadow)"
+          }
+        }
+      }
+    },
+    {
+      "name": "status-bar",
+      "type": "registry:ui",
+      "title": "Status Bar",
+      "description": "Windows 95 styled status bar component",
+      "dependencies": [],
+      "files": [
+        {
+          "path": "components/97cn/status-bar.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "cssVars": {
+        "light": {
+          "win95-button-face": "#c0c0c0",
+          "win95-black": "#000000",
+          "win95-button-shadow": "#808080",
+          "win95-button-highlight": "#ffffff"
+        },
+        "dark": {
+          "win95-button-face": "#c0c0c0",
+          "win95-black": "#000000",
+          "win95-button-shadow": "#808080",
+          "win95-button-highlight": "#ffffff"
+        }
+      },
+      "css": {
+        "@layer utilities": {
+          ".win95-sunken": {
+            "border-top": "2px solid var(--win95-button-shadow)",
+            "border-left": "2px solid var(--win95-button-shadow)",
+            "border-right": "2px solid var(--win95-button-highlight)",
+            "border-bottom": "2px solid var(--win95-button-highlight)"
+          }
+        }
+      }
+    },
+    {
+      "name": "context-menu",
+      "type": "registry:ui",
+      "title": "Context Menu",
+      "description": "Windows 95 styled context menu component",
+      "dependencies": ["@radix-ui/react-context-menu"],
+      "files": [
+        {
+          "path": "components/97cn/context-menu.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "cssVars": {
+        "light": {
+          "win95-button-face": "#c0c0c0",
+          "win95-black": "#000000",
+          "win95-highlight": "#0000ff",
+          "win95-highlight-text": "#ffffff",
+          "win95-button-shadow": "#808080",
+          "win95-button-highlight": "#ffffff"
+        },
+        "dark": {
+          "win95-button-face": "#c0c0c0",
+          "win95-black": "#000000",
+          "win95-highlight": "#0000ff",
+          "win95-highlight-text": "#ffffff",
+          "win95-button-shadow": "#808080",
+          "win95-button-highlight": "#ffffff"
+        }
+      },
+      "css": {
+        "@layer utilities": {
+          ".win95-raised": {
+            "border-top": "2px solid var(--win95-button-highlight)",
+            "border-left": "2px solid var(--win95-button-highlight)",
+            "border-right": "2px solid var(--win95-button-shadow)",
+            "border-bottom": "2px solid var(--win95-button-shadow)"
+          }
+        }
+      }
+    },
+    {
+      "name": "toast",
+      "type": "registry:ui",
+      "title": "Toast",
+      "description": "Windows 95 styled toast notification component",
+      "dependencies": ["@radix-ui/react-toast"],
+      "files": [
+        {
+          "path": "components/97cn/toast.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "cssVars": {
+        "light": {
+          "win95-button-face": "#c0c0c0",
+          "win95-black": "#000000",
+          "win95-button-shadow": "#808080",
+          "win95-button-highlight": "#ffffff"
+        },
+        "dark": {
+          "win95-button-face": "#c0c0c0",
+          "win95-black": "#000000",
+          "win95-button-shadow": "#808080",
+          "win95-button-highlight": "#ffffff"
+        }
+      },
+      "css": {
+        "@layer utilities": {
+          ".win95-raised": {
+            "border-top": "2px solid var(--win95-button-highlight)",
+            "border-left": "2px solid var(--win95-button-highlight)",
+            "border-right": "2px solid var(--win95-button-shadow)",
+            "border-bottom": "2px solid var(--win95-button-shadow)"
+          }
+        }
+      }
+    },
+    {
+      "name": "tooltip",
+      "type": "registry:ui",
+      "title": "Tooltip",
+      "description": "Windows 95 styled tooltip component",
+      "dependencies": ["@radix-ui/react-tooltip"],
+      "files": [
+        {
+          "path": "components/97cn/tooltip.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "cssVars": {
+        "light": {
+          "win95-button-face": "#c0c0c0",
+          "win95-black": "#000000",
+          "win95-button-shadow": "#808080",
+          "win95-button-highlight": "#ffffff"
+        },
+        "dark": {
+          "win95-button-face": "#c0c0c0",
+          "win95-black": "#000000",
+          "win95-button-shadow": "#808080",
+          "win95-button-highlight": "#ffffff"
+        }
+      },
+      "css": {
+        "@layer utilities": {
+          ".win95-raised": {
+            "border-top": "2px solid var(--win95-button-highlight)",
+            "border-left": "2px solid var(--win95-button-highlight)",
+            "border-right": "2px solid var(--win95-button-shadow)",
+            "border-bottom": "2px solid var(--win95-button-shadow)"
+          }
+        }
+      }
+    },
+    {
+      "name": "skeleton",
+      "type": "registry:ui",
+      "title": "Skeleton",
+      "description": "Windows 95 styled skeleton loading component",
+      "dependencies": [],
+      "files": [
+        {
+          "path": "components/97cn/skeleton.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "cssVars": {
+        "light": {
+          "win95-light-gray": "#dfdfdf",
+          "win95-dark-gray": "#808080"
+        },
+        "dark": {
+          "win95-light-gray": "#dfdfdf",
+          "win95-dark-gray": "#808080"
+        }
+      }
+    },
+    {
+      "name": "popover",
+      "type": "registry:ui",
+      "title": "Popover",
+      "description": "Windows 95 styled popover component",
+      "dependencies": ["@radix-ui/react-popover"],
+      "files": [
+        {
+          "path": "components/97cn/popover.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "cssVars": {
+        "light": {
+          "win95-button-face": "#c0c0c0",
+          "win95-black": "#000000",
+          "win95-button-shadow": "#808080",
+          "win95-button-highlight": "#ffffff"
+        },
+        "dark": {
+          "win95-button-face": "#c0c0c0",
+          "win95-black": "#000000",
+          "win95-button-shadow": "#808080",
+          "win95-button-highlight": "#ffffff"
+        }
+      },
+      "css": {
+        "@layer utilities": {
+          ".win95-raised": {
+            "border-top": "2px solid var(--win95-button-highlight)",
+            "border-left": "2px solid var(--win95-button-highlight)",
+            "border-right": "2px solid var(--win95-button-shadow)",
+            "border-bottom": "2px solid var(--win95-button-shadow)"
+          }
+        }
+      }
+    },
+    {
+      "name": "dialog",
+      "type": "registry:ui",
+      "title": "Dialog",
+      "description": "Windows 95 styled dialog component",
+      "dependencies": ["@radix-ui/react-dialog"],
+      "files": [
+        {
+          "path": "components/97cn/dialog.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "cssVars": {
+        "light": {
+          "win95-button-face": "#c0c0c0",
+          "win95-black": "#000000",
+          "win95-active-title": "#000080",
+          "win95-button-shadow": "#808080",
+          "win95-button-highlight": "#ffffff"
+        },
+        "dark": {
+          "win95-button-face": "#c0c0c0",
+          "win95-black": "#000000",
+          "win95-active-title": "#000080",
+          "win95-button-shadow": "#808080",
+          "win95-button-highlight": "#ffffff"
+        }
+      },
+      "css": {
+        "@layer utilities": {
+          ".win95-raised": {
+            "border-top": "2px solid var(--win95-button-highlight)",
+            "border-left": "2px solid var(--win95-button-highlight)",
+            "border-right": "2px solid var(--win95-button-shadow)",
+            "border-bottom": "2px solid var(--win95-button-shadow)"
+          }
+        }
+      }
+    }
+  ]
+}

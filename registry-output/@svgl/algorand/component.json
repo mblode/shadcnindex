@@ -1,0 +1,14 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "algorand",
+  "title": "algorand",
+  "files": [
+    {
+      "path": "././static/components-generated/algorand.tsx",
+      "content": "import type { SVGProps } from \"react\";\n\nconst Algorand = (props: SVGProps<SVGSVGElement>) => (\n  <svg {...props} viewBox=\"0 0 32 32\" xmlnsXlink=\"http://www.w3.org/1999/xlink\">\n    <defs>\n      <linearGradient\n        id=\"c\"\n        x1=\"16\"\n        x2=\"16\"\n        y1=\"0\"\n        y2=\"30\"\n        gradientUnits=\"userSpaceOnUse\"\n      >\n        <stop offset=\"0%\" stop-color=\"#FFF\" stop-opacity=\".5\" />\n        <stop offset=\"100%\" stop-opacity=\".5\" />\n      </linearGradient>\n      <filter\n        id=\"a\"\n        width=\"1.08\"\n        height=\"1.0966667\"\n        x=\"-.04\"\n        y=\"-.04\"\n        filterUnits=\"objectBoundingBox\"\n      >\n        <feOffset dy=\".5\" in=\"SourceAlpha\" result=\"shadowOffsetOuter1\" />\n        <feGaussianBlur\n          in=\"shadowOffsetOuter1\"\n          result=\"shadowBlurOuter1\"\n          stdDeviation=\".5\"\n        />\n        <feComposite\n          in=\"shadowBlurOuter1\"\n          in2=\"SourceAlpha\"\n          operator=\"out\"\n          result=\"shadowBlurOuter1\"\n        />\n        <feColorMatrix\n          in=\"shadowBlurOuter1\"\n          values=\"0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.199473505 0\"\n        />\n      </filter>\n      <circle id=\"b\" cx=\"16\" cy=\"15\" r=\"15\" />\n    </defs>\n    <use\n      xlink:href=\"#b\"\n      filter=\"url(#a)\"\n      style={{ display: \"inline\", fillRule: \"evenodd\" }}\n    />\n    <use\n      xlink:href=\"#b\"\n      fill=\"#627eea\"\n      style={{\n        display: \"inline\",\n        fill: \"#e5e5e5\",\n        fillOpacity: \"1\",\n        fillRule: \"evenodd\",\n      }}\n    />\n    <use\n      xlink:href=\"#b\"\n      fill=\"url(#c)\"\n      style={{\n        display: \"inline\",\n        mixBlendMode: \"soft-light\",\n        fill: \"url(#c)\",\n        fillRule: \"evenodd\",\n      }}\n    />\n    <circle\n      cx=\"16\"\n      cy=\"15\"\n      r=\"14.5\"\n      stroke=\"#000\"\n      stroke-opacity=\".097\"\n      style={{ display: \"inline\", fill: \"none\", fillRule: \"evenodd\" }}\n    />\n    <path\n      d=\"m10.331859 23 7.221238-12.601771.99115 3.256638L13.022125 23h2.83186l3.539822-6.088495L20.951328 23H23.5l-2.40708-9.061945 1.699118-2.973453h-2.548674L19.252216 7h-2.407083L7.5 23Z\"\n      style={{\n        fill: \"#000\",\n        fillOpacity: \"1\",\n        stroke: \"none\",\n        strokeWidth: \".141594\",\n        strokeOpacity: \"1\",\n      }}\n    />\n  </svg>\n);\n\nexport { Algorand };\n",
+      "type": "registry:component",
+      "target": "components/ui/svgs/algorand.tsx"
+    }
+  ],
+  "type": "registry:component"
+}

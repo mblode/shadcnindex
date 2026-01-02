@@ -1,0 +1,26 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "hero111",
+  "url": "https://shadcnblocks.com/r/hero111.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "hero111",
+    "type": "registry:block",
+    "title": "Hero",
+    "description": "A component showcases an email form, heading, description, features like \"No Credit Card Required,\" 3 placeholder images with different aspect ratios, and a grid of fictional company logos.",
+    "dependencies": [
+      "@hookform/resolvers",
+      "lucide-react",
+      "react-hook-form",
+      "zod"
+    ],
+    "registryDependencies": ["aspect-ratio", "button", "form", "input"],
+    "files": [
+      {
+        "path": "code/block/hero111.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:33.765Z"
+}

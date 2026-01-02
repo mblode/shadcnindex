@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature35",
+  "url": "https://shadcnblocks.com/r/feature35.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature35",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A 4-column component with a large title spans 2 rows, followed by 3 content blocks, each with a title, text, and link. An arrow icon accents links.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/feature35.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:28.701Z"
+}

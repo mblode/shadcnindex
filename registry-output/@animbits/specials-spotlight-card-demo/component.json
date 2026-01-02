@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "specials-spotlight-card-demo",
+  "type": "registry:component",
+  "title": "Spotlight Card Demo",
+  "description": "Demo for the Spotlight Card component",
+  "dependencies": ["motion", "lucide-react"],
+  "files": [
+    {
+      "path": "registry/new-york/animations/specials/spotlight-card-demo.tsx",
+      "content": "\"use client\";\n\nimport { SpotlightCard } from \"./spotlight-card\";\nimport { Lock } from \"lucide-react\";\n\nexport default function SpotlightCardDemo() {\n    return (\n        <div className=\"flex min-h-[400px] w-full items-center justify-center bg-white dark:bg-neutral-950 p-8\">\n            <SpotlightCard\n                className=\"w-full max-w-sm rounded-[24px] bg-white dark:bg-neutral-900 border-neutral-200 dark:border-neutral-800 p-8\"\n                spotlightColor=\"rgba(0, 229, 255, 0.2)\"\n            >\n                <div className=\"relative z-10 flex flex-col items-start gap-4 h-full\">\n                    <div className=\"p-3 rounded-2xl bg-cyan-100 dark:bg-cyan-900/30 text-cyan-500 dark:text-cyan-300\">\n                        <Lock className=\"w-6 h-6\" />\n                    </div>\n\n                    <div>\n                        <h2 className=\"text-2xl font-bold text-neutral-900 dark:text-white mb-2\">\n                            Secure Authentication\n                        </h2>\n                        <p className=\"text-neutral-500 dark:text-neutral-400\">\n                            Hover over this card to reveal the spotlight effect.\n                            It highlights the border and content dynamically.\n                        </p>\n                    </div>\n\n                    <div className=\"mt-4 pt-4 border-t border-neutral-100 dark:border-neutral-800 w-full\">\n                        <button className=\"text-sm font-semibold text-cyan-600 dark:text-cyan-400 hover:text-cyan-500 transition-colors\">\n                            Learn more &rarr;\n                        </button>\n                    </div>\n                </div>\n            </SpotlightCard>\n        </div>\n    );\n}\n",
+      "type": "registry:component"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "scrollable-tabslist-scrollable-tabslist-basic",
+  "url": "https://shadcnblocks.com/r/scrollable-tabslist-scrollable-tabslist-basic.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "scrollable-tabslist-scrollable-tabslist-basic",
+    "type": "registry:block",
+    "title": "Scrollable-tabslist/scrollable-tabslist-basic",
+    "description": "A scrollable-tabslist/scrollable-tabslist-basic example",
+    "dependencies": [],
+    "registryDependencies": [
+      "https://shadcnblocks.com/r/scrollable-tabslist",
+      "scroll-area",
+      "tabs"
+    ],
+    "files": [
+      {
+        "path": "code/example/scrollable-tabslist/scrollable-tabslist-basic.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:15:31.462Z"
+}

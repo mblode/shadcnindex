@@ -1,0 +1,22 @@
+{
+  "registry": "@magicui-pro",
+  "component": "header-1",
+  "url": "https://pro.magicui.design/registry/header-1",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "header-1",
+    "type": "registry:block",
+    "description": "A header section which animates while scrolling down.",
+    "dependencies": ["motion", "next-themes"],
+    "files": [
+      {
+        "path": "registry/blocks/header-1.tsx",
+        "type": "registry:component"
+      }
+    ],
+    "meta": {
+      "height": 800
+    }
+  },
+  "fetchedAt": "2026-01-02T11:10:47.436Z"
+}

@@ -1,0 +1,39 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "progress",
+  "type": "registry:ui",
+  "title": "Progress",
+  "description": "Windows 95 styled progress bar component",
+  "dependencies": ["@radix-ui/react-progress"],
+  "files": [
+    {
+      "path": "components/97cn/progress.tsx",
+      "content": "\"use client\"\n\nimport * as React from \"react\"\nimport * as ProgressPrimitive from \"@radix-ui/react-progress\"\nimport { cn } from \"@/lib/utils\"\n\nconst Win95Progress = React.forwardRef<\n  React.ElementRef<typeof ProgressPrimitive.Root>,\n  React.ComponentPropsWithoutRef<typeof ProgressPrimitive.Root>\n>(({ className, value, ...props }, ref) => {\n  const totalSegments = 20\n  const filledSegments = Math.floor(((value || 0) / 100) * totalSegments)\n\n  return (\n    <ProgressPrimitive.Root\n      ref={ref}\n      className={cn(\"relative h-6 w-full overflow-hidden bg-win95-white win95-sunken rounded-none\", className)}\n      {...props}\n    >\n      <div className=\"flex h-full gap-[1px] p-[1px]\">\n        {Array.from({ length: totalSegments }, (_, i) => (\n          <div\n            key={i}\n            className={cn(\"flex-1 h-full rounded-none\", i < filledSegments ? \"bg-win95-navy\" : \"bg-transparent\")}\n          />\n        ))}\n      </div>\n    </ProgressPrimitive.Root>\n  )\n})\nWin95Progress.displayName = ProgressPrimitive.Root.displayName\n\nexport { Win95Progress }\n",
+      "type": "registry:ui"
+    }
+  ],
+  "cssVars": {
+    "light": {
+      "win95-white": "#ffffff",
+      "win95-navy": "#000080",
+      "win95-button-shadow": "#808080",
+      "win95-button-highlight": "#ffffff"
+    },
+    "dark": {
+      "win95-white": "#ffffff",
+      "win95-navy": "#000080",
+      "win95-button-shadow": "#808080",
+      "win95-button-highlight": "#ffffff"
+    }
+  },
+  "css": {
+    "@layer utilities": {
+      ".win95-sunken": {
+        "border-top": "2px solid var(--win95-button-shadow)",
+        "border-left": "2px solid var(--win95-button-shadow)",
+        "border-right": "2px solid var(--win95-button-highlight)",
+        "border-bottom": "2px solid var(--win95-button-highlight)"
+      }
+    }
+  }
+}

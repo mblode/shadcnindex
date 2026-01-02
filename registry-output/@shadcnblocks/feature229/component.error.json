@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature229",
+  "url": "https://shadcnblocks.com/r/feature229.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature229",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A component with 3 columns, listing features under \"Security,\" \"Integration & APIs,\" and \"Support\" categories, each with their icons and items marked by check icons.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/feature229.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:25.791Z"
+}

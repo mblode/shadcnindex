@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "background-pattern33",
+  "url": "https://shadcnblocks.com/r/background-pattern33.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "background-pattern33",
+    "type": "registry:block",
+    "title": "Background-pattern",
+    "description": "This component is designed to create a visually engaging background with a circuit board pattern, featuring a left fade effect. It allows for customizable class names to adapt its styling according to specific needs.",
+    "dependencies": [],
+    "registryDependencies": ["https://shadcnblocks.com/r/pattern-placeholder"],
+    "files": [
+      {
+        "path": "code/block/background-pattern33.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:13.206Z"
+}

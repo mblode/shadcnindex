@@ -1,0 +1,20 @@
+{
+  "registry": "@magicui-pro",
+  "component": "footer-11",
+  "url": "https://pro.magicui.design/registry/footer-11",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "footer-11",
+    "type": "registry:block",
+    "files": [
+      {
+        "path": "registry/blocks/footer-11.tsx",
+        "type": "registry:component"
+      }
+    ],
+    "meta": {
+      "height": 393
+    }
+  },
+  "fetchedAt": "2026-01-02T11:10:49.069Z"
+}

@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "hero221",
+  "url": "https://shadcnblocks.com/r/hero221.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "hero221",
+    "type": "registry:block",
+    "title": "Hero",
+    "description": "A component featuring animated text over a video, with a centered tagline below. Includes a button with an animated arrow icon.",
+    "dependencies": ["framer-motion", "lucide-react", "react"],
+    "registryDependencies": ["https://magicui.design/r/video-text", "button"],
+    "files": [
+      {
+        "path": "code/block/hero221.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:36.657Z"
+}

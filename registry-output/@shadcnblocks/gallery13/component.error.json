@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "gallery13",
+  "url": "https://shadcnblocks.com/r/gallery13.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "gallery13",
+    "type": "registry:block",
+    "title": "Gallery",
+    "description": "A carousel component showcasing items with images, titles, descriptions, and icons in a 2:3 column layout. It dynamically updates the active display and navigation functionality.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": ["carousel"],
+    "files": [
+      {
+        "path": "code/block/gallery13.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:32.182Z"
+}

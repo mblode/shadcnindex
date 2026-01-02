@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "hooks-use-stroke-draw",
+  "type": "registry:lib",
+  "title": "Use Stroke Draw",
+  "description": "The use-stroke-draw hook.",
+  "dependencies": ["motion"],
+  "files": [
+    {
+      "path": "lib/use-stroke-draw.ts",
+      "content": "import { type MotionProps, type Easing } from \"motion/react\";\n\nexport interface UseStrokeDrawOptions {\n  duration?: number;\n  delay?: number;\n  repeat?: boolean;\n  ease?: Easing | Easing[];\n}\n\nexport function useStrokeDraw(options: UseStrokeDrawOptions = {}): MotionProps {\n  const {\n    duration = 1.5,\n    delay = 0,\n    repeat = false,\n    ease = \"easeInOut\",\n  } = options;\n\n  return {\n    initial: { pathLength: 0, opacity: 0 },\n    animate: { pathLength: 1, opacity: 1 },\n    transition: {\n      pathLength: { duration, delay, ease },\n      opacity: { duration: 0.2, delay },\n      repeat: repeat ? Infinity : 0,\n      repeatDelay: 1,\n    },\n  };\n}\n",
+      "type": "registry:lib"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "extends": "none",
+  "name": "button-shape-demo",
+  "title": "Button Shape",
+  "description": "button-shape-demo",
+  "registryDependencies": ["https://intentui.com/r/button"],
+  "files": [
+    {
+      "path": "src/components/docs/buttons/button/button-shape-demo.tsx",
+      "content": "\"use client\"\n\nimport { Button } from \"@/components/ui/button\"\n\nexport default function ButtonShapeDemo() {\n  return <Button isCircle>Label</Button>\n}\n",
+      "type": "registry:page",
+      "target": "app/button-shape-demo/page.tsx"
+    }
+  ],
+  "type": "registry:page"
+}

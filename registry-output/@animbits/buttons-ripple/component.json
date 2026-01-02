@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "buttons-ripple",
+  "type": "registry:component",
+  "title": "Ripple Button",
+  "description": "Button with touch-aware ripple effect on click",
+  "dependencies": ["motion"],
+  "files": [
+    {
+      "path": "registry/new-york/animations/buttons/ripple.tsx",
+      "content": "\"use client\";\nimport * as React from \"react\";\nimport { motion, HTMLMotionProps } from \"motion/react\";\nimport { cn } from \"@/lib/utils\";\ninterface RippleButtonProps extends Omit<HTMLMotionProps<\"button\">, \"onClick\"> {\n  children: React.ReactNode;\n  rippleColor?: string;\n  duration?: number;\n  onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void;\n}\ninterface Ripple {\n  x: number;\n  y: number;\n  id: number;\n}\nexport function RippleButton({\n  children,\n  className,\n  rippleColor = \"rgba(255, 255, 255, 0.6)\",\n  duration = 0.6,\n  onClick,\n  ...props\n}: RippleButtonProps) {\n  const [ripples, setRipples] = React.useState<Ripple[]>([]);\n  const buttonRef = React.useRef<HTMLButtonElement>(null);\n  const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {\n    const button = buttonRef.current;\n    if (!button) return;\n    const rect = button.getBoundingClientRect();\n    const x = e.clientX - rect.left;\n    const y = e.clientY - rect.top;\n    const newRipple = {\n      x,\n      y,\n      id: Date.now(),\n    };\n    setRipples((prev) => [...prev, newRipple]);\n    setTimeout(() => {\n      setRipples((prev) => prev.filter((r) => r.id !== newRipple.id));\n    }, duration * 1000);\n    onClick?.(e);\n  };\n  return (\n    <motion.button\n      ref={buttonRef}\n      className={cn(\"relative overflow-hidden\", className)}\n      onClick={handleClick}\n      {...props}\n    >\n      {children}\n      {ripples.map((ripple) => (\n        <motion.span\n          key={ripple.id}\n          className=\"absolute rounded-full pointer-events-none\"\n          style={{\n            left: ripple.x,\n            top: ripple.y,\n            backgroundColor: rippleColor,\n          }}\n          initial={{ width: 0, height: 0, opacity: 1 }}\n          animate={{\n            width: 500,\n            height: 500,\n            opacity: 0,\n            x: -250,\n            y: -250,\n          }}\n          transition={{ duration, ease: \"easeOut\" }}\n        />\n      ))}\n    </motion.button>\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ]
+}

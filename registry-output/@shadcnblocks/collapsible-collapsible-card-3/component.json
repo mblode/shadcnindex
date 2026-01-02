@@ -1,0 +1,22 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "collapsible-collapsible-card-3",
+  "title": "Collapsible/collapsible-card-",
+  "description": "A collapsible/collapsible-card- example",
+  "dependencies": ["@radix-ui/react-collapsible"],
+  "registryDependencies": ["collapsible"],
+  "files": [
+    {
+      "path": "code/example/collapsible/collapsible-card-3.tsx",
+      "content": "import {\n  Collapsible,\n  CollapsibleContent,\n  CollapsibleTrigger,\n} from \"@/components/ui/collapsible\";\n\nexport const title = \"Nested Card Content\";\n\nconst Example = () => (\n  <Collapsible className=\"w-full max-w-lg rounded-lg border bg-card text-card-foreground shadow-sm\">\n    <CollapsibleTrigger className=\"flex w-full items-center justify-between p-4 font-medium hover:bg-muted/50\">\n      Product Details\n    </CollapsibleTrigger>\n    <CollapsibleContent className=\"border-t\">\n      <div className=\"divide-y\">\n        <div className=\"p-4\">\n          <h5 className=\"mb-1 text-sm font-medium\">Dimensions</h5>\n          <p className=\"text-sm text-muted-foreground\">24\" x 18\" x 12\"</p>\n        </div>\n        <div className=\"p-4\">\n          <h5 className=\"mb-1 text-sm font-medium\">Weight</h5>\n          <p className=\"text-sm text-muted-foreground\">5.2 lbs</p>\n        </div>\n        <div className=\"p-4\">\n          <h5 className=\"mb-1 text-sm font-medium\">Material</h5>\n          <p className=\"text-sm text-muted-foreground\">Premium plastic</p>\n        </div>\n      </div>\n    </CollapsibleContent>\n  </Collapsible>\n);\n\nexport default Example;\n",
+      "type": "registry:block"
+    },
+    {
+      "path": "src/components/ui/collapsible.tsx",
+      "content": "import * as CollapsiblePrimitive from \"@radix-ui/react-collapsible\"\n\nfunction Collapsible({\n  ...props\n}: React.ComponentProps<typeof CollapsiblePrimitive.Root>) {\n  return <CollapsiblePrimitive.Root data-slot=\"collapsible\" {...props} />\n}\n\nfunction CollapsibleTrigger({\n  ...props\n}: React.ComponentProps<typeof CollapsiblePrimitive.CollapsibleTrigger>) {\n  return (\n    <CollapsiblePrimitive.CollapsibleTrigger\n      data-slot=\"collapsible-trigger\"\n      {...props}\n    />\n  )\n}\n\nfunction CollapsibleContent({\n  ...props\n}: React.ComponentProps<typeof CollapsiblePrimitive.CollapsibleContent>) {\n  return (\n    <CollapsiblePrimitive.CollapsibleContent\n      data-slot=\"collapsible-content\"\n      {...props}\n    />\n  )\n}\n\nexport { Collapsible, CollapsibleTrigger, CollapsibleContent }\n",
+      "type": "registry:ui",
+      "target": ""
+    }
+  ],
+  "type": "registry:block"
+}

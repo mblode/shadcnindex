@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "word-by-word-example",
+  "type": "registry:component",
+  "title": "Word by Word Example",
+  "description": "Word by word effect applied to a container.",
+  "dependencies": ["gsap", "react", "@gsap/react"],
+  "registryDependencies": ["https://ui.phucbm.com/r/word-by-word.json"],
+  "files": [
+    {
+      "path": "registry/phucbm/blocks/word-by-word/example.transformed.tsx",
+      "content": "import {WordByWord} from \"@/components/phucbm/word-by-word\";\n\nexport default function Example() {\n    return (\n        <WordByWord/>\n    );\n}",
+      "type": "registry:component",
+      "target": "index.tsx"
+    }
+  ]
+}

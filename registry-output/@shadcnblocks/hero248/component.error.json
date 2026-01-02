@@ -1,0 +1,24 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "hero248",
+  "url": "https://shadcnblocks.com/r/hero248.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "hero248",
+    "type": "registry:block",
+    "title": "Hero",
+    "description": "A component showcasing a team section with dynamic tooltips over names, a large title, description, and a call-to-action button. Incorporates a 2-column layout with rotating tooltips for team members.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": [
+      "https://magicui.design/r/animated-tooltip",
+      "button"
+    ],
+    "files": [
+      {
+        "path": "code/block/hero248.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:37.847Z"
+}

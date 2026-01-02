@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "extends": "none",
+  "name": "color-wheel-controlled-demo",
+  "title": "Color Wheel Controlled",
+  "description": "color-wheel-controlled-demo",
+  "dependencies": ["@react-stately/color"],
+  "registryDependencies": ["https://intentui.com/r/color-wheel"],
+  "files": [
+    {
+      "path": "src/components/docs/colors/color-wheel/color-wheel-controlled-demo.tsx",
+      "content": "\"use client\"\n\nimport { parseColor } from \"@react-stately/color\"\nimport { useState } from \"react\"\nimport { ControlledValues } from \"@/components/docs/colors/controlled-values\"\nimport { ColorWheel } from \"@/components/ui/color-wheel\"\n\nexport default function ColorWheelControlledDemo() {\n  const [color, setColor] = useState(parseColor(\"hsl(0, 100%, 50%)\"))\n  return (\n    <div className=\"grid items-center justify-center gap-4 sm:grid-cols-2\">\n      <div className=\"grid shrink-0 place-content-center\">\n        <ColorWheel aria-label=\"Background color\" value={color} onChange={setColor} />\n      </div>\n      <ControlledValues color={color} />\n    </div>\n  )\n}\n",
+      "type": "registry:page",
+      "target": "app/color-wheel-controlled-demo/page.tsx"
+    }
+  ],
+  "type": "registry:page"
+}

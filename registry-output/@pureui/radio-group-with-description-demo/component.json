@@ -1,0 +1,13 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "radio-group-with-description-demo",
+  "type": "registry:example",
+  "registryDependencies": ["radio-group"],
+  "files": [
+    {
+      "path": "src/registry/pure-ui/examples/radio-group/radio-group-with-description-demo.tsx",
+      "content": "import { Label } from \"@/registry/pure-ui/ui/label\";\nimport { Radio, RadioGroup } from \"@/registry/pure-ui/ui/radio-group\";\n\nexport function RadioGroupWithDescriptionDemo() {\n  return (\n    <RadioGroup defaultValue=\"all\">\n      <Label className=\"flex items-start gap-2\">\n        <Radio value=\"all\" />\n        <div className=\"flex flex-col gap-1\">\n          <span className=\"font-medium\">All Notifications</span>\n          <span className=\"text-xs text-muted-foreground\">\n            Receive all notifications including system, marketing, and activity\n            alerts.\n          </span>\n        </div>\n      </Label>\n      <Label className=\"flex items-start gap-2\">\n        <Radio value=\"mentions\" />\n        <div className=\"flex flex-col gap-1\">\n          <span className=\"font-medium\">Only Mentions</span>\n          <span className=\"text-xs text-muted-foreground\">\n            Get notified only when someone mentions you or replies to your\n            posts.\n          </span>\n        </div>\n      </Label>\n      <Label className=\"flex items-start gap-2\">\n        <Radio value=\"direct\" />\n        <div className=\"flex flex-col gap-1\">\n          <span className=\"font-medium\">Direct Messages</span>\n          <span className=\"text-xs text-muted-foreground\">\n            Only receive notifications for direct messages.\n          </span>\n        </div>\n      </Label>\n      <Label className=\"flex items-start gap-2\">\n        <Radio value=\"none\" />\n        <div className=\"flex flex-col gap-1\">\n          <span className=\"font-medium\">None</span>\n          <span className=\"text-xs text-muted-foreground\">\n            Do not receive any notifications.\n          </span>\n        </div>\n      </Label>\n    </RadioGroup>\n  );\n}\n",
+      "type": "registry:example"
+    }
+  ]
+}

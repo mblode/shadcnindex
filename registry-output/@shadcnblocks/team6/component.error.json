@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "team6",
+  "url": "https://shadcnblocks.com/r/team6.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "team6",
+    "type": "registry:block",
+    "title": "Team",
+    "description": "A component displaying a team section with a hiring call, team introduction, and a grid of team members&#x27; profiles including their roles, descriptions, and social links.",
+    "dependencies": [],
+    "registryDependencies": ["avatar", "badge", "button"],
+    "files": [
+      {
+        "path": "code/block/team6.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:53.234Z"
+}

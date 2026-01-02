@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "framer",
+  "title": "framer",
+  "files": [
+    {
+      "path": "././static/components-generated/framer.tsx",
+      "content": "import type { SVGProps } from \"react\";\n\nconst Framer = (props: SVGProps<SVGSVGElement>) => (\n  <svg {...props} viewBox=\"0 0 256 384\" preserveAspectRatio=\"xMidYMid\">\n    <path d=\"M0 0h256v128H128L0 0Zm0 128h128l128 128H128v128L0 256V128Z\" />\n  </svg>\n);\n\nexport { Framer };\n",
+      "type": "registry:component",
+      "target": "components/ui/svgs/framer.tsx"
+    },
+    {
+      "path": "././static/components-generated/framerDark.tsx",
+      "content": "import type { SVGProps } from \"react\";\n\nconst FramerDark = (props: SVGProps<SVGSVGElement>) => (\n  <svg {...props} viewBox=\"0 0 256 384\" preserveAspectRatio=\"xMidYMid\">\n    <path\n      fill=\"#fff\"\n      d=\"M0 0h256v128H128L0 0Zm0 128h128l128 128H128v128L0 256V128Z\"\n    />\n  </svg>\n);\n\nexport { FramerDark };\n",
+      "type": "registry:component",
+      "target": "components/ui/svgs/framerDark.tsx"
+    }
+  ],
+  "type": "registry:component"
+}

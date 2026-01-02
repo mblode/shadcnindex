@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "gallery22",
+  "url": "https://shadcnblocks.com/r/gallery22.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "gallery22",
+    "type": "registry:block",
+    "title": "Gallery",
+    "description": "An interactive gallery block with coverflow effect, auto-slide feature, and social media links. Displays images in a carousel, each paired with name and role. Includes left/right navigation buttons.",
+    "dependencies": ["lucide-react", "react", "react-icons", "swiper"],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/gallery22.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:32.489Z"
+}

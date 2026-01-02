@@ -1,0 +1,27 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "date-picker-date-picker-standard-1",
+  "url": "https://shadcnblocks.com/r/date-picker-date-picker-standard-1.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "date-picker-date-picker-standard-1",
+    "type": "registry:block",
+    "title": "Date-picker/date-picker-standard-",
+    "description": "A date-picker/date-picker-standard- example",
+    "dependencies": [
+      "@faker-js/faker",
+      "date-fns",
+      "lucide-react",
+      "react",
+      "react-day-picker"
+    ],
+    "registryDependencies": ["button", "calendar", "popover"],
+    "files": [
+      {
+        "path": "code/example/date-picker/date-picker-standard-1.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:15:14.122Z"
+}

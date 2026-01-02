@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "project8a",
+  "url": "https://shadcnblocks.com/r/project8a.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "project8a",
+    "type": "registry:block",
+    "title": "Project8a",
+    "description": "A visual-rich component showcasing a fashion theme with dynamic animations. Features a centered title, a subtitle, a full-width image, and a two-column layout for narrative and credits.",
+    "dependencies": ["framer-motion"],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/project8a.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:47.640Z"
+}

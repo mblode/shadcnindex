@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "background-pattern22",
+  "url": "https://shadcnblocks.com/r/background-pattern22.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "background-pattern22",
+    "type": "registry:block",
+    "title": "Background-pattern",
+    "description": "This component creates a visually dynamic background pattern, featuring a dashed grid overlay with a top fade effect and a radial gradient. It serves as a versatile design block for enhancing the visual appeal of a user interface layout.",
+    "dependencies": [],
+    "registryDependencies": ["https://shadcnblocks.com/r/pattern-placeholder"],
+    "files": [
+      {
+        "path": "code/block/background-pattern22.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:12.591Z"
+}

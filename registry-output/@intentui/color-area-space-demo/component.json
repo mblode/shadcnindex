@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "extends": "none",
+  "name": "color-area-space-demo",
+  "title": "Color Area Space",
+  "description": "color-area-space-demo",
+  "registryDependencies": [
+    "https://intentui.com/r/color-area",
+    "https://intentui.com/r/color-thumb"
+  ],
+  "files": [
+    {
+      "path": "src/components/docs/colors/color-area/color-area-space-demo.tsx",
+      "content": "\"use client\"\n\nimport { ColorArea } from \"@/components/ui/color-area\"\nimport { ColorThumb } from \"@/components/ui/color-thumb\"\n\nexport default function ColorAreaSpaceDemo() {\n  return (\n    <ColorArea colorSpace=\"rgb\">\n      <ColorThumb />\n    </ColorArea>\n  )\n}\n",
+      "type": "registry:page",
+      "target": "app/color-area-space-demo/page.tsx"
+    }
+  ],
+  "type": "registry:page"
+}

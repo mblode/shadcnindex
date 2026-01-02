@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "projects15b",
+  "url": "https://shadcnblocks.com/r/projects15b.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "projects15b",
+    "type": "registry:block",
+    "title": "Projects15b",
+    "description": "A video gallery with a header and hover-to-play videos laid out in a 2-column grid, featuring project titles and studio names.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/projects15b.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:48.175Z"
+}

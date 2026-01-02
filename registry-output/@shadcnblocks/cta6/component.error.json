@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "cta6",
+  "url": "https://shadcnblocks.com/r/cta6.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "cta6",
+    "type": "registry:block",
+    "title": "Cta",
+    "description": "A component showcases a dynamic call-to-action with text, a button, and shifting overlaid blocks as a unique visual feature in a two-column layout.",
+    "dependencies": [],
+    "registryDependencies": ["button"],
+    "files": [
+      {
+        "path": "code/block/cta6.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:19.064Z"
+}

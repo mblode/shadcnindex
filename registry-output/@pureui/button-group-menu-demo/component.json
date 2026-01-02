@@ -1,0 +1,13 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "button-group-menu-demo",
+  "type": "registry:example",
+  "registryDependencies": ["button-group"],
+  "files": [
+    {
+      "path": "src/registry/pure-ui/examples/button-group/button-group-menu-demo.tsx",
+      "content": "\"use client\";\n\nimport {\n  AlertTriangleIcon,\n  CheckIcon,\n  ChevronDownIcon,\n  CopyIcon,\n  ShareIcon,\n  TrashIcon,\n  UserRoundXIcon,\n  VolumeOffIcon,\n} from \"lucide-react\";\n\nimport { Button } from \"@/registry/pure-ui/ui/button\";\nimport { ButtonGroup } from \"@/registry/pure-ui/ui/button-group\";\nimport {\n  Menu,\n  MenuPopup,\n  MenuGroup,\n  MenuItem,\n  MenuSeparator,\n  MenuTrigger,\n} from \"@/registry/pure-ui/ui/menu\";\n\nexport function ButtonGroupMenuDemo() {\n  return (\n    <ButtonGroup>\n      <Button variant=\"outline\">Follow</Button>\n      <Menu>\n        <MenuTrigger render={<Button variant=\"outline\" className=\"pl-2!\" />}>\n          <ChevronDownIcon />\n        </MenuTrigger>\n        <MenuPopup align=\"end\" className=\"[--radius:1rem]\">\n          <MenuGroup>\n            <MenuItem>\n              <VolumeOffIcon />\n              Mute Conversation\n            </MenuItem>\n            <MenuItem>\n              <CheckIcon />\n              Mark as Read\n            </MenuItem>\n            <MenuItem>\n              <AlertTriangleIcon />\n              Report Conversation\n            </MenuItem>\n            <MenuItem>\n              <UserRoundXIcon />\n              Block User\n            </MenuItem>\n            <MenuItem>\n              <ShareIcon />\n              Share Conversation\n            </MenuItem>\n            <MenuItem>\n              <CopyIcon />\n              Copy Conversation\n            </MenuItem>\n          </MenuGroup>\n          <MenuSeparator />\n          <MenuGroup>\n            <MenuItem className=\"text-destructive hover:text-destructive\">\n              <TrashIcon />\n              Delete Conversation\n            </MenuItem>\n          </MenuGroup>\n        </MenuPopup>\n      </Menu>\n    </ButtonGroup>\n  );\n}\n",
+      "type": "registry:example"
+    }
+  ]
+}

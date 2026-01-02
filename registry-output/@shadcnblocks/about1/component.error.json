@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "about1",
+  "url": "https://shadcnblocks.com/r/about1.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "about1",
+    "type": "registry:block",
+    "title": "About",
+    "description": "This About Us block features a multi-section layout introducing a mission with bold statements, detailed objectives. It includes text blocks, icons, and image placeholders, organized in columns that adjust between single and multiple (up to three) across different sections.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/about1.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:10.885Z"
+}

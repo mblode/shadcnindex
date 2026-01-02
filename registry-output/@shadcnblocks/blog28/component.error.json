@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "blog28",
+  "url": "https://shadcnblocks.com/r/blog28.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "blog28",
+    "type": "registry:block",
+    "title": "Blog",
+    "description": "A component displaying five tech blog posts in a grid with adaptive column counts based on screen size, featuring prominent display for the first post.",
+    "dependencies": [],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/blog28.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:14.430Z"
+}

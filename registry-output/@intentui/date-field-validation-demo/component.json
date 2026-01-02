@@ -1,0 +1,22 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "extends": "none",
+  "name": "date-field-validation-demo",
+  "title": "Date Field Validation",
+  "description": "date-field-validation-demo",
+  "dependencies": ["react-aria-components"],
+  "registryDependencies": [
+    "https://intentui.com/r/button",
+    "https://intentui.com/r/date-field",
+    "https://intentui.com/r/field"
+  ],
+  "files": [
+    {
+      "path": "src/components/docs/date-and-time/date-field/date-field-validation-demo.tsx",
+      "content": "\"use client\"\n\nimport { Form } from \"react-aria-components\"\nimport { Button } from \"@/components/ui/button\"\nimport { DateField, DateInput } from \"@/components/ui/date-field\"\nimport { FieldError, Label } from \"@/components/ui/field\"\n\nexport default function DateFieldValidationDemo() {\n  return (\n    <Form onSubmit={(e) => e.preventDefault()}>\n      <DateField isRequired className=\"mb-2\">\n        <Label>Event date</Label>\n        <DateInput />\n        <FieldError />\n      </DateField>\n      <Button type=\"submit\">Submit</Button>\n    </Form>\n  )\n}\n",
+      "type": "registry:page",
+      "target": "app/date-field-validation-demo/page.tsx"
+    }
+  ],
+  "type": "registry:page"
+}

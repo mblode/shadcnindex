@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "stats7",
+  "url": "https://shadcnblocks.com/r/stats7.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "stats7",
+    "type": "registry:block",
+    "title": "Stats",
+    "description": "A component displaying weekly stats in a bordered block with 3 metrics (work completed, progress metric, error rate), each with percentages, arrows indicating trend, and progress bars.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["progress"],
+    "files": [
+      {
+        "path": "code/block/stats7.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:52.697Z"
+}

@@ -1,0 +1,43 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "menu-bar",
+  "type": "registry:ui",
+  "title": "Menu Bar",
+  "description": "Windows 95 styled menu bar component",
+  "dependencies": ["@radix-ui/react-menubar"],
+  "files": [
+    {
+      "path": "components/97cn/menu-bar.tsx",
+      "content": "\"use client\"\n\nimport * as React from \"react\"\nimport { cn } from \"@/lib/utils\"\n\ninterface Win95MenuBarProps extends React.HTMLAttributes<HTMLDivElement> {\n  children: React.ReactNode\n}\n\ninterface Win95MenuItemProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {\n  children: React.ReactNode\n  active?: boolean\n}\n\nconst Win95MenuBar = React.forwardRef<HTMLDivElement, Win95MenuBarProps>(({ className, children, ...props }, ref) => {\n  return (\n    <div\n      ref={ref}\n      className={cn(\"flex items-center bg-win95-button-face border-b border-win95-button-shadow px-1\", className)}\n      {...props}\n    >\n      {children}\n    </div>\n  )\n})\nWin95MenuBar.displayName = \"Win95MenuBar\"\n\nconst Win95MenuItem = React.forwardRef<HTMLButtonElement, Win95MenuItemProps>(\n  ({ className, children, active = false, ...props }, ref) => {\n    return (\n      <button\n        ref={ref}\n        className={cn(\n          \"px-2 py-1 text-xs font-sans text-win95-black hover:bg-win95-highlight hover:text-win95-highlight-text focus:outline-none\",\n          active && \"bg-win95-highlight text-win95-highlight-text\",\n          className,\n        )}\n        {...props}\n      >\n        {children}\n      </button>\n    )\n  },\n)\nWin95MenuItem.displayName = \"Win95MenuItem\"\n\nexport { Win95MenuBar, Win95MenuItem }\n",
+      "type": "registry:ui"
+    }
+  ],
+  "cssVars": {
+    "light": {
+      "win95-button-face": "#c0c0c0",
+      "win95-black": "#000000",
+      "win95-highlight": "#0000ff",
+      "win95-highlight-text": "#ffffff",
+      "win95-button-shadow": "#808080",
+      "win95-button-highlight": "#ffffff"
+    },
+    "dark": {
+      "win95-button-face": "#c0c0c0",
+      "win95-black": "#000000",
+      "win95-highlight": "#0000ff",
+      "win95-highlight-text": "#ffffff",
+      "win95-button-shadow": "#808080",
+      "win95-button-highlight": "#ffffff"
+    }
+  },
+  "css": {
+    "@layer utilities": {
+      ".win95-raised": {
+        "border-top": "2px solid var(--win95-button-highlight)",
+        "border-left": "2px solid var(--win95-button-highlight)",
+        "border-right": "2px solid var(--win95-button-shadow)",
+        "border-bottom": "2px solid var(--win95-button-shadow)"
+      }
+    }
+  }
+}

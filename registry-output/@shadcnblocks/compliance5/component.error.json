@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "compliance5",
+  "url": "https://shadcnblocks.com/r/compliance5.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "compliance5",
+    "type": "registry:block",
+    "title": "Compliance",
+    "description": "A component displays enterprise compliance details, with a bold title, a paragraph, 4 badges in 2 or 4 columns depending on device, and a 'Learn more' button.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["button"],
+    "files": [
+      {
+        "path": "code/block/compliance5.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:17.227Z"
+}

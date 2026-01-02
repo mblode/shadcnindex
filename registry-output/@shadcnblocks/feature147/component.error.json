@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature147",
+  "url": "https://shadcnblocks.com/r/feature147.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature147",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A component showcasing integrations in a grid layout; features a heading, subheading, and 3-column grid of cards with images, titles, and descriptions.",
+    "dependencies": [],
+    "registryDependencies": ["card"],
+    "files": [
+      {
+        "path": "code/block/feature147.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:22.506Z"
+}

@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "shader4",
+  "url": "https://shadcnblocks.com/r/shader4.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "shader4",
+    "type": "registry:block",
+    "title": "Shader",
+    "description": "This component is a customizable shader background that uses WebGL for rendering dynamic visual effects with vertex and fragment shaders. It allows users to specify shader code and uniforms to create animated and interactive graphical backgrounds with Three.js in a React environment.",
+    "dependencies": ["@react-three/fiber", "react", "three"],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/shader4.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:51.023Z"
+}

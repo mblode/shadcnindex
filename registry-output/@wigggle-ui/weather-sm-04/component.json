@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "weather-sm-04",
+  "type": "registry:component",
+  "registryDependencies": [
+    "https://wigggle-ui.vercel.app/r/widget.json",
+    "https://wigggle-ui.vercel.app/r/label.json"
+  ],
+  "files": [
+    {
+      "path": "registry/default/widgets/weather/sm/weather-04.tsx",
+      "content": "import * as React from \"react\";\n\nimport { Widget, WidgetContent } from \"@/registry/default/ui/widget\";\nimport { Label } from \"@/registry/default/ui/label\";\n\nexport default function WidgetDemo() {\n  return (\n    <Widget>\n      <WidgetContent className=\"mx-auto flex-col items-start\">\n        <Label className=\"text-6xl\">29&deg;</Label>\n        <Label className=\"text-2xl\">Sunny</Label>\n        <Label>Tue Nov 22</Label>\n      </WidgetContent>\n    </Widget>\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ],
+  "meta": {
+    "tags": ["weather"],
+    "size": "sm"
+  }
+}

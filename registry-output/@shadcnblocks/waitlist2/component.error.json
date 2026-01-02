@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "waitlist2",
+  "url": "https://shadcnblocks.com/r/waitlist2.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "waitlist2",
+    "type": "registry:block",
+    "title": "Waitlist",
+    "description": "This component, \"Waitlist2,\" is designed to facilitate user engagement by allowing users to join a waitlist and see how many others have signed up, complemented by a countdown timer until the launch date. It showcases features like an animated badge, a sign-up form for emails, display of user avatars, and a dynamic countdown timer, enhancing user interaction and anticipation for an upcoming launch.",
+    "dependencies": ["framer-motion", "lucide-react", "react"],
+    "registryDependencies": ["badge", "button", "input"],
+    "files": [
+      {
+        "path": "code/block/waitlist2.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:55.052Z"
+}

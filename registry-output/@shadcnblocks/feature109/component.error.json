@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature109",
+  "url": "https://shadcnblocks.com/r/feature109.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature109",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A two-column layout block, featuring an outlined badge, large headings, descriptive text, and a button with an icon in the first column. The second column showcases an image with overlay text, including an avatar badge and a link.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["avatar", "badge", "button"],
+    "files": [
+      {
+        "path": "code/block/feature109.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:20.926Z"
+}

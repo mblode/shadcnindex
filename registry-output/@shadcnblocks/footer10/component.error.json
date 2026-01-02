@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "footer10",
+  "url": "https://shadcnblocks.com/r/footer10.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "footer10",
+    "type": "registry:block",
+    "title": "Footer",
+    "description": "A time-updating footer with 3 columns, displaying a copyright date, current London time, and an email. Features an auto-updating clock functionality.",
+    "dependencies": ["react"],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/footer10.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:31.179Z"
+}

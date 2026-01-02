@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "pricing14",
+  "url": "https://shadcnblocks.com/r/pricing14.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "pricing14",
+    "type": "registry:block",
+    "title": "Pricing",
+    "description": "A pricing plan component displays plan details, a discount badge, and features with checkmarks, laid out in 2-column format. Includes \"Book a demo\" and \"Learn more\" buttons.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["badge", "button", "separator"],
+    "files": [
+      {
+        "path": "code/block/pricing14.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:43.653Z"
+}

@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "footer5",
+  "url": "https://shadcnblocks.com/r/footer5.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "footer5",
+    "type": "registry:block",
+    "title": "Footer",
+    "description": "A 4-column component featuring sections for product, company, resources, and social links, followed by contact and mobile app info, accentuated with social and mobile app icons.",
+    "dependencies": ["react-icons"],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/footer5.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:31.874Z"
+}

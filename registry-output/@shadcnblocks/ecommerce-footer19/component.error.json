@@ -1,0 +1,36 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "ecommerce-footer19",
+  "url": "https://shadcnblocks.com/r/ecommerce-footer19.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "ecommerce-footer19",
+    "type": "registry:block",
+    "title": "Ecommerce-footer",
+    "description": "This component provides a comprehensive footer block for digital platforms, featuring sections for a newsletter subscription, contact information, and footer navigation links. It includes integrated social media links and payment method icons, offering a versatile foundation for enhancing user engagement and site navigation.",
+    "dependencies": [
+      "@hookform/resolvers",
+      "lucide-react",
+      "react",
+      "react-hook-form",
+      "simple-icons",
+      "zod"
+    ],
+    "registryDependencies": [
+      "accordion",
+      "aspect-ratio",
+      "button",
+      "card",
+      "field",
+      "input",
+      "select"
+    ],
+    "files": [
+      {
+        "path": "code/block/ecommerce-footer19.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:19.632Z"
+}

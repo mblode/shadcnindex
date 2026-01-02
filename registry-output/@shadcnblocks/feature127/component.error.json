@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature127",
+  "url": "https://shadcnblocks.com/r/feature127.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature127",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "This block showcases utilities with dynamic grid visuals and descriptive cards, detailing features through icons, titles, and texts alongside faded image backgrounds.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["button"],
+    "files": [
+      {
+        "path": "code/block/feature127.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:21.719Z"
+}

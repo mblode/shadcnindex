@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature170",
+  "url": "https://shadcnblocks.com/r/feature170.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature170",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "This component displays \"Our Core Values\" with a badge and a call-to-action link, followed by a three-column grid of icons and texts detailing each value.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["badge"],
+    "files": [
+      {
+        "path": "code/block/feature170.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:23.443Z"
+}

@@ -1,0 +1,13 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "custom-switch-card-style-demo",
+  "type": "registry:example",
+  "registryDependencies": ["switch"],
+  "files": [
+    {
+      "path": "src/registry/pure-ui/examples/switch/custom-switch-card-style-demo.tsx",
+      "content": "import { cn } from \"@/lib/classes\";\nimport { Switch } from \"@/registry/pure-ui/ui/switch\";\nimport { Label } from \"@/registry/pure-ui/ui/label\";\n\nexport function CustomSwitchCardStyleDemo() {\n  return (\n    <Label\n      htmlFor=\"custom-switch-card-style-demo\"\n      className=\"flex items-center gap-6 rounded-lg border-2 p-3 bg-card hover:bg-accent/50 has-data-checked:border-primary/88 has-data-checked:bg-accent/50 cursor-pointer\"\n    >\n      <div className=\"flex flex-col gap-1\">\n        <p className=\"text-sm leading-4\">Enable notifications</p>\n        <p className=\"text-xs text-muted-foreground\">\n          You can enable or disable notifications at any time.\n        </p>\n      </div>\n      <Switch\n        id=\"custom-switch-card-style-demo\"\n        defaultChecked\n        isInteractive\n        className=\"p-0 h-4 overflow-visible *:data-[slot=switch-thumb]:size-6 *:data-[slot=switch-thumb]:border-2 *:data-[slot=switch-thumb]:border-border *:data-[slot=switch-thumb]:shadow-lg hover:*:data-[slot=switch-thumb]:border-primary data-checked:*:data-[slot=switch-thumb]:ms-6.5 active:*:data-[slot=switch-thumb]:w-7 data-checked:active:*:data-[slot=switch-thumb]:ml-5\"\n      />\n    </Label>\n  );\n}\n",
+      "type": "registry:example"
+    }
+  ]
+}

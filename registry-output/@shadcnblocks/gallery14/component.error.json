@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "gallery14",
+  "url": "https://shadcnblocks.com/r/gallery14.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "gallery14",
+    "type": "registry:block",
+    "title": "Gallery",
+    "description": "A gallery component with a carousel of items, featuring dynamic navigation dots that expand with titles on the active item. Layout includes a headline, description, and 2-column design with imagery.",
+    "dependencies": ["react"],
+    "registryDependencies": ["carousel"],
+    "files": [
+      {
+        "path": "code/block/gallery14.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:32.205Z"
+}

@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature216",
+  "url": "https://shadcnblocks.com/r/feature216.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature216",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A navigational component with colored icon tabs for different features, summary texts, and changing images on tab selection, plus next/prev buttons.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": ["aspect-ratio", "button", "tabs"],
+    "files": [
+      {
+        "path": "code/block/feature216.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:25.134Z"
+}

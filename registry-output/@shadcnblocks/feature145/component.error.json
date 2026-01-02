@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature145",
+  "url": "https://shadcnblocks.com/r/feature145.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature145",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A component featuring a customizable accordion for showcasing features with text and images, including a dynamic image display area that updates based on accordion selection.",
+    "dependencies": ["react"],
+    "registryDependencies": ["accordion"],
+    "files": [
+      {
+        "path": "code/block/feature145.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:22.469Z"
+}

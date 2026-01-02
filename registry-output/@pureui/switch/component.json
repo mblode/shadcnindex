@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "switch",
+  "type": "registry:ui",
+  "title": "Switch",
+  "description": "A customizable switch component",
+  "dependencies": ["clsx", "tailwind-merge", "@base-ui/react"],
+  "registryDependencies": ["classes"],
+  "files": [
+    {
+      "path": "src/registry/pure-ui/ui/switch/index.tsx",
+      "content": "\"use client\";\n\nimport { Switch as SwitchPrimitive } from \"@base-ui/react/switch\";\n\nimport { cn } from \"@/lib/classes\";\n\ninterface SwitchProps extends SwitchPrimitive.Root.Props {\n  reduceMotion?: boolean;\n  isInteractive?: boolean;\n  size?: \"sm\" | \"md\" | \"lg\";\n}\n\nfunction Switch({\n  reduceMotion = false,\n  isInteractive = false,\n  size = \"md\",\n  className,\n  ...props\n}: SwitchProps) {\n  return (\n    <SwitchPrimitive.Root\n      {...props}\n      data-slot=\"switch\"\n      className={cn(\n        \"group relative rounded-full inline-flex items-center justify-start cursor-pointer touch-none select-none data-disabled:cursor-not-allowed data-disabled:opacity-70 px-1 bg-input inset-shadow-[0_1px_--theme(--color-black/4%)] data-checked:bg-primary\",\n        size === \"sm\" && \"w-10 h-6\",\n        size === \"md\" && \"w-12 h-7\",\n        size === \"lg\" && \"w-14 h-8\",\n        !reduceMotion &&\n          \"[transition-property:background-color] ease-[cubic-bezier(.25,.46,.45,.94)] duration-250\",\n        className\n      )}\n    >\n      <SwitchPrimitive.Thumb\n        data-slot=\"switch-thumb\"\n        className={cn(\n          \"z-2 bg-white shadow-sm rounded-full origin-right pointer-events-none data-checked:bg-primary-foreground shrink-0\",\n          size === \"sm\" && [\n            \"size-4 text-xs data-checked:ms-4\",\n            isInteractive && \"group-active:w-5 data-checked:group-active:ml-3\",\n          ],\n          size === \"md\" && [\n            \"size-5 text-sm data-checked:ms-5\",\n            isInteractive && \"group-active:w-6 data-checked:group-active:ml-4\",\n          ],\n          size === \"lg\" && [\n            \"size-6 text-base data-checked:ms-6\",\n            isInteractive && \"group-active:w-7 data-checked:group-active:ml-5\",\n          ],\n          !reduceMotion &&\n            \"[transition-property:margin,transform,width,background-color] ease-[cubic-bezier(.25,.46,.45,.94)] duration-200\"\n        )}\n      />\n    </SwitchPrimitive.Root>\n  );\n}\n\nexport { Switch };\n",
+      "type": "registry:ui",
+      "target": "components/ui/switch.tsx"
+    }
+  ]
+}

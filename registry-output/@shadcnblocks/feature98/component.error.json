@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature98",
+  "url": "https://shadcnblocks.com/r/feature98.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature98",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A component featuring a 5-column layout that consolidates investment solutions, including text and buttons, followed by a 3-item visual grid, each with a title, text, and icon overlay on images.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["button", "separator"],
+    "files": [
+      {
+        "path": "code/block/feature98.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:30.840Z"
+}

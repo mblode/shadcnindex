@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "waitlist3",
+  "url": "https://shadcnblocks.com/r/waitlist3.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "waitlist3",
+    "type": "registry:block",
+    "title": "Waitlist",
+    "description": "The Waitlist3 component is designed to collect user sign-ups for an early access program, featuring a company logo, a descriptive badge, and a registration form with email input. It includes visuals of joined members and prominent company branding, allowing users to quickly engage and learn more about the offer through a call-to-action button.",
+    "dependencies": ["react"],
+    "registryDependencies": ["badge", "button", "input"],
+    "files": [
+      {
+        "path": "code/block/waitlist3.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:55.204Z"
+}

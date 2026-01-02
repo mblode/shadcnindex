@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "projects7",
+  "url": "https://shadcnblocks.com/r/projects7.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "projects7",
+    "type": "registry:block",
+    "title": "Projects",
+    "description": "A component displaying items in a grid, with dynamic filtering. It shows 1-2 columns of items, each with hover effects revealing details. Unique: filter-based display animation.",
+    "dependencies": ["framer-motion", "react"],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/projects7.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:48.703Z"
+}

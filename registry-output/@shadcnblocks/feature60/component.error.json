@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature60",
+  "url": "https://shadcnblocks.com/r/feature60.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature60",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A component with a two-column layout featuring an image on one side and text content on the other, including a large header and detailed description.",
+    "dependencies": [],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/feature60.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:29.361Z"
+}

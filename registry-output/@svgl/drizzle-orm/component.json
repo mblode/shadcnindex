@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "drizzle-orm",
+  "title": "drizzle-orm",
+  "files": [
+    {
+      "path": "././static/components-generated/drizzleOrmLight.tsx",
+      "content": "import type { SVGProps } from \"react\";\n\nconst DrizzleOrmLight = (props: SVGProps<SVGSVGElement>) => (\n  <svg {...props} fill=\"none\" viewBox=\"0 0 160 160\">\n    <rect\n      width=\"9.631\"\n      height=\"40.852\"\n      fill=\"#121212\"\n      rx=\"4.816\"\n      transform=\"matrix(.87303 .48767 -.49721 .86763 43.48 67.304)\"\n    />\n    <rect\n      width=\"9.631\"\n      height=\"40.852\"\n      fill=\"#121212\"\n      rx=\"4.816\"\n      transform=\"matrix(.87303 .48767 -.49721 .86763 76.94 46.534)\"\n    />\n    <rect\n      width=\"9.631\"\n      height=\"40.852\"\n      fill=\"#121212\"\n      rx=\"4.816\"\n      transform=\"matrix(.87303 .48767 -.49721 .86763 128.424 46.535)\"\n    />\n    <rect\n      width=\"9.631\"\n      height=\"40.852\"\n      fill=\"#121212\"\n      rx=\"4.816\"\n      transform=\"matrix(.87303 .48767 -.49721 .86763 94.957 67.304)\"\n    />\n  </svg>\n);\n\nexport { DrizzleOrmLight };\n",
+      "type": "registry:component",
+      "target": "components/ui/svgs/drizzleOrmLight.tsx"
+    },
+    {
+      "path": "././static/components-generated/drizzleOrmDark.tsx",
+      "content": "import type { SVGProps } from \"react\";\n\nconst DrizzleOrmDark = (props: SVGProps<SVGSVGElement>) => (\n  <svg {...props} fill=\"none\" viewBox=\"0 0 160 160\">\n    <rect\n      width=\"9.631\"\n      height=\"40.852\"\n      fill=\"#C5F74F\"\n      rx=\"4.816\"\n      transform=\"matrix(.87303 .48767 -.49721 .86763 43.48 67.304)\"\n    />\n    <rect\n      width=\"9.631\"\n      height=\"40.852\"\n      fill=\"#C5F74F\"\n      rx=\"4.816\"\n      transform=\"matrix(.87303 .48767 -.49721 .86763 76.94 46.534)\"\n    />\n    <rect\n      width=\"9.631\"\n      height=\"40.852\"\n      fill=\"#C5F74F\"\n      rx=\"4.816\"\n      transform=\"matrix(.87303 .48767 -.49721 .86763 128.424 46.535)\"\n    />\n    <rect\n      width=\"9.631\"\n      height=\"40.852\"\n      fill=\"#C5F74F\"\n      rx=\"4.816\"\n      transform=\"matrix(.87303 .48767 -.49721 .86763 94.957 67.304)\"\n    />\n  </svg>\n);\n\nexport { DrizzleOrmDark };\n",
+      "type": "registry:component",
+      "target": "components/ui/svgs/drizzleOrmDark.tsx"
+    }
+  ],
+  "type": "registry:component"
+}

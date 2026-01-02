@@ -1,0 +1,13 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "combobox-with-label-demo",
+  "type": "registry:example",
+  "registryDependencies": ["combobox"],
+  "files": [
+    {
+      "path": "src/registry/pure-ui/examples/combobox/combobox-with-label-demo.tsx",
+      "content": "\"use client\";\n\nimport {\n  Combobox,\n  ComboboxEmpty,\n  ComboboxInput,\n  ComboboxItem,\n  ComboboxList,\n  ComboboxPopup,\n  ComboboxLabel,\n} from \"@/registry/pure-ui/ui/combobox\";\n\nexport function ComboboxWithLabelDemo() {\n  return (\n    <Combobox items={fruits}>\n      <div className=\"max-w-xs w-full\">\n        <ComboboxLabel>Select a fruit</ComboboxLabel>\n        <ComboboxInput placeholder=\"Select a fruit...\" />\n      </div>\n      <ComboboxPopup>\n        <ComboboxEmpty>No fruits found.</ComboboxEmpty>\n        <ComboboxList>\n          {(fruit: string) => (\n            <ComboboxItem key={fruit} value={fruit}>\n              {fruit}\n            </ComboboxItem>\n          )}\n        </ComboboxList>\n      </ComboboxPopup>\n    </Combobox>\n  );\n}\n\nconst fruits = [\n  \"Apple\",\n  \"Banana\",\n  \"Orange\",\n  \"Pineapple\",\n  \"Grape\",\n  \"Mango\",\n  \"Strawberry\",\n  \"Blueberry\",\n  \"Raspberry\",\n  \"Blackberry\",\n  \"Cherry\",\n  \"Peach\",\n  \"Pear\",\n  \"Plum\",\n  \"Kiwi\",\n  \"Watermelon\",\n  \"Cantaloupe\",\n  \"Honeydew\",\n  \"Papaya\",\n  \"Guava\",\n  \"Lychee\",\n  \"Pomegranate\",\n  \"Apricot\",\n  \"Grapefruit\",\n  \"Passionfruit\",\n];\n",
+      "type": "registry:example"
+    }
+  ]
+}

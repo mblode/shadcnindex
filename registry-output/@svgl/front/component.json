@@ -1,0 +1,14 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "front",
+  "title": "front",
+  "files": [
+    {
+      "path": "././static/components-generated/front.tsx",
+      "content": "import type { SVGProps } from \"react\";\n\nconst Front = (props: SVGProps<SVGSVGElement>) => (\n  <svg {...props} viewBox=\"0 0 950 950\" fill=\"none\">\n    <circle cx=\"475\" cy=\"475\" r=\"425\" fill=\"white\" />\n    <path\n      d=\"M308 308.2C308 262.25 345.25 225 391.2 225H658V343.4C658 366.375 639.375 385 616.4 385H508C485.909 385 468 402.909 468 425V683.4C468 706.375 449.375 725 426.4 725H308V308.2Z\"\n      fill=\"#001B38\"\n    />\n    <circle\n      cx=\"509\"\n      cy=\"426\"\n      r=\"108\"\n      transform=\"rotate(90 509 426)\"\n      fill=\"url(#paint0_linear)\"\n    />\n    <circle\n      opacity=\"0.5\"\n      cx=\"509\"\n      cy=\"426\"\n      r=\"108\"\n      transform=\"rotate(90 509 426)\"\n      fill=\"url(#paint1_linear)\"\n    />\n    <defs>\n      <linearGradient\n        id=\"paint0_linear\"\n        x1=\"428.041\"\n        y1=\"502.06\"\n        x2=\"591.574\"\n        y2=\"339.649\"\n        gradientUnits=\"userSpaceOnUse\"\n      >\n        <stop stop-color=\"#FF0057\" stop-opacity=\"0.16\" />\n        <stop offset=\"0.861354\" stop-color=\"#FF0057\" />\n      </linearGradient>\n      <linearGradient\n        id=\"paint1_linear\"\n        x1=\"428.041\"\n        y1=\"502.06\"\n        x2=\"591.574\"\n        y2=\"339.649\"\n        gradientUnits=\"userSpaceOnUse\"\n      >\n        <stop stop-color=\"#FF0057\" stop-opacity=\"0.16\" />\n        <stop offset=\"0.861354\" stop-color=\"#FF0057\" />\n      </linearGradient>\n    </defs>\n  </svg>\n);\n\nexport { Front };\n",
+      "type": "registry:component",
+      "target": "components/ui/svgs/front.tsx"
+    }
+  ],
+  "type": "registry:component"
+}

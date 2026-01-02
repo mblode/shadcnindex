@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "team7",
+  "url": "https://shadcnblocks.com/r/team7.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "team7",
+    "type": "registry:block",
+    "title": "Team",
+    "description": "A component showcasing a team with a title, displaying 5 profiles in grids that adapt from 2 to 5 columns. Each profile has an image, name, and company.",
+    "dependencies": [],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/team7.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:53.325Z"
+}

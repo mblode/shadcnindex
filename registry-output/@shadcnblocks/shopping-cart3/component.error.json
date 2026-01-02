@@ -1,0 +1,27 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "shopping-cart3",
+  "url": "https://shadcnblocks.com/r/shopping-cart3.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "shopping-cart3",
+    "type": "registry:block",
+    "title": "Shopping-cart",
+    "description": "This component is a dynamic shopping cart block that allows users to manage items, update quantities, and apply promotional codes. It includes features such as order summary, item removal, subtotal calculation, and trust badges for secure checkout, making it a comprehensive solution for handling online purchases.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": [
+      "aspect-ratio",
+      "badge",
+      "button",
+      "input",
+      "separator"
+    ],
+    "files": [
+      {
+        "path": "code/block/shopping-cart3.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:51.585Z"
+}

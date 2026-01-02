@@ -1,0 +1,14 @@
+{
+  "name": "use-why-did-you-update",
+  "author": "Brendan Dash (https://shadcn-hooks.vercel.app)",
+  "description": "A hook to log the props that changed in a component",
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/hooks/use-why-did-you-update.ts",
+      "content": "import { useEffect, useRef } from 'react'\n\nexport type IProps = Record<string, any>\n\nexport function useWhyDidYouUpdate(componentName: string, props: IProps) {\n  const prevProps = useRef<IProps>({})\n\n  useEffect(() => {\n    if (prevProps.current) {\n      const allKeys = Object.keys({ ...prevProps.current, ...props })\n      const changedProps: IProps = {}\n\n      allKeys.forEach((key) => {\n        if (!Object.is(prevProps.current[key], props[key])) {\n          changedProps[key] = {\n            from: prevProps.current[key],\n            to: props[key],\n          }\n        }\n      })\n\n      if (Object.keys(changedProps).length) {\n        // eslint-disable-next-line no-console\n        console.log('[why-did-you-update]', componentName, changedProps)\n      }\n    }\n\n    prevProps.current = props\n  })\n}\n",
+      "type": "registry:hook"
+    }
+  ],
+  "type": "registry:hook"
+}

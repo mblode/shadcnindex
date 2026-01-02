@@ -1,0 +1,27 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "wishlist2",
+  "url": "https://shadcnblocks.com/r/wishlist2.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "wishlist2",
+    "type": "registry:block",
+    "title": "Wishlist",
+    "description": "This component allows users to manage a wishlist by displaying a list of saved items, sorted by various criteria such as date added or price. It supports functionalities like sharing the list, removing items, and adding in-stock items to a cart.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": [
+      "aspect-ratio",
+      "badge",
+      "button",
+      "dropdown-menu",
+      "separator"
+    ],
+    "files": [
+      {
+        "path": "code/block/wishlist2.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:55.241Z"
+}

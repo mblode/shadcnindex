@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "login5",
+  "url": "https://shadcnblocks.com/r/login5.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "login5",
+    "type": "registry:block",
+    "title": "Login",
+    "description": "A login component featuring a 2-column layout with one column for form inputs including email and password fields, a checkbox for \"Remember me\", and buttons for submitting the form or logging in with Google. The second column displays an image.",
+    "dependencies": [],
+    "registryDependencies": ["button", "input", "label"],
+    "files": [
+      {
+        "path": "code/block/login5.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:41.424Z"
+}

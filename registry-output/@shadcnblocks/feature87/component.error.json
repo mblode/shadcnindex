@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature87",
+  "url": "https://shadcnblocks.com/r/feature87.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature87",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A block featuring badges, headings, lists, and an image. It&#x27;s structured in a 3-column grid with text and icons on the left, and a large image spanning two columns on the right.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["badge", "separator"],
+    "files": [
+      {
+        "path": "code/block/feature87.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:30.534Z"
+}

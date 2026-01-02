@@ -1,0 +1,23 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature284",
+  "url": "https://shadcnblocks.com/r/feature284.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature284",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A grid component displaying features with images, titles, descriptions, and badges. Incorporates a glowing effect on hover. GridLayout varies from 1-4 columns.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": [
+      "https://ui.aceternity.com/registry/glowing-effect.json"
+    ],
+    "files": [
+      {
+        "path": "code/block/feature284.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:27.847Z"
+}

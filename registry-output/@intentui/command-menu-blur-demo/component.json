@@ -1,0 +1,22 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "extends": "none",
+  "name": "command-menu-blur-demo",
+  "title": "Command Menu Blur",
+  "description": "command-menu-blur-demo",
+  "dependencies": ["@heroicons/react"],
+  "registryDependencies": [
+    "https://intentui.com/r/avatar",
+    "https://intentui.com/r/button",
+    "https://intentui.com/r/command-menu"
+  ],
+  "files": [
+    {
+      "path": "src/components/docs/controls/command-menu/command-menu-blur-demo.tsx",
+      "content": "\"use client\"\n\nimport {\n  Cog6ToothIcon,\n  CreditCardIcon,\n  CubeIcon,\n  DocumentTextIcon,\n  HomeIcon,\n  ShieldCheckIcon,\n} from \"@heroicons/react/24/outline\"\nimport { useState } from \"react\"\n\nimport { Avatar } from \"@/components/ui/avatar\"\nimport { Button } from \"@/components/ui/button\"\nimport {\n  CommandMenu,\n  CommandMenuItem,\n  CommandMenuList,\n  CommandMenuSearch,\n  CommandMenuSection,\n  CommandMenuShortcut,\n} from \"@/components/ui/command-menu\"\n\nexport default function CommandMenuBlurDemo() {\n  const [isOpen, setIsOpen] = useState(false)\n  return (\n    <>\n      <Button intent=\"outline\" onPress={() => setIsOpen(true)}>\n        Open\n      </Button>\n      <CommandMenu isBlurred isOpen={isOpen} onOpenChange={setIsOpen}>\n        <CommandMenuSearch placeholder=\"Quick search...\" />\n        <CommandMenuList>\n          <CommandMenuSection label=\"Pages\">\n            <CommandMenuItem href=\"#\" textValue=\"home\">\n              <HomeIcon /> Home\n            </CommandMenuItem>\n            <CommandMenuItem href=\"#\" textValue=\"docs\">\n              <DocumentTextIcon /> Docs\n              <CommandMenuShortcut>⌘k</CommandMenuShortcut>\n            </CommandMenuItem>\n            <CommandMenuItem textValue=\"components\" href=\"#\">\n              <CubeIcon /> Components\n            </CommandMenuItem>\n          </CommandMenuSection>\n          <CommandMenuSection label=\"Dashboard\">\n            <CommandMenuItem href=\"#\" textValue=\"billing\">\n              <CreditCardIcon /> Billing\n            </CommandMenuItem>\n            <CommandMenuItem href=\"#\" textValue=\"settings\">\n              <Cog6ToothIcon /> Settings\n              <CommandMenuShortcut>⌘s</CommandMenuShortcut>\n            </CommandMenuItem>\n            <CommandMenuItem href=\"#\" textValue=\"security\">\n              <ShieldCheckIcon /> Security\n            </CommandMenuItem>\n          </CommandMenuSection>\n          <CommandMenuSection label=\"Team\">\n            {users.map((user) => (\n              <CommandMenuItem textValue={user.name} key={user.id}>\n                <Avatar src={user.image_url} />\n                {user.name}\n              </CommandMenuItem>\n            ))}\n          </CommandMenuSection>\n        </CommandMenuList>\n      </CommandMenu>\n    </>\n  )\n}\n\nconst users = [\n  {\n    id: 1,\n    name: \"Barbara Kirlin Sr.\",\n    image_url: \"https://i.pravatar.cc/150?img=1\",\n  },\n  {\n    id: 2,\n    name: \"Rosemarie Koch\",\n    image_url: \"https://i.pravatar.cc/150?img=2\",\n  },\n  {\n    id: 3,\n    name: \"Mrs. Reva Heaney Jr.\",\n    image_url: \"https://i.pravatar.cc/150?img=3\",\n  },\n  {\n    id: 5,\n    name: \"Bria Ziemann\",\n    image_url: \"https://i.pravatar.cc/150?img=5\",\n  },\n  {\n    id: 6,\n    name: \"Heloise Borer Sr.\",\n    image_url: \"https://i.pravatar.cc/150?img=6\",\n  },\n]\n",
+      "type": "registry:page",
+      "target": "app/command-menu-blur-demo/page.tsx"
+    }
+  ],
+  "type": "registry:page"
+}

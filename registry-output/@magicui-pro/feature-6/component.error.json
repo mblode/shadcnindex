@@ -1,0 +1,21 @@
+{
+  "registry": "@magicui-pro",
+  "component": "feature-6",
+  "url": "https://pro.magicui.design/registry/feature-6",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature-6",
+    "type": "registry:block",
+    "registryDependencies": ["badge"],
+    "files": [
+      {
+        "path": "registry/blocks/feature-6.tsx",
+        "type": "registry:component"
+      }
+    ],
+    "meta": {
+      "height": 908
+    }
+  },
+  "fetchedAt": "2026-01-02T11:10:48.485Z"
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "buttons-press",
+  "type": "registry:component",
+  "title": "Press Button",
+  "description": "Button with press-down effect on tap",
+  "dependencies": ["motion"],
+  "files": [
+    {
+      "path": "registry/new-york/animations/buttons/press.tsx",
+      "content": "\"use client\";\nimport { motion, type HTMLMotionProps } from \"motion/react\";\nimport { usePress } from \"@/lib/use-press\";\ninterface PressButtonProps extends Omit<HTMLMotionProps<\"button\">, \"animate\"> {\n  children: React.ReactNode;\n  scale?: number;\n}\nexport function PressButton({\n  children,\n  scale = 0.95,\n  ...props\n}: PressButtonProps) {\n  const pressProps = usePress({\n    pressScale: scale,\n  });\n  return (\n    <motion.button {...pressProps} {...props}>\n      {children}\n    </motion.button>\n  );\n}\n",
+      "type": "registry:component"
+    },
+    {
+      "path": "lib/use-press.ts",
+      "content": "import { type MotionProps, type Easing } from \"motion/react\";\n\nexport interface UsePressOptions {\n  pressScale?: number;\n\n  duration?: number;\n\n  ease?: Easing | Easing[];\n\n  addRotation?: boolean;\n\n  rotationAmount?: number;\n}\n\nexport function usePress(options: UsePressOptions = {}): MotionProps {\n  const {\n    pressScale = 0.95,\n    duration = 0.1,\n    ease = \"easeInOut\",\n    addRotation = false,\n    rotationAmount = 2,\n  } = options;\n\n  return {\n    whileTap: {\n      scale: pressScale,\n      rotate: addRotation ? rotationAmount : 0,\n    },\n    transition: {\n      duration,\n      ease,\n    },\n  };\n}\n",
+      "type": "registry:lib"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "hooks-use-word-carousel",
+  "type": "registry:lib",
+  "title": "Use Word Carousel",
+  "description": "The use-word-carousel hook.",
+  "dependencies": ["motion"],
+  "files": [
+    {
+      "path": "lib/use-word-carousel.ts",
+      "content": "import * as React from \"react\";\n\nexport interface UseWordCarouselOptions {\n  words: string[];\n  interval?: number;\n}\n\nexport function useWordCarousel(options: UseWordCarouselOptions) {\n  const { words, interval = 2 } = options;\n  const [currentIndex, setCurrentIndex] = React.useState(0);\n\n  React.useEffect(() => {\n    const timer = setInterval(() => {\n      setCurrentIndex((prev) => (prev + 1) % words.length);\n    }, interval * 1000);\n\n    return () => clearInterval(timer);\n  }, [words.length, interval]);\n\n  return {\n    currentWord: words[currentIndex],\n    currentIndex,\n    key: currentIndex, // For AnimatePresence\n  };\n}\n",
+      "type": "registry:lib"
+    }
+  ]
+}

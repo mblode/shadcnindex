@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "hooks-use-scramble",
+  "type": "registry:lib",
+  "title": "Use Scramble",
+  "description": "The use-scramble hook.",
+  "dependencies": ["motion"],
+  "files": [
+    {
+      "path": "lib/use-scramble.ts",
+      "content": "import * as React from \"react\";\n\nexport interface UseScrambleOptions {\n  text?: string;\n  duration?: number;\n  delay?: number;\n  scrambleChars?: string;\n}\n\nexport function useScramble(options: UseScrambleOptions): string {\n  const {\n    text = \"\",\n    duration = 0.8,\n    delay = 0,\n    scrambleChars = \"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()\",\n  } = options;\n\n  const [displayText, setDisplayText] = React.useState(text);\n\n  React.useEffect(() => {\n    const iterations = Math.floor(duration * 60); // 60fps\n    let currentIteration = 0;\n\n    const timeout = setTimeout(() => {\n      const interval = setInterval(\n        () => {\n          if (currentIteration >= iterations) {\n            setDisplayText(text);\n            clearInterval(interval);\n            return;\n          }\n\n          const progress = currentIteration / iterations;\n          const newText = text\n            .split(\"\")\n            .map((char, index) => {\n              if (char === \" \") return \" \";\n              if (index / text.length < progress) {\n                return char;\n              }\n              return scrambleChars[\n                Math.floor(Math.random() * scrambleChars.length)\n              ];\n            })\n            .join(\"\");\n\n          setDisplayText(newText);\n          currentIteration++;\n        },\n        (duration * 1000) / iterations,\n      );\n\n      return () => clearInterval(interval);\n    }, delay * 1000);\n\n    return () => clearTimeout(timeout);\n  }, [text, duration, delay, scrambleChars]);\n\n  return displayText;\n}\n",
+      "type": "registry:lib"
+    }
+  ]
+}

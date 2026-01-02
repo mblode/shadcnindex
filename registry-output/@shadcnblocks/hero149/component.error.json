@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "hero149",
+  "url": "https://shadcnblocks.com/r/hero149.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "hero149",
+    "type": "registry:block",
+    "title": "Hero",
+    "description": "A component featuring a headline, description, buttons for a demo and video, benefits list, and a large image with unique background patterns. Includes a video dialog.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": ["aspect-ratio", "button", "dialog"],
+    "files": [
+      {
+        "path": "code/block/hero149.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:34.508Z"
+}

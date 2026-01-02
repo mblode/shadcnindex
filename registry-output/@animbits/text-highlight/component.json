@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "text-highlight",
+  "type": "registry:component",
+  "title": "Text Highlight",
+  "description": "A smooth, hand-drawn marker highlight animation for text.",
+  "dependencies": ["motion"],
+  "files": [
+    {
+      "path": "registry/new-york/animations/text/text-highlight.tsx",
+      "content": "\"use client\";\n\nimport { cn } from \"@/lib/utils\";\nimport { motion } from \"motion/react\";\n\ninterface TextHighlightProps {\n    children: React.ReactNode;\n    className?: string;\n    delay?: number;\n    duration?: number;\n    color?: string;\n}\n\nexport function TextHighlight({\n    children,\n    className,\n    delay = 0,\n    duration = 0.6,\n    color = \"#fde047\",\n}: TextHighlightProps) {\n    return (\n        <span className={cn(\"relative inline-block pb-1\", className)}>\n            {/* Simple marker underline */}\n            <motion.span\n                className=\"absolute bottom-0 left-0 right-0 h-[8px] rounded-sm\"\n                initial={{ scaleX: 0 }}\n                animate={{ scaleX: 1 }}\n                transition={{\n                    duration,\n                    delay,\n                    ease: [0.16, 1, 0.3, 1],\n                }}\n                style={{\n                    backgroundColor: color,\n                    transformOrigin: \"left\",\n                }}\n            />\n\n            {/* Text */}\n            <span className=\"relative\">\n                {children}\n            </span>\n        </span>\n    );\n}\n",
+      "type": "registry:component"
+    }
+  ]
+}

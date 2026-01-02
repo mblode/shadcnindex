@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "value-position",
+  "type": "registry:component",
+  "title": "Progress With Value Position",
+  "description": "component for the Progress With Value Position",
+  "registryDependencies": ["@spectrumui/progress-with-value-dependencies"],
+  "files": [
+    {
+      "path": "app/registry/progress-with-value/usage/progress-with-value-position.tsx",
+      "content": "\"use client\";\nimport React, { useEffect, useState } from \"react\";\n// import { ProgressWithValue } from '@/components/ui/progress-with-value';\nimport { ProgressWithValue } from \"@/app/registry/spectrumui/progress-with-value-dependencies\";\n\nconst PERCENTAGE = [0, 10, 15, 30, 45, 50, 65, 80, 90, 100];\n\nconst DEMO: Array<\n  \"start\" | \"start-outside\" | \"follow\" | \"end\" | \"end-outside\"\n> = [\"follow\", \"start\", \"end\", \"start-outside\", \"end-outside\"];\n\nconst ProgressWithValuePosition = () => {\n  const [value, setValue] = useState(0);\n  useEffect(() => {\n    let index = 0;\n    const interval = setInterval(() => {\n      setValue(PERCENTAGE[index % PERCENTAGE.length]);\n      index++;\n    }, 1000);\n    return () => clearInterval(interval);\n  }, []);\n\n  return (\n    <div className=\"w-full space-y-2 px-10\">\n      {DEMO.map((position) => (\n        <div key={position}>\n          <div>\n            position: <span className=\"text-blue-500\">{position}</span>\n          </div>\n          <ProgressWithValue key={position} value={value} position={position} />\n        </div>\n      ))}\n    </div>\n  );\n};\n\nexport default ProgressWithValuePosition;\n",
+      "type": "registry:component",
+      "target": "components/spectrumui/progress-with-value-position.tsx"
+    }
+  ]
+}

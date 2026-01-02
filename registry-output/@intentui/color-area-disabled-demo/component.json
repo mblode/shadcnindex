@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "extends": "none",
+  "name": "color-area-disabled-demo",
+  "title": "Color Area Disabled",
+  "description": "color-area-disabled-demo",
+  "registryDependencies": [
+    "https://intentui.com/r/color-area",
+    "https://intentui.com/r/color-thumb"
+  ],
+  "files": [
+    {
+      "path": "src/components/docs/colors/color-area/color-area-disabled-demo.tsx",
+      "content": "\"use client\"\n\nimport { ColorArea } from \"@/components/ui/color-area\"\nimport { ColorThumb as Thumb } from \"@/components/ui/color-thumb\"\n\nexport default function ColorAreaDisabledDemo() {\n  return (\n    <ColorArea isDisabled>\n      <Thumb />\n    </ColorArea>\n  )\n}\n",
+      "type": "registry:page",
+      "target": "app/color-area-disabled-demo/page.tsx"
+    }
+  ],
+  "type": "registry:page"
+}

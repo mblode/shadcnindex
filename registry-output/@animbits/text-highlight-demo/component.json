@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "text-highlight-demo",
+  "type": "registry:component",
+  "title": "Text Highlight Demo",
+  "description": "Demo for the Text Highlight component.",
+  "dependencies": ["motion"],
+  "files": [
+    {
+      "path": "registry/new-york/animations/text/text-highlight-demo.tsx",
+      "content": "\"use client\";\n\nimport { TextHighlight } from \"./text-highlight\";\n\nexport default function TextHighlightDemo() {\n    return (\n        <div className=\"flex flex-col items-center justify-center gap-8 p-8 text-center\">\n            <h2 className=\"text-3xl font-bold md:text-4xl max-w-2xl leading-relaxed\">\n                Make your text <br />\n                <TextHighlight className=\"mx-2\" delay={0} color=\"#fbbf24\">\n                    stand out\n                </TextHighlight>\n                with a <br />\n                <TextHighlight color=\"#2dd4bf\" delay={0.3} duration={0.8}>\n                    smooth marker\n                </TextHighlight>\n                effect.\n            </h2>\n\n            <p className=\"text-muted-foreground text-lg max-w-lg mt-4\">\n                It works perfectly for <TextHighlight color=\"#60a5fa\" delay={0.6}>highlighting keywords</TextHighlight> in your paragraphs too.\n            </p>\n        </div>\n    );\n}\n",
+      "type": "registry:component"
+    }
+  ]
+}

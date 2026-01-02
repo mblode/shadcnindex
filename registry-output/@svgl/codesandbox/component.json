@@ -1,0 +1,14 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "codesandbox",
+  "title": "codesandbox",
+  "files": [
+    {
+      "path": "././static/components-generated/codesandboxSquare.tsx",
+      "content": "import type { SVGProps } from \"react\";\n\nconst CodesandboxSquare = (props: SVGProps<SVGSVGElement>) => (\n  <svg {...props} fill=\"none\" viewBox=\"0 0 600 600\">\n    <path\n      fill=\"#DCFF50\"\n      fillRule=\"evenodd\"\n      d=\"M150 150h299.832v300H150V150Zm269.168 30.682v238.636H180.665V180.682h238.503Z\"\n      clipRule=\"evenodd\"\n    />\n  </svg>\n);\n\nexport { CodesandboxSquare };\n",
+      "type": "registry:component",
+      "target": "components/ui/svgs/codesandboxSquare.tsx"
+    }
+  ],
+  "type": "registry:component"
+}

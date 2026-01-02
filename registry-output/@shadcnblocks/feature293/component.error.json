@@ -1,0 +1,25 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature293",
+  "url": "https://shadcnblocks.com/r/feature293.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature293",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A subscription component with a headline, description, email input, button, and animated background. It spans the full screen, contains two columns in the input area, and features dynamic sparkles.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": [
+      "https://ui.aceternity.com/registry/sparkles.json",
+      "button",
+      "input"
+    ],
+    "files": [
+      {
+        "path": "code/block/feature293.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:28.058Z"
+}

@@ -1,0 +1,24 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "hero239",
+  "url": "https://shadcnblocks.com/r/hero239.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "hero239",
+    "type": "registry:block",
+    "title": "Hero",
+    "description": "A component featuring a marquee with images, centered text, and two buttons. It includes a heading, a subtext, and a unique 3D marquee at the bottom.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": [
+      "https://ui.aceternity.com/registry/3d-marquee.json",
+      "button"
+    ],
+    "files": [
+      {
+        "path": "code/block/hero239.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:37.419Z"
+}

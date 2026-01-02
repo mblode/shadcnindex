@@ -1,0 +1,13 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "radio-group-disabled-demo",
+  "type": "registry:example",
+  "registryDependencies": ["radio-group"],
+  "files": [
+    {
+      "path": "src/registry/pure-ui/examples/radio-group/radio-group-disabled-demo.tsx",
+      "content": "import { Label } from \"@/registry/pure-ui/ui/label\";\nimport { Radio, RadioGroup } from \"@/registry/pure-ui/ui/radio-group\";\n\nexport function RadioGroupDisabledDemo() {\n  return (\n    <RadioGroup defaultValue=\"dhoni\">\n      <div className=\"text-sm font-medium\">\n        Choose your favorite cricket player\n      </div>\n      <Label>\n        <Radio value=\"virat\" /> Virat Kohli\n      </Label>\n      <Label>\n        <Radio value=\"rohit\" disabled /> Rohit Sharma\n      </Label>\n      <Label>\n        <Radio value=\"sachin\" disabled /> Sachin Tendulkar\n      </Label>\n      <Label>\n        <Radio value=\"dhoni\" /> MS Dhoni\n      </Label>\n    </RadioGroup>\n  );\n}\n",
+      "type": "registry:example"
+    }
+  ]
+}

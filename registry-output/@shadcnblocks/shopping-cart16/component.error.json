@@ -1,0 +1,38 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "shopping-cart16",
+  "url": "https://shadcnblocks.com/r/shopping-cart16.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "shopping-cart16",
+    "type": "registry:block",
+    "title": "Shopping-cart",
+    "description": "The component is a dynamic and interactive shopping cart block that allows users to manage items in their cart, update item quantities, and view suggested products. It features functionalities like displaying product details, calculating totals, applying discounts, and incorporates carousel and collapsible elements for enhanced user interaction.",
+    "dependencies": [
+      "@hookform/resolvers",
+      "clsx",
+      "lucide-react",
+      "react",
+      "react-hook-form",
+      "zod"
+    ],
+    "registryDependencies": [
+      "https://shadcnblocks.com/r/price",
+      "https://shadcnblocks.com/r/quantity-input",
+      "aspect-ratio",
+      "button",
+      "card",
+      "carousel",
+      "collapsible",
+      "form",
+      "sheet"
+    ],
+    "files": [
+      {
+        "path": "code/block/shopping-cart16.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:51.334Z"
+}

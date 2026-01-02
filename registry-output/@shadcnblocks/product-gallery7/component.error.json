@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "product-gallery7",
+  "url": "https://shadcnblocks.com/r/product-gallery7.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "product-gallery7",
+    "type": "registry:block",
+    "title": "Product-gallery",
+    "description": "This component is a dynamic image gallery block that allows users to browse through product images using a carousel with thumbnail navigation and zoom features. It utilizes PhotoSwipe for lightbox functionality and manages user interactions like image selection and carousel navigation with hooks and state management in React.",
+    "dependencies": ["photoswipe", "react"],
+    "registryDependencies": ["aspect-ratio", "badge", "carousel"],
+    "files": [
+      {
+        "path": "code/block/product-gallery7.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:46.034Z"
+}

@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "projects8",
+  "url": "https://shadcnblocks.com/r/projects8.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "projects8",
+    "type": "registry:block",
+    "title": "Projects",
+    "description": "A component displaying items in a grid with 3 columns, featuring category filters and animations on item change.",
+    "dependencies": ["framer-motion", "react"],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/projects8.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:48.730Z"
+}

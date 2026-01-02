@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "webhook-component",
+  "type": "registry:component",
+  "title": "WebhookComponent",
+  "description": "A component for Wandry UI",
+  "dependencies": ["@wandry/inertia-form"],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/wandry-ui/webhook-component.tsx",
+      "content": "\"use client\";\nimport * as React from \"react\";\n\nexport type WebhookComponentProps = {};\n\nconst WebhookComponent: React.FC<WebhookComponentProps> = (props) => {\n  return <div>Webhook Component</div>;\n};\n\nexport default WebhookComponent;\n",
+      "type": "registry:component"
+    }
+  ]
+}

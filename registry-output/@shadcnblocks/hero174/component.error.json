@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "hero174",
+  "url": "https://shadcnblocks.com/r/hero174.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "hero174",
+    "type": "registry:block",
+    "title": "Hero",
+    "description": "A hero block showcasing a central message with a background image, featuring a title, a descriptive paragraph, and a button. Below is a bar with location details and an arrow button.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": ["button"],
+    "files": [
+      {
+        "path": "code/block/hero174.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:35.226Z"
+}

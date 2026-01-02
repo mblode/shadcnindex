@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "pricing30",
+  "url": "https://shadcnblocks.com/r/pricing30.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "pricing30",
+    "type": "registry:block",
+    "title": "Pricing",
+    "description": "A component displays subscription plans with selectable features, highlighted options, and dynamic pricing details in a collapsible mobile layout and a 4-column desktop layout.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": ["button", "collapsible"],
+    "files": [
+      {
+        "path": "code/block/pricing30.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:44.178Z"
+}

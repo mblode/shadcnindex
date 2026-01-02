@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature297",
+  "url": "https://shadcnblocks.com/r/feature297.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature297",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A three-column component showcasing features with images, numerical identifiers, and titles. Each column enlarges the image on hover.",
+    "dependencies": [],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/feature297.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:28.160Z"
+}

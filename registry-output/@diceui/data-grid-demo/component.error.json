@@ -1,0 +1,25 @@
+{
+  "registry": "@diceui",
+  "component": "data-grid-demo",
+  "url": "https://diceui.com/r/data-grid-demo.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "data-grid-demo",
+    "dependencies": [
+      "@tanstack/react-table",
+      "@tanstack/react-virtual",
+      "lucide-react",
+      "sonner"
+    ],
+    "devDependencies": ["@faker-js/faker"],
+    "registryDependencies": ["data-grid"],
+    "files": [
+      {
+        "path": "examples/data-grid-demo.tsx",
+        "type": "registry:example"
+      }
+    ],
+    "type": "registry:example"
+  },
+  "fetchedAt": "2026-01-02T11:08:48.450Z"
+}

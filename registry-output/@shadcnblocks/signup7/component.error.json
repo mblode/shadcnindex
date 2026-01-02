@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "signup7",
+  "url": "https://shadcnblocks.com/r/signup7.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "signup7",
+    "type": "registry:block",
+    "title": "Signup",
+    "description": "This component is a two-column layout for account creation, featuring sign-up options with Google, Email, or SSO, terms agreement links, and a side section showcasing benefits and logos.",
+    "dependencies": ["lucide-react", "react-icons"],
+    "registryDependencies": ["button", "separator"],
+    "files": [
+      {
+        "path": "code/block/signup7.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:52.002Z"
+}

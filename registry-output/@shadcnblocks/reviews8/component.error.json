@@ -1,0 +1,27 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "reviews8",
+  "url": "https://shadcnblocks.com/r/reviews8.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "reviews8",
+    "type": "registry:block",
+    "title": "Reviews",
+    "description": "This component provides a review carousel functionality, allowing users to scroll through and view customer reviews, both text-based and image-supported, with ratings and author details. Ideal for showcasing testimonials or product feedback, the block includes navigational buttons for smooth scrolling and individual indicators for easy selection.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": [
+      "https://shadcnblocks.com/r/rating",
+      "aspect-ratio",
+      "button",
+      "card",
+      "carousel"
+    ],
+    "files": [
+      {
+        "path": "code/block/reviews8.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:49.799Z"
+}

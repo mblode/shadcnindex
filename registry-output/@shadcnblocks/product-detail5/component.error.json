@@ -1,0 +1,38 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "product-detail5",
+  "url": "https://shadcnblocks.com/r/product-detail5.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "product-detail5",
+    "type": "registry:block",
+    "title": "Product-detail",
+    "description": "This component is a detailed product display block that showcases key product information, including images, descriptions, pricing, and available options such as size and color. It features an interactive gallery for images, a form to select product options, and real-time stock status updates, making it ideal for enhancing customer engagement and assisting in purchasing decisions on an e-commerce platform.",
+    "dependencies": [
+      "@hookform/resolvers",
+      "lucide-react",
+      "photoswipe",
+      "react",
+      "react-hook-form",
+      "zod"
+    ],
+    "registryDependencies": [
+      "aspect-ratio",
+      "badge",
+      "button",
+      "carousel",
+      "dialog",
+      "form",
+      "radio-group",
+      "separator",
+      "table"
+    ],
+    "files": [
+      {
+        "path": "code/block/product-detail5.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:45.729Z"
+}

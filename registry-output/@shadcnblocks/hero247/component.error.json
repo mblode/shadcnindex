@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "hero247",
+  "url": "https://shadcnblocks.com/r/hero247.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "hero247",
+    "type": "registry:block",
+    "title": "Hero",
+    "description": "The Hero247 component presents a visually appealing introductory block featuring an animated avatar, a headline, and dual call-to-action buttons that emphasize engagement. This component includes customizable button options and variants, with motion effects applied to both text and image elements for dynamic content presentation.",
+    "dependencies": ["framer-motion"],
+    "registryDependencies": ["button"],
+    "files": [
+      {
+        "path": "code/block/hero247.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:37.843Z"
+}

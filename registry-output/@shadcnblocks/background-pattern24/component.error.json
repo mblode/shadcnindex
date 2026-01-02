@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "background-pattern24",
+  "url": "https://shadcnblocks.com/r/background-pattern24.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "background-pattern24",
+    "type": "registry:block",
+    "title": "Background-pattern",
+    "description": "This component creates a visually engaging background with a faded dashed grid pattern and supports custom styling through class names. It is ideal for adding a decorative effect to applications, enhancing the visual appeal with its dynamic background design.",
+    "dependencies": [],
+    "registryDependencies": ["https://shadcnblocks.com/r/pattern-placeholder"],
+    "files": [
+      {
+        "path": "code/block/background-pattern24.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:12.797Z"
+}

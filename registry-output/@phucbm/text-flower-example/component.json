@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "text-flower-example",
+  "type": "registry:component",
+  "title": "Text Flower Example",
+  "description": "Animated wheel of text lines that orbit around a central anchor.",
+  "dependencies": ["gsap", "react", "@gsap/react", "tailwind-merge", "clsx"],
+  "registryDependencies": ["https://ui.phucbm.com/r/text-flower.json"],
+  "files": [
+    {
+      "path": "registry/phucbm/blocks/text-flower/example.transformed.tsx",
+      "content": "import {TextFlower} from \"@/components/phucbm/text-flower\";\n\nexport default function Example() {\n    const texts = [\n        \"🐧 Watch the penguins waddle by.\",\n        \"🐘 See the elephants remember everything.\",\n        \"🐺 Hear the wolves howl at night.\",\n        \"🐙 Find the octopus hiding below.\",\n        \"🐆 Chase the cheetah running fast.\",\n        \"🦥 Meet the sloth moving slow.\",\n        \"🦚 Dance with the peacock's colors.\",\n        \"🐬 Swim with the dolphins playing.\",\n        \"🦋 Follow the butterflies floating.\",\n        \"🦉 Listen to the owl's wisdom.\",\n        \"🐝 Marvel at the hummingbird's speed.\",\n        \"🐻 Observe the bear catching fish.\",\n        \"🦎 Discover the chameleon's disguise.\",\n    ];\n    return (\n        <TextFlower texts={texts}/>\n    );\n}",
+      "type": "registry:component",
+      "target": "index.tsx"
+    }
+  ]
+}

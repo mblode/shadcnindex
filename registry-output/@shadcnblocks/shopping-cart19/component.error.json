@@ -1,0 +1,29 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "shopping-cart19",
+  "url": "https://shadcnblocks.com/r/shopping-cart19.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "shopping-cart19",
+    "type": "registry:block",
+    "title": "Shopping-cart",
+    "description": "This component provides an interactive shopping cart interface allowing users to manage and adjust item quantities, apply promo codes, and view subtotal costs with progress towards free shipping. It also suggests upsell products and provides a checkout feature, all contained within a collapsible interface.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": [
+      "aspect-ratio",
+      "button",
+      "input",
+      "progress",
+      "scroll-area",
+      "separator",
+      "sheet"
+    ],
+    "files": [
+      {
+        "path": "code/block/shopping-cart19.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:51.658Z"
+}

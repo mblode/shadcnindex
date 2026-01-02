@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "resources3",
+  "url": "https://shadcnblocks.com/r/resources3.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "resources3",
+    "type": "registry:block",
+    "title": "Resources",
+    "description": "A component showcasing a featured post with an image and a list of resources, each with a date, category, and title, arranged in columns.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["badge", "button"],
+    "files": [
+      {
+        "path": "code/block/resources3.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:49.393Z"
+}

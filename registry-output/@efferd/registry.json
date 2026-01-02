@@ -1,0 +1,2626 @@
+{
+  "name": "efferd",
+  "homepage": "https://efferd.com",
+  "items": [
+    {
+      "name": "index",
+      "dependencies": ["class-variance-authority", "lucide-react"],
+      "devDependencies": ["tw-animate-css"],
+      "registryDependencies": ["utils"],
+      "files": [],
+      "cssVars": {},
+      "type": "registry:style"
+    },
+    {
+      "name": "auth-1",
+      "description": "Modern auth page with particle background and social login buttons.",
+      "registryDependencies": [
+        "button",
+        "https://magicui.design/r/particles.json"
+      ],
+      "files": [
+        {
+          "path": "registry/auth/1/auth-page.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "../../packages/core/src/logo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": ["auth"],
+      "type": "registry:block"
+    },
+    {
+      "name": "auth-2",
+      "description": "Modern auth page with testimonial sidebar, social logins, and email signup.",
+      "dependencies": ["motion"],
+      "registryDependencies": ["button", "input-group"],
+      "files": [
+        {
+          "path": "registry/auth/2/auth-page.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/auth/2/floating-paths.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "../../packages/core/src/logo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": ["auth"],
+      "type": "registry:block"
+    },
+    {
+      "name": "contact-1",
+      "description": "Elegant contact page with office info, email, phone, and social links.",
+      "files": [
+        {
+          "path": "registry/contact/1/contact.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": ["contact"],
+      "type": "registry:block"
+    },
+    {
+      "name": "contact-2",
+      "description": "Modern contact card with info section and built-in form area.",
+      "files": [
+        {
+          "path": "registry/contact/2/contact-card.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": ["contact"],
+      "type": "registry:block"
+    },
+    {
+      "name": "cta-1",
+      "description": "Centered call-to-action bar with bold heading and dual action buttons.",
+      "registryDependencies": ["button"],
+      "files": [
+        {
+          "path": "registry/cta/1/cta.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": ["cta"],
+      "type": "registry:block"
+    },
+    {
+      "name": "cta-2",
+      "description": "Minimal call-to-action section with headline, short description, and dual buttons for sales contact and getting started.",
+      "registryDependencies": ["button"],
+      "files": [
+        {
+          "path": "registry/cta/2/cta.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": ["cta"],
+      "type": "registry:block"
+    },
+    {
+      "name": "cta-3",
+      "description": "Stylish call-to-action block featuring bordered layout, decorative icons, and clear buttons for contacting sales or getting started.",
+      "registryDependencies": ["button"],
+      "files": [
+        {
+          "path": "registry/cta/3/cta.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": ["cta"],
+      "type": "registry:block"
+    },
+    {
+      "name": "cta-4",
+      "description": "Modern call-to-action card with rounded edges, subtle shadow, and dual buttons for contacting sales or getting started.",
+      "registryDependencies": ["button"],
+      "files": [
+        {
+          "path": "registry/cta/4/cta.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": ["cta"],
+      "type": "registry:block"
+    },
+    {
+      "name": "cta-5",
+      "description": "Newsletter subscription section with email input, submit button, and expert avatars for added trust and engagement.",
+      "registryDependencies": ["button", "input-group"],
+      "files": [
+        {
+          "path": "registry/cta/5/cta.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": ["cta"],
+      "type": "registry:block"
+    },
+    {
+      "name": "cta-6",
+      "description": "A call-to-action Block with a heading and an animated 'Join Now!' button with hover effects.",
+      "dependencies": ["motion"],
+      "registryDependencies": ["button"],
+      "files": [
+        {
+          "path": "registry/cta/6/call-to-action.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": ["cta"],
+      "type": "registry:block"
+    },
+    {
+      "name": "cta-7",
+      "description": "CTA with heading and animated 'Join Now!' button.",
+      "dependencies": ["motion"],
+      "registryDependencies": ["button"],
+      "files": [
+        {
+          "path": "registry/cta/7/call-to-action.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": ["cta"],
+      "type": "registry:block"
+    },
+    {
+      "name": "cta-8",
+      "description": "Grid pattern background with email input and 'Join Now' button.",
+      "dependencies": ["motion"],
+      "registryDependencies": [
+        "button",
+        "button-group",
+        "input-group",
+        "@magicui/grid-pattern"
+      ],
+      "files": [
+        {
+          "path": "registry/cta/8/call-to-action.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": ["cta"],
+      "type": "registry:block"
+    },
+    {
+      "name": "cta-9",
+      "description": "Ethereal shadow effect with number ticker and dual action buttons.",
+      "dependencies": ["motion"],
+      "registryDependencies": ["button", "@magicui/number-ticker"],
+      "files": [
+        {
+          "path": "registry/cta/9/call-to-action.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/cta/9/etheral-shadow.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": ["cta"],
+      "type": "registry:block"
+    },
+    {
+      "name": "cta-10",
+      "description": "Animated border lines with 'Get Started' button.",
+      "dependencies": ["motion"],
+      "registryDependencies": ["button"],
+      "files": [
+        {
+          "path": "registry/cta/10/call-to-action.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": ["cta"],
+      "type": "registry:block"
+    },
+    {
+      "name": "cta-11",
+      "description": "Social proof with star ratings, number ticker, and dual action buttons.",
+      "registryDependencies": ["button", "@magicui/number-ticker"],
+      "files": [
+        {
+          "path": "registry/cta/11/call-to-action.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": ["cta"],
+      "type": "registry:block"
+    },
+    {
+      "name": "cta-12",
+      "description": "Installation command with animated border lines and copy button.",
+      "dependencies": ["motion"],
+      "registryDependencies": ["button", "tooltip"],
+      "files": [
+        {
+          "path": "registry/cta/12/call-to-action.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/copy-button.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "../../packages/core/src/hooks/use-copy-to-clipboard.ts",
+          "type": "registry:hook"
+        }
+      ],
+      "categories": ["cta"],
+      "type": "registry:block"
+    },
+    {
+      "name": "cta-13",
+      "description": "Animated circular border with centered heading and action button.",
+      "dependencies": ["motion"],
+      "registryDependencies": ["button"],
+      "files": [
+        {
+          "path": "registry/cta/13/call-to-action.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": ["cta"],
+      "type": "registry:block"
+    },
+    {
+      "name": "cta-14",
+      "description": "Bold inverted design with large typography and email/calendar buttons.",
+      "registryDependencies": ["button"],
+      "files": [
+        {
+          "path": "registry/cta/14/call-to-action.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": ["cta"],
+      "type": "registry:block"
+    },
+    {
+      "name": "cta-15",
+      "description": "Open-source showcase with animated notification cards and GitHub link.",
+      "dependencies": ["motion"],
+      "registryDependencies": ["button"],
+      "files": [
+        {
+          "path": "registry/cta/15/call-to-action.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": ["cta"],
+      "type": "registry:block"
+    },
+    {
+      "name": "cta-16",
+      "description": "Logo branding with animated expanding border frame.",
+      "dependencies": ["motion"],
+      "registryDependencies": ["button"],
+      "files": [
+        {
+          "path": "../../packages/core/src/logo.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/cta/16/call-to-action.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": ["cta"],
+      "type": "registry:block"
+    },
+    {
+      "name": "cta-17",
+      "description": "Custom clip-path shape with pulsing dot and corner action button.",
+      "registryDependencies": ["button"],
+      "files": [
+        {
+          "path": "registry/cta/17/call-to-action.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/cta/17/clip-shape.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": ["cta"],
+      "type": "registry:block"
+    },
+    {
+      "name": "cta-18",
+      "description": "Event registration with animated floating cards and emoji badges.",
+      "dependencies": ["motion"],
+      "registryDependencies": ["button"],
+      "files": [
+        {
+          "path": "registry/cta/18/call-to-action.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": ["cta"],
+      "type": "registry:block"
+    },
+    {
+      "name": "cta-19",
+      "description": "Floating tool icons surrounding centered headline and action buttons.",
+      "dependencies": ["motion"],
+      "registryDependencies": ["button"],
+      "files": [
+        {
+          "path": "registry/cta/19/call-to-action.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": ["cta"],
+      "type": "registry:block"
+    },
+    {
+      "name": "cta-20",
+      "description": "Concentric animated circles with pricing headline and button.",
+      "dependencies": ["motion"],
+      "registryDependencies": ["button"],
+      "files": [
+        {
+          "path": "registry/cta/20/call-to-action.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": ["cta"],
+      "type": "registry:block"
+    },
+    {
+      "name": "faqs-1",
+      "description": "Elegant FAQ section with accordion-style questions, smooth transitions, and clear support call-to-action.",
+      "registryDependencies": ["accordion"],
+      "files": [
+        {
+          "path": "registry/faqs/1/faqs-section.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": ["faqs"],
+      "type": "registry:block"
+    },
+    {
+      "name": "faqs-2",
+      "description": "Split-screen FAQ layout with bordered sections, interactive accordion, and a clean call-to-action footer.",
+      "registryDependencies": ["accordion"],
+      "files": [
+        {
+          "path": "registry/faqs/2/faqs-section.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": ["faqs"],
+      "type": "registry:block"
+    },
+    {
+      "name": "faqs-3",
+      "description": "Two-column FAQ section featuring bordered layout, vertical guide line, and elegant accordion interactions.",
+      "registryDependencies": ["accordion"],
+      "files": [
+        {
+          "path": "registry/faqs/3/faqs-section.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": ["faqs"],
+      "type": "registry:block"
+    },
+    {
+      "name": "faqs-4",
+      "description": "Multi-category FAQ section with sidebar filters, adaptive accordion layout, and elegant interactive transitions.",
+      "registryDependencies": ["accordion", "button"],
+      "files": [
+        {
+          "path": "registry/faqs/4/faqs-section.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": ["faqs"],
+      "type": "registry:block"
+    },
+    {
+      "name": "faqs-5",
+      "description": "Responsive FAQ section with filters, search, and accordions for quick answers.",
+      "registryDependencies": ["accordion", "button", "input-group", "empty"],
+      "files": [
+        {
+          "path": "registry/faqs/5/faqs-section.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": ["faqs"],
+      "type": "registry:block"
+    },
+    {
+      "name": "features-1",
+      "description": "Minimal feature card with icon, title, and subtle grid background.",
+      "registryDependencies": ["https://magicui.design/r/grid-pattern.json"],
+      "files": [
+        {
+          "path": "registry/features/1/feature-section.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": ["features"],
+      "type": "registry:block"
+    },
+    {
+      "name": "footer-1",
+      "description": "Clean footer with company links, resources, and social icons.",
+      "registryDependencies": ["button"],
+      "files": [
+        {
+          "path": "registry/footer/1/footer.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "../../packages/core/src/logo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": ["footer"],
+      "type": "registry:block"
+    },
+    {
+      "name": "footer-2",
+      "description": "Animated footer with link sections, brand logo, and social icons.",
+      "dependencies": ["motion"],
+      "files": [
+        {
+          "path": "registry/footer/2/footer.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "../../packages/core/src/logo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": ["footer"],
+      "type": "registry:block"
+    },
+    {
+      "name": "footer-3",
+      "description": "Grid-based footer with social cards, link groups, and copyright bar.",
+      "files": [
+        {
+          "path": "registry/footer/3/footer.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": ["footer"],
+      "type": "registry:block"
+    },
+    {
+      "name": "footer-4",
+      "description": "Multi-column footer with app store buttons, social icons, and link groups.",
+      "registryDependencies": ["button"],
+      "files": [
+        {
+          "path": "registry/footer/4/footer.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": ["footer"],
+      "type": "registry:block"
+    },
+    {
+      "name": "footer-5",
+      "description": "Sticky layered footer with gradient background, social icons, and animated link groups.",
+      "dependencies": ["motion"],
+      "registryDependencies": ["button"],
+      "files": [
+        {
+          "path": "registry/footer/5/sticky-footer.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "../../packages/core/src/logo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": ["footer"],
+      "type": "registry:block"
+    },
+    {
+      "name": "form-1",
+      "description": "Elegant workspace creation form with labeled inputs, grouped fields, and a clean card layout for onboarding users smoothly.",
+      "registryDependencies": [
+        "button",
+        "button-group",
+        "field",
+        "input",
+        "input-group",
+        "label"
+      ],
+      "files": [
+        {
+          "path": "registry/form/1/create-workspace-form.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "../../packages/core/src/logo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": ["form"],
+      "type": "registry:block"
+    },
+    {
+      "name": "form-2",
+      "description": "Project submission form featuring bordered layout, plus-icon corners, and detailed input fields for name, repository, and description.",
+      "registryDependencies": [
+        "button",
+        "field",
+        "input",
+        "input-group",
+        "textarea"
+      ],
+      "files": [
+        {
+          "path": "registry/form/2/submit-project-form.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": ["form"],
+      "type": "registry:block"
+    },
+    {
+      "name": "form-3",
+      "description": "Comprehensive account settings form with structured fields for name, email, password, and phone number, featuring icons, grouped inputs, and save actions.",
+      "registryDependencies": [
+        "button",
+        "button-group",
+        "field",
+        "input",
+        "input-group"
+      ],
+      "files": [
+        {
+          "path": "registry/form/3/settings-form.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": ["form"],
+      "type": "registry:block"
+    },
+    {
+      "name": "header-1",
+      "description": "Responsive sticky header with scroll blur effect, animated mobile menu, and adaptive navigation links.",
+      "registryDependencies": ["button"],
+      "files": [
+        {
+          "path": "registry/header/1/header.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "../../packages/core/src/logo.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/header/1/mobile-nav.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "../../packages/core/src/hooks/use-scroll.ts",
+          "type": "registry:hook"
+        },
+        {
+          "path": "../../packages/core/src/hooks/use-media-query.ts",
+          "type": "registry:hook"
+        }
+      ],
+      "categories": ["header"],
+      "type": "registry:block"
+    },
+    {
+      "name": "header-2",
+      "description": "Elegant responsive header with scroll-based styling, mobile drawer menu, and smooth transitions.",
+      "registryDependencies": ["button"],
+      "files": [
+        {
+          "path": "registry/header/2/header.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "../../packages/core/src/logo.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/header/2/mobile-nav.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "../../packages/core/src/hooks/use-scroll.ts",
+          "type": "registry:hook"
+        },
+        {
+          "path": "../../packages/core/src/hooks/use-media-query.ts",
+          "type": "registry:hook"
+        }
+      ],
+      "categories": ["header"],
+      "type": "registry:block"
+    },
+    {
+      "name": "header-3",
+      "description": "Feature-rich responsive header with scroll blur, animated mobile drawer, and nested navigation menus.",
+      "registryDependencies": ["button", "navigation-menu"],
+      "files": [
+        {
+          "path": "registry/header/3/header.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/header/3/mobile-nav.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/header/3/desktop-nav.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/header/3/sheard.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/header/3/nav-links.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "../../packages/core/src/logo.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "../../packages/core/src/hooks/use-scroll.ts",
+          "type": "registry:hook"
+        },
+        {
+          "path": "../../packages/core/src/hooks/use-media-query.ts",
+          "type": "registry:hook"
+        }
+      ],
+      "categories": ["header"],
+      "type": "registry:block"
+    },
+    {
+      "name": "header-4",
+      "description": "A sticky responsive header with logo, navigation menu, and scroll-aware animations that adapts seamlessly between mobile and desktop views.Retry",
+      "dependencies": ["@radix-ui/react-portal"],
+      "registryDependencies": ["button"],
+      "files": [
+        {
+          "path": "registry/header/4/header.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/header/4/mobile-nav.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "../../packages/core/src/logo.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "../../packages/core/src/hooks/use-scroll.ts",
+          "type": "registry:hook"
+        },
+        {
+          "path": "../../packages/core/src/hooks/use-media-query.ts",
+          "type": "registry:hook"
+        }
+      ],
+      "categories": ["header"],
+      "type": "registry:block"
+    },
+    {
+      "name": "header-5",
+      "description": "A sticky animated header with dropdown navigation menus for courses and community, featuring smooth scroll-triggered morphing between expanded and compact pill-shaped states.",
+      "dependencies": ["motion", "@radix-ui/react-portal"],
+      "registryDependencies": ["button", "navigation-menu"],
+      "files": [
+        {
+          "path": "registry/header/5/header.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/header/5/mobile-nav.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/header/5/desktop-nav.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/header/5/sheard.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/header/5/nav-links.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "../../packages/core/src/logo.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "../../packages/core/src/hooks/use-scroll.ts",
+          "type": "registry:hook"
+        },
+        {
+          "path": "../../packages/core/src/hooks/use-media-query.ts",
+          "type": "registry:hook"
+        }
+      ],
+      "categories": ["header"],
+      "type": "registry:block"
+    },
+    {
+      "name": "header-6",
+      "description": "A sticky header with multi-column dropdown menus for product and company navigation, featuring grid and list layouts with responsive design for mobile and desktop.",
+      "dependencies": ["motion", "@radix-ui/react-portal"],
+      "registryDependencies": [
+        "button",
+        "navigation-menu",
+        "accordion",
+        "@magicui/grid-pattern"
+      ],
+      "files": [
+        {
+          "path": "registry/header/6/header.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/header/6/mobile-nav.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/header/6/desktop-nav.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/header/6/sheard.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/header/6/nav-links.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "../../packages/core/src/logo.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "../../packages/core/src/hooks/use-scroll.ts",
+          "type": "registry:hook"
+        },
+        {
+          "path": "../../packages/core/src/hooks/use-media-query.ts",
+          "type": "registry:hook"
+        }
+      ],
+      "categories": ["header"],
+      "type": "registry:block"
+    },
+    {
+      "name": "header-7",
+      "description": "Floating squircle navigation with popover menu and social links.",
+      "registryDependencies": ["button", "popover"],
+      "files": [
+        {
+          "path": "registry/header/7/header.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/header/7/header-menu.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "../../packages/core/src/logo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": ["header"],
+      "type": "registry:block"
+    },
+    {
+      "name": "header-8",
+      "description": "Compact navigation with dropdown menus and separated action buttons.",
+      "dependencies": ["@radix-ui/react-portal"],
+      "registryDependencies": ["button", "navigation-menu", "accordion"],
+      "files": [
+        {
+          "path": "registry/header/8/header.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/header/8/mobile-nav.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/header/8/desktop-nav.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/header/8/sheard.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/header/8/nav-links.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "../../packages/core/src/logo.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "../../packages/core/src/hooks/use-media-query.ts",
+          "type": "registry:hook"
+        }
+      ],
+      "categories": ["header"],
+      "type": "registry:block"
+    },
+    {
+      "name": "header-9",
+      "description": "Scroll-aware navigation with featured cards and affiliate section.",
+      "dependencies": ["@radix-ui/react-portal"],
+      "registryDependencies": ["button", "navigation-menu", "accordion"],
+      "files": [
+        {
+          "path": "registry/header/9/header.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/header/9/mobile-nav.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/header/9/desktop-nav.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/header/9/sheard.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/header/9/nav-links.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "../../packages/core/src/logo.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "../../packages/core/src/hooks/use-media-query.ts",
+          "type": "registry:hook"
+        }
+      ],
+      "categories": ["header"],
+      "type": "registry:block"
+    },
+    {
+      "name": "header-10",
+      "description": "Fixed navigation with dropdown menus and mobile accordion.",
+      "dependencies": ["@radix-ui/react-portal"],
+      "registryDependencies": ["button", "navigation-menu", "accordion"],
+      "files": [
+        {
+          "path": "registry/header/10/header.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/header/10/mobile-nav.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/header/10/desktop-nav.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/header/10/sheard.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/header/10/nav-links.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "../../packages/core/src/logo.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "../../packages/core/src/hooks/use-media-query.ts",
+          "type": "registry:hook"
+        }
+      ],
+      "categories": ["header"],
+      "type": "registry:block"
+    },
+    {
+      "name": "header-11",
+      "description": "Centered navigation with dropdown menus and action buttons.",
+      "dependencies": ["@radix-ui/react-portal"],
+      "registryDependencies": ["button", "navigation-menu", "accordion"],
+      "files": [
+        {
+          "path": "registry/header/11/header.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/header/11/mobile-nav.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/header/11/desktop-nav.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/header/11/sheard.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/header/11/nav-links.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "../../packages/core/src/logo.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "../../packages/core/src/hooks/use-media-query.ts",
+          "type": "registry:hook"
+        }
+      ],
+      "categories": ["header"],
+      "type": "registry:block"
+    },
+    {
+      "name": "header-12",
+      "description": "Bordered navigation with GitHub stars counter and dropdown menus.",
+      "dependencies": ["@radix-ui/react-portal"],
+      "registryDependencies": ["button", "navigation-menu", "accordion"],
+      "files": [
+        {
+          "path": "registry/header/12/header.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/header/12/mobile-nav.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/header/12/desktop-nav.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/header/12/sheard.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/header/12/nav-links.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "../../packages/core/src/logo.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "../../packages/core/src/hooks/use-media-query.ts",
+          "type": "registry:hook"
+        }
+      ],
+      "categories": ["header"],
+      "type": "registry:block"
+    },
+    {
+      "name": "header-13",
+      "description": "Scroll-triggered navigation with featured customer stories and open-source cards.",
+      "dependencies": ["@radix-ui/react-portal"],
+      "registryDependencies": ["button", "navigation-menu", "accordion"],
+      "files": [
+        {
+          "path": "registry/header/13/header.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/header/13/mobile-nav.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/header/13/desktop-nav.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/header/13/sheard.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/header/13/nav-links.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "../../packages/core/src/logo.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "../../packages/core/src/hooks/use-scroll.ts",
+          "type": "registry:hook"
+        },
+        {
+          "path": "../../packages/core/src/hooks/use-media-query.ts",
+          "type": "registry:hook"
+        }
+      ],
+      "categories": ["header"],
+      "type": "registry:block"
+    },
+    {
+      "name": "header-14",
+      "description": "Sticky header with scroll-based resizing and multi-column dropdowns.",
+      "dependencies": ["@radix-ui/react-portal"],
+      "registryDependencies": ["button", "navigation-menu", "accordion"],
+      "files": [
+        {
+          "path": "registry/header/14/header.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/header/14/mobile-nav.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/header/14/desktop-nav.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/header/14/sheard.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/header/14/nav-links.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "../../packages/core/src/logo.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "../../packages/core/src/hooks/use-scroll.ts",
+          "type": "registry:hook"
+        },
+        {
+          "path": "../../packages/core/src/hooks/use-media-query.ts",
+          "type": "registry:hook"
+        }
+      ],
+      "categories": ["header"],
+      "type": "registry:block"
+    },
+    {
+      "name": "hero-section-1",
+      "description": "Modern hero page with particle background and social login buttons.",
+      "registryDependencies": [
+        "button",
+        "https://magicui.design/r/grid-pattern.json",
+        "https://motion-primitives.com/c/infinite-slider.json"
+      ],
+      "files": [
+        {
+          "path": "registry/hero-section/1/hero.tsx",
+          "type": "registry:component",
+          "target": "~/components/home/hero.tsx"
+        },
+        {
+          "path": "registry/hero-section/1/header.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/hero-section/1/logo-cloud.tsx",
+          "type": "registry:component",
+          "target": "~/components/home/logo-cloud.tsx"
+        },
+        {
+          "path": "../../packages/core/src/logo.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": ["hero-section"],
+      "type": "registry:block"
+    },
+    {
+      "name": "image-gallery-1",
+      "description": "Masonry-style responsive gallery using random images with dynamic aspect ratios.",
+      "dependencies": ["motion"],
+      "registryDependencies": ["aspect-ratio"],
+      "files": [
+        {
+          "path": "registry/image-gallery/1/image-gallery.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/image-gallery/1/lazy-image.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": ["image-gallery"],
+      "type": "registry:block"
+    },
+    {
+      "name": "logo-cloud-1",
+      "description": "Simple logo grid displaying brand icons in a clean, bordered layout with light and dark mode support.",
+      "files": [
+        {
+          "path": "registry/logo-cloud/1/logo-cloud.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": ["logo-cloud"],
+      "type": "registry:block"
+    },
+    {
+      "name": "logo-cloud-2",
+      "description": "Stylish logo grid featuring top tech brands with decorative plus icons and dynamic borders for a modern visual layout.",
+      "files": [
+        {
+          "path": "registry/logo-cloud/2/logo-cloud.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": ["logo-cloud"],
+      "type": "registry:block"
+    },
+    {
+      "name": "logo-cloud-3",
+      "description": "Smooth infinite-scrolling logo showcase highlighting trusted brands with gradient masking and elegant motion effects.",
+      "registryDependencies": [
+        "https://motion-primitives.com/c/infinite-slider.json"
+      ],
+      "files": [
+        {
+          "path": "registry/logo-cloud/3/logo-cloud.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": ["logo-cloud"],
+      "type": "registry:block"
+    },
+    {
+      "name": "logo-cloud-4",
+      "description": "Animated logo carousel with soft edge blurs and gradient accents for a sleek, modern brand showcase.",
+      "registryDependencies": [
+        "https://motion-primitives.com/c/infinite-slider.json",
+        "https://motion-primitives.com/c/progressive-blur.json"
+      ],
+      "files": [
+        {
+          "path": "registry/logo-cloud/4/logo-cloud.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": ["logo-cloud"],
+      "type": "registry:block"
+    },
+    {
+      "name": "not-found-1",
+      "description": "Minimal 404 error page with bold typography, subtle borders, and clear navigation actions.",
+      "registryDependencies": ["button", "empty"],
+      "files": [
+        {
+          "path": "registry/not-found/1/not-found.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": ["not-found"],
+      "type": "registry:block"
+    },
+    {
+      "name": "not-found-2",
+      "description": "Animated 404 page with floating gradient orbs, soft motion effects, and clean centered layout.",
+      "dependencies": ["motion"],
+      "registryDependencies": ["button", "empty"],
+      "files": [
+        {
+          "path": "registry/not-found/2/not-found.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": ["not-found"],
+      "type": "registry:block"
+    },
+    {
+      "name": "pricing-1",
+      "description": "Responsive pricing section with frequency toggle, tooltips, and highlightable plans.",
+      "dependencies": ["motion"],
+      "registryDependencies": ["button", "tooltip"],
+      "files": [
+        {
+          "path": "registry/pricing/1/pricing-section.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/pricing/1/frequency-toggle.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": ["pricing"],
+      "type": "registry:block"
+    },
+    {
+      "name": "pricing-2",
+      "description": "Modular pricing card UI kit with reusable glass-style components and typography helpers.",
+      "files": [
+        {
+          "path": "../../packages/core/src/pricing-card.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": ["pricing"],
+      "type": "registry:block"
+    },
+    {
+      "name": "pricing-3",
+      "description": "Three-tier pricing grid with interactive plan cards, badges, and feature lists.",
+      "registryDependencies": ["button"],
+      "files": [
+        {
+          "path": "registry/pricing/3/pricing-section.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "../../packages/core/src/pricing-card.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": ["pricing"],
+      "type": "registry:block"
+    },
+    {
+      "name": "testimonials-1",
+      "description": "Infinite vertical testimonial scroller with smooth motion and repeated card animation.",
+      "dependencies": ["motion"],
+      "files": [
+        {
+          "path": "registry/testimonials/1/testimonials-columns.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": ["testimonials"],
+      "type": "registry:block"
+    },
+    {
+      "name": "testimonials-2",
+      "description": "Responsive testimonial grid with smooth motion reveal, subtle gradients, and elegant card design.",
+      "dependencies": ["motion"],
+      "registryDependencies": ["https://magicui.design/r/grid-pattern.json"],
+      "files": [
+        {
+          "path": "registry/testimonials/2/testimonials-section.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": ["testimonials"],
+      "type": "registry:block"
+    }
+  ],
+  "default": {
+    "name": "efferd",
+    "homepage": "https://efferd.com",
+    "items": [
+      {
+        "name": "index",
+        "dependencies": ["class-variance-authority", "lucide-react"],
+        "devDependencies": ["tw-animate-css"],
+        "registryDependencies": ["utils"],
+        "files": [],
+        "cssVars": {},
+        "type": "registry:style"
+      },
+      {
+        "name": "auth-1",
+        "description": "Modern auth page with particle background and social login buttons.",
+        "registryDependencies": [
+          "button",
+          "https://magicui.design/r/particles.json"
+        ],
+        "files": [
+          {
+            "path": "registry/auth/1/auth-page.tsx",
+            "type": "registry:component"
+          },
+          {
+            "path": "../../packages/core/src/logo.tsx",
+            "type": "registry:component"
+          }
+        ],
+        "categories": ["auth"],
+        "type": "registry:block"
+      },
+      {
+        "name": "auth-2",
+        "description": "Modern auth page with testimonial sidebar, social logins, and email signup.",
+        "dependencies": ["motion"],
+        "registryDependencies": ["button", "input-group"],
+        "files": [
+          {
+            "path": "registry/auth/2/auth-page.tsx",
+            "type": "registry:component"
+          },
+          {
+            "path": "registry/auth/2/floating-paths.tsx",
+            "type": "registry:component"
+          },
+          {
+            "path": "../../packages/core/src/logo.tsx",
+            "type": "registry:component"
+          }
+        ],
+        "categories": ["auth"],
+        "type": "registry:block"
+      },
+      {
+        "name": "contact-1",
+        "description": "Elegant contact page with office info, email, phone, and social links.",
+        "files": [
+          {
+            "path": "registry/contact/1/contact.tsx",
+            "type": "registry:component"
+          }
+        ],
+        "categories": ["contact"],
+        "type": "registry:block"
+      },
+      {
+        "name": "contact-2",
+        "description": "Modern contact card with info section and built-in form area.",
+        "files": [
+          {
+            "path": "registry/contact/2/contact-card.tsx",
+            "type": "registry:component"
+          }
+        ],
+        "categories": ["contact"],
+        "type": "registry:block"
+      },
+      {
+        "name": "cta-1",
+        "description": "Centered call-to-action bar with bold heading and dual action buttons.",
+        "registryDependencies": ["button"],
+        "files": [
+          {
+            "path": "registry/cta/1/cta.tsx",
+            "type": "registry:component"
+          }
+        ],
+        "categories": ["cta"],
+        "type": "registry:block"
+      },
+      {
+        "name": "cta-2",
+        "description": "Minimal call-to-action section with headline, short description, and dual buttons for sales contact and getting started.",
+        "registryDependencies": ["button"],
+        "files": [
+          {
+            "path": "registry/cta/2/cta.tsx",
+            "type": "registry:component"
+          }
+        ],
+        "categories": ["cta"],
+        "type": "registry:block"
+      },
+      {
+        "name": "cta-3",
+        "description": "Stylish call-to-action block featuring bordered layout, decorative icons, and clear buttons for contacting sales or getting started.",
+        "registryDependencies": ["button"],
+        "files": [
+          {
+            "path": "registry/cta/3/cta.tsx",
+            "type": "registry:component"
+          }
+        ],
+        "categories": ["cta"],
+        "type": "registry:block"
+      },
+      {
+        "name": "cta-4",
+        "description": "Modern call-to-action card with rounded edges, subtle shadow, and dual buttons for contacting sales or getting started.",
+        "registryDependencies": ["button"],
+        "files": [
+          {
+            "path": "registry/cta/4/cta.tsx",
+            "type": "registry:component"
+          }
+        ],
+        "categories": ["cta"],
+        "type": "registry:block"
+      },
+      {
+        "name": "cta-5",
+        "description": "Newsletter subscription section with email input, submit button, and expert avatars for added trust and engagement.",
+        "registryDependencies": ["button", "input-group"],
+        "files": [
+          {
+            "path": "registry/cta/5/cta.tsx",
+            "type": "registry:component"
+          }
+        ],
+        "categories": ["cta"],
+        "type": "registry:block"
+      },
+      {
+        "name": "cta-6",
+        "description": "A call-to-action Block with a heading and an animated 'Join Now!' button with hover effects.",
+        "dependencies": ["motion"],
+        "registryDependencies": ["button"],
+        "files": [
+          {
+            "path": "registry/cta/6/call-to-action.tsx",
+            "type": "registry:component"
+          }
+        ],
+        "categories": ["cta"],
+        "type": "registry:block"
+      },
+      {
+        "name": "cta-7",
+        "description": "CTA with heading and animated 'Join Now!' button.",
+        "dependencies": ["motion"],
+        "registryDependencies": ["button"],
+        "files": [
+          {
+            "path": "registry/cta/7/call-to-action.tsx",
+            "type": "registry:component"
+          }
+        ],
+        "categories": ["cta"],
+        "type": "registry:block"
+      },
+      {
+        "name": "cta-8",
+        "description": "Grid pattern background with email input and 'Join Now' button.",
+        "dependencies": ["motion"],
+        "registryDependencies": [
+          "button",
+          "button-group",
+          "input-group",
+          "@magicui/grid-pattern"
+        ],
+        "files": [
+          {
+            "path": "registry/cta/8/call-to-action.tsx",
+            "type": "registry:component"
+          }
+        ],
+        "categories": ["cta"],
+        "type": "registry:block"
+      },
+      {
+        "name": "cta-9",
+        "description": "Ethereal shadow effect with number ticker and dual action buttons.",
+        "dependencies": ["motion"],
+        "registryDependencies": ["button", "@magicui/number-ticker"],
+        "files": [
+          {
+            "path": "registry/cta/9/call-to-action.tsx",
+            "type": "registry:component"
+          },
+          {
+            "path": "registry/cta/9/etheral-shadow.tsx",
+            "type": "registry:component"
+          }
+        ],
+        "categories": ["cta"],
+        "type": "registry:block"
+      },
+      {
+        "name": "cta-10",
+        "description": "Animated border lines with 'Get Started' button.",
+        "dependencies": ["motion"],
+        "registryDependencies": ["button"],
+        "files": [
+          {
+            "path": "registry/cta/10/call-to-action.tsx",
+            "type": "registry:component"
+          }
+        ],
+        "categories": ["cta"],
+        "type": "registry:block"
+      },
+      {
+        "name": "cta-11",
+        "description": "Social proof with star ratings, number ticker, and dual action buttons.",
+        "registryDependencies": ["button", "@magicui/number-ticker"],
+        "files": [
+          {
+            "path": "registry/cta/11/call-to-action.tsx",
+            "type": "registry:component"
+          }
+        ],
+        "categories": ["cta"],
+        "type": "registry:block"
+      },
+      {
+        "name": "cta-12",
+        "description": "Installation command with animated border lines and copy button.",
+        "dependencies": ["motion"],
+        "registryDependencies": ["button", "tooltip"],
+        "files": [
+          {
+            "path": "registry/cta/12/call-to-action.tsx",
+            "type": "registry:component"
+          },
+          {
+            "path": "components/copy-button.tsx",
+            "type": "registry:component"
+          },
+          {
+            "path": "../../packages/core/src/hooks/use-copy-to-clipboard.ts",
+            "type": "registry:hook"
+          }
+        ],
+        "categories": ["cta"],
+        "type": "registry:block"
+      },
+      {
+        "name": "cta-13",
+        "description": "Animated circular border with centered heading and action button.",
+        "dependencies": ["motion"],
+        "registryDependencies": ["button"],
+        "files": [
+          {
+            "path": "registry/cta/13/call-to-action.tsx",
+            "type": "registry:component"
+          }
+        ],
+        "categories": ["cta"],
+        "type": "registry:block"
+      },
+      {
+        "name": "cta-14",
+        "description": "Bold inverted design with large typography and email/calendar buttons.",
+        "registryDependencies": ["button"],
+        "files": [
+          {
+            "path": "registry/cta/14/call-to-action.tsx",
+            "type": "registry:component"
+          }
+        ],
+        "categories": ["cta"],
+        "type": "registry:block"
+      },
+      {
+        "name": "cta-15",
+        "description": "Open-source showcase with animated notification cards and GitHub link.",
+        "dependencies": ["motion"],
+        "registryDependencies": ["button"],
+        "files": [
+          {
+            "path": "registry/cta/15/call-to-action.tsx",
+            "type": "registry:component"
+          }
+        ],
+        "categories": ["cta"],
+        "type": "registry:block"
+      },
+      {
+        "name": "cta-16",
+        "description": "Logo branding with animated expanding border frame.",
+        "dependencies": ["motion"],
+        "registryDependencies": ["button"],
+        "files": [
+          {
+            "path": "../../packages/core/src/logo.tsx",
+            "type": "registry:component"
+          },
+          {
+            "path": "registry/cta/16/call-to-action.tsx",
+            "type": "registry:component"
+          }
+        ],
+        "categories": ["cta"],
+        "type": "registry:block"
+      },
+      {
+        "name": "cta-17",
+        "description": "Custom clip-path shape with pulsing dot and corner action button.",
+        "registryDependencies": ["button"],
+        "files": [
+          {
+            "path": "registry/cta/17/call-to-action.tsx",
+            "type": "registry:component"
+          },
+          {
+            "path": "registry/cta/17/clip-shape.tsx",
+            "type": "registry:component"
+          }
+        ],
+        "categories": ["cta"],
+        "type": "registry:block"
+      },
+      {
+        "name": "cta-18",
+        "description": "Event registration with animated floating cards and emoji badges.",
+        "dependencies": ["motion"],
+        "registryDependencies": ["button"],
+        "files": [
+          {
+            "path": "registry/cta/18/call-to-action.tsx",
+            "type": "registry:component"
+          }
+        ],
+        "categories": ["cta"],
+        "type": "registry:block"
+      },
+      {
+        "name": "cta-19",
+        "description": "Floating tool icons surrounding centered headline and action buttons.",
+        "dependencies": ["motion"],
+        "registryDependencies": ["button"],
+        "files": [
+          {
+            "path": "registry/cta/19/call-to-action.tsx",
+            "type": "registry:component"
+          }
+        ],
+        "categories": ["cta"],
+        "type": "registry:block"
+      },
+      {
+        "name": "cta-20",
+        "description": "Concentric animated circles with pricing headline and button.",
+        "dependencies": ["motion"],
+        "registryDependencies": ["button"],
+        "files": [
+          {
+            "path": "registry/cta/20/call-to-action.tsx",
+            "type": "registry:component"
+          }
+        ],
+        "categories": ["cta"],
+        "type": "registry:block"
+      },
+      {
+        "name": "faqs-1",
+        "description": "Elegant FAQ section with accordion-style questions, smooth transitions, and clear support call-to-action.",
+        "registryDependencies": ["accordion"],
+        "files": [
+          {
+            "path": "registry/faqs/1/faqs-section.tsx",
+            "type": "registry:component"
+          }
+        ],
+        "categories": ["faqs"],
+        "type": "registry:block"
+      },
+      {
+        "name": "faqs-2",
+        "description": "Split-screen FAQ layout with bordered sections, interactive accordion, and a clean call-to-action footer.",
+        "registryDependencies": ["accordion"],
+        "files": [
+          {
+            "path": "registry/faqs/2/faqs-section.tsx",
+            "type": "registry:component"
+          }
+        ],
+        "categories": ["faqs"],
+        "type": "registry:block"
+      },
+      {
+        "name": "faqs-3",
+        "description": "Two-column FAQ section featuring bordered layout, vertical guide line, and elegant accordion interactions.",
+        "registryDependencies": ["accordion"],
+        "files": [
+          {
+            "path": "registry/faqs/3/faqs-section.tsx",
+            "type": "registry:component"
+          }
+        ],
+        "categories": ["faqs"],
+        "type": "registry:block"
+      },
+      {
+        "name": "faqs-4",
+        "description": "Multi-category FAQ section with sidebar filters, adaptive accordion layout, and elegant interactive transitions.",
+        "registryDependencies": ["accordion", "button"],
+        "files": [
+          {
+            "path": "registry/faqs/4/faqs-section.tsx",
+            "type": "registry:component"
+          }
+        ],
+        "categories": ["faqs"],
+        "type": "registry:block"
+      },
+      {
+        "name": "faqs-5",
+        "description": "Responsive FAQ section with filters, search, and accordions for quick answers.",
+        "registryDependencies": ["accordion", "button", "input-group", "empty"],
+        "files": [
+          {
+            "path": "registry/faqs/5/faqs-section.tsx",
+            "type": "registry:component"
+          }
+        ],
+        "categories": ["faqs"],
+        "type": "registry:block"
+      },
+      {
+        "name": "features-1",
+        "description": "Minimal feature card with icon, title, and subtle grid background.",
+        "registryDependencies": ["https://magicui.design/r/grid-pattern.json"],
+        "files": [
+          {
+            "path": "registry/features/1/feature-section.tsx",
+            "type": "registry:component"
+          }
+        ],
+        "categories": ["features"],
+        "type": "registry:block"
+      },
+      {
+        "name": "footer-1",
+        "description": "Clean footer with company links, resources, and social icons.",
+        "registryDependencies": ["button"],
+        "files": [
+          {
+            "path": "registry/footer/1/footer.tsx",
+            "type": "registry:component"
+          },
+          {
+            "path": "../../packages/core/src/logo.tsx",
+            "type": "registry:component"
+          }
+        ],
+        "categories": ["footer"],
+        "type": "registry:block"
+      },
+      {
+        "name": "footer-2",
+        "description": "Animated footer with link sections, brand logo, and social icons.",
+        "dependencies": ["motion"],
+        "files": [
+          {
+            "path": "registry/footer/2/footer.tsx",
+            "type": "registry:component"
+          },
+          {
+            "path": "../../packages/core/src/logo.tsx",
+            "type": "registry:component"
+          }
+        ],
+        "categories": ["footer"],
+        "type": "registry:block"
+      },
+      {
+        "name": "footer-3",
+        "description": "Grid-based footer with social cards, link groups, and copyright bar.",
+        "files": [
+          {
+            "path": "registry/footer/3/footer.tsx",
+            "type": "registry:component"
+          }
+        ],
+        "categories": ["footer"],
+        "type": "registry:block"
+      },
+      {
+        "name": "footer-4",
+        "description": "Multi-column footer with app store buttons, social icons, and link groups.",
+        "registryDependencies": ["button"],
+        "files": [
+          {
+            "path": "registry/footer/4/footer.tsx",
+            "type": "registry:component"
+          }
+        ],
+        "categories": ["footer"],
+        "type": "registry:block"
+      },
+      {
+        "name": "footer-5",
+        "description": "Sticky layered footer with gradient background, social icons, and animated link groups.",
+        "dependencies": ["motion"],
+        "registryDependencies": ["button"],
+        "files": [
+          {
+            "path": "registry/footer/5/sticky-footer.tsx",
+            "type": "registry:component"
+          },
+          {
+            "path": "../../packages/core/src/logo.tsx",
+            "type": "registry:component"
+          }
+        ],
+        "categories": ["footer"],
+        "type": "registry:block"
+      },
+      {
+        "name": "form-1",
+        "description": "Elegant workspace creation form with labeled inputs, grouped fields, and a clean card layout for onboarding users smoothly.",
+        "registryDependencies": [
+          "button",
+          "button-group",
+          "field",
+          "input",
+          "input-group",
+          "label"
+        ],
+        "files": [
+          {
+            "path": "registry/form/1/create-workspace-form.tsx",
+            "type": "registry:component"
+          },
+          {
+            "path": "../../packages/core/src/logo.tsx",
+            "type": "registry:component"
+          }
+        ],
+        "categories": ["form"],
+        "type": "registry:block"
+      },
+      {
+        "name": "form-2",
+        "description": "Project submission form featuring bordered layout, plus-icon corners, and detailed input fields for name, repository, and description.",
+        "registryDependencies": [
+          "button",
+          "field",
+          "input",
+          "input-group",
+          "textarea"
+        ],
+        "files": [
+          {
+            "path": "registry/form/2/submit-project-form.tsx",
+            "type": "registry:component"
+          }
+        ],
+        "categories": ["form"],
+        "type": "registry:block"
+      },
+      {
+        "name": "form-3",
+        "description": "Comprehensive account settings form with structured fields for name, email, password, and phone number, featuring icons, grouped inputs, and save actions.",
+        "registryDependencies": [
+          "button",
+          "button-group",
+          "field",
+          "input",
+          "input-group"
+        ],
+        "files": [
+          {
+            "path": "registry/form/3/settings-form.tsx",
+            "type": "registry:component"
+          }
+        ],
+        "categories": ["form"],
+        "type": "registry:block"
+      },
+      {
+        "name": "header-1",
+        "description": "Responsive sticky header with scroll blur effect, animated mobile menu, and adaptive navigation links.",
+        "registryDependencies": ["button"],
+        "files": [
+          {
+            "path": "registry/header/1/header.tsx",
+            "type": "registry:component"
+          },
+          {
+            "path": "../../packages/core/src/logo.tsx",
+            "type": "registry:component"
+          },
+          {
+            "path": "registry/header/1/mobile-nav.tsx",
+            "type": "registry:component"
+          },
+          {
+            "path": "../../packages/core/src/hooks/use-scroll.ts",
+            "type": "registry:hook"
+          },
+          {
+            "path": "../../packages/core/src/hooks/use-media-query.ts",
+            "type": "registry:hook"
+          }
+        ],
+        "categories": ["header"],
+        "type": "registry:block"
+      },
+      {
+        "name": "header-2",
+        "description": "Elegant responsive header with scroll-based styling, mobile drawer menu, and smooth transitions.",
+        "registryDependencies": ["button"],
+        "files": [
+          {
+            "path": "registry/header/2/header.tsx",
+            "type": "registry:component"
+          },
+          {
+            "path": "../../packages/core/src/logo.tsx",
+            "type": "registry:component"
+          },
+          {
+            "path": "registry/header/2/mobile-nav.tsx",
+            "type": "registry:component"
+          },
+          {
+            "path": "../../packages/core/src/hooks/use-scroll.ts",
+            "type": "registry:hook"
+          },
+          {
+            "path": "../../packages/core/src/hooks/use-media-query.ts",
+            "type": "registry:hook"
+          }
+        ],
+        "categories": ["header"],
+        "type": "registry:block"
+      },
+      {
+        "name": "header-3",
+        "description": "Feature-rich responsive header with scroll blur, animated mobile drawer, and nested navigation menus.",
+        "registryDependencies": ["button", "navigation-menu"],
+        "files": [
+          {
+            "path": "registry/header/3/header.tsx",
+            "type": "registry:component"
+          },
+          {
+            "path": "registry/header/3/mobile-nav.tsx",
+            "type": "registry:component"
+          },
+          {
+            "path": "registry/header/3/desktop-nav.tsx",
+            "type": "registry:component"
+          },
+          {
+            "path": "registry/header/3/sheard.tsx",
+            "type": "registry:component"
+          },
+          {
+            "path": "registry/header/3/nav-links.ts",
+            "type": "registry:component"
+          },
+          {
+            "path": "../../packages/core/src/logo.tsx",
+            "type": "registry:component"
+          },
+          {
+            "path": "../../packages/core/src/hooks/use-scroll.ts",
+            "type": "registry:hook"
+          },
+          {
+            "path": "../../packages/core/src/hooks/use-media-query.ts",
+            "type": "registry:hook"
+          }
+        ],
+        "categories": ["header"],
+        "type": "registry:block"
+      },
+      {
+        "name": "header-4",
+        "description": "A sticky responsive header with logo, navigation menu, and scroll-aware animations that adapts seamlessly between mobile and desktop views.Retry",
+        "dependencies": ["@radix-ui/react-portal"],
+        "registryDependencies": ["button"],
+        "files": [
+          {
+            "path": "registry/header/4/header.tsx",
+            "type": "registry:component"
+          },
+          {
+            "path": "registry/header/4/mobile-nav.tsx",
+            "type": "registry:component"
+          },
+          {
+            "path": "../../packages/core/src/logo.tsx",
+            "type": "registry:component"
+          },
+          {
+            "path": "../../packages/core/src/hooks/use-scroll.ts",
+            "type": "registry:hook"
+          },
+          {
+            "path": "../../packages/core/src/hooks/use-media-query.ts",
+            "type": "registry:hook"
+          }
+        ],
+        "categories": ["header"],
+        "type": "registry:block"
+      },
+      {
+        "name": "header-5",
+        "description": "A sticky animated header with dropdown navigation menus for courses and community, featuring smooth scroll-triggered morphing between expanded and compact pill-shaped states.",
+        "dependencies": ["motion", "@radix-ui/react-portal"],
+        "registryDependencies": ["button", "navigation-menu"],
+        "files": [
+          {
+            "path": "registry/header/5/header.tsx",
+            "type": "registry:component"
+          },
+          {
+            "path": "registry/header/5/mobile-nav.tsx",
+            "type": "registry:component"
+          },
+          {
+            "path": "registry/header/5/desktop-nav.tsx",
+            "type": "registry:component"
+          },
+          {
+            "path": "registry/header/5/sheard.tsx",
+            "type": "registry:component"
+          },
+          {
+            "path": "registry/header/5/nav-links.ts",
+            "type": "registry:component"
+          },
+          {
+            "path": "../../packages/core/src/logo.tsx",
+            "type": "registry:component"
+          },
+          {
+            "path": "../../packages/core/src/hooks/use-scroll.ts",
+            "type": "registry:hook"
+          },
+          {
+            "path": "../../packages/core/src/hooks/use-media-query.ts",
+            "type": "registry:hook"
+          }
+        ],
+        "categories": ["header"],
+        "type": "registry:block"
+      },
+      {
+        "name": "header-6",
+        "description": "A sticky header with multi-column dropdown menus for product and company navigation, featuring grid and list layouts with responsive design for mobile and desktop.",
+        "dependencies": ["motion", "@radix-ui/react-portal"],
+        "registryDependencies": [
+          "button",
+          "navigation-menu",
+          "accordion",
+          "@magicui/grid-pattern"
+        ],
+        "files": [
+          {
+            "path": "registry/header/6/header.tsx",
+            "type": "registry:component"
+          },
+          {
+            "path": "registry/header/6/mobile-nav.tsx",
+            "type": "registry:component"
+          },
+          {
+            "path": "registry/header/6/desktop-nav.tsx",
+            "type": "registry:component"
+          },
+          {
+            "path": "registry/header/6/sheard.tsx",
+            "type": "registry:component"
+          },
+          {
+            "path": "registry/header/6/nav-links.ts",
+            "type": "registry:component"
+          },
+          {
+            "path": "../../packages/core/src/logo.tsx",
+            "type": "registry:component"
+          },
+          {
+            "path": "../../packages/core/src/hooks/use-scroll.ts",
+            "type": "registry:hook"
+          },
+          {
+            "path": "../../packages/core/src/hooks/use-media-query.ts",
+            "type": "registry:hook"
+          }
+        ],
+        "categories": ["header"],
+        "type": "registry:block"
+      },
+      {
+        "name": "header-7",
+        "description": "Floating squircle navigation with popover menu and social links.",
+        "registryDependencies": ["button", "popover"],
+        "files": [
+          {
+            "path": "registry/header/7/header.tsx",
+            "type": "registry:component"
+          },
+          {
+            "path": "registry/header/7/header-menu.tsx",
+            "type": "registry:component"
+          },
+          {
+            "path": "../../packages/core/src/logo.tsx",
+            "type": "registry:component"
+          }
+        ],
+        "categories": ["header"],
+        "type": "registry:block"
+      },
+      {
+        "name": "header-8",
+        "description": "Compact navigation with dropdown menus and separated action buttons.",
+        "dependencies": ["@radix-ui/react-portal"],
+        "registryDependencies": ["button", "navigation-menu", "accordion"],
+        "files": [
+          {
+            "path": "registry/header/8/header.tsx",
+            "type": "registry:component"
+          },
+          {
+            "path": "registry/header/8/mobile-nav.tsx",
+            "type": "registry:component"
+          },
+          {
+            "path": "registry/header/8/desktop-nav.tsx",
+            "type": "registry:component"
+          },
+          {
+            "path": "registry/header/8/sheard.tsx",
+            "type": "registry:component"
+          },
+          {
+            "path": "registry/header/8/nav-links.ts",
+            "type": "registry:component"
+          },
+          {
+            "path": "../../packages/core/src/logo.tsx",
+            "type": "registry:component"
+          },
+          {
+            "path": "../../packages/core/src/hooks/use-media-query.ts",
+            "type": "registry:hook"
+          }
+        ],
+        "categories": ["header"],
+        "type": "registry:block"
+      },
+      {
+        "name": "header-9",
+        "description": "Scroll-aware navigation with featured cards and affiliate section.",
+        "dependencies": ["@radix-ui/react-portal"],
+        "registryDependencies": ["button", "navigation-menu", "accordion"],
+        "files": [
+          {
+            "path": "registry/header/9/header.tsx",
+            "type": "registry:component"
+          },
+          {
+            "path": "registry/header/9/mobile-nav.tsx",
+            "type": "registry:component"
+          },
+          {
+            "path": "registry/header/9/desktop-nav.tsx",
+            "type": "registry:component"
+          },
+          {
+            "path": "registry/header/9/sheard.tsx",
+            "type": "registry:component"
+          },
+          {
+            "path": "registry/header/9/nav-links.ts",
+            "type": "registry:component"
+          },
+          {
+            "path": "../../packages/core/src/logo.tsx",
+            "type": "registry:component"
+          },
+          {
+            "path": "../../packages/core/src/hooks/use-media-query.ts",
+            "type": "registry:hook"
+          }
+        ],
+        "categories": ["header"],
+        "type": "registry:block"
+      },
+      {
+        "name": "header-10",
+        "description": "Fixed navigation with dropdown menus and mobile accordion.",
+        "dependencies": ["@radix-ui/react-portal"],
+        "registryDependencies": ["button", "navigation-menu", "accordion"],
+        "files": [
+          {
+            "path": "registry/header/10/header.tsx",
+            "type": "registry:component"
+          },
+          {
+            "path": "registry/header/10/mobile-nav.tsx",
+            "type": "registry:component"
+          },
+          {
+            "path": "registry/header/10/desktop-nav.tsx",
+            "type": "registry:component"
+          },
+          {
+            "path": "registry/header/10/sheard.tsx",
+            "type": "registry:component"
+          },
+          {
+            "path": "registry/header/10/nav-links.ts",
+            "type": "registry:component"
+          },
+          {
+            "path": "../../packages/core/src/logo.tsx",
+            "type": "registry:component"
+          },
+          {
+            "path": "../../packages/core/src/hooks/use-media-query.ts",
+            "type": "registry:hook"
+          }
+        ],
+        "categories": ["header"],
+        "type": "registry:block"
+      },
+      {
+        "name": "header-11",
+        "description": "Centered navigation with dropdown menus and action buttons.",
+        "dependencies": ["@radix-ui/react-portal"],
+        "registryDependencies": ["button", "navigation-menu", "accordion"],
+        "files": [
+          {
+            "path": "registry/header/11/header.tsx",
+            "type": "registry:component"
+          },
+          {
+            "path": "registry/header/11/mobile-nav.tsx",
+            "type": "registry:component"
+          },
+          {
+            "path": "registry/header/11/desktop-nav.tsx",
+            "type": "registry:component"
+          },
+          {
+            "path": "registry/header/11/sheard.tsx",
+            "type": "registry:component"
+          },
+          {
+            "path": "registry/header/11/nav-links.ts",
+            "type": "registry:component"
+          },
+          {
+            "path": "../../packages/core/src/logo.tsx",
+            "type": "registry:component"
+          },
+          {
+            "path": "../../packages/core/src/hooks/use-media-query.ts",
+            "type": "registry:hook"
+          }
+        ],
+        "categories": ["header"],
+        "type": "registry:block"
+      },
+      {
+        "name": "header-12",
+        "description": "Bordered navigation with GitHub stars counter and dropdown menus.",
+        "dependencies": ["@radix-ui/react-portal"],
+        "registryDependencies": ["button", "navigation-menu", "accordion"],
+        "files": [
+          {
+            "path": "registry/header/12/header.tsx",
+            "type": "registry:component"
+          },
+          {
+            "path": "registry/header/12/mobile-nav.tsx",
+            "type": "registry:component"
+          },
+          {
+            "path": "registry/header/12/desktop-nav.tsx",
+            "type": "registry:component"
+          },
+          {
+            "path": "registry/header/12/sheard.tsx",
+            "type": "registry:component"
+          },
+          {
+            "path": "registry/header/12/nav-links.ts",
+            "type": "registry:component"
+          },
+          {
+            "path": "../../packages/core/src/logo.tsx",
+            "type": "registry:component"
+          },
+          {
+            "path": "../../packages/core/src/hooks/use-media-query.ts",
+            "type": "registry:hook"
+          }
+        ],
+        "categories": ["header"],
+        "type": "registry:block"
+      },
+      {
+        "name": "header-13",
+        "description": "Scroll-triggered navigation with featured customer stories and open-source cards.",
+        "dependencies": ["@radix-ui/react-portal"],
+        "registryDependencies": ["button", "navigation-menu", "accordion"],
+        "files": [
+          {
+            "path": "registry/header/13/header.tsx",
+            "type": "registry:component"
+          },
+          {
+            "path": "registry/header/13/mobile-nav.tsx",
+            "type": "registry:component"
+          },
+          {
+            "path": "registry/header/13/desktop-nav.tsx",
+            "type": "registry:component"
+          },
+          {
+            "path": "registry/header/13/sheard.tsx",
+            "type": "registry:component"
+          },
+          {
+            "path": "registry/header/13/nav-links.ts",
+            "type": "registry:component"
+          },
+          {
+            "path": "../../packages/core/src/logo.tsx",
+            "type": "registry:component"
+          },
+          {
+            "path": "../../packages/core/src/hooks/use-scroll.ts",
+            "type": "registry:hook"
+          },
+          {
+            "path": "../../packages/core/src/hooks/use-media-query.ts",
+            "type": "registry:hook"
+          }
+        ],
+        "categories": ["header"],
+        "type": "registry:block"
+      },
+      {
+        "name": "header-14",
+        "description": "Sticky header with scroll-based resizing and multi-column dropdowns.",
+        "dependencies": ["@radix-ui/react-portal"],
+        "registryDependencies": ["button", "navigation-menu", "accordion"],
+        "files": [
+          {
+            "path": "registry/header/14/header.tsx",
+            "type": "registry:component"
+          },
+          {
+            "path": "registry/header/14/mobile-nav.tsx",
+            "type": "registry:component"
+          },
+          {
+            "path": "registry/header/14/desktop-nav.tsx",
+            "type": "registry:component"
+          },
+          {
+            "path": "registry/header/14/sheard.tsx",
+            "type": "registry:component"
+          },
+          {
+            "path": "registry/header/14/nav-links.ts",
+            "type": "registry:component"
+          },
+          {
+            "path": "../../packages/core/src/logo.tsx",
+            "type": "registry:component"
+          },
+          {
+            "path": "../../packages/core/src/hooks/use-scroll.ts",
+            "type": "registry:hook"
+          },
+          {
+            "path": "../../packages/core/src/hooks/use-media-query.ts",
+            "type": "registry:hook"
+          }
+        ],
+        "categories": ["header"],
+        "type": "registry:block"
+      },
+      {
+        "name": "hero-section-1",
+        "description": "Modern hero page with particle background and social login buttons.",
+        "registryDependencies": [
+          "button",
+          "https://magicui.design/r/grid-pattern.json",
+          "https://motion-primitives.com/c/infinite-slider.json"
+        ],
+        "files": [
+          {
+            "path": "registry/hero-section/1/hero.tsx",
+            "type": "registry:component",
+            "target": "~/components/home/hero.tsx"
+          },
+          {
+            "path": "registry/hero-section/1/header.tsx",
+            "type": "registry:component"
+          },
+          {
+            "path": "registry/hero-section/1/logo-cloud.tsx",
+            "type": "registry:component",
+            "target": "~/components/home/logo-cloud.tsx"
+          },
+          {
+            "path": "../../packages/core/src/logo.tsx",
+            "type": "registry:component"
+          }
+        ],
+        "categories": ["hero-section"],
+        "type": "registry:block"
+      },
+      {
+        "name": "image-gallery-1",
+        "description": "Masonry-style responsive gallery using random images with dynamic aspect ratios.",
+        "dependencies": ["motion"],
+        "registryDependencies": ["aspect-ratio"],
+        "files": [
+          {
+            "path": "registry/image-gallery/1/image-gallery.tsx",
+            "type": "registry:component"
+          },
+          {
+            "path": "registry/image-gallery/1/lazy-image.tsx",
+            "type": "registry:component"
+          }
+        ],
+        "categories": ["image-gallery"],
+        "type": "registry:block"
+      },
+      {
+        "name": "logo-cloud-1",
+        "description": "Simple logo grid displaying brand icons in a clean, bordered layout with light and dark mode support.",
+        "files": [
+          {
+            "path": "registry/logo-cloud/1/logo-cloud.tsx",
+            "type": "registry:component"
+          }
+        ],
+        "categories": ["logo-cloud"],
+        "type": "registry:block"
+      },
+      {
+        "name": "logo-cloud-2",
+        "description": "Stylish logo grid featuring top tech brands with decorative plus icons and dynamic borders for a modern visual layout.",
+        "files": [
+          {
+            "path": "registry/logo-cloud/2/logo-cloud.tsx",
+            "type": "registry:component"
+          }
+        ],
+        "categories": ["logo-cloud"],
+        "type": "registry:block"
+      },
+      {
+        "name": "logo-cloud-3",
+        "description": "Smooth infinite-scrolling logo showcase highlighting trusted brands with gradient masking and elegant motion effects.",
+        "registryDependencies": [
+          "https://motion-primitives.com/c/infinite-slider.json"
+        ],
+        "files": [
+          {
+            "path": "registry/logo-cloud/3/logo-cloud.tsx",
+            "type": "registry:component"
+          }
+        ],
+        "categories": ["logo-cloud"],
+        "type": "registry:block"
+      },
+      {
+        "name": "logo-cloud-4",
+        "description": "Animated logo carousel with soft edge blurs and gradient accents for a sleek, modern brand showcase.",
+        "registryDependencies": [
+          "https://motion-primitives.com/c/infinite-slider.json",
+          "https://motion-primitives.com/c/progressive-blur.json"
+        ],
+        "files": [
+          {
+            "path": "registry/logo-cloud/4/logo-cloud.tsx",
+            "type": "registry:component"
+          }
+        ],
+        "categories": ["logo-cloud"],
+        "type": "registry:block"
+      },
+      {
+        "name": "not-found-1",
+        "description": "Minimal 404 error page with bold typography, subtle borders, and clear navigation actions.",
+        "registryDependencies": ["button", "empty"],
+        "files": [
+          {
+            "path": "registry/not-found/1/not-found.tsx",
+            "type": "registry:component"
+          }
+        ],
+        "categories": ["not-found"],
+        "type": "registry:block"
+      },
+      {
+        "name": "not-found-2",
+        "description": "Animated 404 page with floating gradient orbs, soft motion effects, and clean centered layout.",
+        "dependencies": ["motion"],
+        "registryDependencies": ["button", "empty"],
+        "files": [
+          {
+            "path": "registry/not-found/2/not-found.tsx",
+            "type": "registry:component"
+          }
+        ],
+        "categories": ["not-found"],
+        "type": "registry:block"
+      },
+      {
+        "name": "pricing-1",
+        "description": "Responsive pricing section with frequency toggle, tooltips, and highlightable plans.",
+        "dependencies": ["motion"],
+        "registryDependencies": ["button", "tooltip"],
+        "files": [
+          {
+            "path": "registry/pricing/1/pricing-section.tsx",
+            "type": "registry:component"
+          },
+          {
+            "path": "registry/pricing/1/frequency-toggle.tsx",
+            "type": "registry:component"
+          }
+        ],
+        "categories": ["pricing"],
+        "type": "registry:block"
+      },
+      {
+        "name": "pricing-2",
+        "description": "Modular pricing card UI kit with reusable glass-style components and typography helpers.",
+        "files": [
+          {
+            "path": "../../packages/core/src/pricing-card.tsx",
+            "type": "registry:component"
+          }
+        ],
+        "categories": ["pricing"],
+        "type": "registry:block"
+      },
+      {
+        "name": "pricing-3",
+        "description": "Three-tier pricing grid with interactive plan cards, badges, and feature lists.",
+        "registryDependencies": ["button"],
+        "files": [
+          {
+            "path": "registry/pricing/3/pricing-section.tsx",
+            "type": "registry:component"
+          },
+          {
+            "path": "../../packages/core/src/pricing-card.tsx",
+            "type": "registry:component"
+          }
+        ],
+        "categories": ["pricing"],
+        "type": "registry:block"
+      },
+      {
+        "name": "testimonials-1",
+        "description": "Infinite vertical testimonial scroller with smooth motion and repeated card animation.",
+        "dependencies": ["motion"],
+        "files": [
+          {
+            "path": "registry/testimonials/1/testimonials-columns.tsx",
+            "type": "registry:component"
+          }
+        ],
+        "categories": ["testimonials"],
+        "type": "registry:block"
+      },
+      {
+        "name": "testimonials-2",
+        "description": "Responsive testimonial grid with smooth motion reveal, subtle gradients, and elegant card design.",
+        "dependencies": ["motion"],
+        "registryDependencies": ["https://magicui.design/r/grid-pattern.json"],
+        "files": [
+          {
+            "path": "registry/testimonials/2/testimonials-section.tsx",
+            "type": "registry:component"
+          }
+        ],
+        "categories": ["testimonials"],
+        "type": "registry:block"
+      }
+    ]
+  }
+}

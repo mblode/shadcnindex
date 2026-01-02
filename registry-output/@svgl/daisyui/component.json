@@ -1,0 +1,14 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "daisyui",
+  "title": "daisyui",
+  "files": [
+    {
+      "path": "././static/components-generated/daisyui.tsx",
+      "content": "import type { SVGProps } from \"react\";\n\nconst Daisyui = (props: SVGProps<SVGSVGElement>) => (\n  <svg {...props} viewBox=\"0 0 1024 1024\" fill=\"none\">\n    <rect width=\"512\" height=\"256\" x=\"256\" y=\"670.72\" fill=\"#1AD1A5\" rx=\"128\" />\n    <circle cx=\"512\" cy=\"353.28\" r=\"256\" fill=\"#fff\" />\n    <circle\n      cx=\"512\"\n      cy=\"353.28\"\n      r=\"261\"\n      stroke=\"#000\"\n      stroke-opacity=\".2\"\n      strokeWidth=\"10\"\n    />\n    <circle cx=\"512\" cy=\"353.28\" r=\"114.688\" fill=\"#FF9903\" />\n  </svg>\n);\n\nexport { Daisyui };\n",
+      "type": "registry:component",
+      "target": "components/ui/svgs/daisyui.tsx"
+    }
+  ],
+  "type": "registry:component"
+}

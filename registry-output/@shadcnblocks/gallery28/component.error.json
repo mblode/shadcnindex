@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "gallery28",
+  "url": "https://shadcnblocks.com/r/gallery28.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "gallery28",
+    "type": "registry:block",
+    "title": "Gallery",
+    "description": "A gallery block featuring a carousel of curated interior design images with a centralized heading, description, and navigation buttons.",
+    "dependencies": [],
+    "registryDependencies": ["carousel"],
+    "files": [
+      {
+        "path": "code/block/gallery28.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:32.769Z"
+}

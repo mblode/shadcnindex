@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "extends": "none",
+  "name": "checkbox-indeterminate-demo",
+  "title": "Checkbox Indeterminate",
+  "description": "checkbox-indeterminate-demo",
+  "registryDependencies": ["https://intentui.com/r/checkbox"],
+  "files": [
+    {
+      "path": "src/components/docs/forms/checkbox/checkbox-indeterminate-demo.tsx",
+      "content": "\"use client\"\n\nimport { Checkbox } from \"@/components/ui/checkbox\"\n\nexport default function CheckboxIndeterminateDemo() {\n  return (\n    <Checkbox value=\"read\" isIndeterminate>\n      Read\n    </Checkbox>\n  )\n}\n",
+      "type": "registry:page",
+      "target": "app/checkbox-indeterminate-demo/page.tsx"
+    }
+  ],
+  "type": "registry:page"
+}

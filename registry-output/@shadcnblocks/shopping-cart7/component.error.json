@@ -1,0 +1,36 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "shopping-cart7",
+  "url": "https://shadcnblocks.com/r/shopping-cart7.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "shopping-cart7",
+    "type": "registry:block",
+    "title": "Shopping-cart",
+    "description": "This component provides a dynamic shopping cart interface, allowing users to view, update quantities, and remove products with real-time price calculation. It integrates form management via react-hook-form to handle cart item data and user interactions efficiently.",
+    "dependencies": [
+      "@hookform/resolvers",
+      "lucide-react",
+      "react",
+      "react-hook-form",
+      "zod"
+    ],
+    "registryDependencies": [
+      "https://shadcnblocks.com/r/price",
+      "https://shadcnblocks.com/r/quantity-input",
+      "aspect-ratio",
+      "button",
+      "card",
+      "dialog",
+      "empty",
+      "field"
+    ],
+    "files": [
+      {
+        "path": "code/block/shopping-cart7.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:51.623Z"
+}

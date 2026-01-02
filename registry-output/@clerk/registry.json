@@ -1,0 +1,141 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "clerk",
+  "homepage": "https://clerk.com",
+  "items": [
+    {
+      "name": "nextjs-quickstart",
+      "type": "registry:block",
+      "title": "Clerk Next.js Quickstart (App Router)",
+      "description": "A quickstart for Next.js App Router with Clerk authentication.",
+      "dependencies": [
+        "@clerk/nextjs",
+        "@clerk/themes",
+        "next-themes",
+        "lucide-react"
+      ],
+      "registryDependencies": ["button"],
+      "files": [
+        {
+          "path": "nextjs/aio/default/layouts/layout-with-header.tsx",
+          "target": "app/layout.tsx",
+          "type": "registry:page"
+        },
+        {
+          "path": "nextjs/aio/default/pages/sign-in-page.tsx",
+          "target": "app/sign-in/[[...sign-in]]/page.tsx",
+          "type": "registry:page"
+        },
+        {
+          "path": "nextjs/aio/default/pages/sign-up-page.tsx",
+          "target": "app/sign-up/[[...sign-up]]/page.tsx",
+          "type": "registry:page"
+        },
+        {
+          "path": "nextjs/aio/default/files/middleware.ts",
+          "target": "src/proxy.ts",
+          "type": "registry:file"
+        },
+        {
+          "path": "nextjs/aio/default/components/clerk-provider.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "nextjs/aio/default/components/header.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "nextjs/aio/default/components/theme-provider.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "css": {
+        "@import \"@clerk/themes/shadcn.css\"": {}
+      },
+      "envVars": {
+        "NEXT_PUBLIC_CLERK_SIGN_IN_URL": "/sign-in",
+        "NEXT_PUBLIC_CLERK_SIGN_UP_URL": "/sign-up"
+      },
+      "docs": "https://clerk.com/docs/quickstarts/nextjs"
+    },
+    {
+      "name": "nextjs-clerk-provider",
+      "type": "registry:component",
+      "title": "Clerk Provider (App Router)",
+      "description": "The <ClerkProvider> component is required to integrate Clerk into your React application, providing session and user context to Clerk's hooks and components.",
+      "dependencies": ["@clerk/nextjs", "@clerk/themes"],
+      "files": [
+        {
+          "path": "nextjs/aio/default/components/clerk-provider.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "docs": "https://clerk.com/docs/nextjs/components/clerk-provider"
+    },
+    {
+      "name": "nextjs-sign-in-page",
+      "type": "registry:page",
+      "title": "Clerk Next.js Sign In Page (App Router)",
+      "description": "A sign in page for Next.js App Router with Clerk authentication.",
+      "dependencies": ["@clerk/nextjs"],
+      "registryDependencies": ["button"],
+      "files": [
+        {
+          "path": "nextjs/aio/default/pages/sign-in-page.tsx",
+          "target": "app/sign-in/[[...sign-in]]/page.tsx",
+          "type": "registry:page"
+        }
+      ],
+      "envVars": {
+        "NEXT_PUBLIC_CLERK_SIGN_IN_URL": "/sign-in"
+      }
+    },
+    {
+      "name": "nextjs-sign-up-page",
+      "type": "registry:page",
+      "title": "Clerk Next.js Sign Up Page (App Router)",
+      "description": "A sign up page for Next.js App Router with Clerk authentication.",
+      "dependencies": ["@clerk/nextjs"],
+      "files": [
+        {
+          "path": "nextjs/aio/default/pages/sign-up-page.tsx",
+          "target": "app/sign-up/[[...sign-up]]/page.tsx",
+          "type": "registry:page"
+        }
+      ],
+      "envVars": {
+        "NEXT_PUBLIC_CLERK_SIGN_UP_URL": "/sign-up"
+      }
+    },
+    {
+      "name": "nextjs-waitlist-page",
+      "type": "registry:page",
+      "title": "Clerk Next.js Waitlist Page (App Router)",
+      "description": "A waitlist page for Next.js App Router with Clerk authentication.",
+      "dependencies": ["@clerk/nextjs"],
+      "files": [
+        {
+          "path": "nextjs/aio/default/pages/waitlist-page.tsx",
+          "target": "app/waitlist/page.tsx",
+          "type": "registry:page"
+        }
+      ],
+      "docs": "Before using the <Waitlist /> component, you must provide the waitlistUrl prop either in the <ClerkProvider> or <SignIn /> component to ensure proper functionality. https://clerk.com/docs/nextjs/components/waitlist"
+    },
+    {
+      "name": "nextjs-middleware",
+      "type": "registry:file",
+      "title": "Clerk Next.js Middleware",
+      "description": "The clerkMiddleware() helper integrates Clerk authentication into your Next.js application through Middleware. clerkMiddleware() is compatible with both the App and Pages routers.",
+      "dependencies": ["@clerk/nextjs"],
+      "files": [
+        {
+          "path": "nextjs/aio/default/files/middleware.ts",
+          "target": "src/proxy.ts",
+          "type": "registry:file"
+        }
+      ],
+      "docs": "https://clerk.com/docs/references/nextjs/clerk-middleware"
+    }
+  ]
+}

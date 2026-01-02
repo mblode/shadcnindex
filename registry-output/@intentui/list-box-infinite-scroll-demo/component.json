@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "extends": "none",
+  "name": "list-box-infinite-scroll-demo",
+  "title": "List Box Infinite Scroll",
+  "description": "list-box-infinite-scroll-demo",
+  "dependencies": ["react-aria-components", "react-stately"],
+  "registryDependencies": [
+    "https://intentui.com/r/list-box",
+    "https://intentui.com/r/progress-circle"
+  ],
+  "files": [
+    {
+      "path": "src/components/docs/collections/list-box/list-box-infinite-scroll-demo.tsx",
+      "content": "\"use client\"\n\nimport { Collection, ListBoxLoadMoreItem } from \"react-aria-components\"\nimport { useAsyncList } from \"react-stately\"\nimport { ListBox, ListBoxItem } from \"@/components/ui/list-box\"\nimport { ProgressCircle } from \"@/components/ui/progress-circle\"\n\ninterface Character {\n  name: string\n}\nexport default function ListBoxInfiniteScrollDemo() {\n  const list = useAsyncList<Character>({\n    async load({ signal, cursor }) {\n      const res = await fetch(cursor || `https://pokeapi.co/api/v2/pokemon`, { signal })\n      const json = await res.json()\n\n      return {\n        items: json.results,\n        cursor: json.next,\n      }\n    },\n  })\n\n  return (\n    <ListBox aria-label=\"Pick a Pokemon\" items={list.items} selectionMode=\"single\">\n      <Collection items={list.items}>\n        {(item) => <ListBoxItem id={item.name}>{item.name}</ListBoxItem>}\n      </Collection>\n      <ListBoxLoadMoreItem\n        onLoadMore={list.loadMore}\n        isLoading={list.loadingState === \"loadingMore\"}\n      >\n        <ProgressCircle className=\"mx-auto mb-4\" isIndeterminate aria-label=\"Loading more...\" />\n      </ListBoxLoadMoreItem>\n    </ListBox>\n  )\n}\n",
+      "type": "registry:page",
+      "target": "app/list-box-infinite-scroll-demo/page.tsx"
+    }
+  ],
+  "type": "registry:page"
+}

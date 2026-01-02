@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "promo-banner6",
+  "url": "https://shadcnblocks.com/r/promo-banner6.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "promo-banner6",
+    "type": "registry:block",
+    "title": "Promo-banner",
+    "description": "This component is a promotional banner featuring a countdown timer, useful for displaying time left until a special event or offer ends. It accepts props such as `endTime` for the countdown target, a customizable `title` for the banner message, and additional styling through `className`.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/promo-banner6.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:48.995Z"
+}

@@ -1,0 +1,21 @@
+{
+  "registry": "@magicui-pro",
+  "component": "header-4",
+  "url": "https://pro.magicui.design/registry/header-4",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "header-4",
+    "type": "registry:block",
+    "dependencies": ["motion"],
+    "files": [
+      {
+        "path": "registry/blocks/header-4.tsx",
+        "type": "registry:component"
+      }
+    ],
+    "meta": {
+      "height": 210
+    }
+  },
+  "fetchedAt": "2026-01-02T11:10:48.504Z"
+}

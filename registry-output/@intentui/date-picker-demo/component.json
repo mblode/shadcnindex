@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "extends": "none",
+  "name": "date-picker-demo",
+  "title": "Date Picker",
+  "description": "date-picker-demo",
+  "registryDependencies": [
+    "https://intentui.com/r/date-picker",
+    "https://intentui.com/r/field"
+  ],
+  "files": [
+    {
+      "path": "src/components/docs/date-and-time/date-picker/date-picker-demo.tsx",
+      "content": "\"use client\"\n\nimport { DatePicker, DatePickerTrigger } from \"@/components/ui/date-picker\"\nimport { Label } from \"@/components/ui/field\"\n\nexport default function DatePickerDemo() {\n  return (\n    <DatePicker>\n      <Label>Event date</Label>\n      <DatePickerTrigger />\n    </DatePicker>\n  )\n}\n",
+      "type": "registry:page",
+      "target": "app/date-picker-demo/page.tsx"
+    }
+  ],
+  "type": "registry:page"
+}

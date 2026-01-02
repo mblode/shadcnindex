@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "extends": "none",
+  "name": "file-trigger-disabled-demo",
+  "title": "File Trigger Disabled",
+  "description": "file-trigger-disabled-demo",
+  "registryDependencies": ["https://intentui.com/r/file-trigger"],
+  "files": [
+    {
+      "path": "src/components/docs/buttons/file-trigger/file-trigger-disabled-demo.tsx",
+      "content": "\"use client\"\nimport { FileTrigger } from \"@/components/ui/file-trigger\"\n\nexport default function FileTriggerDisabledDemo() {\n  return <FileTrigger isDisabled />\n}\n",
+      "type": "registry:page",
+      "target": "app/file-trigger-disabled-demo/page.tsx"
+    }
+  ],
+  "type": "registry:page"
+}

@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "faq17",
+  "url": "https://shadcnblocks.com/r/faq17.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "faq17",
+    "type": "registry:block",
+    "title": "Faq",
+    "description": "A component comprising FAQs with an accordion layout, personal profile section, and a contact link. Features a 5-column layout, customizable questions, answers, and profile info.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["accordion"],
+    "files": [
+      {
+        "path": "code/block/faq17.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:20.295Z"
+}

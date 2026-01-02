@@ -1,0 +1,27 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "checkout5",
+  "url": "https://shadcnblocks.com/r/checkout5.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "checkout5",
+    "type": "registry:block",
+    "title": "Checkout",
+    "description": "The component provides a detailed checkout form that includes order summary, email input, card payment details, and promo code application, using react-hook-form and zod for validation. It allows users to input billing information, apply a coupon code, and choose payment methods like card or Apple Pay.",
+    "dependencies": [
+      "@hookform/resolvers",
+      "lucide-react",
+      "react",
+      "react-hook-form",
+      "zod"
+    ],
+    "registryDependencies": ["button", "field", "input", "select", "separator"],
+    "files": [
+      {
+        "path": "code/block/checkout5.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:16.190Z"
+}

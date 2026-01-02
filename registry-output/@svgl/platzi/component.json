@@ -1,0 +1,14 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "platzi",
+  "title": "platzi",
+  "files": [
+    {
+      "path": "././static/components-generated/platzi.tsx",
+      "content": "import type { SVGProps } from \"react\";\n\nconst Platzi = (props: SVGProps<SVGSVGElement>) => (\n  <svg {...props} style={{ color: \"#98ca3f\" }} viewBox=\"0 0 24 24\">\n    <path\n      d=\"M10.64 1.13 2.49 9.28a3.84 3.84 0 0 0 0 5.44l8.15 8.15a3.84 3.84 0 0 0 5.44 0l2.72-2.71-2.72-2.72-2.72 2.72L5.2 12l8.16-8.16 5.44 5.44-5.44 5.44 2.72 2.72L21.5 12a3.84 3.84 0 0 0 0-5.44l-5.44-5.43a3.83 3.83 0 0 0-5.43 0z\"\n      fill=\"#98ca3f\"\n    />\n  </svg>\n);\n\nexport { Platzi };\n",
+      "type": "registry:component",
+      "target": "components/ui/svgs/platzi.tsx"
+    }
+  ],
+  "type": "registry:component"
+}

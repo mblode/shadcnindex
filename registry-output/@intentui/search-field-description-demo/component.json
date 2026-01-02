@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "extends": "none",
+  "name": "search-field-description-demo",
+  "title": "Search Field Description",
+  "description": "search-field-description-demo",
+  "registryDependencies": [
+    "https://intentui.com/r/field",
+    "https://intentui.com/r/search-field"
+  ],
+  "files": [
+    {
+      "path": "src/components/docs/forms/search-field/search-field-description-demo.tsx",
+      "content": "\"use client\"\n\nimport { Description } from \"@/components/ui/field\"\nimport { SearchField, SearchInput } from \"@/components/ui/search-field\"\n\nexport default function SearchFieldDescriptionDemo() {\n  return (\n    <SearchField aria-label=\"Search\">\n      <SearchInput placeholder=\"Search\" />\n      <Description>Search for a product</Description>\n    </SearchField>\n  )\n}\n",
+      "type": "registry:page",
+      "target": "app/search-field-description-demo/page.tsx"
+    }
+  ],
+  "type": "registry:page"
+}

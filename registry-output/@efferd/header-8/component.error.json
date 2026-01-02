@@ -1,0 +1,45 @@
+{
+  "registry": "@efferd",
+  "component": "header-8",
+  "url": "https://efferd.com/r/header-8.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "header-8",
+    "description": "Compact navigation with dropdown menus and separated action buttons.",
+    "dependencies": ["@radix-ui/react-portal"],
+    "registryDependencies": ["button", "navigation-menu", "accordion"],
+    "files": [
+      {
+        "path": "registry/header/8/header.tsx",
+        "type": "registry:component"
+      },
+      {
+        "path": "registry/header/8/mobile-nav.tsx",
+        "type": "registry:component"
+      },
+      {
+        "path": "registry/header/8/desktop-nav.tsx",
+        "type": "registry:component"
+      },
+      {
+        "path": "registry/header/8/sheard.tsx",
+        "type": "registry:component"
+      },
+      {
+        "path": "registry/header/8/nav-links.ts",
+        "type": "registry:component"
+      },
+      {
+        "path": "../../packages/core/src/logo.tsx",
+        "type": "registry:component"
+      },
+      {
+        "path": "../../packages/core/src/hooks/use-media-query.ts",
+        "type": "registry:hook"
+      }
+    ],
+    "categories": ["header"],
+    "type": "registry:block"
+  },
+  "fetchedAt": "2026-01-02T11:08:58.776Z"
+}

@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "resources2",
+  "url": "https://shadcnblocks.com/r/resources2.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "resources2",
+    "type": "registry:block",
+    "title": "Resources",
+    "description": "A component showcasing resources & whitepapers with a featured article, latest developments, and updates section. Utilizes tabs for category filtering, avatars for author representation, and badges for feature highlights.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": ["avatar", "badge", "tabs"],
+    "files": [
+      {
+        "path": "code/block/resources2.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:49.285Z"
+}

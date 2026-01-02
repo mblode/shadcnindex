@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature120",
+  "url": "https://shadcnblocks.com/r/feature120.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature120",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A component showcasing business tools with a 2-column layout, avatars, quotes, action button, and a 4-column stats grid.",
+    "dependencies": [],
+    "registryDependencies": ["avatar", "button", "separator"],
+    "files": [
+      {
+        "path": "code/block/feature120.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:21.404Z"
+}

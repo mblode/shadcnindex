@@ -1,0 +1,22 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "type-generator",
+  "type": "registry:item",
+  "title": "Type Generator",
+  "description": "Script to generate types",
+  "devDependencies": ["tsx", "ws", "dotenv"],
+  "files": [
+    {
+      "path": "scripts/generate_entities.ts",
+      "content": "import WebSocket from \"ws\";\nimport * as fs from \"fs\";\nimport dotenv from \"dotenv\";\nimport { createRequire } from \"module\";\n\n// ---------- Env Variable Fetch + Validation ----------\ndotenv.config();\n\nconst HA_URL = process.env.VITE_HA_URL || process.env.NEXT_PUBLIC_HA_URL || process.env.HA_URL; // e.g. homeassistant.local\nconst HA_PORT = process.env.VITE_HA_PORT || process.env.NEXT_PUBLIC_HA_PORT || process.env.HA_PORT; // e.g. 8123\nconst AUTH_TOKEN = process.env.AUTH_TOKEN;\nconst FRAMEWORK_AUTH_TOKEN =\n    process.env.VITE_HA_LONG_LIVED_TOKEN || process.env.NEXT_PUBLIC_HA_LONG_LIVED_TOKEN || process.env.LONG_LIVED_TOKEN;\n\nfunction exitWithError(message: string): never {\n    console.error(`Environment validation error: ${message}`);\n    process.exit(1);\n}\n\nif (!HA_URL) {\n    exitWithError(\"HA_URL is missing\");\n}\nif (!HA_PORT) {\n    exitWithError(\"HA_PORT is missing\");\n}\n\n// (Any Auth token is acceptable)\nconst authToken = AUTH_TOKEN || FRAMEWORK_AUTH_TOKEN;\nif (!authToken) {\n    exitWithError(\"Either an AUTH_TOKEN or a Long‑Lived Token must be provided.\");\n}\n\n// ---------- Fetching Types from API ----------\n\ntype entity = {\n    entity_id: string;\n    state?: string | number | null;\n    attributes: {\n        friendly_name?: string;\n    };\n};\n\nasync function fetchEntities(): Promise<entity[]> {\n    const TOKEN =\n        AUTH_TOKEN != null && AUTH_TOKEN !== \"\"\n            ? AUTH_TOKEN\n            : FRAMEWORK_AUTH_TOKEN != null && FRAMEWORK_AUTH_TOKEN !== \"\"\n              ? FRAMEWORK_AUTH_TOKEN\n              : undefined;\n    return new Promise((resolve, reject) => {\n        const ws = new WebSocket(`ws://${HA_URL}:${HA_PORT}/api/websocket`);\n\n        ws.on(\"open\", () => {\n            console.log(\"Connected to Home Assistant WebSocket\");\n        });\n\n        let authed = false;\n\n        ws.on(\"message\", (data: string) => {\n            const msg = JSON.parse(data);\n\n            if (msg.type === \"auth_required\") {\n                ws.send(\n                    JSON.stringify({\n                        type: \"auth\",\n                        access_token: TOKEN,\n                    }),\n                );\n            } else if (msg.type === \"auth_ok\") {\n                authed = true;\n                ws.send(JSON.stringify({ id: 1, type: \"get_states\" }));\n            } else if (msg.type === \"result\" && authed) {\n                if (msg.success) {\n                    resolve(msg.result);\n                } else {\n                    reject(new Error(\"Failed to fetch entities\"));\n                }\n                ws.close();\n            }\n        });\n\n        ws.on(\"error\", (err: string) => reject(err));\n    });\n}\n\nasync function generateTypes() {\n    const entities = await fetchEntities();\n\n    const filtered = entities.map((e: entity) => ({\n        entity_id: e.entity_id,\n        friendly_name: e.attributes?.friendly_name,\n    }));\n\n    const tsLines = filtered.map((e) => `  /**\\n   * ${e.friendly_name || e.entity_id}\\n   */\\n  | \"${e.entity_id}\"`);\n\n    const tsContent = `// AUTO-GENERATED FILE - DO NOT EDIT\nexport type EntityId =\n${tsLines.join(\"\\n\")};\n\nexport interface HAEntity {\n  entity_id: EntityId;\n  friendly_name?: string;\n}\n`;\n\n    // TODO FETCH DOMAINS AND SERVICES\n    const require = createRequire(import.meta.url);\n    const entityTypeFilePath = require.resolve(\"@/types/entity-types.ts\");\n\n    fs.writeFileSync(entityTypeFilePath, tsContent, \"utf-8\");\n    console.log(`✅ Generated ${entityTypeFilePath}`);\n}\n\ngenerateTypes().catch((err) => {\n    console.error(\"❌ Error generating entities:\", err);\n    process.exit(1);\n});\n",
+      "type": "registry:file",
+      "target": "scripts/generate_entities.ts"
+    },
+    {
+      "path": "types/entity-types.ts",
+      "content": "// AUTO-GENERATED FILE - DO NOT EDIT\nexport type EntityId =\n    /**\n     * Placeholder\n     */\n    \"placeholder.placeholder\";\n\nexport interface HAEntity {\n    entity_id: EntityId;\n    friendly_name?: string;\n}\n",
+      "type": "registry:file",
+      "target": "types/entity-types.ts"
+    }
+  ]
+}

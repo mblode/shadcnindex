@@ -1,0 +1,22 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "collapsible-collapsible-standard-4",
+  "title": "Collapsible/collapsible-standard-",
+  "description": "A collapsible/collapsible-standard- example",
+  "dependencies": ["@radix-ui/react-collapsible"],
+  "registryDependencies": ["collapsible"],
+  "files": [
+    {
+      "path": "code/example/collapsible/collapsible-standard-4.tsx",
+      "content": "import {\n  Collapsible,\n  CollapsibleContent,\n  CollapsibleTrigger,\n} from \"@/components/ui/collapsible\";\n\nexport const title = \"Text-only Collapsible\";\n\nconst Example = () => (\n  <Collapsible className=\"w-full max-w-lg space-y-2\">\n    <div className=\"flex items-center gap-2\">\n      <h4 className=\"text-sm font-semibold\">Settings</h4>\n      <CollapsibleTrigger className=\"text-sm text-muted-foreground underline-offset-4 hover:underline\">\n        [expand]\n      </CollapsibleTrigger>\n    </div>\n    <CollapsibleContent className=\"space-y-2\">\n      <div className=\"rounded-md border px-4 py-2 text-sm\">Option 1</div>\n      <div className=\"rounded-md border px-4 py-2 text-sm\">Option 2</div>\n      <div className=\"rounded-md border px-4 py-2 text-sm\">Option 3</div>\n    </CollapsibleContent>\n  </Collapsible>\n);\n\nexport default Example;\n",
+      "type": "registry:block"
+    },
+    {
+      "path": "src/components/ui/collapsible.tsx",
+      "content": "import * as CollapsiblePrimitive from \"@radix-ui/react-collapsible\"\n\nfunction Collapsible({\n  ...props\n}: React.ComponentProps<typeof CollapsiblePrimitive.Root>) {\n  return <CollapsiblePrimitive.Root data-slot=\"collapsible\" {...props} />\n}\n\nfunction CollapsibleTrigger({\n  ...props\n}: React.ComponentProps<typeof CollapsiblePrimitive.CollapsibleTrigger>) {\n  return (\n    <CollapsiblePrimitive.CollapsibleTrigger\n      data-slot=\"collapsible-trigger\"\n      {...props}\n    />\n  )\n}\n\nfunction CollapsibleContent({\n  ...props\n}: React.ComponentProps<typeof CollapsiblePrimitive.CollapsibleContent>) {\n  return (\n    <CollapsiblePrimitive.CollapsibleContent\n      data-slot=\"collapsible-content\"\n      {...props}\n    />\n  )\n}\n\nexport { Collapsible, CollapsibleTrigger, CollapsibleContent }\n",
+      "type": "registry:ui",
+      "target": ""
+    }
+  ],
+  "type": "registry:block"
+}

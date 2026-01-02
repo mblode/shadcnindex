@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "lists-slide-in",
+  "type": "registry:component",
+  "title": "Slide In List",
+  "description": "List with staggered slide-in animation for items",
+  "dependencies": ["motion"],
+  "files": [
+    {
+      "path": "registry/new-york/animations/lists/slide-in.tsx",
+      "content": "\"use client\";\nimport * as React from \"react\";\nimport { motion, HTMLMotionProps } from \"motion/react\";\nimport { cn } from \"@/lib/utils\";\nexport interface SlideInListProps\n  extends Omit<HTMLMotionProps<\"div\">, \"children\"> {\n  children: React.ReactNode[];\n  direction?: \"left\" | \"right\" | \"top\" | \"bottom\";\n  staggerDelay?: number;\n  duration?: number;\n  distance?: number;\n  as?: \"div\" | \"ul\" | \"ol\" | \"section\" | \"article\";\n}\nexport function SlideInList({\n  children,\n  direction = \"left\",\n  staggerDelay = 0.1,\n  duration = 0.3,\n  distance = 20,\n  as: Component = \"div\",\n  className,\n  ...props\n}: SlideInListProps) {\n  const childrenArray = React.Children.toArray(children);\n  const getInitialPosition = () => {\n    switch (direction) {\n      case \"left\":\n        return { x: -distance, y: 0 };\n      case \"right\":\n        return { x: distance, y: 0 };\n      case \"top\":\n        return { x: 0, y: -distance };\n      case \"bottom\":\n        return { x: 0, y: distance };\n    }\n  };\n  const MotionComponent = motion[Component as keyof typeof motion] as any;\n  return (\n    <MotionComponent className={cn(className)} {...props}>\n      {childrenArray.map((child, index) => (\n        <motion.div\n          key={index}\n          initial={{ ...getInitialPosition(), opacity: 0 }}\n          animate={{ x: 0, y: 0, opacity: 1 }}\n          transition={{\n            duration,\n            delay: index * staggerDelay,\n            ease: \"easeOut\",\n          }}\n        >\n          {child}\n        </motion.div>\n      ))}\n    </MotionComponent>\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ]
+}

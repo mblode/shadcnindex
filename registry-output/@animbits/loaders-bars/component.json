@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "loaders-bars",
+  "type": "registry:component",
+  "title": "Bars Loader",
+  "description": "Animated height bars loader",
+  "dependencies": ["motion"],
+  "files": [
+    {
+      "path": "registry/new-york/animations/loaders/bars.tsx",
+      "content": "\"use client\";\nimport * as React from \"react\";\nimport { motion, HTMLMotionProps } from \"motion/react\";\nimport { cn } from \"@/lib/utils\";\nexport interface LoaderBarsProps\n  extends Omit<HTMLMotionProps<\"div\">, \"children\"> {\n  barWidth?: number;\n  barHeight?: number;\n  color?: string;\n  count?: number;\n  gap?: number;\n  duration?: number;\n}\nexport function LoaderBars({\n  className,\n  barWidth = 4,\n  barHeight = 30,\n  color = \"currentColor\",\n  count = 5,\n  gap = 4,\n  duration = 1,\n  ...props\n}: LoaderBarsProps) {\n  return (\n    <div className={cn(\"flex items-end\", className)} style={{ gap }}>\n      {Array.from({ length: count }).map((_, index) => (\n        <motion.div\n          key={index}\n          style={{\n            width: barWidth,\n            backgroundColor: color,\n          }}\n          animate={{\n            height: [barHeight * 0.3, barHeight, barHeight * 0.3],\n          }}\n          transition={{\n            duration,\n            ease: \"easeInOut\",\n            repeat: Infinity,\n            delay: index * (duration / count),\n          }}\n        />\n      ))}\n    </div>\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "pricing23",
+  "url": "https://shadcnblocks.com/r/pricing23.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "pricing23",
+    "type": "registry:block",
+    "title": "Pricing",
+    "description": "A component displaying pricing plans and feature comparison, collapsible on mobile for plan selection, grid layout for desktop showing all plans side-by-side.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": ["button", "collapsible"],
+    "files": [
+      {
+        "path": "code/block/pricing23.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:43.942Z"
+}

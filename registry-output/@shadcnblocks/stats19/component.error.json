@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "stats19",
+  "url": "https://shadcnblocks.com/r/stats19.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "stats19",
+    "type": "registry:block",
+    "title": "Stats",
+    "description": "A component displaying \"Milestones\" with a 6-column layout; includes a sticky label and lists stats in 2:3 column ratios.",
+    "dependencies": ["react"],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/stats19.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:52.575Z"
+}

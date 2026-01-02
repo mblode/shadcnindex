@@ -1,0 +1,34 @@
+{
+  "name": "preact-ui-button",
+  "title": "preact-ui-button",
+  "type": "registry:component",
+  "description": "",
+  "registryDependencies": [],
+  "dependencies": ["preact", "prosekit"],
+  "files": [
+    {
+      "path": "registry/src/preact/ui/button/button.tsx",
+      "type": "registry:component",
+      "target": "components/editor/ui/button/button.tsx",
+      "content": "import type {\n  ComponentChild,\n  MouseEventHandler,\n} from 'preact'\nimport {\n  TooltipContent,\n  TooltipRoot,\n  TooltipTrigger,\n} from 'prosekit/preact/tooltip'\n\nexport default function Button(props: {\n  pressed?: boolean\n  disabled?: boolean\n  onClick?: MouseEventHandler<HTMLButtonElement>\n  tooltip?: string\n  children: ComponentChild\n}) {\n  return (\n    <TooltipRoot>\n      <TooltipTrigger className=\"block\">\n        <button\n          data-state={props.pressed ? 'on' : 'off'}\n          disabled={props.disabled}\n          onClick={props.onClick}\n          onMouseDown={(event) => {\n            // Prevent the editor from being blurred when the button is clicked\n            event.preventDefault()\n          }}\n          className=\"outline-unset focus-visible:outline-unset flex items-center justify-center rounded-md p-2 font-medium transition focus-visible:ring-2 text-sm focus-visible:ring-gray-900 dark:focus-visible:ring-gray-300 disabled:pointer-events-none min-w-9 min-h-9 text-gray-900 dark:text-gray-50 disabled:text-gray-900/50 dark:disabled:text-gray-50/50 bg-transparent hover:bg-gray-100 dark:hover:bg-gray-800 data-[state=on]:bg-gray-200 dark:data-[state=on]:bg-gray-700\"\n        >\n          {props.children}\n          {props.tooltip ? <span className=\"sr-only\">{props.tooltip}</span> : null}\n        </button>\n      </TooltipTrigger>\n      {props.tooltip\n        ? (\n          <TooltipContent className=\"z-50 overflow-hidden rounded-md border border-solid bg-gray-900 dark:bg-gray-50 px-3 py-1.5 text-xs text-gray-50 dark:text-gray-900 shadow-xs [&:not([data-state])]:hidden will-change-transform motion-safe:data-[state=open]:animate-in motion-safe:data-[state=closed]:animate-out motion-safe:data-[state=open]:fade-in-0 motion-safe:data-[state=closed]:fade-out-0 motion-safe:data-[state=open]:zoom-in-95 motion-safe:data-[state=closed]:zoom-out-95 motion-safe:data-[state=open]:animate-duration-150 motion-safe:data-[state=closed]:animate-duration-200 motion-safe:data-[side=bottom]:slide-in-from-top-2 motion-safe:data-[side=bottom]:slide-out-to-top-2 motion-safe:data-[side=left]:slide-in-from-right-2 motion-safe:data-[side=left]:slide-out-to-right-2 motion-safe:data-[side=right]:slide-in-from-left-2 motion-safe:data-[side=right]:slide-out-to-left-2 motion-safe:data-[side=top]:slide-in-from-bottom-2 motion-safe:data-[side=top]:slide-out-to-bottom-2\">\n            {props.tooltip}\n          </TooltipContent>\n        )\n        : null}\n    </TooltipRoot>\n  )\n}\n"
+    },
+    {
+      "path": "registry/src/preact/ui/button/index.ts",
+      "type": "registry:component",
+      "target": "components/editor/ui/button/index.ts",
+      "content": "export { default as Button } from './button'\n"
+    }
+  ],
+  "meta": {
+    "hasIcons": false,
+    "hidden": false,
+    "story": "",
+    "framework": "preact",
+    "accumulatedFiles": [
+      "registry/src/preact/ui/button/button.tsx",
+      "registry/src/preact/ui/button/index.ts"
+    ],
+    "internalDependencies": []
+  },
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json"
+}

@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature192",
+  "url": "https://shadcnblocks.com/r/feature192.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature192",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "An accordion component presenting features with selectable items on one side and corresponding images on the other. It includes dynamic image display based on selection.",
+    "dependencies": ["react"],
+    "registryDependencies": ["accordion"],
+    "files": [
+      {
+        "path": "code/block/feature192.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:24.125Z"
+}

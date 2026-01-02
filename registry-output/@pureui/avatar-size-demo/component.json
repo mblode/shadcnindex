@@ -1,0 +1,13 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "avatar-size-demo",
+  "type": "registry:example",
+  "registryDependencies": ["avatar"],
+  "files": [
+    {
+      "path": "src/registry/pure-ui/examples/avatar/avatar-size-demo.tsx",
+      "content": "import {\n  Avatar,\n  AvatarFallback,\n  AvatarImage,\n} from \"@/registry/pure-ui/ui/avatar\";\n\nexport function AvatarSizeDemo() {\n  return (\n    <div className=\"flex items-center gap-4\">\n      <Avatar>\n        <AvatarImage\n          alt=\"User\"\n          src=\"https://pbs.twimg.com/profile_images/1904866883041714179/MhesgL6S_400x400.jpg\"\n        />\n        <AvatarFallback>AV</AvatarFallback>\n      </Avatar>\n      <Avatar className=\"size-12\">\n        <AvatarImage\n          alt=\"User\"\n          src=\"https://pbs.twimg.com/profile_images/1904866883041714179/MhesgL6S_400x400.jpg\"\n        />\n        <AvatarFallback>AV</AvatarFallback>\n      </Avatar>\n      <Avatar className=\"size-16\">\n        <AvatarImage\n          alt=\"User\"\n          src=\"https://pbs.twimg.com/profile_images/1904866883041714179/MhesgL6S_400x400.jpg\"\n        />\n        <AvatarFallback>AV</AvatarFallback>\n      </Avatar>\n    </div>\n  );\n}\n",
+      "type": "registry:example"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "download13",
+  "url": "https://shadcnblocks.com/r/download13.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "download13",
+    "type": "registry:block",
+    "title": "Download",
+    "description": "This component provides a user interface for downloading a desktop application, featuring functionalities like copying installation commands and selecting specific download versions for Windows. It includes buttons for direct downloading and a visual indication of successful clipboard operations.",
+    "dependencies": ["lucide-react", "react", "react-icons"],
+    "registryDependencies": ["button"],
+    "files": [
+      {
+        "path": "code/block/download13.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:19.247Z"
+}

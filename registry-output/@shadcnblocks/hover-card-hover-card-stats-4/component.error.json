@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "hover-card-hover-card-stats-4",
+  "url": "https://shadcnblocks.com/r/hover-card-hover-card-stats-4.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "hover-card-hover-card-stats-4",
+    "type": "registry:block",
+    "title": "Hover-card/hover-card-stats-",
+    "description": "A hover-card/hover-card-stats- example",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["badge", "hover-card"],
+    "files": [
+      {
+        "path": "code/example/hover-card/hover-card-stats-4.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:15:22.046Z"
+}

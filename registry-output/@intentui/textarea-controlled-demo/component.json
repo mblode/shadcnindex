@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "extends": "none",
+  "name": "textarea-controlled-demo",
+  "title": "Textarea Controlled",
+  "description": "textarea-controlled-demo",
+  "registryDependencies": [
+    "https://intentui.com/r/field",
+    "https://intentui.com/r/text-field",
+    "https://intentui.com/r/textarea"
+  ],
+  "files": [
+    {
+      "path": "src/components/docs/forms/textarea/textarea-controlled-demo.tsx",
+      "content": "\"use client\"\n\nimport { useState } from \"react\"\n\nimport { Description, Label } from \"@/components/ui/field\"\nimport { TextField } from \"@/components/ui/text-field\"\nimport { Textarea } from \"@/components/ui/textarea\"\n\nexport default function TextareaControlledDemo() {\n  const [value, setValue] = useState(\"\")\n  return (\n    <TextField value={value} onChange={setValue}>\n      <Label>Address</Label>\n      <Textarea />\n      <Description>\n        You have typed: <strong className=\"text-fg\">{value ?? \"-\"}</strong>\n      </Description>\n    </TextField>\n  )\n}\n",
+      "type": "registry:page",
+      "target": "app/textarea-controlled-demo/page.tsx"
+    }
+  ],
+  "type": "registry:page"
+}

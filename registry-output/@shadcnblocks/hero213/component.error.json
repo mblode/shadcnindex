@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "hero213",
+  "url": "https://shadcnblocks.com/r/hero213.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "hero213",
+    "type": "registry:block",
+    "title": "Hero",
+    "description": "An image carousel with auto-transition, text content, and icon links. Features a unique SVG mask and animated image transitions.",
+    "dependencies": ["framer-motion", "lucide-react", "react"],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/hero213.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:36.374Z"
+}

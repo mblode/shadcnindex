@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "shadcnui",
+  "title": "shadcnui",
+  "files": [
+    {
+      "path": "././static/components-generated/shadcnUi.tsx",
+      "content": "import type { SVGProps } from \"react\";\n\nconst ShadcnUi = (props: SVGProps<SVGSVGElement>) => (\n  <svg {...props} viewBox=\"0 0 256 256\">\n    <path fill=\"none\" d=\"M0 0h256v256H0z\" />\n    <path\n      fill=\"none\"\n      stroke=\"currentColor\"\n      strokeWidth=\"25\"\n      strokeLinecap=\"round\"\n      d=\"M208 128l-80 80M192 40L40 192\"\n    />\n  </svg>\n);\n\nexport { ShadcnUi };\n",
+      "type": "registry:component",
+      "target": "components/ui/svgs/shadcnUi.tsx"
+    },
+    {
+      "path": "././static/components-generated/shadcnUiDark.tsx",
+      "content": "import type { SVGProps } from \"react\";\n\nconst ShadcnUiDark = (props: SVGProps<SVGSVGElement>) => (\n  <svg {...props} viewBox=\"0 0 256 256\">\n    <path fill=\"none\" d=\"M0 0h256v256H0z\" />\n    <path\n      fill=\"none\"\n      stroke=\"#fff\"\n      strokeWidth=\"25\"\n      strokeLinecap=\"round\"\n      d=\"M208 128l-80 80M192 40L40 192\"\n    />\n  </svg>\n);\n\nexport { ShadcnUiDark };\n",
+      "type": "registry:component",
+      "target": "components/ui/svgs/shadcnUiDark.tsx"
+    }
+  ],
+  "type": "registry:component"
+}

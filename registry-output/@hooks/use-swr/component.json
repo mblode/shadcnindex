@@ -1,0 +1,8 @@
+{
+  "name": "use-swr",
+  "author": "Brendan Dash (https://shadcn-hooks.vercel.app)",
+  "description": "A hook to get the latest value of a variable",
+  "dependencies": ["swr"],
+  "files": [],
+  "type": "registry:hook"
+}

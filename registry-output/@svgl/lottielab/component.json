@@ -1,0 +1,14 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "lottielab",
+  "title": "lottielab",
+  "files": [
+    {
+      "path": "././static/components-generated/lottielab.tsx",
+      "content": "import type { SVGProps } from \"react\";\n\nconst Lottielab = (props: SVGProps<SVGSVGElement>) => (\n  <svg {...props} fill=\"none\" viewBox=\"0 0 276 276\">\n    <rect width=\"274\" height=\"274\" x=\"1\" y=\"1\" fill=\"url(#a)\" rx=\"81\" />\n    <path\n      stroke=\"url(#b)\"\n      strokeLinecap=\"round\"\n      strokeLinejoin=\"round\"\n      strokeWidth=\"20\"\n      d=\"M142.892 59.721c-30.057-5.67-40.834 99.13-23.051 131.821\"\n    />\n    <path\n      stroke=\"#D7D5FF\"\n      strokeLinecap=\"round\"\n      strokeLinejoin=\"round\"\n      strokeWidth=\"20\"\n      d=\"M119.577 191.219c17.747 32.552 50.284 32.552 65.206-4.71\"\n    />\n    <path\n      stroke=\"#F4F3FF\"\n      strokeLinecap=\"round\"\n      strokeLinejoin=\"round\"\n      strokeWidth=\"20\"\n      d=\"M142.892 59.729c30.057 5.656-2.582 97.684-50.401 145.51\"\n    />\n    <rect\n      width=\"274\"\n      height=\"274\"\n      x=\"1\"\n      y=\"1\"\n      stroke=\"url(#c)\"\n      strokeWidth=\"2\"\n      rx=\"81\"\n    />\n    <defs>\n      <linearGradient\n        id=\"a\"\n        x1=\"2\"\n        x2=\"274\"\n        y1=\"2\"\n        y2=\"274\"\n        gradientUnits=\"userSpaceOnUse\"\n      >\n        <stop stop-color=\"#9688FD\" />\n        <stop offset=\"1\" stop-color=\"#607EF4\" />\n      </linearGradient>\n      <linearGradient\n        id=\"b\"\n        x1=\"132.555\"\n        x2=\"94.765\"\n        y1=\"62.627\"\n        y2=\"82.582\"\n        gradientUnits=\"userSpaceOnUse\"\n      >\n        <stop stop-color=\"#F4F3FF\" />\n        <stop offset=\"1\" stop-color=\"#D7D5FF\" />\n      </linearGradient>\n      <linearGradient\n        id=\"c\"\n        x1=\"2\"\n        x2=\"274\"\n        y1=\"2\"\n        y2=\"274\"\n        gradientUnits=\"userSpaceOnUse\"\n      >\n        <stop stop-color=\"#9688FD\" />\n        <stop offset=\"1\" stop-color=\"#607EF4\" />\n      </linearGradient>\n    </defs>\n  </svg>\n);\n\nexport { Lottielab };\n",
+      "type": "registry:component",
+      "target": "components/ui/svgs/lottielab.tsx"
+    }
+  ],
+  "type": "registry:component"
+}

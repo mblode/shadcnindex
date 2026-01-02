@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "autosize-textarea-demo",
+  "type": "registry:component",
+  "title": "Autosize Textarea Demo",
+  "description": "component for the Autosize Textarea",
+  "registryDependencies": ["@spectrumui/autosize-textarea-dependecies"],
+  "files": [
+    {
+      "path": "app/registry/autosize-textarea/autosize-textarea-demo.tsx",
+      "content": "import React from \"react\";\n// import { AutosizeTextarea } from '@/components/ui/autosize-textarea';\nimport { AutosizeTextarea } from \"@/app/registry/spectrumui/autosize-textarea\";\n\nconst AutosizeTextareaDemo = () => {\n  return (\n    <div className=\"w-full px-10\">\n      <AutosizeTextarea placeholder=\"This textarea with min height 52 and unlimited max height.\" />\n    </div>\n  );\n};\n\nexport default AutosizeTextareaDemo;\n",
+      "type": "registry:component",
+      "target": "components/spectrumui/autosize-textarea-demo.tsx"
+    }
+  ]
+}

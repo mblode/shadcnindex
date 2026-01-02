@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "input",
+  "type": "registry:ui",
+  "title": "Input",
+  "description": "A customizable input component",
+  "dependencies": ["clsx", "tailwind-merge", "@base-ui/react"],
+  "registryDependencies": ["classes"],
+  "files": [
+    {
+      "path": "src/registry/pure-ui/ui/input/index.tsx",
+      "content": "import { Input as InputPrimitive } from \"@base-ui/react/input\";\nimport { cn } from \"@/lib/classes\";\n\nexport interface InputProps extends Omit<InputPrimitive.Props, \"size\"> {\n  size?: \"sm\" | \"default\" | \"lg\" | number;\n}\n\nfunction Input({ className, size = \"default\", ...props }: InputProps) {\n  return (\n    <InputPrimitive\n      data-slot=\"input\"\n      className={cn(\n        \"relative w-full min-w-0 rounded-lg border border-input/70 bg-background dark:bg-input/32 shadow-xs text-base/5 sm:text-sm px-3 py-2 h-9 outline-none placeholder:text-muted-foreground/80 [transition:box-shadow_150ms_ease-out]\",\n        // Focus State\n        \"focus-visible:border-ring focus-visible:ring-[1px] focus-visible:ring-border\",\n        \"disabled:opacity-64 aria-invalid:border-destructive/36 focus-visible:aria-invalid:border-destructive/64 focus-visible:aria-invalid:ring-destructive/16 [disabled,focus-visible,aria-invalid]:shadow-none dark:aria-invalid:ring-destructive/24\",\n        size === \"sm\" && \"h-8 px-3\",\n        size === \"lg\" && \"h-10 px-6\",\n        props.type === \"search\" &&\n          \"[&::-webkit-search-cancel-button]:appearance-none [&::-webkit-search-decoration]:appearance-none [&::-webkit-search-results-button]:appearance-none [&::-webkit-search-results-decoration]:appearance-none\",\n        props.type === \"file\" &&\n          \"text-muted-foreground file:me-3 file:bg-transparent file:text-sm file:font-medium file:text-foreground\",\n        className\n      )}\n      size={typeof size === \"number\" ? size : undefined}\n      {...props}\n    />\n  );\n}\n\nexport { Input };\n",
+      "type": "registry:ui",
+      "target": "components/ui/input.tsx"
+    }
+  ]
+}

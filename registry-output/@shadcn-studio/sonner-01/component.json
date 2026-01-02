@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "sonner-01",
+  "type": "registry:component",
+  "title": "Sonner 1",
+  "description": "A basic toast notification with simple message display",
+  "dependencies": ["sonner"],
+  "registryDependencies": ["button"],
+  "files": [
+    {
+      "path": "src/registry/new-york/components/sonner/sonner-01.tsx",
+      "content": "'use client'\n\nimport { toast } from 'sonner'\n\nimport { Button } from '@/registry/new-york/ui/button'\n\nconst SonnerDemo = () => {\n  return (\n    <Button variant='outline' onClick={() => toast('Action completed successfully!')}>\n      Default Toast\n    </Button>\n  )\n}\n\nexport default SonnerDemo\n",
+      "type": "registry:component",
+      "target": "components/shadcn-studio/sonner/sonner-01.tsx"
+    }
+  ]
+}

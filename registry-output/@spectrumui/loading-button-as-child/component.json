@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "loading-button-as-child",
+  "type": "registry:component",
+  "title": "Loading Button As Child",
+  "description": "component for the Loading Button As Child",
+  "registryDependencies": ["@spectrumui/loading-button-dependencies"],
+  "files": [
+    {
+      "path": "app/registry/loading-button/loading-button-as-child.tsx",
+      "content": "import React from \"react\";\nimport { LoadingButton } from \"@/app/registry/spectrumui/loading-button-dependencies\";\nimport Link from \"next/link\";\n\nconst LoadingButtonAsChild = () => {\n  return (\n    <div className=\"flex flex-col items-center gap-2\">\n      <LoadingButton asChild loading>\n        <p>As a `p` child</p>\n      </LoadingButton>\n      <LoadingButton asChild>\n        <Link href=\"#\">as a `Link` child</Link>\n      </LoadingButton>\n      <LoadingButton asChild variant=\"secondary\">\n        <Link href=\"#\">as a `Link` child with `secondary` variant</Link>\n      </LoadingButton>\n    </div>\n  );\n};\n\nexport default LoadingButtonAsChild;\n",
+      "type": "registry:component",
+      "target": "components/spectrumui/loading-button-as-child.tsx"
+    }
+  ]
+}

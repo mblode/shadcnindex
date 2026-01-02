@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "changelog8",
+  "url": "https://shadcnblocks.com/r/changelog8.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "changelog8",
+    "type": "registry:block",
+    "title": "Changelog",
+    "description": "A component displaying a changelog with a scrollspy sidebar. Features dynamic scroll highlighting & smooth navigation to sections.",
+    "dependencies": ["react"],
+    "registryDependencies": ["badge", "scroll-area", "separator"],
+    "files": [
+      {
+        "path": "code/block/changelog8.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:16.002Z"
+}

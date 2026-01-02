@@ -1,0 +1,17 @@
+{
+  "name": "use-throttle-effect",
+  "author": "Brendan Dash (https://shadcn-hooks.vercel.app)",
+  "description": "A hook to throttle an effect",
+  "registryDependencies": [
+    "@hooks/use-throttle-fn",
+    "@hooks/use-update-effect"
+  ],
+  "files": [
+    {
+      "path": "registry/hooks/use-throttle-effect.ts",
+      "content": "import { useEffect, useState } from 'react'\nimport { useThrottleFn } from '@/registry/hooks/use-throttle-fn'\nimport { useUpdateEffect } from '@/registry/hooks/use-update-effect'\nimport type { DependencyList, EffectCallback } from 'react'\nimport type { ThrottleOptions } from '@/registry/hooks/use-throttle-fn'\n\nexport function useThrottleEffect(\n  effect: EffectCallback,\n  deps: DependencyList,\n  throttleMs?: number,\n  options?: ThrottleOptions,\n) {\n  const [flag, setFlag] = useState({})\n  const { run } = useThrottleFn(\n    () => {\n      setFlag({})\n    },\n    throttleMs,\n    options,\n  )\n\n  useEffect(() => {\n    return run()\n  }, deps)\n\n  useUpdateEffect(() => {\n    return effect()\n  }, [flag])\n}\n",
+      "type": "registry:hook"
+    }
+  ],
+  "type": "registry:hook"
+}

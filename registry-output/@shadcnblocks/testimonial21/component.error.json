@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "testimonial21",
+  "url": "https://shadcnblocks.com/r/testimonial21.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "testimonial21",
+    "type": "registry:block",
+    "title": "Testimonial",
+    "description": "A component showcasing expert testimonials with a header, badges, and a 3-column layout of cards containing logos, quotes, and author info.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": ["badge", "card"],
+    "files": [
+      {
+        "path": "code/block/testimonial21.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:53.889Z"
+}

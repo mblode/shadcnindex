@@ -1,0 +1,28 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "address-book2",
+  "url": "https://shadcnblocks.com/r/address-book2.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "address-book2",
+    "type": "registry:block",
+    "title": "Address-book",
+    "description": "The AddressBook2 component is designed to manage a collection of addresses, allowing users to view, edit, add, and delete addresses within a card-based layout. It provides options to define addresses as home or work, and features tools to select a default address for streamlined address management.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": [
+      "badge",
+      "button",
+      "card",
+      "input",
+      "label",
+      "select"
+    ],
+    "files": [
+      {
+        "path": "code/block/address-book2.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:11.760Z"
+}

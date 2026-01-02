@@ -1,0 +1,40 @@
+{
+  "registry": "@paykit-sdk",
+  "component": "stripe-nextjs-hooks",
+  "url": "https://www.usepaykit.dev/r/stripe-nextjs-hooks.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "stripe-nextjs-hooks",
+    "type": "registry:block",
+    "description": "Stripe payment integration for Next.js App Router with React hooks",
+    "dependencies": ["@paykit-sdk/react"],
+    "devDependencies": [],
+    "registryDependencies": ["https://usepaykit.dev/r/stripe-nextjs"],
+    "files": [
+      {
+        "path": "shared/hooks/paykit-wrapper.tsx",
+        "type": "registry:component",
+        "content": "'use client';\n\nimport * as React from 'react';\nimport { PaykitProvider } from '@paykit-sdk/react';\n\nexport const PaykitWrapper = ({ children }: React.PropsWithChildren) => {\n  return (\n    <PaykitProvider headers={{ xApiKey: '1234567890' }} apiUrl=\"/api/paykit\">\n      {children}\n    </PaykitProvider>\n  );\n};\n"
+      },
+      {
+        "path": "shared/hooks/customer-manager.tsx",
+        "type": "registry:component",
+        "content": "'use client';\n\nimport * as React from 'react';\nimport { useCustomer, useSubscription, useRefund } from '@paykit-sdk/react';\n\nexport const CustomerManager = () => {\n  const { create: createCustomer } = useCustomer();\n  const { create: createSubscription } = useSubscription();\n  const { cancel: cancelSubscription } = useSubscription();\n  const { create: createRefund } = useRefund();\n\n  const [customerId, setCustomerId] = React.useState<string>();\n  const [subscriptionId, setSubscriptionId] = React.useState<string>();\n  const [paymentId, setPaymentId] = React.useState<string>();\n\n  const handleCreateCustomer = async () => {\n    const [data, error] = await createCustomer.run({\n      email: 'customer@example.com',\n      phone: '+1234567890',\n      name: 'John Doe',\n      metadata: { source: 'web_app' },\n    });\n\n    if (error) {\n      console.error('Failed to create customer:', error);\n      return;\n    }\n\n    setCustomerId(data.id);\n  };\n\n  // Create subscription\n  const handleCreateSubscription = async () => {\n    if (!customerId) return;\n\n    const [data, error] = await createSubscription.run({\n      customer: customerId,\n      item_id: 'price_...',\n      amount: 2999,\n      currency: 'USD',\n      billing_interval: 'month',\n      metadata: { plan: 'pro' },\n      quantity: 1,\n    });\n\n    if (error) {\n      console.error('Failed to create subscription:', error);\n      return;\n    }\n\n    setSubscriptionId(data.id);\n  };\n\n  // Cancel subscription\n  const handleCancelSubscription = async () => {\n    if (!subscriptionId) return;\n\n    const [, error] = await cancelSubscription.run(subscriptionId);\n\n    if (error) {\n      console.error('Failed to cancel subscription:', error);\n      return;\n    }\n\n    console.log('Subscription cancelled');\n  };\n\n  // Create refund\n  const handleCreateRefund = async () => {\n    if (!paymentId) return;\n\n    const [data, error] = await createRefund.run({\n      payment_id: paymentId,\n      amount: 1000, // $10.00\n      reason: 'customer_request',\n      metadata: null,\n    });\n\n    if (error) {\n      console.error('Failed to create refund:', error);\n      return;\n    }\n\n    console.log(`Refund created: ${data.id}`);\n  };\n\n  return (\n    <div className=\"bg-background flex flex-col gap-4 rounded-lg p-4\">\n      <h2 className=\"text-foreground text-2xl font-bold\">Customer Manager</h2>\n\n      {/* Customer Section */}\n      <section className=\"flex flex-col gap-2\">\n        <h3 className=\"text-foreground text-lg font-medium\">Customer</h3>\n        <button onClick={handleCreateCustomer} disabled={createCustomer.loading}>\n          {createCustomer.loading ? 'Creating...' : 'Create Customer'}\n        </button>\n        {customerId && <p>Customer ID: {customerId}</p>}\n      </section>\n\n      {/* Subscription Section */}\n      <section className=\"flex flex-col gap-2\">\n        <h3 className=\"text-foreground text-lg font-medium\">Subscription</h3>\n        <button\n          onClick={handleCreateSubscription}\n          disabled={!customerId || createSubscription.loading}\n        >\n          {createSubscription.loading ? 'Creating...' : 'Create Subscription'}\n        </button>\n        <button\n          onClick={handleCancelSubscription}\n          disabled={!subscriptionId || cancelSubscription.loading}\n        >\n          {cancelSubscription.loading ? 'Cancelling...' : 'Cancel Subscription'}\n        </button>\n        {subscriptionId && <p>Subscription ID: {subscriptionId}</p>}\n      </section>\n\n      {/* Refund Section */}\n      <section className=\"flex flex-col gap-2\">\n        <h3 className=\"text-foreground text-lg font-medium\">Refund</h3>\n        <input\n          type=\"text\"\n          placeholder=\"Enter Payment ID\"\n          value={paymentId}\n          onChange={e => setPaymentId((e.target as HTMLInputElement).value as string)}\n          className=\"bg-background border-input rounded-md border p-2\"\n        />\n\n        <button\n          onClick={handleCreateRefund}\n          disabled={!paymentId || createRefund.loading}\n        >\n          {createRefund.loading ? 'Processing...' : 'Create $10 Refund'}\n        </button>\n      </section>\n    </div>\n  );\n};\n"
+      },
+      {
+        "path": "shared/hooks/checkout-form.tsx",
+        "type": "registry:component",
+        "content": "'use client';\n\nimport * as React from 'react';\nimport { useCheckout } from '@paykit-sdk/react';\n\nexport const CheckoutForm = () => {\n  const { create } = useCheckout();\n  const [checkoutUrl, setCheckoutUrl] = React.useState<string | null>(null);\n\n  const handleCreateCheckout = async () => {\n    const [data, error] = await create.run({\n      session_type: 'one_time',\n      item_id: 'price_123',\n      quantity: 1,\n      customer: 'cus_z123', // or { email: 'odii@gmail.com' }\n      metadata: { source: 'web_app' },\n      cancel_url: 'http://localhost:3000/dashboard',\n      success_url: 'http://localhost:3000/success',\n    });\n\n    if (error) {\n      console.error('Checkout creation failed:', error);\n      return;\n    }\n\n    setCheckoutUrl(data.payment_url);\n  };\n\n  return (\n    <div className=\"bg-background flex flex-col gap-4\">\n      <h2 className=\"text-foreground text-xl\">Proceed to buy</h2>\n\n      <button\n        disabled={create.loading}\n        onClick={handleCreateCheckout}\n        className=\"bg-primary text-primary-foreground rounded-md px-4 py-2\"\n      >\n        {create.loading ? 'Creating...' : 'Create $29.99 Checkout'}\n      </button>\n\n      {checkoutUrl && (\n        <div>\n          <p>Checkout created!</p>\n          <a href={checkoutUrl} target=\"_blank\" rel=\"noopener noreferrer\">\n            Go to checkout →\n          </a>\n        </div>\n      )}\n    </div>\n  );\n};\n"
+      }
+    ],
+    "docs": "Add the PaykitWrapper to your Next.js layout file to wrap your app in the PaykitProvider.",
+    "meta": {
+      "backend": "nextjs",
+      "provider": "stripe",
+      "orm": "none",
+      "database": "none",
+      "auth": "none"
+    }
+  },
+  "fetchedAt": "2026-01-02T11:17:42.296Z"
+}

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "extends": "none",
+  "name": "button-icon-demo",
+  "title": "Button Icon",
+  "description": "button-icon-demo",
+  "dependencies": ["@heroicons/react"],
+  "registryDependencies": ["https://intentui.com/r/button"],
+  "files": [
+    {
+      "path": "src/components/docs/buttons/button/button-icon-demo.tsx",
+      "content": "\"use client\"\n\nimport { Cog6ToothIcon } from \"@heroicons/react/24/outline\"\nimport { Button } from \"@/components/ui/button\"\n\nexport default function ButtonIconDemo() {\n  return (\n    <Button intent=\"danger\">\n      <Cog6ToothIcon />\n      Settings\n    </Button>\n  )\n}\n",
+      "type": "registry:page",
+      "target": "app/button-icon-demo/page.tsx"
+    }
+  ],
+  "type": "registry:page"
+}

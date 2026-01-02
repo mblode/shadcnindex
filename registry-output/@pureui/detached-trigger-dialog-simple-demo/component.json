@@ -1,0 +1,13 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "detached-trigger-dialog-simple-demo",
+  "type": "registry:example",
+  "registryDependencies": ["dialog"],
+  "files": [
+    {
+      "path": "src/registry/pure-ui/examples/detached-triggers/detached-trigger-dialog-simple-demo.tsx",
+      "content": "import { Dialog as DialogPrimitive } from \"@base-ui/react/dialog\";\nimport * as React from \"react\";\n\nimport {\n  Dialog,\n  DialogPopup,\n  DialogDescription,\n  DialogFooter,\n  DialogHeader,\n  DialogTitle,\n  DialogTrigger,\n  DialogClose,\n} from \"@/registry/pure-ui/ui/dialog\";\nimport { Button } from \"@/registry/pure-ui/ui/button\";\n\nconst demoDialog = DialogPrimitive.createHandle();\n\nexport const DetachedTriggerDialogSimpleDemo = () => {\n  return (\n    <React.Fragment>\n      <DialogTrigger handle={demoDialog} render={<Button variant=\"outline\" />}>\n        View notifications\n      </DialogTrigger>\n\n      <Dialog handle={demoDialog}>\n        <DialogPopup className=\"sm:max-w-sm\">\n          <DialogTitle>Notifications</DialogTitle>\n          <DialogDescription>\n            You are all caught up. Good job!\n          </DialogDescription>\n          <DialogFooter>\n            <DialogClose render={<Button variant=\"ghost\" />}>Close</DialogClose>\n          </DialogFooter>\n        </DialogPopup>\n      </Dialog>\n    </React.Fragment>\n  );\n};\n",
+      "type": "registry:example"
+    }
+  ]
+}

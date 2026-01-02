@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "case-study3",
+  "url": "https://shadcnblocks.com/r/case-study3.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "case-study3",
+    "type": "registry:block",
+    "title": "Case-study",
+    "description": "This component presents a detailed case study layout, including sections for introduction, problem statement, approach, and outcomes, with navigable headings to guide users through different sections of content. It includes features such as breadcrumbs for navigation, avatar integration for showcasing contributors, and social media sharing options, providing a comprehensive storytelling tool with dynamic content interaction.",
+    "dependencies": ["lucide-react", "react", "react-icons"],
+    "registryDependencies": ["alert", "avatar", "breadcrumb", "separator"],
+    "files": [
+      {
+        "path": "code/block/case-study3.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:15.724Z"
+}

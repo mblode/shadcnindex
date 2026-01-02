@@ -1,0 +1,26 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "reviews4",
+  "url": "https://shadcnblocks.com/r/reviews4.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "reviews4",
+    "type": "registry:block",
+    "title": "Reviews",
+    "description": "This component displays a collection of user reviews with features including average rating calculation, review filtering by star rating, and visual representation of rating distribution. Users can see detailed information about each review, such as the content, author, and date, with the option to filter and clear selected ratings.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": [
+      "https://shadcnblocks.com/r/rating",
+      "avatar",
+      "button",
+      "progress"
+    ],
+    "files": [
+      {
+        "path": "code/block/reviews4.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:49.668Z"
+}

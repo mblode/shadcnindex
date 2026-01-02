@@ -1,0 +1,17 @@
+{
+  "registry": "@magicui-pro",
+  "component": "index",
+  "url": "https://pro.magicui.design/registry/index",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "index",
+    "type": "registry:style",
+    "dependencies": ["class-variance-authority", "lucide-react"],
+    "devDependencies": ["tw-animate-css"],
+    "registryDependencies": ["utils"],
+    "files": [],
+    "cssVars": {},
+    "meta": {}
+  },
+  "fetchedAt": "2026-01-02T11:10:48.247Z"
+}

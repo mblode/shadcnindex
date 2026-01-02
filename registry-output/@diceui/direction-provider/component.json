@@ -1,0 +1,12 @@
+{
+  "name": "direction-provider",
+  "files": [
+    {
+      "path": "components/direction-provider.tsx",
+      "content": "\"use client\";\n\nimport {\n  DirectionProvider as GlobalDirectionProvider,\n  useDirection,\n} from \"@radix-ui/react-direction\";\nimport type * as React from \"react\";\n\nfunction DirectionProvider(\n  props: React.ComponentProps<typeof GlobalDirectionProvider>,\n) {\n  return <GlobalDirectionProvider {...props} />;\n}\n\nexport {\n  DirectionProvider,\n  //\n  useDirection,\n};\n",
+      "type": "registry:component",
+      "target": ""
+    }
+  ],
+  "type": "registry:component"
+}

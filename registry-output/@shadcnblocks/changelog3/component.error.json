@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "changelog3",
+  "url": "https://shadcnblocks.com/r/changelog3.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "changelog3",
+    "type": "registry:block",
+    "title": "Changelog",
+    "description": "A component displaying updates with sections for dates, tags (e.g., &#x27;Maintenance&#x27;), and content including images. Uses a two-column layout on desktop.",
+    "dependencies": [],
+    "registryDependencies": ["separator"],
+    "files": [
+      {
+        "path": "code/block/changelog3.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:15.875Z"
+}

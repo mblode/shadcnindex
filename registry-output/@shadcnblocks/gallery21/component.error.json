@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "gallery21",
+  "url": "https://shadcnblocks.com/r/gallery21.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "gallery21",
+    "type": "registry:block",
+    "title": "Gallery",
+    "description": "Interactive gallery component with image slider, effect animations, and a call-to-action button.",
+    "dependencies": ["framer-motion", "lucide-react", "swiper"],
+    "registryDependencies": ["button"],
+    "files": [
+      {
+        "path": "code/block/gallery21.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:32.471Z"
+}

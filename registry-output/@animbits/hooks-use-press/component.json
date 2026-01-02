@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "hooks-use-press",
+  "type": "registry:lib",
+  "title": "Use Press",
+  "description": "The use-press hook.",
+  "dependencies": ["motion"],
+  "files": [
+    {
+      "path": "lib/use-press.ts",
+      "content": "import { type MotionProps, type Easing } from \"motion/react\";\n\nexport interface UsePressOptions {\n  pressScale?: number;\n\n  duration?: number;\n\n  ease?: Easing | Easing[];\n\n  addRotation?: boolean;\n\n  rotationAmount?: number;\n}\n\nexport function usePress(options: UsePressOptions = {}): MotionProps {\n  const {\n    pressScale = 0.95,\n    duration = 0.1,\n    ease = \"easeInOut\",\n    addRotation = false,\n    rotationAmount = 2,\n  } = options;\n\n  return {\n    whileTap: {\n      scale: pressScale,\n      rotate: addRotation ? rotationAmount : 0,\n    },\n    transition: {\n      duration,\n      ease,\n    },\n  };\n}\n",
+      "type": "registry:lib"
+    }
+  ]
+}

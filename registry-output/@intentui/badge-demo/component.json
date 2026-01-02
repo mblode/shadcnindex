@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "extends": "none",
+  "name": "badge-demo",
+  "title": "Badge",
+  "description": "badge-demo",
+  "registryDependencies": ["https://intentui.com/r/badge"],
+  "files": [
+    {
+      "path": "src/components/docs/statuses/badge/badge-demo.tsx",
+      "content": "\"use client\"\n\nimport { Badge } from \"@/components/ui/badge\"\n\nexport default function BadgeDemo() {\n  return <Badge>Label</Badge>\n}\n",
+      "type": "registry:page",
+      "target": "app/badge-demo/page.tsx"
+    }
+  ],
+  "type": "registry:page"
+}

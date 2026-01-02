@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "stats11",
+  "url": "https://shadcnblocks.com/r/stats11.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "stats11",
+    "type": "registry:block",
+    "title": "Stats",
+    "description": "A statistical block displaying achievements with a unique background gradient, 2-column layout for stats, and decorative circles in the backdrop.",
+    "dependencies": [],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/stats11.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:52.288Z"
+}

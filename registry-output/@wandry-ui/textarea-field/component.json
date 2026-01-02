@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "textarea-field",
+  "type": "registry:component",
+  "title": "Textarea Field",
+  "description": "A component for Wandry UI",
+  "dependencies": ["@wandry/inertia-form"],
+  "registryDependencies": ["textarea", "field"],
+  "files": [
+    {
+      "path": "registry/wandry-ui/textarea-field.tsx",
+      "content": "\"use client\";\nimport * as React from \"react\";\nimport { useField } from \"@wandry/inertia-form\";\n\nimport {\n  Field,\n  FieldDescription,\n  FieldError,\n  FieldLabel,\n} from \"@/components/ui/field\";\nimport { Textarea } from \"@/components/ui/textarea\";\n\nexport type TextareaFieldProps = {\n  name: string;\n  label?: string;\n  errorName?: string;\n  description?: string;\n  placeholder?: string;\n  classes?: TextareaFieldClasses;\n};\n\ntype TextareaFieldClasses = {\n  field?: string;\n  label?: string;\n  textarea?: string;\n  description?: string;\n  error?: string;\n};\n\nconst TextareaField: React.FC<\n  React.ComponentProps<\"textarea\"> & TextareaFieldProps\n> = ({\n  name,\n  label,\n  description,\n  placeholder,\n  classes,\n  errorName,\n  ...textareaProps\n}) => {\n  const field = useField(name, { defaultValue: \"\", errorName });\n\n  const handleChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {\n    const value = e.target.value;\n    field.onChange(value);\n  };\n\n  return (\n    <Field className={classes?.field}>\n      <FieldLabel className={classes?.label} htmlFor={name}>\n        {label}\n      </FieldLabel>\n      <Textarea\n        {...textareaProps}\n        id={name}\n        placeholder={placeholder}\n        value={field.value}\n        onChange={handleChange}\n        className={classes?.textarea}\n      />\n      <FieldDescription className={classes?.description}>\n        {description}\n      </FieldDescription>\n      <FieldError className={classes?.error}>{field.error}</FieldError>\n    </Field>\n  );\n};\n\nexport default TextareaField;\n",
+      "type": "registry:component"
+    }
+  ]
+}

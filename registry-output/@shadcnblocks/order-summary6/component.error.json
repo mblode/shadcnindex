@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "order-summary6",
+  "url": "https://shadcnblocks.com/r/order-summary6.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "order-summary6",
+    "type": "registry:block",
+    "title": "Order-summary",
+    "description": "This component is designed to display an order confirmation dialog, highlighting key details such as order number, estimated delivery date, itemized products with images, quantities, and prices. It also features a summary of the order costs including subtotal, shipping, and total, with options to track the order or continue shopping.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["aspect-ratio", "button", "dialog", "separator"],
+    "files": [
+      {
+        "path": "code/block/order-summary6.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:43.256Z"
+}

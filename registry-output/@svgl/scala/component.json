@@ -1,0 +1,14 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "scala",
+  "title": "scala",
+  "files": [
+    {
+      "path": "././static/components-generated/scala.tsx",
+      "content": "import type { SVGProps } from \"react\";\n\nconst Scala = (props: SVGProps<SVGSVGElement>) => (\n  <svg {...props} preserveAspectRatio=\"xMidYMid\" viewBox=\"0 0 256 416\">\n    <defs>\n      <linearGradient x1=\"0%\" y1=\"50%\" x2=\"100%\" y2=\"50%\" id=\"a\">\n        <stop stop-color=\"#4F4F4F\" offset=\"0%\" />\n        <stop offset=\"100%\" />\n      </linearGradient>\n      <linearGradient x1=\"0%\" y1=\"50%\" x2=\"100%\" y2=\"50%\" id=\"b\">\n        <stop stop-color=\"#C40000\" offset=\"0%\" />\n        <stop stop-color=\"red\" offset=\"100%\" />\n      </linearGradient>\n    </defs>\n    <path\n      d=\"M0 288v-32c0-5 116-14 192-32 37 8 64 19 64 32v32c0 13-27 24-64 32-76-18-192-27-192-32\"\n      fill=\"url(#a)\"\n      transform=\"matrix(1 0 0 -1 0 544)\"\n    />\n    <path\n      d=\"M0 160v-32c0-5 116-14 192-32 37 8 64 19 64 32v32c0 13-27 24-64 32-76-18-192-27-192-32\"\n      fill=\"url(#a)\"\n      transform=\"matrix(1 0 0 -1 0 288)\"\n    />\n    <path\n      d=\"M0 224v-96c0 8 256 24 256 64v96c0-40-256-56-256-64\"\n      fill=\"url(#b)\"\n      transform=\"matrix(1 0 0 -1 0 416)\"\n    />\n    <path\n      d=\"M0 96V0c0 8 256 24 256 64v96c0-40-256-56-256-64\"\n      fill=\"url(#b)\"\n      transform=\"matrix(1 0 0 -1 0 160)\"\n    />\n    <path\n      d=\"M0 352v-96c0 8 256 24 256 64v96c0-40-256-56-256-64\"\n      fill=\"url(#b)\"\n      transform=\"matrix(1 0 0 -1 0 672)\"\n    />\n  </svg>\n);\n\nexport { Scala };\n",
+      "type": "registry:component",
+      "target": "components/ui/svgs/scala.tsx"
+    }
+  ],
+  "type": "registry:component"
+}

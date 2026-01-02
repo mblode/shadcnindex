@@ -1,0 +1,13 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "label-demo",
+  "type": "registry:example",
+  "registryDependencies": ["label"],
+  "files": [
+    {
+      "path": "src/registry/pure-ui/examples/label/label-demo.tsx",
+      "content": "import { Input } from \"@/registry/pure-ui/ui/input\";\nimport { Label } from \"@/registry/pure-ui/ui/label\";\n\nexport function LabelDemo() {\n  return (\n    <div className=\"flex flex-col items-start gap-2\">\n      <Label htmlFor=\"email\">Email</Label>\n      <Input\n        id=\"email\"\n        type=\"email\"\n        placeholder=\"you@example.com\"\n        aria-label=\"Email\"\n      />\n    </div>\n  );\n}\n",
+      "type": "registry:example"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature255",
+  "url": "https://shadcnblocks.com/r/feature255.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature255",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A component displaying a list of top contributors with images, titles, and descriptions. Includes a header with a \"View all\" button.",
+    "dependencies": [],
+    "registryDependencies": ["button"],
+    "files": [
+      {
+        "path": "code/block/feature255.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:26.902Z"
+}

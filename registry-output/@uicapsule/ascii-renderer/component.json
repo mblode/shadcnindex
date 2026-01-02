@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "homepage": "https://uicapsule.com/ui/ascii-renderer",
+  "name": "ascii-renderer",
+  "type": "registry:block",
+  "author": "Kaiyu Hsu <uicapsule@kyh.io>",
+  "dependencies": ["@react-three/drei", "@react-three/fiber", "three"],
+  "devDependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "type": "registry:file",
+      "path": "/ascii-renderer.tsx",
+      "content": "\"use client\";\n\nimport React, { useEffect, useRef } from \"react\";\nimport { OrbitControls } from \"@react-three/drei\";\nimport { Canvas, useFrame, useThree } from \"@react-three/fiber\";\nimport { AsciiEffect } from \"three/examples/jsm/effects/AsciiEffect.js\";\n\nexport const AsciiRenderer = () => {\n  return (\n    <Canvas>\n      <ambientLight intensity={0.5} />\n      <pointLight position={[10, 10, 10]} intensity={1} />\n      <directionalLight position={[-10, -10, -5]} intensity={1} />\n      <Torusknot />\n      <OrbitControls />\n      <Renderer />\n    </Canvas>\n  );\n};\n\nconst Torusknot = () => {\n  const meshRef = useRef<any>(null);\n\n  useFrame(\n    (state, delta) =>\n      (meshRef.current.rotation.x = meshRef.current.rotation.y += delta / 2),\n  );\n\n  return (\n    <mesh ref={meshRef} scale={1.25}>\n      <torusKnotGeometry args={[1, 0.2, 128, 32]} />\n      <meshStandardMaterial color=\"#ffffff\" />\n    </mesh>\n  );\n};\n\nconst Renderer = () => {\n  const { gl, scene, camera, size } = useThree();\n  const effectRef = useRef<AsciiEffect>(null);\n\n  useEffect(() => {\n    const effect = new AsciiEffect(gl, \" .:-+*=%@#\");\n\n    effect.domElement.style.position = \"absolute\";\n    effect.domElement.style.top = \"0px\";\n    effect.domElement.style.left = \"0px\";\n    effect.domElement.style.color = \"white\";\n    effect.domElement.style.backgroundColor = \"black\";\n    effect.domElement.style.pointerEvents = \"none\";\n\n    effect.setSize(size.width, size.height);\n\n    const container = gl.domElement.parentNode;\n    if (container) {\n      container.replaceChild(effect.domElement, gl.domElement);\n    }\n\n    effectRef.current = effect;\n\n    return () => {\n      if (container && effect.domElement.parentNode) {\n        container.replaceChild(gl.domElement, effect.domElement);\n      }\n    };\n  }, [gl, size]);\n\n  useFrame(() => {\n    if (effectRef.current) {\n      effectRef.current.render(scene, camera);\n    }\n  }, 1);\n\n  return null;\n};\n",
+      "target": "uicapsule/ascii-renderer/ascii-renderer.tsx"
+    }
+  ]
+}

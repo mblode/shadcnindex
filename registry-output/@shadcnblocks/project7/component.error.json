@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "project7",
+  "url": "https://shadcnblocks.com/r/project7.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "project7",
+    "type": "registry:block",
+    "title": "Project",
+    "description": "A component showcasing an architectural project with multiple sections: a header with a hero image, philosophy & vision, carousel of design images, architectural details, construction materials, and project impact. Uses imagery, text, and a carousel.",
+    "dependencies": [],
+    "registryDependencies": ["carousel"],
+    "files": [
+      {
+        "path": "code/block/project7.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:47.660Z"
+}

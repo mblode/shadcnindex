@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "service3",
+  "url": "https://shadcnblocks.com/r/service3.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "service3",
+    "type": "registry:block",
+    "title": "Service",
+    "description": "A component featuring a hero section with an overlay for text readability, a three-column stats display, and detailed content sections focusing on UX/UI design principles and services.",
+    "dependencies": [],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/service3.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:49.943Z"
+}

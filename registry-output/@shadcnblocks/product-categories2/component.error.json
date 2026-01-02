@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "product-categories2",
+  "url": "https://shadcnblocks.com/r/product-categories2.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "product-categories2",
+    "type": "registry:block",
+    "title": "Product-categories",
+    "description": "This block displays a collection of product categories with titles, summaries, images, and links, designed to highlight various product options. Utilizing an animated grid layout, it showcases each category in an engaging and visually appealing manner for easy navigation and discovery.",
+    "dependencies": [],
+    "registryDependencies": ["aspect-ratio", "card"],
+    "files": [
+      {
+        "path": "code/block/product-categories2.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:45.332Z"
+}

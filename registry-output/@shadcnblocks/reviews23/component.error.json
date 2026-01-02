@@ -1,0 +1,28 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "reviews23",
+  "url": "https://shadcnblocks.com/r/reviews23.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "reviews23",
+    "type": "registry:block",
+    "title": "Reviews",
+    "description": "The component displays a carousel of product reviews, each featuring an author's avatar, comment, and associated product details such as image and name. It includes carousel navigation controls to scroll through the reviews and highlights verified buyers, making it ideal for showcasing customer feedback on products interactively.",
+    "dependencies": ["lucide-react", "react"],
+    "registryDependencies": [
+      "aspect-ratio",
+      "avatar",
+      "button",
+      "card",
+      "carousel",
+      "separator"
+    ],
+    "files": [
+      {
+        "path": "code/block/reviews23.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:49.532Z"
+}

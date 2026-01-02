@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "content2",
+  "url": "https://shadcnblocks.com/r/content2.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "content2",
+    "type": "registry:block",
+    "title": "Content",
+    "description": "A component showcasing a content management system&#x27;s features, types, and instructions on adding or managing content, with 2-column layout for content types and alert features.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["alert", "badge"],
+    "files": [
+      {
+        "path": "code/block/content2.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:18.033Z"
+}

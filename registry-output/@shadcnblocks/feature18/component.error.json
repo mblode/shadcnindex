@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature18",
+  "url": "https://shadcnblocks.com/r/feature18.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature18",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A grid of customizable UI feature cards, each with an icon, title, description, and a \"Learn more\" link, arranged in up to 3 columns.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "code/block/feature18.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:23.697Z"
+}

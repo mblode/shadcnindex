@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature125",
+  "url": "https://shadcnblocks.com/r/feature125.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature125",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A component with a dual-column layout, highlighting features and an illustrative image, includes a list with checkmarks and a button.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["button"],
+    "files": [
+      {
+        "path": "code/block/feature125.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:21.505Z"
+}

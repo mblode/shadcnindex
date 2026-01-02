@@ -1,0 +1,14 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "flutter",
+  "title": "flutter",
+  "files": [
+    {
+      "path": "././static/components-generated/flutter.tsx",
+      "content": "import type { SVGProps } from \"react\";\n\nconst Flutter = (props: SVGProps<SVGSVGElement>) => (\n  <svg {...props} preserveAspectRatio=\"xMidYMid\" viewBox=\"0 0 256 317\">\n    <defs>\n      <linearGradient x1=\"4%\" y1=\"27%\" x2=\"75.9%\" y2=\"52.9%\" id=\"a\">\n        <stop offset=\"0%\" />\n        <stop stop-opacity=\"0\" offset=\"100%\" />\n      </linearGradient>\n    </defs>\n    <path\n      fill=\"#47C5FB\"\n      d=\"M158 0 0 158l49 48L255 0zM157 145l-85 85 49 50 49-49 85-86z\"\n    />\n    <path fill=\"#00569E\" d=\"m121 280 37 37h97l-85-86z\" />\n    <path fill=\"#00B5F8\" d=\"m72 230 48-48 50 49-49 49z\" />\n    <path fill-opacity=\".8\" fill=\"url(#a)\" d=\"m121 280 41-14 4-31z\" />\n  </svg>\n);\n\nexport { Flutter };\n",
+      "type": "registry:component",
+      "target": "components/ui/svgs/flutter.tsx"
+    }
+  ],
+  "type": "registry:component"
+}

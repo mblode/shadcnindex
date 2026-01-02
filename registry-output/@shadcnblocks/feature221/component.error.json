@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "feature221",
+  "url": "https://shadcnblocks.com/r/feature221.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "feature221",
+    "type": "registry:block",
+    "title": "Feature",
+    "description": "A component showcasing 4 unique features in a 2-column layout with gradient badges, detailed descriptions, and a \"Learn More\" button. It includes a prominent title and subtitle.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["badge", "button", "card"],
+    "files": [
+      {
+        "path": "code/block/feature221.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:25.733Z"
+}

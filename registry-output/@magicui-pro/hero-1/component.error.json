@@ -1,0 +1,22 @@
+{
+  "registry": "@magicui-pro",
+  "component": "hero-1",
+  "url": "https://pro.magicui.design/registry/hero-1",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "hero-1",
+    "type": "registry:block",
+    "dependencies": ["motion"],
+    "registryDependencies": ["@magicui/border-beam", "button"],
+    "files": [
+      {
+        "path": "registry/blocks/hero-1.tsx",
+        "type": "registry:component"
+      }
+    ],
+    "meta": {
+      "height": 1353
+    }
+  },
+  "fetchedAt": "2026-01-02T11:10:49.232Z"
+}

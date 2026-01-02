@@ -1,0 +1,49 @@
+{
+  "registry": "@efferd",
+  "component": "header-13",
+  "url": "https://efferd.com/r/header-13.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "header-13",
+    "description": "Scroll-triggered navigation with featured customer stories and open-source cards.",
+    "dependencies": ["@radix-ui/react-portal"],
+    "registryDependencies": ["button", "navigation-menu", "accordion"],
+    "files": [
+      {
+        "path": "registry/header/13/header.tsx",
+        "type": "registry:component"
+      },
+      {
+        "path": "registry/header/13/mobile-nav.tsx",
+        "type": "registry:component"
+      },
+      {
+        "path": "registry/header/13/desktop-nav.tsx",
+        "type": "registry:component"
+      },
+      {
+        "path": "registry/header/13/sheard.tsx",
+        "type": "registry:component"
+      },
+      {
+        "path": "registry/header/13/nav-links.ts",
+        "type": "registry:component"
+      },
+      {
+        "path": "../../packages/core/src/logo.tsx",
+        "type": "registry:component"
+      },
+      {
+        "path": "../../packages/core/src/hooks/use-scroll.ts",
+        "type": "registry:hook"
+      },
+      {
+        "path": "../../packages/core/src/hooks/use-media-query.ts",
+        "type": "registry:hook"
+      }
+    ],
+    "categories": ["header"],
+    "type": "registry:block"
+  },
+  "fetchedAt": "2026-01-02T11:08:58.922Z"
+}

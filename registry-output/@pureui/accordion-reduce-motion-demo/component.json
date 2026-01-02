@@ -1,0 +1,13 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "accordion-reduce-motion-demo",
+  "type": "registry:example",
+  "registryDependencies": ["accordion"],
+  "files": [
+    {
+      "path": "src/registry/pure-ui/examples/accordion/accordion-reduce-motion-demo.tsx",
+      "content": "import {\n  Accordion,\n  AccordionPanel,\n  AccordionItem,\n  AccordionTrigger,\n} from \"@/registry/pure-ui/ui/accordion\";\n\nexport function AccordionReduceMotionDemo() {\n  return (\n    <Accordion className=\"w-full max-w-xl\" reduceMotion>\n      <AccordionItem value=\"item-1\">\n        <AccordionTrigger>What is Base UI?</AccordionTrigger>\n        <AccordionPanel className=\"flex flex-col gap-4 text-balance\">\n          <p className=\"text-[15px] text-muted-foreground\">\n            Base UI is a library of high-quality unstyled React components for\n            design systems and web apps.\n          </p>\n        </AccordionPanel>\n      </AccordionItem>\n      <AccordionItem value=\"item-2\">\n        <AccordionTrigger>How do I get started?</AccordionTrigger>\n        <AccordionPanel className=\"flex flex-col gap-4 text-balance\">\n          <p className=\"text-[15px] text-muted-foreground\">\n            Head to the “Quick start” guide in the docs. If you’ve used unstyled\n            libraries before, you’ll feel at home.\n          </p>\n        </AccordionPanel>\n      </AccordionItem>\n      <AccordionItem value=\"item-3\">\n        <AccordionTrigger>Can I use it for my project?</AccordionTrigger>\n        <AccordionPanel className=\"flex flex-col gap-4 text-balance\">\n          <p className=\"text-[15px] text-muted-foreground\">\n            Of course! Base UI is free and open source.\n          </p>\n        </AccordionPanel>\n      </AccordionItem>\n    </Accordion>\n  );\n}\n",
+      "type": "registry:example"
+    }
+  ]
+}

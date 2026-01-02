@@ -1,0 +1,51 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "window",
+  "type": "registry:ui",
+  "title": "Window",
+  "description": "Windows 95 styled window container component",
+  "dependencies": ["lucide-react"],
+  "files": [
+    {
+      "path": "components/97cn/window.tsx",
+      "content": "\"use client\"\n\nimport * as React from \"react\"\nimport { cn } from \"@/lib/utils\"\nimport { X, Minus, Square } from \"lucide-react\"\n\ninterface Win95WindowProps extends React.HTMLAttributes<HTMLDivElement> {\n  title?: string\n  active?: boolean\n  resizable?: boolean\n  minimizable?: boolean\n  maximizable?: boolean\n  closable?: boolean\n  onClose?: () => void\n  onMinimize?: () => void\n  onMaximize?: () => void\n  statusBar?: React.ReactNode\n}\n\nconst Win95Window = React.forwardRef<HTMLDivElement, Win95WindowProps>(\n  (\n    {\n      className,\n      title = \"Window\",\n      active = true,\n      resizable = true,\n      minimizable = true,\n      maximizable = true,\n      closable = true,\n      onClose,\n      onMinimize,\n      onMaximize,\n      children,\n      statusBar,\n      ...props\n    },\n    ref,\n  ) => {\n    return (\n      <div\n        ref={ref}\n        className={cn(\"bg-win95-button-face win95-raised min-w-64 min-h-32 flex flex-col\", className)}\n        {...props}\n      >\n        {/* Title Bar */}\n        <div\n          className={cn(\n            \"flex items-center justify-between px-1 py-0.5 text-xs font-bold select-none flex-shrink-0\",\n            active ? \"bg-win95-active-title text-white\" : \"bg-win95-inactive-title text-win95-inactive-title-text\",\n          )}\n        >\n          <span className=\"px-1 truncate\">{title}</span>\n          <div className=\"flex items-center gap-0.5\">\n            {minimizable && (\n              <button\n                onClick={onMinimize}\n                className=\"w-4 h-3 bg-win95-button-face win95-raised hover:bg-win95-light-gray active:win95-sunken flex items-center justify-center\"\n              >\n                <Minus className=\"w-2 h-2\" />\n              </button>\n            )}\n            {maximizable && (\n              <button\n                onClick={onMaximize}\n                className=\"w-4 h-3 bg-win95-button-face win95-raised hover:bg-win95-light-gray active:win95-sunken flex items-center justify-center\"\n              >\n                <Square className=\"w-2 h-2\" />\n              </button>\n            )}\n            {closable && (\n              <button\n                onClick={onClose}\n                className=\"w-4 h-3 bg-win95-button-face win95-raised hover:bg-win95-light-gray active:win95-sunken flex items-center justify-center\"\n              >\n                <X className=\"w-2 h-2\" />\n              </button>\n            )}\n          </div>\n        </div>\n\n        <div className=\"flex-1 overflow-hidden flex flex-col\">\n          <div className=\"flex-1 p-2 overflow-auto win95-scrollbar\">{children}</div>\n        </div>\n\n        {statusBar && <div className=\"flex-shrink-0\">{statusBar}</div>}\n\n        {/* Resize Handle */}\n        {resizable && (\n          <div className=\"absolute bottom-0 right-0 w-3 h-3 cursor-se-resize\">\n            <div className=\"w-full h-full bg-win95-button-face win95-raised\"></div>\n          </div>\n        )}\n      </div>\n    )\n  },\n)\nWin95Window.displayName = \"Win95Window\"\n\nexport { Win95Window }\n",
+      "type": "registry:ui"
+    }
+  ],
+  "cssVars": {
+    "light": {
+      "win95-button-face": "#c0c0c0",
+      "win95-active-title": "#000080",
+      "win95-inactive-title": "#808080",
+      "win95-inactive-title-text": "#c0c0c0",
+      "win95-light-gray": "#dfdfdf",
+      "win95-button-highlight": "#ffffff",
+      "win95-button-shadow": "#808080"
+    },
+    "dark": {
+      "win95-button-face": "#c0c0c0",
+      "win95-active-title": "#000080",
+      "win95-inactive-title": "#808080",
+      "win95-inactive-title-text": "#c0c0c0",
+      "win95-light-gray": "#dfdfdf",
+      "win95-button-highlight": "#ffffff",
+      "win95-button-shadow": "#808080"
+    }
+  },
+  "css": {
+    "@layer utilities": {
+      ".win95-raised": {
+        "border-top": "2px solid var(--win95-button-highlight)",
+        "border-left": "2px solid var(--win95-button-highlight)",
+        "border-right": "2px solid var(--win95-button-shadow)",
+        "border-bottom": "2px solid var(--win95-button-shadow)"
+      },
+      ".win95-sunken": {
+        "border-top": "2px solid var(--win95-button-shadow)",
+        "border-left": "2px solid var(--win95-button-shadow)",
+        "border-right": "2px solid var(--win95-button-highlight)",
+        "border-bottom": "2px solid var(--win95-button-highlight)"
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "cta31",
+  "url": "https://shadcnblocks.com/r/cta31.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "cta31",
+    "type": "registry:block",
+    "title": "Cta",
+    "description": "A component displaying a title, subtitle, and a CTA button, surrounded by logos arranged in a semi-circle, with a gradient background.",
+    "dependencies": ["lucide-react"],
+    "registryDependencies": ["button"],
+    "files": [
+      {
+        "path": "code/block/cta31.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:18.888Z"
+}

@@ -1,0 +1,21 @@
+{
+  "registry": "@shadcnblocks",
+  "component": "background-pattern30",
+  "url": "https://shadcnblocks.com/r/background-pattern30.json",
+  "error": "HTTP 401 Unauthorized",
+  "item": {
+    "name": "background-pattern30",
+    "type": "registry:block",
+    "title": "Background-pattern",
+    "description": "This component renders a full-screen background pattern with radial gradients, designed to enhance visual appeal. It provides a placeholder for additional pattern content, allowing for customizable styling through optional class names.",
+    "dependencies": [],
+    "registryDependencies": ["https://shadcnblocks.com/r/pattern-placeholder"],
+    "files": [
+      {
+        "path": "code/block/background-pattern30.tsx",
+        "type": "registry:block"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-02T11:14:13.001Z"
+}
