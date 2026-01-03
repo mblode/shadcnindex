@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "claim-deployment",
+  "type": "registry:block",
+  "title": "Claim Deployment",
+  "description": "Vercel Platform claim deployment block.",
+  "files": [
+    {
+      "path": "registry/default/blocks/claim-deployment.tsx",
+      "type": "registry:block",
+      "content": "\"use client\";\n\nimport { Button } from \"@/components/ui/button\";\nimport {\n  Card,\n  CardContent,\n  CardDescription,\n  CardHeader,\n  CardTitle,\n} from \"@/components/ui/card\";\nimport { Input } from \"@/components/ui/input\";\nimport { ExternalLink } from \"lucide-react\";\nimport type { SVGProps } from \"react\";\n\ntype ClaimDeploymentProps = {\n  url: string;\n  onClaimClick: () => void;\n};\n\ntype VercelLogoProps = SVGProps<SVGSVGElement>;\n\nconst VercelLogo = ({ className }: VercelLogoProps) => (\n  <svg\n    className={className}\n    fill=\"none\"\n    viewBox=\"0 0 76 65\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n  >\n    <title>Vercel Logo</title>\n    <path d=\"M37.5274 0L75.0548 65H0L37.5274 0Z\" fill=\"currentColor\" />\n  </svg>\n);\n\nexport const ClaimDeployment = ({\n  url,\n  onClaimClick,\n}: ClaimDeploymentProps) => (\n  <Card className=\"shadow-none\">\n    <CardHeader>\n      <CardTitle>Your Deployment is Ready</CardTitle>\n      <CardDescription>\n        Claim it to manage it from your own account and make future updates.\n      </CardDescription>\n    </CardHeader>\n    <CardContent className=\"space-y-4\">\n      <div className=\"relative flex items-center gap-2 rounded-md bg-secondary p-1\">\n        <Input\n          className=\"flex-1 border-none bg-transparent shadow-none\"\n          readOnly\n          value={url}\n        />\n        <Button\n          aria-label=\"Copy URL\"\n          className=\"shrink-0\"\n          onClick={() => navigator.clipboard.writeText(url)}\n          size=\"sm\"\n          variant=\"ghost\"\n        >\n          <ExternalLink className=\"size-4\" />\n        </Button>\n      </div>\n\n      {/** biome-ignore lint/performance/noImgElement: Framework-agnostic image */}\n      <img\n        alt=\"Deployment\"\n        className=\"overflow-hidden rounded-md\"\n        height={700}\n        src=\"https://placehold.co/1440x700\"\n        width={1440}\n      />\n\n      <Button className=\"w-full\" onClick={onClaimClick}>\n        <VercelLogo className=\"w-4\" />\n        Claim Deployment\n      </Button>\n    </CardContent>\n  </Card>\n);\n"
+    }
+  ],
+  "dependencies": ["lucide-react"],
+  "devDependencies": [],
+  "registryDependencies": []
+}

@@ -1,0 +1,19 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "example-claim-deployment",
+  "type": "registry:example",
+  "title": "Claim Deployment Example",
+  "description": "Example implementation of claim deployment.",
+  "files": [
+    {
+      "path": "registry/default/examples/claim-deployment.tsx",
+      "type": "registry:example",
+      "content": "\"use client\";\n\nimport { ClaimDeployment } from \"@/components/vercel-platform/src/blocks/claim-deployment\";\nimport { toast } from \"sonner\";\n\nconst Example = () => (\n  <ClaimDeployment\n    onClaimClick={() => toast.success(\"Deployment claimed\")}\n    url=\"https://temp-project-lntxyumfhl-claim-deployments-team-ytest314.vercel.app\"\n  />\n);\n\nexport default Example;\n"
+    }
+  ],
+  "dependencies": [],
+  "devDependencies": [],
+  "registryDependencies": [
+    "https://registry.platforms.guide/claim-deployment.json"
+  ]
+}

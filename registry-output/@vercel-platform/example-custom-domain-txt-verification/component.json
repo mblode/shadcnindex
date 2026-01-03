@@ -1,0 +1,19 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "example-custom-domain-txt-verification",
+  "type": "registry:example",
+  "title": "Custom Domain Txt Verification Example",
+  "description": "Example implementation of custom domain-txt-verification.",
+  "files": [
+    {
+      "path": "registry/default/examples/custom-domain-txt-verification.tsx",
+      "type": "registry:example",
+      "content": "import { CustomDomain } from \"@/components/vercel-platform/src/blocks/custom-domain\";\n\nconst Example = () => <CustomDomain defaultDomain=\"demo.test.com\" />;\n\nexport default Example;\n"
+    }
+  ],
+  "dependencies": [],
+  "devDependencies": [],
+  "registryDependencies": [
+    "https://registry.platforms.guide/custom-domain.json"
+  ]
+}

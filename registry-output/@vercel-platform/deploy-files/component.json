@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "deploy-files",
+  "type": "registry:lib",
+  "title": "Deploy Files",
+  "description": "Vercel Platform deploy files action.",
+  "files": [
+    {
+      "path": "registry/default/actions/deploy-files.ts",
+      "type": "registry:lib",
+      "content": "\"use server\";\n\nimport {\n  type InlinedFile,\n  type ProjectSettings,\n  SkipAutoDetectionConfirmation,\n} from \"@vercel/sdk/models/createdeploymentop.js\";\nimport { VERCEL_TEAM_ID, vercel } from \"../lib/vercel\";\n\nconst MAX_PROJECT_NAME_LENGTH = 100;\n\nfunction sanitizeProjectName(name: string): string {\n  return name\n    .toLowerCase()\n    .replace(/[^a-z0-9._-]/g, \"-\")\n    .replace(/-{2,}/g, \"-\")\n    .replace(/^-+|-+$/g, \"\")\n    .slice(0, MAX_PROJECT_NAME_LENGTH);\n}\n\nexport async function deployFiles(args?: {\n  deploymentName?: string | undefined;\n  config?: ProjectSettings;\n  domain?: string;\n}) {\n  // you can update this to load the project id from your database instead\n  const projectId = process.env.DEPLOY_FILES_PROJECT_ID;\n\n  const files: InlinedFile[] = [\n    {\n      file: \"index.html\",\n      data: `<h1 style=\"color: #${Math.floor(Math.random() * 16_777_215).toString(16)}; font-size: ${Math.floor(Math.random() * 20) + 24}px;\">Hello, world!</h1>`,\n    },\n  ];\n\n  const { deploymentName = crypto.randomUUID(), config, domain } = args ?? {};\n\n  const sanitizedName = sanitizeProjectName(deploymentName);\n\n  const deployment = await vercel.deployments.createDeployment({\n    requestBody: {\n      name: sanitizedName,\n      files,\n      project: projectId,\n      projectSettings: config,\n      target: \"production\",\n    },\n    skipAutoDetectionConfirmation: config\n      ? SkipAutoDetectionConfirmation.Zero\n      : SkipAutoDetectionConfirmation.One,\n    teamId: VERCEL_TEAM_ID,\n  });\n\n  // if you want your preview deployments to be public, you can do this by setting the ssoProtection to null\n  if (!projectId) {\n    await vercel.projects.updateProject({\n      requestBody: { ssoProtection: null },\n      idOrName: deployment.projectId,\n      teamId: VERCEL_TEAM_ID,\n    });\n  }\n\n  if (domain) {\n    await vercel.projects.addProjectDomain({\n      idOrName: deployment.projectId,\n      requestBody: {\n        name: domain,\n      },\n      teamId: VERCEL_TEAM_ID,\n    });\n  }\n  return deployment;\n}\n\nexport async function getDeploymentStatus(id: string) {\n  const deployment = await vercel.deployments.getDeployment({\n    idOrUrl: id,\n  });\n  return {\n    readyState: deployment.readyState,\n    url: deployment.url,\n    id: deployment.id,\n  };\n}\n"
+    }
+  ],
+  "dependencies": [],
+  "devDependencies": [],
+  "registryDependencies": []
+}

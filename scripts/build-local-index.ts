@@ -1,9 +1,11 @@
 import fs from "node:fs/promises";
 import path from "node:path";
+import Fuse from "fuse.js";
 
 interface BuildOptions {
   inDir: string;
   outFile: string;
+  outIndexFile: string;
   limit: number | null;
   registries: string[];
 }
@@ -53,6 +55,7 @@ interface IndexItem {
 
 const DEFAULT_IN_DIR = "registry-output";
 const DEFAULT_OUT_FILE = "apps/web/public/registry-index.json";
+const DEFAULT_OUT_INDEX_FILE = "apps/web/public/registry-index.fuse.json";
 
 function printHelp() {
   console.log(`
@@ -61,6 +64,7 @@ Usage: tsx scripts/build-local-index.ts [options]
 Options:
   --in <dir>         Input crawl directory (default: ${DEFAULT_IN_DIR})
   --out <file>       Output JSON file (default: ${DEFAULT_OUT_FILE})
+  --out-index <file> Output Fuse index JSON (default: ${DEFAULT_OUT_INDEX_FILE})
   --limit <n>        Limit total items (for testing)
   --registry <name>  Only include specific registry (repeatable)
   --help             Show this help
@@ -71,6 +75,7 @@ function parseArgs(argv: string[]): BuildOptions {
   const options: BuildOptions = {
     inDir: DEFAULT_IN_DIR,
     outFile: DEFAULT_OUT_FILE,
+    outIndexFile: DEFAULT_OUT_INDEX_FILE,
     limit: null,
     registries: [],
   };
@@ -87,6 +92,9 @@ function parseArgs(argv: string[]): BuildOptions {
         break;
       case "--limit":
         options.limit = Number(argv[++i]);
+        break;
+      case "--out-index":
+        options.outIndexFile = argv[++i];
         break;
       case "--registry":
         {
@@ -196,6 +204,7 @@ async function main() {
   const options = parseArgs(process.argv.slice(2));
   const inDir = path.resolve(process.cwd(), options.inDir);
   const outFile = path.resolve(process.cwd(), options.outFile);
+  const outIndexFile = path.resolve(process.cwd(), options.outIndexFile);
   const summaryPath = path.join(inDir, "crawl-summary.json");
   const summaryOutFile = path.join(path.dirname(outFile), "crawl-summary.json");
 
@@ -290,6 +299,16 @@ async function main() {
 
   await fs.mkdir(path.dirname(outFile), { recursive: true });
   await fs.writeFile(outFile, JSON.stringify(payload, null, 2), "utf8");
+  const fuseKeys = [
+    "name",
+    "title",
+    "description",
+    "tags",
+    "registry.namespace",
+  ] as const;
+  const fuseIndex = Fuse.createIndex(fuseKeys, items);
+  await fs.mkdir(path.dirname(outIndexFile), { recursive: true });
+  await fs.writeFile(outIndexFile, JSON.stringify(fuseIndex.toJSON()), "utf8");
   try {
     const summary = await safeReadJson<CrawlSummary>(summaryPath);
     await fs.writeFile(
@@ -300,7 +319,9 @@ async function main() {
   } catch {
     // No summary available; skip.
   }
-  console.log(`Wrote ${items.length} items to ${outFile}`);
+  console.log(
+    `Wrote ${items.length} items to ${outFile} and index to ${outIndexFile}`
+  );
 }
 
 main().catch((error) => {

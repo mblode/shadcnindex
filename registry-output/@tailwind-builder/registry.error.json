@@ -1,6 +1,6 @@
 {
   "registry": "@tailwind-builder",
   "url": "https://tailwindbuilder.ai/r/registry.json",
-  "error": "HTTP 404 Not Found",
-  "fetchedAt": "2026-01-02T11:17:23.102Z"
+  "error": "HTTP 500 Internal Server Error",
+  "fetchedAt": "2026-01-03T00:00:30.773Z"
 }

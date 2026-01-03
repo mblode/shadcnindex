@@ -2,7 +2,9 @@
 import { defineConfig, defineDocs } from "fumadocs-mdx/config";
 import rehypePrettyCode from "rehype-pretty-code";
 
-const transformers = [
+// lib/highlight-code.ts
+import { codeToHtml } from "shiki";
+var transformers = [
   {
     code(node) {
       if (node.tagName === "code") {
@@ -39,12 +41,12 @@ const transformers = [
           node.properties.__bun__ = raw.replace("npm run", "bun");
         }
       }
-    },
-  },
+    }
+  }
 ];
 
 // source.config.ts
-const source_config_default = defineConfig({
+var source_config_default = defineConfig({
   mdxOptions: {
     rehypePlugins: (plugins) => {
       plugins.shift();
@@ -53,17 +55,17 @@ const source_config_default = defineConfig({
         {
           theme: {
             dark: "github-dark",
-            light: "github-light-default",
+            light: "github-light-default"
           },
-          transformers,
-        },
+          transformers
+        }
       ]);
       return plugins;
-    },
-  },
+    }
+  }
 });
-const docs = defineDocs({
-  dir: "content/docs",
+var docs = defineDocs({
+  dir: "content/docs"
   // TODO: Fix this when we upgrade to zod v4.
   // docs: {
   //   schema: frontmatterSchema.extend({
@@ -76,4 +78,7 @@ const docs = defineDocs({
   //   }),
   // },
 });
-export { source_config_default as default, docs };
+export {
+  source_config_default as default,
+  docs
+};

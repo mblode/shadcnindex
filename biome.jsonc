@@ -1,31 +1,4 @@
 {
   "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
-<<<<<<< Updated upstream
-  "extends": [
-    "ultracite/biome/core",
-    "ultracite/biome/next"
-=======
-  "extends": ["ultracite/biome/core", "ultracite/biome/next"],
-  "overrides": [
-    {
-      "includes": [
-        "**/.source/**",
-        "**/.next/**",
-        "**/dist/**",
-        "**/build/**",
-        "**/node_modules/**",
-        "apps/web/public/registry-index.json",
-        "apps/web/registry/bases/**",
-        "apps/web/registry/themes/**",
-        "apps/web/registry/icons/__*.ts"
-      ],
-      "linter": {
-        "enabled": false
-      },
-      "formatter": {
-        "enabled": false
-      }
-    }
->>>>>>> Stashed changes
-  ]
+  "extends": ["ultracite/core", "ultracite/next"]
 }

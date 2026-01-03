@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "example-dns-table",
+  "type": "registry:example",
+  "title": "Dns Table Example",
+  "description": "Example implementation of dns table.",
+  "files": [
+    {
+      "path": "registry/default/examples/dns-table.tsx",
+      "type": "registry:example",
+      "content": "import {\n  type DNSRecord,\n  DNSTable,\n} from \"@/components/vercel-platform/src/blocks/dns-table\";\n\nconst records: DNSRecord[] = [\n  {\n    type: \"A\",\n    name: \"example.com\",\n    value: \"93.184.216.34\",\n  },\n  {\n    type: \"AAAA\",\n    name: \"example.com\",\n    value: \"2606:2800:220:1:248:1893:25c8:1946\",\n    ttl: \"3600\",\n  },\n  {\n    type: \"CNAME\",\n    name: \"www\",\n    value: \"example.com\",\n    ttl: \"300\",\n  },\n  {\n    type: \"MX\",\n    name: \"example.com\",\n    value: \"10 mail.example.com.\",\n    ttl: \"600\",\n  },\n  {\n    type: \"NS\",\n    name: \"example.com\",\n    value: \"ns1.dnsprovider.com.\",\n    ttl: \"86400\",\n  },\n];\n\nconst Example = () => <DNSTable records={records} />;\n\nexport default Example;\n"
+    }
+  ],
+  "dependencies": [],
+  "devDependencies": [],
+  "registryDependencies": ["https://registry.platforms.guide/dns-table.json"]
+}

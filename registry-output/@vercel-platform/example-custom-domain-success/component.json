@@ -1,0 +1,19 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "example-custom-domain-success",
+  "type": "registry:example",
+  "title": "Custom Domain Success Example",
+  "description": "Example implementation of custom domain-success.",
+  "files": [
+    {
+      "path": "registry/default/examples/custom-domain-success.tsx",
+      "type": "registry:example",
+      "content": "import { CustomDomain } from \"@/components/vercel-platform/src/blocks/custom-domain\";\n\nconst Example = () => <CustomDomain defaultDomain=\"demo-platforms.rhys.dev\" />;\n\nexport default Example;\n"
+    }
+  ],
+  "dependencies": [],
+  "devDependencies": [],
+  "registryDependencies": [
+    "https://registry.platforms.guide/custom-domain.json"
+  ]
+}

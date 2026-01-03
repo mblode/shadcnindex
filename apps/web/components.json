@@ -18,5 +18,8 @@
     "lib": "@/lib",
     "hooks": "@/hooks"
   },
-  "registries": {}
+  "registries": {
+    "@supabase": "https://supabase.com/ui/r/{name}.json",
+    "@vercel-platform": "https://registry.platforms.guide/{name}.json"
+  }
 }

@@ -1,0 +1,19 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "example-custom-domain-cname",
+  "type": "registry:example",
+  "title": "Custom Domain Cname Example",
+  "description": "Example implementation of custom domain-cname.",
+  "files": [
+    {
+      "path": "registry/default/examples/custom-domain-cname.tsx",
+      "type": "registry:example",
+      "content": "import { CustomDomain } from \"@/components/vercel-platform/src/blocks/custom-domain\";\n\nconst Example = () => <CustomDomain defaultDomain=\"cname-demo.til.wiki\" />;\n\nexport default Example;\n"
+    }
+  ],
+  "dependencies": [],
+  "devDependencies": [],
+  "registryDependencies": [
+    "https://registry.platforms.guide/custom-domain.json"
+  ]
+}

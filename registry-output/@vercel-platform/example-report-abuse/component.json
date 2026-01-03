@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "example-report-abuse",
+  "type": "registry:example",
+  "title": "Report Abuse Example",
+  "description": "Example implementation of report abuse.",
+  "files": [
+    {
+      "path": "registry/default/examples/report-abuse.tsx",
+      "type": "registry:example",
+      "content": "import { ReportAbuse } from \"@/components/vercel-platform/src/blocks/report-abuse\";\n\nconst types = [\n  {\n    value: \"spam\",\n    label: \"Spam or misleading\",\n  },\n  {\n    value: \"harassment\",\n    label: \"Harassment or bullying\",\n  },\n  {\n    value: \"hate-speech\",\n    label: \"Hate speech\",\n  },\n  {\n    value: \"violence\",\n    label: \"Violence or dangerous content\",\n  },\n  {\n    value: \"sexual-content\",\n    label: \"Sexual content\",\n  },\n  {\n    value: \"misinformation\",\n    label: \"Misinformation\",\n  },\n  {\n    value: \"copyright\",\n    label: \"Copyright violation\",\n  },\n  {\n    value: \"privacy\",\n    label: \"Privacy violation\",\n  },\n  {\n    value: \"other\",\n    label: \"Other\",\n  },\n];\n\nconst Example = () => <ReportAbuse types={types} />;\n\nexport default Example;\n"
+    }
+  ],
+  "dependencies": [],
+  "devDependencies": [],
+  "registryDependencies": ["https://registry.platforms.guide/report-abuse.json"]
+}

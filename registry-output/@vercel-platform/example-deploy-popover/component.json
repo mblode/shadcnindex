@@ -1,0 +1,19 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "example-deploy-popover",
+  "type": "registry:example",
+  "title": "Deploy Popover Example",
+  "description": "Example implementation of deploy popover.",
+  "files": [
+    {
+      "path": "registry/default/examples/deploy-popover.tsx",
+      "type": "registry:example",
+      "content": "import { DeployPopover } from \"@/components/vercel-platform/src/blocks/deploy-popover\";\n\nconst Example = () => <DeployPopover />;\n\nexport default Example;\n"
+    }
+  ],
+  "dependencies": [],
+  "devDependencies": [],
+  "registryDependencies": [
+    "https://registry.platforms.guide/deploy-popover.json"
+  ]
+}

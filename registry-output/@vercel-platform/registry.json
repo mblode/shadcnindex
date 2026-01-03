@@ -1,0 +1,198 @@
+{
+  "name": "vercel-platform",
+  "homepage": "https://registry.platforms.guide/components",
+  "items": [
+    {
+      "name": "example-claim-deployment",
+      "type": "registry:example",
+      "title": "Claim Deployment Example",
+      "description": "Example implementation of claim deployment.",
+      "files": [
+        {
+          "path": "registry/default/examples/claim-deployment.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "example-custom-domain-apex",
+      "type": "registry:example",
+      "title": "Custom Domain Apex Example",
+      "description": "Example implementation of custom domain-apex.",
+      "files": [
+        {
+          "path": "registry/default/examples/custom-domain-apex.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "example-custom-domain-cname",
+      "type": "registry:example",
+      "title": "Custom Domain Cname Example",
+      "description": "Example implementation of custom domain-cname.",
+      "files": [
+        {
+          "path": "registry/default/examples/custom-domain-cname.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "example-custom-domain-success",
+      "type": "registry:example",
+      "title": "Custom Domain Success Example",
+      "description": "Example implementation of custom domain-success.",
+      "files": [
+        {
+          "path": "registry/default/examples/custom-domain-success.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "example-custom-domain-txt-verification",
+      "type": "registry:example",
+      "title": "Custom Domain Txt Verification Example",
+      "description": "Example implementation of custom domain-txt-verification.",
+      "files": [
+        {
+          "path": "registry/default/examples/custom-domain-txt-verification.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "example-custom-domain",
+      "type": "registry:example",
+      "title": "Custom Domain Example",
+      "description": "Example implementation of custom domain.",
+      "files": [
+        {
+          "path": "registry/default/examples/custom-domain.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "example-deploy-popover",
+      "type": "registry:example",
+      "title": "Deploy Popover Example",
+      "description": "Example implementation of deploy popover.",
+      "files": [
+        {
+          "path": "registry/default/examples/deploy-popover.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "example-dns-table",
+      "type": "registry:example",
+      "title": "Dns Table Example",
+      "description": "Example implementation of dns table.",
+      "files": [
+        {
+          "path": "registry/default/examples/dns-table.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "example-report-abuse",
+      "type": "registry:example",
+      "title": "Report Abuse Example",
+      "description": "Example implementation of report abuse.",
+      "files": [
+        {
+          "path": "registry/default/examples/report-abuse.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "claim-deployment",
+      "type": "registry:block",
+      "title": "Claim Deployment",
+      "description": "Vercel Platform claim deployment block.",
+      "files": [
+        {
+          "path": "registry/default/blocks/claim-deployment.tsx",
+          "type": "registry:block"
+        }
+      ]
+    },
+    {
+      "name": "custom-domain",
+      "type": "registry:block",
+      "title": "Custom Domain",
+      "description": "Vercel Platform custom domain block.",
+      "files": [
+        {
+          "path": "registry/default/blocks/custom-domain.tsx",
+          "type": "registry:block"
+        }
+      ]
+    },
+    {
+      "name": "deploy-popover",
+      "type": "registry:block",
+      "title": "Deploy Popover",
+      "description": "Vercel Platform deploy popover block.",
+      "files": [
+        {
+          "path": "registry/default/blocks/deploy-popover.tsx",
+          "type": "registry:block"
+        }
+      ]
+    },
+    {
+      "name": "dns-table",
+      "type": "registry:block",
+      "title": "Dns Table",
+      "description": "Vercel Platform dns table block.",
+      "files": [
+        {
+          "path": "registry/default/blocks/dns-table.tsx",
+          "type": "registry:block"
+        }
+      ]
+    },
+    {
+      "name": "report-abuse",
+      "type": "registry:block",
+      "title": "Report Abuse",
+      "description": "Vercel Platform report abuse block.",
+      "files": [
+        {
+          "path": "registry/default/blocks/report-abuse.tsx",
+          "type": "registry:block"
+        }
+      ]
+    },
+    {
+      "name": "add-custom-domain",
+      "type": "registry:lib",
+      "title": "Add Custom Domain",
+      "description": "Vercel Platform add custom-domain action.",
+      "files": [
+        {
+          "path": "registry/default/actions/add-custom-domain.ts",
+          "type": "registry:lib"
+        }
+      ]
+    },
+    {
+      "name": "deploy-files",
+      "type": "registry:lib",
+      "title": "Deploy Files",
+      "description": "Vercel Platform deploy files action.",
+      "files": [
+        {
+          "path": "registry/default/actions/deploy-files.ts",
+          "type": "registry:lib"
+        }
+      ]
+    }
+  ]
+}

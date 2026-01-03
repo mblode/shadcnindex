@@ -10,6 +10,7 @@ interface CrawlOptions {
   concurrency: number;
   timeoutMs: number;
   pauseMs: number;
+  useCache: boolean;
   skipExisting: boolean;
 }
 
@@ -32,7 +33,7 @@ interface RegistryJson {
   [key: string]: unknown;
 }
 
-const REGISTRY_INDEX_URL = "https://ui.shadcn.com/r/registries.json";
+const LOCAL_REGISTRIES_FILE = "registries.local.json";
 const DEFAULT_OUT_DIR = "registry-output";
 const DEFAULT_CONCURRENCY = 8;
 const DEFAULT_TIMEOUT_MS = 15_000;
@@ -50,7 +51,8 @@ Options:
   --concurrency <n>         Max concurrent component fetches (default: ${DEFAULT_CONCURRENCY})
   --timeout <ms>            Per-request timeout in ms (default: ${DEFAULT_TIMEOUT_MS})
   --pause <ms>              Pause between registries (default: ${DEFAULT_REGISTRY_PAUSE_MS})
-  --skip-existing           Skip components that already have component.json
+  --skip-existing           Skip components that already have component.json (default)
+  --no-cache                Disable cache; refetch registries and components
   --help                    Show this help
 `);
 }
@@ -64,7 +66,8 @@ function parseArgs(argv: string[]): CrawlOptions {
     concurrency: DEFAULT_CONCURRENCY,
     timeoutMs: DEFAULT_TIMEOUT_MS,
     pauseMs: DEFAULT_REGISTRY_PAUSE_MS,
-    skipExisting: false,
+    useCache: true,
+    skipExisting: true,
   };
 
   // biome-ignore lint/style/useForOf: Need index manipulation for argument parsing
@@ -104,6 +107,10 @@ function parseArgs(argv: string[]): CrawlOptions {
         break;
       case "--skip-existing":
         options.skipExisting = true;
+        break;
+      case "--no-cache":
+        options.useCache = false;
+        options.skipExisting = false;
         break;
       case "--help":
         printHelp();
@@ -194,6 +201,11 @@ async function writeJson(filePath: string, data: unknown) {
   await fs.writeFile(filePath, JSON.stringify(data, null, 2), "utf8");
 }
 
+async function readJson<T>(filePath: string): Promise<T> {
+  const text = await fs.readFile(filePath, "utf8");
+  return JSON.parse(text) as T;
+}
+
 async function fileExists(filePath: string) {
   try {
     await fs.access(filePath);
@@ -210,6 +222,7 @@ async function crawlRegistry({
   componentLimit,
   concurrency,
   timeoutMs,
+  useCache,
   skipExisting,
   errors,
 }: {
@@ -219,6 +232,7 @@ async function crawlRegistry({
   componentLimit: number | null;
   concurrency: number;
   timeoutMs: number;
+  useCache: boolean;
   skipExisting: boolean;
   errors: CrawlError[];
 }) {
@@ -226,11 +240,17 @@ async function crawlRegistry({
   await fs.mkdir(registryDir, { recursive: true });
 
   const registryUrl = template.replace("{name}", "registry");
+  const registryJsonPath = path.join(registryDir, "registry.json");
   let registryJson: RegistryJson;
+  const shouldUseCache = useCache && (await fileExists(registryJsonPath));
 
   try {
-    registryJson = (await fetchJson(registryUrl, timeoutMs)) as RegistryJson;
-    await writeJson(path.join(registryDir, "registry.json"), registryJson);
+    if (shouldUseCache) {
+      registryJson = await readJson<RegistryJson>(registryJsonPath);
+    } else {
+      registryJson = (await fetchJson(registryUrl, timeoutMs)) as RegistryJson;
+      await writeJson(registryJsonPath, registryJson);
+    }
   } catch (error) {
     const message = error instanceof Error ? error.message : String(error);
     errors.push({ registry: registryName, url: registryUrl, error: message });
@@ -293,11 +313,17 @@ async function main() {
   const outDir = path.resolve(process.cwd(), options.outDir);
   await fs.mkdir(outDir, { recursive: true });
 
-  const registryIndex = (await fetchJson(
-    REGISTRY_INDEX_URL,
-    options.timeoutMs
-  )) as RegistryIndex;
-  await writeJson(path.join(outDir, "registries.json"), registryIndex);
+  const registryIndexPath = path.join(outDir, "registries.json");
+  const localRegistriesPath = path.join(process.cwd(), LOCAL_REGISTRIES_FILE);
+
+  if (!(await fileExists(localRegistriesPath))) {
+    throw new Error(
+      `Missing ${LOCAL_REGISTRIES_FILE}. Run tsx scripts/update-registries.ts to create it.`
+    );
+  }
+
+  const registryIndex = await readJson<RegistryIndex>(localRegistriesPath);
+  await writeJson(registryIndexPath, registryIndex);
 
   let registryEntries = Object.entries(registryIndex);
   if (options.registries.length > 0) {
@@ -319,6 +345,7 @@ async function main() {
       componentLimit: options.componentLimit,
       concurrency: options.concurrency,
       timeoutMs: options.timeoutMs,
+      useCache: options.useCache,
       skipExisting: options.skipExisting,
       errors,
     });

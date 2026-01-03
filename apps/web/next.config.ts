@@ -9,6 +9,7 @@ const nextConfig: NextConfig = {
   outputFileTracingIncludes: {
     "/*": ["./registry/**/*"],
   },
+  serverExternalPackages: ["esbuild"],
   images: {
     remotePatterns: [
       {
@@ -27,6 +28,7 @@ const nextConfig: NextConfig = {
   },
   experimental: {
     turbopackFileSystemCacheForDev: true,
+    urlImports: ["https://esm.sh/", "http://localhost:3003/registry-preview/"],
   },
   async redirects() {
     return [
