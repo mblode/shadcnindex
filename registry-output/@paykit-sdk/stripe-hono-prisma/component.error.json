@@ -7,9 +7,15 @@
     "name": "stripe-hono-prisma",
     "type": "registry:block",
     "description": "Stripe integration for Hono with Prisma ORM schemas for payments and subscriptions",
-    "dependencies": ["prisma"],
-    "devDependencies": ["prisma"],
-    "registryDependencies": ["https://usepaykit.dev/r/stripe-hono"],
+    "dependencies": [
+      "prisma"
+    ],
+    "devDependencies": [
+      "prisma"
+    ],
+    "registryDependencies": [
+      "https://usepaykit.dev/r/stripe-hono"
+    ],
     "files": [
       {
         "type": "registry:file",
@@ -27,5 +33,5 @@
       "auth": "none"
     }
   },
-  "fetchedAt": "2026-01-02T23:59:23.182Z"
+  "fetchedAt": "2026-01-03T11:28:21.821Z"
 }

@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "Timeline",
     "description": "A component presenting a 3-step process: \"Data Integration,\" \"Custom Configuration,\" and \"Scale Your Business,\" each with icons, titles, and descriptions.",
-    "dependencies": ["lucide-react"],
+    "dependencies": [
+      "lucide-react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:08.011Z"
+  "fetchedAt": "2026-01-03T11:29:05.720Z"
 }

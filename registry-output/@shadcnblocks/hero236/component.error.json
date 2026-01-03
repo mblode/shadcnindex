@@ -8,7 +8,11 @@
     "type": "registry:block",
     "title": "Hero",
     "description": "A component features a dynamic, interactive 3D cloud of icons and statistics highlighting key metrics. It splits into two main sections: one side lists achievements using icons and numbers, and the other displays a rotating, interactive cloud of technology icons.",
-    "dependencies": ["lucide-react", "react", "react-dom"],
+    "dependencies": [
+      "lucide-react",
+      "react",
+      "react-dom"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +21,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:52.099Z"
+  "fetchedAt": "2026-01-03T11:28:50.551Z"
 }

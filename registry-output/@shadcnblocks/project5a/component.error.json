@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "Project5a",
     "description": "This component displays an art project with animated effects. It features a 3-column layout that condenses to 1 on smaller screens, descriptive text, a title, and images. Unique sections detail the project and artistic vision.",
-    "dependencies": ["framer-motion"],
+    "dependencies": [
+      "framer-motion"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:00.962Z"
+  "fetchedAt": "2026-01-03T11:28:58.774Z"
 }

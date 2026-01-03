@@ -8,8 +8,15 @@
     "type": "registry:block",
     "title": "Projects17b",
     "description": "A carousel-based component showcasing projects with images, titles, categories, locations, years, and descriptions within cards. Includes navigational arrows and badges for category identification.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["badge", "button", "carousel"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "badge",
+      "button",
+      "carousel"
+    ],
     "files": [
       {
         "path": "code/block/projects17b.tsx",
@@ -17,5 +24,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:02.244Z"
+  "fetchedAt": "2026-01-03T11:28:59.992Z"
 }

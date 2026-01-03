@@ -9,7 +9,9 @@
     "title": "Feature",
     "description": "A marketing component featuring a title, description, button, a row of logos, and a link to more integrations.",
     "dependencies": [],
-    "registryDependencies": ["button"],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/feature90.tsx",
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:45.805Z"
+  "fetchedAt": "2026-01-03T11:28:44.366Z"
 }

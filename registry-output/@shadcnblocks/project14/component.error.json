@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "Project",
     "description": "This component displays an animated showcase with a staggered fade-in effect, featuring a main title, two 2-column grids of images with hover effects, and a descriptive section with details on category, year, and brand.",
-    "dependencies": ["framer-motion"],
+    "dependencies": [
+      "framer-motion"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:00.580Z"
+  "fetchedAt": "2026-01-03T11:28:58.366Z"
 }

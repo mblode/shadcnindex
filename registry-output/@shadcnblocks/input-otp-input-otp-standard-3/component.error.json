@@ -9,7 +9,9 @@
     "title": "Input-otp/input-otp-standard-",
     "description": "A input-otp/input-otp-standard- example",
     "dependencies": [],
-    "registryDependencies": ["input-otp"],
+    "registryDependencies": [
+      "input-otp"
+    ],
     "files": [
       {
         "path": "code/example/input-otp/input-otp-standard-3.tsx",
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:18.227Z"
+  "fetchedAt": "2026-01-03T11:29:15.721Z"
 }

@@ -8,8 +8,12 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A dual-section block featuring a text column with a heading, description, checklist, and button, alongside an image column with a decorative background pattern and gradient overlays.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["button"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/feature124.tsx",
@@ -17,5 +21,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:37.182Z"
+  "fetchedAt": "2026-01-03T11:28:35.884Z"
 }

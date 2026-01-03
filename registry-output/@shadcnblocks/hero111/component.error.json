@@ -14,7 +14,12 @@
       "react-hook-form",
       "zod"
     ],
-    "registryDependencies": ["aspect-ratio", "button", "form", "input"],
+    "registryDependencies": [
+      "aspect-ratio",
+      "button",
+      "form",
+      "input"
+    ],
     "files": [
       {
         "path": "code/block/hero111.tsx",
@@ -22,5 +27,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:48.613Z"
+  "fetchedAt": "2026-01-03T11:28:47.167Z"
 }

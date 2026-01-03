@@ -8,7 +8,10 @@
     "name": "utils",
     "title": "Utils",
     "type": "registry:lib",
-    "dependencies": ["clsx", "tailwind-merge"],
+    "dependencies": [
+      "clsx",
+      "tailwind-merge"
+    ],
     "files": [
       {
         "path": "lib/utils.ts",
@@ -16,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:27.167Z"
+  "fetchedAt": "2026-01-03T11:28:25.211Z"
 }

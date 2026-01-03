@@ -9,7 +9,9 @@
     "title": "Feature",
     "description": "A component featuring a badge, a heading, a paragraph, an image, and a 4-column grid of items with numbers, titles, and descriptions.",
     "dependencies": [],
-    "registryDependencies": ["badge"],
+    "registryDependencies": [
+      "badge"
+    ],
     "files": [
       {
         "path": "code/block/feature139.tsx",
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:37.862Z"
+  "fetchedAt": "2026-01-03T11:28:36.455Z"
 }

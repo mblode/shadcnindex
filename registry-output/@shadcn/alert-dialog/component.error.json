@@ -6,8 +6,12 @@
   "item": {
     "name": "alert-dialog",
     "type": "registry:ui",
-    "dependencies": ["@radix-ui/react-alert-dialog"],
-    "registryDependencies": ["button"],
+    "dependencies": [
+      "@radix-ui/react-alert-dialog"
+    ],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "ui/alert-dialog.tsx",
@@ -15,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T07:39:45.339Z"
+  "fetchedAt": "2026-01-03T11:28:25.468Z"
 }

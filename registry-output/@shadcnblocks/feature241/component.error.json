@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A component displaying a header and a grid of cards, each with an icon, title, and description about team features. Grid has 2 columns. Cards animate on hover.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["card"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "card"
+    ],
     "files": [
       {
         "path": "code/block/feature241.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:41.566Z"
+  "fetchedAt": "2026-01-03T11:28:40.207Z"
 }

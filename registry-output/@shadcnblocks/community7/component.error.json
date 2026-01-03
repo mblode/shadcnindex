@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "Community",
     "description": "A component showcasing social media platforms in a 3-column layout, with icons, links, online status, and follower counts.",
-    "dependencies": ["react-icons"],
+    "dependencies": [
+      "react-icons"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:33.184Z"
+  "fetchedAt": "2026-01-03T11:28:31.909Z"
 }

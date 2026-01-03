@@ -8,8 +8,12 @@
     "type": "registry:block",
     "title": "Contact",
     "description": "A contact component with a title, introduction, 3-column layout for different contact options, and a carousel showcasing locations with maps and details.",
-    "dependencies": ["embla-carousel-fade"],
-    "registryDependencies": ["carousel"],
+    "dependencies": [
+      "embla-carousel-fade"
+    ],
+    "registryDependencies": [
+      "carousel"
+    ],
     "files": [
       {
         "path": "code/block/contact4.tsx",
@@ -17,5 +21,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:34.055Z"
+  "fetchedAt": "2026-01-03T11:28:32.720Z"
 }

@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A component displaying tabs each with a title, description, list of features, and an image, arranged in a 2-column layout for larger screens.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["button", "tabs"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "button",
+      "tabs"
+    ],
     "files": [
       {
         "path": "code/block/feature19.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:39.700Z"
+  "fetchedAt": "2026-01-03T11:28:38.207Z"
 }

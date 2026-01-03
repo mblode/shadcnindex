@@ -9,7 +9,10 @@
     "title": "Logos",
     "description": "A component displays a section with a title, description, button, and a grid of logos. It includes a badge, central text block, and logos arranged in up to 4 columns.",
     "dependencies": [],
-    "registryDependencies": ["badge", "button"],
+    "registryDependencies": [
+      "badge",
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/logos4.tsx",
@@ -17,5 +20,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:56.337Z"
+  "fetchedAt": "2026-01-03T11:28:54.033Z"
 }

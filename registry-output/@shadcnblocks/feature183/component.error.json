@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A component featuring a trendy hero area with an overlaid phone image, SVG patterning, and two info cards, plus a row of three stat cards below.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["badge", "select"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "badge",
+      "select"
+    ],
     "files": [
       {
         "path": "code/block/feature183.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:39.453Z"
+  "fetchedAt": "2026-01-03T11:28:37.968Z"
 }

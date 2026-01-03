@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "Project",
     "description": "An animated block showcasing a fashion theme with large title, description, image, and credits. Features 1-2 columns and dynamic entry animations.",
-    "dependencies": ["framer-motion"],
+    "dependencies": [
+      "framer-motion"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:01.451Z"
+  "fetchedAt": "2026-01-03T11:28:59.071Z"
 }

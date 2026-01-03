@@ -6,7 +6,9 @@
   "item": {
     "name": "input-otp",
     "type": "registry:ui",
-    "dependencies": ["input-otp"],
+    "dependencies": [
+      "input-otp"
+    ],
     "files": [
       {
         "path": "ui/input-otp.tsx",
@@ -14,5 +16,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T07:39:45.692Z"
+  "fetchedAt": "2026-01-03T11:28:25.658Z"
 }

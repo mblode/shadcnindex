@@ -8,8 +8,12 @@
     "type": "registry:block",
     "title": "Hero",
     "description": "A component with a 2-column layout; one side presents text and a button, the other showcases a stylized, geometric arrangement of elements.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["button"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/hero39.tsx",
@@ -17,5 +21,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:53.160Z"
+  "fetchedAt": "2026-01-03T11:28:51.628Z"
 }

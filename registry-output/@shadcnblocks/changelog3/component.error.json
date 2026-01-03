@@ -9,7 +9,9 @@
     "title": "Changelog",
     "description": "A component displaying updates with sections for dates, tags (e.g., &#x27;Maintenance&#x27;), and content including images. Uses a two-column layout on desktop.",
     "dependencies": [],
-    "registryDependencies": ["separator"],
+    "registryDependencies": [
+      "separator"
+    ],
     "files": [
       {
         "path": "code/block/changelog3.tsx",
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:32.360Z"
+  "fetchedAt": "2026-01-03T11:28:31.025Z"
 }

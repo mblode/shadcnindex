@@ -8,7 +8,10 @@
     "type": "registry:block",
     "title": "Code-example",
     "description": "This component showcases the use of custom hooks to manage and toggle themes within a React application. It includes interactive code blocks and provides a clear implementation example, demonstrating how to integrate theme switching with a button and visual indicators.",
-    "dependencies": ["lucide-react", "react"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
     "registryDependencies": [
       "https://www.kibo-ui.com/r/code-block.json",
       "button",
@@ -21,5 +24,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:32.977Z"
+  "fetchedAt": "2026-01-03T11:28:31.479Z"
 }

@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Testimonial",
     "description": "A component showcasing user testimonials in a grid with 2 columns, expandable content, and avatars.",
-    "dependencies": ["react"],
-    "registryDependencies": ["avatar", "separator"],
+    "dependencies": [
+      "react"
+    ],
+    "registryDependencies": [
+      "avatar",
+      "separator"
+    ],
     "files": [
       {
         "path": "code/block/testimonial16.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:07.232Z"
+  "fetchedAt": "2026-01-03T11:29:04.983Z"
 }

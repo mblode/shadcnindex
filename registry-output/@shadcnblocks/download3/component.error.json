@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Download",
     "description": "A component displaying a download card with a logo, a heading, a description, version, file size, system requirements, download and view buttons, and trust indicators.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["button", "card"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "button",
+      "card"
+    ],
     "files": [
       {
         "path": "code/block/download3.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:35.340Z"
+  "fetchedAt": "2026-01-03T11:28:34.005Z"
 }

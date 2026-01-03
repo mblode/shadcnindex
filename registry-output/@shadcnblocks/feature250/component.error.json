@@ -8,7 +8,11 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A component displaying a title, subtitle, and an animated, interactive illustration with networked CPUs and dynamic beams connecting them, laid out in a flexible column or row arrangement depending on screen size.",
-    "dependencies": ["lucide-react", "react", "motion"],
+    "dependencies": [
+      "lucide-react",
+      "react",
+      "motion"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +21,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:42.093Z"
+  "fetchedAt": "2026-01-03T11:28:40.621Z"
 }

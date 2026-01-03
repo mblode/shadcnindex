@@ -9,7 +9,9 @@
     "title": "Background-pattern",
     "description": "This component creates a visually appealing background with a grid pattern using CSS gradients, which is centered and takes up the full width and height of the viewport. It allows for customization through additional class names and serves as a decorative backdrop that can be used in various user interfaces.",
     "dependencies": [],
-    "registryDependencies": ["https://shadcnblocks.com/r/pattern-placeholder"],
+    "registryDependencies": [
+      "https://shadcnblocks.com/r/pattern-placeholder"
+    ],
     "files": [
       {
         "path": "code/block/background-pattern10.tsx",
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:29.243Z"
+  "fetchedAt": "2026-01-03T11:28:27.971Z"
 }

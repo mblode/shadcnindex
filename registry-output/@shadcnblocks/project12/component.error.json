@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Project",
     "description": "A component with dynamic text animations, back button, detailed project information, and a large image; layout includes columns with animations for elements.",
-    "dependencies": ["lucide-react", "motion"],
-    "registryDependencies": ["button"],
+    "dependencies": [
+      "lucide-react",
+      "motion"
+    ],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/project12.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:00.458Z"
+  "fetchedAt": "2026-01-03T11:28:58.228Z"
 }

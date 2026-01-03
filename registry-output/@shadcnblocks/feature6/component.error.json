@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A 2-column layout component featuring an icon, a bold headline, descriptive text, a list with checkmarks, and a full-width image.",
-    "dependencies": ["lucide-react"],
+    "dependencies": [
+      "lucide-react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:44.771Z"
+  "fetchedAt": "2026-01-03T11:28:43.204Z"
 }

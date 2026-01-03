@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A component displaying 3 resources with titles, descriptions, and images, structured in a bordered container with horizontal dividers.",
-    "dependencies": ["lucide-react"],
+    "dependencies": [
+      "lucide-react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:39.528Z"
+  "fetchedAt": "2026-01-03T11:28:38.046Z"
 }

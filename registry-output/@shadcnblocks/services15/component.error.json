@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Services",
     "description": "A component showcasing digital services in a masonry layout with 1-3 columns, variable heights, and hover effects. Includes a title, description, and a view-all button.",
-    "dependencies": ["framer-motion", "lucide-react"],
-    "registryDependencies": ["button", "card"],
+    "dependencies": [
+      "framer-motion",
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "button",
+      "card"
+    ],
     "files": [
       {
         "path": "code/block/services15.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:03.819Z"
+  "fetchedAt": "2026-01-03T11:29:01.461Z"
 }

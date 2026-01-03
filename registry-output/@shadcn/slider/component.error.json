@@ -6,7 +6,9 @@
   "item": {
     "name": "slider",
     "type": "registry:ui",
-    "dependencies": ["@radix-ui/react-slider"],
+    "dependencies": [
+      "@radix-ui/react-slider"
+    ],
     "files": [
       {
         "path": "ui/slider.tsx",
@@ -14,5 +16,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T07:39:45.831Z"
+  "fetchedAt": "2026-01-03T11:28:25.734Z"
 }

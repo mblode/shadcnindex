@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Testimonial",
     "description": "A component showcasing testimonials in a masonry layout with 1-3 columns, featuring user reviews, avatars, and star ratings. Includes reward cards with icons.",
-    "dependencies": ["lucide-react", "react-responsive-masonry"],
-    "registryDependencies": ["avatar", "card"],
+    "dependencies": [
+      "lucide-react",
+      "react-responsive-masonry"
+    ],
+    "registryDependencies": [
+      "avatar",
+      "card"
+    ],
     "files": [
       {
         "path": "code/block/testimonial24.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:07.512Z"
+  "fetchedAt": "2026-01-03T11:29:05.262Z"
 }

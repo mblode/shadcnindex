@@ -8,8 +8,15 @@
     "type": "registry:block",
     "title": "Blog",
     "description": "A carousel component displaying blog posts with navigation arrows, tags, and a \"View All Articles\" button.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["badge", "button", "carousel"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "badge",
+      "button",
+      "carousel"
+    ],
     "files": [
       {
         "path": "code/block/blog21.tsx",
@@ -17,5 +24,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:31.126Z"
+  "fetchedAt": "2026-01-03T11:28:29.848Z"
 }

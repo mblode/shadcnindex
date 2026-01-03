@@ -8,8 +8,15 @@
     "type": "registry:block",
     "title": "Blogpost",
     "description": "A blog post component with dynamic breadcrumb navigation, author bio, social sharing, and interactive chapter selection.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["avatar", "breadcrumb", "button"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "avatar",
+      "breadcrumb",
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/blogpost6.tsx",
@@ -17,5 +24,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:31.711Z"
+  "fetchedAt": "2026-01-03T11:28:30.454Z"
 }

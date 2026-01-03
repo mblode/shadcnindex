@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Download",
     "description": "A component showcasing a professional suite download with features, version details, and download options in a two-column layout within a main card.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["badge", "button", "card"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "badge",
+      "button",
+      "card"
+    ],
     "files": [
       {
         "path": "code/block/download4.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:35.350Z"
+  "fetchedAt": "2026-01-03T11:28:34.016Z"
 }

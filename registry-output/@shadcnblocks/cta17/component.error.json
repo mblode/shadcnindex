@@ -9,7 +9,9 @@
     "title": "Cta",
     "description": "A centered call-to-action block with a patterned background, featuring a large title, a descriptive paragraph, and two large buttons for actions.",
     "dependencies": [],
-    "registryDependencies": ["button"],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/cta17.tsx",
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:34.521Z"
+  "fetchedAt": "2026-01-03T11:28:33.092Z"
 }

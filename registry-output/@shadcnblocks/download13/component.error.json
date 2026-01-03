@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Download",
     "description": "This component provides a user interface for downloading a desktop application, featuring functionalities like copying installation commands and selecting specific download versions for Windows. It includes buttons for direct downloading and a visual indication of successful clipboard operations.",
-    "dependencies": ["lucide-react", "react", "react-icons"],
-    "registryDependencies": ["button"],
+    "dependencies": [
+      "lucide-react",
+      "react",
+      "react-icons"
+    ],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/download13.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:35.329Z"
+  "fetchedAt": "2026-01-03T11:28:34.005Z"
 }

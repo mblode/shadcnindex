@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "Project4b",
     "description": "A component showcasing a brand identity project for a juice company, with sections on design process, challenges, and outcomes, complemented by images and text descriptions.",
-    "dependencies": ["react"],
+    "dependencies": [
+      "react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:00.797Z"
+  "fetchedAt": "2026-01-03T11:28:58.659Z"
 }

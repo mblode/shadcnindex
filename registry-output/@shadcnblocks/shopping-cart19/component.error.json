@@ -8,7 +8,10 @@
     "type": "registry:block",
     "title": "Shopping-cart",
     "description": "This component provides an interactive shopping cart interface allowing users to manage and adjust item quantities, apply promo codes, and view subtotal costs with progress towards free shipping. It also suggests upsell products and provides a checkout feature, all contained within a collapsible interface.",
-    "dependencies": ["lucide-react", "react"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
     "registryDependencies": [
       "aspect-ratio",
       "button",
@@ -25,5 +28,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:04.890Z"
+  "fetchedAt": "2026-01-03T11:29:03.041Z"
 }

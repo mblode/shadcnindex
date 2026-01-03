@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "Services",
     "description": "A component showcasing 4 services with icons, titles, descriptions, and items in a 1-2-4 column layout, featuring hover effects.",
-    "dependencies": ["lucide-react"],
+    "dependencies": [
+      "lucide-react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:04.113Z"
+  "fetchedAt": "2026-01-03T11:29:02.044Z"
 }

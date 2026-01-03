@@ -8,8 +8,16 @@
     "type": "registry:block",
     "title": "Team",
     "description": "A component showcasing team members with tabbed categorization and search functionality, displaying member details within a grid layout of up to 4 columns.",
-    "dependencies": ["@radix-ui/react-tabs", "lucide-react", "react"],
-    "registryDependencies": ["input", "separator", "tabs"],
+    "dependencies": [
+      "@radix-ui/react-tabs",
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "input",
+      "separator",
+      "tabs"
+    ],
     "files": [
       {
         "path": "code/block/team9.tsx",
@@ -17,5 +25,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:06.859Z"
+  "fetchedAt": "2026-01-03T11:29:04.701Z"
 }

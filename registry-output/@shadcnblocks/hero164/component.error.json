@@ -8,8 +8,15 @@
     "type": "registry:block",
     "title": "Hero",
     "description": "A component showcasing a dual-column layout with a pitch and a playable video teaser. The left column has text and sign-up, while the right shows an image. Features a popup for video.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["aspect-ratio", "button", "dialog"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "aspect-ratio",
+      "button",
+      "dialog"
+    ],
     "files": [
       {
         "path": "code/block/hero164.tsx",
@@ -17,5 +24,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:49.676Z"
+  "fetchedAt": "2026-01-03T11:28:48.281Z"
 }

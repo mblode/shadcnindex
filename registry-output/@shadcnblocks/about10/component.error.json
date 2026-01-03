@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "About",
     "description": "A component showcasing a professional profile with an avatar, contact link, biography, core philosophy, workspace image, and a tools list. Layout includes a sticky sidebar and a main content area with two-thirds width.",
-    "dependencies": ["lucide-react"],
+    "dependencies": [
+      "lucide-react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:28.558Z"
+  "fetchedAt": "2026-01-03T11:28:27.326Z"
 }

@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Hero",
     "description": "Component features a 2-column layout with a focus on returns management. Includes icons, a big title, a paragraph, and a button. The right column showcases an image with exchange options.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["aspect-ratio", "button"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "aspect-ratio",
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/hero125.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:48.737Z"
+  "fetchedAt": "2026-01-03T11:28:47.412Z"
 }

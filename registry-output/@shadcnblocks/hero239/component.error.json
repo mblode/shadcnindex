@@ -8,7 +8,10 @@
     "type": "registry:block",
     "title": "Hero",
     "description": "A component featuring a marquee with images, centered text, and two buttons. It includes a heading, a subtext, and a unique 3D marquee at the bottom.",
-    "dependencies": ["lucide-react", "react"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
     "registryDependencies": [
       "https://ui.aceternity.com/registry/3d-marquee.json",
       "button"
@@ -20,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:52.282Z"
+  "fetchedAt": "2026-01-03T11:28:50.668Z"
 }

@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A component featuring a title, text, and button on the left with a globe animation on the right in a two-column layout with a unique rotating arrow icon on the button hover.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["https://magicui.design/r/globe", "button"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "https://magicui.design/r/globe",
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/feature253.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:42.126Z"
+  "fetchedAt": "2026-01-03T11:28:40.712Z"
 }

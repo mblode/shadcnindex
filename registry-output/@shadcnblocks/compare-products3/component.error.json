@@ -8,8 +8,16 @@
     "type": "registry:block",
     "title": "Compare-products",
     "description": "This component allows users to compare up to four products by showcasing details such as price, rating, reviews, and key highlights. Features include the ability to add or remove products for comparison and a call-to-action button to add selected products to the cart.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["button", "card", "scroll-area", "separator"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "button",
+      "card",
+      "scroll-area",
+      "separator"
+    ],
     "files": [
       {
         "path": "code/block/compare-products3.tsx",
@@ -17,5 +25,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:33.251Z"
+  "fetchedAt": "2026-01-03T11:28:31.802Z"
 }

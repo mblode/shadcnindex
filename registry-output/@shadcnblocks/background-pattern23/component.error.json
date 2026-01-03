@@ -9,7 +9,9 @@
     "title": "Background-pattern",
     "description": "The BackgroundPattern23 component creates a visually engaging block with a customizable background pattern featuring a dashed grid and radial gradient effects. It is ideal for use as a full-screen decorative background in various design projects.",
     "dependencies": [],
-    "registryDependencies": ["https://shadcnblocks.com/r/pattern-placeholder"],
+    "registryDependencies": [
+      "https://shadcnblocks.com/r/pattern-placeholder"
+    ],
     "files": [
       {
         "path": "code/block/background-pattern23.tsx",
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:29.824Z"
+  "fetchedAt": "2026-01-03T11:28:28.409Z"
 }

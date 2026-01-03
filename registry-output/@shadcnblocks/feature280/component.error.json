@@ -8,7 +8,10 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A layout showcasing user testimonials and a feature list with a title, separated into two columns, including checkboxes for features.",
-    "dependencies": ["lucide-react", "react"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
     "registryDependencies": [
       "https://ui.aceternity.com/registry/card-stack.json"
     ],
@@ -19,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:42.975Z"
+  "fetchedAt": "2026-01-03T11:28:41.475Z"
 }

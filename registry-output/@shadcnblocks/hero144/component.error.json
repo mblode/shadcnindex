@@ -9,7 +9,9 @@
     "title": "Hero",
     "description": "A component featuring a 2-row layout of app icons (5 on the top, 4 on the bottom) and a centered title with a description beneath. Each app icon is styled with a unique visual effect.",
     "dependencies": [],
-    "registryDependencies": ["aspect-ratio"],
+    "registryDependencies": [
+      "aspect-ratio"
+    ],
     "files": [
       {
         "path": "code/block/hero144.tsx",
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:49.142Z"
+  "fetchedAt": "2026-01-03T11:28:47.895Z"
 }

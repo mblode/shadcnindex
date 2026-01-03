@@ -8,8 +8,15 @@
     "type": "registry:block",
     "title": "Product-gallery",
     "description": "This component is a dynamic image gallery block that allows users to browse through product images using a carousel with thumbnail navigation and zoom features. It utilizes PhotoSwipe for lightbox functionality and manages user interactions like image selection and carousel navigation with hooks and state management in React.",
-    "dependencies": ["photoswipe", "react"],
-    "registryDependencies": ["aspect-ratio", "badge", "carousel"],
+    "dependencies": [
+      "photoswipe",
+      "react"
+    ],
+    "registryDependencies": [
+      "aspect-ratio",
+      "badge",
+      "carousel"
+    ],
     "files": [
       {
         "path": "code/block/product-gallery7.tsx",
@@ -17,5 +24,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:59.890Z"
+  "fetchedAt": "2026-01-03T11:28:57.599Z"
 }

@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Hero",
     "description": "A hero block showcasing a central message with a background image, featuring a title, a descriptive paragraph, and a button. Below is a bar with location details and an arrow button.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["button"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/hero174.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:50.186Z"
+  "fetchedAt": "2026-01-03T11:28:48.582Z"
 }

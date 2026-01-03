@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Hero",
     "description": "A component with a decorative background and a two-column layout. The first column features a welcome message and action buttons. The second showcases integration options with icons and descriptions.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["https://magicui.design/r/marquee", "button"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "https://magicui.design/r/marquee",
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/hero40.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:53.331Z"
+  "fetchedAt": "2026-01-03T11:28:51.674Z"
 }

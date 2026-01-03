@@ -8,7 +8,10 @@
     "type": "registry:block",
     "title": "Services",
     "description": "An animated table layout displaying service options with a unique feature of a cursor-following image that changes based on the hovered table row.",
-    "dependencies": ["framer-motion", "react"],
+    "dependencies": [
+      "framer-motion",
+      "react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +20,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:03.923Z"
+  "fetchedAt": "2026-01-03T11:29:01.666Z"
 }

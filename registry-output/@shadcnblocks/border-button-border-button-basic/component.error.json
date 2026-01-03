@@ -9,7 +9,9 @@
     "title": "Border-button/border-button-basic",
     "description": "A border-button/border-button-basic example",
     "dependencies": [],
-    "registryDependencies": ["https://shadcnblocks.com/r/border-button"],
+    "registryDependencies": [
+      "https://shadcnblocks.com/r/border-button"
+    ],
     "files": [
       {
         "path": "code/example/border-button/border-button-basic.tsx",
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:11.157Z"
+  "fetchedAt": "2026-01-03T11:29:08.619Z"
 }

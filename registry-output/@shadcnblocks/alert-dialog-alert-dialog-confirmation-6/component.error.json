@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Alert-dialog/alert-dialog-confirmation-",
     "description": "A alert-dialog/alert-dialog-confirmation- example",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["alert-dialog", "button"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "alert-dialog",
+      "button"
+    ],
     "files": [
       {
         "path": "code/example/alert-dialog/alert-dialog-confirmation-6.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:08.707Z"
+  "fetchedAt": "2026-01-03T11:29:06.586Z"
 }

@@ -6,7 +6,9 @@
   "item": {
     "name": "spinner",
     "type": "registry:ui",
-    "dependencies": ["class-variance-authority"],
+    "dependencies": [
+      "class-variance-authority"
+    ],
     "files": [
       {
         "path": "ui/spinner.tsx",
@@ -14,5 +16,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T07:39:45.871Z"
+  "fetchedAt": "2026-01-03T11:28:25.728Z"
 }

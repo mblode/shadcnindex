@@ -9,7 +9,9 @@
     "title": "Hero",
     "description": "A two-column block with text elements & layered images, featuring dynamic text sizes and aspect-ratio controlled images.",
     "dependencies": [],
-    "registryDependencies": ["aspect-ratio"],
+    "registryDependencies": [
+      "aspect-ratio"
+    ],
     "files": [
       {
         "path": "code/block/hero178.tsx",
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:50.186Z"
+  "fetchedAt": "2026-01-03T11:28:48.699Z"
 }

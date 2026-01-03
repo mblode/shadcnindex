@@ -8,8 +8,15 @@
     "type": "registry:block",
     "title": "Pricing",
     "description": "A marketing package selector with 3 options, highlighting features per plan. Includes alerts and clickable elements for user interaction.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["alert", "button", "radio-group", "separator"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "alert",
+      "button",
+      "radio-group",
+      "separator"
+    ],
     "files": [
       {
         "path": "code/block/pricing38.tsx",
@@ -17,5 +24,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:58.574Z"
+  "fetchedAt": "2026-01-03T11:28:56.333Z"
 }

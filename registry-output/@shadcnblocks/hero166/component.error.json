@@ -9,7 +9,10 @@
     "title": "Hero",
     "description": "A 2-column layout block with animated images on one side and text elements, including a headline, paragraph, and button on the other.",
     "dependencies": [],
-    "registryDependencies": ["aspect-ratio", "button"],
+    "registryDependencies": [
+      "aspect-ratio",
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/hero166.tsx",
@@ -17,5 +20,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:49.720Z"
+  "fetchedAt": "2026-01-03T11:28:48.304Z"
 }

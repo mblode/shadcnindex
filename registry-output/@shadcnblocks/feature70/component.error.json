@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A carousel-based component showcasing features with descriptions, navigable by interactive list items. Layout includes an image carousel and a detailed description list on two columns.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["carousel"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "carousel"
+    ],
     "files": [
       {
         "path": "code/block/feature70.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:45.208Z"
+  "fetchedAt": "2026-01-03T11:28:43.779Z"
 }

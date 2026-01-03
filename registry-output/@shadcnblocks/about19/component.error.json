@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "About",
     "description": "A 7-column component with a large image on the left (4 columns) and text on the right (3 columns) including a quote and avatar.",
-    "dependencies": ["react"],
+    "dependencies": [
+      "react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:28.925Z"
+  "fetchedAt": "2026-01-03T11:28:27.560Z"
 }

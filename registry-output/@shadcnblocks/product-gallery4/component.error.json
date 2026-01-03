@@ -8,8 +8,16 @@
     "type": "registry:block",
     "title": "Product-gallery",
     "description": "The component is a versatile product image gallery block that displays images in a carousel format, allowing users to view high-quality images with zoom capabilities via a lightbox feature. It includes thumbnail navigation, customizable indicators, and interactive controls for enhanced user engagement.",
-    "dependencies": ["photoswipe", "react"],
-    "registryDependencies": ["aspect-ratio", "badge", "button", "carousel"],
+    "dependencies": [
+      "photoswipe",
+      "react"
+    ],
+    "registryDependencies": [
+      "aspect-ratio",
+      "badge",
+      "button",
+      "carousel"
+    ],
     "files": [
       {
         "path": "code/block/product-gallery4.tsx",
@@ -17,5 +25,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:59.759Z"
+  "fetchedAt": "2026-01-03T11:28:57.599Z"
 }

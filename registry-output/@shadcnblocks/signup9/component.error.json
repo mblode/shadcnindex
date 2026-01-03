@@ -8,8 +8,16 @@
     "type": "registry:block",
     "title": "Signup",
     "description": "A signup component with Google signup option, email input, and a carousel of logos at the bottom.",
-    "dependencies": ["embla-carousel-auto-scroll", "react"],
-    "registryDependencies": ["button", "carousel", "input", "separator"],
+    "dependencies": [
+      "embla-carousel-auto-scroll",
+      "react"
+    ],
+    "registryDependencies": [
+      "button",
+      "carousel",
+      "input",
+      "separator"
+    ],
     "files": [
       {
         "path": "code/block/signup9.tsx",
@@ -17,5 +25,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:05.218Z"
+  "fetchedAt": "2026-01-03T11:29:03.421Z"
 }

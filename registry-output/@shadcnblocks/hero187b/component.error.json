@@ -8,8 +8,15 @@
     "type": "registry:block",
     "title": "Hero187b",
     "description": "A split-layout component with a carousel and descriptive content. Features auto-playing carousel images with indicators and a section highlighting key features with icons.",
-    "dependencies": ["embla-carousel-autoplay", "lucide-react", "react"],
-    "registryDependencies": ["button", "carousel"],
+    "dependencies": [
+      "embla-carousel-autoplay",
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "button",
+      "carousel"
+    ],
     "files": [
       {
         "path": "code/block/hero187b.tsx",
@@ -17,5 +24,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:50.510Z"
+  "fetchedAt": "2026-01-03T11:28:49.029Z"
 }

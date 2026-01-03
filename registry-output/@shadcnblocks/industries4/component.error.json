@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Industries",
     "description": "This component, Industries4, showcases a list of contractors from different categories, such as Hydro, Wind, and Solar, providing information and images for each. It features interactive elements, including hover effects and expandable content showcasing additional details and links for users to learn more.",
-    "dependencies": ["framer-motion", "lucide-react", "react"],
-    "registryDependencies": ["button"],
+    "dependencies": [
+      "framer-motion",
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/industries4.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:55.160Z"
+  "fetchedAt": "2026-01-03T11:28:53.038Z"
 }

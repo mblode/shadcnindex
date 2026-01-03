@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Button-group/button-group-badges-",
     "description": "A button-group/button-group-badges- example",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["badge", "button", "button-group"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "badge",
+      "button",
+      "button-group"
+    ],
     "files": [
       {
         "path": "code/example/button-group/button-group-badges-4.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:11.415Z"
+  "fetchedAt": "2026-01-03T11:29:09.132Z"
 }

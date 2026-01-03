@@ -9,7 +9,9 @@
     "title": "Cta",
     "description": "A component featuring a full-width background image with a dark overlay, centered text, and two buttons. It includes a bold title, a description, and offers a free trial.",
     "dependencies": [],
-    "registryDependencies": ["button"],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/cta14.tsx",
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:34.487Z"
+  "fetchedAt": "2026-01-03T11:28:33.069Z"
 }

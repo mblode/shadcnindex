@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Alert-dialog/alert-dialog-destructive-",
     "description": "A alert-dialog/alert-dialog-destructive- example",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["alert-dialog", "button"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "alert-dialog",
+      "button"
+    ],
     "files": [
       {
         "path": "code/example/alert-dialog/alert-dialog-destructive-6.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:09.318Z"
+  "fetchedAt": "2026-01-03T11:29:07.035Z"
 }

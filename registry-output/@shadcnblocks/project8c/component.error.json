@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "Project8c",
     "description": "A component showcasing a project with animated visibility effects, featuring a title, description, an image, and detailed information divided into a single column and a two-column section.",
-    "dependencies": ["framer-motion"],
+    "dependencies": [
+      "framer-motion"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:01.517Z"
+  "fetchedAt": "2026-01-03T11:28:59.234Z"
 }

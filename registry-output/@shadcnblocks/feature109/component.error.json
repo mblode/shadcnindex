@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A two-column layout block, featuring an outlined badge, large headings, descriptive text, and a button with an icon in the first column. The second column showcases an image with overlay text, including an avatar badge and a link.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["avatar", "badge", "button"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "avatar",
+      "badge",
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/feature109.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:36.594Z"
+  "fetchedAt": "2026-01-03T11:28:35.198Z"
 }

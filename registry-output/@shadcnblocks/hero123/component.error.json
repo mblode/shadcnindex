@@ -9,7 +9,10 @@
     "title": "Hero",
     "description": "A component with a 2-column layout: text with a button on one side and an image within an aspect ratio container on the other. Features a muted background.",
     "dependencies": [],
-    "registryDependencies": ["aspect-ratio", "button"],
+    "registryDependencies": [
+      "aspect-ratio",
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/hero123.tsx",
@@ -17,5 +20,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:48.710Z"
+  "fetchedAt": "2026-01-03T11:28:47.232Z"
 }

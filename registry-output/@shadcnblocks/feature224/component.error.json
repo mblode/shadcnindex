@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A component showcasing AI features in nature via a carousel, each slide displaying a title, icon, and description with a vibrant background.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["card", "carousel"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "card",
+      "carousel"
+    ],
     "files": [
       {
         "path": "code/block/feature224.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:41.120Z"
+  "fetchedAt": "2026-01-03T11:28:39.645Z"
 }

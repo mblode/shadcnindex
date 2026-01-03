@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Gallery",
     "description": "Component displays a carousel of images with overlay text & a \"Know More\" link. Offers animated entrances and card effects.",
-    "dependencies": ["framer-motion", "lucide-react", "swiper"],
-    "registryDependencies": ["button"],
+    "dependencies": [
+      "framer-motion",
+      "lucide-react",
+      "swiper"
+    ],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/gallery19.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:47.380Z"
+  "fetchedAt": "2026-01-03T11:28:45.933Z"
 }

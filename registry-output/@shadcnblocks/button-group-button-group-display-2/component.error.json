@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Button-group/button-group-display-",
     "description": "A button-group/button-group-display- example",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["button", "button-group"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "button",
+      "button-group"
+    ],
     "files": [
       {
         "path": "code/example/button-group/button-group-display-2.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:11.464Z"
+  "fetchedAt": "2026-01-03T11:29:09.203Z"
 }

@@ -8,8 +8,15 @@
     "type": "registry:block",
     "title": "Hero",
     "description": "This component displays a hero section with two main blocks: content with text, buttons, avatars, and stats on the left, and a grid layout with vector graphics and images on the right. It includes a modal video dialog.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["avatar", "button", "dialog"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "avatar",
+      "button",
+      "dialog"
+    ],
     "files": [
       {
         "path": "code/block/hero171.tsx",
@@ -17,5 +24,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:49.959Z"
+  "fetchedAt": "2026-01-03T11:28:48.457Z"
 }

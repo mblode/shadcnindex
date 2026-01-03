@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A component showcasing utility features with icons, badges, and cards in a two-column layout, incorporating headings, paragraphs, and images.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["badge", "card", "separator"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "badge",
+      "card",
+      "separator"
+    ],
     "files": [
       {
         "path": "code/block/feature21.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:40.327Z"
+  "fetchedAt": "2026-01-03T11:28:38.978Z"
 }

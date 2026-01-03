@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Careers",
     "description": "A component listing job openings with department, role, location, and a link, featuring a heading, introduction, and a call-to-action for unsolicited applications.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["badge", "separator"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "badge",
+      "separator"
+    ],
     "files": [
       {
         "path": "code/block/careers9.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:32.267Z"
+  "fetchedAt": "2026-01-03T11:28:30.859Z"
 }

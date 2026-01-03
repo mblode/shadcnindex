@@ -7,9 +7,15 @@
     "name": "stripe-express-typeorm",
     "type": "registry:block",
     "description": "Stripe integration for Express with TypeORM schemas for payments and subscriptions",
-    "dependencies": ["typeorm"],
-    "devDependencies": ["typeorm"],
-    "registryDependencies": ["https://usepaykit.dev/r/stripe-express"],
+    "dependencies": [
+      "typeorm"
+    ],
+    "devDependencies": [
+      "typeorm"
+    ],
+    "registryDependencies": [
+      "https://usepaykit.dev/r/stripe-express"
+    ],
     "files": [
       {
         "type": "registry:file",
@@ -27,5 +33,5 @@
       "auth": "none"
     }
   },
-  "fetchedAt": "2026-01-02T23:59:23.600Z"
+  "fetchedAt": "2026-01-03T11:28:22.108Z"
 }

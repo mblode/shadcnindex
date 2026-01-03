@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Hero",
     "description": "A block featuring a promo link, a bold title with a highlight, a descriptive paragraph, and buttons for action and demo with icons. Includes a semi-transparent overlay.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["badge", "button"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "badge",
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/hero175.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:50.186Z"
+  "fetchedAt": "2026-01-03T11:28:48.686Z"
 }

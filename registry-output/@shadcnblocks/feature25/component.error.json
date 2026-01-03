@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A component with three content sections and a headline area, using 4-column layout for items, and checkmarks for list-style.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["badge", "separator"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "badge",
+      "separator"
+    ],
     "files": [
       {
         "path": "code/block/feature25.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:42.107Z"
+  "fetchedAt": "2026-01-03T11:28:40.586Z"
 }

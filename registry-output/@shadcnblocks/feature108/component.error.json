@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A tabbed component with 3 tabs, each displaying a title, description, badge, a button with text, and an image. Layout includes two columns in larger views.",
-    "dependencies": ["@radix-ui/react-tabs", "lucide-react"],
-    "registryDependencies": ["badge", "button"],
+    "dependencies": [
+      "@radix-ui/react-tabs",
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "badge",
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/feature108.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:36.583Z"
+  "fetchedAt": "2026-01-03T11:28:35.205Z"
 }

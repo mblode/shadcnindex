@@ -9,7 +9,9 @@
     "title": "Testimonial",
     "description": "A component featuring a testimonial with overlapping avatars and a quote, showcased on a single-column layout with centered text.",
     "dependencies": [],
-    "registryDependencies": ["avatar"],
+    "registryDependencies": [
+      "avatar"
+    ],
     "files": [
       {
         "path": "code/block/testimonial13.tsx",
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:07.090Z"
+  "fetchedAt": "2026-01-03T11:29:04.971Z"
 }

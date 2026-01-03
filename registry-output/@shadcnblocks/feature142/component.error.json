@@ -8,8 +8,12 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A grid-based component with a unique layout, featuring an image and text in a stylized block with border details, accompanied by a list with icons and a badge.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["badge"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "badge"
+    ],
     "files": [
       {
         "path": "code/block/feature142.tsx",
@@ -17,5 +21,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:38.011Z"
+  "fetchedAt": "2026-01-03T11:28:36.635Z"
 }

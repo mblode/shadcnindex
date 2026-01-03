@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "About",
     "description": "This About Us block features a multi-section layout introducing a mission with bold statements, detailed objectives. It includes text blocks, icons, and image placeholders, organized in columns that adjust between single and multiple (up to three) across different sections.",
-    "dependencies": ["lucide-react"],
+    "dependencies": [
+      "lucide-react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:28.563Z"
+  "fetchedAt": "2026-01-03T11:28:27.189Z"
 }

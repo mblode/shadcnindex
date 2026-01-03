@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "Industries",
     "description": "This component displays a list of projects with details such as year, name, description, and a relevant image, allowing users to explore different project categories. Each project entry includes a hover effect that reveals additional information and provides a clickable link for further exploration.",
-    "dependencies": ["lucide-react"],
+    "dependencies": [
+      "lucide-react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:55.173Z"
+  "fetchedAt": "2026-01-03T11:28:53.035Z"
 }

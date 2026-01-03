@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A feature block lists 12 advantages with icons in a two-column grid and highlights services with an image in an adjacent visual card.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["https://ui.aceternity.com/registry/3d-card.json"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "https://ui.aceternity.com/registry/3d-card.json"
+    ],
     "files": [
       {
         "path": "code/block/feature269.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:42.419Z"
+  "fetchedAt": "2026-01-03T11:28:41.125Z"
 }

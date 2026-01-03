@@ -8,8 +8,15 @@
     "type": "registry:block",
     "title": "Hero",
     "description": "A component displaying text, images in overlapped layout with buttons for action & video modal. Uses 2-column grid, with a dynamic video pop-up.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["aspect-ratio", "button", "dialog"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "aspect-ratio",
+      "button",
+      "dialog"
+    ],
     "files": [
       {
         "path": "code/block/hero173.tsx",
@@ -17,5 +24,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:50.186Z"
+  "fetchedAt": "2026-01-03T11:28:48.571Z"
 }

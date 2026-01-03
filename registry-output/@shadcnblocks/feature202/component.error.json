@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A component showcasing 7 architectural solutions each with an icon, title, and description, arranged in a 3-column grid format, with one covering two columns.",
-    "dependencies": ["lucide-react"],
+    "dependencies": [
+      "lucide-react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:40.048Z"
+  "fetchedAt": "2026-01-03T11:28:38.626Z"
 }

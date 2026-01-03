@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "Promo-banner",
     "description": "This component is a promotional banner with a countdown timer that highlights a flash sale event, displaying the time remaining until the end of the sale. It features customizable messages and descriptions, and adjusts its appearance based on provided styling classes.",
-    "dependencies": ["react"],
+    "dependencies": [
+      "react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:02.769Z"
+  "fetchedAt": "2026-01-03T11:29:00.500Z"
 }

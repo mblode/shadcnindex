@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Logos",
     "description": "A component showcasing product team endorsements and logos in carousels, with auto-scrolling functionality and dynamic column adjustments.",
-    "dependencies": ["embla-carousel-auto-scroll"],
-    "registryDependencies": ["carousel", "separator"],
+    "dependencies": [
+      "embla-carousel-auto-scroll"
+    ],
+    "registryDependencies": [
+      "carousel",
+      "separator"
+    ],
     "files": [
       {
         "path": "code/block/logos9.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:56.343Z"
+  "fetchedAt": "2026-01-03T11:28:54.264Z"
 }

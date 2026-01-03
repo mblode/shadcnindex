@@ -8,7 +8,11 @@
     "type": "registry:block",
     "title": "Hero",
     "description": "A split-layout component featuring a text area with a heading, paragraphs, buttons, and a list of features on one side, and a bar chart displaying data on the other.",
-    "dependencies": ["lucide-react", "react", "recharts"],
+    "dependencies": [
+      "lucide-react",
+      "react",
+      "recharts"
+    ],
     "registryDependencies": [
       "https://ui.aceternity.com/registry/cover.json",
       "button",
@@ -21,5 +25,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:52.382Z"
+  "fetchedAt": "2026-01-03T11:28:50.844Z"
 }

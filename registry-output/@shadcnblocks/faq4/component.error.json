@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Faq",
     "description": "A component showcasing an FAQ section with expandable answers, highlighted by badges and separators, and includes a support contact link.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["accordion", "badge", "separator"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "accordion",
+      "badge",
+      "separator"
+    ],
     "files": [
       {
         "path": "code/block/faq4.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:36.039Z"
+  "fetchedAt": "2026-01-03T11:28:34.719Z"
 }

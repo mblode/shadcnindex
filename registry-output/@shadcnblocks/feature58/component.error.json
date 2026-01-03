@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A component displays an image alongside a list of 3 features, each with an icon, title, and description, laid out in a 2-column grid.",
-    "dependencies": ["lucide-react"],
+    "dependencies": [
+      "lucide-react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:44.551Z"
+  "fetchedAt": "2026-01-03T11:28:43.167Z"
 }

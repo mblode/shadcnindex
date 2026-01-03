@@ -8,8 +8,16 @@
     "type": "registry:block",
     "title": "Help",
     "description": "This component, named Help2, provides an FAQ and support interface with searchable questions and categorized answers to assist users in finding solutions to common inquiries. It also includes options to contact support via live chat, email, or phone for further assistance.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["accordion", "button", "card", "input"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "accordion",
+      "button",
+      "card",
+      "input"
+    ],
     "files": [
       {
         "path": "code/block/help2.tsx",
@@ -17,5 +25,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:48.213Z"
+  "fetchedAt": "2026-01-03T11:28:46.840Z"
 }

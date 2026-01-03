@@ -8,7 +8,10 @@
     "type": "registry:block",
     "title": "Team",
     "description": "This component displays a grid of team members, showcasing their images, names, roles, and short descriptions. It features an interactive highlight effect on hover, enhancing the user engagement with dynamic animations and additional details.",
-    "dependencies": ["framer-motion", "react"],
+    "dependencies": [
+      "framer-motion",
+      "react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +20,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:06.555Z"
+  "fetchedAt": "2026-01-03T11:29:04.297Z"
 }

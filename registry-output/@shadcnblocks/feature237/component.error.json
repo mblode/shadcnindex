@@ -8,7 +8,10 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "This component displays a grid of cards detailing system features, each with metrics, status, and deployment info. Two-column layout on medium screens.",
-    "dependencies": ["lucide-react", "react"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +20,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:41.527Z"
+  "fetchedAt": "2026-01-03T11:28:40.162Z"
 }

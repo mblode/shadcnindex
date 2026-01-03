@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "Awards",
     "description": "A component displays awards in a table with details like logo, name, nomination, and year, with a large title and a date range subtitle.",
-    "dependencies": ["react"],
+    "dependencies": [
+      "react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:29.243Z"
+  "fetchedAt": "2026-01-03T11:28:27.798Z"
 }

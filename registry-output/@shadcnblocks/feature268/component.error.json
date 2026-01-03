@@ -8,7 +8,10 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A component showing a title, description, two buttons, a list of features with icons, and a 3D-animated card displaying an image and a button. It uses a two-column layout on large screens.",
-    "dependencies": ["lucide-react", "react"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
     "registryDependencies": [
       "https://ui.aceternity.com/registry/3d-card.json",
       "button"
@@ -20,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:42.419Z"
+  "fetchedAt": "2026-01-03T11:28:41.071Z"
 }

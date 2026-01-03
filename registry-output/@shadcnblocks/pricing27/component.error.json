@@ -8,8 +8,12 @@
     "type": "registry:block",
     "title": "Pricing",
     "description": "A pricing component with a 3-column layout on XL screens, featuring a highlighted main card spanning 2 columns and a secondary card. Each card lists services, prices, and includes call-to-action buttons.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["button"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/pricing27.tsx",
@@ -17,5 +21,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:58.128Z"
+  "fetchedAt": "2026-01-03T11:28:55.869Z"
 }

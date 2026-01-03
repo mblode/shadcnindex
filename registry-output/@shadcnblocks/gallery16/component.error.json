@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Gallery",
     "description": "A component displaying a carousel and tabs for navigating items, which comprise an image, title, description, and note. Features include dynamic tab indicators and previous/next buttons.",
-    "dependencies": ["react"],
-    "registryDependencies": ["carousel", "tabs"],
+    "dependencies": [
+      "react"
+    ],
+    "registryDependencies": [
+      "carousel",
+      "tabs"
+    ],
     "files": [
       {
         "path": "code/block/gallery16.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:47.330Z"
+  "fetchedAt": "2026-01-03T11:28:45.901Z"
 }

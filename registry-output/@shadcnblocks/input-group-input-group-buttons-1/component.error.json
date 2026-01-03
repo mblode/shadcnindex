@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Input-group/input-group-buttons-",
     "description": "A input-group/input-group-buttons- example",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["input-group"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "input-group"
+    ],
     "files": [
       {
         "path": "code/example/input-group/input-group-buttons-1.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:16.486Z"
+  "fetchedAt": "2026-01-03T11:29:14.254Z"
 }

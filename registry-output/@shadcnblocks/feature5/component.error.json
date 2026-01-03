@@ -8,8 +8,12 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A component with a 3-column layout on large screens, shrinking to 2 and then 1 column. Features 2 cards, one double the width of the other, each with icons, text, and images.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["card"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "card"
+    ],
     "files": [
       {
         "path": "code/block/feature5.tsx",
@@ -17,5 +21,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:44.269Z"
+  "fetchedAt": "2026-01-03T11:28:42.819Z"
 }

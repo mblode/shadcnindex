@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A component featuring three sections highlighting business integrations with icons, titles, and descriptions. Layout includes a main header and a 3-column section beneath it.",
-    "dependencies": ["lucide-react"],
+    "dependencies": [
+      "lucide-react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:37.604Z"
+  "fetchedAt": "2026-01-03T11:28:36.222Z"
 }

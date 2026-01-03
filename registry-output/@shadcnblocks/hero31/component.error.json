@@ -9,7 +9,9 @@
     "title": "Hero",
     "description": "A component featuring a welcome message, a description, two buttons, and dynamic overlapping blocks with varying dimensions. Incorporates a complex background design.",
     "dependencies": [],
-    "registryDependencies": ["button"],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/hero31.tsx",
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:52.929Z"
+  "fetchedAt": "2026-01-03T11:28:51.382Z"
 }

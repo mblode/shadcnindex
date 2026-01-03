@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A component displays UI blocks with flickering image animations and a stylized border effect. It includes descriptive text and buttons, within a dual-column layout.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["https://magicui.design/r/shine-border", "button"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "https://magicui.design/r/shine-border",
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/feature235.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:41.534Z"
+  "fetchedAt": "2026-01-03T11:28:40.059Z"
 }

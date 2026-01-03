@@ -8,8 +8,12 @@
     "type": "registry:block",
     "title": "Hero",
     "description": "This component displays a full-width background with a dynamic, animated heading that changes text over time and includes a description with buttons for user actions.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["button"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/hero145.tsx",
@@ -17,5 +21,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:49.247Z"
+  "fetchedAt": "2026-01-03T11:28:47.737Z"
 }

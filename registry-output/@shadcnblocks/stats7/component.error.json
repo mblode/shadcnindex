@@ -8,8 +8,12 @@
     "type": "registry:block",
     "title": "Stats",
     "description": "A component displaying weekly stats in a bordered block with 3 metrics (work completed, progress metric, error rate), each with percentages, arrows indicating trend, and progress bars.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["progress"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "progress"
+    ],
     "files": [
       {
         "path": "code/block/stats7.tsx",
@@ -17,5 +21,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:06.321Z"
+  "fetchedAt": "2026-01-03T11:29:04.289Z"
 }

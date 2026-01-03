@@ -9,7 +9,9 @@
     "title": "Faq",
     "description": "An FAQ component with collapsible sections for \"General\" and \"Billing\" questions, each with their own set of questions and answers. It has a 3-column layout on wider screens.",
     "dependencies": [],
-    "registryDependencies": ["accordion"],
+    "registryDependencies": [
+      "accordion"
+    ],
     "files": [
       {
         "path": "code/block/faq8.tsx",
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:36.192Z"
+  "fetchedAt": "2026-01-03T11:28:34.880Z"
 }

@@ -8,8 +8,12 @@
     "type": "registry:block",
     "title": "Services",
     "description": "An interactive component lists services with accordions, including icons, titles, and descriptions. Features 2-column grid for in-depth details.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["accordion"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "accordion"
+    ],
     "files": [
       {
         "path": "code/block/services8.tsx",
@@ -17,5 +21,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:04.222Z"
+  "fetchedAt": "2026-01-03T11:29:02.094Z"
 }

@@ -8,8 +8,12 @@
     "type": "registry:block",
     "title": "Blog",
     "description": "A component with a sticky header displaying \"Blog Posts\" and navigation links, beside a 2-column grid of blog entries featuring images and titles.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["separator"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "separator"
+    ],
     "files": [
       {
         "path": "code/block/blog11.tsx",
@@ -17,5 +21,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:30.949Z"
+  "fetchedAt": "2026-01-03T11:28:29.605Z"
 }

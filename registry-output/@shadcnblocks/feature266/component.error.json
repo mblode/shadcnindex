@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A component showcasing a \"FRAGMENTS OF LIGHT & STILLNESS\" collection with a three-column grid of cards featuring image tooltips, staggered animations, and a hover effect enhancing visual context.",
-    "dependencies": ["framer-motion"],
-    "registryDependencies": ["card", "tooltip"],
+    "dependencies": [
+      "framer-motion"
+    ],
+    "registryDependencies": [
+      "card",
+      "tooltip"
+    ],
     "files": [
       {
         "path": "code/block/feature266.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:42.412Z"
+  "fetchedAt": "2026-01-03T11:28:41.071Z"
 }

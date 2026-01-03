@@ -8,8 +8,15 @@
     "type": "registry:block",
     "title": "Navbar",
     "description": "A multifunctional navigation component featuring dropdown menus for solutions and resources, a platform category with logos, and authentication buttons. It includes a mobile-friendly menu triggered by an icon.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["accordion", "button", "navigation-menu"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "accordion",
+      "button",
+      "navigation-menu"
+    ],
     "files": [
       {
         "path": "code/block/navbar7.tsx",
@@ -17,5 +24,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:57.002Z"
+  "fetchedAt": "2026-01-03T11:28:54.747Z"
 }

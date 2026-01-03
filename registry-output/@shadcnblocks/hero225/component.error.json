@@ -8,7 +8,10 @@
     "type": "registry:block",
     "title": "Hero",
     "description": "A component displaying animated circles populated with tech icons and a central text message, accompanied by a call-to-action button.",
-    "dependencies": ["lucide-react", "react"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
     "registryDependencies": [
       "https://magicui.design/r/orbiting-circles",
       "button"
@@ -20,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:51.659Z"
+  "fetchedAt": "2026-01-03T11:28:50.108Z"
 }

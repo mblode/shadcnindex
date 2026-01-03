@@ -15,7 +15,11 @@
       "react-icons",
       "zod"
     ],
-    "registryDependencies": ["button", "form", "input"],
+    "registryDependencies": [
+      "button",
+      "form",
+      "input"
+    ],
     "files": [
       {
         "path": "code/block/cta22.tsx",
@@ -23,5 +27,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:34.770Z"
+  "fetchedAt": "2026-01-03T11:28:33.357Z"
 }

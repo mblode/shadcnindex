@@ -8,7 +8,10 @@
     "type": "registry:block",
     "title": "Product-list",
     "description": "This component is a versatile product showcase block that features a carousel of items organized into categories with promotional content. It includes interactive elements such as tabbed navigation, product color variants, and dynamic pricing display to enhance the user shopping experience.",
-    "dependencies": ["lucide-react", "react"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
     "registryDependencies": [
       "https://shadcnblocks.com/r/price",
       "aspect-ratio",
@@ -28,5 +31,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:00.225Z"
+  "fetchedAt": "2026-01-03T11:28:57.990Z"
 }

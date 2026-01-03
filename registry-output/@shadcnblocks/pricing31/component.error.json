@@ -8,8 +8,12 @@
     "type": "registry:block",
     "title": "Pricing",
     "description": "A component displaying 3 pricing plans with features, highlighting the \"most popular\" choice. Each plan card lists price, benefits, and a CTA button.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["button"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/pricing31.tsx",
@@ -17,5 +21,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:58.306Z"
+  "fetchedAt": "2026-01-03T11:28:56.083Z"
 }

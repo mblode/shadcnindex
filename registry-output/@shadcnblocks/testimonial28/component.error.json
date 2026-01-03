@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Testimonial",
     "description": "A carousel component showcasing testimonials with avatars, names, and comments. Each slide has a dashed border with plus icons at the corners.",
-    "dependencies": ["react"],
-    "registryDependencies": ["avatar", "carousel"],
+    "dependencies": [
+      "react"
+    ],
+    "registryDependencies": [
+      "avatar",
+      "carousel"
+    ],
     "files": [
       {
         "path": "code/block/testimonial28.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:07.632Z"
+  "fetchedAt": "2026-01-03T11:29:05.505Z"
 }

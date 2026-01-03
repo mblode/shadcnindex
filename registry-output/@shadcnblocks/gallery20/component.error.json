@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Gallery",
     "description": "A gallery component displaying overlapping, draggable images with dynamic animation. Includes textual content and a button, all within a single column layout.",
-    "dependencies": ["framer-motion", "lucide-react", "react"],
-    "registryDependencies": ["button"],
+    "dependencies": [
+      "framer-motion",
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/gallery20.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:47.564Z"
+  "fetchedAt": "2026-01-03T11:28:45.944Z"
 }

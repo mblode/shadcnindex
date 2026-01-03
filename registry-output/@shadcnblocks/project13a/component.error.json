@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "Project13a",
     "description": "A visual storytelling component with a parallax hero section, project details, full-width images, and a concept overview. Uses staggered animations.",
-    "dependencies": ["framer-motion"],
+    "dependencies": [
+      "framer-motion"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:00.511Z"
+  "fetchedAt": "2026-01-03T11:28:58.367Z"
 }

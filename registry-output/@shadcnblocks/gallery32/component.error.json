@@ -8,7 +8,10 @@
     "type": "registry:block",
     "title": "Gallery",
     "description": "An interactive gallery component with dimension-variable, overlapping images and blur effect on hover. Contains descriptive text animations.",
-    "dependencies": ["framer-motion", "react"],
+    "dependencies": [
+      "framer-motion",
+      "react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +20,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:47.907Z"
+  "fetchedAt": "2026-01-03T11:28:46.471Z"
 }

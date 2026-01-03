@@ -13,7 +13,11 @@
       "embla-carousel-autoplay",
       "lucide-react"
     ],
-    "registryDependencies": ["button", "carousel", "separator"],
+    "registryDependencies": [
+      "button",
+      "carousel",
+      "separator"
+    ],
     "files": [
       {
         "path": "code/block/integration6.tsx",
@@ -21,5 +25,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:55.462Z"
+  "fetchedAt": "2026-01-03T11:28:53.445Z"
 }

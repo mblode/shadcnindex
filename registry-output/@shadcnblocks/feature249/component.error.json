@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A component displaying a large, animated title with gradient and a below image, structured in a single column layout.",
-    "dependencies": ["motion", "react"],
-    "registryDependencies": ["https://magicui.design/r/aurora-text"],
+    "dependencies": [
+      "motion",
+      "react"
+    ],
+    "registryDependencies": [
+      "https://magicui.design/r/aurora-text"
+    ],
     "files": [
       {
         "path": "code/block/feature249.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:41.852Z"
+  "fetchedAt": "2026-01-03T11:28:40.594Z"
 }

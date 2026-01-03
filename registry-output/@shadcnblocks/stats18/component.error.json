@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Stats",
     "description": "A component featuring a central radar chart and a row of stats below, displaying numerical values and descriptions.",
-    "dependencies": ["react", "recharts"],
-    "registryDependencies": ["chart"],
+    "dependencies": [
+      "react",
+      "recharts"
+    ],
+    "registryDependencies": [
+      "chart"
+    ],
     "files": [
       {
         "path": "code/block/stats18.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:06.218Z"
+  "fetchedAt": "2026-01-03T11:29:03.994Z"
 }

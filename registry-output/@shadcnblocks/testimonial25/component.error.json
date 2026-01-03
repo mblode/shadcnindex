@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Testimonial",
     "description": "Testimonial carousel with navigation buttons, cards displaying quotes, authors, roles, companies, and images.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["button", "card", "carousel"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "button",
+      "card",
+      "carousel"
+    ],
     "files": [
       {
         "path": "code/block/testimonial25.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:07.504Z"
+  "fetchedAt": "2026-01-03T11:29:05.285Z"
 }

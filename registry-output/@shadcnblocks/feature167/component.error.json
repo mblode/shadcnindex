@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A feature presentation block with tabs for \"Smart Task Management,\" \"Automated Scheduling,\" and \"Personalized Insights.\" Includes badges, animated tab indicators, and images for each feature.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["badge", "tabs"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "badge",
+      "tabs"
+    ],
     "files": [
       {
         "path": "code/block/feature167.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:38.758Z"
+  "fetchedAt": "2026-01-03T11:28:37.441Z"
 }

@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Experience",
     "description": "A component showcasing professional experiences in a 6-column layout with sticky summary and contact on the left and detailed list on the right.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["button"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/experience2.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:35.671Z"
+  "fetchedAt": "2026-01-03T11:28:34.314Z"
 }

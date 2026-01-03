@@ -8,7 +8,10 @@
     "type": "registry:block",
     "title": "Projects",
     "description": "A component showcasing video projects with hover-play functionality, dynamic text overlays for studio names and titles, and a header section for exploration.",
-    "dependencies": ["lucide-react", "react"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +20,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:01.854Z"
+  "fetchedAt": "2026-01-03T11:28:59.594Z"
 }

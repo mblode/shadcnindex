@@ -8,8 +8,15 @@
     "type": "registry:block",
     "title": "Hero",
     "description": "A component with a section for customer stories and a video. It has a 2-column layout with text-badges, headlines, paragraphs, and a play button overlaying a looped video. A dialog for fullscreen video playback is included.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["aspect-ratio", "button", "dialog"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "aspect-ratio",
+      "button",
+      "dialog"
+    ],
     "files": [
       {
         "path": "code/block/hero135.tsx",
@@ -17,5 +24,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:48.948Z"
+  "fetchedAt": "2026-01-03T11:28:47.453Z"
 }

@@ -8,8 +8,12 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A component showcasing features with dynamic layouts, multi-column grid, and decorative background gradients. Includes title, descriptions, and images.",
-    "dependencies": ["react"],
-    "registryDependencies": ["card"],
+    "dependencies": [
+      "react"
+    ],
+    "registryDependencies": [
+      "card"
+    ],
     "files": [
       {
         "path": "code/block/feature193.tsx",
@@ -17,5 +21,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:39.751Z"
+  "fetchedAt": "2026-01-03T11:28:38.319Z"
 }

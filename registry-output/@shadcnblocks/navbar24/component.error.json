@@ -8,7 +8,11 @@
     "type": "registry:block",
     "title": "Navbar",
     "description": "A dynamic navbar component featuring an animated dock with interactive icons for navigation linked to different sections.",
-    "dependencies": ["lucide-react", "motion", "react"],
+    "dependencies": [
+      "lucide-react",
+      "motion",
+      "react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +21,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:56.731Z"
+  "fetchedAt": "2026-01-03T11:28:54.550Z"
 }

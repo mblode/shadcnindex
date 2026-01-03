@@ -8,8 +8,12 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A component showcasing platform highlights in a two-column grid with icons, titles, and texts for each feature. Includes a title, description, and buttons above the grid.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["button"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/feature97.tsx",
@@ -17,5 +21,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:46.057Z"
+  "fetchedAt": "2026-01-03T11:28:44.633Z"
 }

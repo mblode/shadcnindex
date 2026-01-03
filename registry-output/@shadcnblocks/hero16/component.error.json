@@ -9,7 +9,9 @@
     "title": "Hero",
     "description": "A component featuring a central column with a bold heading, a text block, and two buttons, above an image with a gradient mask.",
     "dependencies": [],
-    "registryDependencies": ["button"],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/hero16.tsx",
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:49.532Z"
+  "fetchedAt": "2026-01-03T11:28:48.046Z"
 }

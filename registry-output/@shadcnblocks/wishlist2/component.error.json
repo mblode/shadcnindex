@@ -8,7 +8,10 @@
     "type": "registry:block",
     "title": "Wishlist",
     "description": "This component allows users to manage a wishlist by displaying a list of saved items, sorted by various criteria such as date added or price. It supports functionalities like sharing the list, removing items, and adding in-stock items to a cart.",
-    "dependencies": ["lucide-react", "react"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
     "registryDependencies": [
       "aspect-ratio",
       "badge",
@@ -23,5 +26,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:08.591Z"
+  "fetchedAt": "2026-01-03T11:29:06.360Z"
 }

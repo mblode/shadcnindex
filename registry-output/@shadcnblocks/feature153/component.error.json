@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A carousel component displaying key features of various platforms, allowing users to navigate through items with previous and next buttons. Each item presents an image, title, description, and a list of detailed info.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["carousel"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "carousel"
+    ],
     "files": [
       {
         "path": "code/block/feature153.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:38.463Z"
+  "fetchedAt": "2026-01-03T11:28:37.015Z"
 }

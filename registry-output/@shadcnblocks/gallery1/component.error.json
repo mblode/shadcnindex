@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Gallery",
     "description": "A gallery block showcasing 3 case studies with dynamic resizing; includes images, logos, text, and interactive effects on mouse hover.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["badge"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "badge"
+    ],
     "files": [
       {
         "path": "code/block/gallery1.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:47.040Z"
+  "fetchedAt": "2026-01-03T11:28:45.583Z"
 }

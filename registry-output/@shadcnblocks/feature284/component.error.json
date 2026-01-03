@@ -8,7 +8,10 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A grid component displaying features with images, titles, descriptions, and badges. Incorporates a glowing effect on hover. GridLayout varies from 1-4 columns.",
-    "dependencies": ["lucide-react", "react"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
     "registryDependencies": [
       "https://ui.aceternity.com/registry/glowing-effect.json"
     ],
@@ -19,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:43.001Z"
+  "fetchedAt": "2026-01-03T11:28:41.639Z"
 }

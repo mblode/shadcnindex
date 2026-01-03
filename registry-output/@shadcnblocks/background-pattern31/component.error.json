@@ -9,7 +9,9 @@
     "title": "Background-pattern",
     "description": "This component renders a full-screen background featuring a circuit board pattern using CSS gradients, ideal for creating a visually engaging backdrop. It includes the ability to integrate additional styles through a customizable className property and incorporates a pattern placeholder for potential content.",
     "dependencies": [],
-    "registryDependencies": ["https://shadcnblocks.com/r/pattern-placeholder"],
+    "registryDependencies": [
+      "https://shadcnblocks.com/r/pattern-placeholder"
+    ],
     "files": [
       {
         "path": "code/block/background-pattern31.tsx",
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:30.105Z"
+  "fetchedAt": "2026-01-03T11:28:28.769Z"
 }

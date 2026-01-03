@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A 3-column layout component with a semi-transparent overlay, featuring a badge, texts, a separator, and a video demo link on the left, and a video placeholder image spanning 2 columns on the right.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["badge", "separator"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "badge",
+      "separator"
+    ],
     "files": [
       {
         "path": "code/block/feature86.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:45.724Z"
+  "fetchedAt": "2026-01-03T11:28:44.216Z"
 }

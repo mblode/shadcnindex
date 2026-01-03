@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A component featuring a grid layout with varying content blocks, including image backgrounds, statistics, pricing, and avatar groupings, aimed at promoting design quality, efficiency, and a premium library.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["avatar", "button", "card"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "avatar",
+      "button",
+      "card"
+    ],
     "files": [
       {
         "path": "code/block/feature261.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:42.408Z"
+  "fetchedAt": "2026-01-03T11:28:40.942Z"
 }

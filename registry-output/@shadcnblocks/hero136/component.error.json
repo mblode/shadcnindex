@@ -8,8 +8,12 @@
     "type": "registry:block",
     "title": "Hero",
     "description": "A component showcasing a large header, descriptive text, two buttons, logos of trusted companies, and a uniquely styled image display with an asymmetrical background design.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["button"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/hero136.tsx",
@@ -17,5 +21,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:48.958Z"
+  "fetchedAt": "2026-01-03T11:28:47.472Z"
 }

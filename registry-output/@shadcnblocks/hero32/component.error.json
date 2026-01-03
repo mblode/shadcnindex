@@ -9,7 +9,9 @@
     "title": "Hero",
     "description": "A component with a background layer, a left section displaying a heading, description, and button, and a right section with rows of integration icons.",
     "dependencies": [],
-    "registryDependencies": ["button"],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/hero32.tsx",
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:52.981Z"
+  "fetchedAt": "2026-01-03T11:28:51.396Z"
 }

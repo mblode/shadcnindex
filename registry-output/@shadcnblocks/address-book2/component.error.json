@@ -8,7 +8,10 @@
     "type": "registry:block",
     "title": "Address-book",
     "description": "The AddressBook2 component is designed to manage a collection of addresses, allowing users to view, edit, add, and delete addresses within a card-based layout. It provides options to define addresses as home or work, and features tools to select a default address for streamlined address management.",
-    "dependencies": ["lucide-react", "react"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
     "registryDependencies": [
       "badge",
       "button",
@@ -24,5 +27,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:29.221Z"
+  "fetchedAt": "2026-01-03T11:28:27.772Z"
 }

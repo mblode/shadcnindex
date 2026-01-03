@@ -8,7 +8,10 @@
     "type": "registry:block",
     "title": "Reviews",
     "description": "This component displays a list of customer reviews with features like sorting options by helpfulness, date, and rating, and includes visual elements such as avatars, ratings, and progress bars for rating distribution. It provides an interactive user interface where users can view detailed customer feedback and load additional reviews.",
-    "dependencies": ["lucide-react", "react"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
     "registryDependencies": [
       "https://shadcnblocks.com/r/rating",
       "avatar",
@@ -24,5 +27,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:03.317Z"
+  "fetchedAt": "2026-01-03T11:29:01.065Z"
 }

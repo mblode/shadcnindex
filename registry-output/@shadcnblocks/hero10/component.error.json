@@ -9,7 +9,10 @@
     "title": "Hero",
     "description": "A promotional hero block with a background pattern, featuring a badge, a heading, a paragraph, two buttons, and a section showcasing logos.",
     "dependencies": [],
-    "registryDependencies": ["badge", "button"],
+    "registryDependencies": [
+      "badge",
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/hero10.tsx",
@@ -17,5 +20,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:48.241Z"
+  "fetchedAt": "2026-01-03T11:28:46.876Z"
 }

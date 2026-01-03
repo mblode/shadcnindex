@@ -7,8 +7,14 @@
     "name": "stripe-express",
     "type": "registry:block",
     "description": "Stripe payment integration for Express backend with unified routes and webhook handling",
-    "dependencies": ["@paykit-sdk/core", "@paykit-sdk/stripe", "express"],
-    "devDependencies": ["@types/express"],
+    "dependencies": [
+      "@paykit-sdk/core",
+      "@paykit-sdk/stripe",
+      "express"
+    ],
+    "devDependencies": [
+      "@types/express"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -37,5 +43,5 @@
       "auth": "none"
     }
   },
-  "fetchedAt": "2026-01-02T23:59:22.923Z"
+  "fetchedAt": "2026-01-03T11:28:21.636Z"
 }

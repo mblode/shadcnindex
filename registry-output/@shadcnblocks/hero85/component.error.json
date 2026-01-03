@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Hero",
     "description": "A block featuring dynamic carousels, badges, and buttons aimed at showcasing solutions and engaging users. It includes a 2-column layout with auto-scroll carousels.",
-    "dependencies": ["embla-carousel-auto-scroll"],
-    "registryDependencies": ["badge", "button", "carousel"],
+    "dependencies": [
+      "embla-carousel-auto-scroll"
+    ],
+    "registryDependencies": [
+      "badge",
+      "button",
+      "carousel"
+    ],
     "files": [
       {
         "path": "code/block/hero85.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:54.782Z"
+  "fetchedAt": "2026-01-03T11:28:52.607Z"
 }

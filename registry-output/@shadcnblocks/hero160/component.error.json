@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Hero",
     "description": "This component displays an overlay text and buttons on an image backdrop with an aspect-ratio image below. Features a badge with an award, a gradient headline, a subtext, and action buttons. Also includes a small text with icons.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["aspect-ratio", "badge", "button"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "aspect-ratio",
+      "badge",
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/hero160.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:49.534Z"
+  "fetchedAt": "2026-01-03T11:28:48.039Z"
 }

@@ -8,8 +8,16 @@
     "type": "registry:block",
     "title": "Pricing",
     "description": "A pricing component with a toggle for monthly/yearly billing, three plan options, and includes feature lists, using cards.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["button", "card", "separator", "toggle-group"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "button",
+      "card",
+      "separator",
+      "toggle-group"
+    ],
     "files": [
       {
         "path": "code/block/pricing34.tsx",
@@ -17,5 +25,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:58.419Z"
+  "fetchedAt": "2026-01-03T11:28:56.153Z"
 }

@@ -6,7 +6,9 @@
   "item": {
     "name": "animated-feature-card-6",
     "type": "registry:block",
-    "dependencies": ["motion"],
+    "dependencies": [
+      "motion"
+    ],
     "files": [
       {
         "path": "registry/blocks/animated-feature-card-6.tsx",
@@ -17,5 +19,5 @@
       "height": 387
     }
   },
-  "fetchedAt": "2026-01-02T23:59:17.417Z"
+  "fetchedAt": "2026-01-03T11:28:15.836Z"
 }

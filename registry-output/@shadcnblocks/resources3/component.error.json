@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Resources",
     "description": "A component showcasing a featured post with an image and a list of resources, each with a date, category, and title, arranged in columns.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["badge", "button"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "badge",
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/resources3.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:03.020Z"
+  "fetchedAt": "2026-01-03T11:29:00.782Z"
 }

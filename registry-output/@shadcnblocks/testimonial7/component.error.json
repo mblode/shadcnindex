@@ -8,8 +8,16 @@
     "type": "registry:block",
     "title": "Testimonial",
     "description": "A component showcasing two auto-scrolling carousels of client testimonials, with avatars, names, roles, and quotes, plus a section header.",
-    "dependencies": ["embla-carousel-auto-scroll", "react"],
-    "registryDependencies": ["avatar", "button", "card", "carousel"],
+    "dependencies": [
+      "embla-carousel-auto-scroll",
+      "react"
+    ],
+    "registryDependencies": [
+      "avatar",
+      "button",
+      "card",
+      "carousel"
+    ],
     "files": [
       {
         "path": "code/block/testimonial7.tsx",
@@ -17,5 +25,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:07.800Z"
+  "fetchedAt": "2026-01-03T11:29:05.572Z"
 }

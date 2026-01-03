@@ -8,7 +8,10 @@
     "type": "registry:block",
     "title": "Projects15c",
     "description": "A video gallery block with hover-play functionality, showcasing project titles and studio names over thumbnails.",
-    "dependencies": ["lucide-react", "react"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +20,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:02.033Z"
+  "fetchedAt": "2026-01-03T11:28:59.704Z"
 }

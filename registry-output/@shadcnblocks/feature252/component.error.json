@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A component with a visual ripple effect, encapsulating a header, a subtext, and a button within a bordered, rounded container.",
-    "dependencies": ["react"],
-    "registryDependencies": ["https://magicui.design/r/ripple", "button"],
+    "dependencies": [
+      "react"
+    ],
+    "registryDependencies": [
+      "https://magicui.design/r/ripple",
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/feature252.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:42.129Z"
+  "fetchedAt": "2026-01-03T11:28:40.705Z"
 }

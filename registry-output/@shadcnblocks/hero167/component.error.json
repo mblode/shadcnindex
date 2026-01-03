@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Hero",
     "description": "A dual-column component with text and buttons in one and dynamic images in the other, featuring outlined buttons that change on hover, and images within aspect ratios.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["aspect-ratio", "button"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "aspect-ratio",
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/hero167.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:49.757Z"
+  "fetchedAt": "2026-01-03T11:28:48.315Z"
 }

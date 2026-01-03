@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A component displaying features with interactive tabs and images. Uses a 2-column layout, including a dynamic image and detailed tabs for each feature. Includes buttons.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["button", "tabs"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "button",
+      "tabs"
+    ],
     "files": [
       {
         "path": "code/block/feature184.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:39.464Z"
+  "fetchedAt": "2026-01-03T11:28:37.996Z"
 }

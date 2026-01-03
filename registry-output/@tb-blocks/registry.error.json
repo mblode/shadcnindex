@@ -1,6 +1,6 @@
 {
   "registry": "@tb-blocks",
   "url": "https://tailwindbuilder.ai/r/blocks/registry.json",
-  "error": "HTTP 500 Internal Server Error",
-  "fetchedAt": "2026-01-03T00:00:36.323Z"
+  "error": "HTTP 404 Not Found",
+  "fetchedAt": "2026-01-03T11:29:23.894Z"
 }

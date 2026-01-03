@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A component featuring four cards with animations, icons, and text for showcasing features such as workflows, task tracking, and integrations.",
-    "dependencies": ["motion", "react"],
-    "registryDependencies": ["https://magicui.design/r/globe", "card"],
+    "dependencies": [
+      "motion",
+      "react"
+    ],
+    "registryDependencies": [
+      "https://magicui.design/r/globe",
+      "card"
+    ],
     "files": [
       {
         "path": "code/block/feature251.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:42.126Z"
+  "fetchedAt": "2026-01-03T11:28:40.656Z"
 }

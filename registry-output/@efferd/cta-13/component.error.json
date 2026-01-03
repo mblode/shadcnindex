@@ -6,16 +6,22 @@
   "item": {
     "name": "cta-13",
     "description": "Animated circular border with centered heading and action button.",
-    "dependencies": ["motion"],
-    "registryDependencies": ["button"],
+    "dependencies": [
+      "motion"
+    ],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "registry/cta/13/call-to-action.tsx",
         "type": "registry:component"
       }
     ],
-    "categories": ["cta"],
+    "categories": [
+      "cta"
+    ],
     "type": "registry:block"
   },
-  "fetchedAt": "2026-01-02T23:59:11.798Z"
+  "fetchedAt": "2026-01-03T11:28:09.208Z"
 }

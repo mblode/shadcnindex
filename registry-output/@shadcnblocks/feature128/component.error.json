@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A component featuring a title, a subtext, and a 2-3 column layout of items, each with an icon and a description.",
-    "dependencies": ["lucide-react"],
+    "dependencies": [
+      "lucide-react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:37.502Z"
+  "fetchedAt": "2026-01-03T11:28:36.157Z"
 }

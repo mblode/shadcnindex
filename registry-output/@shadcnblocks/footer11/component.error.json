@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "Footer",
     "description": "A component with a logo, menu links across 3 columns, social media icons, and a large image. Offers product, company, and legal info sections.",
-    "dependencies": ["lucide-react"],
+    "dependencies": [
+      "lucide-react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:46.313Z"
+  "fetchedAt": "2026-01-03T11:28:44.785Z"
 }

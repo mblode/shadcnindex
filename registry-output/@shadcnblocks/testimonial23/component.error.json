@@ -8,8 +8,16 @@
     "type": "registry:block",
     "title": "Testimonial",
     "description": "A masonry layout component displaying customer testimonials with avatars, feedback, and dates. Includes a title, subtitle, and a \"See More\" button.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["avatar", "badge", "button", "card"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "avatar",
+      "badge",
+      "button",
+      "card"
+    ],
     "files": [
       {
         "path": "code/block/testimonial23.tsx",
@@ -17,5 +25,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:07.503Z"
+  "fetchedAt": "2026-01-03T11:29:05.259Z"
 }

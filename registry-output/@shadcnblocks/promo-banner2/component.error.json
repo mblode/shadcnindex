@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "Promo-banner",
     "description": "This component displays a promotional banner with customizable text for a message, discount, and a call-to-action link. It is designed to enhance user engagement by offering a clickable area that leads to more details or a shopping page.",
-    "dependencies": ["lucide-react"],
+    "dependencies": [
+      "lucide-react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:02.616Z"
+  "fetchedAt": "2026-01-03T11:29:00.323Z"
 }

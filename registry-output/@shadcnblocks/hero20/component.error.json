@@ -8,8 +8,16 @@
     "type": "registry:block",
     "title": "Hero",
     "description": "A carousel-linked accordion block with a 2-column layout: icons & FAQs on the left, images rotating in sync on the right. Unique features include timed content transition and interactive FAQ accordion.",
-    "dependencies": ["embla-carousel-fade", "lucide-react", "react"],
-    "registryDependencies": ["accordion", "badge", "carousel"],
+    "dependencies": [
+      "embla-carousel-fade",
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "accordion",
+      "badge",
+      "carousel"
+    ],
     "files": [
       {
         "path": "code/block/hero20.tsx",
@@ -17,5 +25,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:50.826Z"
+  "fetchedAt": "2026-01-03T11:28:49.255Z"
 }

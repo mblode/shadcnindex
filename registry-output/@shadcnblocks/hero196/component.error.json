@@ -14,7 +14,13 @@
       "react-hook-form",
       "zod"
     ],
-    "registryDependencies": ["badge", "button", "form", "input", "tabs"],
+    "registryDependencies": [
+      "badge",
+      "button",
+      "form",
+      "input",
+      "tabs"
+    ],
     "files": [
       {
         "path": "code/block/hero196.tsx",
@@ -22,5 +28,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:50.776Z"
+  "fetchedAt": "2026-01-03T11:28:49.224Z"
 }

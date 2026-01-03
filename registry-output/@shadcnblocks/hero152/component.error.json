@@ -8,8 +8,12 @@
     "type": "registry:block",
     "title": "Hero",
     "description": "This component features a centered column with a trusted badge, a bold heading, a descriptive paragraph, and two buttons. It also includes an angled 3-image composition.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["button"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/hero152.tsx",
@@ -17,5 +21,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:49.386Z"
+  "fetchedAt": "2026-01-03T11:28:47.986Z"
 }

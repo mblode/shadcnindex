@@ -9,7 +9,9 @@
     "title": "Gallery",
     "description": "A component displaying a gallery title, description, and a marquee of images with a central featured image that reveals a caption on hover, surrounded by fading edges and decorative skew elements.",
     "dependencies": [],
-    "registryDependencies": ["https://magicui.design/r/marquee"],
+    "registryDependencies": [
+      "https://magicui.design/r/marquee"
+    ],
     "files": [
       {
         "path": "code/block/gallery29.tsx",
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:47.868Z"
+  "fetchedAt": "2026-01-03T11:28:46.310Z"
 }

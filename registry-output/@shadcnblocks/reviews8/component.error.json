@@ -8,7 +8,10 @@
     "type": "registry:block",
     "title": "Reviews",
     "description": "This component provides a review carousel functionality, allowing users to scroll through and view customer reviews, both text-based and image-supported, with ratings and author details. Ideal for showcasing testimonials or product feedback, the block includes navigational buttons for smooth scrolling and individual indicators for easy selection.",
-    "dependencies": ["lucide-react", "react"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
     "registryDependencies": [
       "https://shadcnblocks.com/r/rating",
       "aspect-ratio",
@@ -23,5 +26,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:03.360Z"
+  "fetchedAt": "2026-01-03T11:29:01.070Z"
 }

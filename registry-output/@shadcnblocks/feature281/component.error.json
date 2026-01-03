@@ -8,8 +8,16 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A testimonial display component featuring an animated card stack with user feedback, adjustable through attributes like offset and scale. Includes a \"Read More\" button.",
-    "dependencies": ["framer-motion", "lucide-react", "react", "react-icons"],
-    "registryDependencies": ["avatar", "button"],
+    "dependencies": [
+      "framer-motion",
+      "lucide-react",
+      "react",
+      "react-icons"
+    ],
+    "registryDependencies": [
+      "avatar",
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/feature281.tsx",
@@ -17,5 +25,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:42.982Z"
+  "fetchedAt": "2026-01-03T11:28:41.610Z"
 }

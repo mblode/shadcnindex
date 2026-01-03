@@ -9,7 +9,9 @@
     "title": "Feature",
     "description": "A component showcasing a title, a button, and a 4-column layout with cards, each containing images, titles, and text about different features.",
     "dependencies": [],
-    "registryDependencies": ["button"],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/feature94.tsx",
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:46.028Z"
+  "fetchedAt": "2026-01-03T11:28:44.500Z"
 }

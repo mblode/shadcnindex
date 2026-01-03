@@ -8,8 +8,16 @@
     "type": "registry:block",
     "title": "Contact",
     "description": "A component featuring a contact form with a title, decorative dashed line separator, address/email/social links, and an inquiry form with fields for name, email, company, employee count, and message.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["button", "input", "label", "textarea"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "button",
+      "input",
+      "label",
+      "textarea"
+    ],
     "files": [
       {
         "path": "code/block/contact10.tsx",
@@ -17,5 +25,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:33.720Z"
+  "fetchedAt": "2026-01-03T11:28:32.432Z"
 }

@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "Hero",
     "description": "A component featuring a 3D marquee of images, an email subscription form, and a section with a custom logo and descriptive text.",
-    "dependencies": ["react"],
+    "dependencies": [
+      "react"
+    ],
     "registryDependencies": [
       "https://ui.aceternity.com/registry/3d-marquee.json",
       "button",
@@ -21,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:52.297Z"
+  "fetchedAt": "2026-01-03T11:28:50.676Z"
 }

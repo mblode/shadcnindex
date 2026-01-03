@@ -9,7 +9,9 @@
     "title": "Feature",
     "description": "A component featuring dual interactive panels with a central decorative divider, expanding on hover. Each contains a button, heading, and text, against a backdrop image with gradient overlays.",
     "dependencies": [],
-    "registryDependencies": ["button"],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/feature149.tsx",
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:38.344Z"
+  "fetchedAt": "2026-01-03T11:28:36.907Z"
 }

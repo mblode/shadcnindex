@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Footer",
     "description": "A component showcasing a footer layout with logos, navigation links across 4 columns, download buttons, and social icons.",
-    "dependencies": ["react-icons"],
-    "registryDependencies": ["https://shadcnblocks.com/r/logo", "separator"],
+    "dependencies": [
+      "react-icons"
+    ],
+    "registryDependencies": [
+      "https://shadcnblocks.com/r/logo",
+      "separator"
+    ],
     "files": [
       {
         "path": "code/block/footer1.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:46.238Z"
+  "fetchedAt": "2026-01-03T11:28:44.785Z"
 }

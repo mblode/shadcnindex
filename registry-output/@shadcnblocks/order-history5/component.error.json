@@ -8,7 +8,10 @@
     "type": "registry:block",
     "title": "Order-history",
     "description": "This component allows users to view, filter, and search through their order history, providing details such as order date, number, status, and items. Users can track shipments, initiate returns, and access additional order details, enhancing order management and accessibility.",
-    "dependencies": ["lucide-react", "react"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
     "registryDependencies": [
       "aspect-ratio",
       "button",
@@ -24,5 +27,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:57.305Z"
+  "fetchedAt": "2026-01-03T11:28:55.108Z"
 }

@@ -9,7 +9,9 @@
     "title": "Blog",
     "description": "A blog display component with a headline, intro text, and a grid of posts (up to 3 columns). It features images, badges, authors&#x27; avatars, and pagination.",
     "dependencies": [],
-    "registryDependencies": ["button"],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/blog6.tsx",
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:31.639Z"
+  "fetchedAt": "2026-01-03T11:28:30.335Z"
 }

@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A component showcasing features with an animated background, a central title, a labeled introduction, and a two-column list, each with an icon and a description.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["badge"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "badge"
+    ],
     "files": [
       {
         "path": "code/block/feature271.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:42.694Z"
+  "fetchedAt": "2026-01-03T11:28:41.196Z"
 }

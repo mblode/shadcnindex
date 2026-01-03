@@ -8,7 +8,10 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A component showcasing smart home features with a 2-column layout: one side highlights benefits (intuitive lighting, security, ecosystem integration, social connectivity) with icons, the other displays images.",
-    "dependencies": ["lucide-react", "react-icons"],
+    "dependencies": [
+      "lucide-react",
+      "react-icons"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +20,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:41.273Z"
+  "fetchedAt": "2026-01-03T11:28:39.831Z"
 }

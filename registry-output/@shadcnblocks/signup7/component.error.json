@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Signup",
     "description": "This component is a two-column layout for account creation, featuring sign-up options with Google, Email, or SSO, terms agreement links, and a side section showcasing benefits and logos.",
-    "dependencies": ["lucide-react", "react-icons"],
-    "registryDependencies": ["button", "separator"],
+    "dependencies": [
+      "lucide-react",
+      "react-icons"
+    ],
+    "registryDependencies": [
+      "button",
+      "separator"
+    ],
     "files": [
       {
         "path": "code/block/signup7.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:05.222Z"
+  "fetchedAt": "2026-01-03T11:29:03.365Z"
 }

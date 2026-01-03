@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Waitlist",
     "description": "The Waitlist3 component is designed to collect user sign-ups for an early access program, featuring a company logo, a descriptive badge, and a registration form with email input. It includes visuals of joined members and prominent company branding, allowing users to quickly engage and learn more about the offer through a call-to-action button.",
-    "dependencies": ["react"],
-    "registryDependencies": ["badge", "button", "input"],
+    "dependencies": [
+      "react"
+    ],
+    "registryDependencies": [
+      "badge",
+      "button",
+      "input"
+    ],
     "files": [
       {
         "path": "code/block/waitlist3.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:08.600Z"
+  "fetchedAt": "2026-01-03T11:29:06.296Z"
 }

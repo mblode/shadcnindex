@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Hero",
     "description": "A component showcasing a business service with a catchy headline, description, upgrade button, overlapped avatars indicating user trust, and a side image.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["avatar", "button"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "avatar",
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/hero75.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:53.976Z"
+  "fetchedAt": "2026-01-03T11:28:52.365Z"
 }

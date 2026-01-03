@@ -8,7 +8,11 @@
     "type": "registry:block",
     "title": "Projects",
     "description": "A dynamic showcase of projects with animations reacting to scrolling and mouse movement. Displays projects in a single-column layout with expandable image and text animations upon hover.",
-    "dependencies": ["framer-motion", "lucide-react", "react"],
+    "dependencies": [
+      "framer-motion",
+      "lucide-react",
+      "react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +21,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:02.339Z"
+  "fetchedAt": "2026-01-03T11:28:59.992Z"
 }

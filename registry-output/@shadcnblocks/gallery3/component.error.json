@@ -8,8 +8,15 @@
     "type": "registry:block",
     "title": "Gallery",
     "description": "A carousel component showcasing case studies with navigational arrows and dynamic scroll availability indicators, including images, titles, descriptions, and read more links.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["badge", "button", "carousel"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "badge",
+      "button",
+      "carousel"
+    ],
     "files": [
       {
         "path": "code/block/gallery3.tsx",
@@ -17,5 +24,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:47.848Z"
+  "fetchedAt": "2026-01-03T11:28:46.417Z"
 }

@@ -8,8 +8,12 @@
     "type": "registry:block",
     "title": "Project5g",
     "description": "An artistic component featuring staggered fade-in animations, structured into a header and main area. It contains a 5-column grid layout in the header and grids that shift from 3 to 2 columns in the main part, for displaying text and images related to an art exhibition. Unique elements include variable text spans and carefully positioned images within adjustable aspect ratios.",
-    "dependencies": ["framer-motion"],
-    "registryDependencies": ["button"],
+    "dependencies": [
+      "framer-motion"
+    ],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/project5g.tsx",
@@ -17,5 +21,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:01.217Z"
+  "fetchedAt": "2026-01-03T11:28:58.944Z"
 }

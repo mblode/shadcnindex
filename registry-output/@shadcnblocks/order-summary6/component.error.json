@@ -8,8 +8,15 @@
     "type": "registry:block",
     "title": "Order-summary",
     "description": "This component is designed to display an order confirmation dialog, highlighting key details such as order number, estimated delivery date, itemized products with images, quantities, and prices. It also features a summary of the order costs including subtotal, shipping, and total, with options to track the order or continue shopping.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["aspect-ratio", "button", "dialog", "separator"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "aspect-ratio",
+      "button",
+      "dialog",
+      "separator"
+    ],
     "files": [
       {
         "path": "code/block/order-summary6.tsx",
@@ -17,5 +24,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:57.547Z"
+  "fetchedAt": "2026-01-03T11:28:55.234Z"
 }

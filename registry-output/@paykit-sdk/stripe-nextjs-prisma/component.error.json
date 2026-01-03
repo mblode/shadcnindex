@@ -7,9 +7,15 @@
     "name": "stripe-nextjs-prisma",
     "type": "registry:block",
     "description": "Stripe payment integration for Next.js App Router with Prisma ORM",
-    "dependencies": ["@prisma/client"],
-    "devDependencies": ["prisma"],
-    "registryDependencies": ["https://usepaykit.dev/r/stripe-nextjs"],
+    "dependencies": [
+      "@prisma/client"
+    ],
+    "devDependencies": [
+      "prisma"
+    ],
+    "registryDependencies": [
+      "https://usepaykit.dev/r/stripe-nextjs"
+    ],
     "files": [
       {
         "path": "shared/schema/prisma.prisma",
@@ -27,5 +33,5 @@
       "auth": "none"
     }
   },
-  "fetchedAt": "2026-01-02T23:59:22.955Z"
+  "fetchedAt": "2026-01-03T11:28:21.594Z"
 }

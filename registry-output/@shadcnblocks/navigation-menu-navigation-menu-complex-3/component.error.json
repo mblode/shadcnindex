@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Navigation-menu/navigation-menu-complex-",
     "description": "A navigation-menu/navigation-menu-complex- example",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["navigation-menu", "tabs"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "navigation-menu",
+      "tabs"
+    ],
     "files": [
       {
         "path": "code/example/navigation-menu/navigation-menu-complex-3.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:18.848Z"
+  "fetchedAt": "2026-01-03T11:29:16.303Z"
 }

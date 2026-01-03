@@ -8,7 +8,11 @@
     "type": "registry:block",
     "title": "Download",
     "description": "A component providing options to download software, with tabs for Linux, MacOS, and a waitlist for Windows. Features version selection and size details.",
-    "dependencies": ["lucide-react", "react", "react-icons"],
+    "dependencies": [
+      "lucide-react",
+      "react",
+      "react-icons"
+    ],
     "registryDependencies": [
       "https://www.kibo-ui.com/r/snippet.json",
       "button",
@@ -22,5 +26,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:35.377Z"
+  "fetchedAt": "2026-01-03T11:28:34.019Z"
 }

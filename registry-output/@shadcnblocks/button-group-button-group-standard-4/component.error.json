@@ -9,7 +9,10 @@
     "title": "Button-group/button-group-standard-",
     "description": "A button-group/button-group-standard- example",
     "dependencies": [],
-    "registryDependencies": ["button", "button-group"],
+    "registryDependencies": [
+      "button",
+      "button-group"
+    ],
     "files": [
       {
         "path": "code/example/button-group/button-group-standard-4.tsx",
@@ -17,5 +20,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:12.503Z"
+  "fetchedAt": "2026-01-03T11:29:10.181Z"
 }

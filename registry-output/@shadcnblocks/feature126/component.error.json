@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "An accordion-style component displays key features with titles, descriptions, and images. Allows toggling between sections to reveal content and images.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["accordion", "button"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "accordion",
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/feature126.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:37.376Z"
+  "fetchedAt": "2026-01-03T11:28:35.969Z"
 }

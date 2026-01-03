@@ -8,7 +8,10 @@
     "type": "registry:block",
     "title": "Projects",
     "description": "A component displaying items in a grid, with dynamic filtering. It shows 1-2 columns of items, each with hover effects revealing details. Unique: filter-based display animation.",
-    "dependencies": ["framer-motion", "react"],
+    "dependencies": [
+      "framer-motion",
+      "react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +20,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:02.507Z"
+  "fetchedAt": "2026-01-03T11:29:00.242Z"
 }

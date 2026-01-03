@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "Service",
     "description": "A component showcasing UX/UI design services with a hero section and a sidebar detailing expertise. Layout includes a 2:1 column split with services listed and a sidebar for stats.",
-    "dependencies": ["lucide-react"],
+    "dependencies": [
+      "lucide-react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:03.396Z"
+  "fetchedAt": "2026-01-03T11:29:01.138Z"
 }

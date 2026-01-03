@@ -8,8 +8,12 @@
     "type": "registry:block",
     "title": "Footer",
     "description": "A multi-layout footer block featuring marketing messages, a pricing card, link sections, and legal/social links. Incorporates colorful icons and hover effects.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["button"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/footer9.tsx",
@@ -17,5 +21,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:46.937Z"
+  "fetchedAt": "2026-01-03T11:28:45.547Z"
 }

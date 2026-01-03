@@ -8,8 +8,12 @@
     "type": "registry:block",
     "title": "Hero",
     "description": "A component showcasing AI-powered proposal creation with engaging features, including decorative icons and dashed banners emphasizing speed, security, and professionalism. Center-aligns its title and description within a single column layout, accentuated by a subtle background pattern and a call-to-action button.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["button"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/hero57.tsx",
@@ -17,5 +21,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:53.603Z"
+  "fetchedAt": "2026-01-03T11:28:51.947Z"
 }

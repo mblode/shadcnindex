@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Trust-strip",
     "description": "This component displays trust indicators including a star rating with verified review count, feature icons with descriptions for services like free shipping and 24/7 support, and a verified seller badge. It is designed to enhance user trust and credibility perception by highlighting key benefits and seller authenticity.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["badge", "separator"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "badge",
+      "separator"
+    ],
     "files": [
       {
         "path": "code/block/trust-strip4.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:08.362Z"
+  "fetchedAt": "2026-01-03T11:29:06.311Z"
 }

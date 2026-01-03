@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Navbar",
     "description": "A navigational component with six main categories, each expanding into detailed sub-menus including solutions, products, company information, customer stories, partner programs, and resources. Features interactive elements for a comprehensive exploration.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["button", "navigation-menu"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "button",
+      "navigation-menu"
+    ],
     "files": [
       {
         "path": "code/block/navbar4.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:56.894Z"
+  "fetchedAt": "2026-01-03T11:28:54.598Z"
 }

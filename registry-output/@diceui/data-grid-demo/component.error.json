@@ -11,8 +11,12 @@
       "lucide-react",
       "sonner"
     ],
-    "devDependencies": ["@faker-js/faker"],
-    "registryDependencies": ["data-grid"],
+    "devDependencies": [
+      "@faker-js/faker"
+    ],
+    "registryDependencies": [
+      "data-grid"
+    ],
     "files": [
       {
         "path": "examples/data-grid-demo.tsx",
@@ -21,5 +25,5 @@
     ],
     "type": "registry:example"
   },
-  "fetchedAt": "2026-01-02T23:59:09.402Z"
+  "fetchedAt": "2026-01-03T11:28:05.983Z"
 }

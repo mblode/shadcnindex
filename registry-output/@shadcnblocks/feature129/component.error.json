@@ -8,8 +8,12 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A tabbed component showcasing integrations like Slack & Google Drive, featuring descriptions, images, and \"Learn more\" links. Has a title and subtitle.",
-    "dependencies": ["react"],
-    "registryDependencies": ["tabs"],
+    "dependencies": [
+      "react"
+    ],
+    "registryDependencies": [
+      "tabs"
+    ],
     "files": [
       {
         "path": "code/block/feature129.tsx",
@@ -17,5 +21,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:37.454Z"
+  "fetchedAt": "2026-01-03T11:28:36.134Z"
 }

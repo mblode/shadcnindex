@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Services",
     "description": "A component showcasing various digital services, each with an icon, title, duration, price, and featured status. Includes an intro badge, section headings, and a grid layout with 1-2 columns. Features detailed service descriptions, included items, deliverables with badges, and customizable \"Get Started\" buttons. A final call-to-action offers custom solutions.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["badge", "button"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "badge",
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/services10.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:03.650Z"
+  "fetchedAt": "2026-01-03T11:29:01.365Z"
 }

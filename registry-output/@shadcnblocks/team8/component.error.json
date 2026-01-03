@@ -9,7 +9,10 @@
     "title": "Team",
     "description": "A carousel component showcasing team members with images, roles, and years of experience. Includes navigation buttons and a separator.",
     "dependencies": [],
-    "registryDependencies": ["carousel", "separator"],
+    "registryDependencies": [
+      "carousel",
+      "separator"
+    ],
     "files": [
       {
         "path": "code/block/team8.tsx",
@@ -17,5 +20,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:06.848Z"
+  "fetchedAt": "2026-01-03T11:29:04.702Z"
 }

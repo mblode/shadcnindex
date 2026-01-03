@@ -8,7 +8,10 @@
     "type": "registry:block",
     "title": "Projects",
     "description": "A gallery component with a 2-column layout showcasing 4 project cards that animate on hover and reveal details.",
-    "dependencies": ["framer-motion", "lucide-react"],
+    "dependencies": [
+      "framer-motion",
+      "lucide-react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +20,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:02.492Z"
+  "fetchedAt": "2026-01-03T11:29:00.220Z"
 }

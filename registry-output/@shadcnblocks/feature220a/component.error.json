@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Feature220a",
     "description": "A component featuring badges, headings, text, a large button, and a video. It includes stats in a 3-column layout, a dotted background pattern, and primary color highlights.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["aspect-ratio", "badge", "button"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "aspect-ratio",
+      "badge",
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/feature220a.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:40.892Z"
+  "fetchedAt": "2026-01-03T11:28:39.571Z"
 }

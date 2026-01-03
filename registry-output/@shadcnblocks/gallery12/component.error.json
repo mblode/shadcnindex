@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Gallery",
     "description": "A component displaying a carousel of features with images, titles, and descriptions, navigable via prev/next buttons. It includes a heading and subtext above the carousel.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["button", "carousel"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "button",
+      "carousel"
+    ],
     "files": [
       {
         "path": "code/block/gallery12.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:47.177Z"
+  "fetchedAt": "2026-01-03T11:28:45.653Z"
 }

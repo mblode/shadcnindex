@@ -8,7 +8,10 @@
     "type": "registry:block",
     "title": "Pricing",
     "description": "A premium plan showcase block with a title, subtitle, price, and features list followed by a button. Uses iconography for feature representation.",
-    "dependencies": ["lucide-react", "react"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
     "registryDependencies": [
       "https://ui.aceternity.com/registry/card-spotlight.json",
       "button"
@@ -20,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:58.485Z"
+  "fetchedAt": "2026-01-03T11:28:56.323Z"
 }

@@ -6,7 +6,11 @@
   "item": {
     "name": "input-group",
     "type": "registry:ui",
-    "registryDependencies": ["button", "input", "textarea"],
+    "registryDependencies": [
+      "button",
+      "input",
+      "textarea"
+    ],
     "files": [
       {
         "path": "ui/input-group.tsx",
@@ -14,5 +18,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T07:39:45.697Z"
+  "fetchedAt": "2026-01-03T11:28:25.658Z"
 }

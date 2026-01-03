@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Team",
     "description": "A component featuring a team carousel with animated images/animations for mobile and a grid layout for other devices.",
-    "dependencies": ["framer-motion", "lucide-react", "react"],
-    "registryDependencies": ["carousel"],
+    "dependencies": [
+      "framer-motion",
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "carousel"
+    ],
     "files": [
       {
         "path": "code/block/team13.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:06.564Z"
+  "fetchedAt": "2026-01-03T11:29:04.414Z"
 }

@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Changelog",
     "description": "A changelog component displays updates with dialogs for detailed view, including versions, dates, images, contributors, and excerpts. Features tooltip actions.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["button", "dialog", "tooltip"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "button",
+      "dialog",
+      "tooltip"
+    ],
     "files": [
       {
         "path": "code/block/changelog6.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:32.657Z"
+  "fetchedAt": "2026-01-03T11:28:31.190Z"
 }

@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A component showcasing a feature group with a tagline, title, and description. Includes a 4-column grid with clickable images and \"Read more\" links.",
-    "dependencies": ["lucide-react"],
+    "dependencies": [
+      "lucide-react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:45.515Z"
+  "fetchedAt": "2026-01-03T11:28:44.062Z"
 }

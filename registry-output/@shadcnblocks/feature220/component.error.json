@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A component showcasing user stats, a customer testimonial with avatar, and an autoplaying video in a 2-column layout. It includes styled text and a button.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["aspect-ratio", "button"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "aspect-ratio",
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/feature220.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:40.904Z"
+  "fetchedAt": "2026-01-03T11:28:39.567Z"
 }

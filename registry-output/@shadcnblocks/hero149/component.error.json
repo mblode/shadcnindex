@@ -8,8 +8,15 @@
     "type": "registry:block",
     "title": "Hero",
     "description": "A component featuring a headline, description, buttons for a demo and video, benefits list, and a large image with unique background patterns. Includes a video dialog.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["aspect-ratio", "button", "dialog"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "aspect-ratio",
+      "button",
+      "dialog"
+    ],
     "files": [
       {
         "path": "code/block/hero149.tsx",
@@ -17,5 +24,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:49.247Z"
+  "fetchedAt": "2026-01-03T11:28:47.758Z"
 }

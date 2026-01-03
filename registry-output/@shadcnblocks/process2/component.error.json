@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Process",
     "description": "A component visualizing a 4-step process with dynamic image transitions and a contact button, spread over 2 columns in a larger view.",
-    "dependencies": ["framer-motion", "lucide-react", "react"],
-    "registryDependencies": ["button"],
+    "dependencies": [
+      "framer-motion",
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/process2.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:58.715Z"
+  "fetchedAt": "2026-01-03T11:28:56.610Z"
 }

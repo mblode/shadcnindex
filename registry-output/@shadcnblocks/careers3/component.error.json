@@ -8,8 +8,12 @@
     "type": "registry:block",
     "title": "Careers",
     "description": "A block displaying job openings by category, with titles, descriptions, locations, and links. Uses badges for categories and icons for location/navigation.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["badge"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "badge"
+    ],
     "files": [
       {
         "path": "code/block/careers3.tsx",
@@ -17,5 +21,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:31.922Z"
+  "fetchedAt": "2026-01-03T11:28:30.620Z"
 }

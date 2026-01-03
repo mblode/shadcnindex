@@ -8,7 +8,10 @@
     "type": "registry:block",
     "title": "Projects15b",
     "description": "A video gallery with a header and hover-to-play videos laid out in a 2-column grid, featuring project titles and studio names.",
-    "dependencies": ["lucide-react", "react"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +20,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:01.878Z"
+  "fetchedAt": "2026-01-03T11:28:59.701Z"
 }

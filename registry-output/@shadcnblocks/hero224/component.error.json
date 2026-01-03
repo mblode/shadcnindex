@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Hero",
     "description": "A component with a headline, text, two buttons, and an image cloud. It&#x27;s a split layout with text on one side and images on the other.",
-    "dependencies": ["lucide-react", "react", "react-dom"],
-    "registryDependencies": ["button"],
+    "dependencies": [
+      "lucide-react",
+      "react",
+      "react-dom"
+    ],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/hero224.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:51.621Z"
+  "fetchedAt": "2026-01-03T11:28:50.108Z"
 }

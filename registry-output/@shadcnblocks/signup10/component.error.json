@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Signup",
     "description": "A signup component with a logo, social sign-up option, email input, continue button, and legal links. It has a two-column layout on larger screens with an image on one side.",
-    "dependencies": ["react"],
-    "registryDependencies": ["button", "input", "separator"],
+    "dependencies": [
+      "react"
+    ],
+    "registryDependencies": [
+      "button",
+      "input",
+      "separator"
+    ],
     "files": [
       {
         "path": "code/block/signup10.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:04.930Z"
+  "fetchedAt": "2026-01-03T11:29:03.103Z"
 }

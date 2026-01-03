@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Gallery",
     "description": "A gallery component showcasing items in a grid that adjusts from 1 to 3 columns based on screen size. Features hover effects and links to more details.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["https://ui.aceternity.com/registry/lens.json"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "https://ui.aceternity.com/registry/lens.json"
+    ],
     "files": [
       {
         "path": "code/block/gallery33.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:47.921Z"
+  "fetchedAt": "2026-01-03T11:28:46.588Z"
 }

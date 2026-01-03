@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "Stats",
     "description": "A component displays performance metrics in 3 columns, highlighting values with dynamic icons and bold percentage figures.",
-    "dependencies": ["lucide-react"],
+    "dependencies": [
+      "lucide-react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:06.275Z"
+  "fetchedAt": "2026-01-03T11:29:04.214Z"
 }

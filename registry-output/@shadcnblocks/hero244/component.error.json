@@ -8,7 +8,10 @@
     "type": "registry:block",
     "title": "Hero",
     "description": "A component featuring a two-column layout: one for promotional content including a header, text, and buttons; the other showcases draggable cards with images and titles.",
-    "dependencies": ["lucide-react", "react"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
     "registryDependencies": [
       "https://ui.aceternity.com/registry/draggable-card.json",
       "button"
@@ -20,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:52.416Z"
+  "fetchedAt": "2026-01-03T11:28:50.829Z"
 }

@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Hover-card/hover-card-preview-",
     "description": "A hover-card/hover-card-preview- example",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["badge", "hover-card"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "badge",
+      "hover-card"
+    ],
     "files": [
       {
         "path": "code/example/hover-card/hover-card-preview-4.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:15.879Z"
+  "fetchedAt": "2026-01-03T11:29:13.623Z"
 }

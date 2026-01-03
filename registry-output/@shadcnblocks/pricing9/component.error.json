@@ -8,8 +8,16 @@
     "type": "registry:block",
     "title": "Pricing",
     "description": "A pricing table component with a plan switcher, tooltips, and feature icons, displaying 3 tiers and key features in a 4-column layout.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["button", "card", "switch", "tooltip"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "button",
+      "card",
+      "switch",
+      "tooltip"
+    ],
     "files": [
       {
         "path": "code/block/pricing9.tsx",
@@ -17,5 +25,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:58.704Z"
+  "fetchedAt": "2026-01-03T11:28:56.583Z"
 }

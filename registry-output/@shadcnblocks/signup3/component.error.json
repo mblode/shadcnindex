@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Signup",
     "description": "A signup component with a logo, forms for email and password, and social login options (Google, Github, Facebook). Fits in a column of max-width 340px.",
-    "dependencies": ["react-icons"],
-    "registryDependencies": ["button", "input", "label"],
+    "dependencies": [
+      "react-icons"
+    ],
+    "registryDependencies": [
+      "button",
+      "input",
+      "label"
+    ],
     "files": [
       {
         "path": "code/block/signup3.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:04.957Z"
+  "fetchedAt": "2026-01-03T11:29:03.403Z"
 }

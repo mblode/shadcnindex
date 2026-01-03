@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A component with an interactive image gallery, headline, text, and button. Features draggable, animate-on-scroll images with hover effects.",
-    "dependencies": ["framer-motion", "lucide-react", "react"],
-    "registryDependencies": ["button"],
+    "dependencies": [
+      "framer-motion",
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/feature283.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:42.988Z"
+  "fetchedAt": "2026-01-03T11:28:41.660Z"
 }

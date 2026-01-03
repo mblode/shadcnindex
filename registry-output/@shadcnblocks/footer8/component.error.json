@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Footer",
     "description": "A footer component with a logo, description, social icons, link sections, newsletter signup, and copyright info arranged in a grid layout.",
-    "dependencies": ["react-icons"],
-    "registryDependencies": ["button", "input"],
+    "dependencies": [
+      "react-icons"
+    ],
+    "registryDependencies": [
+      "button",
+      "input"
+    ],
     "files": [
       {
         "path": "code/block/footer8.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:47.040Z"
+  "fetchedAt": "2026-01-03T11:28:45.545Z"
 }

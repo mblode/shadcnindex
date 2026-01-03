@@ -9,7 +9,10 @@
     "title": "Radio-group/radio-group-layout-",
     "description": "A radio-group/radio-group-layout- example",
     "dependencies": [],
-    "registryDependencies": ["label", "radio-group"],
+    "registryDependencies": [
+      "label",
+      "radio-group"
+    ],
     "files": [
       {
         "path": "code/example/radio-group/radio-group-layout-3.tsx",
@@ -17,5 +20,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:19.719Z"
+  "fetchedAt": "2026-01-03T11:29:17.245Z"
 }

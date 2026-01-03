@@ -9,7 +9,9 @@
     "title": "Feature",
     "description": "A component with a title, description, a 3x3 grid with a central image, a highlighted message, a badge, divider, testimonial, and attribution.",
     "dependencies": [],
-    "registryDependencies": ["badge"],
+    "registryDependencies": [
+      "badge"
+    ],
     "files": [
       {
         "path": "code/block/feature141.tsx",
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:37.944Z"
+  "fetchedAt": "2026-01-03T11:28:36.537Z"
 }

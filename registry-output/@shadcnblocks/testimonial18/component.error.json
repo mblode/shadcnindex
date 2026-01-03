@@ -8,8 +8,12 @@
     "type": "registry:block",
     "title": "Testimonial",
     "description": "A testimonial component displaying a 5-star rating, a highlighted quote, and the author&#x27;s avatar and details.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["avatar"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "avatar"
+    ],
     "files": [
       {
         "path": "code/block/testimonial18.tsx",
@@ -17,5 +21,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:07.216Z"
+  "fetchedAt": "2026-01-03T11:29:04.991Z"
 }

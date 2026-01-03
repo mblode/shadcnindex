@@ -8,7 +8,10 @@
     "type": "registry:block",
     "title": "Projects15d",
     "description": "A component displays video projects in a 2x2 grid, with auto-play on hover, showing studio names and titles.",
-    "dependencies": ["lucide-react", "react"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +20,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:02.059Z"
+  "fetchedAt": "2026-01-03T11:28:59.713Z"
 }

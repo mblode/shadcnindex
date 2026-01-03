@@ -8,8 +8,15 @@
     "type": "registry:block",
     "title": "Shopping-cart",
     "description": "The ShoppingCart20 component provides an interactive shopping cart interface, allowing users to view, modify, and manage items directly from a pop-up interface. Key features include displaying items with images, adjusting item quantities, calculating subtotals, and offering express checkout options with payment integrations like Apple Pay and PayPal.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["aspect-ratio", "button", "popover"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "aspect-ratio",
+      "button",
+      "popover"
+    ],
     "files": [
       {
         "path": "code/block/shopping-cart20.tsx",
@@ -17,5 +24,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:04.885Z"
+  "fetchedAt": "2026-01-03T11:29:02.930Z"
 }

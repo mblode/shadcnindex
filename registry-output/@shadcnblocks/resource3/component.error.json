@@ -8,8 +8,15 @@
     "type": "registry:block",
     "title": "Resource",
     "description": "A component featuring a breadcrumb navigation, article content with an image and story, alongside a sidebar highlighting document features, reviewer info, and social share buttons. Includes a 2-column layout.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["avatar", "breadcrumb", "button", "separator"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "avatar",
+      "breadcrumb",
+      "button",
+      "separator"
+    ],
     "files": [
       {
         "path": "code/block/resource3.tsx",
@@ -17,5 +24,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:02.816Z"
+  "fetchedAt": "2026-01-03T11:29:00.569Z"
 }

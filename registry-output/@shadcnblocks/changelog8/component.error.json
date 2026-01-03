@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Changelog",
     "description": "A component displaying a changelog with a scrollspy sidebar. Features dynamic scroll highlighting & smooth navigation to sections.",
-    "dependencies": ["react"],
-    "registryDependencies": ["badge", "scroll-area", "separator"],
+    "dependencies": [
+      "react"
+    ],
+    "registryDependencies": [
+      "badge",
+      "scroll-area",
+      "separator"
+    ],
     "files": [
       {
         "path": "code/block/changelog8.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:32.660Z"
+  "fetchedAt": "2026-01-03T11:28:31.197Z"
 }

@@ -9,7 +9,9 @@
     "title": "Gallery",
     "description": "A team carousel featuring images, names, and roles with navigation buttons, looping functionality. Displays items 2 on medium screens, 1/4 on large.",
     "dependencies": [],
-    "registryDependencies": ["carousel"],
+    "registryDependencies": [
+      "carousel"
+    ],
     "files": [
       {
         "path": "code/block/gallery27.tsx",
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:47.711Z"
+  "fetchedAt": "2026-01-03T11:28:46.220Z"
 }

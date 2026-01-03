@@ -8,8 +8,15 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A carousel component showcasing AI editing features with video previews, titles, and summaries. Each carousel card plays its video on hover.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["aspect-ratio", "card", "carousel"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "aspect-ratio",
+      "card",
+      "carousel"
+    ],
     "files": [
       {
         "path": "code/block/feature215.tsx",
@@ -17,5 +24,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:40.548Z"
+  "fetchedAt": "2026-01-03T11:28:39.126Z"
 }

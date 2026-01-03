@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Button-group/button-group-forms-",
     "description": "A button-group/button-group-forms- example",
-    "dependencies": ["react"],
-    "registryDependencies": ["button", "button-group"],
+    "dependencies": [
+      "react"
+    ],
+    "registryDependencies": [
+      "button",
+      "button-group"
+    ],
     "files": [
       {
         "path": "code/example/button-group/button-group-forms-1.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:11.531Z"
+  "fetchedAt": "2026-01-03T11:29:09.386Z"
 }

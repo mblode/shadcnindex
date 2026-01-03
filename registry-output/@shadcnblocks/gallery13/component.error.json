@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Gallery",
     "description": "A carousel component showcasing items with images, titles, descriptions, and icons in a 2:3 column layout. It dynamically updates the active display and navigation functionality.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["carousel"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "carousel"
+    ],
     "files": [
       {
         "path": "code/block/gallery13.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:47.179Z"
+  "fetchedAt": "2026-01-03T11:28:45.664Z"
 }

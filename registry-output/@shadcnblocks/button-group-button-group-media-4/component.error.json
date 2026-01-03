@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Button-group/button-group-media-",
     "description": "A button-group/button-group-media- example",
-    "dependencies": ["react"],
-    "registryDependencies": ["button", "button-group"],
+    "dependencies": [
+      "react"
+    ],
+    "registryDependencies": [
+      "button",
+      "button-group"
+    ],
     "files": [
       {
         "path": "code/example/button-group/button-group-media-4.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:12.021Z"
+  "fetchedAt": "2026-01-03T11:29:09.776Z"
 }

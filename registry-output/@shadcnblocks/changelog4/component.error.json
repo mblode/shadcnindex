@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Changelog",
     "description": "A changelog component with social links, a scroll progress indicator, and two updates sections featuring avatars, dates, large text headers, and detailed lists.",
-    "dependencies": ["react", "react-icons"],
-    "registryDependencies": ["avatar"],
+    "dependencies": [
+      "react",
+      "react-icons"
+    ],
+    "registryDependencies": [
+      "avatar"
+    ],
     "files": [
       {
         "path": "code/block/changelog4.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:32.364Z"
+  "fetchedAt": "2026-01-03T11:28:31.110Z"
 }

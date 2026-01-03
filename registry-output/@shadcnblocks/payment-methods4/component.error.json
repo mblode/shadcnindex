@@ -8,7 +8,10 @@
     "type": "registry:block",
     "title": "Payment-methods",
     "description": "This component allows users to view and manage a list of payment methods, providing functionalities to edit card details and set a default card using a carousel interface. Users can add new cards and are assured that payment information is stored securely.",
-    "dependencies": ["lucide-react", "react"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
     "registryDependencies": [
       "carousel",
       "https://www.kibo-ui.com/r/credit-card.json",
@@ -24,5 +27,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:57.564Z"
+  "fetchedAt": "2026-01-03T11:28:55.392Z"
 }

@@ -6,8 +6,14 @@
   "item": {
     "name": "header-5",
     "description": "A sticky animated header with dropdown navigation menus for courses and community, featuring smooth scroll-triggered morphing between expanded and compact pill-shaped states.",
-    "dependencies": ["motion", "@radix-ui/react-portal"],
-    "registryDependencies": ["button", "navigation-menu"],
+    "dependencies": [
+      "motion",
+      "@radix-ui/react-portal"
+    ],
+    "registryDependencies": [
+      "button",
+      "navigation-menu"
+    ],
     "files": [
       {
         "path": "registry/header/5/header.tsx",
@@ -42,8 +48,10 @@
         "type": "registry:hook"
       }
     ],
-    "categories": ["header"],
+    "categories": [
+      "header"
+    ],
     "type": "registry:block"
   },
-  "fetchedAt": "2026-01-02T23:59:12.060Z"
+  "fetchedAt": "2026-01-03T11:28:09.974Z"
 }

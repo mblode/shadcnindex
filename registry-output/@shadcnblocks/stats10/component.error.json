@@ -9,7 +9,10 @@
     "title": "Stats",
     "description": "A component with 3 cards each showcasing metrics like conversion stoppage, time-saving, and growth. Each card has an avatar, logo, large text for the metric, and a description.",
     "dependencies": [],
-    "registryDependencies": ["avatar", "card"],
+    "registryDependencies": [
+      "avatar",
+      "card"
+    ],
     "files": [
       {
         "path": "code/block/stats10.tsx",
@@ -17,5 +20,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:05.653Z"
+  "fetchedAt": "2026-01-03T11:29:04.105Z"
 }

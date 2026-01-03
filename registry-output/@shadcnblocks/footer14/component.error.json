@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "Footer",
     "description": "A footer component with logo, newsletter, navigation links across three columns, and social icons. Includes a succinct company description and subscription form.",
-    "dependencies": ["react-icons"],
+    "dependencies": [
+      "react-icons"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:46.363Z"
+  "fetchedAt": "2026-01-03T11:28:44.921Z"
 }

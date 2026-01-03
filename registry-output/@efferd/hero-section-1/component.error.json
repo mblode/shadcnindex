@@ -31,8 +31,10 @@
         "type": "registry:component"
       }
     ],
-    "categories": ["hero-section"],
+    "categories": [
+      "hero-section"
+    ],
     "type": "registry:block"
   },
-  "fetchedAt": "2026-01-02T23:59:12.524Z"
+  "fetchedAt": "2026-01-03T11:28:10.412Z"
 }

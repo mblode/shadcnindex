@@ -9,7 +9,10 @@
     "title": "Feature",
     "description": "A component with a 3-column layout for case studies, featuring one larger highlighted card and five smaller ones, each with a title, badge for the larger card, and a \"Continue reading\" link.",
     "dependencies": [],
-    "registryDependencies": ["badge", "card"],
+    "registryDependencies": [
+      "badge",
+      "card"
+    ],
     "files": [
       {
         "path": "code/block/feature36.tsx",
@@ -17,5 +20,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:43.979Z"
+  "fetchedAt": "2026-01-03T11:28:42.551Z"
 }

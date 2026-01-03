@@ -8,8 +8,12 @@
     "type": "registry:block",
     "title": "Toggle-group/toggle-group-sizes-",
     "description": "A toggle-group/toggle-group-sizes- example",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["toggle-group"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "toggle-group"
+    ],
     "files": [
       {
         "path": "code/example/toggle-group/toggle-group-sizes-1.tsx",
@@ -17,5 +21,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:20.145Z"
+  "fetchedAt": "2026-01-03T11:29:17.655Z"
 }

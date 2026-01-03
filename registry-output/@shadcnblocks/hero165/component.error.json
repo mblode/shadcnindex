@@ -9,7 +9,9 @@
     "title": "Hero",
     "description": "A two-column layout with dynamic image composition on one side and compelling headings on the other, featuring customized aspect ratios and image placements.",
     "dependencies": [],
-    "registryDependencies": ["aspect-ratio"],
+    "registryDependencies": [
+      "aspect-ratio"
+    ],
     "files": [
       {
         "path": "code/block/hero165.tsx",
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:49.721Z"
+  "fetchedAt": "2026-01-03T11:28:48.301Z"
 }

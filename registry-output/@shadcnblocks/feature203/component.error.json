@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A component displaying 4 cards in a 2-column grid, each with an icon, title, description, and a list of features with check icons.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["separator"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "separator"
+    ],
     "files": [
       {
         "path": "code/block/feature203.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:40.053Z"
+  "fetchedAt": "2026-01-03T11:28:38.617Z"
 }

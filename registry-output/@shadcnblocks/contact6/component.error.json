@@ -8,7 +8,10 @@
     "type": "registry:block",
     "title": "Contact",
     "description": "A contact form component with two columns: one for direct contact info using icons and one for a submission form.",
-    "dependencies": ["lucide-react", "react"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
     "registryDependencies": [
       "button",
       "card",
@@ -25,5 +28,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:34.192Z"
+  "fetchedAt": "2026-01-03T11:28:32.792Z"
 }

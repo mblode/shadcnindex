@@ -9,7 +9,9 @@
     "title": "Careers",
     "description": "A component listing job categories and jobs with titles, locations, and \"View listing\" buttons in a structured layout.",
     "dependencies": [],
-    "registryDependencies": ["button"],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/careers7.tsx",
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:32.069Z"
+  "fetchedAt": "2026-01-03T11:28:30.665Z"
 }

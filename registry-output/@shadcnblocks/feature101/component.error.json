@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A layout showcasing capabilities with a title, description, and 5 feature blocks in a 3-column grid. Unique elements include icons, hover animations on images, and varied block sizing.",
-    "dependencies": ["lucide-react"],
+    "dependencies": [
+      "lucide-react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:36.313Z"
+  "fetchedAt": "2026-01-03T11:28:34.916Z"
 }

@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Community",
     "description": "A component showcasing a community invitation with social icons, descriptions, and a 1-3 column layout of cards for different platforms.",
-    "dependencies": ["lucide-react", "react-icons"],
-    "registryDependencies": ["badge", "card"],
+    "dependencies": [
+      "lucide-react",
+      "react-icons"
+    ],
+    "registryDependencies": [
+      "badge",
+      "card"
+    ],
     "files": [
       {
         "path": "code/block/community3.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:32.973Z"
+  "fetchedAt": "2026-01-03T11:28:31.552Z"
 }

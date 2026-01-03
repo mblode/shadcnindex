@@ -9,7 +9,9 @@
     "title": "Navigation-menu/navigation-menu-standard-",
     "description": "A navigation-menu/navigation-menu-standard- example",
     "dependencies": [],
-    "registryDependencies": ["navigation-menu"],
+    "registryDependencies": [
+      "navigation-menu"
+    ],
     "files": [
       {
         "path": "code/example/navigation-menu/navigation-menu-standard-1.tsx",
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:19.277Z"
+  "fetchedAt": "2026-01-03T11:29:16.805Z"
 }

@@ -9,7 +9,10 @@
     "title": "Feature",
     "description": "This component displays a title, description, and a grid of 6 cards, each containing an image, title, and description, arranged in 1-3 columns based on screen size.",
     "dependencies": [],
-    "registryDependencies": ["button", "card"],
+    "registryDependencies": [
+      "button",
+      "card"
+    ],
     "files": [
       {
         "path": "code/block/feature148.tsx",
@@ -17,5 +20,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:38.203Z"
+  "fetchedAt": "2026-01-03T11:28:36.868Z"
 }

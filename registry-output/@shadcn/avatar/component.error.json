@@ -6,7 +6,9 @@
   "item": {
     "name": "avatar",
     "type": "registry:ui",
-    "dependencies": ["@radix-ui/react-avatar"],
+    "dependencies": [
+      "@radix-ui/react-avatar"
+    ],
     "files": [
       {
         "path": "ui/avatar.tsx",
@@ -14,5 +16,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T07:39:45.450Z"
+  "fetchedAt": "2026-01-03T11:28:25.478Z"
 }

@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A gallery component with a text and button panel on left and image carousel on right, including image thumbnails for selection and a patterned background overlay.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["button", "separator"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "button",
+      "separator"
+    ],
     "files": [
       {
         "path": "code/block/feature209.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:40.320Z"
+  "fetchedAt": "2026-01-03T11:28:38.968Z"
 }

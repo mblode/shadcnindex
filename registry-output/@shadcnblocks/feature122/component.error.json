@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A component with a grid layout of feature blocks, including a prominent highlighted block with a call-to-action button and an image. It uses icons and hover effects.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["button"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/feature122.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:37.166Z"
+  "fetchedAt": "2026-01-03T11:28:35.847Z"
 }

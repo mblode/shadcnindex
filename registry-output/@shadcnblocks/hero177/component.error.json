@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Hero",
     "description": "A component featuring an app rating badge, a bold headline, descriptive text, list of benefits, call-to-action buttons, and two images in distinct aspect ratios.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["aspect-ratio", "badge", "button"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "aspect-ratio",
+      "badge",
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/hero177.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:50.186Z"
+  "fetchedAt": "2026-01-03T11:28:48.687Z"
 }

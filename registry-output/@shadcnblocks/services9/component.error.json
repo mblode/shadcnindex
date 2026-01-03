@@ -8,8 +8,12 @@
     "type": "registry:block",
     "title": "Services",
     "description": "A component displays services with icons, titles, descriptions, inclusions, durations, and prices in a 2-column grid, with a 'Get Started' button.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["button"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/services9.tsx",
@@ -17,5 +21,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:04.216Z"
+  "fetchedAt": "2026-01-03T11:29:02.097Z"
 }

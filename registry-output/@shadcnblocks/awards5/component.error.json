@@ -8,7 +8,10 @@
     "type": "registry:block",
     "title": "Awards",
     "description": "A component displays a list of awards in a 6-column layout with interactive elements that reveal award images on hover.",
-    "dependencies": ["framer-motion", "react"],
+    "dependencies": [
+      "framer-motion",
+      "react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +20,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:29.233Z"
+  "fetchedAt": "2026-01-03T11:28:27.845Z"
 }

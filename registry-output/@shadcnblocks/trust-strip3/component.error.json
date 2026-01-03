@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "Trust-strip",
     "description": "This component displays a list of certifications and guarantees, providing visual icons and descriptions for each to convey trust and authenticity. It allows customization by accepting optional props for different certifications, guarantees, and additional styling through the `className` prop.",
-    "dependencies": ["lucide-react"],
+    "dependencies": [
+      "lucide-react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:08.360Z"
+  "fetchedAt": "2026-01-03T11:29:06.143Z"
 }

@@ -56,6 +56,13 @@ interface RegistrySearchResult {
   similarity: number;
 }
 
+interface RegistryDirectoryMeta {
+  title: string;
+  description: string | null;
+  logo: string | null;
+  homepage: string | null;
+}
+
 const MAX_RESULTS = 200;
 const SEARCH_DEBOUNCE_MS = 200;
 const SEARCH_TIMEOUT_MS = 10_000;
@@ -393,6 +400,42 @@ function useRegistrySearchMeta() {
   };
 }
 
+function useRegistryDirectory() {
+  const [registryDirectory, setRegistryDirectory] = useState<
+    Record<string, RegistryDirectoryMeta>
+  >({});
+
+  useEffect(() => {
+    let mounted = true;
+
+    fetch("/api/registry-directory")
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Failed to load registry directory.");
+        }
+        return response.json();
+      })
+      .then((data: { registries?: Record<string, RegistryDirectoryMeta> }) => {
+        if (!mounted) {
+          return;
+        }
+        setRegistryDirectory(data.registries ?? {});
+      })
+      .catch(() => {
+        if (!mounted) {
+          return;
+        }
+        setRegistryDirectory({});
+      });
+
+    return () => {
+      mounted = false;
+    };
+  }, []);
+
+  return registryDirectory;
+}
+
 function useRegistrySearchResults(query: string) {
   const [results, setResults] = useState<RegistrySearchResult[]>([]);
   const [searchError, setSearchError] = useState<SearchErrorState | null>(null);
@@ -574,7 +617,7 @@ function RegistrySearchHero({ isVisible }: { isVisible: boolean }) {
               <p className="text-heading-40 md:text-heading-48">
                 Search the shadcn index
               </p>
-              <p className="text-gray-900 text-heading-40 md:text-heading-48">
+              <p className="text-heading-40 text-muted-foreground md:text-heading-48">
                 Find components, blocks, and hooks.
               </p>
             </div>
@@ -726,10 +769,12 @@ function RegistrySearchResultsSection({
   isVisible,
   dedupedResults,
   trimmedQuery,
+  registryDirectory,
 }: {
   isVisible: boolean;
   dedupedResults: RegistrySearchResult[];
   trimmedQuery: string;
+  registryDirectory: Record<string, RegistryDirectoryMeta>;
 }) {
   if (!isVisible) {
     return null;
@@ -754,8 +799,23 @@ function RegistrySearchResultsSection({
             index,
             dedupedResults.length
           );
-          const registryLabel = toRegistrySlug(item.registry.namespace);
+          const registryNamespace = item.registry.namespace;
+          const registryLabel = toRegistrySlug(registryNamespace);
+          const registryMeta =
+            registryDirectory[registryNamespace] ??
+            registryDirectory[registryLabel];
+          const registryTitle = registryMeta?.title ?? registryLabel;
+          const registryDescription = registryMeta?.description ?? null;
+          const registryTooltip = registryDescription
+            ? `${registryTitle} — ${registryDescription}`
+            : registryTitle;
           const typeLabel = toRegistryTypeLabel(item.type);
+          const registryLogoMarkup = registryMeta?.logo ?? null;
+          const registryLogo = registryLogoMarkup?.trim();
+          const shouldRenderLogo =
+            typeof registryLogo === "string" &&
+            registryLogo.startsWith("<svg") &&
+            registryLogo.includes("</svg>");
 
           return (
             <div key={item.id}>
@@ -782,7 +842,16 @@ function RegistrySearchResultsSection({
                     ) : null}
                   </ItemContent>
                   <div className="ml-auto flex flex-wrap items-center gap-2">
-                    <Badge variant="outline">{registryLabel}</Badge>
+                    <Badge title={registryTooltip} variant="outline">
+                      {shouldRenderLogo ? (
+                        <span
+                          aria-hidden="true"
+                          className="flex size-3 items-center justify-center text-foreground [&>svg]:size-3 [&>svg]:shrink-0"
+                          dangerouslySetInnerHTML={{ __html: registryLogo }}
+                        />
+                      ) : null}
+                      <span>{registryLabel}</span>
+                    </Badge>
                     {typeLabel ? (
                       <Badge variant="outline">{typeLabel}</Badge>
                     ) : null}
@@ -807,6 +876,7 @@ function RegistrySearchView({
   inputVariant,
   isStickyInput,
   isMetaReady: _isMetaReady,
+  registryDirectory,
   error,
   onRetry,
   showBeginState,
@@ -826,6 +896,7 @@ function RegistrySearchView({
   inputVariant: SearchInputVariant;
   isStickyInput?: boolean;
   isMetaReady: boolean;
+  registryDirectory: Record<string, RegistryDirectoryMeta>;
   error: SearchErrorState | null;
   onRetry: () => void;
   showBeginState: boolean;
@@ -848,28 +919,30 @@ function RegistrySearchView({
         searchMeta={searchMeta}
         variant={inputVariant}
       />
-      <RegistrySearchErrorNotice error={error} onRetry={onRetry} />
-      <RegistrySearchEmptyState
-        description={
-          <>
-            {"Enter a component name, keyword, or registry namespace"}
-            <br />
-            {"to see results instantly."}
-          </>
-        }
-        isVisible={showBeginState}
-        title="Begin your search"
-      />
-      <RegistrySearchEmptyState
-        description="Try letters, numbers, or a registry namespace query."
-        isVisible={showSanitizedState}
-        title="We filtered unsupported characters"
-      />
-      <RegistrySearchEmptyState
-        description="Try a broader keyword or search the registry namespace directly."
-        isVisible={showNoResultsState}
-        title="No results found"
-      />
+      <div className={cn("mx-auto w-full", inputMaxWidthClass)}>
+        <RegistrySearchErrorNotice error={error} onRetry={onRetry} />
+        <RegistrySearchEmptyState
+          description={
+            <>
+              {"Enter a component name, keyword, or registry namespace"}
+              <br />
+              {"to see results instantly."}
+            </>
+          }
+          isVisible={showBeginState}
+          title="Begin your search"
+        />
+        <RegistrySearchEmptyState
+          description="Try letters, numbers, or a registry namespace query."
+          isVisible={showSanitizedState}
+          title="We filtered unsupported characters"
+        />
+        <RegistrySearchEmptyState
+          description="Try a broader keyword or search the registry namespace directly."
+          isVisible={showNoResultsState}
+          title="No results found"
+        />
+      </div>
       <RegistrySearchSkeleton isVisible={showSkeleton} />
       <RegistrySearchResultsSection
         dedupedResults={dedupedResults}

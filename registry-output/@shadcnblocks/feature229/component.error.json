@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A component with 3 columns, listing features under \"Security,\" \"Integration & APIs,\" and \"Support\" categories, each with their icons and items marked by check icons.",
-    "dependencies": ["lucide-react"],
+    "dependencies": [
+      "lucide-react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:41.171Z"
+  "fetchedAt": "2026-01-03T11:28:39.844Z"
 }

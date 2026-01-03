@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Hero",
     "description": "A component promoting a business OS, featuring a headline, description, sign-up form, and a 6-icon feature grid. Also includes layered images at the bottom.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["button", "input"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "button",
+      "input"
+    ],
     "files": [
       {
         "path": "code/block/hero74.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:53.935Z"
+  "fetchedAt": "2026-01-03T11:28:52.253Z"
 }

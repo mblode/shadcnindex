@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Hero",
     "description": "A component featuring a central slogan, description, singular primary action, and icons displaying ratings from various platforms.",
-    "dependencies": ["lucide-react", "react-icons"],
-    "registryDependencies": ["button"],
+    "dependencies": [
+      "lucide-react",
+      "react-icons"
+    ],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/hero15.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:49.255Z"
+  "fetchedAt": "2026-01-03T11:28:47.758Z"
 }

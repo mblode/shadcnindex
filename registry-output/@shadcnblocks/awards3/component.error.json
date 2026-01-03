@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "Awards",
     "description": "An awards list component with a hover animation, featuring award titles, categories, and years. Uses colored indicators per award.",
-    "dependencies": ["lucide-react"],
+    "dependencies": [
+      "lucide-react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:29.226Z"
+  "fetchedAt": "2026-01-03T11:28:27.805Z"
 }

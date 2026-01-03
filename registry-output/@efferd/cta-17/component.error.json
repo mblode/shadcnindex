@@ -6,7 +6,9 @@
   "item": {
     "name": "cta-17",
     "description": "Custom clip-path shape with pulsing dot and corner action button.",
-    "registryDependencies": ["button"],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "registry/cta/17/call-to-action.tsx",
@@ -17,8 +19,10 @@
         "type": "registry:component"
       }
     ],
-    "categories": ["cta"],
+    "categories": [
+      "cta"
+    ],
     "type": "registry:block"
   },
-  "fetchedAt": "2026-01-02T23:59:11.768Z"
+  "fetchedAt": "2026-01-03T11:28:09.628Z"
 }

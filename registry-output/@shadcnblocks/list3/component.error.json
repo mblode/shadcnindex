@@ -8,8 +8,12 @@
     "type": "registry:block",
     "title": "List",
     "description": "A component showcasing career progression with two sections for experience and achievements, each detailed in a 3-column layout, interconnected with separators.",
-    "dependencies": ["react"],
-    "registryDependencies": ["separator"],
+    "dependencies": [
+      "react"
+    ],
+    "registryDependencies": [
+      "separator"
+    ],
     "files": [
       {
         "path": "code/block/list3.tsx",
@@ -17,5 +21,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:55.764Z"
+  "fetchedAt": "2026-01-03T11:28:53.516Z"
 }

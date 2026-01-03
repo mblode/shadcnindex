@@ -6,16 +6,22 @@
   "item": {
     "name": "cta-10",
     "description": "Animated border lines with 'Get Started' button.",
-    "dependencies": ["motion"],
-    "registryDependencies": ["button"],
+    "dependencies": [
+      "motion"
+    ],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "registry/cta/10/call-to-action.tsx",
         "type": "registry:component"
       }
     ],
-    "categories": ["cta"],
+    "categories": [
+      "cta"
+    ],
     "type": "registry:block"
   },
-  "fetchedAt": "2026-01-02T23:59:11.510Z"
+  "fetchedAt": "2026-01-03T11:28:09.560Z"
 }

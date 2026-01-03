@@ -8,7 +8,10 @@
     "type": "registry:block",
     "title": "Order-history",
     "description": "This component provides an interactive order management interface, allowing users to filter, search, and review details of their purchase history. It features collapsible order details, status indicators, and various actions that users can perform on their orders such as canceling, tracking, or reordering items.",
-    "dependencies": ["react", "lucide-react"],
+    "dependencies": [
+      "react",
+      "lucide-react"
+    ],
     "registryDependencies": [
       "aspect-ratio",
       "badge",
@@ -26,5 +29,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:57.259Z"
+  "fetchedAt": "2026-01-03T11:28:54.878Z"
 }

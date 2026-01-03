@@ -9,7 +9,9 @@
     "title": "Feature",
     "description": "A component featuring a badge, a title, a 3-column layout of steps, and an image. Each column details a step with a numbered badge and text.",
     "dependencies": [],
-    "registryDependencies": ["badge"],
+    "registryDependencies": [
+      "badge"
+    ],
     "files": [
       {
         "path": "code/block/feature119.tsx",
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:37.087Z"
+  "fetchedAt": "2026-01-03T11:28:35.679Z"
 }

@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Dropdown-menu/dropdown-menu-profile-",
     "description": "A dropdown-menu/dropdown-menu-profile- example",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["avatar", "button", "dropdown-menu"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "avatar",
+      "button",
+      "dropdown-menu"
+    ],
     "files": [
       {
         "path": "code/example/dropdown-menu/dropdown-menu-profile-1.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:14.551Z"
+  "fetchedAt": "2026-01-03T11:29:12.187Z"
 }

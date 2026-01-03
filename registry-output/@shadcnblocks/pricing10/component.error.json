@@ -8,8 +8,16 @@
     "type": "registry:block",
     "title": "Pricing",
     "description": "A pricing component displays 4 plans in columns, detailing features, price, and an annual billing switch. Includes badges for discounts and a \"Recommended\" tag.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["badge", "button", "label", "switch"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "badge",
+      "button",
+      "label",
+      "switch"
+    ],
     "files": [
       {
         "path": "code/block/pricing10.tsx",
@@ -17,5 +25,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:57.638Z"
+  "fetchedAt": "2026-01-03T11:28:55.398Z"
 }

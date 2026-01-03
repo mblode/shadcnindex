@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A component displaying a group title and a 2-column grid of 6 feature cards, each with an icon, title, and description.",
-    "dependencies": ["lucide-react"],
+    "dependencies": [
+      "lucide-react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:45.054Z"
+  "fetchedAt": "2026-01-03T11:28:43.492Z"
 }

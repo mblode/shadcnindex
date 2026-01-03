@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A component displaying AI features with interactive tabs; includes title, description, icons, and images across a 1-to-4 column grid.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["card", "tabs"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "card",
+      "tabs"
+    ],
     "files": [
       {
         "path": "code/block/feature225.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:41.151Z"
+  "fetchedAt": "2026-01-03T11:28:39.772Z"
 }

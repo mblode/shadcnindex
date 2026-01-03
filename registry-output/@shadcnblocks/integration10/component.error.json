@@ -8,8 +8,12 @@
     "type": "registry:block",
     "title": "Integration",
     "description": "A component showcasing a list of integrations with titles, descriptions, and \"Connect\" buttons, arranged in a single column with a minimalist design.",
-    "dependencies": ["react"],
-    "registryDependencies": ["button"],
+    "dependencies": [
+      "react"
+    ],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/integration10.tsx",
@@ -17,5 +21,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:55.194Z"
+  "fetchedAt": "2026-01-03T11:28:53.172Z"
 }

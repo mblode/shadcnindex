@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A component that showcases six features with icons, titles, and descriptions in a 1-2-3 column layout, with an introductory section.",
-    "dependencies": ["lucide-react"],
+    "dependencies": [
+      "lucide-react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:45.061Z"
+  "fetchedAt": "2026-01-03T11:28:43.544Z"
 }

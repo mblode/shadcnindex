@@ -8,8 +8,12 @@
     "type": "registry:block",
     "title": "Hero",
     "description": "A dynamic gallery component with animated, looping image rows moving in opposite directions, featuring interactive images that scale on hover, gradient edge masks, and a centered promotional message with a button.",
-    "dependencies": ["framer-motion"],
-    "registryDependencies": ["button"],
+    "dependencies": [
+      "framer-motion"
+    ],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/hero234.tsx",
@@ -17,5 +21,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:52.009Z"
+  "fetchedAt": "2026-01-03T11:28:50.386Z"
 }

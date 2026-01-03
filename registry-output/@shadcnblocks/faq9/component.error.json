@@ -9,7 +9,9 @@
     "title": "Faq",
     "description": "An FAQ component featuring a title and an expandable accordion with multiple items to display questions and answers.",
     "dependencies": [],
-    "registryDependencies": ["accordion"],
+    "registryDependencies": [
+      "accordion"
+    ],
     "files": [
       {
         "path": "code/block/faq9.tsx",
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:36.277Z"
+  "fetchedAt": "2026-01-03T11:28:34.884Z"
 }

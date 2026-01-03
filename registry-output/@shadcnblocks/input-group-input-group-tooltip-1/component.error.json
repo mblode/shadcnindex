@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Input-group/input-group-tooltip-",
     "description": "A input-group/input-group-tooltip- example",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["input-group", "tooltip"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "input-group",
+      "tooltip"
+    ],
     "files": [
       {
         "path": "code/example/input-group/input-group-tooltip-1.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:17.744Z"
+  "fetchedAt": "2026-01-03T11:29:15.441Z"
 }

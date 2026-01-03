@@ -9,7 +9,9 @@
     "title": "Hero",
     "description": "A component with a centered title, text, two buttons, and a main image, flanked by decorative icons in a symmetric layout.",
     "dependencies": [],
-    "registryDependencies": ["button"],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/hero18.tsx",
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:50.293Z"
+  "fetchedAt": "2026-01-03T11:28:48.747Z"
 }

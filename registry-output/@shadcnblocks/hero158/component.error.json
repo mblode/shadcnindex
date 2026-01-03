@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Hero",
     "description": "A component with a two-column layout featuring a bold headline, paragraph, animated button, and a grid of 3 images with varying sizes and rounded corners.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["aspect-ratio", "button"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "aspect-ratio",
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/hero158.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:49.419Z"
+  "fetchedAt": "2026-01-03T11:28:48.019Z"
 }

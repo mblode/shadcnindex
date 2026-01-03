@@ -9,7 +9,9 @@
     "title": "Cta",
     "description": "A component showcases a dynamic call-to-action with text, a button, and shifting overlaid blocks as a unique visual feature in a two-column layout.",
     "dependencies": [],
-    "registryDependencies": ["button"],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/cta6.tsx",
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:35.089Z"
+  "fetchedAt": "2026-01-03T11:28:33.733Z"
 }

@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Hero",
     "description": "A carousel component showing tech logos with commands. Includes auto-cycle, fade transitions, and manual selection. Displays 3-6 items per view.",
-    "dependencies": ["embla-carousel-autoplay", "react"],
-    "registryDependencies": ["carousel"],
+    "dependencies": [
+      "embla-carousel-autoplay",
+      "react"
+    ],
+    "registryDependencies": [
+      "carousel"
+    ],
     "files": [
       {
         "path": "code/block/hero14.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:48.994Z"
+  "fetchedAt": "2026-01-03T11:28:47.520Z"
 }

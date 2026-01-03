@@ -8,8 +8,12 @@
     "type": "registry:block",
     "title": "Project",
     "description": "A component displaying a sticky description section alongside a grid of images, followed by another grid featuring project cards with hover effects.",
-    "dependencies": ["framer-motion"],
-    "registryDependencies": ["badge"],
+    "dependencies": [
+      "framer-motion"
+    ],
+    "registryDependencies": [
+      "badge"
+    ],
     "files": [
       {
         "path": "code/block/project6.tsx",
@@ -17,5 +21,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:01.249Z"
+  "fetchedAt": "2026-01-03T11:28:59.022Z"
 }

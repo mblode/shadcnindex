@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Pricing",
     "description": "A pricing component featuring a title, intro text, a card with price detail, a trial button, and a 3-column list of features with check icons.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["button", "card"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "button",
+      "card"
+    ],
     "files": [
       {
         "path": "code/block/pricing8.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:58.710Z"
+  "fetchedAt": "2026-01-03T11:28:56.438Z"
 }

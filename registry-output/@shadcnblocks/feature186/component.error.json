@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A tabbed component displaying features with icons, descriptions, and images. It toggles between three key features, each with its visual and text content.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["button", "tabs"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "button",
+      "tabs"
+    ],
     "files": [
       {
         "path": "code/block/feature186.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:39.467Z"
+  "fetchedAt": "2026-01-03T11:28:38.029Z"
 }

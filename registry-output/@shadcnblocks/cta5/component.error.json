@@ -9,7 +9,9 @@
     "title": "Cta",
     "description": "A component featuring an image and a call-to-action (CTA) side by side in a two-column layout, with an appealing button and engaging text.",
     "dependencies": [],
-    "registryDependencies": ["button"],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/cta5.tsx",
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:35.088Z"
+  "fetchedAt": "2026-01-03T11:28:33.747Z"
 }

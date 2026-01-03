@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Footer",
     "description": "This component is a multi-section footer block featuring a call-to-action, newsletter signup, navigational links, and social media connections. It includes 4 columns of navigation links and uses buttons and input for interactions.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["button", "input"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "button",
+      "input"
+    ],
     "files": [
       {
         "path": "code/block/footer13.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:46.312Z"
+  "fetchedAt": "2026-01-03T11:28:44.888Z"
 }

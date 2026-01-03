@@ -7,9 +7,15 @@
     "name": "stripe-hono-mongoose",
     "type": "registry:block",
     "description": "Stripe integration for Hono with Mongoose schemas for payments and subscriptions",
-    "dependencies": ["mongoose"],
-    "devDependencies": ["mongoose"],
-    "registryDependencies": ["https://usepaykit.dev/r/stripe-hono"],
+    "dependencies": [
+      "mongoose"
+    ],
+    "devDependencies": [
+      "mongoose"
+    ],
+    "registryDependencies": [
+      "https://usepaykit.dev/r/stripe-hono"
+    ],
     "files": [
       {
         "type": "registry:file",
@@ -27,5 +33,5 @@
       "auth": "none"
     }
   },
-  "fetchedAt": "2026-01-02T23:59:23.198Z"
+  "fetchedAt": "2026-01-03T11:28:21.846Z"
 }

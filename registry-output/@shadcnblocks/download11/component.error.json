@@ -9,7 +9,10 @@
     "title": "Download",
     "description": "A component displaying a download section with options for .MSI and .EXE files, Windows compatibility info, and dynamic bordered images.",
     "dependencies": [],
-    "registryDependencies": ["https://magicui.design/r/border-beam", "button"],
+    "registryDependencies": [
+      "https://magicui.design/r/border-beam",
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/download11.tsx",
@@ -17,5 +20,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:35.302Z"
+  "fetchedAt": "2026-01-03T11:28:33.877Z"
 }

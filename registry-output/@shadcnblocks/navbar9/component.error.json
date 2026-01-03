@@ -8,8 +8,16 @@
     "type": "registry:block",
     "title": "Navbar",
     "description": "A navigation bar with logo, link/button list, and mobile menu toggle. On mobile, features an accordion menu for navigation items.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["accordion", "button", "navigation-menu", "sheet"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "accordion",
+      "button",
+      "navigation-menu",
+      "sheet"
+    ],
     "files": [
       {
         "path": "code/block/navbar9.tsx",
@@ -17,5 +25,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:57.002Z"
+  "fetchedAt": "2026-01-03T11:28:54.829Z"
 }

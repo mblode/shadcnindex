@@ -9,7 +9,11 @@
     "title": "Login",
     "description": "A login component featuring a 2-column layout with one column for form inputs including email and password fields, a checkbox for \"Remember me\", and buttons for submitting the form or logging in with Google. The second column displays an image.",
     "dependencies": [],
-    "registryDependencies": ["button", "input", "label"],
+    "registryDependencies": [
+      "button",
+      "input",
+      "label"
+    ],
     "files": [
       {
         "path": "code/block/login5.tsx",
@@ -17,5 +21,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:55.788Z"
+  "fetchedAt": "2026-01-03T11:28:53.738Z"
 }

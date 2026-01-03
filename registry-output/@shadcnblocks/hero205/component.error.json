@@ -8,8 +8,15 @@
     "type": "registry:block",
     "title": "Hero",
     "description": "This component showcases a hero section with a large headline, professional information, CTA buttons, and an animated card. It utilizes icons and a custom animation for visual appeal.",
-    "dependencies": ["framer-motion", "lucide-react", "react"],
-    "registryDependencies": ["button", "card"],
+    "dependencies": [
+      "framer-motion",
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "button",
+      "card"
+    ],
     "files": [
       {
         "path": "code/block/hero205.tsx",
@@ -17,5 +24,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:51.060Z"
+  "fetchedAt": "2026-01-03T11:28:49.538Z"
 }

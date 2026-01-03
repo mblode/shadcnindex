@@ -8,7 +8,10 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A component featuring a TextReveal block centered within a section, using a single-column layout with a max width. It highlights a key message or feature.",
-    "dependencies": ["motion", "react"],
+    "dependencies": [
+      "motion",
+      "react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +20,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:41.842Z"
+  "fetchedAt": "2026-01-03T11:28:40.433Z"
 }

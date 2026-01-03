@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Pricing",
     "description": "A component displaying pricing plans and feature comparison, collapsible on mobile for plan selection, grid layout for desktop showing all plans side-by-side.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["button", "collapsible"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "button",
+      "collapsible"
+    ],
     "files": [
       {
         "path": "code/block/pricing23.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:57.929Z"
+  "fetchedAt": "2026-01-03T11:28:55.794Z"
 }

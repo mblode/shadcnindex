@@ -9,7 +9,10 @@
     "title": "Input-group/input-group-spinner-",
     "description": "A input-group/input-group-spinner- example",
     "dependencies": [],
-    "registryDependencies": ["input-group", "spinner"],
+    "registryDependencies": [
+      "input-group",
+      "spinner"
+    ],
     "files": [
       {
         "path": "code/example/input-group/input-group-spinner-4.tsx",
@@ -17,5 +20,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:17.358Z"
+  "fetchedAt": "2026-01-03T11:29:15.013Z"
 }

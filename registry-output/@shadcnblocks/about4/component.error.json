@@ -9,7 +9,9 @@
     "title": "About",
     "description": "An \"About Us\" component with a centered title, description, a grid of 6 images, and detailed vision and creators sections, followed by a call-to-action button.",
     "dependencies": [],
-    "registryDependencies": ["button"],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/about4.tsx",
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:28.945Z"
+  "fetchedAt": "2026-01-03T11:28:27.471Z"
 }

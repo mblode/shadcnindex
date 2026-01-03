@@ -8,7 +8,10 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A component displaying analytical data through cards, badges, progress bars, and charts, organized in a two-column grid. Features include performance evaluations, skill badges, data metrics, and interactive elements.",
-    "dependencies": ["lucide-react", "recharts"],
+    "dependencies": [
+      "lucide-react",
+      "recharts"
+    ],
     "registryDependencies": [
       "badge",
       "button",
@@ -24,5 +27,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:39.174Z"
+  "fetchedAt": "2026-01-03T11:28:37.755Z"
 }

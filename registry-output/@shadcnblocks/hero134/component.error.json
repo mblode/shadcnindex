@@ -8,8 +8,15 @@
     "type": "registry:block",
     "title": "Hero",
     "description": "Marketing component with a video popup, call-to-action buttons, and brand logos. Features a headline, description, and image.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["aspect-ratio", "button", "dialog"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "aspect-ratio",
+      "button",
+      "dialog"
+    ],
     "files": [
       {
         "path": "code/block/hero134.tsx",
@@ -17,5 +24,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:48.891Z"
+  "fetchedAt": "2026-01-03T11:28:47.459Z"
 }

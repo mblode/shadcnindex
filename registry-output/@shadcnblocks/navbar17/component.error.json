@@ -8,8 +8,15 @@
     "type": "registry:block",
     "title": "Navbar",
     "description": "A navigation component with dynamic indicator for active links and a mobile menu with an animated icon for toggling.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["button", "navigation-menu", "popover"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "button",
+      "navigation-menu",
+      "popover"
+    ],
     "files": [
       {
         "path": "code/block/navbar17.tsx",
@@ -17,5 +24,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:56.602Z"
+  "fetchedAt": "2026-01-03T11:28:54.316Z"
 }

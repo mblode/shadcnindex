@@ -9,7 +9,9 @@
     "title": "Feature",
     "description": "This component displays a main title, a subtitle, an image, and a three-column layout of cards, each containing a title, text, and link.",
     "dependencies": [],
-    "registryDependencies": ["card"],
+    "registryDependencies": [
+      "card"
+    ],
     "files": [
       {
         "path": "code/block/feature33.tsx",
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:43.953Z"
+  "fetchedAt": "2026-01-03T11:28:42.516Z"
 }

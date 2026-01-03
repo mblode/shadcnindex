@@ -8,8 +8,18 @@
     "type": "registry:block",
     "title": "Radio-group/radio-group-form-",
     "description": "A radio-group/radio-group-form- example",
-    "dependencies": ["@hookform/resolvers", "react-hook-form", "sonner", "zod"],
-    "registryDependencies": ["button", "form", "label", "radio-group"],
+    "dependencies": [
+      "@hookform/resolvers",
+      "react-hook-form",
+      "sonner",
+      "zod"
+    ],
+    "registryDependencies": [
+      "button",
+      "form",
+      "label",
+      "radio-group"
+    ],
     "files": [
       {
         "path": "code/example/radio-group/radio-group-form-1.tsx",
@@ -17,5 +27,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:19.574Z"
+  "fetchedAt": "2026-01-03T11:29:17.099Z"
 }

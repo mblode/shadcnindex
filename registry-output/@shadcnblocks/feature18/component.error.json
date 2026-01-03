@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A grid of customizable UI feature cards, each with an icon, title, description, and a \"Learn more\" link, arranged in up to 3 columns.",
-    "dependencies": ["lucide-react"],
+    "dependencies": [
+      "lucide-react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:39.246Z"
+  "fetchedAt": "2026-01-03T11:28:37.760Z"
 }

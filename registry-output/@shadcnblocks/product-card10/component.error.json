@@ -8,7 +8,10 @@
     "type": "registry:block",
     "title": "Product-card",
     "description": "This component displays a product card that includes features like image galleries, stock status indicators, and a price display with sale and regular prices. It also offers functionality for selecting product variants, adding the item to a cart, and viewing quick product details through interactive buttons and tooltips.",
-    "dependencies": ["lucide-react", "react"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
     "registryDependencies": [
       "https://shadcnblocks.com/r/price",
       "aspect-ratio",
@@ -26,5 +29,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:58.878Z"
+  "fetchedAt": "2026-01-03T11:28:56.640Z"
 }

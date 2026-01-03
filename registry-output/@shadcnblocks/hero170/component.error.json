@@ -8,8 +8,12 @@
     "type": "registry:block",
     "title": "Hero",
     "description": "A component featuring a headline, a subtext, buttons for app download and GitHub star, integration options with icons, and a video preview with decorative dots.",
-    "dependencies": ["react-icons"],
-    "registryDependencies": ["button"],
+    "dependencies": [
+      "react-icons"
+    ],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/hero170.tsx",
@@ -17,5 +21,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:49.839Z"
+  "fetchedAt": "2026-01-03T11:28:48.411Z"
 }

@@ -6,15 +6,20 @@
   "item": {
     "name": "cta-11",
     "description": "Social proof with star ratings, number ticker, and dual action buttons.",
-    "registryDependencies": ["button", "@magicui/number-ticker"],
+    "registryDependencies": [
+      "button",
+      "@magicui/number-ticker"
+    ],
     "files": [
       {
         "path": "registry/cta/11/call-to-action.tsx",
         "type": "registry:component"
       }
     ],
-    "categories": ["cta"],
+    "categories": [
+      "cta"
+    ],
     "type": "registry:block"
   },
-  "fetchedAt": "2026-01-02T23:59:11.432Z"
+  "fetchedAt": "2026-01-03T11:28:09.529Z"
 }

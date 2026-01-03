@@ -7,7 +7,10 @@
     "name": "header-1",
     "type": "registry:block",
     "description": "A header section which animates while scrolling down.",
-    "dependencies": ["motion", "next-themes"],
+    "dependencies": [
+      "motion",
+      "next-themes"
+    ],
     "files": [
       {
         "path": "registry/blocks/header-1.tsx",
@@ -18,5 +21,5 @@
       "height": 800
     }
   },
-  "fetchedAt": "2026-01-02T23:59:17.190Z"
+  "fetchedAt": "2026-01-03T11:28:15.565Z"
 }

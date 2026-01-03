@@ -8,7 +8,10 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A component displays features in a grid, each with an icon, title, and description. Interactive blocks reveal descriptions on click.",
-    "dependencies": ["lucide-react", "react"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +20,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:37.169Z"
+  "fetchedAt": "2026-01-03T11:28:35.846Z"
 }

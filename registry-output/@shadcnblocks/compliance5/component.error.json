@@ -8,8 +8,12 @@
     "type": "registry:block",
     "title": "Compliance",
     "description": "A component displays enterprise compliance details, with a bold title, a paragraph, 4 badges in 2 or 4 columns depending on device, and a 'Learn more' button.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["button"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/compliance5.tsx",
@@ -17,5 +21,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:33.572Z"
+  "fetchedAt": "2026-01-03T11:28:32.204Z"
 }

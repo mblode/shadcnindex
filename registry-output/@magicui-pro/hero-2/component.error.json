@@ -6,7 +6,10 @@
   "item": {
     "name": "hero-2",
     "type": "registry:block",
-    "registryDependencies": ["@magicui/border-beam", "@magicui/retro-grid"],
+    "registryDependencies": [
+      "@magicui/border-beam",
+      "@magicui/retro-grid"
+    ],
     "files": [
       {
         "path": "registry/blocks/hero-2.tsx",
@@ -17,5 +20,5 @@
       "height": 1133
     }
   },
-  "fetchedAt": "2026-01-02T23:59:18.204Z"
+  "fetchedAt": "2026-01-03T11:28:16.575Z"
 }

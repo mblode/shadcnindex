@@ -9,7 +9,9 @@
     "title": "Background-pattern",
     "description": "This component serves as a flexible background block that fills the entire viewport with a gradient and a placeholder pattern. It allows for customization through an optional className prop, enabling users to incorporate unique styling or additional functionality.",
     "dependencies": [],
-    "registryDependencies": ["https://shadcnblocks.com/r/pattern-placeholder"],
+    "registryDependencies": [
+      "https://shadcnblocks.com/r/pattern-placeholder"
+    ],
     "files": [
       {
         "path": "code/block/background-pattern27.tsx",
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:29.847Z"
+  "fetchedAt": "2026-01-03T11:28:28.575Z"
 }

@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Cta",
     "description": "A 2-column component featuring a call-to-action with buttons and two card links for documentation and getting started guides, adorned with icons.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["button", "card"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "button",
+      "card"
+    ],
     "files": [
       {
         "path": "code/block/cta3.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:35.062Z"
+  "fetchedAt": "2026-01-03T11:28:33.585Z"
 }

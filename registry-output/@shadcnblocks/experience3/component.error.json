@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Experience",
     "description": "A component displaying professional experience with a title, introduction text, download resume button, last updated date, and a list of job positions with descriptions and periods.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["button"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/experience3.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:35.662Z"
+  "fetchedAt": "2026-01-03T11:28:34.322Z"
 }

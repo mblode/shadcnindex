@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "Project",
     "description": "A component showcasing a project case study with headers, body text, and full-width photos, arranged in a single-column layout focusing on brand identity design.",
-    "dependencies": ["react"],
+    "dependencies": [
+      "react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:00.742Z"
+  "fetchedAt": "2026-01-03T11:28:58.508Z"
 }

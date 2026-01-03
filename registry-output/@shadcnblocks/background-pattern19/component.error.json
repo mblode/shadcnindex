@@ -9,7 +9,9 @@
     "title": "Background-pattern",
     "description": "This component creates a full-screen container featuring a dashed grid background pattern, ideal for visually structuring content in an engaging way. It accepts customizable class names to allow for flexible styling and integration into various design themes.",
     "dependencies": [],
-    "registryDependencies": ["https://shadcnblocks.com/r/pattern-placeholder"],
+    "registryDependencies": [
+      "https://shadcnblocks.com/r/pattern-placeholder"
+    ],
     "files": [
       {
         "path": "code/block/background-pattern19.tsx",
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:29.560Z"
+  "fetchedAt": "2026-01-03T11:28:28.293Z"
 }

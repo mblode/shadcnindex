@@ -9,7 +9,9 @@
     "title": "Hero",
     "description": "A component featuring a centered title, description, and a button, alongside a mockup of a mobile device displaying an image. It includes a three-column layout with text elements and a graphical representation of an app interface.",
     "dependencies": [],
-    "registryDependencies": ["button"],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/hero49.tsx",
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:53.358Z"
+  "fetchedAt": "2026-01-03T11:28:51.669Z"
 }

@@ -8,8 +8,12 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A component featuring a main title, a card with text and an oversized image, and a 2-column layout with another card and a quote box.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["card"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "card"
+    ],
     "files": [
       {
         "path": "code/block/feature4.tsx",
@@ -17,5 +21,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:44.240Z"
+  "fetchedAt": "2026-01-03T11:28:42.767Z"
 }

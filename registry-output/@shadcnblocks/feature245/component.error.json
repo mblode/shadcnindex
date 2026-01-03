@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A component showcasing eight feature highlights with animated text and decorative slashes, centered around a single card image, structured in a dual-column layout.",
-    "dependencies": ["framer-motion", "react"],
-    "registryDependencies": ["card"],
+    "dependencies": [
+      "framer-motion",
+      "react"
+    ],
+    "registryDependencies": [
+      "card"
+    ],
     "files": [
       {
         "path": "code/block/feature245.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:41.839Z"
+  "fetchedAt": "2026-01-03T11:28:40.422Z"
 }

@@ -8,8 +8,12 @@
     "type": "registry:block",
     "title": "Cta",
     "description": "A component featuring a full-width image background, overlaid with a call-to-action (CTA) message and a large button. Below, two detailed information blocks are displayed side-by-side, each with an icon, title, and description.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["button"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/cta26.tsx",
@@ -17,5 +21,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:34.811Z"
+  "fetchedAt": "2026-01-03T11:28:33.367Z"
 }

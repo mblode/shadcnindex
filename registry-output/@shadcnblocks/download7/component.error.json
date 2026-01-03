@@ -9,7 +9,10 @@
     "title": "Download",
     "description": "A component showcasing app download options with a bold title, a badge, and stylized placeholders for 3 phones, arranged dynamically by screen width.",
     "dependencies": [],
-    "registryDependencies": ["https://magicui.design/r/iphone", "badge"],
+    "registryDependencies": [
+      "https://magicui.design/r/iphone",
+      "badge"
+    ],
     "files": [
       {
         "path": "code/block/download7.tsx",
@@ -17,5 +20,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:35.403Z"
+  "fetchedAt": "2026-01-03T11:28:34.163Z"
 }

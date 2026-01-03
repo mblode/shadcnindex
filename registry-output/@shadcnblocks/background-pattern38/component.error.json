@@ -9,7 +9,9 @@
     "title": "Background-pattern",
     "description": "This component creates a visually engaging background pattern with a center-fade circuit board design, ideal for adding dynamic aesthetics to full-screen sections. It allows customization through a `className` prop, enabling users to style the pattern to fit various themes and layouts.",
     "dependencies": [],
-    "registryDependencies": ["https://shadcnblocks.com/r/pattern-placeholder"],
+    "registryDependencies": [
+      "https://shadcnblocks.com/r/pattern-placeholder"
+    ],
     "files": [
       {
         "path": "code/block/background-pattern38.tsx",
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:30.399Z"
+  "fetchedAt": "2026-01-03T11:28:29.046Z"
 }

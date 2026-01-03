@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A block highlighting features of a project management app with icons, titles, and descriptions arranged in up to 3 columns.",
-    "dependencies": ["lucide-react"],
+    "dependencies": [
+      "lucide-react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:45.723Z"
+  "fetchedAt": "2026-01-03T11:28:44.216Z"
 }

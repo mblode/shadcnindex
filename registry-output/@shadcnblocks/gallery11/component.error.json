@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Gallery",
     "description": "A travel destination gallery with 4 items in a carousel, each item featuring an image, title, and description. Has a heading and \"Explore All\" button.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["button", "carousel"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "button",
+      "carousel"
+    ],
     "files": [
       {
         "path": "code/block/gallery11.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:47.101Z"
+  "fetchedAt": "2026-01-03T11:28:45.636Z"
 }

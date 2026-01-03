@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Hero",
     "description": "A component showcasing a title, description, sign-up button, and two visual content blocks with hover effects, dates, titles, and a \"See All\" link.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["button"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/hero203.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:51.042Z"
+  "fetchedAt": "2026-01-03T11:28:49.545Z"
 }

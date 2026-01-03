@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "Projects",
     "description": "A component showcasing 4 projects with details: Title, Description, Launch Date & Image, in a 3-column layout emphasizing project highlights.",
-    "dependencies": ["react"],
+    "dependencies": [
+      "react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:01.796Z"
+  "fetchedAt": "2026-01-03T11:28:59.516Z"
 }

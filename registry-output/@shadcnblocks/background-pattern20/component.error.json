@@ -9,7 +9,9 @@
     "title": "Background-pattern",
     "description": "This component creates a full-screen background pattern featuring a right-fade dashed grid effect, offering a distinctive and visually engaging backdrop for various applications. It integrates a customizable placeholder element to enhance functionality, making it ideal for layouts that require an interactive or decorative background feature.",
     "dependencies": [],
-    "registryDependencies": ["https://shadcnblocks.com/r/pattern-placeholder"],
+    "registryDependencies": [
+      "https://shadcnblocks.com/r/pattern-placeholder"
+    ],
     "files": [
       {
         "path": "code/block/background-pattern20.tsx",
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:29.614Z"
+  "fetchedAt": "2026-01-03T11:28:28.296Z"
 }

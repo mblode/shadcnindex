@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Integration",
     "description": "A component showcasing a collection of integration options with app icons, titles, and descriptions, arranged in up to two columns.",
-    "dependencies": ["react"],
-    "registryDependencies": ["button", "card"],
+    "dependencies": [
+      "react"
+    ],
+    "registryDependencies": [
+      "button",
+      "card"
+    ],
     "files": [
       {
         "path": "code/block/integration1.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:55.160Z"
+  "fetchedAt": "2026-01-03T11:28:53.161Z"
 }

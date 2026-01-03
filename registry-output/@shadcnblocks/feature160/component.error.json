@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A tabbed component with 4 items, each with an icon, title, and description. Clicking a tab shows a related image. Uses a grid layout for tabs.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["tabs"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "tabs"
+    ],
     "files": [
       {
         "path": "code/block/feature160.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:38.710Z"
+  "fetchedAt": "2026-01-03T11:28:37.209Z"
 }

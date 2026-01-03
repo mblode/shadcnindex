@@ -6,8 +6,13 @@
   "item": {
     "name": "cta-9",
     "description": "Ethereal shadow effect with number ticker and dual action buttons.",
-    "dependencies": ["motion"],
-    "registryDependencies": ["button", "@magicui/number-ticker"],
+    "dependencies": [
+      "motion"
+    ],
+    "registryDependencies": [
+      "button",
+      "@magicui/number-ticker"
+    ],
     "files": [
       {
         "path": "registry/cta/9/call-to-action.tsx",
@@ -18,8 +23,10 @@
         "type": "registry:component"
       }
     ],
-    "categories": ["cta"],
+    "categories": [
+      "cta"
+    ],
     "type": "registry:block"
   },
-  "fetchedAt": "2026-01-02T23:59:11.532Z"
+  "fetchedAt": "2026-01-03T11:28:09.523Z"
 }

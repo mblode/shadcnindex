@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "Skills",
     "description": "A component listing tools & technologies in a 2-column layout with a decorative background pattern for each item, including icons, names, categories, and usage percentages.",
-    "dependencies": ["react"],
+    "dependencies": [
+      "react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:05.243Z"
+  "fetchedAt": "2026-01-03T11:29:03.517Z"
 }

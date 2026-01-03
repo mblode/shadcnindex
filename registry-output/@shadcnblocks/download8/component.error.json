@@ -8,7 +8,10 @@
     "type": "registry:block",
     "title": "Download",
     "description": "This component displays a download block with a featured image, a title, an auto-detect download button with its last update date, and a list of download options for various platforms categorized in a 2-column layout.",
-    "dependencies": ["lucide-react", "react-icons"],
+    "dependencies": [
+      "lucide-react",
+      "react-icons"
+    ],
     "registryDependencies": [
       "https://ui.aceternity.com/registry/glare-card.json",
       "button"
@@ -20,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:35.562Z"
+  "fetchedAt": "2026-01-03T11:28:34.078Z"
 }

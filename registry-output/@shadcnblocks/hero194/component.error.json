@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Hero",
     "description": "This component features a dual-layout block with a text section and a vertical carousel of images. The text section includes a main heading, a paragraph, and a button with an icon. The image carousel presents team photos that auto-scroll. In larger views, multiple image carousels with slightly rotated images appear side by side.",
-    "dependencies": ["embla-carousel-auto-scroll", "lucide-react"],
-    "registryDependencies": ["button", "carousel"],
+    "dependencies": [
+      "embla-carousel-auto-scroll",
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "button",
+      "carousel"
+    ],
     "files": [
       {
         "path": "code/block/hero194.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:50.765Z"
+  "fetchedAt": "2026-01-03T11:28:49.235Z"
 }

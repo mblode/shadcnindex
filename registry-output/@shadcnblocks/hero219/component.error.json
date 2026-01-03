@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Hero",
     "description": "A dynamic hero block featuring animated text, a particle effect background, and multiple vertical marquees with icons. It includes an engaging headline and a blurred white background overlay.",
-    "dependencies": ["framer-motion", "react"],
-    "registryDependencies": ["https://magicui.design/r/particles"],
+    "dependencies": [
+      "framer-motion",
+      "react"
+    ],
+    "registryDependencies": [
+      "https://magicui.design/r/particles"
+    ],
     "files": [
       {
         "path": "code/block/hero219.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:51.485Z"
+  "fetchedAt": "2026-01-03T11:28:49.836Z"
 }

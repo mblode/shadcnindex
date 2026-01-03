@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Product-specs",
     "description": "This component displays detailed product specifications organized into tabs for easy navigation and comparison, allowing users to switch between categories like Overview, Display, and Performance. Each spec group highlights key features and uses visual indicators to show boolean values with check and cross icons.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["badge", "tabs"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "badge",
+      "tabs"
+    ],
     "files": [
       {
         "path": "code/block/product-specs2.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:00.284Z"
+  "fetchedAt": "2026-01-03T11:28:58.179Z"
 }

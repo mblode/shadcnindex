@@ -8,7 +8,10 @@
     "type": "registry:block",
     "title": "Blogpost",
     "description": "A blog post component with dynamic navigation highlighting active sections, breadcrumbs, author info, and social share buttons. Layout includes an 8:3 column split for content and sidebar.",
-    "dependencies": ["lucide-react", "react"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
     "registryDependencies": [
       "alert",
       "avatar",
@@ -23,5 +26,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:31.708Z"
+  "fetchedAt": "2026-01-03T11:28:30.386Z"
 }

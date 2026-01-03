@@ -6,7 +6,9 @@
   "item": {
     "name": "badge",
     "type": "registry:ui",
-    "dependencies": ["@radix-ui/react-slot"],
+    "dependencies": [
+      "@radix-ui/react-slot"
+    ],
     "files": [
       {
         "path": "ui/badge.tsx",
@@ -14,5 +16,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T07:39:45.452Z"
+  "fetchedAt": "2026-01-03T11:28:25.470Z"
 }

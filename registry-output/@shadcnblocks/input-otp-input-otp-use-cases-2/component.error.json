@@ -16,7 +16,12 @@
       "sonner",
       "zod"
     ],
-    "registryDependencies": ["button", "form", "input", "input-otp"],
+    "registryDependencies": [
+      "button",
+      "form",
+      "input",
+      "input-otp"
+    ],
     "files": [
       {
         "path": "code/example/input-otp/input-otp-use-cases-2.tsx",
@@ -24,5 +29,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:18.546Z"
+  "fetchedAt": "2026-01-03T11:29:16.011Z"
 }

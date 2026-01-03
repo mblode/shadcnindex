@@ -9,7 +9,10 @@
     "title": "Stats",
     "description": "This component displays statistics and four feature cards in a 2-column layout, highlighting benefits and key metrics.",
     "dependencies": [],
-    "registryDependencies": ["badge", "separator"],
+    "registryDependencies": [
+      "badge",
+      "separator"
+    ],
     "files": [
       {
         "path": "code/block/stats9.tsx",
@@ -17,5 +20,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:06.523Z"
+  "fetchedAt": "2026-01-03T11:29:04.290Z"
 }

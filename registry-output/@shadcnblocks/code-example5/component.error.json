@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "Code-example",
     "description": "This component provides a code explorer, allowing users to interactively select and view code examples for different API integrations including REST, GraphQL, and WebSocket. It features language switching tabs, displays code snippets with syntax highlighting, and offers a copy-to-clipboard functionality.",
-    "dependencies": ["react"],
+    "dependencies": [
+      "react"
+    ],
     "registryDependencies": [
       "https://www.kibo-ui.com/r/code-block.json",
       "scroll-area",
@@ -21,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:33.009Z"
+  "fetchedAt": "2026-01-03T11:28:31.520Z"
 }

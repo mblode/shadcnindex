@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Projects15e",
     "description": "A video carousel component displaying project thumbnails that play videos on hover, showcasing titles and studio names. Features navigation arrows and auto-pause.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["carousel"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "carousel"
+    ],
     "files": [
       {
         "path": "code/block/projects15e.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:02.090Z"
+  "fetchedAt": "2026-01-03T11:28:59.795Z"
 }

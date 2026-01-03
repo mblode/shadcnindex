@@ -8,7 +8,10 @@
     "type": "registry:block",
     "title": "Order-history",
     "description": "This component provides users an interface to view and manage their order history, including functionalities to filter orders by status and search by order number. It displays details such as order number, date, status, item count, total price, and allows actions like tracking shipped orders and reordering delivered items.",
-    "dependencies": ["lucide-react", "react"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
     "registryDependencies": [
       "aspect-ratio",
       "badge",
@@ -24,5 +27,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:57.133Z"
+  "fetchedAt": "2026-01-03T11:28:54.879Z"
 }

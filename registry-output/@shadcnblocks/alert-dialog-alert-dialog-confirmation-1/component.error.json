@@ -9,7 +9,10 @@
     "title": "Alert-dialog/alert-dialog-confirmation-",
     "description": "A alert-dialog/alert-dialog-confirmation- example",
     "dependencies": [],
-    "registryDependencies": ["alert-dialog", "button"],
+    "registryDependencies": [
+      "alert-dialog",
+      "button"
+    ],
     "files": [
       {
         "path": "code/example/alert-dialog/alert-dialog-confirmation-1.tsx",
@@ -17,5 +20,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:08.608Z"
+  "fetchedAt": "2026-01-03T11:29:06.376Z"
 }

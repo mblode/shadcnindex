@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A component featuring a title and two cards for showcasing features, each with \"Learn more\" links and logos.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["badge", "button", "card"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "badge",
+      "button",
+      "card"
+    ],
     "files": [
       {
         "path": "code/block/feature8.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:45.481Z"
+  "fetchedAt": "2026-01-03T11:28:44.059Z"
 }

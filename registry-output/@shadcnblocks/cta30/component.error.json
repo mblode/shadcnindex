@@ -9,7 +9,10 @@
     "title": "Cta",
     "description": "This component displays overlapping avatars, a bold title, a descriptive paragraph, and a featured button with a playful tagline next to a custom line graphic.",
     "dependencies": [],
-    "registryDependencies": ["avatar", "button"],
+    "registryDependencies": [
+      "avatar",
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/cta30.tsx",
@@ -17,5 +20,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:35.022Z"
+  "fetchedAt": "2026-01-03T11:28:33.646Z"
 }

@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "Project8b",
     "description": "A visually animated block with a title, subtitle, two-column layout featuring an image and detailed text descriptions, incorporating motion effects on load.",
-    "dependencies": ["framer-motion"],
+    "dependencies": [
+      "framer-motion"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:01.517Z"
+  "fetchedAt": "2026-01-03T11:28:59.232Z"
 }

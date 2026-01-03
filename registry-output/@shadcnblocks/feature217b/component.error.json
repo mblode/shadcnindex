@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "Feature217b",
     "description": "This component showcases three accessibility features with icons in a 3-column layout, including titles and summaries, against a dynamic background.",
-    "dependencies": ["lucide-react"],
+    "dependencies": [
+      "lucide-react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:40.618Z"
+  "fetchedAt": "2026-01-03T11:28:39.327Z"
 }

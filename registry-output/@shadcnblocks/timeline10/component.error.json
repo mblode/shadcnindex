@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Timeline",
     "description": "A timeline component with 4 columns, highlighting project phases with dates, titles, and descriptions, using animation to show current progress.",
-    "dependencies": ["framer-motion", "react"],
-    "registryDependencies": ["card", "separator"],
+    "dependencies": [
+      "framer-motion",
+      "react"
+    ],
+    "registryDependencies": [
+      "card",
+      "separator"
+    ],
     "files": [
       {
         "path": "code/block/timeline10.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:08.011Z"
+  "fetchedAt": "2026-01-03T11:29:05.791Z"
 }

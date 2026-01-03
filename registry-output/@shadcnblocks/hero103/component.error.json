@@ -13,7 +13,10 @@
       "embla-carousel-autoplay",
       "lucide-react"
     ],
-    "registryDependencies": ["button", "carousel"],
+    "registryDependencies": [
+      "button",
+      "carousel"
+    ],
     "files": [
       {
         "path": "code/block/hero103.tsx",
@@ -21,5 +24,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:48.431Z"
+  "fetchedAt": "2026-01-03T11:28:46.940Z"
 }

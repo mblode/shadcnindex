@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Services",
     "description": "A component listing services using animations, a structured approach text, and contact button. Includes 5 sections, each with a title and options; animations on scroll.",
-    "dependencies": ["framer-motion", "lucide-react", "react"],
-    "registryDependencies": ["button"],
+    "dependencies": [
+      "framer-motion",
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/services20.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:03.943Z"
+  "fetchedAt": "2026-01-03T11:29:01.666Z"
 }

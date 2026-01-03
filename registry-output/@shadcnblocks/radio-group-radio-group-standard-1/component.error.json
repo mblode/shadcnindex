@@ -9,7 +9,10 @@
     "title": "Radio-group/radio-group-standard-",
     "description": "A radio-group/radio-group-standard- example",
     "dependencies": [],
-    "registryDependencies": ["label", "radio-group"],
+    "registryDependencies": [
+      "label",
+      "radio-group"
+    ],
     "files": [
       {
         "path": "code/example/radio-group/radio-group-standard-1.tsx",
@@ -17,5 +20,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:19.791Z"
+  "fetchedAt": "2026-01-03T11:29:17.250Z"
 }

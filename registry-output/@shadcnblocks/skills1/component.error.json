@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Skills",
     "description": "A component featuring a compilation of professional tools and frameworks, with a 6-column layout, displaying items in a 2:4 ratio. It highlights each tool's name, category, experience, and logo. Unique features include customizable buttons and a sticky left column with introductory text and navigation options.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["button"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/skills1.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:05.226Z"
+  "fetchedAt": "2026-01-03T11:29:03.390Z"
 }

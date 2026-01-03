@@ -9,7 +9,9 @@
     "title": "Context-menu/context-menu-standard-",
     "description": "A context-menu/context-menu-standard- example",
     "dependencies": [],
-    "registryDependencies": ["context-menu"],
+    "registryDependencies": [
+      "context-menu"
+    ],
     "files": [
       {
         "path": "code/example/context-menu/context-menu-standard-1.tsx",
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:12.892Z"
+  "fetchedAt": "2026-01-03T11:29:10.706Z"
 }

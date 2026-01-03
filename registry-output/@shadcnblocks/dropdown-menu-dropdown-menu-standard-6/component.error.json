@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Dropdown-menu/dropdown-menu-standard-",
     "description": "A dropdown-menu/dropdown-menu-standard- example",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["button", "dropdown-menu"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "button",
+      "dropdown-menu"
+    ],
     "files": [
       {
         "path": "code/example/dropdown-menu/dropdown-menu-standard-6.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:15.127Z"
+  "fetchedAt": "2026-01-03T11:29:12.802Z"
 }

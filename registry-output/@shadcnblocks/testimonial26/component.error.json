@@ -8,8 +8,12 @@
     "type": "registry:block",
     "title": "Testimonial",
     "description": "A testimonial carousel block with dynamic navigation dots and decorative background patterns. Displays quotes, authors, roles, and logos.",
-    "dependencies": ["react"],
-    "registryDependencies": ["carousel"],
+    "dependencies": [
+      "react"
+    ],
+    "registryDependencies": [
+      "carousel"
+    ],
     "files": [
       {
         "path": "code/block/testimonial26.tsx",
@@ -17,5 +21,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:07.526Z"
+  "fetchedAt": "2026-01-03T11:29:05.330Z"
 }

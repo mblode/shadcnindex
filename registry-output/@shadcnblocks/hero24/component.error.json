@@ -8,8 +8,12 @@
     "type": "registry:block",
     "title": "Hero",
     "description": "A marketing block with an image, title, button, and 4 columns highlighting features with icons.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["button"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/hero24.tsx",
@@ -17,5 +21,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:52.297Z"
+  "fetchedAt": "2026-01-03T11:28:50.688Z"
 }

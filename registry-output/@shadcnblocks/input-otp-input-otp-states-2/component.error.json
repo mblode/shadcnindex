@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Input-otp/input-otp-states-",
     "description": "A input-otp/input-otp-states- example",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["input-otp"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "input-otp"
+    ],
     "files": [
       {
         "path": "code/example/input-otp/input-otp-states-2.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:18.288Z"
+  "fetchedAt": "2026-01-03T11:29:15.812Z"
 }

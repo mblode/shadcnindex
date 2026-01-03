@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Blog",
     "description": "A component showcases blog articles with filtering. Layout includes an article display area (3-column wide) and a category filter sidebar (1-column), plus introductory text. Features dynamic filtering by category.",
-    "dependencies": ["react"],
-    "registryDependencies": ["badge", "button", "separator"],
+    "dependencies": [
+      "react"
+    ],
+    "registryDependencies": [
+      "badge",
+      "button",
+      "separator"
+    ],
     "files": [
       {
         "path": "code/block/blog17.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:31.155Z"
+  "fetchedAt": "2026-01-03T11:28:29.715Z"
 }

@@ -6,16 +6,22 @@
   "item": {
     "name": "cta-6",
     "description": "A call-to-action Block with a heading and an animated 'Join Now!' button with hover effects.",
-    "dependencies": ["motion"],
-    "registryDependencies": ["button"],
+    "dependencies": [
+      "motion"
+    ],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "registry/cta/6/call-to-action.tsx",
         "type": "registry:component"
       }
     ],
-    "categories": ["cta"],
+    "categories": [
+      "cta"
+    ],
     "type": "registry:block"
   },
-  "fetchedAt": "2026-01-02T23:59:11.493Z"
+  "fetchedAt": "2026-01-03T11:28:09.615Z"
 }

@@ -8,8 +8,12 @@
     "type": "registry:block",
     "title": "Cta",
     "description": "A two-column call-to-action component featuring bullet points with checkmarks and a \"Get Started\" button, decorated with a geometric background.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["button"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/cta7.tsx",
@@ -17,5 +21,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:35.109Z"
+  "fetchedAt": "2026-01-03T11:28:33.755Z"
 }

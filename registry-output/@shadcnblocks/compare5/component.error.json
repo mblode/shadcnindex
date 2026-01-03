@@ -9,7 +9,9 @@
     "title": "Compare",
     "description": "A component displays two options with images, text, and buttons, split across two columns, and features an \"OR\" marker centrally between columns.",
     "dependencies": [],
-    "registryDependencies": ["button"],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/compare5.tsx",
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:33.471Z"
+  "fetchedAt": "2026-01-03T11:28:32.055Z"
 }

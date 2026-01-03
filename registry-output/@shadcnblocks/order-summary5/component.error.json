@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "Order-summary",
     "description": "This component displays an order summary with detailed information about ordered items, pricing, and estimated delivery dates, allowing users to view, track orders, and continue shopping. It features interactive elements like buttons to toggle the display and manage actions, as well as formatted pricing details for enhanced user experience.",
-    "dependencies": ["lucide-react"],
+    "dependencies": [
+      "lucide-react"
+    ],
     "registryDependencies": [
       "aspect-ratio",
       "button",
@@ -23,5 +25,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:57.417Z"
+  "fetchedAt": "2026-01-03T11:28:55.232Z"
 }

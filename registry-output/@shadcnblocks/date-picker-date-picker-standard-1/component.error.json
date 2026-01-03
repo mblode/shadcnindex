@@ -15,7 +15,11 @@
       "react",
       "react-day-picker"
     ],
-    "registryDependencies": ["button", "calendar", "popover"],
+    "registryDependencies": [
+      "button",
+      "calendar",
+      "popover"
+    ],
     "files": [
       {
         "path": "code/example/date-picker/date-picker-standard-1.tsx",
@@ -23,5 +27,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:13.872Z"
+  "fetchedAt": "2026-01-03T11:29:11.581Z"
 }

@@ -8,7 +8,10 @@
     "type": "registry:block",
     "title": "Gallery",
     "description": "A 4-column animated image gallery, each column with varying image heights and animated transitions on view.",
-    "dependencies": ["framer-motion", "react"],
+    "dependencies": [
+      "framer-motion",
+      "react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +20,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:47.629Z"
+  "fetchedAt": "2026-01-03T11:28:46.185Z"
 }

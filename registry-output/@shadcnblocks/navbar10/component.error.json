@@ -8,7 +8,10 @@
     "type": "registry:block",
     "title": "Navbar",
     "description": "A navigation bar component featuring a logo, links to products, solutions, platform, resources, pricing, a sign-up button, and a mobile menu trigger. It includes dropdown menus for extensive categories with featured links, images, and company logos arranged in various layouts.",
-    "dependencies": ["lucide-react", "react"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
     "registryDependencies": [
       "accordion",
       "aspect-ratio",
@@ -25,5 +28,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:56.369Z"
+  "fetchedAt": "2026-01-03T11:28:54.267Z"
 }

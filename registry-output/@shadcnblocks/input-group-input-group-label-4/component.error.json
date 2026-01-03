@@ -9,7 +9,10 @@
     "title": "Input-group/input-group-label-",
     "description": "A input-group/input-group-label- example",
     "dependencies": [],
-    "registryDependencies": ["input-group", "label"],
+    "registryDependencies": [
+      "input-group",
+      "label"
+    ],
     "files": [
       {
         "path": "code/example/input-group/input-group-label-4.tsx",
@@ -17,5 +20,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:17.230Z"
+  "fetchedAt": "2026-01-03T11:29:14.806Z"
 }

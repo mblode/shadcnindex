@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Input-group/input-group-dropdown-",
     "description": "A input-group/input-group-dropdown- example",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["dropdown-menu", "input-group"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "dropdown-menu",
+      "input-group"
+    ],
     "files": [
       {
         "path": "code/example/input-group/input-group-dropdown-2.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:16.810Z"
+  "fetchedAt": "2026-01-03T11:29:14.500Z"
 }

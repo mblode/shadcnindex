@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "Services",
     "description": "This component displays four services, each with an icon, title, description, and list of features, styled with rounded containers.",
-    "dependencies": ["lucide-react"],
+    "dependencies": [
+      "lucide-react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:04.185Z"
+  "fetchedAt": "2026-01-03T11:29:01.956Z"
 }

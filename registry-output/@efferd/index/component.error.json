@@ -5,12 +5,19 @@
   "error": "HTTP 404 Not Found",
   "item": {
     "name": "index",
-    "dependencies": ["class-variance-authority", "lucide-react"],
-    "devDependencies": ["tw-animate-css"],
-    "registryDependencies": ["utils"],
+    "dependencies": [
+      "class-variance-authority",
+      "lucide-react"
+    ],
+    "devDependencies": [
+      "tw-animate-css"
+    ],
+    "registryDependencies": [
+      "utils"
+    ],
     "files": [],
     "cssVars": {},
     "type": "registry:style"
   },
-  "fetchedAt": "2026-01-02T23:59:11.475Z"
+  "fetchedAt": "2026-01-03T11:28:08.949Z"
 }

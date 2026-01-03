@@ -9,7 +9,10 @@
     "title": "Services",
     "description": "A component displaying services in an accordion layout with images, descriptions, and categorized badges. Features a bold service counter and a large \"Services.\" heading spanning 3 of 4 columns.",
     "dependencies": [],
-    "registryDependencies": ["accordion", "badge"],
+    "registryDependencies": [
+      "accordion",
+      "badge"
+    ],
     "files": [
       {
         "path": "code/block/services16.tsx",
@@ -17,5 +20,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:03.899Z"
+  "fetchedAt": "2026-01-03T11:29:01.568Z"
 }

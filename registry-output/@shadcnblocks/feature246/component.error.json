@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "This block features a sign-up form with a dynamic list of benefits and an illustrative image. Includes a bold headline, 4 listed advantages with icons, and an input button combination for email sign-ups.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["button", "input"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "button",
+      "input"
+    ],
     "files": [
       {
         "path": "code/block/feature246.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:41.812Z"
+  "fetchedAt": "2026-01-03T11:28:40.433Z"
 }

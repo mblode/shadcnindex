@@ -8,8 +8,15 @@
     "type": "registry:block",
     "title": "Contact",
     "description": "A component featuring a contact form with fields for personal and company details, alongside sections for corporate information, email contacts, and social media links.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["button", "input", "label", "textarea"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "button",
+      "input",
+      "label",
+      "textarea"
+    ],
     "files": [
       {
         "path": "code/block/contact11.tsx",
@@ -17,5 +24,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:33.765Z"
+  "fetchedAt": "2026-01-03T11:28:32.433Z"
 }

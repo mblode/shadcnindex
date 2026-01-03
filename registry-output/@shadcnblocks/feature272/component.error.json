@@ -8,7 +8,10 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A 3-step guide block with a centered title, intro text, and a grid of 3 columns each detailing a step. Features arrows pointing between steps.",
-    "dependencies": ["lucide-react", "react"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
     "registryDependencies": [
       "https://ui.aceternity.com/registry/background-beams.json"
     ],
@@ -19,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:42.706Z"
+  "fetchedAt": "2026-01-03T11:28:41.225Z"
 }

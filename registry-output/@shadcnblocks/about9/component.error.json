@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "About",
     "description": "A component showcasing a professional summary, a large team photo, personal introduction, another photo, followed by a detailed work experience section.",
-    "dependencies": ["react"],
+    "dependencies": [
+      "react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:28.986Z"
+  "fetchedAt": "2026-01-03T11:28:27.714Z"
 }

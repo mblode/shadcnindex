@@ -8,7 +8,12 @@
     "type": "registry:block",
     "title": "Checkout",
     "description": "This component is a comprehensive checkout form that facilitates the entire purchase process, including cart overview, address entry, and payment methods. It leverages the `react-hook-form` library for form handling and supports multiple payment options such as credit card, PayPal, and bank transfers.",
-    "dependencies": ["@hookform/resolvers", "react", "react-hook-form", "zod"],
+    "dependencies": [
+      "@hookform/resolvers",
+      "react",
+      "react-hook-form",
+      "zod"
+    ],
     "registryDependencies": [
       "https://shadcnblocks.com/r/price",
       "accordion",
@@ -28,5 +33,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:32.701Z"
+  "fetchedAt": "2026-01-03T11:28:31.395Z"
 }

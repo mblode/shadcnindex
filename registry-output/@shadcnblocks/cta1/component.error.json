@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Cta",
     "description": "A component features a card split into text and image sections, with a call-to-action button and decorative icons.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["button", "card"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "button",
+      "card"
+    ],
     "files": [
       {
         "path": "code/block/cta1.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:34.337Z"
+  "fetchedAt": "2026-01-03T11:28:33.010Z"
 }

@@ -8,7 +8,11 @@
     "type": "registry:block",
     "title": "Hero",
     "description": "A component displaying dynamic text with mouse tracking cursor effects, utilizing animated elements and a center-aligned layout with a background image.",
-    "dependencies": ["framer-motion", "lucide-react", "react"],
+    "dependencies": [
+      "framer-motion",
+      "lucide-react",
+      "react"
+    ],
     "registryDependencies": [
       "https://fancycomponents.dev/r/variable-font-and-cursor.json"
     ],
@@ -19,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:51.611Z"
+  "fetchedAt": "2026-01-03T11:28:49.879Z"
 }

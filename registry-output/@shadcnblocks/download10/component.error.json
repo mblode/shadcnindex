@@ -8,8 +8,12 @@
     "type": "registry:block",
     "title": "Download",
     "description": "A component promoting software downloads, subdivided into 3 columns for Desktop, Mobile, and Web versions with respective download options.",
-    "dependencies": ["react-icons"],
-    "registryDependencies": ["button"],
+    "dependencies": [
+      "react-icons"
+    ],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/download10.tsx",
@@ -17,5 +21,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:35.276Z"
+  "fetchedAt": "2026-01-03T11:28:33.791Z"
 }

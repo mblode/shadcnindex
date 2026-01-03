@@ -9,7 +9,9 @@
     "title": "Background-pattern",
     "description": "This component, named BackgroundPattern8, is designed to create a visually appealing full-screen background with a fade grid pattern effect. It includes a customizable className prop for flexible styling and incorporates a radial gradient mask to enhance the design.",
     "dependencies": [],
-    "registryDependencies": ["https://shadcnblocks.com/r/pattern-placeholder"],
+    "registryDependencies": [
+      "https://shadcnblocks.com/r/pattern-placeholder"
+    ],
     "files": [
       {
         "path": "code/block/background-pattern8.tsx",
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:30.659Z"
+  "fetchedAt": "2026-01-03T11:28:29.290Z"
 }

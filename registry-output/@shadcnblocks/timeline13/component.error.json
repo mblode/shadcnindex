@@ -9,7 +9,10 @@
     "title": "Timeline",
     "description": "A component displaying a product launch timeline with 3 phases, progress bars, and durations. Features an animated timeline indicator.",
     "dependencies": [],
-    "registryDependencies": ["button", "progress"],
+    "registryDependencies": [
+      "button",
+      "progress"
+    ],
     "files": [
       {
         "path": "code/block/timeline13.tsx",
@@ -17,5 +20,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:08.078Z"
+  "fetchedAt": "2026-01-03T11:29:05.836Z"
 }

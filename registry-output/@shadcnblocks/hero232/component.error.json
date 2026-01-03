@@ -8,7 +8,11 @@
     "type": "registry:block",
     "title": "Hero",
     "description": "A component featuring centered text and buttons within a full-screen background, complemented by animated SVG illustrations on sides.",
-    "dependencies": ["framer-motion", "lucide-react", "react"],
+    "dependencies": [
+      "framer-motion",
+      "lucide-react",
+      "react"
+    ],
     "registryDependencies": [
       "https://magicui.design/r/line-shadow-text",
       "button"
@@ -20,5 +24,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:51.908Z"
+  "fetchedAt": "2026-01-03T11:28:50.386Z"
 }

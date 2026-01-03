@@ -8,8 +8,15 @@
     "type": "registry:block",
     "title": "Hero",
     "description": "A component showcases tutorials with a video dialog, user join counter, course stats, and membership CTA. It uses a two-column layout with icons and avatars.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["avatar", "button", "dialog"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "avatar",
+      "button",
+      "dialog"
+    ],
     "files": [
       {
         "path": "code/block/hero112.tsx",
@@ -17,5 +24,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:48.664Z"
+  "fetchedAt": "2026-01-03T11:28:47.173Z"
 }

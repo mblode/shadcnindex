@@ -6,12 +6,19 @@
   "item": {
     "name": "index",
     "type": "registry:style",
-    "dependencies": ["class-variance-authority", "lucide-react"],
-    "devDependencies": ["tw-animate-css"],
-    "registryDependencies": ["utils"],
+    "dependencies": [
+      "class-variance-authority",
+      "lucide-react"
+    ],
+    "devDependencies": [
+      "tw-animate-css"
+    ],
+    "registryDependencies": [
+      "utils"
+    ],
     "files": [],
     "cssVars": {},
     "meta": {}
   },
-  "fetchedAt": "2026-01-02T23:59:17.194Z"
+  "fetchedAt": "2026-01-03T11:28:15.549Z"
 }

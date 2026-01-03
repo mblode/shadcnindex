@@ -8,8 +8,15 @@
     "type": "registry:block",
     "title": "Pricing",
     "description": "A pricing block with a yearly billing switch, featuring 3 columns for Basic, Standard, and Premium plans. Includes feature lists and pricing details.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["button", "separator", "switch"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "button",
+      "separator",
+      "switch"
+    ],
     "files": [
       {
         "path": "code/block/pricing3.tsx",
@@ -17,5 +24,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:58.199Z"
+  "fetchedAt": "2026-01-03T11:28:56.042Z"
 }

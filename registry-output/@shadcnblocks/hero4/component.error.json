@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Hero",
     "description": "A two-column component featuring an image and a text section with avatars, star ratings, and buttons.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["avatar", "button"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "avatar",
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/hero4.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:53.238Z"
+  "fetchedAt": "2026-01-03T11:28:51.666Z"
 }

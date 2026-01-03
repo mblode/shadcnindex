@@ -6,7 +6,9 @@
   "item": {
     "name": "component",
     "type": "registry:component",
-    "registryDependencies": ["@aliimam/gradient-mesh"]
+    "registryDependencies": [
+      "@aliimam/gradient-mesh"
+    ]
   },
-  "fetchedAt": "2026-01-02T23:59:05.205Z"
+  "fetchedAt": "2026-01-03T11:28:01.104Z"
 }

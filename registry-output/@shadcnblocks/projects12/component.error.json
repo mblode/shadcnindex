@@ -8,7 +8,10 @@
     "type": "registry:block",
     "title": "Projects",
     "description": "An interactive gallery component with a 1-3 column layout, showcasing projects with hover animations and dynamic, motion-enhanced tooltips.",
-    "dependencies": ["framer-motion", "react"],
+    "dependencies": [
+      "framer-motion",
+      "react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +20,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:01.835Z"
+  "fetchedAt": "2026-01-03T11:28:59.511Z"
 }

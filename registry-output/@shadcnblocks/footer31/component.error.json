@@ -8,8 +8,15 @@
     "type": "registry:block",
     "title": "Footer",
     "description": "A footer component with dynamic animation, featuring navigation, social links, subscription form, location, and privacy terms. Includes email contact, 2-column grid for links, and an animated logo.",
-    "dependencies": ["framer-motion", "lucide-react", "react"],
-    "registryDependencies": ["button", "input"],
+    "dependencies": [
+      "framer-motion",
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "button",
+      "input"
+    ],
     "files": [
       {
         "path": "code/block/footer31.tsx",
@@ -17,5 +24,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:46.672Z"
+  "fetchedAt": "2026-01-03T11:28:45.342Z"
 }

@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Gallery",
     "description": "A component with a heading, badge, and a carousel displaying images and texts with navigation indicators. Features clickable sections to scroll through content.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["badge", "carousel"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "badge",
+      "carousel"
+    ],
     "files": [
       {
         "path": "code/block/gallery9.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:48.214Z"
+  "fetchedAt": "2026-01-03T11:28:46.894Z"
 }

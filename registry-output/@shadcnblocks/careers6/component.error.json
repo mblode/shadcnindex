@@ -8,8 +8,12 @@
     "type": "registry:block",
     "title": "Careers",
     "description": "A dual-column block showcasing job openings with badges for categories and icons for job types and locations.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["button"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/careers6.tsx",
@@ -17,5 +21,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:31.953Z"
+  "fetchedAt": "2026-01-03T11:28:30.656Z"
 }

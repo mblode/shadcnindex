@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Feature215b",
     "description": "A component featuring a collection of horizontal cards, each with a video, icon, title, summary, and link. Cards activate video on hover.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["aspect-ratio", "button"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "aspect-ratio",
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/feature215b.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:40.605Z"
+  "fetchedAt": "2026-01-03T11:28:39.260Z"
 }

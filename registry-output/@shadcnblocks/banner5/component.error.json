@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Banner",
     "description": "A dismissible banner component with an icon, title, description, and external link button. Features a close button, adapts layout from column to row on wider screens.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["button"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/banner5.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:30.830Z"
+  "fetchedAt": "2026-01-03T11:28:29.401Z"
 }

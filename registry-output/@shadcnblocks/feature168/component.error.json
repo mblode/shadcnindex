@@ -8,8 +8,12 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A component that showcases 3 productivity features with titles, descriptions, and visuals in a 3-column layout, including a highlighted \"Features\" Badge and a main heading.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["badge"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "badge"
+    ],
     "files": [
       {
         "path": "code/block/feature168.tsx",
@@ -17,5 +21,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:38.796Z"
+  "fetchedAt": "2026-01-03T11:28:37.441Z"
 }

@@ -9,7 +9,9 @@
     "title": "Feature",
     "description": "A carousel block displaying items with titles, descriptions, and images in a flex layout, includes previous and next controls. Each item combines text and a full-width image.",
     "dependencies": [],
-    "registryDependencies": ["carousel"],
+    "registryDependencies": [
+      "carousel"
+    ],
     "files": [
       {
         "path": "code/block/feature140.tsx",
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:37.893Z"
+  "fetchedAt": "2026-01-03T11:28:36.510Z"
 }

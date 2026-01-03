@@ -7,9 +7,15 @@
     "name": "stripe-express-prisma",
     "type": "registry:block",
     "description": "Stripe integration for Express with Prisma ORM schemas for payments and subscriptions",
-    "dependencies": ["prisma"],
-    "devDependencies": ["prisma"],
-    "registryDependencies": ["https://usepaykit.dev/r/stripe-express"],
+    "dependencies": [
+      "prisma"
+    ],
+    "devDependencies": [
+      "prisma"
+    ],
+    "registryDependencies": [
+      "https://usepaykit.dev/r/stripe-express"
+    ],
     "files": [
       {
         "type": "registry:file",
@@ -27,5 +33,5 @@
       "auth": "none"
     }
   },
-  "fetchedAt": "2026-01-02T23:59:23.190Z"
+  "fetchedAt": "2026-01-03T11:28:21.946Z"
 }

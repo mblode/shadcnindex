@@ -7,9 +7,15 @@
     "name": "stripe-nextjs-sequelize",
     "type": "registry:block",
     "description": "Stripe integration for Next.js with Sequelize schemas for payments and subscriptions",
-    "dependencies": ["sequelize"],
-    "devDependencies": ["sequelize"],
-    "registryDependencies": ["https://usepaykit.dev/r/stripe-nextjs"],
+    "dependencies": [
+      "sequelize"
+    ],
+    "devDependencies": [
+      "sequelize"
+    ],
+    "registryDependencies": [
+      "https://usepaykit.dev/r/stripe-nextjs"
+    ],
     "files": [
       {
         "path": "shared/schema/sequelize.ts",
@@ -27,5 +33,5 @@
       "auth": "none"
     }
   },
-  "fetchedAt": "2026-01-02T23:59:23.193Z"
+  "fetchedAt": "2026-01-03T11:28:21.805Z"
 }

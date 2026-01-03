@@ -8,7 +8,11 @@
     "type": "registry:block",
     "title": "Gallery",
     "description": "A gallery component displaying items in up to 3 columns, featuring interactive image blur on hover and icons indicating different characteristics.",
-    "dependencies": ["framer-motion", "lucide-react", "react"],
+    "dependencies": [
+      "framer-motion",
+      "lucide-react",
+      "react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +21,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:47.995Z"
+  "fetchedAt": "2026-01-03T11:28:46.588Z"
 }

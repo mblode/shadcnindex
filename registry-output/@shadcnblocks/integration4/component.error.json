@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "Integration",
     "description": "A component depicting global connectivity with a central title, supportive text, and graphical illustrations of interconnected nodes, accented by a large background image.",
-    "dependencies": ["lucide-react"],
+    "dependencies": [
+      "lucide-react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:55.450Z"
+  "fetchedAt": "2026-01-03T11:28:53.405Z"
 }

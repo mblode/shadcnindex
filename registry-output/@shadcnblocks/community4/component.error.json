@@ -8,7 +8,10 @@
     "type": "registry:block",
     "title": "Community",
     "description": "A component with a title, description, and a grid of links to social platforms, each with an icon, a unique color background, headings, and descriptions.",
-    "dependencies": ["lucide-react", "react-icons"],
+    "dependencies": [
+      "lucide-react",
+      "react-icons"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +20,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:32.966Z"
+  "fetchedAt": "2026-01-03T11:28:31.532Z"
 }

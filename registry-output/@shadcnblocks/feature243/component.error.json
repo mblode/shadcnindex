@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A component displaying a vertical timeline layout of steps, each with an icon, title, and description. It uses cards for step details.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["card"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "card"
+    ],
     "files": [
       {
         "path": "code/block/feature243.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:41.808Z"
+  "fetchedAt": "2026-01-03T11:28:40.339Z"
 }

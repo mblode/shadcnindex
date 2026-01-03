@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Hero",
     "description": "A component showcasing a carousel of testimonials with dynamic rotation effect and custom scrollbar animation. Displays names below images.",
-    "dependencies": ["embla-carousel-autoplay", "framer-motion", "react"],
-    "registryDependencies": ["carousel"],
+    "dependencies": [
+      "embla-carousel-autoplay",
+      "framer-motion",
+      "react"
+    ],
+    "registryDependencies": [
+      "carousel"
+    ],
     "files": [
       {
         "path": "code/block/hero228.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:51.806Z"
+  "fetchedAt": "2026-01-03T11:28:50.165Z"
 }

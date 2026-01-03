@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "Footer",
     "description": "A 4-column component featuring sections for product, company, resources, and social links, followed by contact and mobile app info, accentuated with social and mobile app icons.",
-    "dependencies": ["react-icons"],
+    "dependencies": [
+      "react-icons"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:46.895Z"
+  "fetchedAt": "2026-01-03T11:28:45.370Z"
 }

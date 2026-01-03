@@ -8,7 +8,11 @@
     "type": "registry:block",
     "title": "Projects",
     "description": "A grid-based component showcasing projects, with animation effects on hover. It includes a title, link to view all, and displays 5 items out of 10 with varied visibility.",
-    "dependencies": ["framer-motion", "lucide-react", "react"],
+    "dependencies": [
+      "framer-motion",
+      "lucide-react",
+      "react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +21,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:01.820Z"
+  "fetchedAt": "2026-01-03T11:28:59.531Z"
 }

@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "This component displays a title, subtitle, and a grid of images (3 columns, 2 rows) with hover effects and call-to-action links.",
-    "dependencies": ["lucide-react"],
+    "dependencies": [
+      "lucide-react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:36.882Z"
+  "fetchedAt": "2026-01-03T11:28:35.578Z"
 }

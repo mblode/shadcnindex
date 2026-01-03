@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Banner",
     "description": "An informational banner component with a title, description, and link button. Includes an icon and close function.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["button"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/banner4.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:30.787Z"
+  "fetchedAt": "2026-01-03T11:28:29.383Z"
 }

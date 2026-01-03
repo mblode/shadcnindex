@@ -9,7 +9,9 @@
     "title": "Testimonial",
     "description": "This component displays testimonials and case studies. It features a two-column layout for testimonials and a three-column grid for case studies. Each testimonial includes a quote, author photo, name, and role. Case studies show stats, title, and a background image that changes on hover.",
     "dependencies": [],
-    "registryDependencies": ["avatar"],
+    "registryDependencies": [
+      "avatar"
+    ],
     "files": [
       {
         "path": "code/block/testimonial27.tsx",
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:07.587Z"
+  "fetchedAt": "2026-01-03T11:29:05.349Z"
 }

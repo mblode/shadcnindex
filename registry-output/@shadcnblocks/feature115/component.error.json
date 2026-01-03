@@ -9,7 +9,10 @@
     "title": "Feature",
     "description": "A block showcasing 6 key features with badges, headings, descriptions, and images. Laid out in up to 3 columns, it includes customizable cards for each feature.",
     "dependencies": [],
-    "registryDependencies": ["badge", "card"],
+    "registryDependencies": [
+      "badge",
+      "card"
+    ],
     "files": [
       {
         "path": "code/block/feature115.tsx",
@@ -17,5 +20,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:36.875Z"
+  "fetchedAt": "2026-01-03T11:28:35.481Z"
 }

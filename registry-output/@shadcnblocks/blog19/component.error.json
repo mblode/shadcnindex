@@ -9,7 +9,9 @@
     "title": "Blog",
     "description": "This component displays a block titled \"Related articles\" with a button to see all articles. It features a 1 to 4 column grid layout of article summaries.",
     "dependencies": [],
-    "registryDependencies": ["button"],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/blog19.tsx",
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:31.126Z"
+  "fetchedAt": "2026-01-03T11:28:29.811Z"
 }

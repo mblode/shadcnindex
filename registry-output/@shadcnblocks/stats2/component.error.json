@@ -8,8 +8,12 @@
     "type": "registry:block",
     "title": "Stats",
     "description": "A 3-column block displaying platform insights with arrows and icons denoting trends and values, includes descriptive texts.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["card"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "card"
+    ],
     "files": [
       {
         "path": "code/block/stats2.tsx",
@@ -17,5 +21,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:06.242Z"
+  "fetchedAt": "2026-01-03T11:29:04.005Z"
 }

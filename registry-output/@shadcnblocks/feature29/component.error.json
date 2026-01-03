@@ -9,7 +9,9 @@
     "title": "Feature",
     "description": "A component with a 2-column layout including images and text blocks, showcasing features via placeholders and descriptions.",
     "dependencies": [],
-    "registryDependencies": ["separator"],
+    "registryDependencies": [
+      "separator"
+    ],
     "files": [
       {
         "path": "code/block/feature29.tsx",
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:43.279Z"
+  "fetchedAt": "2026-01-03T11:28:41.949Z"
 }

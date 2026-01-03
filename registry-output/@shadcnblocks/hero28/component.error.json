@@ -9,7 +9,9 @@
     "title": "Hero",
     "description": "A component featuring a background pattern, centered title, subtitle, and button, with decorative icons.",
     "dependencies": [],
-    "registryDependencies": ["button"],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/hero28.tsx",
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:52.871Z"
+  "fetchedAt": "2026-01-03T11:28:51.339Z"
 }

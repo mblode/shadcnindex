@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "Project4a",
     "description": "A brand identity design showcase component with a sticky sidebar featuring project info, metadata, and navigation. A 4-column layout on larger screens transitions to single-column on smaller ones.",
-    "dependencies": ["react"],
+    "dependencies": [
+      "react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:00.769Z"
+  "fetchedAt": "2026-01-03T11:28:58.534Z"
 }

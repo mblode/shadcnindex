@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Case-studies",
     "description": "This component is a carousel block that showcases a series of testimonials with accompanying logos and images. It allows users to navigate through different slides, displaying dynamic content and animations for an engaging user experience.",
-    "dependencies": ["framer-motion", "react"],
-    "registryDependencies": ["carousel"],
+    "dependencies": [
+      "framer-motion",
+      "react"
+    ],
+    "registryDependencies": [
+      "carousel"
+    ],
     "files": [
       {
         "path": "code/block/case-studies5.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:32.360Z"
+  "fetchedAt": "2026-01-03T11:28:30.919Z"
 }

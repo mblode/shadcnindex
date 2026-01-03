@@ -8,7 +8,10 @@
     "type": "registry:block",
     "title": "Hero",
     "description": "A component showcasing launch-ready interfaces, featuring a title, descriptive text, two buttons, and metrics on developer trust and time saving, with a gradient background.",
-    "dependencies": ["lucide-react", "react"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
     "registryDependencies": [
       "https://ui.aceternity.com/registry/background-beams-with-collision.json",
       "button"
@@ -20,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:52.349Z"
+  "fetchedAt": "2026-01-03T11:28:50.801Z"
 }

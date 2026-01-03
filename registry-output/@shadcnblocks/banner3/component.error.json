@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Banner",
     "description": "A subscription block featuring a title, description, email input, and subscribe button. Includes a dismissible icon and adapts layout between single and multi-column views.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["button"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/banner3.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:30.695Z"
+  "fetchedAt": "2026-01-03T11:28:29.348Z"
 }

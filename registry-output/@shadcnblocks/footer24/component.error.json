@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "Footer",
     "description": "A footer component with a bold heading, sections for email, social links, phone, and navigation links. It also includes a design attribution.",
-    "dependencies": ["lucide-react"],
+    "dependencies": [
+      "lucide-react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:46.602Z"
+  "fetchedAt": "2026-01-03T11:28:45.084Z"
 }

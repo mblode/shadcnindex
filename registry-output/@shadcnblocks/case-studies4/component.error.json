@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Case-studies",
     "description": "This component displays a case study block highlighting significant improvements and achievements, featuring key statistics, an author profile, and a summary. It includes a call-to-action button that guides users to read the full story, making it useful for showcasing success stories or customer testimonials.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["avatar", "button"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "avatar",
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/case-studies4.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:32.360Z"
+  "fetchedAt": "2026-01-03T11:28:30.949Z"
 }

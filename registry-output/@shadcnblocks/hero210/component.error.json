@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Hero",
     "description": "A carousel component with animated image display, customizable autoplay, and unique coverflow effect. It features dynamic opacity transitions, includes a headline, subtext, and a button with hover scaling.",
-    "dependencies": ["framer-motion", "swiper"],
-    "registryDependencies": ["button"],
+    "dependencies": [
+      "framer-motion",
+      "swiper"
+    ],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/hero210.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:51.112Z"
+  "fetchedAt": "2026-01-03T11:28:49.555Z"
 }

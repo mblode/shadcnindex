@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "Timeline",
     "description": "A two-column component featuring a sticky section with a bold statement on the left and a scrollable section on the right showcasing icons with related titles and descriptions.",
-    "dependencies": ["lucide-react"],
+    "dependencies": [
+      "lucide-react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:08.294Z"
+  "fetchedAt": "2026-01-03T11:29:06.075Z"
 }

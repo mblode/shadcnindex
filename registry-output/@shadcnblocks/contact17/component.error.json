@@ -8,8 +8,17 @@
     "type": "registry:block",
     "title": "Contact",
     "description": "A contact form component with 2 columns; one for form input, including text and select fields, and another for process steps and company logos. Includes FAQs and resources links.",
-    "dependencies": ["lucide-react", "react-hook-form"],
-    "registryDependencies": ["button", "form", "input", "select", "textarea"],
+    "dependencies": [
+      "lucide-react",
+      "react-hook-form"
+    ],
+    "registryDependencies": [
+      "button",
+      "form",
+      "input",
+      "select",
+      "textarea"
+    ],
     "files": [
       {
         "path": "code/block/contact17.tsx",
@@ -17,5 +26,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:33.834Z"
+  "fetchedAt": "2026-01-03T11:28:32.516Z"
 }

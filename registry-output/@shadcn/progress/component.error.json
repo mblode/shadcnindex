@@ -6,7 +6,9 @@
   "item": {
     "name": "progress",
     "type": "registry:ui",
-    "dependencies": ["@radix-ui/react-progress"],
+    "dependencies": [
+      "@radix-ui/react-progress"
+    ],
     "files": [
       {
         "path": "ui/progress.tsx",
@@ -14,5 +16,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T07:39:45.749Z"
+  "fetchedAt": "2026-01-03T11:28:25.691Z"
 }

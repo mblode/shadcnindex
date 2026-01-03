@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "Emoji-picker/emoji-picker-custom-trigger",
     "description": "A emoji-picker/emoji-picker-custom-trigger example",
-    "dependencies": ["lucide-react"],
+    "dependencies": [
+      "lucide-react"
+    ],
     "registryDependencies": [
       "https://shadcnblocks.com/r/emoji-picker",
       "button"
@@ -20,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:15.387Z"
+  "fetchedAt": "2026-01-03T11:29:13.054Z"
 }

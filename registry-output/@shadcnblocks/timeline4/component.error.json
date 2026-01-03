@@ -8,8 +8,12 @@
     "type": "registry:block",
     "title": "Timeline",
     "description": "A component showcasing a step-by-step guide with alternating layout, custom badges, icons, and diagonal patterns.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["badge"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "badge"
+    ],
     "files": [
       {
         "path": "code/block/timeline4.tsx",
@@ -17,5 +21,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:08.105Z"
+  "fetchedAt": "2026-01-03T11:29:05.987Z"
 }

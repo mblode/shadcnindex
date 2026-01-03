@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A 2-column block featuring a large title, descriptive text, and bullet points with icons on one side, and an image with overlaid gradients on the other.",
-    "dependencies": ["lucide-react"],
+    "dependencies": [
+      "lucide-react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:41.160Z"
+  "fetchedAt": "2026-01-03T11:28:39.791Z"
 }

@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A two-column component featuring secure payments and automated invoicing, with text descriptions and check-marked features, complemented by numbered image placeholders.",
-    "dependencies": ["lucide-react"],
+    "dependencies": [
+      "lucide-react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:37.854Z"
+  "fetchedAt": "2026-01-03T11:28:36.478Z"
 }

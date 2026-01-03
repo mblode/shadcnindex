@@ -8,8 +8,16 @@
     "type": "registry:block",
     "title": "Input-otp/input-otp-behavior-",
     "description": "A input-otp/input-otp-behavior- example",
-    "dependencies": ["@hookform/resolvers", "react-hook-form", "sonner", "zod"],
-    "registryDependencies": ["form", "input-otp"],
+    "dependencies": [
+      "@hookform/resolvers",
+      "react-hook-form",
+      "sonner",
+      "zod"
+    ],
+    "registryDependencies": [
+      "form",
+      "input-otp"
+    ],
     "files": [
       {
         "path": "code/example/input-otp/input-otp-behavior-1.tsx",
@@ -17,5 +25,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:17.806Z"
+  "fetchedAt": "2026-01-03T11:29:15.442Z"
 }

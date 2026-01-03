@@ -8,8 +8,15 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A component with a 2-column layout featuring a brand logo, title, text, and button on one side and dual vertical marquees with interactive images on the other. Unique for image blur on hover.",
-    "dependencies": ["framer-motion", "lucide-react", "react"],
-    "registryDependencies": ["https://magicui.design/r/marquee", "button"],
+    "dependencies": [
+      "framer-motion",
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "https://magicui.design/r/marquee",
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/feature285.tsx",
@@ -17,5 +24,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:42.992Z"
+  "fetchedAt": "2026-01-03T11:28:41.699Z"
 }

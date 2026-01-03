@@ -9,7 +9,9 @@
     "title": "Scroll-area/scroll-area-standard-",
     "description": "A scroll-area/scroll-area-standard- example",
     "dependencies": [],
-    "registryDependencies": ["scroll-area"],
+    "registryDependencies": [
+      "scroll-area"
+    ],
     "files": [
       {
         "path": "code/example/scroll-area/scroll-area-standard-2.tsx",
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:20.090Z"
+  "fetchedAt": "2026-01-03T11:29:17.582Z"
 }

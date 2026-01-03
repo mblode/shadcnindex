@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A component showcasing a carousel of feature cards with images, titles, and descriptions. Each card is within a dotted container.",
-    "dependencies": ["react"],
-    "registryDependencies": ["card", "carousel"],
+    "dependencies": [
+      "react"
+    ],
+    "registryDependencies": [
+      "card",
+      "carousel"
+    ],
     "files": [
       {
         "path": "code/block/feature244.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:41.834Z"
+  "fetchedAt": "2026-01-03T11:28:40.373Z"
 }

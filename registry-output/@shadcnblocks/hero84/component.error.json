@@ -9,7 +9,10 @@
     "title": "Hero",
     "description": "A component featuring a badge and text block on top, with a layered, overlapping image gallery below, arranged asymmetrically.",
     "dependencies": [],
-    "registryDependencies": ["aspect-ratio", "badge"],
+    "registryDependencies": [
+      "aspect-ratio",
+      "badge"
+    ],
     "files": [
       {
         "path": "code/block/hero84.tsx",
@@ -17,5 +20,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:54.561Z"
+  "fetchedAt": "2026-01-03T11:28:52.601Z"
 }

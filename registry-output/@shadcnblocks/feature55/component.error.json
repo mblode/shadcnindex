@@ -9,7 +9,9 @@
     "title": "Feature",
     "description": "A centered feature block with a title, description, and button. Uses a single-column layout with adjustable text sizes.",
     "dependencies": [],
-    "registryDependencies": ["button"],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/feature55.tsx",
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:44.529Z"
+  "fetchedAt": "2026-01-03T11:28:43.107Z"
 }

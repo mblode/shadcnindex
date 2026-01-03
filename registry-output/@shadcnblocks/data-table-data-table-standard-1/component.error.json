@@ -8,8 +8,16 @@
     "type": "registry:block",
     "title": "Data-table/data-table-standard-",
     "description": "A data-table/data-table-standard- example",
-    "dependencies": ["@tanstack/react-table", "lucide-react", "react"],
-    "registryDependencies": ["button", "checkbox", "table"],
+    "dependencies": [
+      "@tanstack/react-table",
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "button",
+      "checkbox",
+      "table"
+    ],
     "files": [
       {
         "path": "code/example/data-table/data-table-standard-1.tsx",
@@ -17,5 +25,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:13.663Z"
+  "fetchedAt": "2026-01-03T11:29:11.369Z"
 }

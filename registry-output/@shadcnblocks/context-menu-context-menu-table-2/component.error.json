@@ -8,8 +8,12 @@
     "type": "registry:block",
     "title": "Context-menu/context-menu-table-",
     "description": "A context-menu/context-menu-table- example",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["context-menu"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "context-menu"
+    ],
     "files": [
       {
         "path": "code/example/context-menu/context-menu-table-2.tsx",
@@ -17,5 +21,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:13.254Z"
+  "fetchedAt": "2026-01-03T11:29:10.998Z"
 }

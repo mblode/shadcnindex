@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "Project8d",
     "description": "A component showcasing a fashion project with animated visibility, a large title, a subtitle, an image, detailed descriptions, and credits spanning multiple columns.",
-    "dependencies": ["framer-motion"],
+    "dependencies": [
+      "framer-motion"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:01.523Z"
+  "fetchedAt": "2026-01-03T11:28:59.243Z"
 }

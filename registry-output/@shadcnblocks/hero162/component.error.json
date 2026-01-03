@@ -9,7 +9,9 @@
     "title": "Hero",
     "description": "A component featuring a 2-column layout with a prominent headline, subtext, and button on one side, and a grid of images and testimonials on the other.",
     "dependencies": [],
-    "registryDependencies": ["button"],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/hero162.tsx",
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:49.547Z"
+  "fetchedAt": "2026-01-03T11:28:48.165Z"
 }

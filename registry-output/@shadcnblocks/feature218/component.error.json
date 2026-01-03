@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A component featuring two columns with a 1:2 ratio, showcasing a promotional message and a call-to-action button on the left, and an image with a unique fade effect on the right.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["aspect-ratio", "button"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "aspect-ratio",
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/feature218.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:40.863Z"
+  "fetchedAt": "2026-01-03T11:28:39.341Z"
 }

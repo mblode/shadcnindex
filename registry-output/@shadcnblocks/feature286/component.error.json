@@ -8,7 +8,10 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A component featuring an intro, 3 cards with glowing stars, pricing, and a \"View All\" button. Each card has \"Add to cart\" functionality and displays collection names and prices.",
-    "dependencies": ["lucide-react", "react"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
     "registryDependencies": [
       "https://ui.aceternity.com/registry/glowing-stars.json",
       "button"
@@ -20,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:43.154Z"
+  "fetchedAt": "2026-01-03T11:28:41.732Z"
 }

@@ -8,8 +8,12 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A component showcasing 3 cards with icons, titles, and descriptions, each highlighting unique software benefits. Positioned dynamically for visual interest.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["card"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "card"
+    ],
     "files": [
       {
         "path": "code/block/feature198.tsx",
@@ -17,5 +21,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:39.988Z"
+  "fetchedAt": "2026-01-03T11:28:38.493Z"
 }

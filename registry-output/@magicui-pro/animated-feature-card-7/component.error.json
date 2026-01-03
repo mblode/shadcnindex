@@ -6,8 +6,12 @@
   "item": {
     "name": "animated-feature-card-7",
     "type": "registry:block",
-    "dependencies": ["motion"],
-    "registryDependencies": ["@magicui/marquee"],
+    "dependencies": [
+      "motion"
+    ],
+    "registryDependencies": [
+      "@magicui/marquee"
+    ],
     "files": [
       {
         "path": "registry/blocks/animated-feature-card-7.tsx",
@@ -18,5 +22,5 @@
       "height": 387
     }
   },
-  "fetchedAt": "2026-01-02T23:59:17.417Z"
+  "fetchedAt": "2026-01-03T11:28:15.843Z"
 }

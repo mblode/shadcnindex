@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A component showcasing a heading, text, a button, and a list with icons next to headings. Features a large image beside the text content.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["button", "separator"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "button",
+      "separator"
+    ],
     "files": [
       {
         "path": "code/block/feature38.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:44.205Z"
+  "fetchedAt": "2026-01-03T11:28:42.680Z"
 }

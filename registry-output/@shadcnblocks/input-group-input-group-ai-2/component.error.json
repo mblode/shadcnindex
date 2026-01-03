@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Input-group/input-group-ai-",
     "description": "A input-group/input-group-ai- example",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["input-group", "separator"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "input-group",
+      "separator"
+    ],
     "files": [
       {
         "path": "code/example/input-group/input-group-ai-2.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:16.401Z"
+  "fetchedAt": "2026-01-03T11:29:14.094Z"
 }

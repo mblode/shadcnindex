@@ -8,7 +8,10 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "This component, named `Feature322`, highlights several features and includes a testimonial, all enhanced with animations using \"framer-motion\" to create an engaging user experience. It consists of interactive feature cards that display dynamic content such as titles, subtitles, statistics, and visuals, along with an animated scroll progress indicator and a testimonial section to offer a comprehensive overview.",
-    "dependencies": ["framer-motion", "react"],
+    "dependencies": [
+      "framer-motion",
+      "react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +20,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:43.910Z"
+  "fetchedAt": "2026-01-03T11:28:42.449Z"
 }

@@ -8,7 +8,10 @@
     "type": "registry:block",
     "title": "Emoji-picker/emoji-picker-in-form",
     "description": "A emoji-picker/emoji-picker-in-form example",
-    "dependencies": ["lucide-react", "react"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
     "registryDependencies": [
       "https://shadcnblocks.com/r/emoji-picker",
       "button",
@@ -23,5 +26,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:15.441Z"
+  "fetchedAt": "2026-01-03T11:29:13.208Z"
 }

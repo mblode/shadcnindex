@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Hero",
     "description": "A component featuring a large title and paragraph, alongside a &#x27;Contact Us&#x27; button and right-aligned image. Unique for its overlaid text and button on a full viewport height background.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["button"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/hero215.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:51.332Z"
+  "fetchedAt": "2026-01-03T11:28:49.823Z"
 }

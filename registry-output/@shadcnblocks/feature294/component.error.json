@@ -8,7 +8,10 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "This component showcases 5 features with icons, titles, and descriptions, arranged in up to 3 columns, and includes a sparkle effect background.",
-    "dependencies": ["lucide-react", "react"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
     "registryDependencies": [
       "https://ui.aceternity.com/registry/sparkles.json"
     ],
@@ -19,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:43.368Z"
+  "fetchedAt": "2026-01-03T11:28:41.982Z"
 }

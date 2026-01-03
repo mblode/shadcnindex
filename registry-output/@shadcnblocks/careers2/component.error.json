@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Careers",
     "description": "A component showcasing job openings with a header, grid layout (single column expanding to four on large screens) for each job, including title, type, location, and an apply button.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["badge", "button"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "badge",
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/careers2.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:31.925Z"
+  "fetchedAt": "2026-01-03T11:28:30.632Z"
 }

@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Compare",
     "description": "A component contrasting \"Legacy\" vs \"New\" features in a two-column layout, highlighting issues with old tools and advantages of modern solutions, using symbols and separators.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["separator"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "separator"
+    ],
     "files": [
       {
         "path": "code/block/compare10.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:33.259Z"
+  "fetchedAt": "2026-01-03T11:28:31.909Z"
 }

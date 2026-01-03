@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Careers",
     "description": "A dynamic job listing component with a filter for departments, displaying job categories and openings in grids up to 3 columns wide.",
-    "dependencies": ["react"],
-    "registryDependencies": ["label", "select"],
+    "dependencies": [
+      "react"
+    ],
+    "registryDependencies": [
+      "label",
+      "select"
+    ],
     "files": [
       {
         "path": "code/block/careers8.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:32.034Z"
+  "fetchedAt": "2026-01-03T11:28:30.751Z"
 }

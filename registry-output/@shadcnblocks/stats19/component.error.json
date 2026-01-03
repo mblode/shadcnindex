@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "Stats",
     "description": "A component displaying \"Milestones\" with a 6-column layout; includes a sticky label and lists stats in 2:3 column ratios.",
-    "dependencies": ["react"],
+    "dependencies": [
+      "react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:06.473Z"
+  "fetchedAt": "2026-01-03T11:29:04.001Z"
 }

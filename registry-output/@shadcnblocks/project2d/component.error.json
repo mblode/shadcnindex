@@ -8,8 +8,12 @@
     "type": "registry:block",
     "title": "Project2d",
     "description": "A layout showcasing project details with a large title, stats in a 7:5 column ratio, an image with a caption overlay, and descriptive text in a 4:8 ratio. Features include dynamic text fields and a button.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["button"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/project2d.tsx",
@@ -17,5 +21,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:00.709Z"
+  "fetchedAt": "2026-01-03T11:28:58.494Z"
 }

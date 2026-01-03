@@ -8,8 +8,12 @@
     "type": "registry:block",
     "title": "Cta",
     "description": "A component with a large background image, overlayed by centered text and a large button, featuring an arrow icon.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["button"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/cta21.tsx",
@@ -17,5 +21,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:34.756Z"
+  "fetchedAt": "2026-01-03T11:28:33.315Z"
 }

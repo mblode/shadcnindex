@@ -8,8 +8,15 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "This component displays a centralized promotional message for a website builder with interactive elements, including animated buttons and dynamic borders, spanning multiple text sizes and has animated ping effects.",
-    "dependencies": ["framer-motion", "lucide-react", "react"],
-    "registryDependencies": ["https://magicui.design/r/shine-border", "button"],
+    "dependencies": [
+      "framer-motion",
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "https://magicui.design/r/shine-border",
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/feature236.tsx",
@@ -17,5 +24,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:41.522Z"
+  "fetchedAt": "2026-01-03T11:28:40.074Z"
 }

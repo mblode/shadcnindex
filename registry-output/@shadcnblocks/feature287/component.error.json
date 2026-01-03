@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A component displaying a title and a grid of cards (4 columns wide on larger screens, fewer on smaller). Each card includes a glowing stars effect, a title, and text. A button below the grid invites user interaction.",
-    "dependencies": ["react"],
+    "dependencies": [
+      "react"
+    ],
     "registryDependencies": [
       "https://ui.aceternity.com/registry/glowing-stars.json",
       "button"
@@ -20,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:43.265Z"
+  "fetchedAt": "2026-01-03T11:28:41.751Z"
 }

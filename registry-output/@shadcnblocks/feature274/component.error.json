@@ -8,7 +8,10 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A component displaying a title, a text paragraph, and a grid of 4 animated cards that reveal information on hover.",
-    "dependencies": ["framer-motion", "react"],
+    "dependencies": [
+      "framer-motion",
+      "react"
+    ],
     "registryDependencies": [
       "https://ui.aceternity.com/registry/canvas-reveal-effect.json"
     ],
@@ -19,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:42.702Z"
+  "fetchedAt": "2026-01-03T11:28:41.360Z"
 }

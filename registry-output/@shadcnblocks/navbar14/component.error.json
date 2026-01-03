@@ -8,7 +8,10 @@
     "type": "registry:block",
     "title": "Navbar",
     "description": "An expandable navigation component featuring categorized links with icons, a logo, and action buttons. It transitions to an accordion layout on smaller screens.",
-    "dependencies": ["lucide-react", "react"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
     "registryDependencies": [
       "accordion",
       "button",
@@ -22,5 +25,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:56.549Z"
+  "fetchedAt": "2026-01-03T11:28:54.301Z"
 }

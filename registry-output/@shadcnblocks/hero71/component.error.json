@@ -9,7 +9,9 @@
     "title": "Hero",
     "description": "A centered text component with a gradient background featuring a large title, supportive text, two buttons, and an image. Utilizes a two-column layout for buttons and adjustable image width.",
     "dependencies": [],
-    "registryDependencies": ["button"],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/hero71.tsx",
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:53.990Z"
+  "fetchedAt": "2026-01-03T11:28:52.231Z"
 }

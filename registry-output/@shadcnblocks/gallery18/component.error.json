@@ -8,7 +8,10 @@
     "type": "registry:block",
     "title": "Gallery",
     "description": "A card-carousel gallery with autoplay, displaying portraits with annotated names in a looping mode.",
-    "dependencies": ["react", "swiper"],
+    "dependencies": [
+      "react",
+      "swiper"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +20,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:47.332Z"
+  "fetchedAt": "2026-01-03T11:28:45.906Z"
 }

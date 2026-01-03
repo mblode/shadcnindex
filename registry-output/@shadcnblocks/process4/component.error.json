@@ -8,7 +8,10 @@
     "type": "registry:block",
     "title": "Process",
     "description": "A 3-step interactive component showing processes with hover animations on images. It includes a sticky title column and image-driven steps in a 6-column layout.",
-    "dependencies": ["framer-motion", "react"],
+    "dependencies": [
+      "framer-motion",
+      "react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +20,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:58.857Z"
+  "fetchedAt": "2026-01-03T11:28:56.619Z"
 }

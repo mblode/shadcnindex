@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Footer",
     "description": "A footer component featuring logo, contact button, social icons, and navigation in accordion for smaller screens or columns layout.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["accordion", "button"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "accordion",
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/footer16.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:46.384Z"
+  "fetchedAt": "2026-01-03T11:28:45.017Z"
 }

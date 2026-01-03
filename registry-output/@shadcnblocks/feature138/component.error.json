@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A component featuring three sections, each with an image and text side-by-side, headers, and a \"Learn more\" link. Alternates image/text order between sections.",
-    "dependencies": ["lucide-react"],
+    "dependencies": [
+      "lucide-react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:37.747Z"
+  "fetchedAt": "2026-01-03T11:28:36.515Z"
 }

@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "Feature block with tabs, showcasing three features, each with an image, title, description. Features a demo link with an animated arrow icon.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["tabs"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "tabs"
+    ],
     "files": [
       {
         "path": "code/block/feature78.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:45.362Z"
+  "fetchedAt": "2026-01-03T11:28:43.841Z"
 }

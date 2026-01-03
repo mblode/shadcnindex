@@ -8,7 +8,10 @@
     "type": "registry:block",
     "title": "Projects",
     "description": "A dynamic image gallery with 1-3 columns featuring animated, hover-zoomed images.",
-    "dependencies": ["framer-motion", "react"],
+    "dependencies": [
+      "framer-motion",
+      "react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +20,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:01.770Z"
+  "fetchedAt": "2026-01-03T11:28:59.426Z"
 }

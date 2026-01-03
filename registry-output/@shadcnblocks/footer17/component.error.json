@@ -8,7 +8,10 @@
     "type": "registry:block",
     "title": "Footer",
     "description": "A footer component with theme toggle, navigation links, social links, theme-specific logo, and a system status indicator.",
-    "dependencies": ["lucide-react", "react"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
     "registryDependencies": [
       "button",
       "drawer",
@@ -22,5 +25,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:46.382Z"
+  "fetchedAt": "2026-01-03T11:28:45.061Z"
 }

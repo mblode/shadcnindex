@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "Project5b",
     "description": "This component displays a project with a staggered fade-in animation, divided into two columns, including images, exhibition details, a description, and specific artwork information.",
-    "dependencies": ["framer-motion"],
+    "dependencies": [
+      "framer-motion"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:00.984Z"
+  "fetchedAt": "2026-01-03T11:28:58.763Z"
 }

@@ -8,8 +8,12 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "This component displays a section with a title, subtitle, and a link followed by a 3-column layout of cards, each featuring an image, title, and link.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["badge"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "badge"
+    ],
     "files": [
       {
         "path": "code/block/feature112.tsx",
@@ -17,5 +21,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:36.811Z"
+  "fetchedAt": "2026-01-03T11:28:35.416Z"
 }

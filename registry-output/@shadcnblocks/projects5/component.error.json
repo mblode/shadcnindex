@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "Projects",
     "description": "A gallery block showcasing 6 projects with animations, in 1 or 2 columns depending on screen size, including images and project details.",
-    "dependencies": ["framer-motion"],
+    "dependencies": [
+      "framer-motion"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:02.394Z"
+  "fetchedAt": "2026-01-03T11:29:00.220Z"
 }

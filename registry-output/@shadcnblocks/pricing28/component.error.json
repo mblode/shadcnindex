@@ -8,7 +8,10 @@
     "type": "registry:block",
     "title": "Pricing",
     "description": "This component displays pricing packages with toggle for monthly/annual billing, features tooltip, and a \"Popular\" badge for a highlighted plan, all in a 4-column layout.",
-    "dependencies": ["lucide-react", "react"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
     "registryDependencies": [
       "avatar",
       "badge",
@@ -24,5 +27,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:58.155Z"
+  "fetchedAt": "2026-01-03T11:28:55.936Z"
 }

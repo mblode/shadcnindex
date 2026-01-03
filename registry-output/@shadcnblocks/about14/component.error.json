@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "About",
     "description": "An About component showcasing a title, philosophy, team image, and profiles in a multi-column layout with dynamic text adjustments.",
-    "dependencies": ["react"],
+    "dependencies": [
+      "react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:28.691Z"
+  "fetchedAt": "2026-01-03T11:28:27.216Z"
 }

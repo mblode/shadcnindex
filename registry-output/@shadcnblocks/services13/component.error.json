@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Services",
     "description": "A component featuring services with a dynamic layout. It has a title, text, and a button, followed by cards for each service with hover effects. The layout shifts from single to multiple columns.",
-    "dependencies": ["framer-motion", "lucide-react"],
-    "registryDependencies": ["button", "card"],
+    "dependencies": [
+      "framer-motion",
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "button",
+      "card"
+    ],
     "files": [
       {
         "path": "code/block/services13.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:03.818Z"
+  "fetchedAt": "2026-01-03T11:29:01.418Z"
 }

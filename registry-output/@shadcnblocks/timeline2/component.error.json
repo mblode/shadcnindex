@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "Timeline",
     "description": "A component displaying a timeline of sections with images and text. It has a two-column layout, with text on the left and a sticky, changing image on the right as you scroll.",
-    "dependencies": ["react"],
+    "dependencies": [
+      "react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:08.081Z"
+  "fetchedAt": "2026-01-03T11:29:05.863Z"
 }

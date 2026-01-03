@@ -9,7 +9,12 @@
     "title": "Team",
     "description": "A component featuring a team section with a hiring call, team intro, and buttons. It displays 8 profiles in up to 4 columns with photos, names, roles, and descriptions.",
     "dependencies": [],
-    "registryDependencies": ["avatar", "badge", "button", "card"],
+    "registryDependencies": [
+      "avatar",
+      "badge",
+      "button",
+      "card"
+    ],
     "files": [
       {
         "path": "code/block/team5.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:06.812Z"
+  "fetchedAt": "2026-01-03T11:29:04.662Z"
 }

@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Hero",
     "description": "A component displaying a marketing degree promotion, featuring an interactive news badge, a bold title with highlighted keywords, two call-to-action buttons, and a section with user testimonials through avatars and stats on active users and episodes.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["avatar", "badge", "button"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "avatar",
+      "badge",
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/hero127.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:48.781Z"
+  "fetchedAt": "2026-01-03T11:28:47.425Z"
 }

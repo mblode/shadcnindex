@@ -8,7 +8,10 @@
     "type": "registry:block",
     "title": "Compare",
     "description": "A comparative block showcasing features between two entities in a 3-column layout with icons to highlight specific traits.",
-    "dependencies": ["lucide-react", "react"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +20,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:33.255Z"
+  "fetchedAt": "2026-01-03T11:28:31.909Z"
 }

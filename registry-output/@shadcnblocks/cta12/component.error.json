@@ -9,7 +9,9 @@
     "title": "Cta",
     "description": "A call-to-action block featuring a heading, description, email input field, and a subscribe button arranged in a column, centered.",
     "dependencies": [],
-    "registryDependencies": ["button"],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/cta12.tsx",
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:34.462Z"
+  "fetchedAt": "2026-01-03T11:28:33.030Z"
 }

@@ -8,8 +8,12 @@
     "type": "registry:block",
     "title": "Team",
     "description": "A component displaying a team section with a hiring call, team intro, and dynamic grid of team members (up to 8), including avatar, name, role, and social links. Grid adapts from 1 to 4 columns.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["avatar"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "avatar"
+    ],
     "files": [
       {
         "path": "code/block/team3.tsx",
@@ -17,5 +21,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:06.693Z"
+  "fetchedAt": "2026-01-03T11:29:04.496Z"
 }

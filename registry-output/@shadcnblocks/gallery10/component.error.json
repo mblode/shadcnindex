@@ -8,8 +8,15 @@
     "type": "registry:block",
     "title": "Gallery",
     "description": "A testimonial carousel component with text content, navigation buttons, and progress indicator. It has a dual-column layout with quotes and images.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["badge", "button", "carousel"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "badge",
+      "button",
+      "carousel"
+    ],
     "files": [
       {
         "path": "code/block/gallery10.tsx",
@@ -17,5 +24,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:47.040Z"
+  "fetchedAt": "2026-01-03T11:28:45.624Z"
 }

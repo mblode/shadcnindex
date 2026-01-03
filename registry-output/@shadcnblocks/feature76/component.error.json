@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A component showcasing a UI Library&#x27;s features in a grid layout with 4 columns. Includes icons, titles, and descriptions for each feature.",
-    "dependencies": ["lucide-react"],
+    "dependencies": [
+      "lucide-react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:45.259Z"
+  "fetchedAt": "2026-01-03T11:28:43.846Z"
 }

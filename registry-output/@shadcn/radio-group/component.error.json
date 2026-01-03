@@ -6,7 +6,9 @@
   "item": {
     "name": "radio-group",
     "type": "registry:ui",
-    "dependencies": ["@radix-ui/react-radio-group"],
+    "dependencies": [
+      "@radix-ui/react-radio-group"
+    ],
     "files": [
       {
         "path": "ui/radio-group.tsx",
@@ -14,5 +16,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T07:39:45.784Z"
+  "fetchedAt": "2026-01-03T11:28:25.691Z"
 }

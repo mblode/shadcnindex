@@ -6,7 +6,9 @@
   "item": {
     "name": "dropdown-menu",
     "type": "registry:ui",
-    "dependencies": ["@radix-ui/react-dropdown-menu"],
+    "dependencies": [
+      "@radix-ui/react-dropdown-menu"
+    ],
     "files": [
       {
         "path": "ui/dropdown-menu.tsx",
@@ -14,5 +16,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T07:39:45.862Z"
+  "fetchedAt": "2026-01-03T11:28:25.616Z"
 }

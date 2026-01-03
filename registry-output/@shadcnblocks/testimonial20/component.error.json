@@ -8,8 +8,12 @@
     "type": "registry:block",
     "title": "Testimonial",
     "description": "A two-column testimonial block with dashed borders, featuring quotes, avatars, and names. Decorated with sparkle icons at its corners.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["avatar"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "avatar"
+    ],
     "files": [
       {
         "path": "code/block/testimonial20.tsx",
@@ -17,5 +21,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:07.385Z"
+  "fetchedAt": "2026-01-03T11:29:05.232Z"
 }

@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Hero",
     "description": "A testimonial display component with a title, descriptions, a call-to-action button, customer ratings, and profile images in a two-column layout.",
-    "dependencies": ["react-icons"],
-    "registryDependencies": ["avatar", "button"],
+    "dependencies": [
+      "react-icons"
+    ],
+    "registryDependencies": [
+      "avatar",
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/hero64.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:53.747Z"
+  "fetchedAt": "2026-01-03T11:28:52.174Z"
 }

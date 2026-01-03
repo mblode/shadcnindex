@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A carousel component with an image slider and a side list detailing features. It evolves around dynamically updating content based on user interaction.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["carousel"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "carousel"
+    ],
     "files": [
       {
         "path": "code/block/feature69.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:45.069Z"
+  "fetchedAt": "2026-01-03T11:28:43.741Z"
 }

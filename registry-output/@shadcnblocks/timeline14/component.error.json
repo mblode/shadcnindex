@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "Timeline",
     "description": "A timeline component showcasing key milestones, uses intersection observer for active item highlight, includes sticky year indicator.",
-    "dependencies": ["react"],
+    "dependencies": [
+      "react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:08.081Z"
+  "fetchedAt": "2026-01-03T11:29:05.834Z"
 }

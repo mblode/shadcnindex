@@ -9,7 +9,10 @@
     "title": "Product-categories",
     "description": "This block displays a collection of product categories with titles, summaries, images, and links, designed to highlight various product options. Utilizing an animated grid layout, it showcases each category in an engaging and visually appealing manner for easy navigation and discovery.",
     "dependencies": [],
-    "registryDependencies": ["aspect-ratio", "card"],
+    "registryDependencies": [
+      "aspect-ratio",
+      "card"
+    ],
     "files": [
       {
         "path": "code/block/product-categories2.tsx",
@@ -17,5 +20,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:59.229Z"
+  "fetchedAt": "2026-01-03T11:28:56.943Z"
 }

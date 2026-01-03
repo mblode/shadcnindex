@@ -16,7 +16,12 @@
       "simple-icons",
       "zod"
     ],
-    "registryDependencies": ["accordion", "button", "field", "input-group"],
+    "registryDependencies": [
+      "accordion",
+      "button",
+      "field",
+      "input-group"
+    ],
     "files": [
       {
         "path": "code/block/ecommerce-footer2.tsx",
@@ -24,5 +29,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:35.634Z"
+  "fetchedAt": "2026-01-03T11:28:34.394Z"
 }

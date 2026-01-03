@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "About",
     "description": "About component with a big title, descriptive text, a profile highlight, and an image; organized in a 6-column layout with dynamic spacing and text sizes.",
-    "dependencies": ["react"],
+    "dependencies": [
+      "react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:28.702Z"
+  "fetchedAt": "2026-01-03T11:28:27.270Z"
 }

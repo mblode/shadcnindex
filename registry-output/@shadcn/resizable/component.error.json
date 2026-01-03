@@ -6,7 +6,9 @@
   "item": {
     "name": "resizable",
     "type": "registry:ui",
-    "dependencies": ["react-resizable-panels"],
+    "dependencies": [
+      "react-resizable-panels"
+    ],
     "files": [
       {
         "path": "ui/resizable.tsx",
@@ -14,5 +16,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T07:39:45.778Z"
+  "fetchedAt": "2026-01-03T11:28:25.712Z"
 }

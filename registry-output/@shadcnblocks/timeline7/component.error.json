@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Timeline",
     "description": "A component with a stepper UI to guide through a process, featuring dynamic progress indication, navigational buttons, and transition animations.",
-    "dependencies": ["framer-motion", "lucide-react", "react"],
-    "registryDependencies": ["button"],
+    "dependencies": [
+      "framer-motion",
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/timeline7.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:08.320Z"
+  "fetchedAt": "2026-01-03T11:29:06.091Z"
 }

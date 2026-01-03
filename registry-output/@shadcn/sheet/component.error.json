@@ -6,7 +6,9 @@
   "item": {
     "name": "sheet",
     "type": "registry:ui",
-    "dependencies": ["@radix-ui/react-dialog"],
+    "dependencies": [
+      "@radix-ui/react-dialog"
+    ],
     "files": [
       {
         "path": "ui/sheet.tsx",
@@ -14,5 +16,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T07:39:45.826Z"
+  "fetchedAt": "2026-01-03T11:28:25.720Z"
 }

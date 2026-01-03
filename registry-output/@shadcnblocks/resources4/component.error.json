@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Resources",
     "description": "A component showcasing recent updates with a title, list items including titles, categories, avatars, dates, and interactive hover effects.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["avatar", "separator"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "avatar",
+      "separator"
+    ],
     "files": [
       {
         "path": "code/block/resources4.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:03.072Z"
+  "fetchedAt": "2026-01-03T11:29:00.785Z"
 }

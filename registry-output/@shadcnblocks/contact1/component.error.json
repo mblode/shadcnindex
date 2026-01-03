@@ -8,8 +8,15 @@
     "type": "registry:block",
     "title": "Contact",
     "description": "A component with a two-column layout, integrating a promotional header, bullet points with icons, overlapping avatars, company logos, and a detailed form for demo booking.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["avatar", "button", "input", "select"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "avatar",
+      "button",
+      "input",
+      "select"
+    ],
     "files": [
       {
         "path": "code/block/contact1.tsx",
@@ -17,5 +24,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:33.662Z"
+  "fetchedAt": "2026-01-03T11:28:32.265Z"
 }

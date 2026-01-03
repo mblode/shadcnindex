@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "Project",
     "description": "This component showcases a project with animated transitions. It includes a full-screen hero section with scaled imagery based on scroll progress, descriptive text, a project outline with key details, and a visually immersive grid of images that enlarge on hover, followed by an in-depth exploration section.",
-    "dependencies": ["framer-motion"],
+    "dependencies": [
+      "framer-motion"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:00.479Z"
+  "fetchedAt": "2026-01-03T11:28:58.226Z"
 }

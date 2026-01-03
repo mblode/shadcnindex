@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A component with tabs for features like scheduling and analytics, each with an icon, title, description, and image. Includes decorative accessories.",
-    "dependencies": ["@radix-ui/react-tabs", "lucide-react"],
-    "registryDependencies": ["badge"],
+    "dependencies": [
+      "@radix-ui/react-tabs",
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "badge"
+    ],
     "files": [
       {
         "path": "code/block/feature169.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:38.960Z"
+  "fetchedAt": "2026-01-03T11:28:37.471Z"
 }

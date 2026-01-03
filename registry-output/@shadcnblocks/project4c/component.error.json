@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "Project4c",
     "description": "A component showcasing a brand identity project with a hero section, article content, and visual assets. Features a full-screen image overlay, project summary, and results metrics grid.",
-    "dependencies": ["react"],
+    "dependencies": [
+      "react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:00.813Z"
+  "fetchedAt": "2026-01-03T11:28:58.664Z"
 }

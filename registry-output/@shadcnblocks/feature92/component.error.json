@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A component showcasing tools integrations and social media links in a 3-column layout followed by a 6-icon row for connectivity options.",
-    "dependencies": ["react-icons"],
+    "dependencies": [
+      "react-icons"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:45.822Z"
+  "fetchedAt": "2026-01-03T11:28:44.491Z"
 }

@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Incentives",
     "description": "This component displays a carousel of incentives, highlighting key features with icons and descriptions to engage users with compelling information. It includes customizable options for titles, descriptions, icons, and a call-to-action button that links to additional content.",
-    "dependencies": ["react"],
-    "registryDependencies": ["button", "card", "carousel"],
+    "dependencies": [
+      "react"
+    ],
+    "registryDependencies": [
+      "button",
+      "card",
+      "carousel"
+    ],
     "files": [
       {
         "path": "code/block/incentives7.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:55.160Z"
+  "fetchedAt": "2026-01-03T11:28:53.089Z"
 }

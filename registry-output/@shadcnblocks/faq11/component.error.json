@@ -9,7 +9,9 @@
     "title": "Faq",
     "description": "An FAQ component with a column for inquiry intro and a column for categories. Features collapsible accordions for answers.",
     "dependencies": [],
-    "registryDependencies": ["accordion"],
+    "registryDependencies": [
+      "accordion"
+    ],
     "files": [
       {
         "path": "code/block/faq11.tsx",
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:35.851Z"
+  "fetchedAt": "2026-01-03T11:28:34.530Z"
 }

@@ -8,8 +8,16 @@
     "type": "registry:block",
     "title": "Waitlist",
     "description": "This component, \"Waitlist2,\" is designed to facilitate user engagement by allowing users to join a waitlist and see how many others have signed up, complemented by a countdown timer until the launch date. It showcases features like an animated badge, a sign-up form for emails, display of user avatars, and a dynamic countdown timer, enhancing user interaction and anticipation for an upcoming launch.",
-    "dependencies": ["framer-motion", "lucide-react", "react"],
-    "registryDependencies": ["badge", "button", "input"],
+    "dependencies": [
+      "framer-motion",
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "badge",
+      "button",
+      "input"
+    ],
     "files": [
       {
         "path": "code/block/waitlist2.tsx",
@@ -17,5 +25,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:08.405Z"
+  "fetchedAt": "2026-01-03T11:29:06.280Z"
 }

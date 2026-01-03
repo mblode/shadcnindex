@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A carousel showcasing AI-powered features with autoplaying video cards on hover, including icons and brief descriptions.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["card", "carousel"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "card",
+      "carousel"
+    ],
     "files": [
       {
         "path": "code/block/feature214.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:40.506Z"
+  "fetchedAt": "2026-01-03T11:28:39.058Z"
 }

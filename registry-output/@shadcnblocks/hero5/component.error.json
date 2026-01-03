@@ -8,8 +8,12 @@
     "type": "registry:block",
     "title": "Hero",
     "description": "A component with a dual-column layout featuring a text block and an image. It includes a heading, paragraph, and a button with an icon. Uses a flexible structure for alignment.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["button"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/hero5.tsx",
@@ -17,5 +21,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:53.385Z"
+  "fetchedAt": "2026-01-03T11:28:51.693Z"
 }

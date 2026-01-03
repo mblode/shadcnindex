@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Scroll-area/scroll-area-advanced-",
     "description": "A scroll-area/scroll-area-advanced- example",
-    "dependencies": ["react"],
-    "registryDependencies": ["button", "scroll-area"],
+    "dependencies": [
+      "react"
+    ],
+    "registryDependencies": [
+      "button",
+      "scroll-area"
+    ],
     "files": [
       {
         "path": "code/example/scroll-area/scroll-area-advanced-2.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:19.863Z"
+  "fetchedAt": "2026-01-03T11:29:17.369Z"
 }

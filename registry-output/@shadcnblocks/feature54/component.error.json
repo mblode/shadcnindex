@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A tabbed component showcasing features with images and subfeatures. Includes 5 tabs, images for each feature, and a 3-column layout for subfeatures.",
-    "dependencies": ["react"],
-    "registryDependencies": ["button", "tabs"],
+    "dependencies": [
+      "react"
+    ],
+    "registryDependencies": [
+      "button",
+      "tabs"
+    ],
     "files": [
       {
         "path": "code/block/feature54.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:44.489Z"
+  "fetchedAt": "2026-01-03T11:28:43.039Z"
 }

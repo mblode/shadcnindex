@@ -8,7 +8,10 @@
     "type": "registry:block",
     "title": "Projects",
     "description": "A component displaying items in a grid with 3 columns, featuring category filters and animations on item change.",
-    "dependencies": ["framer-motion", "react"],
+    "dependencies": [
+      "framer-motion",
+      "react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +20,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:02.532Z"
+  "fetchedAt": "2026-01-03T11:29:00.282Z"
 }

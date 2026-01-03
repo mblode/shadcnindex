@@ -9,7 +9,10 @@
     "title": "Testimonial",
     "description": "A component displaying carousel testimonials in a 3-column layout, featuring image+text on the left and detailed stats on the right.",
     "dependencies": [],
-    "registryDependencies": ["carousel", "separator"],
+    "registryDependencies": [
+      "carousel",
+      "separator"
+    ],
     "files": [
       {
         "path": "code/block/testimonial12.tsx",
@@ -17,5 +20,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:07.061Z"
+  "fetchedAt": "2026-01-03T11:29:04.849Z"
 }

@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "This component features a headline, a row of cards with hover effects, and two buttons. Cards dynamically adjust visibility and overlap on different screen sizes.",
-    "dependencies": ["framer-motion", "react"],
-    "registryDependencies": ["button"],
+    "dependencies": [
+      "framer-motion",
+      "react"
+    ],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/feature234.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:41.413Z"
+  "fetchedAt": "2026-01-03T11:28:39.930Z"
 }

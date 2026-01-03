@@ -6,8 +6,15 @@
   "item": {
     "name": "pricing-1",
     "type": "registry:block",
-    "dependencies": ["motion", "lucide-react", "@radix-ui/react-icons"],
-    "registryDependencies": ["button", "switch"],
+    "dependencies": [
+      "motion",
+      "lucide-react",
+      "@radix-ui/react-icons"
+    ],
+    "registryDependencies": [
+      "button",
+      "switch"
+    ],
     "files": [
       {
         "path": "registry/blocks/pricing-1.tsx",
@@ -18,5 +25,5 @@
       "height": 743
     }
   },
-  "fetchedAt": "2026-01-02T23:59:18.783Z"
+  "fetchedAt": "2026-01-03T11:28:17.235Z"
 }

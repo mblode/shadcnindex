@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Hero",
     "description": "This component features a centered column layout with a headline, a descriptive text, two button options for downloading or joining a waitlist, version information, and system requirements. It also includes a decorative, animated download button and a background video.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["https://magicui.design/r/border-beam", "button"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "https://magicui.design/r/border-beam",
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/hero143.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:49.137Z"
+  "fetchedAt": "2026-01-03T11:28:47.709Z"
 }

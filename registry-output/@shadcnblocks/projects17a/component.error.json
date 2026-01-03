@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Projects17a",
     "description": "A component showcasing projects in a carousel with cinematic images, titles, categories, and dynamic navigation arrows.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["button", "carousel"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "button",
+      "carousel"
+    ],
     "files": [
       {
         "path": "code/block/projects17a.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:02.149Z"
+  "fetchedAt": "2026-01-03T11:28:59.951Z"
 }

@@ -8,8 +8,15 @@
     "type": "registry:block",
     "title": "Compare-products",
     "description": "This component, \"CompareProducts2,\" is designed for comparing multiple products with specific characteristics and specifications presented in a tabular format. It allows users to view product images, prices, ratings, and additional product details, facilitating easy comparison and decision-making.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["aspect-ratio", "badge", "button", "table"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "aspect-ratio",
+      "badge",
+      "button",
+      "table"
+    ],
     "files": [
       {
         "path": "code/block/compare-products2.tsx",
@@ -17,5 +24,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:33.246Z"
+  "fetchedAt": "2026-01-03T11:28:31.776Z"
 }

@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "Product-list",
     "description": "This component is designed for showcasing a collection of products with promotional features, including details like stock status, pricing, and special badges. It allows users to view product images, access additional options like 'Add to cart' and 'Quick View', and features a promotional card with a call-to-action button.",
-    "dependencies": ["lucide-react"],
+    "dependencies": [
+      "lucide-react"
+    ],
     "registryDependencies": [
       "https://shadcnblocks.com/r/price",
       "aspect-ratio",
@@ -23,5 +25,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:59.940Z"
+  "fetchedAt": "2026-01-03T11:28:57.701Z"
 }

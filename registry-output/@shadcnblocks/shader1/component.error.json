@@ -8,7 +8,11 @@
     "type": "registry:block",
     "title": "Shader",
     "description": "This component renders an animated, customizable shader background using Three.js and React Three Fiber, featuring vertex and fragment shaders with adjustable uniforms. Users can control its appearance by providing their own shaders, uniforms, and a color option.",
-    "dependencies": ["@react-three/fiber", "react", "three"],
+    "dependencies": [
+      "@react-three/fiber",
+      "react",
+      "three"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +21,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:04.242Z"
+  "fetchedAt": "2026-01-03T11:29:02.328Z"
 }

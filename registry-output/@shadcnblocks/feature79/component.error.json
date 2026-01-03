@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A feature block with a tagline, title, and description, followed by a grid of one main and three smaller linked feature items, each with hover effects and directional arrows.",
-    "dependencies": ["lucide-react"],
+    "dependencies": [
+      "lucide-react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:45.359Z"
+  "fetchedAt": "2026-01-03T11:28:44.019Z"
 }

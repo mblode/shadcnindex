@@ -7,9 +7,13 @@
     "name": "stripe-nextjs-hooks",
     "type": "registry:block",
     "description": "Stripe payment integration for Next.js App Router with React hooks",
-    "dependencies": ["@paykit-sdk/react"],
+    "dependencies": [
+      "@paykit-sdk/react"
+    ],
     "devDependencies": [],
-    "registryDependencies": ["https://usepaykit.dev/r/stripe-nextjs"],
+    "registryDependencies": [
+      "https://usepaykit.dev/r/stripe-nextjs"
+    ],
     "files": [
       {
         "path": "shared/hooks/paykit-wrapper.tsx",
@@ -36,5 +40,5 @@
       "auth": "none"
     }
   },
-  "fetchedAt": "2026-01-02T23:59:22.922Z"
+  "fetchedAt": "2026-01-03T11:28:21.549Z"
 }

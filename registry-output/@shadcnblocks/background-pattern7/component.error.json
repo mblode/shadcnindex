@@ -9,7 +9,9 @@
     "title": "Background-pattern",
     "description": "This component creates a visually dynamic background with a grid pattern and a radial fade effect, allowing users to apply customizable styles through the `className` prop. It is ideal for enhancing the aesthetic appeal of an interface where a patterned backdrop is desired.",
     "dependencies": [],
-    "registryDependencies": ["https://shadcnblocks.com/r/pattern-placeholder"],
+    "registryDependencies": [
+      "https://shadcnblocks.com/r/pattern-placeholder"
+    ],
     "files": [
       {
         "path": "code/block/background-pattern7.tsx",
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:30.544Z"
+  "fetchedAt": "2026-01-03T11:28:29.191Z"
 }

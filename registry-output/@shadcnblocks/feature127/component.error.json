@@ -8,8 +8,12 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "This block showcases utilities with dynamic grid visuals and descriptive cards, detailing features through icons, titles, and texts alongside faded image backgrounds.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["button"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/feature127.tsx",
@@ -17,5 +21,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:37.444Z"
+  "fetchedAt": "2026-01-03T11:28:36.007Z"
 }

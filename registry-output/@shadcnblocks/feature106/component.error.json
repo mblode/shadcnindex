@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A component showcasing features in an accordion for narrow screens and tabs for wider screens, each with icons, titles, and images.",
-    "dependencies": ["@radix-ui/react-tabs", "lucide-react"],
-    "registryDependencies": ["accordion"],
+    "dependencies": [
+      "@radix-ui/react-tabs",
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "accordion"
+    ],
     "files": [
       {
         "path": "code/block/feature106.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:36.554Z"
+  "fetchedAt": "2026-01-03T11:28:35.165Z"
 }

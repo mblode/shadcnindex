@@ -8,8 +8,16 @@
     "type": "registry:block",
     "title": "Navbar",
     "description": "A component with a dynamic navbar, integrating desktop and mobile views with different button sets. It includes expandable menus for grouped items and icons alongside links.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["accordion", "button", "navigation-menu", "sheet"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "accordion",
+      "button",
+      "navigation-menu",
+      "sheet"
+    ],
     "files": [
       {
         "path": "code/block/navbar11.tsx",
@@ -17,5 +25,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:56.476Z"
+  "fetchedAt": "2026-01-03T11:28:54.309Z"
 }

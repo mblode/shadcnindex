@@ -6,8 +6,12 @@
   "item": {
     "name": "cta-16",
     "description": "Logo branding with animated expanding border frame.",
-    "dependencies": ["motion"],
-    "registryDependencies": ["button"],
+    "dependencies": [
+      "motion"
+    ],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "../../packages/core/src/logo.tsx",
@@ -18,8 +22,10 @@
         "type": "registry:component"
       }
     ],
-    "categories": ["cta"],
+    "categories": [
+      "cta"
+    ],
     "type": "registry:block"
   },
-  "fetchedAt": "2026-01-02T23:59:12.191Z"
+  "fetchedAt": "2026-01-03T11:28:09.509Z"
 }

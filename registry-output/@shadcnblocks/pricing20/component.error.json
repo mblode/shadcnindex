@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Pricing",
     "description": "A pricing component showcasing three plans, with toggled monthly/yearly prices, feature lists, and icons identifying plan types.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["badge", "button"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "badge",
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/pricing20.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:57.843Z"
+  "fetchedAt": "2026-01-03T11:28:55.760Z"
 }

@@ -8,7 +8,11 @@
     "type": "registry:block",
     "title": "Shader",
     "description": "This component generates a dynamic, animated background using customizable vertex and fragment shaders, allowing for real-time visual effects driven by WebGL and three.js. Its parameters include shaders for fine-tuning graphics, uniform values for interactivity, and styling options to adapt to various layouts.",
-    "dependencies": ["@react-three/fiber", "react", "three"],
+    "dependencies": [
+      "@react-three/fiber",
+      "react",
+      "three"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +21,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:04.342Z"
+  "fetchedAt": "2026-01-03T11:29:02.363Z"
 }

@@ -8,7 +8,11 @@
     "type": "registry:block",
     "title": "Hero",
     "description": "A component featuring a centered headline with shadow text effect, background animation, and two action buttons, all within a radial gradient mask.",
-    "dependencies": ["lucide-react", "motion", "react"],
+    "dependencies": [
+      "lucide-react",
+      "motion",
+      "react"
+    ],
     "registryDependencies": [
       "https://magicui.design/r/line-shadow-text",
       "button"
@@ -20,5 +24,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:51.624Z"
+  "fetchedAt": "2026-01-03T11:28:50.088Z"
 }

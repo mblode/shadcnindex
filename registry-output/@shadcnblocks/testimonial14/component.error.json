@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Testimonial",
     "description": "A carousel component showcasing testimonials, featuring text quotes, avatars, names, roles, and a 5-star rating system. Includes navigation dots for carousel control.",
-    "dependencies": ["react"],
-    "registryDependencies": ["avatar", "button", "carousel"],
+    "dependencies": [
+      "react"
+    ],
+    "registryDependencies": [
+      "avatar",
+      "button",
+      "carousel"
+    ],
     "files": [
       {
         "path": "code/block/testimonial14.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:07.210Z"
+  "fetchedAt": "2026-01-03T11:29:04.945Z"
 }

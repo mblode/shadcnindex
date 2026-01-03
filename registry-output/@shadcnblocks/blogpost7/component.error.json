@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Blogpost",
     "description": "This component displays a blog post layout with animated transitions for various elements such as the title, author information, and descriptions. It features an image, a publication date, content descriptions, and an author's avatar with details, making it suitable for showcasing articles or stories.",
-    "dependencies": ["framer-motion"],
-    "registryDependencies": ["avatar", "separator"],
+    "dependencies": [
+      "framer-motion"
+    ],
+    "registryDependencies": [
+      "avatar",
+      "separator"
+    ],
     "files": [
       {
         "path": "code/block/blogpost7.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:31.836Z"
+  "fetchedAt": "2026-01-03T11:28:30.489Z"
 }

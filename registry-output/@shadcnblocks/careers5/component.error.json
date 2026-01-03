@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "Careers",
     "description": "A component displaying job openings with titles, categories, descriptions, and details on type and location. It has a header and lists jobs in a single column.",
-    "dependencies": ["lucide-react"],
+    "dependencies": [
+      "lucide-react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:31.957Z"
+  "fetchedAt": "2026-01-03T11:28:30.656Z"
 }

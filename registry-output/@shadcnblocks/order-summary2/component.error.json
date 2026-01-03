@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "Order-summary",
     "description": "This component displays a comprehensive order summary, including order details, itemized lists, payment method, and shipping information. Users can easily track their orders and access options to download a receipt or print the summary.",
-    "dependencies": ["lucide-react"],
+    "dependencies": [
+      "lucide-react"
+    ],
     "registryDependencies": [
       "aspect-ratio",
       "badge",
@@ -23,5 +25,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:57.280Z"
+  "fetchedAt": "2026-01-03T11:28:55.115Z"
 }

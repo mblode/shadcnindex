@@ -6,16 +6,22 @@
   "item": {
     "name": "cta-18",
     "description": "Event registration with animated floating cards and emoji badges.",
-    "dependencies": ["motion"],
-    "registryDependencies": ["button"],
+    "dependencies": [
+      "motion"
+    ],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "registry/cta/18/call-to-action.tsx",
         "type": "registry:component"
       }
     ],
-    "categories": ["cta"],
+    "categories": [
+      "cta"
+    ],
     "type": "registry:block"
   },
-  "fetchedAt": "2026-01-02T23:59:12.260Z"
+  "fetchedAt": "2026-01-03T11:28:09.686Z"
 }

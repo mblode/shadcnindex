@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Services",
     "description": "A 3-column component displaying services with a large title, description, and interactive list. Includes progress indicators and \"Get Started\" CTA.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["button", "separator"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "button",
+      "separator"
+    ],
     "files": [
       {
         "path": "code/block/services18.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:03.917Z"
+  "fetchedAt": "2026-01-03T11:29:02.041Z"
 }

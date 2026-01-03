@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Changelog",
     "description": "A component that displays changelogs with features like a sticky timeline navigation, vertical separators, and scroll-spy functionality for active section highlighting.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["avatar", "separator"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "avatar",
+      "separator"
+    ],
     "files": [
       {
         "path": "code/block/changelog5.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:32.606Z"
+  "fetchedAt": "2026-01-03T11:28:31.146Z"
 }

@@ -6,16 +6,22 @@
   "item": {
     "name": "cta-20",
     "description": "Concentric animated circles with pricing headline and button.",
-    "dependencies": ["motion"],
-    "registryDependencies": ["button"],
+    "dependencies": [
+      "motion"
+    ],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "registry/cta/20/call-to-action.tsx",
         "type": "registry:component"
       }
     ],
-    "categories": ["cta"],
+    "categories": [
+      "cta"
+    ],
     "type": "registry:block"
   },
-  "fetchedAt": "2026-01-02T23:59:12.289Z"
+  "fetchedAt": "2026-01-03T11:28:10.012Z"
 }

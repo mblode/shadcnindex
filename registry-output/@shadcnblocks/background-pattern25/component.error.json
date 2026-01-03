@@ -9,7 +9,9 @@
     "title": "Background-pattern",
     "description": "This component generates a visually appealing background pattern with a bottom-left fade dashed grid effect, suitable for enhancing the design of user interfaces. It allows customization through the `className` prop and utilizes a placeholder for additional content placement.",
     "dependencies": [],
-    "registryDependencies": ["https://shadcnblocks.com/r/pattern-placeholder"],
+    "registryDependencies": [
+      "https://shadcnblocks.com/r/pattern-placeholder"
+    ],
     "files": [
       {
         "path": "code/block/background-pattern25.tsx",
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:29.824Z"
+  "fetchedAt": "2026-01-03T11:28:28.531Z"
 }

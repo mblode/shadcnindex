@@ -9,7 +9,9 @@
     "title": "Hero",
     "description": "A block with two columns: text (50% width) and a video element. Includes buttons and stylized text layout.",
     "dependencies": [],
-    "registryDependencies": ["button"],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/hero91.tsx",
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:54.906Z"
+  "fetchedAt": "2026-01-03T11:28:52.879Z"
 }

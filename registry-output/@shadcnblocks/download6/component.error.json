@@ -8,8 +8,12 @@
     "type": "registry:block",
     "title": "Download",
     "description": "A component displaying download options for different software versions and platforms, highlighting the latest version with a badge. Offers a two-column layout for platform links.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["badge"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "badge"
+    ],
     "files": [
       {
         "path": "code/block/download6.tsx",
@@ -17,5 +21,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:35.376Z"
+  "fetchedAt": "2026-01-03T11:28:34.035Z"
 }

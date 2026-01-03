@@ -8,8 +8,12 @@
     "type": "registry:block",
     "title": "Navigation-menu/navigation-menu-features-",
     "description": "A navigation-menu/navigation-menu-features- example",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["navigation-menu"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "navigation-menu"
+    ],
     "files": [
       {
         "path": "code/example/navigation-menu/navigation-menu-features-2.tsx",
@@ -17,5 +21,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:18.916Z"
+  "fetchedAt": "2026-01-03T11:29:16.515Z"
 }

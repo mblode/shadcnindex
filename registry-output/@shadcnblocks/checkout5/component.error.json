@@ -15,7 +15,13 @@
       "react-hook-form",
       "zod"
     ],
-    "registryDependencies": ["button", "field", "input", "select", "separator"],
+    "registryDependencies": [
+      "button",
+      "field",
+      "input",
+      "select",
+      "separator"
+    ],
     "files": [
       {
         "path": "code/block/checkout5.tsx",
@@ -23,5 +29,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:32.657Z"
+  "fetchedAt": "2026-01-03T11:28:31.587Z"
 }

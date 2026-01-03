@@ -9,7 +9,10 @@
     "title": "Feature",
     "description": "A component featuring a central heading, a description, and three Cards, each with an image, a title, and a Badge. The Cards display in a single column for mobile and in rows for larger screens.",
     "dependencies": [],
-    "registryDependencies": ["badge", "card"],
+    "registryDependencies": [
+      "badge",
+      "card"
+    ],
     "files": [
       {
         "path": "code/block/feature144.tsx",
@@ -17,5 +20,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:38.126Z"
+  "fetchedAt": "2026-01-03T11:28:36.733Z"
 }

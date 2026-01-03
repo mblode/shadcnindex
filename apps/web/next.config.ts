@@ -26,7 +26,6 @@ const nextConfig: NextConfig = {
   },
   experimental: {
     turbopackFileSystemCacheForDev: true,
-    urlImports: ["*"],
   },
 };
 export default nextConfig;

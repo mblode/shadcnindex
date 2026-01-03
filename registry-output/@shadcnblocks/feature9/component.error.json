@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A component featuring a central title, description, badges, two textual cards, and an image in a three-column layout; includes \"Read more\" buttons.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["badge", "button", "card"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "badge",
+      "button",
+      "card"
+    ],
     "files": [
       {
         "path": "code/block/feature9.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:45.785Z"
+  "fetchedAt": "2026-01-03T11:28:44.347Z"
 }

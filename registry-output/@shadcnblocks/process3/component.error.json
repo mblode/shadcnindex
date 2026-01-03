@@ -8,7 +8,11 @@
     "type": "registry:block",
     "title": "Process",
     "description": "A component showcasing a 5-step process with animated entries, structured layout, and shifting background colors for each step. Unique number positioning.",
-    "dependencies": ["framer-motion", "lucide-react", "react"],
+    "dependencies": [
+      "framer-motion",
+      "lucide-react",
+      "react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +21,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:58.845Z"
+  "fetchedAt": "2026-01-03T11:28:56.619Z"
 }

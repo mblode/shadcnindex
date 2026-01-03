@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Contact",
     "description": "A contact component with a title, descriptive text, links for phone and email, and a form with name, email, and message input fields, plus a submit button.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["button", "input"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "button",
+      "input"
+    ],
     "files": [
       {
         "path": "code/block/contact16.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:33.823Z"
+  "fetchedAt": "2026-01-03T11:28:32.486Z"
 }

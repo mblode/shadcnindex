@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Project2a",
     "description": "A component showcasing a project with dynamic text elements, a three-column metadata layout, a full-width image, and detailed descriptions. Includes a styled button with an arrow icon.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["button", "label"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "button",
+      "label"
+    ],
     "files": [
       {
         "path": "code/block/project2a.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:00.533Z"
+  "fetchedAt": "2026-01-03T11:28:58.444Z"
 }

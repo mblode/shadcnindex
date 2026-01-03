@@ -8,7 +8,10 @@
     "type": "registry:block",
     "title": "Product-card",
     "description": "This component displays a product card showcasing a ceramic cup with pricing details, color variants, and customizable badges. It features interactive elements like an \"Add to cart\" button, a tooltip for color selection, and a dynamic image gallery that changes based on the selected color variant.",
-    "dependencies": ["lucide-react", "react"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
     "registryDependencies": [
       "https://shadcnblocks.com/r/price",
       "aspect-ratio",
@@ -26,5 +29,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:59.167Z"
+  "fetchedAt": "2026-01-03T11:28:56.931Z"
 }

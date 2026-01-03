@@ -6,7 +6,9 @@
   "item": {
     "name": "header-3",
     "type": "registry:block",
-    "dependencies": ["motion"],
+    "dependencies": [
+      "motion"
+    ],
     "files": [
       {
         "path": "registry/blocks/header-3.tsx",
@@ -17,5 +19,5 @@
       "height": 130
     }
   },
-  "fetchedAt": "2026-01-02T23:59:17.230Z"
+  "fetchedAt": "2026-01-03T11:28:15.655Z"
 }

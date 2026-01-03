@@ -6,8 +6,13 @@
   "item": {
     "name": "cta-12",
     "description": "Installation command with animated border lines and copy button.",
-    "dependencies": ["motion"],
-    "registryDependencies": ["button", "tooltip"],
+    "dependencies": [
+      "motion"
+    ],
+    "registryDependencies": [
+      "button",
+      "tooltip"
+    ],
     "files": [
       {
         "path": "registry/cta/12/call-to-action.tsx",
@@ -22,8 +27,10 @@
         "type": "registry:hook"
       }
     ],
-    "categories": ["cta"],
+    "categories": [
+      "cta"
+    ],
     "type": "registry:block"
   },
-  "fetchedAt": "2026-01-02T23:59:11.566Z"
+  "fetchedAt": "2026-01-03T11:28:09.000Z"
 }

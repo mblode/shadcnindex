@@ -9,7 +9,9 @@
     "title": "Background-pattern",
     "description": "This component creates a visually dynamic background pattern, featuring a dashed grid overlay with a top fade effect and a radial gradient. It serves as a versatile design block for enhancing the visual appeal of a user interface layout.",
     "dependencies": [],
-    "registryDependencies": ["https://shadcnblocks.com/r/pattern-placeholder"],
+    "registryDependencies": [
+      "https://shadcnblocks.com/r/pattern-placeholder"
+    ],
     "files": [
       {
         "path": "code/block/background-pattern22.tsx",
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:29.799Z"
+  "fetchedAt": "2026-01-03T11:28:28.371Z"
 }

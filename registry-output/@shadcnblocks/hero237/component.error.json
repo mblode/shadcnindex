@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Hero",
     "description": "A component featuring a split layout with a \"Why Us?\" pitch, key stats, and orbiting tech logos on one side, and dynamic circular orbit animations on the other.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["https://magicui.design/r/orbiting-circles"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "https://magicui.design/r/orbiting-circles"
+    ],
     "files": [
       {
         "path": "code/block/hero237.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:52.182Z"
+  "fetchedAt": "2026-01-03T11:28:50.546Z"
 }

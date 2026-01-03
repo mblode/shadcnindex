@@ -6,8 +6,12 @@
   "item": {
     "name": "carousel",
     "type": "registry:ui",
-    "dependencies": ["embla-carousel-react"],
-    "registryDependencies": ["button"],
+    "dependencies": [
+      "embla-carousel-react"
+    ],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "ui/carousel.tsx",
@@ -15,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T07:39:45.515Z"
+  "fetchedAt": "2026-01-03T11:28:25.506Z"
 }

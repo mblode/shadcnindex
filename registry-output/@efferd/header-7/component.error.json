@@ -6,7 +6,10 @@
   "item": {
     "name": "header-7",
     "description": "Floating squircle navigation with popover menu and social links.",
-    "registryDependencies": ["button", "popover"],
+    "registryDependencies": [
+      "button",
+      "popover"
+    ],
     "files": [
       {
         "path": "registry/header/7/header.tsx",
@@ -21,8 +24,10 @@
         "type": "registry:component"
       }
     ],
-    "categories": ["header"],
+    "categories": [
+      "header"
+    ],
     "type": "registry:block"
   },
-  "fetchedAt": "2026-01-02T23:59:12.256Z"
+  "fetchedAt": "2026-01-03T11:28:10.085Z"
 }

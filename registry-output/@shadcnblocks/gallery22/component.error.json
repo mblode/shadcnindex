@@ -8,7 +8,12 @@
     "type": "registry:block",
     "title": "Gallery",
     "description": "An interactive gallery block with coverflow effect, auto-slide feature, and social media links. Displays images in a carousel, each paired with name and role. Includes left/right navigation buttons.",
-    "dependencies": ["lucide-react", "react", "react-icons", "swiper"],
+    "dependencies": [
+      "lucide-react",
+      "react",
+      "react-icons",
+      "swiper"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:47.564Z"
+  "fetchedAt": "2026-01-03T11:28:46.121Z"
 }

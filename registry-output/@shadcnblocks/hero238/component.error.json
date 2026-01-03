@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Hero",
     "description": "A visually engaging component displaying premium benefits with animation. Includes heading, two buttons, and a list with icons. Two-column layout on large screens, single-column on smaller. Unique fading animated note card on the right.",
-    "dependencies": ["framer-motion", "lucide-react", "react"],
-    "registryDependencies": ["button"],
+    "dependencies": [
+      "framer-motion",
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/hero238.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:52.188Z"
+  "fetchedAt": "2026-01-03T11:28:50.649Z"
 }

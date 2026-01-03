@@ -8,7 +8,11 @@
     "type": "registry:block",
     "title": "Product-card",
     "description": "This component is an interactive product display block that showcases product details, including images, pricing, and stock status. It integrates a form allowing users to select product variants, with features like quick add to cart, sale indicators, and variant-specific color options.",
-    "dependencies": ["@hookform/resolvers", "react-hook-form", "zod"],
+    "dependencies": [
+      "@hookform/resolvers",
+      "react-hook-form",
+      "zod"
+    ],
     "registryDependencies": [
       "https://shadcnblocks.com/r/price",
       "aspect-ratio",
@@ -24,5 +28,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:59.001Z"
+  "fetchedAt": "2026-01-03T11:28:56.901Z"
 }

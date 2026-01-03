@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Hero",
     "description": "A component showcasing a centered introductory text with a button and a dynamic phone mockup animation, structured in a single-column layout.",
-    "dependencies": ["framer-motion", "react"],
-    "registryDependencies": ["button"],
+    "dependencies": [
+      "framer-motion",
+      "react"
+    ],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/hero200.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:50.863Z"
+  "fetchedAt": "2026-01-03T11:28:49.314Z"
 }

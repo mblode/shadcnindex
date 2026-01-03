@@ -8,8 +8,16 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A feature block using a carousel to display slides on various topics. Includes a progress bar and navigation buttons.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["badge", "card", "carousel", "progress"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "badge",
+      "card",
+      "carousel",
+      "progress"
+    ],
     "files": [
       {
         "path": "code/block/feature12.tsx",
@@ -17,5 +25,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:37.110Z"
+  "fetchedAt": "2026-01-03T11:28:35.711Z"
 }

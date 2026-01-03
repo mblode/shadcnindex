@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Promo-banner",
     "description": "This component displays a promotional banner featuring a countdown timer and stock progress bar, ideal for showcasing limited-time offers. Users can customize the end time and stock values, while it dynamically updates to indicate time left and items remaining.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["progress"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "progress"
+    ],
     "files": [
       {
         "path": "code/block/promo-banner7.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:02.793Z"
+  "fetchedAt": "2026-01-03T11:29:00.531Z"
 }

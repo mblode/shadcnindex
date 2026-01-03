@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Input-otp/input-otp-behavior-",
     "description": "A input-otp/input-otp-behavior- example",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["button", "input-otp"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "button",
+      "input-otp"
+    ],
     "files": [
       {
         "path": "code/example/input-otp/input-otp-behavior-3.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:17.873Z"
+  "fetchedAt": "2026-01-03T11:29:15.529Z"
 }

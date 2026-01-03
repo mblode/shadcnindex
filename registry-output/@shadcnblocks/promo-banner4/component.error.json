@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "Promo-banner",
     "description": "This component, PromoBanner4, displays a series of promotional messages using icons and text to highlight key trust-building features like free shipping, return policies, and secure checkout. It allows for customization by accepting an array of items, where each item consists of an icon and descriptive text, making it an ideal choice for enhancing customer assurance and showcasing promotional highlights.",
-    "dependencies": ["lucide-react"],
+    "dependencies": [
+      "lucide-react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:02.673Z"
+  "fetchedAt": "2026-01-03T11:29:00.497Z"
 }

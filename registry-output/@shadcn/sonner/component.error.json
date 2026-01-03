@@ -6,7 +6,10 @@
   "item": {
     "name": "sonner",
     "type": "registry:ui",
-    "dependencies": ["sonner", "next-themes"],
+    "dependencies": [
+      "sonner",
+      "next-themes"
+    ],
     "files": [
       {
         "path": "ui/sonner.tsx",
@@ -14,5 +17,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T07:39:45.831Z"
+  "fetchedAt": "2026-01-03T11:28:25.729Z"
 }

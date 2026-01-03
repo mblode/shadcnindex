@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Hero",
     "description": "An animated gallery component cycling through portraits with a main headline. It features auto-changing images, and a masked layout with a \"Contact Us\" button.",
-    "dependencies": ["framer-motion", "lucide-react", "react"],
-    "registryDependencies": ["button"],
+    "dependencies": [
+      "framer-motion",
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/hero214.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:51.332Z"
+  "fetchedAt": "2026-01-03T11:28:49.803Z"
 }

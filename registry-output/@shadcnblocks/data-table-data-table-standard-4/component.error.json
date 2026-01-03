@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Data-table/data-table-standard-",
     "description": "A data-table/data-table-standard- example",
-    "dependencies": ["@tanstack/react-table"],
-    "registryDependencies": ["button", "table"],
+    "dependencies": [
+      "@tanstack/react-table"
+    ],
+    "registryDependencies": [
+      "button",
+      "table"
+    ],
     "files": [
       {
         "path": "code/example/data-table/data-table-standard-4.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:13.851Z"
+  "fetchedAt": "2026-01-03T11:29:11.565Z"
 }

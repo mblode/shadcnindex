@@ -6,16 +6,22 @@
   "item": {
     "name": "cta-19",
     "description": "Floating tool icons surrounding centered headline and action buttons.",
-    "dependencies": ["motion"],
-    "registryDependencies": ["button"],
+    "dependencies": [
+      "motion"
+    ],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "registry/cta/19/call-to-action.tsx",
         "type": "registry:component"
       }
     ],
-    "categories": ["cta"],
+    "categories": [
+      "cta"
+    ],
     "type": "registry:block"
   },
-  "fetchedAt": "2026-01-02T23:59:11.811Z"
+  "fetchedAt": "2026-01-03T11:28:10.067Z"
 }

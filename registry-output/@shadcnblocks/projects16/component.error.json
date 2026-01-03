@@ -9,7 +9,9 @@
     "title": "Projects",
     "description": "A gallery component showcasing nature photos in two columns, with a descriptive heading and a discovery link button.",
     "dependencies": [],
-    "registryDependencies": ["button"],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/projects16.tsx",
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:02.103Z"
+  "fetchedAt": "2026-01-03T11:28:59.818Z"
 }

@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Hero",
     "description": "A component with a dual-column layout, featuring an attention-grabbing headline, a decorative button with unique animation, and a side image embellished with a \"Hire Me\" call-to-action button.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["aspect-ratio", "button"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "aspect-ratio",
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/hero107.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:48.485Z"
+  "fetchedAt": "2026-01-03T11:28:47.172Z"
 }

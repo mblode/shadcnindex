@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Changelog",
     "description": "A changelog component with a title, NEW badge, description, email signup, and dated entries with images, headlines, and text links.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["badge", "button", "input"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "badge",
+      "button",
+      "input"
+    ],
     "files": [
       {
         "path": "code/block/changelog2.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:32.360Z"
+  "fetchedAt": "2026-01-03T11:28:30.960Z"
 }

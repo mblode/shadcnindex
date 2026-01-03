@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A block featuring badges, headings, lists, and an image. It&#x27;s structured in a 3-column grid with text and icons on the left, and a large image spanning two columns on the right.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["badge", "separator"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "badge",
+      "separator"
+    ],
     "files": [
       {
         "path": "code/block/feature87.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:45.729Z"
+  "fetchedAt": "2026-01-03T11:28:44.303Z"
 }

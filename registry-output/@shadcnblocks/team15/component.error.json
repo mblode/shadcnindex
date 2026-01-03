@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Team",
     "description": "This component showcases a team of professionals, featuring their names, roles, avatars, and social media links (Twitter, Instagram, and LinkedIn) in an engaging, grid-based layout. It includes customizable titles and subtitles to highlight the team's mission and provides buttons to connect with each member through their social media profiles.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["button", "card"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "button",
+      "card"
+    ],
     "files": [
       {
         "path": "code/block/team15.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:06.558Z"
+  "fetchedAt": "2026-01-03T11:29:04.414Z"
 }

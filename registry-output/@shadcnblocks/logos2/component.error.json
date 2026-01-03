@@ -8,8 +8,12 @@
     "type": "registry:block",
     "title": "Logos",
     "description": "A two-column block featuring certifications with text and a button on one side and a 3x2 grid of logos on the other.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["button"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/logos2.tsx",
@@ -17,5 +21,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:56.256Z"
+  "fetchedAt": "2026-01-03T11:28:54.030Z"
 }

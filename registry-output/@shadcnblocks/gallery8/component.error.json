@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Gallery",
     "description": "A carousel component displaying resources in 3 columns, featuring navigation, separators, and dynamic link icons.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["carousel", "separator"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "carousel",
+      "separator"
+    ],
     "files": [
       {
         "path": "code/block/gallery8.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:48.189Z"
+  "fetchedAt": "2026-01-03T11:28:46.840Z"
 }

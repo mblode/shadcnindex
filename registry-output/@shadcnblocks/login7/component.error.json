@@ -9,7 +9,12 @@
     "title": "Login",
     "description": "A login component featuring a card layout with a logo, a &#x27;Sign up with Google&#x27; button, a divider with &#x27;OR&#x27;, email and password fields, and a submit button.",
     "dependencies": [],
-    "registryDependencies": ["button", "card", "input", "label"],
+    "registryDependencies": [
+      "button",
+      "card",
+      "input",
+      "label"
+    ],
     "files": [
       {
         "path": "code/block/login7.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:56.055Z"
+  "fetchedAt": "2026-01-03T11:28:53.750Z"
 }

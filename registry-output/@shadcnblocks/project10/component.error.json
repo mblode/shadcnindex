@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Project",
     "description": "A component showcasing urban photography, featuring a title, button, and categories. It contains interactive images and sections discussing inspiration, challenges, and rewards. Includes a carousel aspect.",
-    "dependencies": ["framer-motion", "lucide-react"],
-    "registryDependencies": ["button"],
+    "dependencies": [
+      "framer-motion",
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/project10.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:00.412Z"
+  "fetchedAt": "2026-01-03T11:28:58.186Z"
 }

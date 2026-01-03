@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A component featuring a 5-column layout that consolidates investment solutions, including text and buttons, followed by a 3-item visual grid, each with a title, text, and icon overlay on images.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["button", "separator"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "button",
+      "separator"
+    ],
     "files": [
       {
         "path": "code/block/feature98.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:46.069Z"
+  "fetchedAt": "2026-01-03T11:28:44.633Z"
 }

@@ -7,7 +7,9 @@
     "name": "block-suggestion",
     "type": "registry:ui",
     "title": "Block Suggestion",
-    "dependencies": ["@platejs/suggestion"]
+    "dependencies": [
+      "@platejs/suggestion"
+    ]
   },
-  "fetchedAt": "2026-01-02T23:59:24.220Z"
+  "fetchedAt": "2026-01-03T11:28:22.763Z"
 }

@@ -8,7 +8,10 @@
     "type": "registry:block",
     "title": "Payment-methods",
     "description": "This component allows users to manage payment methods, supporting actions such as adding, editing, and removing cards or PayPal accounts. It features a user-friendly interface for setting a default payment method and includes a visual grid layout for displaying current payment methods with logos.",
-    "dependencies": ["lucide-react", "react"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
     "registryDependencies": [
       "badge",
       "button",
@@ -26,5 +29,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:57.556Z"
+  "fetchedAt": "2026-01-03T11:28:55.265Z"
 }

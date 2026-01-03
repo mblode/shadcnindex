@@ -8,7 +8,10 @@
     "type": "registry:block",
     "title": "Stats",
     "description": "A component displays platform ratings from Apple Store, Play Store, and Trustpilot, along with a headline. It uses star icons for ratings and logos for each platform.",
-    "dependencies": ["lucide-react", "react-icons"],
+    "dependencies": [
+      "lucide-react",
+      "react-icons"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +20,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:06.233Z"
+  "fetchedAt": "2026-01-03T11:29:04.027Z"
 }

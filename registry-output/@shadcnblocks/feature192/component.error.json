@@ -8,8 +8,12 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "An accordion component presenting features with selectable items on one side and corresponding images on the other. It includes dynamic image display based on selection.",
-    "dependencies": ["react"],
-    "registryDependencies": ["accordion"],
+    "dependencies": [
+      "react"
+    ],
+    "registryDependencies": [
+      "accordion"
+    ],
     "files": [
       {
         "path": "code/block/feature192.tsx",
@@ -17,5 +21,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:39.757Z"
+  "fetchedAt": "2026-01-03T11:28:38.284Z"
 }

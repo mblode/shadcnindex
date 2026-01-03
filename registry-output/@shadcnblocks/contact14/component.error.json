@@ -8,8 +8,15 @@
     "type": "registry:block",
     "title": "Contact",
     "description": "A two-column contact component with avatar, contact details, and form fields for name & phone, plus a button.",
-    "dependencies": ["react"],
-    "registryDependencies": ["avatar", "button", "card", "input"],
+    "dependencies": [
+      "react"
+    ],
+    "registryDependencies": [
+      "avatar",
+      "button",
+      "card",
+      "input"
+    ],
     "files": [
       {
         "path": "code/block/contact14.tsx",
@@ -17,5 +24,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:33.933Z"
+  "fetchedAt": "2026-01-03T11:28:32.450Z"
 }

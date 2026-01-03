@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "Project8a",
     "description": "A visual-rich component showcasing a fashion theme with dynamic animations. Features a centered title, a subtitle, a full-width image, and a two-column layout for narrative and credits.",
-    "dependencies": ["framer-motion"],
+    "dependencies": [
+      "framer-motion"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:01.477Z"
+  "fetchedAt": "2026-01-03T11:28:59.069Z"
 }

@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "Hero",
     "description": "A component showcasing a team section with dynamic tooltips over names, a large title, description, and a call-to-action button. Incorporates a 2-column layout with rotating tooltips for team members.",
-    "dependencies": ["lucide-react"],
+    "dependencies": [
+      "lucide-react"
+    ],
     "registryDependencies": [
       "https://magicui.design/r/animated-tooltip",
       "button"
@@ -20,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:52.581Z"
+  "fetchedAt": "2026-01-03T11:28:51.034Z"
 }

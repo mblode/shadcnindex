@@ -8,8 +8,16 @@
     "type": "registry:block",
     "title": "Pricing",
     "description": "A component displaying pricing options with a billing cycle toggle (monthly/annually), supporting discount display. Includes a 2-column layout for plan comparisons, featuring dynamic pricing, plan benefits, and \"Start a free trial\" buttons.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["badge", "button", "label", "radio-group"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "badge",
+      "button",
+      "label",
+      "radio-group"
+    ],
     "files": [
       {
         "path": "code/block/pricing7.tsx",
@@ -17,5 +25,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:58.693Z"
+  "fetchedAt": "2026-01-03T11:28:56.385Z"
 }

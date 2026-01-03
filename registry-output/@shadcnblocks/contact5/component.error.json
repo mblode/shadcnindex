@@ -9,7 +9,12 @@
     "title": "Contact",
     "description": "A contact form block with a title, description, fields for name, email, phone, and message, a privacy policy checkbox, and a submit button.",
     "dependencies": [],
-    "registryDependencies": ["button", "input", "label", "textarea"],
+    "registryDependencies": [
+      "button",
+      "input",
+      "label",
+      "textarea"
+    ],
     "files": [
       {
         "path": "code/block/contact5.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:34.180Z"
+  "fetchedAt": "2026-01-03T11:28:32.753Z"
 }

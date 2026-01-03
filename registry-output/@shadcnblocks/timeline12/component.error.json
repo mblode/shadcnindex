@@ -8,8 +8,15 @@
     "type": "registry:block",
     "title": "Timeline",
     "description": "An interactive timeline component with four tabs. Each tab reveals content on a different phase, including dates, descriptions, animated images, and a download button.",
-    "dependencies": ["framer-motion", "lucide-react"],
-    "registryDependencies": ["button", "card", "tabs"],
+    "dependencies": [
+      "framer-motion",
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "button",
+      "card",
+      "tabs"
+    ],
     "files": [
       {
         "path": "code/block/timeline12.tsx",
@@ -17,5 +24,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:08.081Z"
+  "fetchedAt": "2026-01-03T11:29:05.801Z"
 }

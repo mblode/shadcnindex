@@ -9,7 +9,9 @@
     "title": "Project",
     "description": "A component showcasing an architectural project with multiple sections: a header with a hero image, philosophy & vision, carousel of design images, architectural details, construction materials, and project impact. Uses imagery, text, and a carousel.",
     "dependencies": [],
-    "registryDependencies": ["carousel"],
+    "registryDependencies": [
+      "carousel"
+    ],
     "files": [
       {
         "path": "code/block/project7.tsx",
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:01.289Z"
+  "fetchedAt": "2026-01-03T11:28:59.069Z"
 }

@@ -9,7 +9,10 @@
     "title": "Scroll-area/scroll-area-layout-",
     "description": "A scroll-area/scroll-area-layout- example",
     "dependencies": [],
-    "registryDependencies": ["avatar", "scroll-area"],
+    "registryDependencies": [
+      "avatar",
+      "scroll-area"
+    ],
     "files": [
       {
         "path": "code/example/scroll-area/scroll-area-layout-3.tsx",
@@ -17,5 +20,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:20.072Z"
+  "fetchedAt": "2026-01-03T11:29:17.521Z"
 }

@@ -8,7 +8,10 @@
     "type": "registry:block",
     "title": "Order-summary",
     "description": "This component is designed to display a comprehensive order summary, including order details, timeline tracking, payment information, and shipping address, enhancing the user experience by providing a clear overview of their purchase. It allows users to interact with various elements such as timeline steps and provides progress visualization, making it easier to track the order's status and history.",
-    "dependencies": ["lucide-react", "react"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
     "registryDependencies": [
       "aspect-ratio",
       "badge",
@@ -23,5 +26,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:57.333Z"
+  "fetchedAt": "2026-01-03T11:28:55.244Z"
 }

@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Hero",
     "description": "A component showcasing an interactive layout with a catchy headline, description, action buttons, benefits list, and a creative grid of images and data visualization with a video popup feature.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["button", "dialog"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "button",
+      "dialog"
+    ],
     "files": [
       {
         "path": "code/block/hero104.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:48.455Z"
+  "fetchedAt": "2026-01-03T11:28:47.134Z"
 }

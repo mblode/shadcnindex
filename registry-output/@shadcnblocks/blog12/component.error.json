@@ -8,8 +8,15 @@
     "type": "registry:block",
     "title": "Blog",
     "description": "A blog preview block with a header, three article cards in a 3-column layout, and a \"View All Blogs\" button. Each card includes an image, title, summary, author avatar, and read time.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["avatar", "badge", "button", "separator"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "avatar",
+      "badge",
+      "button",
+      "separator"
+    ],
     "files": [
       {
         "path": "code/block/blog12.tsx",
@@ -17,5 +24,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:31.033Z"
+  "fetchedAt": "2026-01-03T11:28:29.632Z"
 }

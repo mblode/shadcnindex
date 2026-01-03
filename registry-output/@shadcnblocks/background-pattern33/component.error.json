@@ -9,7 +9,9 @@
     "title": "Background-pattern",
     "description": "This component is designed to create a visually engaging background with a circuit board pattern, featuring a left fade effect. It allows for customizable class names to adapt its styling according to specific needs.",
     "dependencies": [],
-    "registryDependencies": ["https://shadcnblocks.com/r/pattern-placeholder"],
+    "registryDependencies": [
+      "https://shadcnblocks.com/r/pattern-placeholder"
+    ],
     "files": [
       {
         "path": "code/block/background-pattern33.tsx",
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:30.139Z"
+  "fetchedAt": "2026-01-03T11:28:28.818Z"
 }

@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A component featuring tabs with icons and text, each tab showing a different image.",
-    "dependencies": ["@radix-ui/react-tabs", "lucide-react"],
-    "registryDependencies": ["badge"],
+    "dependencies": [
+      "@radix-ui/react-tabs",
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "badge"
+    ],
     "files": [
       {
         "path": "code/block/feature105.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:36.452Z"
+  "fetchedAt": "2026-01-03T11:28:35.120Z"
 }

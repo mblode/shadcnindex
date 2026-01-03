@@ -8,8 +8,16 @@
     "type": "registry:block",
     "title": "Pricing",
     "description": "A pricing component with a toggle for monthly/yearly billing, displaying 3 tiers, discounts for yearly plans, and key features.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["badge", "button", "separator", "tabs"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "badge",
+      "button",
+      "separator",
+      "tabs"
+    ],
     "files": [
       {
         "path": "code/block/pricing16.tsx",
@@ -17,5 +25,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:57.842Z"
+  "fetchedAt": "2026-01-03T11:28:55.645Z"
 }

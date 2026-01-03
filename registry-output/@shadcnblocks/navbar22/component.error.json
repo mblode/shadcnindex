@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Navbar",
     "description": "This component is a navigation bar featuring a clock, logo with text, collapsible menu for mobile, and link animations. It has a flexible layout with toggled visibility for different elements based on device width.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["button", "sheet"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "button",
+      "sheet"
+    ],
     "files": [
       {
         "path": "code/block/navbar22.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:56.632Z"
+  "fetchedAt": "2026-01-03T11:28:54.548Z"
 }

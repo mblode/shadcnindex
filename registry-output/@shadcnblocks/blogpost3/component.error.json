@@ -8,8 +8,16 @@
     "type": "registry:block",
     "title": "Blogpost",
     "description": "A component featuring a central article with dynamic side navigation and a call-to-action block, including images, tables, and alerts. It&#x27;s structured in a 3-column layout for larger displays.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["alert", "avatar", "badge", "button"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "alert",
+      "avatar",
+      "badge",
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/blogpost3.tsx",
@@ -17,5 +25,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:31.642Z"
+  "fetchedAt": "2026-01-03T11:28:30.335Z"
 }

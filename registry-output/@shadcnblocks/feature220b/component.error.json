@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Feature220b",
     "description": "A component showcases statistics and a video/content layout. It has a 2-column grid with stats at the top, a video on the left, and descriptive content on the right.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["aspect-ratio", "button"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "aspect-ratio",
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/feature220b.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:40.892Z"
+  "fetchedAt": "2026-01-03T11:28:39.547Z"
 }

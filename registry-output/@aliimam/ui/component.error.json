@@ -6,7 +6,9 @@
   "item": {
     "name": "ui",
     "type": "registry:ui",
-    "registryDependencies": ["@aliimam/accordion"]
+    "registryDependencies": [
+      "@aliimam/accordion"
+    ]
   },
-  "fetchedAt": "2026-01-02T23:59:05.207Z"
+  "fetchedAt": "2026-01-03T11:28:01.090Z"
 }

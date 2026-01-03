@@ -9,7 +9,9 @@
     "title": "Background-pattern",
     "description": "This component displays a visually engaging diagonal cross grid background pattern with fade effects, suitable for enhancing the visual appeal of any block. It allows customization through class names and integrates seamlessly with placeholder elements.",
     "dependencies": [],
-    "registryDependencies": ["https://shadcnblocks.com/r/pattern-placeholder"],
+    "registryDependencies": [
+      "https://shadcnblocks.com/r/pattern-placeholder"
+    ],
     "files": [
       {
         "path": "code/block/background-pattern12.tsx",
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:29.277Z"
+  "fetchedAt": "2026-01-03T11:28:28.007Z"
 }

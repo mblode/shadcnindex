@@ -6,8 +6,14 @@
   "item": {
     "name": "header-13",
     "description": "Scroll-triggered navigation with featured customer stories and open-source cards.",
-    "dependencies": ["@radix-ui/react-portal"],
-    "registryDependencies": ["button", "navigation-menu", "accordion"],
+    "dependencies": [
+      "@radix-ui/react-portal"
+    ],
+    "registryDependencies": [
+      "button",
+      "navigation-menu",
+      "accordion"
+    ],
     "files": [
       {
         "path": "registry/header/13/header.tsx",
@@ -42,8 +48,10 @@
         "type": "registry:hook"
       }
     ],
-    "categories": ["header"],
+    "categories": [
+      "header"
+    ],
     "type": "registry:block"
   },
-  "fetchedAt": "2026-01-02T23:59:12.479Z"
+  "fetchedAt": "2026-01-03T11:28:10.304Z"
 }

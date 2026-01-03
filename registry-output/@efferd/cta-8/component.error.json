@@ -6,7 +6,9 @@
   "item": {
     "name": "cta-8",
     "description": "Grid pattern background with email input and 'Join Now' button.",
-    "dependencies": ["motion"],
+    "dependencies": [
+      "motion"
+    ],
     "registryDependencies": [
       "button",
       "button-group",
@@ -19,8 +21,10 @@
         "type": "registry:component"
       }
     ],
-    "categories": ["cta"],
+    "categories": [
+      "cta"
+    ],
     "type": "registry:block"
   },
-  "fetchedAt": "2026-01-02T23:59:11.451Z"
+  "fetchedAt": "2026-01-03T11:28:08.911Z"
 }

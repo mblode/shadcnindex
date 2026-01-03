@@ -6,7 +6,9 @@
   "item": {
     "name": "tabs",
     "type": "registry:ui",
-    "dependencies": ["@radix-ui/react-tabs"],
+    "dependencies": [
+      "@radix-ui/react-tabs"
+    ],
     "files": [
       {
         "path": "ui/tabs.tsx",
@@ -14,5 +16,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T07:39:45.868Z"
+  "fetchedAt": "2026-01-03T11:28:25.753Z"
 }

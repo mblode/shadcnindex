@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Hero",
     "description": "A two-column block with a gradient background, featuring text, links, buttons, avatars with stars, and images. The left column has promotional content and user ratings; the right displays images.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["avatar", "button"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "avatar",
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/hero80.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:54.470Z"
+  "fetchedAt": "2026-01-03T11:28:52.447Z"
 }

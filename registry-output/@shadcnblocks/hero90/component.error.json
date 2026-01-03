@@ -9,7 +9,9 @@
     "title": "Hero",
     "description": "A component with a 2-column layout, showcasing text on the left and an interactive avatar feature on the right. The avatars overlay with testimonials.",
     "dependencies": [],
-    "registryDependencies": ["avatar"],
+    "registryDependencies": [
+      "avatar"
+    ],
     "files": [
       {
         "path": "code/block/hero90.tsx",
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:54.808Z"
+  "fetchedAt": "2026-01-03T11:28:52.879Z"
 }

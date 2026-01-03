@@ -8,8 +8,16 @@
     "type": "registry:block",
     "title": "Content",
     "description": "A content block with navigation links to sections, an interactive 'back to top' button, using dynamic highlighting for section visibility. It includes a breadcrumb, author info, and images laid out in a grid and column format.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["avatar", "breadcrumb", "button", "separator"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "avatar",
+      "breadcrumb",
+      "button",
+      "separator"
+    ],
     "files": [
       {
         "path": "code/block/content4.tsx",
@@ -17,5 +25,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:34.290Z"
+  "fetchedAt": "2026-01-03T11:28:33.007Z"
 }

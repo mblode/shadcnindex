@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A component featuring dual infinite sliders with badges for features like Integrations, Automation, etc., inside a styled section with a gradient and wave overlay.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["https://magicui.design/r/marquee", "badge"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "https://magicui.design/r/marquee",
+      "badge"
+    ],
     "files": [
       {
         "path": "code/block/feature154.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:38.465Z"
+  "fetchedAt": "2026-01-03T11:28:37.039Z"
 }

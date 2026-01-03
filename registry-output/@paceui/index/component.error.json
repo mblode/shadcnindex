@@ -11,9 +11,11 @@
       "class-variance-authority",
       "lucide-react"
     ],
-    "registryDependencies": ["utils"],
+    "registryDependencies": [
+      "utils"
+    ],
     "cssVars": {},
     "files": []
   },
-  "fetchedAt": "2026-01-02T23:59:21.496Z"
+  "fetchedAt": "2026-01-03T11:28:20.200Z"
 }

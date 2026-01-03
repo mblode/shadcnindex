@@ -8,7 +8,10 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "Interactive block with layered orbiting circles of images, a central message \"Connecting Devs,\" and a call-to-action button.",
-    "dependencies": ["lucide-react", "react"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
     "registryDependencies": [
       "https://magicui.design/r/orbiting-circles",
       "button"
@@ -20,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:42.120Z"
+  "fetchedAt": "2026-01-03T11:28:40.710Z"
 }

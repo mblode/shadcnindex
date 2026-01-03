@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "Footer",
     "description": "A time-updating footer with 3 columns, displaying a copyright date, current London time, and an email. Features an auto-updating clock functionality.",
-    "dependencies": ["react"],
+    "dependencies": [
+      "react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:46.105Z"
+  "fetchedAt": "2026-01-03T11:28:44.781Z"
 }

@@ -8,8 +8,12 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A modern layout featuring a top slogan, a section for team habits, and 3 image-based feature cards, linked by dashed lines.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["card"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "card"
+    ],
     "files": [
       {
         "path": "code/block/feature171.tsx",
@@ -17,5 +21,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:39.186Z"
+  "fetchedAt": "2026-01-03T11:28:37.549Z"
 }

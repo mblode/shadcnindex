@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Resources",
     "description": "This component displays a collection of educational courses, each including details like title, description, lessons, videos, duration, audience, author information, and a call-to-action button. It visually presents course information with thematic badges, images, and author avatars to enhance user engagement and easy navigation.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["avatar", "badge"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "avatar",
+      "badge"
+    ],
     "files": [
       {
         "path": "code/block/resources5.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:03.063Z"
+  "fetchedAt": "2026-01-03T11:29:00.781Z"
 }

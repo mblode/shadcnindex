@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "Project5c",
     "description": "This component showcases an art project, combining text descriptions with images across different sections. It includes animated entries, a three-column layout for the header, and a main section with a 3:1 column ratio. Unique identifiers like artist and medium are highlighted.",
-    "dependencies": ["framer-motion"],
+    "dependencies": [
+      "framer-motion"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:01.092Z"
+  "fetchedAt": "2026-01-03T11:28:58.792Z"
 }

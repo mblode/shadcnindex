@@ -9,7 +9,9 @@
     "title": "Aspect-ratio/aspect-ratio-standard-",
     "description": "A aspect-ratio/aspect-ratio-standard- example",
     "dependencies": [],
-    "registryDependencies": ["aspect-ratio"],
+    "registryDependencies": [
+      "aspect-ratio"
+    ],
     "files": [
       {
         "path": "code/example/aspect-ratio/aspect-ratio-standard-4.tsx",
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:10.190Z"
+  "fetchedAt": "2026-01-03T11:29:07.906Z"
 }

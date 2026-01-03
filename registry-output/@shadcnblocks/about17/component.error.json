@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "About",
     "description": "A component with a text introduction and dynamic content based on tab selection. Features 7 columns with images and interactive tabs.",
-    "dependencies": ["react"],
+    "dependencies": [
+      "react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:28.559Z"
+  "fetchedAt": "2026-01-03T11:28:27.190Z"
 }

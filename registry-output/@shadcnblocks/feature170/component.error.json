@@ -8,8 +8,12 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "This component displays \"Our Core Values\" with a badge and a call-to-action link, followed by a three-column grid of icons and texts detailing each value.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["badge"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "badge"
+    ],
     "files": [
       {
         "path": "code/block/feature170.tsx",
@@ -17,5 +21,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:39.180Z"
+  "fetchedAt": "2026-01-03T11:28:37.488Z"
 }

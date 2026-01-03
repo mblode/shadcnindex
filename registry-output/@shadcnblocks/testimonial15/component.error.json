@@ -9,7 +9,10 @@
     "title": "Testimonial",
     "description": "A component with a 2-column layout, showcasing a headline, description, button, company logos, and 4 personalized testimonials with avatars.",
     "dependencies": [],
-    "registryDependencies": ["avatar", "button"],
+    "registryDependencies": [
+      "avatar",
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/testimonial15.tsx",
@@ -17,5 +20,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:07.223Z"
+  "fetchedAt": "2026-01-03T11:29:04.954Z"
 }

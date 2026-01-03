@@ -8,8 +8,17 @@
     "type": "registry:block",
     "title": "Date-picker/date-picker-standard-",
     "description": "A date-picker/date-picker-standard- example",
-    "dependencies": ["@faker-js/faker", "date-fns", "lucide-react", "react"],
-    "registryDependencies": ["button", "calendar", "popover"],
+    "dependencies": [
+      "@faker-js/faker",
+      "date-fns",
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "button",
+      "calendar",
+      "popover"
+    ],
     "files": [
       {
         "path": "code/example/date-picker/date-picker-standard-6.tsx",
@@ -17,5 +26,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:14.099Z"
+  "fetchedAt": "2026-01-03T11:29:11.754Z"
 }

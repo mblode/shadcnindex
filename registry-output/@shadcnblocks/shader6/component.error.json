@@ -8,7 +8,11 @@
     "type": "registry:block",
     "title": "Shader",
     "description": "This component, Shader6, renders an animated background with customizable shaders and colors, using WebGL capabilities via the React Three Fiber library. Users can adjust vertex and fragment shaders, as well as define custom uniform values, to create dynamic and visually engaging effects for display.",
-    "dependencies": ["@react-three/fiber", "react", "three"],
+    "dependencies": [
+      "@react-three/fiber",
+      "react",
+      "three"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +21,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:04.467Z"
+  "fetchedAt": "2026-01-03T11:29:02.404Z"
 }

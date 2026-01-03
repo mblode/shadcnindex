@@ -9,7 +9,10 @@
     "title": "Faq",
     "description": "A 2-column FAQ block featuring a title, a supportive call-to-action with an external link, and a multi-expand accordion of questions and answers.",
     "dependencies": [],
-    "registryDependencies": ["accordion", "button"],
+    "registryDependencies": [
+      "accordion",
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/faq7.tsx",
@@ -17,5 +20,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:36.164Z"
+  "fetchedAt": "2026-01-03T11:28:34.831Z"
 }

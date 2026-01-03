@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A feature block highlighting workflow tools with a header, 3 columns of benefits/stats, and a contact prompt. Uses icons and a placeholder image.",
-    "dependencies": ["lucide-react"],
+    "dependencies": [
+      "lucide-react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:36.920Z"
+  "fetchedAt": "2026-01-03T11:28:35.626Z"
 }

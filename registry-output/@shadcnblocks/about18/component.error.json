@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "About",
     "description": "A component with a mission and drive sections, each comprising a title and descriptive content across a 7-column layout, and a row of two images in the middle.",
-    "dependencies": ["react"],
+    "dependencies": [
+      "react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:28.531Z"
+  "fetchedAt": "2026-01-03T11:28:27.413Z"
 }

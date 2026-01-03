@@ -8,8 +8,15 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A component featuring badges, a carousel with avatars, and descriptive text blocks, structured in a 2-column layout, each containing dynamic, premium, and structured content blocks.",
-    "dependencies": ["embla-carousel-auto-scroll", "lucide-react"],
-    "registryDependencies": ["avatar", "badge", "carousel"],
+    "dependencies": [
+      "embla-carousel-auto-scroll",
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "avatar",
+      "badge",
+      "carousel"
+    ],
     "files": [
       {
         "path": "code/block/feature110.tsx",
@@ -17,5 +24,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:36.623Z"
+  "fetchedAt": "2026-01-03T11:28:35.336Z"
 }

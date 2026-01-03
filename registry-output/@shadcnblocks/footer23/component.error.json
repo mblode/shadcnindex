@@ -9,7 +9,10 @@
     "title": "Footer",
     "description": "A footer component with a logo, description, link columns, and an animated globe. Includes 3 sections with navigational links and separators.",
     "dependencies": [],
-    "registryDependencies": ["https://magicui.design/r/globe", "separator"],
+    "registryDependencies": [
+      "https://magicui.design/r/globe",
+      "separator"
+    ],
     "files": [
       {
         "path": "code/block/footer23.tsx",
@@ -17,5 +20,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:46.601Z"
+  "fetchedAt": "2026-01-03T11:28:45.071Z"
 }

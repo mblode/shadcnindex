@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Navigation-menu/navigation-menu-marketing-",
     "description": "A navigation-menu/navigation-menu-marketing- example",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["badge", "button", "navigation-menu"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "badge",
+      "button",
+      "navigation-menu"
+    ],
     "files": [
       {
         "path": "code/example/navigation-menu/navigation-menu-marketing-4.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:19.280Z"
+  "fetchedAt": "2026-01-03T11:29:16.780Z"
 }

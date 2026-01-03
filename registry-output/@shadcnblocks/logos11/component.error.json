@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Logos",
     "description": "A component featuring dual carousels of logos, a central title, and action buttons, styled with patterns and lines.",
-    "dependencies": ["embla-carousel-auto-scroll", "react"],
-    "registryDependencies": ["button", "carousel"],
+    "dependencies": [
+      "embla-carousel-auto-scroll",
+      "react"
+    ],
+    "registryDependencies": [
+      "button",
+      "carousel"
+    ],
     "files": [
       {
         "path": "code/block/logos11.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:56.088Z"
+  "fetchedAt": "2026-01-03T11:28:53.975Z"
 }

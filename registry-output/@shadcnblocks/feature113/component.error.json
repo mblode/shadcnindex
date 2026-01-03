@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A tabbed component with 3 options, integrating text, badges, buttons, and images, showcasing different features. Each tab has a 2-column layout for content and visuals.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["badge", "button", "tabs"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "badge",
+      "button",
+      "tabs"
+    ],
     "files": [
       {
         "path": "code/block/feature113.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:36.839Z"
+  "fetchedAt": "2026-01-03T11:28:35.465Z"
 }

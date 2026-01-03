@@ -9,7 +9,10 @@
     "title": "Feature",
     "description": "A component displaying a grid of features with images, titles, and descriptions. It includes a title, introductory text, and a button. Grid scales from 1 to 3 columns.",
     "dependencies": [],
-    "registryDependencies": ["button", "card"],
+    "registryDependencies": [
+      "button",
+      "card"
+    ],
     "files": [
       {
         "path": "code/block/feature190.tsx",
@@ -17,5 +20,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:39.749Z"
+  "fetchedAt": "2026-01-03T11:28:38.256Z"
 }

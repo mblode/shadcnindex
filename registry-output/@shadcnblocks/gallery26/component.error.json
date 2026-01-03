@@ -8,7 +8,10 @@
     "type": "registry:block",
     "title": "Gallery",
     "description": "A gallery block with animated blur vignettes around images, arranged in a 5-column grid. Features image reveal animations on scroll.",
-    "dependencies": ["framer-motion", "react"],
+    "dependencies": [
+      "framer-motion",
+      "react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +20,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:47.628Z"
+  "fetchedAt": "2026-01-03T11:28:46.206Z"
 }

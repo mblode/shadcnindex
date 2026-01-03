@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Testimonial",
     "description": "A testimonial component with a dynamic carousel for mobile and a static 3-column layout for larger screens, showcasing user feedback and logos.",
-    "dependencies": ["react"],
-    "registryDependencies": ["avatar", "carousel"],
+    "dependencies": [
+      "react"
+    ],
+    "registryDependencies": [
+      "avatar",
+      "carousel"
+    ],
     "files": [
       {
         "path": "code/block/testimonial17.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:07.223Z"
+  "fetchedAt": "2026-01-03T11:29:05.041Z"
 }

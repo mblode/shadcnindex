@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Input-group/input-group-label-",
     "description": "A input-group/input-group-label- example",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["input-group", "label", "tooltip"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "input-group",
+      "label",
+      "tooltip"
+    ],
     "files": [
       {
         "path": "code/example/input-group/input-group-label-2.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:17.187Z"
+  "fetchedAt": "2026-01-03T11:29:14.782Z"
 }

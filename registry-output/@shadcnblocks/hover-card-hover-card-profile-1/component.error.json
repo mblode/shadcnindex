@@ -9,7 +9,10 @@
     "title": "Hover-card/hover-card-profile-",
     "description": "A hover-card/hover-card-profile- example",
     "dependencies": [],
-    "registryDependencies": ["avatar", "hover-card"],
+    "registryDependencies": [
+      "avatar",
+      "hover-card"
+    ],
     "files": [
       {
         "path": "code/example/hover-card/hover-card-profile-1.tsx",
@@ -17,5 +20,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:15.956Z"
+  "fetchedAt": "2026-01-03T11:29:13.632Z"
 }

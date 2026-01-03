@@ -8,7 +8,10 @@
     "type": "registry:block",
     "title": "Blogpost",
     "description": "A component displaying an article with breadcrumbs, author details, and sections with dynamic navigation. It features sticky social share icons and a \"Back to top\" button.",
-    "dependencies": ["lucide-react", "react"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
     "registryDependencies": [
       "alert",
       "avatar",
@@ -23,5 +26,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:31.667Z"
+  "fetchedAt": "2026-01-03T11:28:30.372Z"
 }

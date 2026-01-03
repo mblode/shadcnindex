@@ -9,7 +9,9 @@
     "title": "Input-group/input-group-text-",
     "description": "A input-group/input-group-text- example",
     "dependencies": [],
-    "registryDependencies": ["input-group"],
+    "registryDependencies": [
+      "input-group"
+    ],
     "files": [
       {
         "path": "code/example/input-group/input-group-text-1.tsx",
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:17.449Z"
+  "fetchedAt": "2026-01-03T11:29:15.150Z"
 }

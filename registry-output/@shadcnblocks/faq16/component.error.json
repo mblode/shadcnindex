@@ -8,8 +8,12 @@
     "type": "registry:block",
     "title": "Faq",
     "description": "An accordion-style FAQ block with a title and expandable question items, set in a centered layout with a max-width.",
-    "dependencies": ["react"],
-    "registryDependencies": ["accordion"],
+    "dependencies": [
+      "react"
+    ],
+    "registryDependencies": [
+      "accordion"
+    ],
     "files": [
       {
         "path": "code/block/faq16.tsx",
@@ -17,5 +21,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:35.919Z"
+  "fetchedAt": "2026-01-03T11:28:34.602Z"
 }

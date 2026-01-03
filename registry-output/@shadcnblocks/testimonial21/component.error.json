@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Testimonial",
     "description": "A component showcasing expert testimonials with a header, badges, and a 3-column layout of cards containing logos, quotes, and author info.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["badge", "card"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "badge",
+      "card"
+    ],
     "files": [
       {
         "path": "code/block/testimonial21.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:07.504Z"
+  "fetchedAt": "2026-01-03T11:29:05.228Z"
 }

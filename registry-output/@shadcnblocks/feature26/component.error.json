@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A component displaying 6 features with icons, titles, and descriptions in a grid of up to 3 columns.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["badge", "separator"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "badge",
+      "separator"
+    ],
     "files": [
       {
         "path": "code/block/feature26.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:42.415Z"
+  "fetchedAt": "2026-01-03T11:28:40.908Z"
 }

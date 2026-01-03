@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Radio-group/radio-group-advanced-",
     "description": "A radio-group/radio-group-advanced- example",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["label", "radio-group"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "label",
+      "radio-group"
+    ],
     "files": [
       {
         "path": "code/example/radio-group/radio-group-advanced-1.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:19.442Z"
+  "fetchedAt": "2026-01-03T11:29:16.908Z"
 }

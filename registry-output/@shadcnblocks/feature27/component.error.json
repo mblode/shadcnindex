@@ -9,7 +9,9 @@
     "title": "Feature",
     "description": "A component featuring an \"Overview\" badge, centered title, and text, followed by two columns of images with captions, and a full-width image with a caption.",
     "dependencies": [],
-    "registryDependencies": ["badge"],
+    "registryDependencies": [
+      "badge"
+    ],
     "files": [
       {
         "path": "code/block/feature27.tsx",
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:42.579Z"
+  "fetchedAt": "2026-01-03T11:28:41.157Z"
 }

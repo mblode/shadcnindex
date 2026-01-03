@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Hero",
     "description": "This component displays a hero section with centered text, an email sign-up form, and two animated phone mockups. It includes headings, a paragraph, and input/button for sign-up.",
-    "dependencies": ["framer-motion", "react"],
-    "registryDependencies": ["button", "input"],
+    "dependencies": [
+      "framer-motion",
+      "react"
+    ],
+    "registryDependencies": [
+      "button",
+      "input"
+    ],
     "files": [
       {
         "path": "code/block/hero204.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:51.040Z"
+  "fetchedAt": "2026-01-03T11:28:49.524Z"
 }

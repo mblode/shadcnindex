@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Compare",
     "description": "A 3-column comparison block showcasing features between two options, highlighted with icons and badges for visual differentiation.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["badge", "button"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "badge",
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/compare3.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:33.289Z"
+  "fetchedAt": "2026-01-03T11:28:31.969Z"
 }

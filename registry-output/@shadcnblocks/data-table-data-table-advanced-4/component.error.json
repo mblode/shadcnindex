@@ -8,8 +8,15 @@
     "type": "registry:block",
     "title": "Data-table/data-table-advanced-",
     "description": "A data-table/data-table-advanced- example",
-    "dependencies": ["@tanstack/react-table", "lucide-react"],
-    "registryDependencies": ["button", "dropdown-menu", "table"],
+    "dependencies": [
+      "@tanstack/react-table",
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "button",
+      "dropdown-menu",
+      "table"
+    ],
     "files": [
       {
         "path": "code/example/data-table/data-table-advanced-4.tsx",
@@ -17,5 +24,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:13.636Z"
+  "fetchedAt": "2026-01-03T11:29:11.328Z"
 }

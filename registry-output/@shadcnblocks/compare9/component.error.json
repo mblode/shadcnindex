@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Compare",
     "description": "A comparative component showcases metrics & technical analysis of 3 models with status indicators, hover effects on data rows, and a detailed breakdown of each model's performance in a grid layout.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["table"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "table"
+    ],
     "files": [
       {
         "path": "code/block/compare9.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:33.543Z"
+  "fetchedAt": "2026-01-03T11:28:32.192Z"
 }

@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A component featuring a central text block with embedded clickable previews, housed within a single column layout, emphasizing the ease of integration and customization.",
-    "dependencies": ["react"],
+    "dependencies": [
+      "react"
+    ],
     "registryDependencies": [
       "https://ui.aceternity.com/registry/link-preview.json"
     ],
@@ -19,5 +21,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:43.275Z"
+  "fetchedAt": "2026-01-03T11:28:41.869Z"
 }

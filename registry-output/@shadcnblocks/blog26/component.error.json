@@ -9,7 +9,9 @@
     "title": "Blog",
     "description": "A component displaying a featured post with an image, summary, and tags, alongside a list of latest posts with their titles, authors, and tags. It&#x27;s structured in a two-column layout with dynamic text effects.",
     "dependencies": [],
-    "registryDependencies": ["aspect-ratio"],
+    "registryDependencies": [
+      "aspect-ratio"
+    ],
     "files": [
       {
         "path": "code/block/blog26.tsx",
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:31.362Z"
+  "fetchedAt": "2026-01-03T11:28:29.970Z"
 }

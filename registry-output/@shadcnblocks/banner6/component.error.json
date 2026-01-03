@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Banner",
     "description": "A dismissible banner featuring overlapping avatars, a text description, and a close button.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["avatar", "button"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "avatar",
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/banner6.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:30.797Z"
+  "fetchedAt": "2026-01-03T11:28:29.433Z"
 }

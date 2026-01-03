@@ -8,7 +8,10 @@
     "type": "registry:block",
     "title": "Promo-banner",
     "description": "This component is a promotional banner featuring a countdown timer, useful for displaying time left until a special event or offer ends. It accepts props such as `endTime` for the countdown target, a customizable `title` for the banner message, and additional styling through `className`.",
-    "dependencies": ["lucide-react", "react"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +20,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:02.773Z"
+  "fetchedAt": "2026-01-03T11:29:00.501Z"
 }

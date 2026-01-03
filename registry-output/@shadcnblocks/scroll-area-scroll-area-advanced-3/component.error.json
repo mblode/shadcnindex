@@ -9,7 +9,10 @@
     "title": "Scroll-area/scroll-area-advanced-",
     "description": "A scroll-area/scroll-area-advanced- example",
     "dependencies": [],
-    "registryDependencies": ["resizable", "scroll-area"],
+    "registryDependencies": [
+      "resizable",
+      "scroll-area"
+    ],
     "files": [
       {
         "path": "code/example/scroll-area/scroll-area-advanced-3.tsx",
@@ -17,5 +20,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:19.865Z"
+  "fetchedAt": "2026-01-03T11:29:17.521Z"
 }

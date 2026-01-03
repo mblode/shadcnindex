@@ -8,8 +8,15 @@
     "type": "registry:block",
     "title": "Hero",
     "description": "This component serves as a promotional block with an announcement, a prominent heading, descriptive text, a call-to-action button, and also highlights various brand logos and featured cards. It is built using React and styled with Tailwind CSS, incorporating interactive animations to enhance user engagement.",
-    "dependencies": ["framer-motion", "lucide-react", "react"],
-    "registryDependencies": ["badge", "button"],
+    "dependencies": [
+      "framer-motion",
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "badge",
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/hero258.tsx",
@@ -17,5 +24,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:52.682Z"
+  "fetchedAt": "2026-01-03T11:28:51.109Z"
 }

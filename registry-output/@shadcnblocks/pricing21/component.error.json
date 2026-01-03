@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Pricing",
     "description": "A pricing component with toggleable monthly/yearly plans, integrating icons, buttons, and badges for a structured display of various subscription tiers and feature comparisons across columns.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["badge", "button"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "badge",
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/pricing21.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:57.876Z"
+  "fetchedAt": "2026-01-03T11:28:55.753Z"
 }

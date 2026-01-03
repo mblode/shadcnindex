@@ -9,7 +9,9 @@
     "title": "Feature",
     "description": "A component featuring a title, description, and a grid of images paired with texts to explain various features. Grid adjusts from 2 to 4 columns.",
     "dependencies": [],
-    "registryDependencies": ["badge"],
+    "registryDependencies": [
+      "badge"
+    ],
     "files": [
       {
         "path": "code/block/feature206.tsx",
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:40.279Z"
+  "fetchedAt": "2026-01-03T11:28:38.845Z"
 }

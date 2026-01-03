@@ -9,7 +9,9 @@
     "title": "Background-pattern",
     "description": "This component serves as a versatile background pattern featuring a combination of linear and radial gradients, creating a grid with dots effect. It is designed to seamlessly integrate into your project with customizable styles through additional class names.",
     "dependencies": [],
-    "registryDependencies": ["https://shadcnblocks.com/r/pattern-placeholder"],
+    "registryDependencies": [
+      "https://shadcnblocks.com/r/pattern-placeholder"
+    ],
     "files": [
       {
         "path": "code/block/background-pattern40.tsx",
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:30.515Z"
+  "fetchedAt": "2026-01-03T11:28:29.101Z"
 }

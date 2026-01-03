@@ -6,15 +6,19 @@
   "item": {
     "name": "cta-14",
     "description": "Bold inverted design with large typography and email/calendar buttons.",
-    "registryDependencies": ["button"],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "registry/cta/14/call-to-action.tsx",
         "type": "registry:component"
       }
     ],
-    "categories": ["cta"],
+    "categories": [
+      "cta"
+    ],
     "type": "registry:block"
   },
-  "fetchedAt": "2026-01-02T23:59:11.709Z"
+  "fetchedAt": "2026-01-03T11:28:09.210Z"
 }

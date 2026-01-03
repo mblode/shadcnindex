@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Faq",
     "description": "An FAQ component with a title, intro text, and accordion-style questions. It includes a badge icon and a bordered layout.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["accordion", "badge"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "accordion",
+      "badge"
+    ],
     "files": [
       {
         "path": "code/block/faq10.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:35.757Z"
+  "fetchedAt": "2026-01-03T11:28:34.367Z"
 }

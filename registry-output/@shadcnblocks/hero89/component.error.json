@@ -9,7 +9,10 @@
     "title": "Hero",
     "description": "A component with a split layout, 50% width text block and 45% width image block with an aspect ratio. Features a heading, text, button, and decorative arrow SVG.",
     "dependencies": [],
-    "registryDependencies": ["aspect-ratio", "button"],
+    "registryDependencies": [
+      "aspect-ratio",
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/hero89.tsx",
@@ -17,5 +20,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:54.798Z"
+  "fetchedAt": "2026-01-03T11:28:52.748Z"
 }

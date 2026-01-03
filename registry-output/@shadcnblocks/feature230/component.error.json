@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A component showcasing cloud service benefits using a large header, description, and 4 feature callouts with icons, arranged in a 4:6 column layout.",
-    "dependencies": ["lucide-react"],
+    "dependencies": [
+      "lucide-react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:41.273Z"
+  "fetchedAt": "2026-01-03T11:28:39.854Z"
 }

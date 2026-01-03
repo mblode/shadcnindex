@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Integration",
     "description": "A component showcasing a collection of integrations with iconic apps, featuring hover-activated animation for emphasis and links for more details.",
-    "dependencies": ["framer-motion", "react"],
-    "registryDependencies": ["button"],
+    "dependencies": [
+      "framer-motion",
+      "react"
+    ],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/integration13.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:55.341Z"
+  "fetchedAt": "2026-01-03T11:28:53.231Z"
 }

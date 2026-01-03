@@ -6,8 +6,12 @@
   "item": {
     "name": "header-4",
     "description": "A sticky responsive header with logo, navigation menu, and scroll-aware animations that adapts seamlessly between mobile and desktop views.Retry",
-    "dependencies": ["@radix-ui/react-portal"],
-    "registryDependencies": ["button"],
+    "dependencies": [
+      "@radix-ui/react-portal"
+    ],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "registry/header/4/header.tsx",
@@ -30,8 +34,10 @@
         "type": "registry:hook"
       }
     ],
-    "categories": ["header"],
+    "categories": [
+      "header"
+    ],
     "type": "registry:block"
   },
-  "fetchedAt": "2026-01-02T23:59:11.964Z"
+  "fetchedAt": "2026-01-03T11:28:10.080Z"
 }

@@ -9,7 +9,11 @@
     "title": "Signup",
     "description": "A signup component featuring email/password fields, Google signup, and a login redirect. Layout includes a centered form in a 400px column.",
     "dependencies": [],
-    "registryDependencies": ["button", "input", "label"],
+    "registryDependencies": [
+      "button",
+      "input",
+      "label"
+    ],
     "files": [
       {
         "path": "code/block/signup6.tsx",
@@ -17,5 +21,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:05.182Z"
+  "fetchedAt": "2026-01-03T11:29:03.264Z"
 }

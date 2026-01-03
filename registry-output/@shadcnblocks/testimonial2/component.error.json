@@ -9,7 +9,10 @@
     "title": "Testimonial",
     "description": "This component displays a bold, centered message with overlapping avatars and a large \"Get started for free\" button underneath.",
     "dependencies": [],
-    "registryDependencies": ["avatar", "button"],
+    "registryDependencies": [
+      "avatar",
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/testimonial2.tsx",
@@ -17,5 +20,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:07.340Z"
+  "fetchedAt": "2026-01-03T11:29:05.221Z"
 }

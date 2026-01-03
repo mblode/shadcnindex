@@ -8,7 +8,10 @@
     "type": "registry:block",
     "title": "Navbar",
     "description": "A component featuring a dynamic, multi-layer navigation menu with submenu dropdowns for platform, use cases, developers, and resources, complete with images, links, badges, and a responsive mobile layout.",
-    "dependencies": ["lucide-react", "react"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
     "registryDependencies": [
       "https://shadcnblocks.com/r/logo",
       "badge",
@@ -22,5 +25,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:56.850Z"
+  "fetchedAt": "2026-01-03T11:28:54.587Z"
 }

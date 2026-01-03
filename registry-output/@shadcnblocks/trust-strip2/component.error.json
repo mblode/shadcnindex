@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "Trust-strip",
     "description": "This component displays a trust indicator block that highlights a star rating, the number of customer reviews, and the total customer count, making it ideal for showcasing user feedback and credibility. Additionally, it includes recognitions from well-known press logos to further reinforce trust and social proof.",
-    "dependencies": ["lucide-react"],
+    "dependencies": [
+      "lucide-react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:08.368Z"
+  "fetchedAt": "2026-01-03T11:29:06.118Z"
 }

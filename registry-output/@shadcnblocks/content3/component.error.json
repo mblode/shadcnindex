@@ -8,8 +8,15 @@
     "type": "registry:block",
     "title": "Content",
     "description": "A component with a breadcrumb navigation, heading, subtext, buttons, a sidebar with topics, and a main content area divided into a 5-column layout, including images, texts, a table, an alert, and dynamic on-page navigation highlighting visible sections.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["alert", "breadcrumb", "button"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "alert",
+      "breadcrumb",
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/content3.tsx",
@@ -17,5 +24,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:34.271Z"
+  "fetchedAt": "2026-01-03T11:28:32.836Z"
 }

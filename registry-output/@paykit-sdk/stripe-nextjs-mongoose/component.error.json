@@ -7,9 +7,15 @@
     "name": "stripe-nextjs-mongoose",
     "type": "registry:block",
     "description": "Stripe integration for Next.js with Mongoose schemas for payments and subscriptions",
-    "dependencies": ["mongoose"],
-    "devDependencies": ["mongoose"],
-    "registryDependencies": ["https://usepaykit.dev/r/stripe-nextjs"],
+    "dependencies": [
+      "mongoose"
+    ],
+    "devDependencies": [
+      "mongoose"
+    ],
+    "registryDependencies": [
+      "https://usepaykit.dev/r/stripe-nextjs"
+    ],
     "files": [
       {
         "path": "shared/schema/mongoose.ts",
@@ -27,5 +33,5 @@
       "auth": "none"
     }
   },
-  "fetchedAt": "2026-01-02T23:59:22.923Z"
+  "fetchedAt": "2026-01-03T11:28:21.576Z"
 }

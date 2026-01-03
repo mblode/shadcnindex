@@ -6,7 +6,9 @@
   "item": {
     "name": "social-proof-testimonials-3",
     "type": "registry:block",
-    "registryDependencies": ["@magicui/marquee"],
+    "registryDependencies": [
+      "@magicui/marquee"
+    ],
     "files": [
       {
         "path": "registry/blocks/social-proof-testimonials-3.tsx",
@@ -17,5 +19,5 @@
       "height": 806
     }
   },
-  "fetchedAt": "2026-01-02T23:59:18.462Z"
+  "fetchedAt": "2026-01-03T11:28:16.909Z"
 }

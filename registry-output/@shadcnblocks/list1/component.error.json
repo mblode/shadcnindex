@@ -8,8 +8,12 @@
     "type": "registry:block",
     "title": "List",
     "description": "A component displaying a table with details on various projects, including icons, categories, descriptions, years, offers, and segments. It adapts to different screen widths.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["table"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "table"
+    ],
     "files": [
       {
         "path": "code/block/list1.tsx",
@@ -17,5 +21,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:55.709Z"
+  "fetchedAt": "2026-01-03T11:28:53.453Z"
 }

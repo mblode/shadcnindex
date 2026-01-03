@@ -8,7 +8,10 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A dual-column block featuring an animated 3D marquee with images, a subscription input form, and dynamic text sections, highlighted by an icon.",
-    "dependencies": ["lucide-react", "react"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
     "registryDependencies": [
       "https://ui.aceternity.com/registry/3d-marquee.json",
       "button",
@@ -21,5 +24,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:42.412Z"
+  "fetchedAt": "2026-01-03T11:28:41.072Z"
 }

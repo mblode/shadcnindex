@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Testimonial",
     "description": "Dynamic slideshow component with auto-rotating testimonials, accented by logos and avatars. Features accordion items for detailed views, automated progress bars, and a call-to-action button.",
-    "dependencies": ["react"],
-    "registryDependencies": ["accordion", "button", "progress"],
+    "dependencies": [
+      "react"
+    ],
+    "registryDependencies": [
+      "accordion",
+      "button",
+      "progress"
+    ],
     "files": [
       {
         "path": "code/block/testimonial30.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:07.800Z"
+  "fetchedAt": "2026-01-03T11:29:05.544Z"
 }

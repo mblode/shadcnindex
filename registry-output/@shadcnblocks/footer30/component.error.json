@@ -8,7 +8,10 @@
     "type": "registry:block",
     "title": "Footer",
     "description": "A footer component showcasing contact info, navigation, social links, and legal terms in a multi-column layout, plus a prominent brand name display.",
-    "dependencies": ["lucide-react", "react"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +20,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:46.672Z"
+  "fetchedAt": "2026-01-03T11:28:45.305Z"
 }

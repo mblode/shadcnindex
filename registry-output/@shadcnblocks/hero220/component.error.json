@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Hero",
     "description": "A component displaying fullscreen video-text inside a semi-transparent image background, with animated text scaling effect.",
-    "dependencies": ["framer-motion", "react"],
-    "registryDependencies": ["https://magicui.design/r/video-text"],
+    "dependencies": [
+      "framer-motion",
+      "react"
+    ],
+    "registryDependencies": [
+      "https://magicui.design/r/video-text"
+    ],
     "files": [
       {
         "path": "code/block/hero220.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:51.521Z"
+  "fetchedAt": "2026-01-03T11:28:49.889Z"
 }

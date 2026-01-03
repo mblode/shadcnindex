@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A carousel block with testimonials, navigation arrows, and a current indicator, featuring interactive elements and overlaid text on images.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["button", "carousel"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "button",
+      "carousel"
+    ],
     "files": [
       {
         "path": "code/block/feature242.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:41.700Z"
+  "fetchedAt": "2026-01-03T11:28:40.296Z"
 }

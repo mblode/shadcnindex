@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Hero",
     "description": "Data visualization block featuring a chart with trends over time, surrounded by a title, a summary, interactive buttons, and unique background patterns.",
-    "dependencies": ["react", "recharts"],
-    "registryDependencies": ["button", "chart"],
+    "dependencies": [
+      "react",
+      "recharts"
+    ],
+    "registryDependencies": [
+      "button",
+      "chart"
+    ],
     "files": [
       {
         "path": "code/block/hero246.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:52.541Z"
+  "fetchedAt": "2026-01-03T11:28:50.922Z"
 }

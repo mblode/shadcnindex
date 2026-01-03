@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "Footer",
     "description": "A footer component with three sections for navigation links, social media, and legal text. Includes an image with external link indicators for social media.",
-    "dependencies": ["lucide-react"],
+    "dependencies": [
+      "lucide-react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:46.339Z"
+  "fetchedAt": "2026-01-03T11:28:44.796Z"
 }

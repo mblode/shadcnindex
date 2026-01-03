@@ -8,8 +8,12 @@
     "type": "registry:block",
     "title": "Input-otp/input-otp-standard-",
     "description": "A input-otp/input-otp-standard- example",
-    "dependencies": ["react"],
-    "registryDependencies": ["input-otp"],
+    "dependencies": [
+      "react"
+    ],
+    "registryDependencies": [
+      "input-otp"
+    ],
     "files": [
       {
         "path": "code/example/input-otp/input-otp-standard-4.tsx",
@@ -17,5 +21,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:18.263Z"
+  "fetchedAt": "2026-01-03T11:29:15.724Z"
 }

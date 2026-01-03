@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Data-table/data-table-advanced-",
     "description": "A data-table/data-table-advanced- example",
-    "dependencies": ["@tanstack/react-table"],
-    "registryDependencies": ["button", "table"],
+    "dependencies": [
+      "@tanstack/react-table"
+    ],
+    "registryDependencies": [
+      "button",
+      "table"
+    ],
     "files": [
       {
         "path": "code/example/data-table/data-table-advanced-2.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:13.595Z"
+  "fetchedAt": "2026-01-03T11:29:11.417Z"
 }

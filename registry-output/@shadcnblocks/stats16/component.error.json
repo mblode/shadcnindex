@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Stats",
     "description": "A component displaying statistics with a title, subtitle, a dynamic line chart, and three key metrics.",
-    "dependencies": ["react", "recharts"],
-    "registryDependencies": ["chart"],
+    "dependencies": [
+      "react",
+      "recharts"
+    ],
+    "registryDependencies": [
+      "chart"
+    ],
     "files": [
       {
         "path": "code/block/stats16.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:06.012Z"
+  "fetchedAt": "2026-01-03T11:29:04.107Z"
 }

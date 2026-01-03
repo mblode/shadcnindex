@@ -6,7 +6,9 @@
   "item": {
     "name": "call-to-action-1",
     "type": "registry:block",
-    "registryDependencies": ["@magicui/marquee"],
+    "registryDependencies": [
+      "@magicui/marquee"
+    ],
     "files": [
       {
         "path": "registry/blocks/call-to-action-1.tsx",
@@ -17,5 +19,5 @@
       "height": 530
     }
   },
-  "fetchedAt": "2026-01-02T23:59:18.462Z"
+  "fetchedAt": "2026-01-03T11:28:16.908Z"
 }

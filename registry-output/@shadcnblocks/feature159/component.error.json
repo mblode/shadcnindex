@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A 4-column component displaying icons with titles and text descriptions. Includes a \"See all\" link on the last item.",
-    "dependencies": ["lucide-react"],
+    "dependencies": [
+      "lucide-react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:38.652Z"
+  "fetchedAt": "2026-01-03T11:28:37.188Z"
 }

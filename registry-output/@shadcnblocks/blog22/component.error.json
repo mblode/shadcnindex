@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Blog",
     "description": "A blog component showcasing a featured post with image, title, and author avatar followed by a list of secondary posts in a two-column layout with images.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["avatar", "button"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "avatar",
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/blog22.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:31.315Z"
+  "fetchedAt": "2026-01-03T11:28:29.887Z"
 }

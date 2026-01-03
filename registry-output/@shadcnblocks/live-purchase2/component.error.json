@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Live-purchase",
     "description": "This component dynamically displays recent customer purchases, cycling through them at specified intervals to show customer name, location, and product details with an option to dismiss the notification. It includes customizable properties such as purchase data, auto-rotation settings, and visual styling, ensuring adaptability to various user needs.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["badge", "button"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "badge",
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/live-purchase2.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:55.737Z"
+  "fetchedAt": "2026-01-03T11:28:53.686Z"
 }

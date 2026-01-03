@@ -8,8 +8,17 @@
     "type": "registry:block",
     "title": "Product-gallery",
     "description": "This component provides an interactive carousel gallery for displaying a collection of product images, supporting functionalities like zoom and navigation controls. It integrates with a lightbox library to enhance image viewing, allowing users to browse through images with next-prev buttons and a custom close option.",
-    "dependencies": ["lucide-react", "photoswipe", "react"],
-    "registryDependencies": ["aspect-ratio", "badge", "button", "carousel"],
+    "dependencies": [
+      "lucide-react",
+      "photoswipe",
+      "react"
+    ],
+    "registryDependencies": [
+      "aspect-ratio",
+      "badge",
+      "button",
+      "carousel"
+    ],
     "files": [
       {
         "path": "code/block/product-gallery2.tsx",
@@ -17,5 +26,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:59.708Z"
+  "fetchedAt": "2026-01-03T11:28:57.498Z"
 }

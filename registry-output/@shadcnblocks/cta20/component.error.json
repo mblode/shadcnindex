@@ -9,7 +9,10 @@
     "title": "Cta",
     "description": "A call-to-action block with centered text, a large button labeled \"Get Started,\" flanked by separators, within a single-column layout.",
     "dependencies": [],
-    "registryDependencies": ["button", "separator"],
+    "registryDependencies": [
+      "button",
+      "separator"
+    ],
     "files": [
       {
         "path": "code/block/cta20.tsx",
@@ -17,5 +20,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:34.711Z"
+  "fetchedAt": "2026-01-03T11:28:33.298Z"
 }

@@ -6,8 +6,14 @@
   "item": {
     "name": "header-11",
     "description": "Centered navigation with dropdown menus and action buttons.",
-    "dependencies": ["@radix-ui/react-portal"],
-    "registryDependencies": ["button", "navigation-menu", "accordion"],
+    "dependencies": [
+      "@radix-ui/react-portal"
+    ],
+    "registryDependencies": [
+      "button",
+      "navigation-menu",
+      "accordion"
+    ],
     "files": [
       {
         "path": "registry/header/11/header.tsx",
@@ -38,8 +44,10 @@
         "type": "registry:hook"
       }
     ],
-    "categories": ["header"],
+    "categories": [
+      "header"
+    ],
     "type": "registry:block"
   },
-  "fetchedAt": "2026-01-02T23:59:12.320Z"
+  "fetchedAt": "2026-01-03T11:28:10.214Z"
 }

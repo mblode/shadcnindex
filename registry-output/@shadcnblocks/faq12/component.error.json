@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Faq",
     "description": "An FAQ component displaying questions under categories with a clickable sidebar for navigation. Features include dynamic active state updates and smooth scrolling.",
-    "dependencies": ["react"],
-    "registryDependencies": ["accordion", "button"],
+    "dependencies": [
+      "react"
+    ],
+    "registryDependencies": [
+      "accordion",
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/faq12.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:35.884Z"
+  "fetchedAt": "2026-01-03T11:28:34.530Z"
 }

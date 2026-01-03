@@ -9,7 +9,9 @@
     "title": "Hero",
     "description": "A component with a 2-column layout. The left column contains text layers, and the right has overlapping images with unique aspect ratios.",
     "dependencies": [],
-    "registryDependencies": ["aspect-ratio"],
+    "registryDependencies": [
+      "aspect-ratio"
+    ],
     "files": [
       {
         "path": "code/block/hero179.tsx",
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:50.234Z"
+  "fetchedAt": "2026-01-03T11:28:48.750Z"
 }

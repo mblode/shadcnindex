@@ -9,7 +9,10 @@
     "title": "Team",
     "description": "A block displaying a team with a title, introduction, and button, followed by a multi-column layout of team members&#x27; avatars and roles.",
     "dependencies": [],
-    "registryDependencies": ["avatar", "button"],
+    "registryDependencies": [
+      "avatar",
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/team10.tsx",
@@ -17,5 +20,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:06.564Z"
+  "fetchedAt": "2026-01-03T11:29:04.302Z"
 }

@@ -8,7 +8,11 @@
     "type": "registry:block",
     "title": "Offer-modal",
     "description": "This component presents a promotional sign-up form that offers users a 20% discount for joining a mailing list. It includes input validation for an email field and displays a customizable image and text content such as a title, logo, and description within a modal format.",
-    "dependencies": ["@hookform/resolvers", "react-hook-form", "zod"],
+    "dependencies": [
+      "@hookform/resolvers",
+      "react-hook-form",
+      "zod"
+    ],
     "registryDependencies": [
       "aspect-ratio",
       "button",
@@ -23,5 +27,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:57.051Z"
+  "fetchedAt": "2026-01-03T11:28:54.977Z"
 }

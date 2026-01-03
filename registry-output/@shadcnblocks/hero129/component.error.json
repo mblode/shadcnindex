@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Hero",
     "description": "This component features a two-column layout with a bold headline, text content, buttons including one with an icon, overlapping avatars, and a unique phone image showcase with a 3D effect.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["avatar", "button"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "avatar",
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/hero129.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:48.856Z"
+  "fetchedAt": "2026-01-03T11:28:47.468Z"
 }

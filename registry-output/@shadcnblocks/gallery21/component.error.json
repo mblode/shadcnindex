@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Gallery",
     "description": "Interactive gallery component with image slider, effect animations, and a call-to-action button.",
-    "dependencies": ["framer-motion", "lucide-react", "swiper"],
-    "registryDependencies": ["button"],
+    "dependencies": [
+      "framer-motion",
+      "lucide-react",
+      "swiper"
+    ],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/gallery21.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:47.458Z"
+  "fetchedAt": "2026-01-03T11:28:45.957Z"
 }

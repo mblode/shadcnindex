@@ -8,7 +8,10 @@
     "type": "registry:block",
     "title": "Promo-banner",
     "description": "This component is a promotional banner designed to display a countdown timer indicating the time remaining for users to place orders to ensure delivery by a specified date. It includes customizable delivery date and cutoff time features and utilizes a countdown logic to update live on-screen, making it ideal for time-sensitive promotions.",
-    "dependencies": ["lucide-react", "react"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +20,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:02.624Z"
+  "fetchedAt": "2026-01-03T11:29:00.273Z"
 }

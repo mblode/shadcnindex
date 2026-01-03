@@ -9,7 +9,10 @@
     "title": "Pricing",
     "description": "A component displaying 3 marketing plan options, highlighting one. Features badges, descriptions, and a call-to-action button for each plan.",
     "dependencies": [],
-    "registryDependencies": ["badge", "button"],
+    "registryDependencies": [
+      "badge",
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/pricing26.tsx",
@@ -17,5 +20,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:58.128Z"
+  "fetchedAt": "2026-01-03T11:28:55.813Z"
 }

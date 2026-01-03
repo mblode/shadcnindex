@@ -8,7 +8,10 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A component displaying customizable feature blocks with images, titles, and descriptions in a grid of 2 or 3 columns, depending on screen size.",
-    "dependencies": ["motion", "react"],
+    "dependencies": [
+      "motion",
+      "react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +20,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:42.677Z"
+  "fetchedAt": "2026-01-03T11:28:41.159Z"
 }

@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Services",
     "description": "A component showcasing 4 service areas in a grid with animated cards. It features a title, a description, and a call-to-action button. Each service card includes an image, title, and hover effect.",
-    "dependencies": ["framer-motion", "lucide-react"],
-    "registryDependencies": ["button", "card"],
+    "dependencies": [
+      "framer-motion",
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "button",
+      "card"
+    ],
     "files": [
       {
         "path": "code/block/services14.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:03.682Z"
+  "fetchedAt": "2026-01-03T11:29:01.406Z"
 }

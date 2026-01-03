@@ -8,7 +8,10 @@
     "type": "registry:block",
     "title": "Reviews",
     "description": "This component displays a collection of user reviews with features including average rating calculation, review filtering by star rating, and visual representation of rating distribution. Users can see detailed information about each review, such as the content, author, and date, with the option to filter and clear selected ratings.",
-    "dependencies": ["lucide-react", "react"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
     "registryDependencies": [
       "https://shadcnblocks.com/r/rating",
       "avatar",
@@ -22,5 +25,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:03.335Z"
+  "fetchedAt": "2026-01-03T11:29:00.886Z"
 }

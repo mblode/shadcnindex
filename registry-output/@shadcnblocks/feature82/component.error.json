@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A component showcasing integration options with icons and descriptions, structured in up to 4 columns, including a headline, subtext, and a button above a separator.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["button", "separator"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "button",
+      "separator"
+    ],
     "files": [
       {
         "path": "code/block/feature82.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:45.513Z"
+  "fetchedAt": "2026-01-03T11:28:44.090Z"
 }

@@ -9,7 +9,9 @@
     "title": "Background-pattern",
     "description": "The BackgroundPattern39 component creates a visually appealing section with a dynamic white grid and dots background, perfect for enhancing the aesthetics of a user interface. It allows for customization through additional class names and integrates seamlessly with other components by serving as a decorative and functional backdrop.",
     "dependencies": [],
-    "registryDependencies": ["https://shadcnblocks.com/r/pattern-placeholder"],
+    "registryDependencies": [
+      "https://shadcnblocks.com/r/pattern-placeholder"
+    ],
     "files": [
       {
         "path": "code/block/background-pattern39.tsx",
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:30.434Z"
+  "fetchedAt": "2026-01-03T11:28:29.063Z"
 }

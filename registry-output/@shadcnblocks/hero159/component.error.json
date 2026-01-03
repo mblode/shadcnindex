@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Hero",
     "description": "A 2-column component with an emphasis on financial services. Features a bold headline, descriptive text, interactive button with hover effect, and complementary images.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["aspect-ratio", "button"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "aspect-ratio",
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/hero159.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:49.465Z"
+  "fetchedAt": "2026-01-03T11:28:48.028Z"
 }

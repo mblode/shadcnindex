@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Content",
     "description": "A component showcasing a content management system&#x27;s features, types, and instructions on adding or managing content, with 2-column layout for content types and alert features.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["alert", "badge"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "alert",
+      "badge"
+    ],
     "files": [
       {
         "path": "code/block/content2.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:34.231Z"
+  "fetchedAt": "2026-01-03T11:28:32.798Z"
 }

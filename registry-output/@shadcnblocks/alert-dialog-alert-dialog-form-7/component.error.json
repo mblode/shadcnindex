@@ -9,7 +9,12 @@
     "title": "Alert-dialog/alert-dialog-form-",
     "description": "A alert-dialog/alert-dialog-form- example",
     "dependencies": [],
-    "registryDependencies": ["alert-dialog", "button", "checkbox", "label"],
+    "registryDependencies": [
+      "alert-dialog",
+      "button",
+      "checkbox",
+      "label"
+    ],
     "files": [
       {
         "path": "code/example/alert-dialog/alert-dialog-form-7.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:09.612Z"
+  "fetchedAt": "2026-01-03T11:29:07.318Z"
 }

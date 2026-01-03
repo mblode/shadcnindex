@@ -6,7 +6,9 @@
   "item": {
     "name": "stats-4",
     "type": "registry:block",
-    "registryDependencies": ["chart"],
+    "registryDependencies": [
+      "chart"
+    ],
     "files": [
       {
         "path": "registry/blocks/stats-4.tsx",
@@ -17,5 +19,5 @@
       "height": 604
     }
   },
-  "fetchedAt": "2026-01-02T23:59:17.766Z"
+  "fetchedAt": "2026-01-03T11:28:16.189Z"
 }

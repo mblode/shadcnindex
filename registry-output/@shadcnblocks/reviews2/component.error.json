@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "Reviews",
     "description": "This component displays a list of customer reviews, providing a summary of average ratings, a distribution of ratings, and individual review details including the author, date, and content. It features elements like avatars, badges for verified reviews, and rating bars to visually represent the feedback statistics.",
-    "dependencies": ["lucide-react"],
+    "dependencies": [
+      "lucide-react"
+    ],
     "registryDependencies": [
       "https://shadcnblocks.com/r/rating",
       "avatar",
@@ -22,5 +24,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:03.093Z"
+  "fetchedAt": "2026-01-03T11:29:00.843Z"
 }

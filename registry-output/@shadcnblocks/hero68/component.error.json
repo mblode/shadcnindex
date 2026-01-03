@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Hero",
     "description": "A component with a promotional message, featuring a central title, a subtitle, buttons for action calls (trial/demo), and a 3-column footer highlighting service benefits with icons.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["avatar", "badge", "button"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "avatar",
+      "badge",
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/hero68.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:53.761Z"
+  "fetchedAt": "2026-01-03T11:28:52.165Z"
 }

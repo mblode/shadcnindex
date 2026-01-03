@@ -8,8 +8,18 @@
     "type": "registry:block",
     "title": "Date-picker/date-picker-standard-",
     "description": "A date-picker/date-picker-standard- example",
-    "dependencies": ["date-fns", "lucide-react", "react"],
-    "registryDependencies": ["button", "calendar", "input", "label", "popover"],
+    "dependencies": [
+      "date-fns",
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "button",
+      "calendar",
+      "input",
+      "label",
+      "popover"
+    ],
     "files": [
       {
         "path": "code/example/date-picker/date-picker-standard-4.tsx",
@@ -17,5 +27,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:13.916Z"
+  "fetchedAt": "2026-01-03T11:29:11.642Z"
 }

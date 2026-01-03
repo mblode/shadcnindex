@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Services",
     "description": "A component showcasing services with a title and description on the left and clickable image cards to the right in a 1-2 column layout.",
-    "dependencies": ["framer-motion", "lucide-react"],
-    "registryDependencies": ["button", "card"],
+    "dependencies": [
+      "framer-motion",
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "button",
+      "card"
+    ],
     "files": [
       {
         "path": "code/block/services11.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:03.662Z"
+  "fetchedAt": "2026-01-03T11:29:01.391Z"
 }

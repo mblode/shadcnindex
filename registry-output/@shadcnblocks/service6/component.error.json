@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "Service",
     "description": "This component showcases UX/UI design services, expertise, and related offerings in a structured layout including icons and descriptions.",
-    "dependencies": ["lucide-react"],
+    "dependencies": [
+      "lucide-react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:03.603Z"
+  "fetchedAt": "2026-01-03T11:29:01.178Z"
 }

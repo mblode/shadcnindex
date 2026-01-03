@@ -8,7 +8,11 @@
     "type": "registry:block",
     "title": "Team",
     "description": "A team showcase component with staggered animation for each member's photo, including name and role. Displays info in two columns with adjustable gaps.",
-    "dependencies": ["framer-motion", "lucide-react", "react"],
+    "dependencies": [
+      "framer-motion",
+      "lucide-react",
+      "react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +21,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:06.564Z"
+  "fetchedAt": "2026-01-03T11:29:04.414Z"
 }

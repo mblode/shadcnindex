@@ -6,8 +6,13 @@
   "item": {
     "name": "hero-1",
     "type": "registry:block",
-    "dependencies": ["motion"],
-    "registryDependencies": ["@magicui/border-beam", "button"],
+    "dependencies": [
+      "motion"
+    ],
+    "registryDependencies": [
+      "@magicui/border-beam",
+      "button"
+    ],
     "files": [
       {
         "path": "registry/blocks/hero-1.tsx",
@@ -18,5 +23,5 @@
       "height": 1353
     }
   },
-  "fetchedAt": "2026-01-02T23:59:18.204Z"
+  "fetchedAt": "2026-01-03T11:28:16.562Z"
 }

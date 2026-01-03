@@ -8,8 +8,12 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A module showcasing 3 features with images, titles, descriptions, and &#x27;Learn more&#x27; links in a 3-column layout.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["badge"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "badge"
+    ],
     "files": [
       {
         "path": "code/block/feature23.tsx",
@@ -17,5 +21,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:41.178Z"
+  "fetchedAt": "2026-01-03T11:28:39.856Z"
 }

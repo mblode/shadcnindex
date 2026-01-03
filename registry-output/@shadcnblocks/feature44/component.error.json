@@ -9,7 +9,9 @@
     "title": "Feature",
     "description": "A component displaying a grid of integration options with images and descriptions, adaptable from 1 to 3 columns.",
     "dependencies": [],
-    "registryDependencies": ["card"],
+    "registryDependencies": [
+      "card"
+    ],
     "files": [
       {
         "path": "code/block/feature44.tsx",
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:44.249Z"
+  "fetchedAt": "2026-01-03T11:28:42.800Z"
 }

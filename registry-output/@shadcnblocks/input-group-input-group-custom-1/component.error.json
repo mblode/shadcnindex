@@ -9,7 +9,9 @@
     "title": "Input-group/input-group-custom-",
     "description": "A input-group/input-group-custom- example",
     "dependencies": [],
-    "registryDependencies": ["input-group"],
+    "registryDependencies": [
+      "input-group"
+    ],
     "files": [
       {
         "path": "code/example/input-group/input-group-custom-1.tsx",
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:16.659Z"
+  "fetchedAt": "2026-01-03T11:29:14.235Z"
 }

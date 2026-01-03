@@ -8,8 +8,16 @@
     "type": "registry:block",
     "title": "Shopping-cart",
     "description": "This component provides a dynamic shopping cart interface with functionalities to view, update item quantities, and remove items, along with calculating and displaying the subtotal. It utilizes a popover for cart interactions and includes visual elements for item display, quantity management, and checkout options.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["aspect-ratio", "button", "popover", "separator"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "aspect-ratio",
+      "button",
+      "popover",
+      "separator"
+    ],
     "files": [
       {
         "path": "code/block/shopping-cart18.tsx",
@@ -17,5 +25,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:04.750Z"
+  "fetchedAt": "2026-01-03T11:29:03.033Z"
 }

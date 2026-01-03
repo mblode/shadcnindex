@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Live-purchase",
     "description": "This component displays live notifications of recent purchases, including product details and when they were made, in a rotating manner for improved visibility. It also shows live stats with the number of current viewers and the total purchases made today, providing a quick overview of customer interactions.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["button", "card"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "button",
+      "card"
+    ],
     "files": [
       {
         "path": "code/block/live-purchase3.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:55.746Z"
+  "fetchedAt": "2026-01-03T11:28:53.690Z"
 }

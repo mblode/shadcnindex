@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Download",
     "description": "A component for software downloads showcases features, buy/download options, platform compatibility icons in 2 columns.",
-    "dependencies": ["lucide-react", "react-icons"],
-    "registryDependencies": ["button"],
+    "dependencies": [
+      "lucide-react",
+      "react-icons"
+    ],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/download9.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:35.582Z"
+  "fetchedAt": "2026-01-03T11:28:34.163Z"
 }

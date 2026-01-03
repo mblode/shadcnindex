@@ -9,7 +9,10 @@
     "title": "Hero",
     "description": "A component with a title, description, two buttons, and a complex image layout with overlay effects and gradient backgrounds.",
     "dependencies": [],
-    "registryDependencies": ["aspect-ratio", "button"],
+    "registryDependencies": [
+      "aspect-ratio",
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/hero180.tsx",
@@ -17,5 +20,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:50.469Z"
+  "fetchedAt": "2026-01-03T11:28:48.754Z"
 }

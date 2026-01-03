@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Hero",
     "description": "Animated image carousel with auto-switching feature & a unique marquee with cards. Includes a central button & decorative elements.",
-    "dependencies": ["framer-motion", "react"],
-    "registryDependencies": ["button"],
+    "dependencies": [
+      "framer-motion",
+      "react"
+    ],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/hero212.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:51.254Z"
+  "fetchedAt": "2026-01-03T11:28:49.600Z"
 }

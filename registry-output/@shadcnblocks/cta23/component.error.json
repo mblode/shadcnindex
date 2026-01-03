@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Cta",
     "description": "A component with a newsletter subscription form, badge, heading, description, and features list, styled with icons and varying text sizes.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["badge", "button", "input"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "badge",
+      "button",
+      "input"
+    ],
     "files": [
       {
         "path": "code/block/cta23.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:34.803Z"
+  "fetchedAt": "2026-01-03T11:28:33.364Z"
 }

@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Feature215a",
     "description": "A component showcasing a grid of cards with videos, icons, and texts. Features hover-to-play videos and links.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["aspect-ratio", "card"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "aspect-ratio",
+      "card"
+    ],
     "files": [
       {
         "path": "code/block/feature215a.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:40.569Z"
+  "fetchedAt": "2026-01-03T11:28:39.145Z"
 }

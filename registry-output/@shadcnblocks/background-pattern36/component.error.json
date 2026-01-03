@@ -9,7 +9,9 @@
     "title": "Background-pattern",
     "description": "A component that creates a visually interesting background pattern using a combination of linear gradients and radial masks, designed to mimic a circuit board appearance. Ideal for adding dynamic visual flair to a full-page layout while allowing custom styling through class name overrides.",
     "dependencies": [],
-    "registryDependencies": ["https://shadcnblocks.com/r/pattern-placeholder"],
+    "registryDependencies": [
+      "https://shadcnblocks.com/r/pattern-placeholder"
+    ],
     "files": [
       {
         "path": "code/block/background-pattern36.tsx",
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:30.261Z"
+  "fetchedAt": "2026-01-03T11:28:28.892Z"
 }

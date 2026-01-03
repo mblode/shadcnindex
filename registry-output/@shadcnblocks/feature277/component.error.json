@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A 4-column grid feature block with interactive cards displaying titles, descriptions, icons, and \"Read More\" buttons. Cards reveal a colored background on hover.",
-    "dependencies": ["framer-motion", "lucide-react", "react"],
-    "registryDependencies": ["button"],
+    "dependencies": [
+      "framer-motion",
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/feature277.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:42.706Z"
+  "fetchedAt": "2026-01-03T11:28:41.416Z"
 }

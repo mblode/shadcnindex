@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "About",
     "description": "A component with a 2-column layout featuring an angled image and user info on one side and a title with paragraphs on the other. Unique for its image tilt and contrasting text styles.",
-    "dependencies": ["react"],
+    "dependencies": [
+      "react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:28.691Z"
+  "fetchedAt": "2026-01-03T11:28:27.189Z"
 }

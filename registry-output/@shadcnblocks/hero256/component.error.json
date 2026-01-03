@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Hero",
     "description": "The component features a prominent hero block that includes a dynamic heading, a badge, and call-to-action buttons for easy user interaction. It also integrates a features section with interactive cards highlighting key functionalities, each accompanied by icons and descriptions, aiming to streamline workflows and provide insightful analytics.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["button"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/hero256.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:52.641Z"
+  "fetchedAt": "2026-01-03T11:28:51.094Z"
 }

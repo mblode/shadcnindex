@@ -9,7 +9,10 @@
     "title": "Alert-dialog/alert-dialog-destructive-",
     "description": "A alert-dialog/alert-dialog-destructive- example",
     "dependencies": [],
-    "registryDependencies": ["alert-dialog", "button"],
+    "registryDependencies": [
+      "alert-dialog",
+      "button"
+    ],
     "files": [
       {
         "path": "code/example/alert-dialog/alert-dialog-destructive-7.tsx",
@@ -17,5 +20,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:09.326Z"
+  "fetchedAt": "2026-01-03T11:29:07.042Z"
 }

@@ -9,7 +9,10 @@
     "title": "Testimonial",
     "description": "A carousel showcasing testimonials with navigational controls, featuring a title, user quotes, and their avatars. Each slide shows 1-3 testimonials based on size.",
     "dependencies": [],
-    "registryDependencies": ["avatar", "carousel"],
+    "registryDependencies": [
+      "avatar",
+      "carousel"
+    ],
     "files": [
       {
         "path": "code/block/testimonial6.tsx",
@@ -17,5 +20,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:07.789Z"
+  "fetchedAt": "2026-01-03T11:29:05.548Z"
 }

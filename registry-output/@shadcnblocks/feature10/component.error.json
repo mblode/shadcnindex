@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A block titled \"Why Us?\" with a subtitle, arranged in up to 4 columns featuring icons for Performance, Innovation, Quality, and Accessibility, each with a brief description.",
-    "dependencies": ["lucide-react"],
+    "dependencies": [
+      "lucide-react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:36.284Z"
+  "fetchedAt": "2026-01-03T11:28:34.899Z"
 }

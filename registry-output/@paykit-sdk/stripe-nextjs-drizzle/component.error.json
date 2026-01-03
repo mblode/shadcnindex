@@ -7,9 +7,15 @@
     "name": "stripe-nextjs-drizzle",
     "type": "registry:block",
     "description": "Stripe integration for Next.js with Drizzle ORM schemas for payments and subscriptions",
-    "dependencies": ["drizzle-orm"],
-    "devDependencies": ["drizzle-kit"],
-    "registryDependencies": ["https://usepaykit.dev/r/stripe-nextjs"],
+    "dependencies": [
+      "drizzle-orm"
+    ],
+    "devDependencies": [
+      "drizzle-kit"
+    ],
+    "registryDependencies": [
+      "https://usepaykit.dev/r/stripe-nextjs"
+    ],
     "files": [
       {
         "type": "registry:file",
@@ -27,5 +33,5 @@
       "auth": "none"
     }
   },
-  "fetchedAt": "2026-01-02T23:59:22.923Z"
+  "fetchedAt": "2026-01-03T11:28:21.596Z"
 }

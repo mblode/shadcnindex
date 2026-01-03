@@ -8,8 +8,16 @@
     "type": "registry:block",
     "title": "Product-gallery",
     "description": "This component, named `ProductGallery3`, provides an interactive image gallery with carousel functionality to display product images dynamically from a provided list. It leverages PhotoSwipeLightbox for viewing images in a full-screen mode and includes custom navigation elements for enhanced user interaction.",
-    "dependencies": ["photoswipe", "react"],
-    "registryDependencies": ["aspect-ratio", "badge", "button", "carousel"],
+    "dependencies": [
+      "photoswipe",
+      "react"
+    ],
+    "registryDependencies": [
+      "aspect-ratio",
+      "badge",
+      "button",
+      "carousel"
+    ],
     "files": [
       {
         "path": "code/block/product-gallery3.tsx",
@@ -17,5 +25,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:59.738Z"
+  "fetchedAt": "2026-01-03T11:28:57.505Z"
 }

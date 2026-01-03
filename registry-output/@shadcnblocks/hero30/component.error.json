@@ -9,7 +9,9 @@
     "title": "Hero",
     "description": "A hero block with 2 columns; left has text and buttons, right features a main image with a mesh background. Unique mesh and layered image presentation.",
     "dependencies": [],
-    "registryDependencies": ["button"],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/hero30.tsx",
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:52.875Z"
+  "fetchedAt": "2026-01-03T11:28:51.318Z"
 }

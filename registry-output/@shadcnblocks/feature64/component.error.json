@@ -9,7 +9,9 @@
     "title": "Feature",
     "description": "A component displaying a \"Coming Soon\" badge, a title, a descriptive paragraph, and two feature blocks in a 7-column grid, with the first block spanning 4 columns and the second 3 columns.",
     "dependencies": [],
-    "registryDependencies": ["badge"],
+    "registryDependencies": [
+      "badge"
+    ],
     "files": [
       {
         "path": "code/block/feature64.tsx",
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:44.816Z"
+  "fetchedAt": "2026-01-03T11:28:43.452Z"
 }

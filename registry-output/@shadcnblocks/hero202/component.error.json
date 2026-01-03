@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Hero",
     "description": "A component featuring a 2-column layout with dynamic text and image, highlighting a bold headline with a gradient effect, and interactive buttons including a rotating action on hover.",
-    "dependencies": ["lucide-react", "react"],
-    "registryDependencies": ["button", "card"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "button",
+      "card"
+    ],
     "files": [
       {
         "path": "code/block/hero202.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:51.042Z"
+  "fetchedAt": "2026-01-03T11:28:49.317Z"
 }

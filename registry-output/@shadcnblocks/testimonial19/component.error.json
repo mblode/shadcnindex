@@ -8,8 +8,16 @@
     "type": "registry:block",
     "title": "Testimonial",
     "description": "A carousel showcasing client testimonials with a 5-star rating system, client roles, and avatars. Features auto-scroll and multi-column layout.",
-    "dependencies": ["embla-carousel-auto-scroll", "lucide-react", "react"],
-    "registryDependencies": ["avatar", "card", "carousel"],
+    "dependencies": [
+      "embla-carousel-auto-scroll",
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "avatar",
+      "card",
+      "carousel"
+    ],
     "files": [
       {
         "path": "code/block/testimonial19.tsx",
@@ -17,5 +25,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:07.274Z"
+  "fetchedAt": "2026-01-03T11:29:05.067Z"
 }

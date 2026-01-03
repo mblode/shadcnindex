@@ -9,7 +9,11 @@
     "title": "Signup",
     "description": "A signup component featuring a logo, headings, email/password inputs, and social media signup options (Google, Facebook, Apple). Includes a &#x27;login&#x27; link.",
     "dependencies": [],
-    "registryDependencies": ["button", "input", "label"],
+    "registryDependencies": [
+      "button",
+      "input",
+      "label"
+    ],
     "files": [
       {
         "path": "code/block/signup4.tsx",
@@ -17,5 +21,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:04.992Z"
+  "fetchedAt": "2026-01-03T11:29:03.197Z"
 }

@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Gallery",
     "description": "An interactive gallery block that showcases images with dynamic resizing and details on hover or click, including an \"Add to Cart\" button.",
-    "dependencies": ["framer-motion", "lucide-react", "react"],
-    "registryDependencies": ["button"],
+    "dependencies": [
+      "framer-motion",
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/gallery24.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:47.618Z"
+  "fetchedAt": "2026-01-03T11:28:46.150Z"
 }

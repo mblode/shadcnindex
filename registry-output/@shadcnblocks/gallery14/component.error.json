@@ -8,8 +8,12 @@
     "type": "registry:block",
     "title": "Gallery",
     "description": "A gallery component with a carousel of items, featuring dynamic navigation dots that expand with titles on the active item. Layout includes a headline, description, and 2-column design with imagery.",
-    "dependencies": ["react"],
-    "registryDependencies": ["carousel"],
+    "dependencies": [
+      "react"
+    ],
+    "registryDependencies": [
+      "carousel"
+    ],
     "files": [
       {
         "path": "code/block/gallery14.tsx",
@@ -17,5 +21,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:47.195Z"
+  "fetchedAt": "2026-01-03T11:28:45.827Z"
 }

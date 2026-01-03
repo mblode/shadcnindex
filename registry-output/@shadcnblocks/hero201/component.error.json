@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Hero",
     "description": "A component featuring centered titles, description, and buttons over a background with two animated spinning images on opposite ends.",
-    "dependencies": ["framer-motion", "lucide-react"],
-    "registryDependencies": ["button"],
+    "dependencies": [
+      "framer-motion",
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/hero201.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:50.974Z"
+  "fetchedAt": "2026-01-03T11:28:49.314Z"
 }

@@ -9,7 +9,9 @@
     "title": "Cta",
     "description": "A dual-column block featuring a bold headline, two sub-sections with large titles, buttons for actions, and layered images with a phone mockup.",
     "dependencies": [],
-    "registryDependencies": ["button"],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/cta27.tsx",
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:34.814Z"
+  "fetchedAt": "2026-01-03T11:28:33.392Z"
 }

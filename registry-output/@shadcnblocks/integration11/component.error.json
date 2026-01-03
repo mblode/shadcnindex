@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Integration",
     "description": "A tabbed component showcasing categorized integrations with toggles for connection status and details button. Layout scales from 1 to 3 columns.",
-    "dependencies": ["react"],
-    "registryDependencies": ["button", "switch", "tabs"],
+    "dependencies": [
+      "react"
+    ],
+    "registryDependencies": [
+      "button",
+      "switch",
+      "tabs"
+    ],
     "files": [
       {
         "path": "code/block/integration11.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:55.275Z"
+  "fetchedAt": "2026-01-03T11:28:53.172Z"
 }

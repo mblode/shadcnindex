@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "This component displays a dynamic gallery featuring a combination of multiple small cards and a prominent larger card, perfect for showcasing content with distinct headings, images, and descriptions. Equipped with interactive features, it includes motion effects on hover and the flexibility to integrate call-to-action buttons, making it suitable for both informative displays and promotional purposes.",
-    "dependencies": ["framer-motion", "lucide-react"],
-    "registryDependencies": ["button", "card"],
+    "dependencies": [
+      "framer-motion",
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "button",
+      "card"
+    ],
     "files": [
       {
         "path": "code/block/feature314.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:43.660Z"
+  "fetchedAt": "2026-01-03T11:28:42.263Z"
 }

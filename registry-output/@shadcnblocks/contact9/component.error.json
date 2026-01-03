@@ -8,7 +8,10 @@
     "type": "registry:block",
     "title": "Contact",
     "description": "A component with a contact form and methods listed in columns, featuring input fields, checkboxes, and buttons for submissions alongside icons for email, phone, and office directions.",
-    "dependencies": ["lucide-react", "react"],
+    "dependencies": [
+      "lucide-react",
+      "react"
+    ],
     "registryDependencies": [
       "badge",
       "button",
@@ -24,5 +27,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:34.234Z"
+  "fetchedAt": "2026-01-03T11:28:32.802Z"
 }

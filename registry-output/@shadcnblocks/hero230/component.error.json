@@ -14,7 +14,10 @@
       "lucide-react",
       "react"
     ],
-    "registryDependencies": ["button", "carousel"],
+    "registryDependencies": [
+      "button",
+      "carousel"
+    ],
     "files": [
       {
         "path": "code/block/hero230.tsx",
@@ -22,5 +25,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:51.895Z"
+  "fetchedAt": "2026-01-03T11:28:50.259Z"
 }

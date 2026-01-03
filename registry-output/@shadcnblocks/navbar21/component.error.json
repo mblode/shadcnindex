@@ -8,7 +8,10 @@
     "type": "registry:block",
     "title": "Navbar",
     "description": "A dynamic navigation component with animated menu toggling. Displays a logo, a menu toggle button, expanding to show main links and socials.",
-    "dependencies": ["framer-motion", "react"],
+    "dependencies": [
+      "framer-motion",
+      "react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +20,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:56.632Z"
+  "fetchedAt": "2026-01-03T11:28:54.530Z"
 }

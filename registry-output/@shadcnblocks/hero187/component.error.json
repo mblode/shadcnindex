@@ -8,8 +8,15 @@
     "type": "registry:block",
     "title": "Hero",
     "description": "A dual-section component with a gradient border. Features text block, 4 distinct features with icons, two buttons, and a carousel with auto-play and slide indication.",
-    "dependencies": ["embla-carousel-autoplay", "lucide-react", "react"],
-    "registryDependencies": ["button", "carousel"],
+    "dependencies": [
+      "embla-carousel-autoplay",
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "button",
+      "carousel"
+    ],
     "files": [
       {
         "path": "code/block/hero187.tsx",
@@ -17,5 +24,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:50.543Z"
+  "fetchedAt": "2026-01-03T11:28:48.971Z"
 }

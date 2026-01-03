@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "Project8e",
     "description": "A two-section block featuring a fullscreen hero with animated text and a detailed content section in a 2-column layout with credits.",
-    "dependencies": ["framer-motion"],
+    "dependencies": [
+      "framer-motion"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:01.569Z"
+  "fetchedAt": "2026-01-03T11:28:59.307Z"
 }

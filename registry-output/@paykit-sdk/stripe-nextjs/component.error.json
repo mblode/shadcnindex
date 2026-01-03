@@ -7,7 +7,10 @@
     "name": "stripe-nextjs",
     "type": "registry:block",
     "description": "Stripe payment integration for Next.js App Router with type-safe API routes and webhook handling",
-    "dependencies": ["@paykit-sdk/core", "@paykit-sdk/stripe"],
+    "dependencies": [
+      "@paykit-sdk/core",
+      "@paykit-sdk/stripe"
+    ],
     "devDependencies": [],
     "registryDependencies": [],
     "files": [
@@ -43,5 +46,5 @@
       "auth": "none"
     }
   },
-  "fetchedAt": "2026-01-02T23:59:22.923Z"
+  "fetchedAt": "2026-01-03T11:28:21.566Z"
 }

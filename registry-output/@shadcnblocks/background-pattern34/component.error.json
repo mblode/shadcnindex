@@ -9,7 +9,9 @@
     "title": "Background-pattern",
     "description": "This component, named BackgroundPattern34, creates a visually appealing background pattern with a top fade circuit board effect suitable for full-screen displays. It utilizes linear gradients and radial masks to achieve its stylish look, and it accepts an optional className prop for additional styling.",
     "dependencies": [],
-    "registryDependencies": ["https://shadcnblocks.com/r/pattern-placeholder"],
+    "registryDependencies": [
+      "https://shadcnblocks.com/r/pattern-placeholder"
+    ],
     "files": [
       {
         "path": "code/block/background-pattern34.tsx",
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:30.149Z"
+  "fetchedAt": "2026-01-03T11:28:28.859Z"
 }

@@ -8,8 +8,15 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A component featuring dual-column layout with avatars, a heading, stats, and vertically auto-scrolling carousels showcasing features.",
-    "dependencies": ["embla-carousel-auto-scroll", "lucide-react"],
-    "registryDependencies": ["avatar", "button", "carousel"],
+    "dependencies": [
+      "embla-carousel-auto-scroll",
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "avatar",
+      "button",
+      "carousel"
+    ],
     "files": [
       {
         "path": "code/block/feature114.tsx",
@@ -17,5 +24,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:36.874Z"
+  "fetchedAt": "2026-01-03T11:28:35.462Z"
 }

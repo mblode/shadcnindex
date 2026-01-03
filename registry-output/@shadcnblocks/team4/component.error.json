@@ -8,8 +8,12 @@
     "type": "registry:block",
     "title": "Team",
     "description": "A component showcasing a team with 4 profile cards, including images, roles, bios, and social links. Each row adapts to screen size, displaying up to 4 columns.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["badge"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "badge"
+    ],
     "files": [
       {
         "path": "code/block/team4.tsx",
@@ -17,5 +21,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:06.771Z"
+  "fetchedAt": "2026-01-03T11:29:04.561Z"
 }

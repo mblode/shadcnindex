@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Pricing",
     "description": "A block displaying a collection of add-ons with icons, descriptions, and prices, plus a button to get each add-on. Features dual-column layout on larger displays.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["badge", "button"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "badge",
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/pricing33.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:58.409Z"
+  "fetchedAt": "2026-01-03T11:28:56.101Z"
 }

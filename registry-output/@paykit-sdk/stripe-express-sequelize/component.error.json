@@ -7,9 +7,15 @@
     "name": "stripe-express-sequelize",
     "type": "registry:block",
     "description": "Stripe integration for Express with Sequelize schemas for payments and subscriptions",
-    "dependencies": ["sequelize"],
-    "devDependencies": ["sequelize"],
-    "registryDependencies": ["https://usepaykit.dev/r/stripe-express"],
+    "dependencies": [
+      "sequelize"
+    ],
+    "devDependencies": [
+      "sequelize"
+    ],
+    "registryDependencies": [
+      "https://usepaykit.dev/r/stripe-express"
+    ],
     "files": [
       {
         "type": "registry:file",
@@ -27,5 +33,5 @@
       "auth": "none"
     }
   },
-  "fetchedAt": "2026-01-02T23:59:23.579Z"
+  "fetchedAt": "2026-01-03T11:28:22.065Z"
 }

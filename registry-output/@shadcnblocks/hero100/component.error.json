@@ -9,7 +9,9 @@
     "title": "Hero",
     "description": "A component featuring a 2-column layout, with text and a call-to-action button on one side and an image on the other. Unique for its visual layering effect.",
     "dependencies": [],
-    "registryDependencies": ["button"],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/hero100.tsx",
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:48.347Z"
+  "fetchedAt": "2026-01-03T11:28:46.879Z"
 }

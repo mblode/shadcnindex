@@ -8,8 +8,12 @@
     "type": "registry:block",
     "title": "Hero234a",
     "description": "Animated image gallery with dynamic text overlay and interactive button. Four-column, infinite scroll horizontal flip, ellipse masking for edge softening.",
-    "dependencies": ["framer-motion"],
-    "registryDependencies": ["button"],
+    "dependencies": [
+      "framer-motion"
+    ],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/hero234a.tsx",
@@ -17,5 +21,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:52.066Z"
+  "fetchedAt": "2026-01-03T11:28:50.513Z"
 }

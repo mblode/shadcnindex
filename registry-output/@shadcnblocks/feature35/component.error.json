@@ -8,7 +8,9 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A 4-column component with a large title spans 2 rows, followed by 3 content blocks, each with a title, text, and link. An arrow icon accents links.",
-    "dependencies": ["lucide-react"],
+    "dependencies": [
+      "lucide-react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +19,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:44.009Z"
+  "fetchedAt": "2026-01-03T11:28:42.535Z"
 }

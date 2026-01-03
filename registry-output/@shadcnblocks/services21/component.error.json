@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Services",
     "description": "A component displaying a dynamic list of services with an animating image preview. It has a sticky side section for images and texts, plus a list that updates the preview on hover. Includes a CTA button with an animated icon.",
-    "dependencies": ["framer-motion", "lucide-react", "react"],
-    "registryDependencies": ["https://shadcnblocks.com/r/border-button"],
+    "dependencies": [
+      "framer-motion",
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "https://shadcnblocks.com/r/border-button"
+    ],
     "files": [
       {
         "path": "code/block/services21.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:03.982Z"
+  "fetchedAt": "2026-01-03T11:29:02.044Z"
 }

@@ -8,8 +8,14 @@
     "type": "registry:block",
     "title": "Stats",
     "description": "A stat component displaying a radial chart and key metrics in a 2-column layout, including an SEO optimization percentage, number of built blocks, and a total visitors' trend with icons.",
-    "dependencies": ["lucide-react", "react", "recharts"],
-    "registryDependencies": ["chart"],
+    "dependencies": [
+      "lucide-react",
+      "react",
+      "recharts"
+    ],
+    "registryDependencies": [
+      "chart"
+    ],
     "files": [
       {
         "path": "code/block/stats17.tsx",
@@ -17,5 +23,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:06.196Z"
+  "fetchedAt": "2026-01-03T11:29:03.974Z"
 }

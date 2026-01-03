@@ -8,7 +8,10 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A centered text reveal component with a dark background, featuring a motivational message, adaptable to large screens up to 86rem wide.",
-    "dependencies": ["motion", "react"],
+    "dependencies": [
+      "motion",
+      "react"
+    ],
     "registryDependencies": [],
     "files": [
       {
@@ -17,5 +20,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:41.854Z"
+  "fetchedAt": "2026-01-03T11:28:40.453Z"
 }

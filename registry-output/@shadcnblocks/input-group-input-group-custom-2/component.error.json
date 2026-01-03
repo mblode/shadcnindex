@@ -8,8 +8,12 @@
     "type": "registry:block",
     "title": "Input-group/input-group-custom-",
     "description": "A input-group/input-group-custom- example",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["input-group"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "input-group"
+    ],
     "files": [
       {
         "path": "code/example/input-group/input-group-custom-2.tsx",
@@ -17,5 +21,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:16.687Z"
+  "fetchedAt": "2026-01-03T11:29:14.381Z"
 }

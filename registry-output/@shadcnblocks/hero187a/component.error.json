@@ -8,8 +8,15 @@
     "type": "registry:block",
     "title": "Hero187a",
     "description": "A component featuring a carousel with auto-play functionality, a section with text content, and a grid layout displaying four features with icons. Includes navigation buttons.",
-    "dependencies": ["embla-carousel-autoplay", "lucide-react", "react"],
-    "registryDependencies": ["button", "carousel"],
+    "dependencies": [
+      "embla-carousel-autoplay",
+      "lucide-react",
+      "react"
+    ],
+    "registryDependencies": [
+      "button",
+      "carousel"
+    ],
     "files": [
       {
         "path": "code/block/hero187a.tsx",
@@ -17,5 +24,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:50.579Z"
+  "fetchedAt": "2026-01-03T11:28:48.973Z"
 }

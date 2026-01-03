@@ -8,7 +8,10 @@
     "type": "registry:block",
     "title": "Reviews",
     "description": "This component is a review display block that showcases customer reviews, ratings, and images with an interactive carousel gallery. It includes features such as sorting options, the ability to load more reviews, and a detailed view of each review, highlighting the author's details and visual content.",
-    "dependencies": ["photoswipe", "react"],
+    "dependencies": [
+      "photoswipe",
+      "react"
+    ],
     "registryDependencies": [
       "https://shadcnblocks.com/r/rating",
       "aspect-ratio",
@@ -24,5 +27,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-03T00:00:03.082Z"
+  "fetchedAt": "2026-01-03T11:29:00.818Z"
 }

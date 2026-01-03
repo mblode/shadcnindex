@@ -8,8 +8,12 @@
     "type": "registry:block",
     "title": "Compare",
     "description": "A comparison component contrasting traditional vs cloud-native approaches across multiple metrics with hover-to-highlight functionality and a \"Get Started\" button.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["button"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "code/block/compare4.tsx",
@@ -17,5 +21,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:33.409Z"
+  "fetchedAt": "2026-01-03T11:28:32.065Z"
 }

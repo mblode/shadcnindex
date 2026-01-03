@@ -8,8 +8,13 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A component featuring a productivity tools overview with stats (installs, active users, etc.), and 3 benefits. Layout includes a 2-column section with an image and a 3-column grid for benefits.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["badge", "separator"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "badge",
+      "separator"
+    ],
     "files": [
       {
         "path": "code/block/feature136.tsx",
@@ -17,5 +22,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:37.754Z"
+  "fetchedAt": "2026-01-03T11:28:36.419Z"
 }

@@ -8,8 +8,12 @@
     "type": "registry:block",
     "title": "Feature",
     "description": "A component featuring staggered avatars and a 3-column layout with icons, highlighting customer care themes, and focusing on support, solutions, and feedback.",
-    "dependencies": ["lucide-react"],
-    "registryDependencies": ["avatar"],
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "avatar"
+    ],
     "files": [
       {
         "path": "code/block/feature93.tsx",
@@ -17,5 +21,5 @@
       }
     ]
   },
-  "fetchedAt": "2026-01-02T23:59:46.012Z"
+  "fetchedAt": "2026-01-03T11:28:44.504Z"
 }
