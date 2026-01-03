@@ -20,6 +20,7 @@ import {
   getRegistryDirectoryMap,
   type RegistryDirectoryMeta,
 } from "@/lib/registry-directory";
+import { resolveRegistryComponentDocsUrl } from "@/lib/registry-docs";
 import { getLocalRegistryIndex } from "@/lib/registry-local-index";
 import {
   getRegistryOutputItem,
@@ -124,14 +125,14 @@ export async function RegistryComponentPageContent(props: {
     ],
   };
   const headingClass =
-    "font-heading [&+]*:[code]:text-xl mt-10 scroll-m-28 text-xl font-medium tracking-tight lg:mt-16 [&+.steps]:!mt-0 [&+.steps>h3]:!mt-4 [&+h3]:!mt-6 [&+p]:!mt-4";
+    "font-heading [&+]*:[code]:text-xl mt-10 scroll-m-28 text-xl font-medium tracking-tight [&+.steps]:!mt-0 [&+.steps>h3]:!mt-4 [&+h3]:!mt-6 [&+p]:!mt-4";
   const isModal = variant === "modal";
   const outerClassName = isModal
     ? "flex w-full flex-col text-[1.05rem] sm:text-[15px]"
     : "flex items-stretch text-[1.05rem] sm:text-[15px] xl:w-full";
   const contentClassName = isModal
-    ? "mx-auto flex w-full min-w-0 max-w-3xl flex-1 flex-col gap-8 px-0 pb-0 text-neutral-800 dark:text-neutral-300"
-    : "mx-auto flex w-full min-w-0 max-w-2xl flex-1 flex-col gap-8 px-4 py-6 text-neutral-800 md:px-0 lg:py-8 dark:text-neutral-300";
+    ? "mx-auto flex w-full min-w-0 max-w-3xl flex-1 flex-col px-0 pb-6 text-neutral-800 dark:text-neutral-300"
+    : "mx-auto flex w-full min-w-0 max-w-2xl flex-1 flex-col px-4 py-6 text-neutral-800 md:px-0 lg:py-8 dark:text-neutral-300";
 
   return (
     <div className={outerClassName}>
@@ -784,7 +785,7 @@ function buildRegistryComponentLinks({
   registry,
   registryItem,
   component,
-  componentSlug: _componentSlug,
+  componentSlug,
 }: {
   registry: { namespace: string; homepage: string | null };
   registryItem: RegistryOutputRegistryItem | null;
@@ -807,6 +808,20 @@ function buildRegistryComponentLinks({
   );
   addDocLinks(links, registryItem?.docs, registryHomepage, shouldUseHomepage);
   addDocLinks(links, component.docs, registryHomepage, shouldUseHomepage);
+
+  const inferredDoc = resolveRegistryComponentDocsUrl({
+    registryNamespace: registry.namespace,
+    registryHomepage,
+    componentSlug,
+    componentType: component.type ?? null,
+    componentFiles:
+      component.files?.map((file) => file.path ?? "").filter(Boolean) ?? [],
+    shouldUseHomepage,
+  });
+
+  if (inferredDoc) {
+    links.push(inferredDoc);
+  }
 
   if (registryItem?.homepage) {
     const homepageLink = normalizeDocRoute(

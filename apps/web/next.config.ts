@@ -1,4 +1,10 @@
+import bundleAnalyzer from "@next/bundle-analyzer";
 import type { NextConfig } from "next";
+
+const withBundleAnalyzer = bundleAnalyzer({
+  enabled: process.env.ANALYZE === "true",
+  openAnalyzer: false,
+});
 
 const nextConfig: NextConfig = {
   typescript: {
@@ -26,6 +32,13 @@ const nextConfig: NextConfig = {
   },
   experimental: {
     turbopackFileSystemCacheForDev: true,
+    optimizePackageImports: [
+      "lucide-react",
+      "@radix-ui/react-icons",
+      "@phosphor-icons/react",
+      "@tabler/icons-react",
+      "@hugeicons/react",
+    ],
   },
 };
-export default nextConfig;
+export default withBundleAnalyzer(nextConfig);

@@ -103,7 +103,7 @@ export function RegistrySearchHeaderInput() {
         autoFocus={isSearchRoute}
         name="q"
         onChange={(event) => updateQuery(event.target.value)}
-        placeholder="Search a component, keyword, or registry…"
+        placeholder="Search or describe a component…"
         ref={inputRef}
         value={query}
       />

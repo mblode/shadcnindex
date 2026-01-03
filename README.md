@@ -2,13 +2,13 @@
 
 # shadcn index
 
-**Search across all shadcn component registries in one place**
+**AI-powered search across all shadcn registries. Search or describe what you need.**
 
 </div>
 
 ## About
 
-Shadcn Index is a fast, unified search for shadcn registries—find components, previews, and metadata from multiple registries at once.
+Shadcn Index uses AI-powered semantic search to help you find the perfect component. Search by name or describe what you need—discover components, blocks, and hooks from all shadcn registries in one place.
 
 ## Demo
 

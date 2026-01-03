@@ -10,7 +10,6 @@ import { META_THEME_COLORS, siteConfig } from "@/lib/config";
 import { fontVariables } from "@/lib/fonts";
 import { getSiteUrl, toAbsoluteUrl } from "@/lib/seo";
 import { cn } from "@/lib/utils";
-import { Toaster } from "@/registry/bases/radix/ui/sonner";
 
 import "./globals.css";
 
@@ -133,10 +132,7 @@ export default function RootLayout({
         <ThemeProvider>
           <LayoutProvider>
             <ActiveThemeProvider>
-              <NuqsAdapter>
-                {children}
-                <Toaster position="top-center" />
-              </NuqsAdapter>
+              <NuqsAdapter>{children}</NuqsAdapter>
               <TailwindIndicator />
               <Analytics />
             </ActiveThemeProvider>

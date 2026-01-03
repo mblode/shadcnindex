@@ -65,6 +65,7 @@ function parseArgs(argv: string[]): ParsedOptions {
     model: process.env.EMBEDDING_MODEL ?? DEFAULT_EMBEDDING_MODEL,
   };
 
+  // biome-ignore lint/style/useForOf: Need index manipulation for argument parsing
   for (let i = 0; i < argv.length; i += 1) {
     const arg = argv[i];
     switch (arg) {

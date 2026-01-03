@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname, useSearchParams } from "next/navigation";
 import { type ReactNode, useEffect, useMemo, useRef, useState } from "react";
 
+import { scheduleIdleCallback } from "@/lib/idle";
 import { toRegistrySlug } from "@/lib/registry-slug";
 import { toRegistryTypeLabel } from "@/lib/registry-type";
 import { cn } from "@/lib/utils";
@@ -52,6 +53,7 @@ interface RegistryDirectoryMeta {
 const MAX_RESULTS = 200;
 const SEARCH_DEBOUNCE_MS = 200;
 const SEARCH_TIMEOUT_MS = 10_000;
+const IDLE_FETCH_TIMEOUT_MS = 800;
 const MAX_DISPLAY_LENGTH = 44;
 const INVALID_QUERY_CHARACTERS = /[^a-zA-Z0-9@._/\s-]+/g;
 const QUERY_SPLIT_REGEX = /\s+/;
@@ -337,47 +339,56 @@ function resolveSearchError(error: unknown, didTimeout: boolean) {
   return buildNetworkSearchError(error);
 }
 
-function useRegistrySearchMeta() {
+function useRegistrySearchMeta({ enabled }: { enabled: boolean }) {
   const [totalCount, setTotalCount] = useState<number | null>(null);
   const [metaError, setMetaError] = useState<SearchErrorState | null>(null);
   const [_retryToken, setRetryToken] = useState(0);
+  const hasLoadedRef = useRef(false);
 
   useEffect(() => {
+    if (!enabled || hasLoadedRef.current) {
+      return;
+    }
+
     let mounted = true;
     setMetaError(null);
 
-    fetch("/api/registry-search/meta")
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error("Failed to load search metadata.");
-        }
-        return response.json();
-      })
-      .then((data: { count?: number }) => {
-        if (!mounted) {
-          return;
-        }
-        setTotalCount(typeof data.count === "number" ? data.count : 0);
-      })
-      .catch((err: unknown) => {
-        if (!mounted) {
-          return;
-        }
-        setMetaError({
-          kind: "meta",
-          title: "Search metadata unavailable",
-          message:
-            err instanceof Error
-              ? err.message
-              : "Failed to load search metadata.",
-          actionLabel: "Retry",
+    const cancelIdle = scheduleIdleCallback(() => {
+      fetch("/api/registry-search/meta")
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error("Failed to load search metadata.");
+          }
+          return response.json();
+        })
+        .then((data: { count?: number }) => {
+          if (!mounted) {
+            return;
+          }
+          setTotalCount(typeof data.count === "number" ? data.count : 0);
+          hasLoadedRef.current = true;
+        })
+        .catch((err: unknown) => {
+          if (!mounted) {
+            return;
+          }
+          setMetaError({
+            kind: "meta",
+            title: "Search metadata unavailable",
+            message:
+              err instanceof Error
+                ? err.message
+                : "Failed to load search metadata.",
+            actionLabel: "Retry",
+          });
         });
-      });
+    }, IDLE_FETCH_TIMEOUT_MS);
 
     return () => {
       mounted = false;
+      cancelIdle();
     };
-  }, []);
+  }, [enabled]);
 
   return {
     totalCount,
@@ -386,38 +397,49 @@ function useRegistrySearchMeta() {
   };
 }
 
-function useRegistryDirectory() {
+function useRegistryDirectory({ enabled }: { enabled: boolean }) {
   const [registryDirectory, setRegistryDirectory] = useState<
     Record<string, RegistryDirectoryMeta>
   >({});
+  const hasLoadedRef = useRef(false);
 
   useEffect(() => {
+    if (!enabled || hasLoadedRef.current) {
+      return;
+    }
+
     let mounted = true;
 
-    fetch("/api/registry-directory")
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error("Failed to load registry directory.");
-        }
-        return response.json();
-      })
-      .then((data: { registries?: Record<string, RegistryDirectoryMeta> }) => {
-        if (!mounted) {
-          return;
-        }
-        setRegistryDirectory(data.registries ?? {});
-      })
-      .catch(() => {
-        if (!mounted) {
-          return;
-        }
-        setRegistryDirectory({});
-      });
+    const cancelIdle = scheduleIdleCallback(() => {
+      fetch("/api/registry-directory")
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error("Failed to load registry directory.");
+          }
+          return response.json();
+        })
+        .then(
+          (data: { registries?: Record<string, RegistryDirectoryMeta> }) => {
+            if (!mounted) {
+              return;
+            }
+            setRegistryDirectory(data.registries ?? {});
+            hasLoadedRef.current = true;
+          }
+        )
+        .catch(() => {
+          if (!mounted) {
+            return;
+          }
+          setRegistryDirectory({});
+        });
+    }, IDLE_FETCH_TIMEOUT_MS);
 
     return () => {
       mounted = false;
+      cancelIdle();
     };
-  }, []);
+  }, [enabled]);
 
   return registryDirectory;
 }
@@ -522,14 +544,14 @@ function RegistrySearchHero({ isVisible }: { isVisible: boolean }) {
           <div className="space-y-3">
             <div>
               <p className="text-heading-40 md:text-heading-48">
-                Search the shadcn index
+                Find the perfect component
               </p>
               <p className="text-heading-40 text-muted-foreground md:text-heading-48">
-                Find components, blocks, and hooks.
+                Search or describe what you need
               </p>
             </div>
             <p className="font-normal text-copy-16 text-muted-foreground">
-              Explore shadcn registries in one place.
+              AI-powered search across all shadcn registries
             </p>
           </div>
         </div>
@@ -580,7 +602,7 @@ function RegistrySearchEmptyState({
   }
 
   return (
-    <div className="flex size-full flex-col items-center justify-center">
+    <div className="flex size-full flex-col items-center justify-center py-3">
       <div className="flex max-w-md flex-col items-center gap-2 text-center">
         <div className="flex size-9 items-center justify-center rounded-md border border-border/70 bg-muted/30">
           <Search className="size-4 text-muted-foreground" />
@@ -599,7 +621,7 @@ function RegistrySearchSkeleton({ isVisible }: { isVisible: boolean }) {
   }
 
   return (
-    <section className="flex flex-col gap-2 md:gap-3">
+    <section className="flex flex-col gap-2 py-3 md:gap-3">
       <div className="flex flex-row items-center justify-between gap-2 md:gap-0">
         <Skeleton className="h-6 w-28" />
       </div>
@@ -643,7 +665,7 @@ function RegistrySearchResultsSection({
   }
 
   return (
-    <section className="flex flex-col gap-2 md:gap-3">
+    <section className="flex flex-col gap-2 py-3 md:gap-3">
       <div className="flex flex-row items-center justify-between gap-2 md:gap-0">
         <h2 className="font-semibold text-heading-16 text-lg md:text-2xl md:text-heading-24">
           All results
@@ -652,7 +674,7 @@ function RegistrySearchResultsSection({
           Showing {dedupedResults.length} results
         </span>
       </div>
-      <ItemGroup className="grid w-full grid-cols-1 gap-px overflow-hidden rounded-lg border border-border/60 bg-border/40">
+      <ItemGroup className="grid w-full grid-cols-1 gap-px overflow-hidden rounded-lg border border-border/60 bg-border/40 content-visibility-auto">
         {dedupedResults.map((result, index) => {
           const item = result.item;
           const displayTitle = item.title ?? item.name;
@@ -690,7 +712,7 @@ function RegistrySearchResultsSection({
                 )}
                 size="sm"
               >
-                <Link href={href}>
+                <Link href={href} prefetch={false}>
                   <ItemContent className="min-w-0">
                     <ItemTitle className="line-clamp-1 font-medium text-sm underline-offset-4 transition-colors group-hover/item:underline">
                       {renderHighlightedValue(displayTitle, trimmedQuery)}
@@ -735,7 +757,6 @@ function RegistrySearchView({
   showHero,
   searchMeta,
   inputMaxWidthClass,
-  isMetaReady: _isMetaReady,
   registryDirectory,
   error,
   onRetry,
@@ -750,7 +771,6 @@ function RegistrySearchView({
   showHero: boolean;
   searchMeta: ReactNode;
   inputMaxWidthClass?: string;
-  isMetaReady: boolean;
   registryDirectory: Record<string, RegistryDirectoryMeta>;
   error: SearchErrorState | null;
   onRetry: () => void;
@@ -766,7 +786,7 @@ function RegistrySearchView({
     <>
       <RegistrySearchHero isVisible={showHero} />
 
-      <div className="mx-auto flex max-w-screen-2xl flex-col gap-6 px-4 pt-3 pb-4 sm:px-5 md:px-12 lg:px-16 xl:px-32">
+      <div className="mx-auto flex max-w-screen-2xl flex-col gap-6 px-4 sm:px-5 md:px-12 lg:px-16 xl:px-32">
         <div className="relative flex min-h-full w-full flex-1 flex-col gap-6">
           <div className={cn("mx-auto w-full", inputMaxWidthClass)}>
             {searchMeta}
@@ -826,7 +846,6 @@ function deduplicateResults(
 }
 
 function computeDisplayState({
-  isMetaReady,
   hasRawQuery,
   isSearchResultsRoute,
   hasQuery,
@@ -835,7 +854,6 @@ function computeDisplayState({
   searchError,
   shouldCenterInput,
 }: {
-  isMetaReady: boolean;
   hasRawQuery: boolean;
   isSearchResultsRoute: boolean;
   hasQuery: boolean;
@@ -844,7 +862,7 @@ function computeDisplayState({
   searchError: SearchErrorState | null;
   shouldCenterInput: boolean;
 }) {
-  const showBeginState = isMetaReady && !hasRawQuery && isSearchResultsRoute;
+  const showBeginState = !hasRawQuery && isSearchResultsRoute;
   const showSanitizedState = hasRawQuery && !hasQuery;
   const showNoResultsState =
     hasQuery && !isSearching && resultsLength === 0 && !searchError;
@@ -867,7 +885,12 @@ export function RegistrySearch() {
   const pathname = usePathname();
   const searchParams = useSearchParams();
   const queryFromParams = searchParams.get("q") ?? "";
-  const { totalCount, metaError, retry: retryMeta } = useRegistrySearchMeta();
+  const isHomeRoute = pathname === "/";
+  const isSearchResultsRoute = pathname?.startsWith("/search") ?? false;
+  const isSearchRoute = isHomeRoute || isSearchResultsRoute;
+  const { metaError, retry: retryMeta } = useRegistrySearchMeta({
+    enabled: isSearchResultsRoute,
+  });
   const {
     results,
     isSearching,
@@ -876,22 +899,19 @@ export function RegistrySearch() {
     trimmedQuery,
     retry: retrySearch,
   } = useRegistrySearchResults(queryFromParams);
-  const registryDirectory = useRegistryDirectory();
-  const isHomeRoute = pathname === "/";
-  const isSearchResultsRoute = pathname?.startsWith("/search") ?? false;
-  const isSearchRoute = isHomeRoute || isSearchResultsRoute;
+  const registryDirectory = useRegistryDirectory({
+    enabled: trimmedQuery.length > 0 || isSearching,
+  });
 
   const dedupedResults = useMemo(() => deduplicateResults(results), [results]);
   const hasQuery = trimmedQuery.length > 0;
   const hasRawQuery = queryFromParams.trim().length > 0;
-  const error = metaError ?? searchError;
-  const isMetaReady = totalCount !== null;
+  const error = hasQuery ? (metaError ?? searchError) : searchError;
   const showSanitizedHint = hasInvalidCharacters && queryFromParams.length > 0;
   const shouldCenterInput = isHomeRoute && !hasRawQuery;
   const inputMaxWidthClass = "max-w-[520px]";
 
   const displayState = computeDisplayState({
-    isMetaReady,
     hasRawQuery,
     isSearchResultsRoute,
     hasQuery,
@@ -929,7 +949,6 @@ export function RegistrySearch() {
       dedupedResults={dedupedResults}
       error={error}
       inputMaxWidthClass={inputMaxWidthClass}
-      isMetaReady={isMetaReady}
       onRetry={handleRetry}
       registryDirectory={registryDirectory}
       searchMeta={searchMetaNode}

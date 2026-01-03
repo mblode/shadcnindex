@@ -28,12 +28,13 @@ export function SiteHeader() {
       </div>
 
       <div
-        className={cn({
-          "order-1 flex w-full items-center justify-center border-0 border-border border-t border-solid px-4 py-3 md:order-none md:border-none md:px-5 md:py-0":
-            !isHomeRoute,
-          "absolute top-[calc(50vh+10px)] left-1/2 z-20 w-[min(520px,90vw)] -translate-x-1/2 translate-y-0":
-            isHomeRoute,
-        })}
+        className={cn(
+          "order-1 flex w-full items-center justify-center border-0 border-border border-t border-solid px-4 py-3 md:order-none md:border-none md:px-5 md:py-0",
+          {
+            "md:absolute md:top-[calc(50vh+10px)] md:left-1/2 md:z-20 md:w-[min(520px,90vw)] md:-translate-x-1/2 md:translate-y-0":
+              isHomeRoute,
+          }
+        )}
       >
         <div className="w-full min-w-0 max-w-[520px]">
           <RegistrySearchHeaderInput />

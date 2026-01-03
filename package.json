@@ -17,6 +17,8 @@
     "crawl-registries": "tsx scripts/crawl-registries.ts",
     "update-registries": "tsx scripts/update-registries.ts",
     "build-local-index": "tsx scripts/build-local-index.ts",
+    "registry:inventory": "tsx scripts/build-registry-inventory.ts",
+    "registry:docs": "tsx scripts/discover-registry-docs.ts",
     "registry:embed": "tsx scripts/index-registry-embeddings.ts",
     "registry:sync": "npm run update-registries && npm run crawl-registries && npm run build-local-index && npm run registry:embed",
     "prepare": "husky",
