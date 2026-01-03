@@ -41,8 +41,8 @@ var transformers = [
           node.properties.__bun__ = raw.replace("npm run", "bun");
         }
       }
-    }
-  }
+    },
+  },
 ];
 
 // source.config.ts
@@ -55,17 +55,17 @@ var source_config_default = defineConfig({
         {
           theme: {
             dark: "github-dark",
-            light: "github-light-default"
+            light: "github-light-default",
           },
-          transformers
-        }
+          transformers,
+        },
       ]);
       return plugins;
-    }
-  }
+    },
+  },
 });
 var docs = defineDocs({
-  dir: "content/docs"
+  dir: "content/docs",
   // TODO: Fix this when we upgrade to zod v4.
   // docs: {
   //   schema: frontmatterSchema.extend({
@@ -78,7 +78,4 @@ var docs = defineDocs({
   //   }),
   // },
 });
-export {
-  source_config_default as default,
-  docs
-};
+export { source_config_default as default, docs };
