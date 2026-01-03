@@ -1,3 +1,4 @@
+import { GoogleAnalytics } from "@next/third-parties/google";
 import type { Metadata } from "next";
 import { NuqsAdapter } from "nuqs/adapters/next/app";
 import { ActiveThemeProvider } from "@/components/active-theme";
@@ -127,11 +128,7 @@ export default function RootLayout({
         />
         <meta content={META_THEME_COLORS.light} name="theme-color" />
       </head>
-      <body
-        className={cn(
-          "group/body overscroll-none antialiased [--footer-height:calc(var(--spacing)*14)] [--header-height:calc(var(--spacing)*14)] xl:[--footer-height:calc(var(--spacing)*24)]"
-        )}
-      >
+      <body className={cn("group/body antialiased")}>
         <JsonLd data={organizationJsonLd} />
         <JsonLd data={websiteJsonLd} />
         <ThemeProvider>
@@ -147,6 +144,7 @@ export default function RootLayout({
           </LayoutProvider>
         </ThemeProvider>
       </body>
+      <GoogleAnalytics gaId="G-6Q5MMMS1TB" />
     </html>
   );
 }

@@ -17,7 +17,7 @@
     "crawl-registries": "tsx scripts/crawl-registries.ts",
     "update-registries": "tsx scripts/update-registries.ts",
     "build-local-index": "tsx scripts/build-local-index.ts",
-    "registry:embed": "node apps/web/scripts/index-registry-embeddings.mjs",
+    "registry:embed": "tsx scripts/index-registry-embeddings.ts",
     "registry:sync": "npm run update-registries && npm run crawl-registries && npm run build-local-index && npm run registry:embed",
     "prepare": "husky",
     "test": "echo \"Error: no test specified\" && exit 1"

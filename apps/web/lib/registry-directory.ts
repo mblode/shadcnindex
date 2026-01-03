@@ -17,9 +17,6 @@ export interface RegistryDirectoryMeta {
 }
 
 const DIRECTORY_CANDIDATES = [
-  path.join(process.cwd(), "apps", "web", "data", "registry-directory.json"),
-  path.join(process.cwd(), "data", "registry-directory.json"),
-  path.join(process.cwd(), "registry-directory.json"),
   path.resolve(
     process.cwd(),
     "..",
@@ -29,6 +26,9 @@ const DIRECTORY_CANDIDATES = [
     "registry",
     "directory.json"
   ),
+  path.join(process.cwd(), "apps", "web", "data", "registry-directory.json"),
+  path.join(process.cwd(), "data", "registry-directory.json"),
+  path.join(process.cwd(), "registry-directory.json"),
 ];
 
 let cachedDirectoryMap: Record<string, RegistryDirectoryMeta> | null = null;

@@ -75,18 +75,20 @@ export default function SearchLayout({
   modal: React.ReactNode;
 }) {
   return (
-    <div className="flex min-h-0 flex-1 flex-col overflow-hidden font-['Geist']">
+    <>
       <JsonLd data={faqJsonLd} />
-      <main
-        className="flex min-h-0 flex-1 flex-col justify-center overflow-y-auto overflow-x-hidden bg-background-200"
-        id="domains-main-scroll"
-      >
-        <div className="mx-auto flex min-h-full max-w-screen-2xl flex-col gap-6 px-4 pt-3 pb-10 sm:px-5 md:px-12 lg:px-16 xl:px-32">
+
+      <div className="size-full min-h-full">
+        <main
+          className="absolute top-[123px] h-[calc(100dvh-123px)] w-full flex-1 overflow-y-auto overflow-x-hidden bg-background md:top-[65px] md:h-[calc(100dvh-65px)]"
+          id="domains-main-scroll"
+        >
           <RegistrySearch />
           {children}
-        </div>
-      </main>
+        </main>
+      </div>
+
       {modal}
-    </div>
+    </>
   );
 }

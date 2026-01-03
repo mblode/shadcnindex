@@ -3,12 +3,9 @@ import { SiteHeader } from "@/components/site-header";
 
 export default function AppLayout({ children }: { children: React.ReactNode }) {
   return (
-    <div
-      className="relative z-10 flex min-h-svh flex-col bg-background"
-      data-slot="layout"
-    >
+    <div className="flex size-full flex-col overflow-hidden" data-slot="layout">
       <SiteHeader />
-      <main className="flex flex-1 flex-col">{children}</main>
+      {children}
       <SiteFooter />
     </div>
   );

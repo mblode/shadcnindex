@@ -1,36 +1,22 @@
 "use client";
-import { Search, X } from "lucide-react";
+import { Search } from "lucide-react";
 import Link from "next/link";
-import { usePathname, useRouter, useSearchParams } from "next/navigation";
-import {
-  type ReactNode,
-  useEffect,
-  useMemo,
-  useRef,
-  useState,
-  useTransition,
-} from "react";
-import { createPortal } from "react-dom";
+import { usePathname, useSearchParams } from "next/navigation";
+import { type ReactNode, useEffect, useMemo, useRef, useState } from "react";
 
 import { toRegistrySlug } from "@/lib/registry-slug";
 import { toRegistryTypeLabel } from "@/lib/registry-type";
 import { cn } from "@/lib/utils";
 import { Badge } from "@/registry/new-york-v4/ui/badge";
 import {
-  InputGroup,
-  InputGroupAddon,
-  InputGroupButton,
-  InputGroupInput,
-} from "@/registry/new-york-v4/ui/input-group";
-import {
   Item,
   ItemContent,
   ItemDescription,
   ItemGroup,
+  ItemMedia,
   ItemTitle,
 } from "@/registry/new-york-v4/ui/item";
 import { Skeleton } from "@/registry/new-york-v4/ui/skeleton";
-import { Spinner } from "@/registry/new-york-v4/ui/spinner";
 
 interface RegistryIndexFile {
   path: string;
@@ -71,7 +57,7 @@ const INVALID_QUERY_CHARACTERS = /[^a-zA-Z0-9@._/\s-]+/g;
 const QUERY_SPLIT_REGEX = /\s+/;
 const NORMALIZE_SPACES_REGEX = /\s+/g;
 const LIST_SKELETON_KEYS = Array.from(
-  { length: 80 },
+  { length: 5 },
   (_, index) => `list-skeleton-${index}`
 );
 
@@ -524,85 +510,6 @@ function useRegistrySearchResults(query: string) {
   };
 }
 
-function useSearchHeaderSlot() {
-  const [headerSlot, setHeaderSlot] = useState<HTMLElement | null>(null);
-
-  useEffect(() => {
-    setHeaderSlot(document.getElementById("registry-search-slot"));
-  }, []);
-
-  return headerSlot;
-}
-
-function useSearchInputFocus(inputRef: React.RefObject<HTMLInputElement>) {
-  const [isInputFocused, setIsInputFocused] = useState(false);
-
-  useEffect(() => {
-    const input = inputRef.current;
-    if (!input) {
-      return;
-    }
-
-    const focusInput = () => {
-      if (document.activeElement !== input) {
-        input.focus();
-      }
-    };
-
-    focusInput();
-    const timeoutId = window.setTimeout(focusInput, 0);
-
-    const handleFocus = () => setIsInputFocused(true);
-    const handleBlur = () => setIsInputFocused(false);
-
-    input.addEventListener("focus", handleFocus);
-    input.addEventListener("blur", handleBlur);
-
-    return () => {
-      window.clearTimeout(timeoutId);
-      input.removeEventListener("focus", handleFocus);
-      input.removeEventListener("blur", handleBlur);
-    };
-  }, [inputRef.current]);
-
-  return isInputFocused;
-}
-
-function useCmdFShortcut(inputRef: React.RefObject<HTMLInputElement>) {
-  const [isCmdFActive, setIsCmdFActive] = useState(false);
-
-  useEffect(() => {
-    const handleKeyDown = (event: KeyboardEvent) => {
-      const isCmdF =
-        (event.metaKey || event.ctrlKey) && event.key.toLowerCase() === "f";
-      if (!isCmdF) {
-        return;
-      }
-
-      event.preventDefault();
-      setIsCmdFActive(true);
-      inputRef.current?.focus();
-    };
-
-    const handleKeyUp = (event: KeyboardEvent) => {
-      const key = event.key.toLowerCase();
-      if (key === "f" || key === "meta" || key === "control") {
-        setIsCmdFActive(false);
-      }
-    };
-
-    window.addEventListener("keydown", handleKeyDown);
-    window.addEventListener("keyup", handleKeyUp);
-
-    return () => {
-      window.removeEventListener("keydown", handleKeyDown);
-      window.removeEventListener("keyup", handleKeyUp);
-    };
-  }, [inputRef.current?.focus]);
-
-  return isCmdFActive;
-}
-
 function RegistrySearchHero({ isVisible }: { isVisible: boolean }) {
   if (!isVisible) {
     return null;
@@ -626,51 +533,6 @@ function RegistrySearchHero({ isVisible }: { isVisible: boolean }) {
             </p>
           </div>
         </div>
-      </div>
-    </div>
-  );
-}
-
-type SearchInputVariant = "centered" | "inline";
-
-function RegistrySearchInputSection({
-  isVisible,
-  searchInput,
-  searchMeta,
-  maxWidthClass,
-  variant,
-  isSticky,
-}: {
-  isVisible: boolean;
-  searchInput: ReactNode;
-  searchMeta: ReactNode;
-  maxWidthClass?: string;
-  variant: SearchInputVariant;
-  isSticky?: boolean;
-}) {
-  if (!isVisible) {
-    return null;
-  }
-
-  if (variant === "centered") {
-    return (
-      <div className="absolute top-[calc(50vh+10px)] left-1/2 z-20 w-[min(520px,90vw)] -translate-x-1/2">
-        <div className="flex flex-col items-center gap-3">{searchInput}</div>
-      </div>
-    );
-  }
-
-  return (
-    <div
-      className={cn(
-        "flex w-full flex-col items-center",
-        isSticky &&
-          "sticky top-0 z-20 bg-background-200/80 py-3 backdrop-blur supports-[backdrop-filter]:bg-background-200/70"
-      )}
-    >
-      <div className={cn("w-full", maxWidthClass)}>
-        {searchInput}
-        {searchMeta}
       </div>
     </div>
   );
@@ -811,11 +673,12 @@ function RegistrySearchResultsSection({
             : registryTitle;
           const typeLabel = toRegistryTypeLabel(item.type);
           const registryLogoMarkup = registryMeta?.logo ?? null;
-          const registryLogo = registryLogoMarkup?.trim();
+          const registryLogo =
+            typeof registryLogoMarkup === "string"
+              ? registryLogoMarkup.trim()
+              : "";
           const shouldRenderLogo =
-            typeof registryLogo === "string" &&
-            registryLogo.startsWith("<svg") &&
-            registryLogo.includes("</svg>");
+            registryLogo.startsWith("<svg") && registryLogo.includes("</svg>");
 
           return (
             <div key={item.id}>
@@ -844,10 +707,12 @@ function RegistrySearchResultsSection({
                   <div className="ml-auto flex flex-wrap items-center gap-2">
                     <Badge title={registryTooltip} variant="outline">
                       {shouldRenderLogo ? (
-                        <span
+                        <ItemMedia
                           aria-hidden="true"
-                          className="flex size-3 items-center justify-center text-foreground [&>svg]:size-3 [&>svg]:shrink-0"
+                          className="size-3 bg-transparent grayscale [&_svg]:size-3 [&_svg]:fill-foreground"
+                          // biome-ignore lint/security/noDangerouslySetInnerHtml: SVGs are sourced from a trusted registry directory file.
                           dangerouslySetInnerHTML={{ __html: registryLogo }}
+                          variant="default"
                         />
                       ) : null}
                       <span>{registryLabel}</span>
@@ -867,14 +732,9 @@ function RegistrySearchResultsSection({
 }
 
 function RegistrySearchView({
-  headerSearchNode,
   showHero,
-  shouldRenderSearchInline,
-  searchInput,
   searchMeta,
   inputMaxWidthClass,
-  inputVariant,
-  isStickyInput,
   isMetaReady: _isMetaReady,
   registryDirectory,
   error,
@@ -887,14 +747,9 @@ function RegistrySearchView({
   dedupedResults,
   trimmedQuery,
 }: {
-  headerSearchNode: ReactNode;
   showHero: boolean;
-  shouldRenderSearchInline: boolean;
-  searchInput: ReactNode;
   searchMeta: ReactNode;
   inputMaxWidthClass?: string;
-  inputVariant: SearchInputVariant;
-  isStickyInput?: boolean;
   isMetaReady: boolean;
   registryDirectory: Record<string, RegistryDirectoryMeta>;
   error: SearchErrorState | null;
@@ -908,48 +763,46 @@ function RegistrySearchView({
   trimmedQuery: string;
 }) {
   return (
-    <div className="relative flex min-h-full w-full flex-1 flex-col gap-6">
-      {headerSearchNode}
+    <>
       <RegistrySearchHero isVisible={showHero} />
-      <RegistrySearchInputSection
-        isSticky={isStickyInput}
-        isVisible={shouldRenderSearchInline}
-        maxWidthClass={inputMaxWidthClass}
-        searchInput={searchInput}
-        searchMeta={searchMeta}
-        variant={inputVariant}
-      />
-      <div className={cn("mx-auto w-full", inputMaxWidthClass)}>
-        <RegistrySearchErrorNotice error={error} onRetry={onRetry} />
-        <RegistrySearchEmptyState
-          description={
-            <>
-              {"Enter a component name, keyword, or registry namespace"}
-              <br />
-              {"to see results instantly."}
-            </>
-          }
-          isVisible={showBeginState}
-          title="Begin your search"
-        />
-        <RegistrySearchEmptyState
-          description="Try letters, numbers, or a registry namespace query."
-          isVisible={showSanitizedState}
-          title="We filtered unsupported characters"
-        />
-        <RegistrySearchEmptyState
-          description="Try a broader keyword or search the registry namespace directly."
-          isVisible={showNoResultsState}
-          title="No results found"
-        />
+
+      <div className="mx-auto flex max-w-screen-2xl flex-col gap-6 px-4 pt-3 pb-4 sm:px-5 md:px-12 lg:px-16 xl:px-32">
+        <div className="relative flex min-h-full w-full flex-1 flex-col gap-6">
+          <div className={cn("mx-auto w-full", inputMaxWidthClass)}>
+            {searchMeta}
+            <RegistrySearchErrorNotice error={error} onRetry={onRetry} />
+            <RegistrySearchEmptyState
+              description={
+                <>
+                  {"Enter a component name, keyword, or registry namespace"}
+                  <br />
+                  {"to see results instantly."}
+                </>
+              }
+              isVisible={showBeginState}
+              title="Begin your search"
+            />
+            <RegistrySearchEmptyState
+              description="Try letters, numbers, or a registry namespace query."
+              isVisible={showSanitizedState}
+              title="We filtered unsupported characters"
+            />
+            <RegistrySearchEmptyState
+              description="Try a broader keyword or search the registry namespace directly."
+              isVisible={showNoResultsState}
+              title="No results found"
+            />
+          </div>
+          <RegistrySearchSkeleton isVisible={showSkeleton} />
+          <RegistrySearchResultsSection
+            dedupedResults={dedupedResults}
+            isVisible={showResults}
+            registryDirectory={registryDirectory}
+            trimmedQuery={trimmedQuery}
+          />
+        </div>
       </div>
-      <RegistrySearchSkeleton isVisible={showSkeleton} />
-      <RegistrySearchResultsSection
-        dedupedResults={dedupedResults}
-        isVisible={showResults}
-        trimmedQuery={trimmedQuery}
-      />
-    </div>
+    </>
   );
 }
 
@@ -981,7 +834,6 @@ function computeDisplayState({
   resultsLength,
   searchError,
   shouldCenterInput,
-  shouldRenderSearchInline,
 }: {
   isMetaReady: boolean;
   hasRawQuery: boolean;
@@ -991,7 +843,6 @@ function computeDisplayState({
   resultsLength: number;
   searchError: SearchErrorState | null;
   shouldCenterInput: boolean;
-  shouldRenderSearchInline: boolean;
 }) {
   const showBeginState = isMetaReady && !hasRawQuery && isSearchResultsRoute;
   const showSanitizedState = hasRawQuery && !hasQuery;
@@ -999,7 +850,6 @@ function computeDisplayState({
     hasQuery && !isSearching && resultsLength === 0 && !searchError;
   const showResults = hasQuery && resultsLength > 0;
   const showHero = shouldCenterInput;
-  const shouldStickInput = isSearchResultsRoute && shouldRenderSearchInline;
   const showResultsSkeleton =
     hasQuery && isSearching && resultsLength === 0 && !searchError;
 
@@ -1009,81 +859,14 @@ function computeDisplayState({
     showNoResultsState,
     showResults,
     showHero,
-    shouldStickInput,
     showResultsSkeleton,
   };
 }
 
-function createSearchInputElement(
-  query: string,
-  isSearching: boolean,
-  inputRef: React.RefObject<HTMLInputElement>,
-  updateQuery: (value: string) => void
-) {
-  return (
-    <InputGroup className="h-12 w-full">
-      <InputGroupAddon align="inline-start">
-        <Search className="size-4" />
-      </InputGroupAddon>
-      <InputGroupInput
-        autoComplete="off"
-        autoFocus
-        name="q"
-        onChange={(event) => updateQuery(event.target.value)}
-        placeholder="Search a component, keyword, or registry…"
-        ref={inputRef}
-        value={query}
-      />
-      {isSearching || query ? (
-        <InputGroupAddon align="inline-end" className="gap-2">
-          {isSearching ? (
-            <Spinner aria-hidden="true" className="text-muted-foreground" />
-          ) : null}
-          {query ? (
-            <InputGroupButton
-              aria-label="Clear search"
-              onClick={() => updateQuery("")}
-              size="icon-xs"
-              variant="ghost"
-            >
-              <X className="size-3.5" />
-            </InputGroupButton>
-          ) : null}
-        </InputGroupAddon>
-      ) : null}
-    </InputGroup>
-  );
-}
-
-function createHeaderSearchContent(
-  inputVariant: SearchInputVariant,
-  searchInput: ReactNode,
-  isHomeRoute: boolean,
-  searchMeta: ReactNode,
-  inputMaxWidthClass: string
-) {
-  if (inputVariant === "centered") {
-    return (
-      <div className="absolute top-[calc(50vh+10px)] left-1/2 z-20 w-[min(520px,90vw)] -translate-x-1/2">
-        <div className="flex flex-col items-center gap-3">{searchInput}</div>
-      </div>
-    );
-  }
-
-  return (
-    <div className={cn("mx-auto w-full", inputMaxWidthClass)}>
-      {searchInput}
-      {isHomeRoute ? null : searchMeta}
-    </div>
-  );
-}
-
 export function RegistrySearch() {
-  const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
   const queryFromParams = searchParams.get("q") ?? "";
-  const [query, setQuery] = useState(queryFromParams);
   const { totalCount, metaError, retry: retryMeta } = useRegistrySearchMeta();
   const {
     results,
@@ -1092,37 +875,20 @@ export function RegistrySearch() {
     hasInvalidCharacters,
     trimmedQuery,
     retry: retrySearch,
-  } = useRegistrySearchResults(query);
-  const [_isPending, startTransition] = useTransition();
-  const inputRef = useRef<HTMLInputElement | null>(null);
-  const _isInputFocused = useSearchInputFocus(inputRef);
-  const _isCmdFActive = useCmdFShortcut(inputRef);
-  const headerSlot = useSearchHeaderSlot();
+  } = useRegistrySearchResults(queryFromParams);
+  const registryDirectory = useRegistryDirectory();
   const isHomeRoute = pathname === "/";
   const isSearchResultsRoute = pathname?.startsWith("/search") ?? false;
-  const isModalRoute = pathname?.startsWith("/components") ?? false;
-  const hasSearchParam = queryFromParams.trim().length > 0;
   const isSearchRoute = isHomeRoute || isSearchResultsRoute;
-
-  useEffect(() => {
-    setQuery(queryFromParams);
-  }, [queryFromParams]);
 
   const dedupedResults = useMemo(() => deduplicateResults(results), [results]);
   const hasQuery = trimmedQuery.length > 0;
-  const hasRawQuery = query.trim().length > 0;
+  const hasRawQuery = queryFromParams.trim().length > 0;
   const error = metaError ?? searchError;
   const isMetaReady = totalCount !== null;
-  const showSanitizedHint = hasInvalidCharacters && query.length > 0;
+  const showSanitizedHint = hasInvalidCharacters && queryFromParams.length > 0;
   const shouldCenterInput = isHomeRoute && !hasRawQuery;
-  const shouldRenderSearchInHeader = Boolean(
-    headerSlot && (isSearchRoute || (isModalRoute && hasSearchParam))
-  );
-  const shouldRenderSearchInline = !shouldRenderSearchInHeader;
   const inputMaxWidthClass = "max-w-[520px]";
-  const inputVariant: SearchInputVariant = shouldCenterInput
-    ? "centered"
-    : "inline";
 
   const displayState = computeDisplayState({
     isMetaReady,
@@ -1133,7 +899,6 @@ export function RegistrySearch() {
     resultsLength: results.length,
     searchError,
     shouldCenterInput,
-    shouldRenderSearchInline,
   });
 
   function handleRetry() {
@@ -1147,38 +912,6 @@ export function RegistrySearch() {
     }
   }
 
-  function updateQuery(nextValue: string) {
-    setQuery(nextValue);
-    const trimmed = nextValue.trim();
-    const target = trimmed
-      ? `/search?q=${encodeURIComponent(trimmed)}`
-      : "/search";
-
-    let currentTarget: string;
-    if (pathname?.startsWith("/search")) {
-      currentTarget = queryFromParams
-        ? `/search?q=${encodeURIComponent(queryFromParams)}`
-        : "/search";
-    } else {
-      currentTarget = pathname ?? "/";
-    }
-
-    if (target === currentTarget) {
-      return;
-    }
-
-    startTransition(() => {
-      router.replace(target, { scroll: false });
-    });
-  }
-
-  const searchInput = createSearchInputElement(
-    query,
-    isSearching,
-    inputRef,
-    updateQuery
-  );
-
   const searchMeta = showSanitizedHint ? (
     <p
       className={cn(
@@ -1189,39 +922,17 @@ export function RegistrySearch() {
       {"Unsupported characters are ignored in results."}
     </p>
   ) : null;
-  const searchMetaNode =
-    shouldRenderSearchInline && !isHomeRoute ? searchMeta : null;
-
-  const headerSearchContent =
-    inputVariant === "centered" ? (
-      <div className="absolute top-[calc(50vh+10px)] left-1/2 z-20 w-[min(520px,90vw)] -translate-x-1/2">
-        <div className="flex flex-col items-center gap-3">{searchInput}</div>
-      </div>
-    ) : (
-      <div className={cn("mx-auto w-full", inputMaxWidthClass)}>
-        {searchInput}
-        {isHomeRoute ? null : searchMeta}
-      </div>
-    );
-
-  const headerSearchNode =
-    shouldRenderSearchInHeader && headerSlot
-      ? createPortal(headerSearchContent, headerSlot)
-      : null;
+  const searchMetaNode = isHomeRoute ? null : searchMeta;
 
   return (
     <RegistrySearchView
       dedupedResults={dedupedResults}
       error={error}
-      headerSearchNode={headerSearchNode}
       inputMaxWidthClass={inputMaxWidthClass}
-      inputVariant={inputVariant}
       isMetaReady={isMetaReady}
-      isStickyInput={displayState.shouldStickInput}
       onRetry={handleRetry}
-      searchInput={searchInput}
+      registryDirectory={registryDirectory}
       searchMeta={searchMetaNode}
-      shouldRenderSearchInline={shouldRenderSearchInline}
       showBeginState={displayState.showBeginState}
       showHero={displayState.showHero}
       showNoResultsState={displayState.showNoResultsState}

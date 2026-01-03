@@ -16,6 +16,10 @@ import { JsonLd } from "@/components/json-ld";
 import { RegistryComponentSource } from "@/components/registry-component-source";
 import { RegistryLivePreview } from "@/components/registry-live-preview";
 import { siteConfig } from "@/lib/config";
+import {
+  getRegistryDirectoryMap,
+  type RegistryDirectoryMeta,
+} from "@/lib/registry-directory";
 import { getLocalRegistryIndex } from "@/lib/registry-local-index";
 import {
   getRegistryOutputItem,
@@ -30,6 +34,7 @@ import { toRegistryTypeLabel } from "@/lib/registry-type";
 import { getSiteUrl, toAbsoluteUrl } from "@/lib/seo";
 import { Badge } from "@/registry/new-york-v4/ui/badge";
 import { Button } from "@/registry/new-york-v4/ui/button";
+import { ItemMedia } from "@/registry/new-york-v4/ui/item";
 import {
   TabsContent,
   TabsList,
@@ -65,6 +70,11 @@ export async function RegistryComponentPageContent(props: {
   const indexItem = localIndex.items?.find((entry) => entry.id === item.id);
   const tags = indexItem?.tags ?? [];
   const registryNamespace = toRegistrySlug(item.registry.namespace);
+  const registryDirectory = await getRegistryDirectoryMap();
+  const registryMeta =
+    registryDirectory[item.registry.namespace] ??
+    registryDirectory[registryNamespace] ??
+    null;
   const typeLabel = toRegistryTypeLabel(
     item.component.type ?? item.registryItem?.type ?? null
   );
@@ -136,6 +146,7 @@ export async function RegistryComponentPageContent(props: {
             links={links}
             navigation={navigation}
             pageUrl={pageUrl}
+            registryMeta={registryMeta}
             registryNamespace={registryNamespace}
             tags={tags}
             title={pageData.title}
@@ -257,6 +268,7 @@ function RegistryComponentHeader({
   navigation,
   links,
   pageUrl,
+  registryMeta,
   registryNamespace,
   tags: _tags,
   type,
@@ -269,6 +281,7 @@ function RegistryComponentHeader({
   navigation: RegistryNavigationLinks;
   links: RegistryComponentLinks | null;
   pageUrl: string;
+  registryMeta: RegistryDirectoryMeta | null;
   registryNamespace: string;
   tags: string[];
   type: string | null;
@@ -304,6 +317,7 @@ function RegistryComponentHeader({
 
         <RegistryComponentLinksList
           links={links}
+          registryMeta={registryMeta}
           registryNamespace={registryNamespace}
           type={type}
         />
@@ -373,14 +387,27 @@ function RegistryComponentLinksList({
   links,
   type,
   registryNamespace,
+  registryMeta,
 }: {
   links: RegistryComponentLinks | null;
   type: string | null;
   registryNamespace: string;
+  registryMeta: RegistryDirectoryMeta | null;
 }) {
   if (!links) {
     return null;
   }
+
+  const registryTitle = registryMeta?.title ?? registryNamespace;
+  const registryDescription = registryMeta?.description ?? null;
+  const registryTooltip = registryDescription
+    ? `${registryTitle} — ${registryDescription}`
+    : registryTitle;
+  const registryLogoMarkup = registryMeta?.logo ?? null;
+  const registryLogo =
+    typeof registryLogoMarkup === "string" ? registryLogoMarkup.trim() : "";
+  const shouldRenderLogo =
+    registryLogo.startsWith("<svg") && registryLogo.includes("</svg>");
 
   return (
     <div className="flex items-center gap-2 pt-4">
@@ -400,7 +427,18 @@ function RegistryComponentLinksList({
       ) : null}
 
       <div className="flex flex-wrap items-center gap-2 text-xs">
-        <Badge variant="secondary">{registryNamespace}</Badge>
+        <Badge title={registryTooltip} variant="secondary">
+          {shouldRenderLogo ? (
+            <ItemMedia
+              aria-hidden="true"
+              className="size-3 bg-transparent grayscale [&_svg]:size-3 [&_svg]:fill-foreground"
+              // biome-ignore lint/security/noDangerouslySetInnerHtml: SVGs are sourced from a trusted registry directory file.
+              dangerouslySetInnerHTML={{ __html: registryLogo }}
+              variant="default"
+            />
+          ) : null}
+          <span>{registryNamespace}</span>
+        </Badge>
         {type ? <Badge variant="outline">{type}</Badge> : null}
       </div>
     </div>
