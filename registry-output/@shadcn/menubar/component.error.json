@@ -1,0 +1,18 @@
+{
+  "registry": "@shadcn",
+  "component": "menubar",
+  "url": "https://ui.shadcn.com/r/menubar.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "menubar",
+    "type": "registry:ui",
+    "dependencies": ["@radix-ui/react-menubar"],
+    "files": [
+      {
+        "path": "ui/menubar.tsx",
+        "type": "registry:ui"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-03T07:39:45.735Z"
+}

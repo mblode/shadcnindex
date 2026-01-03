@@ -1,16 +1,13 @@
 import { NextResponse } from "next/server";
 
 import { embedSearchQuery } from "@/lib/embeddings";
-import {
-  getLocalRegistryIndex,
-  type RegistryIndexItem,
-} from "@/lib/registry-local-index";
+import type { RegistryIndexItem } from "@/lib/registry-local-index";
 import { getSupabaseAdmin } from "@/lib/supabase-admin";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
-const MAX_RESULTS = 200;
+const MAX_RESULTS = 100;
 const DEFAULT_RESULTS = 80;
 const DEFAULT_DISTANCE_THRESHOLD = 0.75;
 
@@ -97,89 +94,28 @@ export async function GET(request: Request) {
       };
     });
 
+    const uniqueResults = dedupeResults(results ?? []);
+
     return NextResponse.json({
-      results: results ?? [],
-      total: results?.length ?? 0,
+      results: uniqueResults,
+      total: uniqueResults.length,
     });
-  } catch {
-    const fallback = await searchLocalIndex(query, limit);
-    return NextResponse.json({
-      results: fallback,
-      total: fallback.length,
-    });
+  } catch (error) {
+    const message = error instanceof Error ? error.message : "Search failed.";
+    return NextResponse.json({ error: message }, { status: 503 });
   }
 }
 
-async function searchLocalIndex(query: string, limit: number) {
-  const index = await getLocalRegistryIndex();
-  const items = index.items ?? [];
-  const tokens = tokenizeQuery(query);
-
-  const results = items
-    .map((item) => {
-      const score = scoreItem(item, tokens);
-      return score > 0 ? { item, similarity: score } : null;
-    })
-    .filter((result): result is { item: RegistryIndexItem; similarity: number } =>
-      Boolean(result)
-    )
-    .sort((a, b) => b.similarity - a.similarity)
-    .slice(0, limit);
-
-  return results;
-}
-
-function tokenizeQuery(query: string) {
-  const tokens = query
-    .toLowerCase()
-    .split(/\s+/)
-    .map((token) => token.trim())
-    .filter((token) => token.length >= 2);
-
-  if (tokens.length > 0) {
-    return tokens;
-  }
-
-  const fallback = query.trim().toLowerCase();
-  return fallback ? [fallback] : [];
-}
-
-function scoreItem(item: RegistryIndexItem, tokens: string[]) {
-  if (tokens.length === 0) {
-    return 0;
-  }
-
-  const name = item.name.toLowerCase();
-  const title = (item.title ?? "").toLowerCase();
-  const description = (item.description ?? "").toLowerCase();
-  const namespace = item.registry.namespace.toLowerCase();
-  const tags = (item.tags ?? []).map((tag) => tag.toLowerCase());
-
-  let score = 0;
-
-  for (const token of tokens) {
-    if (name.includes(token)) {
-      score += 6;
-      if (name.startsWith(token)) {
-        score += 2;
-      }
+function dedupeResults(
+  results: Array<{ item: RegistryIndexItem; similarity: number }>
+) {
+  const seen = new Set<string>();
+  return results.filter((result) => {
+    const key = result.item.id;
+    if (seen.has(key)) {
+      return false;
     }
-    if (title.includes(token)) {
-      score += 4;
-      if (title.startsWith(token)) {
-        score += 1;
-      }
-    }
-    if (namespace.includes(token)) {
-      score += 3;
-    }
-    if (description.includes(token)) {
-      score += 1;
-    }
-    if (tags.some((tag) => tag.includes(token))) {
-      score += 2;
-    }
-  }
-
-  return score;
+    seen.add(key);
+    return true;
+  });
 }

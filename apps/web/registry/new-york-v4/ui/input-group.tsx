@@ -130,6 +130,7 @@ function InputGroupText({ className, ...props }: React.ComponentProps<"span">) {
 
 function InputGroupInput({
   className,
+  ref: inputRef,
   ...props
 }: React.ComponentProps<"input">) {
   return (
@@ -139,6 +140,7 @@ function InputGroupInput({
         className
       )}
       data-slot="input-group-control"
+      ref={inputRef}
       {...props}
     />
   );

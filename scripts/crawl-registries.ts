@@ -38,6 +38,9 @@ const DEFAULT_OUT_DIR = "registry-output";
 const DEFAULT_CONCURRENCY = 8;
 const DEFAULT_TIMEOUT_MS = 15_000;
 const DEFAULT_REGISTRY_PAUSE_MS = 150;
+const PATH_SEPARATOR_REGEX = /[\\/]/g;
+const WHITESPACE_REGEX = /\s+/g;
+const TRAILING_SLASH_REGEX = /\/$/;
 
 function printHelp() {
   console.log(`
@@ -128,7 +131,7 @@ function parseArgs(argv: string[]): CrawlOptions {
 }
 
 function safeSegment(value: string) {
-  return value.replace(/[\\/]/g, "__");
+  return value.replace(PATH_SEPARATOR_REGEX, "__");
 }
 
 function createLimiter(concurrency: number) {
@@ -187,13 +190,62 @@ async function fetchJson(url: string, timeoutMs: number): Promise<unknown> {
     try {
       return JSON.parse(text);
     } catch (error) {
-      const snippet = text.slice(0, 200).replace(/\s+/g, " ");
+      const snippet = text.slice(0, 200).replace(WHITESPACE_REGEX, " ");
       const message = error instanceof Error ? error.message : String(error);
       throw new Error(`Invalid JSON. ${message}. Snippet: ${snippet}`);
     }
   } finally {
     clearTimeout(timeout);
   }
+}
+
+function normalizeRegistryJson(payload: unknown): RegistryJson {
+  if (Array.isArray(payload)) {
+    return { items: payload as RegistryItem[] };
+  }
+  return payload as RegistryJson;
+}
+
+function buildRegistryIndexUrls(template: string) {
+  const urls = [template.replace("{name}", "registry")];
+
+  if (template.includes("{name}.json")) {
+    const base = template
+      .replace("{name}.json", "")
+      .replace(TRAILING_SLASH_REGEX, "");
+    if (base) {
+      urls.push(base);
+    }
+  }
+
+  if (template.endsWith("/{name}")) {
+    const base = template.replace("/{name}", "");
+    if (base) {
+      urls.push(base);
+    }
+  }
+
+  return Array.from(new Set(urls));
+}
+
+async function fetchRegistryIndex(template: string, timeoutMs: number) {
+  const urls = buildRegistryIndexUrls(template);
+  let lastError: Error | null = null;
+
+  for (const url of urls) {
+    try {
+      const payload = await fetchJson(url, timeoutMs);
+      return { registryJson: normalizeRegistryJson(payload), registryUrl: url };
+    } catch (error) {
+      lastError = error instanceof Error ? error : new Error(String(error));
+    }
+  }
+
+  if (lastError) {
+    throw lastError;
+  }
+
+  throw new Error("Unable to fetch registry index.");
 }
 
 async function writeJson(filePath: string, data: unknown) {
@@ -239,24 +291,33 @@ async function crawlRegistry({
   const registryDir = path.join(outDir, safeSegment(registryName));
   await fs.mkdir(registryDir, { recursive: true });
 
-  const registryUrl = template.replace("{name}", "registry");
+  const registryUrls = buildRegistryIndexUrls(template);
+  const primaryRegistryUrl =
+    registryUrls[0] ?? template.replace("{name}", "registry");
   const registryJsonPath = path.join(registryDir, "registry.json");
   let registryJson: RegistryJson;
   const shouldUseCache = useCache && (await fileExists(registryJsonPath));
 
   try {
     if (shouldUseCache) {
-      registryJson = await readJson<RegistryJson>(registryJsonPath);
+      registryJson = normalizeRegistryJson(
+        await readJson<RegistryJson>(registryJsonPath)
+      );
     } else {
-      registryJson = (await fetchJson(registryUrl, timeoutMs)) as RegistryJson;
+      const result = await fetchRegistryIndex(template, timeoutMs);
+      registryJson = result.registryJson;
       await writeJson(registryJsonPath, registryJson);
     }
   } catch (error) {
     const message = error instanceof Error ? error.message : String(error);
-    errors.push({ registry: registryName, url: registryUrl, error: message });
+    errors.push({
+      registry: registryName,
+      url: primaryRegistryUrl,
+      error: message,
+    });
     await writeJson(path.join(registryDir, "registry.error.json"), {
       registry: registryName,
-      url: registryUrl,
+      url: primaryRegistryUrl,
       error: message,
       fetchedAt: new Date().toISOString(),
     });

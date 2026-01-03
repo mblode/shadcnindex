@@ -132,17 +132,17 @@ function AccordionWithBorders() {
 
   return (
     <Example title="With Borders">
-      <Accordion className="mx-auto max-w-lg style-lyra:gap-2 style-nova:gap-2 style-vega:gap-2">
+      <Accordion className="mx-auto max-w-lg   ">
         {items.map((item) => (
           <AccordionItem
-            className="style-nova:rounded-lg style-vega:rounded-lg style-lyra:border style-nova:border style-vega:border"
+            className="    "
             key={item.value}
             value={item.value}
           >
-            <AccordionTrigger className="style-lyra:px-2 style-nova:px-2.5 style-vega:px-4 font-medium style-lyra:text-xs style-maia:text-sm style-mira:text-xs style-nova:text-sm style-vega:text-sm">
+            <AccordionTrigger className="   font-medium     ">
               {item.trigger}
             </AccordionTrigger>
-            <AccordionContent className="style-lyra:px-2 style-maia:px-0 style-mira:px-0 style-nova:px-2.5 style-vega:px-4 style-lyra:text-xs style-nova:text-sm text-muted-foreground">
+            <AccordionContent className="       text-muted-foreground">
               {item.content}
             </AccordionContent>
           </AccordionItem>
@@ -269,7 +269,7 @@ function AccordionInCard() {
         </CardHeader>
         <CardContent>
           <Accordion
-            className="style-maia:rounded-md style-mira:rounded-md"
+            className=" "
             defaultValue={["plans"]}
             multiple
           >
@@ -313,7 +313,7 @@ function AccordionWithDisabled() {
 
   return (
     <Example title="With Disabled">
-      <Accordion className="mx-auto max-w-lg overflow-hidden style-lyra:rounded-none style-maia:rounded-lg style-mira:rounded-lg style-nova:rounded-lg style-vega:rounded-lg border">
+      <Accordion className="mx-auto max-w-lg overflow-hidden      border">
         {items.map((item) => (
           <AccordionItem
             className="p-1 data-open:bg-muted/50"
@@ -321,10 +321,10 @@ function AccordionWithDisabled() {
             key={item.value}
             value={item.value}
           >
-            <AccordionTrigger className="style-lyra:px-2 style-nova:px-2.5 style-vega:px-4">
+            <AccordionTrigger className="  ">
               {item.trigger}
             </AccordionTrigger>
-            <AccordionContent className="style-lyra:px-2 style-nova:px-2.5 style-vega:px-4">
+            <AccordionContent className="  ">
               {item.content}
             </AccordionContent>
           </AccordionItem>

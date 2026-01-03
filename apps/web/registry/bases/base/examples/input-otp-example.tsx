@@ -252,13 +252,13 @@ function InputOTPForm() {
                 </Button>
               </div>
               <InputOTP id="otp-verification" maxLength={6} required>
-                <InputOTPGroup className="style-lyra:*:data-[slot=input-otp-slot]:h-12 style-maia:*:data-[slot=input-otp-slot]:h-16 style-mira:*:data-[slot=input-otp-slot]:h-12 style-nova:*:data-[slot=input-otp-slot]:h-12 style-vega:*:data-[slot=input-otp-slot]:h-16 style-lyra:*:data-[slot=input-otp-slot]:w-11 style-maia:*:data-[slot=input-otp-slot]:w-12 style-mira:*:data-[slot=input-otp-slot]:w-11 style-nova:*:data-[slot=input-otp-slot]:w-11 style-vega:*:data-[slot=input-otp-slot]:w-12 *:data-[slot=input-otp-slot]:text-xl">
+                <InputOTPGroup className="          *:data-[slot=input-otp-slot]:text-xl">
                   <InputOTPSlot index={0} />
                   <InputOTPSlot index={1} />
                   <InputOTPSlot index={2} />
                 </InputOTPGroup>
                 <InputOTPSeparator />
-                <InputOTPGroup className="style-lyra:*:data-[slot=input-otp-slot]:h-12 style-maia:*:data-[slot=input-otp-slot]:h-16 style-mira:*:data-[slot=input-otp-slot]:h-12 style-nova:*:data-[slot=input-otp-slot]:h-12 style-vega:*:data-[slot=input-otp-slot]:h-16 style-lyra:*:data-[slot=input-otp-slot]:w-11 style-maia:*:data-[slot=input-otp-slot]:w-12 style-mira:*:data-[slot=input-otp-slot]:w-11 style-nova:*:data-[slot=input-otp-slot]:w-11 style-vega:*:data-[slot=input-otp-slot]:w-12 *:data-[slot=input-otp-slot]:text-xl">
+                <InputOTPGroup className="          *:data-[slot=input-otp-slot]:text-xl">
                   <InputOTPSlot index={3} />
                   <InputOTPSlot index={4} />
                   <InputOTPSlot index={5} />

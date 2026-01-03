@@ -1,0 +1,18 @@
+{
+  "registry": "@shadcn",
+  "component": "avatar",
+  "url": "https://ui.shadcn.com/r/avatar.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "avatar",
+    "type": "registry:ui",
+    "dependencies": ["@radix-ui/react-avatar"],
+    "files": [
+      {
+        "path": "ui/avatar.tsx",
+        "type": "registry:ui"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-03T07:39:45.450Z"
+}

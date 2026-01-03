@@ -1,0 +1,17 @@
+{
+  "registry": "@shadcn",
+  "component": "card",
+  "url": "https://ui.shadcn.com/r/card.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "card",
+    "type": "registry:ui",
+    "files": [
+      {
+        "path": "ui/card.tsx",
+        "type": "registry:ui"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-03T07:39:45.470Z"
+}

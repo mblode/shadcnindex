@@ -1,0 +1,26 @@
+{
+  "registry": "@shadcn",
+  "component": "toast",
+  "url": "https://ui.shadcn.com/r/toast.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "toast",
+    "type": "registry:ui",
+    "dependencies": ["@radix-ui/react-toast"],
+    "files": [
+      {
+        "path": "ui/toast.tsx",
+        "type": "registry:ui"
+      },
+      {
+        "path": "hooks/use-toast.ts",
+        "type": "registry:hook"
+      },
+      {
+        "path": "ui/toaster.tsx",
+        "type": "registry:ui"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-03T07:39:45.899Z"
+}

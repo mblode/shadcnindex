@@ -1,0 +1,18 @@
+{
+  "registry": "@shadcn",
+  "component": "input-otp",
+  "url": "https://ui.shadcn.com/r/input-otp.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "input-otp",
+    "type": "registry:ui",
+    "dependencies": ["input-otp"],
+    "files": [
+      {
+        "path": "ui/input-otp.tsx",
+        "type": "registry:ui"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-03T07:39:45.692Z"
+}

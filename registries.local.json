@@ -81,6 +81,7 @@
   "@rigidui": "https://rigidui.com/r/{name}.json",
   "@roiui": "https://roiui.com/r/{name}.json",
   "@scrollxui": "https://www.scrollxui.dev/registry/{name}.json",
+  "@shadcn": "https://ui.shadcn.com/r/{name}.json",
   "@shadcn-editor": "https://shadcn-editor.vercel.app/r/{name}.json",
   "@shadcn-map": "http://shadcn-map.vercel.app/r/{name}.json",
   "@shadcn-studio": "https://shadcnstudio.com/r/{name}.json",

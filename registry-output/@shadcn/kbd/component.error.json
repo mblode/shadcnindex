@@ -1,0 +1,17 @@
+{
+  "registry": "@shadcn",
+  "component": "kbd",
+  "url": "https://ui.shadcn.com/r/kbd.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "kbd",
+    "type": "registry:ui",
+    "files": [
+      {
+        "path": "ui/kbd.tsx",
+        "type": "registry:ui"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-03T07:39:45.697Z"
+}

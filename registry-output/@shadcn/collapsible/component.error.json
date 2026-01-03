@@ -1,0 +1,18 @@
+{
+  "registry": "@shadcn",
+  "component": "collapsible",
+  "url": "https://ui.shadcn.com/r/collapsible.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "collapsible",
+    "type": "registry:ui",
+    "dependencies": ["@radix-ui/react-collapsible"],
+    "files": [
+      {
+        "path": "ui/collapsible.tsx",
+        "type": "registry:ui"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-03T07:39:45.513Z"
+}

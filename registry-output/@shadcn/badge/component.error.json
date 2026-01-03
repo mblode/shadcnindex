@@ -1,0 +1,18 @@
+{
+  "registry": "@shadcn",
+  "component": "badge",
+  "url": "https://ui.shadcn.com/r/badge.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "badge",
+    "type": "registry:ui",
+    "dependencies": ["@radix-ui/react-slot"],
+    "files": [
+      {
+        "path": "ui/badge.tsx",
+        "type": "registry:ui"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-03T07:39:45.452Z"
+}

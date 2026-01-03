@@ -1,0 +1,25 @@
+{
+  "registry": "@shadcn",
+  "component": "form",
+  "url": "https://ui.shadcn.com/r/form.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "form",
+    "type": "registry:ui",
+    "dependencies": [
+      "@radix-ui/react-label",
+      "@radix-ui/react-slot",
+      "@hookform/resolvers",
+      "zod",
+      "react-hook-form"
+    ],
+    "registryDependencies": ["button", "label"],
+    "files": [
+      {
+        "path": "ui/form.tsx",
+        "type": "registry:ui"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-03T07:39:45.652Z"
+}

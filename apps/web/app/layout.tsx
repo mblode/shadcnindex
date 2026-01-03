@@ -2,17 +2,50 @@ import type { Metadata } from "next";
 import { NuqsAdapter } from "nuqs/adapters/next/app";
 import { ActiveThemeProvider } from "@/components/active-theme";
 import { Analytics } from "@/components/analytics";
+import { JsonLd } from "@/components/json-ld";
 import { TailwindIndicator } from "@/components/tailwind-indicator";
 import { ThemeProvider } from "@/components/theme-provider";
 import { LayoutProvider } from "@/hooks/use-layout";
 import { META_THEME_COLORS, siteConfig } from "@/lib/config";
 import { fontVariables } from "@/lib/fonts";
+import { getSiteUrl, toAbsoluteUrl } from "@/lib/seo";
 import { cn } from "@/lib/utils";
 import { Toaster } from "@/registry/bases/radix/ui/sonner";
 
 import "./globals.css";
 
 const appUrl = process.env.NEXT_PUBLIC_APP_URL ?? "http://localhost:3000";
+const siteUrl = getSiteUrl();
+const organizationId = `${siteUrl}#organization`;
+const websiteId = `${siteUrl}#website`;
+const sameAs = [siteConfig.links.twitter, siteConfig.links.github].filter(
+  (link): link is string => Boolean(link)
+);
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": organizationId,
+  name: siteConfig.name,
+  url: siteUrl,
+  logo: toAbsoluteUrl("/android-chrome-512x512.png"),
+  sameAs,
+};
+const websiteJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": websiteId,
+  name: siteConfig.name,
+  url: siteUrl,
+  description: siteConfig.description,
+  publisher: {
+    "@id": organizationId,
+  },
+  potentialAction: {
+    "@type": "SearchAction",
+    target: `${siteUrl}/search?q={search_term_string}`,
+    "query-input": "required name=search_term_string",
+  },
+};
 
 export const metadata: Metadata = {
   title: {
@@ -22,6 +55,8 @@ export const metadata: Metadata = {
   metadataBase: new URL(appUrl),
   description: siteConfig.description,
   keywords: ["Next.js", "React", "Tailwind CSS", "Components", "shadcn"],
+  applicationName: siteConfig.name,
+  category: "Developer Tools",
   authors: [
     {
       name: "shadcn",
@@ -29,6 +64,17 @@ export const metadata: Metadata = {
     },
   ],
   creator: "shadcn",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -36,20 +82,11 @@ export const metadata: Metadata = {
     title: siteConfig.name,
     description: siteConfig.description,
     siteName: siteConfig.name,
-    images: [
-      {
-        url: `${appUrl}/opengraph-image.png`,
-        width: 1200,
-        height: 630,
-        alt: siteConfig.name,
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
     title: siteConfig.name,
     description: siteConfig.description,
-    images: [`${appUrl}/opengraph-image.png`],
     creator: "@shadcn",
   },
   icons: {
@@ -66,7 +103,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html className={fontVariables} lang="en" suppressHydrationWarning>
+    <html
+      className={fontVariables}
+      data-scroll-behavior="smooth"
+      lang="en"
+      suppressHydrationWarning
+    >
       <head>
         <script
           // biome-ignore lint/security/noDangerouslySetInnerHtml: needed for theme initialization before hydration
@@ -90,6 +132,8 @@ export default function RootLayout({
           "group/body overscroll-none antialiased [--footer-height:calc(var(--spacing)*14)] [--header-height:calc(var(--spacing)*14)] xl:[--footer-height:calc(var(--spacing)*24)]"
         )}
       >
+        <JsonLd data={organizationJsonLd} />
+        <JsonLd data={websiteJsonLd} />
         <ThemeProvider>
           <LayoutProvider>
             <ActiveThemeProvider>

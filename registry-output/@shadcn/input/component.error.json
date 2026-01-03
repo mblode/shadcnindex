@@ -1,0 +1,17 @@
+{
+  "registry": "@shadcn",
+  "component": "input",
+  "url": "https://ui.shadcn.com/r/input.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "input",
+    "type": "registry:ui",
+    "files": [
+      {
+        "path": "ui/input.tsx",
+        "type": "registry:ui"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-03T07:39:45.661Z"
+}

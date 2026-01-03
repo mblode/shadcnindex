@@ -1,0 +1,18 @@
+{
+  "registry": "@shadcn",
+  "component": "checkbox",
+  "url": "https://ui.shadcn.com/r/checkbox.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "checkbox",
+    "type": "registry:ui",
+    "dependencies": ["@radix-ui/react-checkbox"],
+    "files": [
+      {
+        "path": "ui/checkbox.tsx",
+        "type": "registry:ui"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-03T07:39:45.515Z"
+}

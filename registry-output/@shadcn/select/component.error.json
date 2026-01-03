@@ -1,0 +1,18 @@
+{
+  "registry": "@shadcn",
+  "component": "select",
+  "url": "https://ui.shadcn.com/r/select.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "select",
+    "type": "registry:ui",
+    "dependencies": ["@radix-ui/react-select"],
+    "files": [
+      {
+        "path": "ui/select.tsx",
+        "type": "registry:ui"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-03T07:39:45.789Z"
+}

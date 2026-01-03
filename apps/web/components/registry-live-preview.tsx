@@ -1,6 +1,7 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import iframeResize from "@iframe-resizer/parent";
+import { useEffect, useMemo, useRef, useState } from "react";
 
 import { cn } from "@/lib/utils";
 
@@ -13,15 +14,21 @@ interface RegistryLivePreviewProps {
 
 type PreviewStatus = "loading" | "ready" | "error";
 
-type PreviewMessage = {
+interface PreviewMessage {
   source?: string;
   moduleUrl?: string | null;
-  type?: "ready" | "error" | "height";
+  type?: "ready" | "error";
   message?: string;
-  height?: number;
-};
+}
 
 const DEFAULT_IFRAME_HEIGHT = 320;
+const LEADING_SLASH_REGEX = /^\/+/;
+
+type IframeWithResizer = HTMLIFrameElement & {
+  iFrameResizer?: {
+    disconnect: () => void;
+  };
+};
 
 export function RegistryLivePreview({
   registry,
@@ -31,26 +38,49 @@ export function RegistryLivePreview({
 }: RegistryLivePreviewProps) {
   const [status, setStatus] = useState<PreviewStatus>("loading");
   const [error, setError] = useState<string | null>(null);
-  const [height, setHeight] = useState<number>(DEFAULT_IFRAME_HEIGHT);
-  const previewUrl = useMemo(() => {
-    const safePath = entryPath.replace(/^\//, "");
-    return `/registry-preview/${encodeURIComponent(
-      registry
-    )}/${encodeURIComponent(component)}/${safePath}.mjs`;
-  }, [registry, component, entryPath]);
-
+  const iframeRef = useRef<IframeWithResizer | null>(null);
+  const normalizedEntry = useMemo(
+    () => entryPath.replace(LEADING_SLASH_REGEX, ""),
+    [entryPath]
+  );
+  const moduleUrl = useMemo(
+    () => buildModuleUrl(registry, component, normalizedEntry),
+    [component, normalizedEntry, registry]
+  );
   const iframeUrl = useMemo(() => {
     const params = new URLSearchParams({
-      module: previewUrl,
+      registry,
       component,
+      entry: normalizedEntry,
     });
     return `/registry-preview-shell?${params.toString()}`;
-  }, [component, previewUrl]);
+  }, [component, normalizedEntry, registry]);
 
   useEffect(() => {
     setStatus("loading");
     setError(null);
-  }, [iframeUrl]);
+  }, []);
+
+  useEffect(() => {
+    const iframe = iframeRef.current;
+    if (!iframe) {
+      return;
+    }
+
+    const origin = window.location.origin;
+    iframeResize(
+      {
+        checkOrigin: [origin],
+        license: "GPLv3",
+        log: false,
+        scrolling: false,
+        warningTimeout: 0,
+      },
+      iframe
+    );
+
+    return () => iframe.iFrameResizer?.disconnect();
+  }, []);
 
   useEffect(() => {
     const handleMessage = (event: MessageEvent<PreviewMessage>) => {
@@ -59,12 +89,7 @@ export function RegistryLivePreview({
         return;
       }
 
-      if (data.moduleUrl !== previewUrl) {
-        return;
-      }
-
-      if (data.type === "height" && typeof data.height === "number") {
-        setHeight(Math.max(data.height, DEFAULT_IFRAME_HEIGHT));
+      if (!data.moduleUrl || data.moduleUrl !== moduleUrl) {
         return;
       }
 
@@ -82,7 +107,7 @@ export function RegistryLivePreview({
 
     window.addEventListener("message", handleMessage);
     return () => window.removeEventListener("message", handleMessage);
-  }, [previewUrl]);
+  }, [moduleUrl]);
 
   if (status === "error" && error) {
     return (
@@ -101,13 +126,30 @@ export function RegistryLivePreview({
           </div>
         ) : null}
         <iframe
-          className="w-full rounded-md border border-border/60"
+          className="w-full rounded-t-lg"
+          ref={iframeRef}
           sandbox="allow-scripts allow-same-origin"
+          scrolling="no"
           src={iframeUrl}
-          style={{ height: `${height}px` }}
+          style={{ minHeight: `${DEFAULT_IFRAME_HEIGHT}px` }}
           title={`Preview of ${component}`}
         />
       </div>
     </div>
   );
+}
+
+function buildModuleUrl(
+  registry: string,
+  component: string,
+  entryPath: string
+) {
+  const encodedEntry = entryPath
+    .split("/")
+    .map((segment) => encodeURIComponent(segment))
+    .join("/");
+
+  return `/registry-preview/${encodeURIComponent(
+    registry
+  )}/${encodeURIComponent(component)}/${encodedEntry}.mjs`;
 }

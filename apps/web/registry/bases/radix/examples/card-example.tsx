@@ -84,7 +84,7 @@ function CardLogin() {
           <Button className="w-full" variant="outline">
             Login with Google
           </Button>
-          <div className="mt-4 style-nova:mt-2 text-center">
+          <div className="mt-4  text-center">
             Don&apos;t have an account?{" "}
             <a className="underline underline-offset-4" href="#">
               Sign up

@@ -1,0 +1,18 @@
+{
+  "registry": "@shadcn",
+  "component": "aspect-ratio",
+  "url": "https://ui.shadcn.com/r/aspect-ratio.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "aspect-ratio",
+    "type": "registry:ui",
+    "dependencies": ["@radix-ui/react-aspect-ratio"],
+    "files": [
+      {
+        "path": "ui/aspect-ratio.tsx",
+        "type": "registry:ui"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-03T07:39:45.489Z"
+}

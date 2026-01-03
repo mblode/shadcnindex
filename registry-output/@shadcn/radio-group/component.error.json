@@ -1,0 +1,18 @@
+{
+  "registry": "@shadcn",
+  "component": "radio-group",
+  "url": "https://ui.shadcn.com/r/radio-group.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "radio-group",
+    "type": "registry:ui",
+    "dependencies": ["@radix-ui/react-radio-group"],
+    "files": [
+      {
+        "path": "ui/radio-group.tsx",
+        "type": "registry:ui"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-03T07:39:45.784Z"
+}

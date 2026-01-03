@@ -1,53 +1,73 @@
 "use client";
 
-import type { ComponentType, ReactNode } from "react";
-import { useEffect, useMemo, useRef, useState } from "react";
 import { useSearchParams } from "next/navigation";
+import type { ComponentType, ReactNode } from "react";
+import { Suspense, useEffect, useMemo, useRef, useState } from "react";
 
 import { cn } from "@/lib/utils";
 
 type PreviewStatus = "loading" | "ready" | "error";
 
-type PreviewMessage = {
+interface PreviewMessage {
   source: "registry-preview";
   moduleUrl: string;
-  type: "ready" | "error" | "height";
+  type: "ready" | "error";
   message?: string;
-  height?: number;
-};
+}
 
-type ReactDomRoot = {
+interface ReactDomRoot {
   render: (node: ReactNode) => void;
   unmount: () => void;
-};
+}
 
-type ReactModule = {
+interface ReactModule {
   createElement: typeof import("react").createElement;
-};
+}
 
-type ReactDomClientModule = {
+interface ReactDomClientModule {
   createRoot: (container: Element | DocumentFragment) => ReactDomRoot;
-};
+}
 
 const REACT_URL = "https://esm.sh/react";
 const REACT_DOM_URL = "https://esm.sh/react-dom/client";
 const DEFAULT_PADDING = 24;
+const IFRAME_RESIZER_LICENSE = "GPLv3";
+const NON_ALPHANUMERIC_REGEX = /[^a-zA-Z0-9]+/g;
+const LEADING_SLASH_REGEX = /^\/+/;
 
-export default function RegistryPreviewShell() {
+interface IframeResizerConfig {
+  license: string;
+}
+
+function RegistryPreviewShellContent() {
   const searchParams = useSearchParams();
+  const registry = searchParams.get("registry") ?? "";
+  const componentParam = searchParams.get("component") ?? "";
+  const componentName = componentParam || "Component";
+  const entryPath = searchParams.get("entry") ?? "";
   const moduleUrl = useMemo(() => {
-    const value = searchParams.get("module") ?? "";
-    if (!value.startsWith("/registry-preview/")) {
+    if (!(registry && componentParam && entryPath)) {
       return "";
     }
-    return value;
-  }, [searchParams]);
-  const componentName = searchParams.get("component") ?? "Component";
+    return buildModuleUrl(registry, componentParam, entryPath);
+  }, [componentParam, entryPath, registry]);
   const rootRef = useRef<HTMLDivElement | null>(null);
-  const wrapperRef = useRef<HTMLDivElement | null>(null);
   const reactRootRef = useRef<ReactDomRoot | null>(null);
   const [status, setStatus] = useState<PreviewStatus>("loading");
   const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (typeof window === "undefined") {
+      return;
+    }
+
+    (window as Window & { iframeResizer?: IframeResizerConfig }).iframeResizer =
+      {
+        license: IFRAME_RESIZER_LICENSE,
+      };
+
+    import("@iframe-resizer/child").catch(() => undefined);
+  }, []);
 
   const padding = useMemo(() => {
     const value = Number.parseInt(searchParams.get("padding") ?? "", 10);
@@ -92,8 +112,8 @@ export default function RegistryPreviewShell() {
 
     const load = async () => {
       try {
-        const [reactModule, reactDomModule, registryModule] =
-          await Promise.all([
+        const [reactModule, reactDomModule, registryModule] = await Promise.all(
+          [
             import(/* webpackIgnore: true */ REACT_URL) as Promise<ReactModule>,
             import(
               /* webpackIgnore: true */ REACT_DOM_URL
@@ -101,7 +121,8 @@ export default function RegistryPreviewShell() {
             import(/* webpackIgnore: true */ moduleUrl) as Promise<
               Record<string, unknown>
             >,
-          ]);
+          ]
+        );
 
         if (cancelled) {
           return;
@@ -144,47 +165,9 @@ export default function RegistryPreviewShell() {
     };
   }, [componentName, moduleUrl]);
 
-  useEffect(() => {
-    if (!moduleUrl) {
-      return;
-    }
-
-    const target = wrapperRef.current;
-    if (!target) {
-      return;
-    }
-
-    const postHeight = () => {
-      const height = Math.ceil(target.getBoundingClientRect().height);
-      if (window.parent && window.parent !== window) {
-        window.parent.postMessage(
-          {
-            source: "registry-preview",
-            moduleUrl,
-            type: "height",
-            height,
-          } satisfies PreviewMessage,
-          "*"
-        );
-      }
-    };
-
-    const observer = new ResizeObserver(() => {
-      postHeight();
-    });
-    observer.observe(target);
-    postHeight();
-
-    return () => observer.disconnect();
-  }, [moduleUrl, status, padding]);
-
   return (
     <div className="min-h-svh bg-background text-foreground">
-      <div
-        className={cn("theme-container w-full")}
-        ref={wrapperRef}
-        style={{ padding }}
-      >
+      <div className={cn("theme-container w-full")} style={{ padding }}>
         {status === "error" && error ? (
           <p className="text-muted-foreground text-sm">{error}</p>
         ) : null}
@@ -222,10 +205,34 @@ function resolvePreviewComponent(
 
 function toPascalCase(value: string) {
   return value
-    .replace(/[^a-zA-Z0-9]+/g, " ")
+    .replace(NON_ALPHANUMERIC_REGEX, " ")
     .trim()
     .split(" ")
     .filter(Boolean)
     .map((segment) => segment[0]?.toUpperCase() + segment.slice(1))
     .join("");
+}
+
+function buildModuleUrl(
+  registry: string,
+  component: string,
+  entryPath: string
+) {
+  const encodedEntry = entryPath
+    .replace(LEADING_SLASH_REGEX, "")
+    .split("/")
+    .map((segment) => encodeURIComponent(segment))
+    .join("/");
+
+  return `/registry-preview/${encodeURIComponent(
+    registry
+  )}/${encodeURIComponent(component)}/${encodedEntry}.mjs`;
+}
+
+export default function RegistryPreviewShell() {
+  return (
+    <Suspense fallback={<div className="min-h-svh bg-background" />}>
+      <RegistryPreviewShellContent />
+    </Suspense>
+  );
 }

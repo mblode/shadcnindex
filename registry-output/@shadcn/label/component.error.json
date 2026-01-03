@@ -1,0 +1,18 @@
+{
+  "registry": "@shadcn",
+  "component": "label",
+  "url": "https://ui.shadcn.com/r/label.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "label",
+    "type": "registry:ui",
+    "dependencies": ["@radix-ui/react-label"],
+    "files": [
+      {
+        "path": "ui/label.tsx",
+        "type": "registry:ui"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-03T07:39:45.703Z"
+}

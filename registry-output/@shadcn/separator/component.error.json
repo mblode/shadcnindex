@@ -1,0 +1,18 @@
+{
+  "registry": "@shadcn",
+  "component": "separator",
+  "url": "https://ui.shadcn.com/r/separator.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "separator",
+    "type": "registry:ui",
+    "dependencies": ["@radix-ui/react-separator"],
+    "files": [
+      {
+        "path": "ui/separator.tsx",
+        "type": "registry:ui"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-03T07:39:45.789Z"
+}

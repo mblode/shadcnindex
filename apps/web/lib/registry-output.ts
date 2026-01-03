@@ -8,17 +8,40 @@ export interface RegistryOutputFile {
   target?: string | null;
 }
 
+export interface RegistryOutputDocLink {
+  route?: string;
+  title?: string | null;
+}
+
+export interface RegistryOutputComponentMeta {
+  docs?: RegistryOutputDocLink[];
+  [key: string]: unknown;
+}
+
 export interface RegistryOutputComponent {
   name?: string;
   title?: string | null;
   description?: string | null;
   type?: string | null;
   dependencies?: string[];
+  docs?: unknown;
+  meta?: RegistryOutputComponentMeta | null;
   files?: RegistryOutputFile[];
 }
 
 export interface RegistryOutputMeta {
   homepage?: string | null;
+  items?: RegistryOutputRegistryItem[];
+}
+
+export interface RegistryOutputRegistryItem {
+  name?: string;
+  title?: string | null;
+  description?: string | null;
+  type?: string | null;
+  docs?: unknown;
+  homepage?: string | null;
+  meta?: RegistryOutputComponentMeta | null;
 }
 
 export interface RegistryOutputItem {
@@ -28,9 +51,23 @@ export interface RegistryOutputItem {
     homepage: string | null;
   };
   component: RegistryOutputComponent;
+  registryItem: RegistryOutputRegistryItem | null;
 }
 
 const REGISTRY_ROOT = resolveRegistryRoot();
+
+export function resolveRegistryNamespace(registry: string): string {
+  if (registry.startsWith("@")) {
+    return registry;
+  }
+
+  const atNamespace = `@${registry}`;
+  if (existsSync(path.join(REGISTRY_ROOT, atNamespace))) {
+    return atNamespace;
+  }
+
+  return registry;
+}
 
 function resolveRegistryRoot() {
   const cwd = process.cwd();
@@ -58,7 +95,8 @@ export async function getRegistryOutputItem(
   registry: string,
   component: string
 ): Promise<RegistryOutputItem | null> {
-  const registryPath = path.join(REGISTRY_ROOT, registry);
+  const registryNamespace = resolveRegistryNamespace(registry);
+  const registryPath = path.join(REGISTRY_ROOT, registryNamespace);
   const componentPath = path.join(registryPath, component, "component.json");
 
   let componentJson: RegistryOutputComponent;
@@ -78,13 +116,16 @@ export async function getRegistryOutputItem(
   }
 
   const name = componentJson.name ?? component;
+  const registryItem =
+    registryJson?.items?.find((item) => item.name === name) ?? null;
 
   return {
-    id: `${registry}/${name}`,
+    id: `${registryNamespace}/${name}`,
     registry: {
-      namespace: registry,
+      namespace: registryNamespace,
       homepage: registryJson?.homepage ?? null,
     },
     component: componentJson,
+    registryItem,
   };
 }

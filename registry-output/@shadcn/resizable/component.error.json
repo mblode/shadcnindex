@@ -1,0 +1,18 @@
+{
+  "registry": "@shadcn",
+  "component": "resizable",
+  "url": "https://ui.shadcn.com/r/resizable.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "resizable",
+    "type": "registry:ui",
+    "dependencies": ["react-resizable-panels"],
+    "files": [
+      {
+        "path": "ui/resizable.tsx",
+        "type": "registry:ui"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-03T07:39:45.778Z"
+}

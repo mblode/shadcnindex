@@ -1,0 +1,18 @@
+{
+  "registry": "@shadcn",
+  "component": "breadcrumb",
+  "url": "https://ui.shadcn.com/r/breadcrumb.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "breadcrumb",
+    "type": "registry:ui",
+    "dependencies": ["@radix-ui/react-slot"],
+    "files": [
+      {
+        "path": "ui/breadcrumb.tsx",
+        "type": "registry:ui"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-03T07:39:45.446Z"
+}

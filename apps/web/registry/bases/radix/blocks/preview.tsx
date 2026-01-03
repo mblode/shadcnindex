@@ -772,7 +772,7 @@ function InputGroupExamples() {
           <InputGroupAddon align="block-end">
             <InputGroupButton
               aria-label="Add"
-              className="rounded-full style-lyra:rounded-none"
+              className="rounded-full "
               size="icon-xs"
               variant="outline"
             >
@@ -800,7 +800,7 @@ function InputGroupExamples() {
             <InputGroupText className="ml-auto">52% used</InputGroupText>
             <Separator className="!h-4" orientation="vertical" />
             <InputGroupButton
-              className="rounded-full style-lyra:rounded-none"
+              className="rounded-full "
               size="icon-xs"
               variant="default"
             >
@@ -1089,7 +1089,7 @@ function SmallFormExample() {
               </DropdownMenuTrigger>
               <DropdownMenuContent
                 align="end"
-                className="style-lyra:w-48 style-maia:w-56 style-mira:w-48 style-nova:w-48 style-vega:w-56"
+                className="    "
               >
                 <DropdownMenuGroup>
                   <DropdownMenuLabel>File</DropdownMenuLabel>
@@ -1595,7 +1595,7 @@ function SheetExample() {
               <div className="overflow-y-auto px-4 text-sm">
                 {Array.from({ length: 10 }).map((_, index) => (
                   <p
-                    className="mb-4 style-lyra:mb-2 leading-normal style-lyra:leading-relaxed"
+                    className="mb-4  leading-normal "
                     key={index}
                   >
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed

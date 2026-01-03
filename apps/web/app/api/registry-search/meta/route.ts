@@ -27,12 +27,12 @@ export async function GET() {
         count: index.count ?? index.items?.length ?? 0,
       });
     } catch (fallbackError) {
-      const message =
-        fallbackError instanceof Error
-          ? fallbackError.message
-          : error instanceof Error
-            ? error.message
-            : "Failed to load search metadata.";
+      let message = "Failed to load search metadata.";
+      if (fallbackError instanceof Error) {
+        message = fallbackError.message;
+      } else if (error instanceof Error) {
+        message = error.message;
+      }
 
       return NextResponse.json({ error: message }, { status: 500 });
     }

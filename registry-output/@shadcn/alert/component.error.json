@@ -1,0 +1,17 @@
+{
+  "registry": "@shadcn",
+  "component": "alert",
+  "url": "https://ui.shadcn.com/r/alert.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "alert",
+    "type": "registry:ui",
+    "files": [
+      {
+        "path": "ui/alert.tsx",
+        "type": "registry:ui"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-03T07:39:45.449Z"
+}

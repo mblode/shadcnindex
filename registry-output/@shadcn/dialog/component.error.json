@@ -1,0 +1,18 @@
+{
+  "registry": "@shadcn",
+  "component": "dialog",
+  "url": "https://ui.shadcn.com/r/dialog.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "dialog",
+    "type": "registry:ui",
+    "dependencies": ["@radix-ui/react-dialog"],
+    "files": [
+      {
+        "path": "ui/dialog.tsx",
+        "type": "registry:ui"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-03T07:39:45.855Z"
+}

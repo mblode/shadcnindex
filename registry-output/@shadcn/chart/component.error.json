@@ -1,0 +1,19 @@
+{
+  "registry": "@shadcn",
+  "component": "chart",
+  "url": "https://ui.shadcn.com/r/chart.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "chart",
+    "type": "registry:ui",
+    "dependencies": ["recharts@2.15.4", "lucide-react"],
+    "registryDependencies": ["card"],
+    "files": [
+      {
+        "path": "ui/chart.tsx",
+        "type": "registry:ui"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-03T07:39:45.607Z"
+}

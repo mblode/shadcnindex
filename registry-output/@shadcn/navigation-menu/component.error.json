@@ -1,0 +1,18 @@
+{
+  "registry": "@shadcn",
+  "component": "navigation-menu",
+  "url": "https://ui.shadcn.com/r/navigation-menu.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "navigation-menu",
+    "type": "registry:ui",
+    "dependencies": ["@radix-ui/react-navigation-menu"],
+    "files": [
+      {
+        "path": "ui/navigation-menu.tsx",
+        "type": "registry:ui"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-03T07:39:45.742Z"
+}

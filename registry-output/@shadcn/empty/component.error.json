@@ -1,0 +1,17 @@
+{
+  "registry": "@shadcn",
+  "component": "empty",
+  "url": "https://ui.shadcn.com/r/empty.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "empty",
+    "type": "registry:ui",
+    "files": [
+      {
+        "path": "ui/empty.tsx",
+        "type": "registry:ui"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-03T07:39:45.651Z"
+}

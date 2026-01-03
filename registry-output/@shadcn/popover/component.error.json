@@ -1,0 +1,18 @@
+{
+  "registry": "@shadcn",
+  "component": "popover",
+  "url": "https://ui.shadcn.com/r/popover.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "popover",
+    "type": "registry:ui",
+    "dependencies": ["@radix-ui/react-popover"],
+    "files": [
+      {
+        "path": "ui/popover.tsx",
+        "type": "registry:ui"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-03T07:39:45.749Z"
+}

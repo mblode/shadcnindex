@@ -3,17 +3,7 @@
 @import "shadcn/tailwind.css";
 @import "./legacy-themes.css";
 
-@import "../registry/styles/style-vega.css" layer(base);
-@import "../registry/styles/style-nova.css" layer(base);
-@import "../registry/styles/style-lyra.css" layer(base);
-@import "../registry/styles/style-maia.css" layer(base);
-@import "../registry/styles/style-mira.css" layer(base);
 
-@custom-variant style-vega (&:where(.style-vega *));
-@custom-variant style-nova (&:where(.style-nova *));
-@custom-variant style-lyra (&:where(.style-lyra *));
-@custom-variant style-maia (&:where(.style-maia *));
-@custom-variant style-mira (&:where(.style-mira *));
 
 @custom-variant dark (&:is(.dark *));
 @custom-variant fixed (&:is(.layout-fixed *));
@@ -178,7 +168,8 @@
     @apply overscroll-none;
   }
 
-  @supports (font: -apple-system-body) and (-webkit-appearance: none) {
+  @supports (font: -apple-system-body, sans-serif) and
+    (-webkit-appearance: none) {
     [data-wrapper] {
       @apply min-[1800px]:border-t;
     }
@@ -208,6 +199,18 @@
 
 @utility container {
   @apply 3xl:max-w-screen-2xl mx-auto max-w-[1400px] px-4 lg:px-8;
+}
+
+@utility text-heading-40 {
+  @apply text-[40px] leading-[1.1] tracking-tight;
+}
+
+@utility text-heading-48 {
+  @apply text-[48px] leading-[1.1] tracking-tight;
+}
+
+@utility text-copy-16 {
+  @apply text-[16px] leading-[1.5];
 }
 
 @utility no-scrollbar {

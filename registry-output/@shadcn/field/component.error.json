@@ -1,0 +1,18 @@
+{
+  "registry": "@shadcn",
+  "component": "field",
+  "url": "https://ui.shadcn.com/r/field.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "field",
+    "type": "registry:ui",
+    "registryDependencies": ["label", "separator"],
+    "files": [
+      {
+        "path": "ui/field.tsx",
+        "type": "registry:ui"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-03T07:39:45.649Z"
+}

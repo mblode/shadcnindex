@@ -1,0 +1,19 @@
+{
+  "registry": "@shadcn",
+  "component": "command",
+  "url": "https://ui.shadcn.com/r/command.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "command",
+    "type": "registry:ui",
+    "dependencies": ["cmdk"],
+    "registryDependencies": ["dialog"],
+    "files": [
+      {
+        "path": "ui/command.tsx",
+        "type": "registry:ui"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-03T07:39:45.512Z"
+}

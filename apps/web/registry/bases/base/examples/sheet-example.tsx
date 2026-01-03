@@ -39,7 +39,7 @@ function SheetWithForm() {
               done.
             </SheetDescription>
           </SheetHeader>
-          <div className="style-lyra:px-4 style-maia:px-6 style-mira:px-6 style-nova:px-4 style-vega:px-4">
+          <div className="    ">
             <FieldGroup>
               <Field>
                 <FieldLabel htmlFor="sheet-demo-name">Name</FieldLabel>
@@ -106,10 +106,10 @@ function SheetWithSides() {
                   done.
                 </SheetDescription>
               </SheetHeader>
-              <div className="no-scrollbar overflow-y-auto style-lyra:px-4 style-maia:px-6 style-mira:px-6 style-nova:px-4 style-vega:px-4">
+              <div className="no-scrollbar overflow-y-auto     ">
                 {Array.from({ length: 10 }).map((_, index) => (
                   <p
-                    className="mb-4 style-lyra:mb-2 leading-normal style-lyra:leading-relaxed"
+                    className="mb-4  leading-normal "
                     key={index}
                   >
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed

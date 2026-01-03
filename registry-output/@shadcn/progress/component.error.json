@@ -1,0 +1,18 @@
+{
+  "registry": "@shadcn",
+  "component": "progress",
+  "url": "https://ui.shadcn.com/r/progress.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "progress",
+    "type": "registry:ui",
+    "dependencies": ["@radix-ui/react-progress"],
+    "files": [
+      {
+        "path": "ui/progress.tsx",
+        "type": "registry:ui"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-03T07:39:45.749Z"
+}

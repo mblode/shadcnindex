@@ -1,0 +1,18 @@
+{
+  "registry": "@shadcn",
+  "component": "button-group",
+  "url": "https://ui.shadcn.com/r/button-group.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "button-group",
+    "type": "registry:ui",
+    "registryDependencies": ["button", "separator"],
+    "files": [
+      {
+        "path": "ui/button-group.tsx",
+        "type": "registry:ui"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-03T07:39:45.398Z"
+}

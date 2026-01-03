@@ -1,0 +1,18 @@
+{
+  "registry": "@shadcn",
+  "component": "sonner",
+  "url": "https://ui.shadcn.com/r/sonner.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "sonner",
+    "type": "registry:ui",
+    "dependencies": ["sonner", "next-themes"],
+    "files": [
+      {
+        "path": "ui/sonner.tsx",
+        "type": "registry:ui"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-03T07:39:45.831Z"
+}

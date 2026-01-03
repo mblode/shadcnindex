@@ -2,8 +2,8 @@ import { readFile } from "node:fs/promises";
 import path from "node:path";
 
 import { openai } from "@ai-sdk/openai";
-import { embedMany } from "ai";
 import { createClient } from "@supabase/supabase-js";
+import { embedMany } from "ai";
 
 const BATCH_SIZE = Number.parseInt(
   process.env.EMBEDDING_BATCH_SIZE ?? "100",

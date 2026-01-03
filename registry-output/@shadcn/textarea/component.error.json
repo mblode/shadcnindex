@@ -1,0 +1,17 @@
+{
+  "registry": "@shadcn",
+  "component": "textarea",
+  "url": "https://ui.shadcn.com/r/textarea.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "textarea",
+    "type": "registry:ui",
+    "files": [
+      {
+        "path": "ui/textarea.tsx",
+        "type": "registry:ui"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-03T07:39:45.883Z"
+}

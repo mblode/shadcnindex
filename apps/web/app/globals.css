@@ -1,19 +1,6 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
-@import "./legacy-themes.css";
-
-@import "../registry/styles/style-vega.css" layer(base);
-@import "../registry/styles/style-nova.css" layer(base);
-@import "../registry/styles/style-lyra.css" layer(base);
-@import "../registry/styles/style-maia.css" layer(base);
-@import "../registry/styles/style-mira.css" layer(base);
-
-@custom-variant style-vega (&:where(.style-vega *));
-@custom-variant style-nova (&:where(.style-nova *));
-@custom-variant style-lyra (&:where(.style-lyra *));
-@custom-variant style-maia (&:where(.style-maia *));
-@custom-variant style-mira (&:where(.style-mira *));
 
 @custom-variant dark (&:is(.dark *));
 @custom-variant fixed (&:is(.layout-fixed *));
@@ -163,12 +150,15 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   ::selection {
     @apply bg-selection text-selection-foreground;
   }
+
   html {
     @apply overscroll-y-none scroll-smooth;
   }
+
   body {
     font-synthesis-weight: none;
     text-rendering: optimizeLegibility;
@@ -211,6 +201,18 @@
   @apply 3xl:max-w-screen-2xl mx-auto max-w-[1400px] px-4 lg:px-8;
 }
 
+@utility text-heading-40 {
+  @apply text-[40px] leading-[1.1] tracking-tight;
+}
+
+@utility text-heading-48 {
+  @apply text-[48px] leading-[1.1] tracking-tight;
+}
+
+@utility text-copy-16 {
+  @apply text-[16px] leading-[1.5];
+}
+
 @utility no-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -246,15 +248,15 @@
       @apply !mt-0;
     }
 
-    &:first-child > h3:first-child {
+    &:first-child>h3:first-child {
       @apply !mt-0;
     }
 
-    > h3 {
+    >h3 {
       @apply !mt-16;
     }
 
-    > h3 + p {
+    >h3+p {
       @apply !mt-2;
     }
   }
@@ -347,11 +349,9 @@
       width: 2px;
       height: 100%;
       content: "";
-      background-color: color-mix(
-        in oklab,
-        var(--muted-foreground) 50%,
-        transparent
-      );
+      background-color: color-mix(in oklab,
+          var(--muted-foreground) 50%,
+          transparent);
     }
   }
 

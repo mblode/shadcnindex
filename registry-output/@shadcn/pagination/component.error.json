@@ -1,0 +1,18 @@
+{
+  "registry": "@shadcn",
+  "component": "pagination",
+  "url": "https://ui.shadcn.com/r/pagination.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "pagination",
+    "type": "registry:ui",
+    "registryDependencies": ["button"],
+    "files": [
+      {
+        "path": "ui/pagination.tsx",
+        "type": "registry:ui"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-03T07:39:45.742Z"
+}

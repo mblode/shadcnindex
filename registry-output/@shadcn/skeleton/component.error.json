@@ -1,0 +1,17 @@
+{
+  "registry": "@shadcn",
+  "component": "skeleton",
+  "url": "https://ui.shadcn.com/r/skeleton.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "skeleton",
+    "type": "registry:ui",
+    "files": [
+      {
+        "path": "ui/skeleton.tsx",
+        "type": "registry:ui"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-03T07:39:45.831Z"
+}

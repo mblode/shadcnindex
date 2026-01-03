@@ -1,0 +1,18 @@
+{
+  "registry": "@shadcn",
+  "component": "tabs",
+  "url": "https://ui.shadcn.com/r/tabs.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "tabs",
+    "type": "registry:ui",
+    "dependencies": ["@radix-ui/react-tabs"],
+    "files": [
+      {
+        "path": "ui/tabs.tsx",
+        "type": "registry:ui"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-03T07:39:45.868Z"
+}

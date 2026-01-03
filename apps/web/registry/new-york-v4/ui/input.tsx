@@ -2,7 +2,12 @@ import type * as React from "react";
 
 import { cn } from "@/lib/utils";
 
-function Input({ className, type, ...props }: React.ComponentProps<"input">) {
+function Input({
+  className,
+  type,
+  ref: inputRef,
+  ...props
+}: React.ComponentProps<"input">) {
   return (
     <input
       className={cn(
@@ -12,6 +17,7 @@ function Input({ className, type, ...props }: React.ComponentProps<"input">) {
         className
       )}
       data-slot="input"
+      ref={inputRef}
       type={type}
       {...props}
     />

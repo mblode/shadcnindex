@@ -1,0 +1,18 @@
+{
+  "registry": "@shadcn",
+  "component": "input-group",
+  "url": "https://ui.shadcn.com/r/input-group.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "input-group",
+    "type": "registry:ui",
+    "registryDependencies": ["button", "input", "textarea"],
+    "files": [
+      {
+        "path": "ui/input-group.tsx",
+        "type": "registry:ui"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-03T07:39:45.697Z"
+}

@@ -1,0 +1,18 @@
+{
+  "registry": "@shadcn",
+  "component": "hover-card",
+  "url": "https://ui.shadcn.com/r/hover-card.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "hover-card",
+    "type": "registry:ui",
+    "dependencies": ["@radix-ui/react-hover-card"],
+    "files": [
+      {
+        "path": "ui/hover-card.tsx",
+        "type": "registry:ui"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-03T07:39:45.654Z"
+}

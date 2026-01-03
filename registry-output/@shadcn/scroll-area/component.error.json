@@ -1,0 +1,18 @@
+{
+  "registry": "@shadcn",
+  "component": "scroll-area",
+  "url": "https://ui.shadcn.com/r/scroll-area.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "scroll-area",
+    "type": "registry:ui",
+    "dependencies": ["@radix-ui/react-scroll-area"],
+    "files": [
+      {
+        "path": "ui/scroll-area.tsx",
+        "type": "registry:ui"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-03T07:39:45.783Z"
+}

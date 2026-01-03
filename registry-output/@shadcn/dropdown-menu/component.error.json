@@ -1,0 +1,18 @@
+{
+  "registry": "@shadcn",
+  "component": "dropdown-menu",
+  "url": "https://ui.shadcn.com/r/dropdown-menu.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "dropdown-menu",
+    "type": "registry:ui",
+    "dependencies": ["@radix-ui/react-dropdown-menu"],
+    "files": [
+      {
+        "path": "ui/dropdown-menu.tsx",
+        "type": "registry:ui"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-03T07:39:45.862Z"
+}

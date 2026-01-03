@@ -1,0 +1,18 @@
+{
+  "registry": "@shadcn",
+  "component": "tooltip",
+  "url": "https://ui.shadcn.com/r/tooltip.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "tooltip",
+    "type": "registry:ui",
+    "dependencies": ["@radix-ui/react-tooltip"],
+    "files": [
+      {
+        "path": "ui/tooltip.tsx",
+        "type": "registry:ui"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-03T07:39:45.935Z"
+}

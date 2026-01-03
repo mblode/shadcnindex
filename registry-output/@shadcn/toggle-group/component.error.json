@@ -1,0 +1,19 @@
+{
+  "registry": "@shadcn",
+  "component": "toggle-group",
+  "url": "https://ui.shadcn.com/r/toggle-group.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "toggle-group",
+    "type": "registry:ui",
+    "dependencies": ["@radix-ui/react-toggle-group"],
+    "registryDependencies": ["toggle"],
+    "files": [
+      {
+        "path": "ui/toggle-group.tsx",
+        "type": "registry:ui"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-03T07:39:45.919Z"
+}

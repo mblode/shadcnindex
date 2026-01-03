@@ -1,0 +1,18 @@
+{
+  "registry": "@shadcn",
+  "component": "sheet",
+  "url": "https://ui.shadcn.com/r/sheet.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "sheet",
+    "type": "registry:ui",
+    "dependencies": ["@radix-ui/react-dialog"],
+    "files": [
+      {
+        "path": "ui/sheet.tsx",
+        "type": "registry:ui"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-03T07:39:45.826Z"
+}

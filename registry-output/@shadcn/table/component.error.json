@@ -1,0 +1,17 @@
+{
+  "registry": "@shadcn",
+  "component": "table",
+  "url": "https://ui.shadcn.com/r/table.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "table",
+    "type": "registry:ui",
+    "files": [
+      {
+        "path": "ui/table.tsx",
+        "type": "registry:ui"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-03T07:39:45.873Z"
+}

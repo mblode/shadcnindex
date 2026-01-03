@@ -1,0 +1,18 @@
+{
+  "registry": "@shadcn",
+  "component": "slider",
+  "url": "https://ui.shadcn.com/r/slider.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "slider",
+    "type": "registry:ui",
+    "dependencies": ["@radix-ui/react-slider"],
+    "files": [
+      {
+        "path": "ui/slider.tsx",
+        "type": "registry:ui"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-03T07:39:45.831Z"
+}

@@ -1,0 +1,18 @@
+{
+  "registry": "@shadcn",
+  "component": "spinner",
+  "url": "https://ui.shadcn.com/r/spinner.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "spinner",
+    "type": "registry:ui",
+    "dependencies": ["class-variance-authority"],
+    "files": [
+      {
+        "path": "ui/spinner.tsx",
+        "type": "registry:ui"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-03T07:39:45.871Z"
+}

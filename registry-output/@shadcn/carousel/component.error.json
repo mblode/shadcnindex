@@ -1,0 +1,19 @@
+{
+  "registry": "@shadcn",
+  "component": "carousel",
+  "url": "https://ui.shadcn.com/r/carousel.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "carousel",
+    "type": "registry:ui",
+    "dependencies": ["embla-carousel-react"],
+    "registryDependencies": ["button"],
+    "files": [
+      {
+        "path": "ui/carousel.tsx",
+        "type": "registry:ui"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-03T07:39:45.515Z"
+}

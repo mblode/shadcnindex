@@ -1,0 +1,19 @@
+{
+  "registry": "@shadcn",
+  "component": "calendar",
+  "url": "https://ui.shadcn.com/r/calendar.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "calendar",
+    "type": "registry:ui",
+    "dependencies": ["react-day-picker@latest", "date-fns"],
+    "registryDependencies": ["button"],
+    "files": [
+      {
+        "path": "ui/calendar.tsx",
+        "type": "registry:ui"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-03T07:39:45.518Z"
+}

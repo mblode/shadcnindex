@@ -1,0 +1,18 @@
+{
+  "registry": "@shadcn",
+  "component": "button",
+  "url": "https://ui.shadcn.com/r/button.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "button",
+    "type": "registry:ui",
+    "dependencies": ["@radix-ui/react-slot"],
+    "files": [
+      {
+        "path": "ui/button.tsx",
+        "type": "registry:ui"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-03T07:39:45.446Z"
+}

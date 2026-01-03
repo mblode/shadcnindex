@@ -1,0 +1,18 @@
+{
+  "registry": "@shadcn",
+  "component": "drawer",
+  "url": "https://ui.shadcn.com/r/drawer.json",
+  "error": "HTTP 404 Not Found",
+  "item": {
+    "name": "drawer",
+    "type": "registry:ui",
+    "dependencies": ["vaul", "@radix-ui/react-dialog"],
+    "files": [
+      {
+        "path": "ui/drawer.tsx",
+        "type": "registry:ui"
+      }
+    ]
+  },
+  "fetchedAt": "2026-01-03T07:39:45.873Z"
+}

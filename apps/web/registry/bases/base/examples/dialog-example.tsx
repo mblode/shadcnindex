@@ -131,10 +131,10 @@ function DialogScrollableContent() {
               This is a dialog with scrollable content.
             </DialogDescription>
           </DialogHeader>
-          <div className="no-scrollbar style-lyra:-mx-4 style-maia:-mx-6 style-mira:-mx-4 style-nova:-mx-4 style-vega:-mx-6 max-h-[70vh] overflow-y-auto style-lyra:px-4 style-maia:px-6 style-mira:px-4 style-nova:px-4 style-vega:px-6">
+          <div className="no-scrollbar      max-h-[70vh] overflow-y-auto     ">
             {Array.from({ length: 10 }).map((_, index) => (
               <p
-                className="mb-4 style-lyra:mb-2 leading-normal style-lyra:leading-relaxed"
+                className="mb-4  leading-normal "
                 key={index}
               >
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
@@ -167,10 +167,10 @@ function DialogWithStickyFooter() {
               This is a dialog with scrollable content.
             </DialogDescription>
           </DialogHeader>
-          <div className="no-scrollbar style-lyra:-mx-4 style-maia:-mx-6 style-mira:-mx-4 style-nova:-mx-4 style-vega:-mx-6 max-h-[70vh] overflow-y-auto style-lyra:px-4 style-maia:px-6 style-mira:px-4 style-nova:px-4 style-vega:px-6">
+          <div className="no-scrollbar      max-h-[70vh] overflow-y-auto     ">
             {Array.from({ length: 10 }).map((_, index) => (
               <p
-                className="mb-4 style-lyra:mb-2 leading-normal style-lyra:leading-relaxed"
+                className="mb-4  leading-normal "
                 key={index}
               >
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
@@ -312,7 +312,7 @@ function DialogChatSettings() {
                 </TabsTrigger>
                 <TabsTrigger value="security">Security</TabsTrigger>
               </TabsList>
-              <div className="style-lyra:min-h-[450px] style-maia:min-h-[550px] style-mira:min-h-[450px] style-nova:min-h-[460px] style-vega:min-h-[550px] style-lyra:rounded-none style-maia:rounded-xl style-mira:rounded-md style-nova:rounded-lg style-vega:rounded-lg border style-lyra:p-4 style-maia:p-6 style-mira:p-4 style-nova:p-4 style-vega:p-6 [&_[data-slot=select-trigger]]:min-w-[125px]">
+              <div className="          border      [&_[data-slot=select-trigger]]:min-w-[125px]">
                 <TabsContent value="general">
                   <FieldSet>
                     <FieldGroup>
