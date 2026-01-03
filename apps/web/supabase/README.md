@@ -7,7 +7,7 @@ This folder contains the SQL schema and indexing helper for the registry semanti
 1. Run `supabase/registry-search.sql` in your Supabase SQL editor.
 2. Set environment variables:
    - `SUPABASE_URL`
-   - `SUPABASE_SERVICE_ROLE_KEY`
+   - `SUPABASE_SERVICE_ROLE_KEY` (or `SUPABASE_SERVICE_ROLE` / `SUPABASE_SECRET_KEY`)
    - `OPENAI_API_KEY`
 3. Generate embeddings and upsert rows:
 

@@ -1,7 +1,7 @@
 import { openai } from "@ai-sdk/openai";
 import { embed } from "ai";
 
-const EMBEDDING_MODEL = openai.embeddingModel("text-embedding-3-small");
+const EMBEDDING_MODEL = openai.embedding("text-embedding-3-small");
 
 export async function embedSearchQuery(query: string) {
   const { embedding } = await embed({

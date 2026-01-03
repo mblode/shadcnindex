@@ -72,7 +72,7 @@ function highlightMatches(value: string, query: string) {
   }
 
   const lowerValue = value.toLowerCase();
-  const ranges: Array<[number, number]> = [];
+  const ranges: [number, number][] = [];
 
   for (const token of tokens) {
     let startIndex = 0;
@@ -91,7 +91,7 @@ function highlightMatches(value: string, query: string) {
   }
 
   ranges.sort((a, b) => a[0] - b[0]);
-  const merged: Array<[number, number]> = [];
+  const merged: [number, number][] = [];
   for (const [start, end] of ranges) {
     const last = merged.at(-1);
     if (!last || start > last[1] + 1) {
@@ -259,10 +259,10 @@ export function RegistrySearch() {
       {isSearchRoute ? null : (
         <div className="flex flex-col gap-2 text-center">
           <h1 className="font-semibold text-3xl tracking-tight sm:text-4xl">
-            Search the registry index
+            Search the shadcn index
           </h1>
           <p className="text-muted-foreground text-sm sm:text-base">
-            Find components, blocks, and hooks across open registries.
+            Find components, blocks, and hooks across shadcn registries.
           </p>
         </div>
       )}

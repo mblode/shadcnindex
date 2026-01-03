@@ -1,6 +1,5 @@
 "use client";
 
-import type { ComponentType } from "react";
 import { useEffect, useMemo, useState } from "react";
 
 import { cn } from "@/lib/utils";
@@ -12,14 +11,27 @@ interface RegistryLivePreviewProps {
   className?: string;
 }
 
+type PreviewStatus = "loading" | "ready" | "error";
+
+type PreviewMessage = {
+  source?: string;
+  moduleUrl?: string | null;
+  type?: "ready" | "error" | "height";
+  message?: string;
+  height?: number;
+};
+
+const DEFAULT_IFRAME_HEIGHT = 320;
+
 export function RegistryLivePreview({
   registry,
   component,
   entryPath,
   className,
 }: RegistryLivePreviewProps) {
-  const [Preview, setPreview] = useState<ComponentType | null>(null);
+  const [status, setStatus] = useState<PreviewStatus>("loading");
   const [error, setError] = useState<string | null>(null);
+  const [height, setHeight] = useState<number>(DEFAULT_IFRAME_HEIGHT);
   const previewUrl = useMemo(() => {
     const safePath = entryPath.replace(/^\//, "");
     return `/registry-preview/${encodeURIComponent(
@@ -27,48 +39,52 @@ export function RegistryLivePreview({
     )}/${encodeURIComponent(component)}/${safePath}.mjs`;
   }, [registry, component, entryPath]);
 
+  const iframeUrl = useMemo(() => {
+    const params = new URLSearchParams({
+      module: previewUrl,
+      component,
+    });
+    return `/registry-preview-shell?${params.toString()}`;
+  }, [component, previewUrl]);
+
   useEffect(() => {
-    let active = true;
+    setStatus("loading");
     setError(null);
-    setPreview(null);
+  }, [iframeUrl]);
 
-    const load = async () => {
-      try {
-        // biome-ignore lint/suspicious/noExplicitAny: dynamic module shape varies by registry
-        const module = (await import(
-          /* webpackIgnore: true */ previewUrl
-        )) as any;
-        if (!active) {
-          return;
-        }
-        const pascalName = toPascalCase(component);
-        const candidate =
-          module?.default ??
-          module?.[pascalName] ??
-          Object.values(module).find((value) => typeof value === "function");
+  useEffect(() => {
+    const handleMessage = (event: MessageEvent<PreviewMessage>) => {
+      const data = event.data;
+      if (!data || data.source !== "registry-preview") {
+        return;
+      }
 
-        if (typeof candidate === "function") {
-          setPreview(() => candidate as ComponentType);
-          return;
-        }
-        setError("Preview not available.");
-      } catch (err) {
-        if (!active) {
-          return;
-        }
-        setError(
-          err instanceof Error ? err.message : "Preview failed to load."
-        );
+      if (data.moduleUrl !== previewUrl) {
+        return;
+      }
+
+      if (data.type === "height" && typeof data.height === "number") {
+        setHeight(Math.max(data.height, DEFAULT_IFRAME_HEIGHT));
+        return;
+      }
+
+      if (data.type === "ready") {
+        setStatus("ready");
+        setError(null);
+        return;
+      }
+
+      if (data.type === "error") {
+        setStatus("error");
+        setError(data.message ?? "Preview failed to load.");
       }
     };
 
-    load();
-    return () => {
-      active = false;
-    };
-  }, [component, previewUrl]);
+    window.addEventListener("message", handleMessage);
+    return () => window.removeEventListener("message", handleMessage);
+  }, [previewUrl]);
 
-  if (error) {
+  if (status === "error" && error) {
     return (
       <div className={cn("text-muted-foreground text-sm", className)}>
         {error}
@@ -76,27 +92,22 @@ export function RegistryLivePreview({
     );
   }
 
-  if (!Preview) {
-    return (
-      <div className={cn("text-muted-foreground text-sm", className)}>
-        Loading preview…
-      </div>
-    );
-  }
-
   return (
     <div className={cn("w-full", className)}>
-      <Preview />
+      <div className="relative">
+        {status === "loading" ? (
+          <div className="absolute inset-0 flex items-center justify-center text-muted-foreground text-sm">
+            Loading preview…
+          </div>
+        ) : null}
+        <iframe
+          className="w-full rounded-md border border-border/60"
+          sandbox="allow-scripts allow-same-origin"
+          src={iframeUrl}
+          style={{ height: `${height}px` }}
+          title={`Preview of ${component}`}
+        />
+      </div>
     </div>
   );
-}
-
-function toPascalCase(value: string) {
-  return value
-    .replace(/[^a-zA-Z0-9]+/g, " ")
-    .trim()
-    .split(" ")
-    .filter(Boolean)
-    .map((segment) => segment[0]?.toUpperCase() + segment.slice(1))
-    .join("");
 }

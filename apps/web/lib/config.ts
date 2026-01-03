@@ -1,12 +1,12 @@
 export const siteConfig = {
-  name: "Components Search",
-  url: "http://localhost:3003",
+  name: "shadcn index",
+  url: "https://shadcnindex.com",
   ogImage: "/opengraph-image.png",
   description:
-    "Local-first search across shadcn registries with fast previews and deterministic installs.",
+    "Search across shadcn registries with fast previews and deterministic installs.",
   links: {
     twitter: "https://x.com/mblode",
-    github: "https://github.com/mblode/components-search",
+    github: "https://github.com/mblode/shadcnindex",
   },
   navItems: [
     {

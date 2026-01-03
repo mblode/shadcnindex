@@ -2,8 +2,8 @@ import { readFile } from "node:fs/promises";
 import path from "node:path";
 
 import { openai } from "@ai-sdk/openai";
-import { createClient } from "@supabase/supabase-js";
 import { embedMany } from "ai";
+import { createClient } from "@supabase/supabase-js";
 
 const BATCH_SIZE = Number.parseInt(
   process.env.EMBEDDING_BATCH_SIZE ?? "100",
@@ -11,10 +11,15 @@ const BATCH_SIZE = Number.parseInt(
 );
 
 const supabaseUrl = process.env.SUPABASE_URL;
-const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
+const supabaseServiceKey =
+  process.env.SUPABASE_SERVICE_ROLE_KEY ??
+  process.env.SUPABASE_SERVICE_ROLE ??
+  process.env.SUPABASE_SECRET_KEY;
 
 if (!(supabaseUrl && supabaseServiceKey)) {
-  throw new Error("Missing SUPABASE_URL or SUPABASE_SERVICE_ROLE_KEY.");
+  throw new Error(
+    "Missing SUPABASE_URL or a service role key (SUPABASE_SERVICE_ROLE_KEY/SUPABASE_SERVICE_ROLE/SUPABASE_SECRET_KEY)."
+  );
 }
 
 const indexPath = path.join(process.cwd(), "public", "registry-index.json");
@@ -31,7 +36,7 @@ const supabase = createClient(supabaseUrl, supabaseServiceKey, {
   auth: { persistSession: false },
 });
 
-const model = openai.embeddingModel("text-embedding-3-small");
+const model = openai.embedding("text-embedding-3-small");
 
 const buildEmbeddingText = (item) => {
   const parts = [

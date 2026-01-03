@@ -11,10 +11,15 @@ export function getSupabaseAdmin() {
   }
 
   const supabaseUrl = process.env.SUPABASE_URL;
-  const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
+  const supabaseServiceKey =
+    process.env.SUPABASE_SERVICE_ROLE_KEY ??
+    process.env.SUPABASE_SERVICE_ROLE ??
+    process.env.SUPABASE_SECRET_KEY;
 
   if (!(supabaseUrl && supabaseServiceKey)) {
-    throw new Error("Missing SUPABASE_URL or SUPABASE_SERVICE_ROLE_KEY.");
+    throw new Error(
+      "Missing SUPABASE_URL or a service role key (SUPABASE_SERVICE_ROLE_KEY/SUPABASE_SERVICE_ROLE/SUPABASE_SECRET_KEY)."
+    );
   }
 
   cachedClient = createClient(supabaseUrl, supabaseServiceKey, {

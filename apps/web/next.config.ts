@@ -2,7 +2,6 @@ import { createMDX } from "fumadocs-mdx/next";
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  devIndicators: false,
   typescript: {
     ignoreBuildErrors: true,
   },
@@ -28,61 +27,7 @@ const nextConfig: NextConfig = {
   },
   experimental: {
     turbopackFileSystemCacheForDev: true,
-    urlImports: ["https://esm.sh/", "http://localhost:3003/registry-preview/"],
-  },
-  async redirects() {
-    return [
-      {
-        source: "/components",
-        destination: "/docs/components",
-        permanent: true,
-      },
-      {
-        source: "/docs/primitives/:path*",
-        destination: "/docs/components/:path*",
-        permanent: true,
-      },
-      {
-        source: "/figma",
-        destination: "/docs/figma",
-        permanent: true,
-      },
-      {
-        source: "/sidebar",
-        destination: "/docs/components/sidebar",
-        permanent: true,
-      },
-      {
-        source: "/react-19",
-        destination: "/docs/react-19",
-        permanent: true,
-      },
-      {
-        source: "/charts",
-        destination: "/charts/area",
-        permanent: true,
-      },
-      {
-        source: "/view/styles/:style/:name",
-        destination: "/view/:name",
-        permanent: true,
-      },
-      {
-        source: "/docs/:path*.mdx",
-        destination: "/docs/:path*.md",
-        permanent: true,
-      },
-      {
-        source: "/mcp",
-        destination: "/docs/mcp",
-        permanent: false,
-      },
-      {
-        source: "/directory",
-        destination: "/docs/directory",
-        permanent: false,
-      },
-    ];
+    urlImports: ["*"],
   },
   async rewrites() {
     return [
