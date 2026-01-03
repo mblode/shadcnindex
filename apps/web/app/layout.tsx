@@ -1,4 +1,3 @@
-import { GoogleAnalytics } from "@next/third-parties/google";
 import type { Metadata } from "next";
 import { NuqsAdapter } from "nuqs/adapters/next/app";
 import { ActiveThemeProvider } from "@/components/active-theme";
@@ -144,7 +143,6 @@ export default function RootLayout({
           </LayoutProvider>
         </ThemeProvider>
       </body>
-      <GoogleAnalytics gaId="G-6Q5MMMS1TB" />
     </html>
   );
 }
