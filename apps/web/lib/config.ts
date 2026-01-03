@@ -2,8 +2,7 @@ export const siteConfig = {
   name: "shadcn index",
   url: "https://shadcnindex.com",
   ogImage: "/opengraph-image.png",
-  description:
-    "Search across shadcn registries with fast previews and deterministic installs.",
+  description: "AI-powered search across all shadcn registries",
   links: {
     twitter: "https://x.com/mblode",
     github: "https://github.com/mblode/shadcnindex",
