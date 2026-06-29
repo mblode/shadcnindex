@@ -19,3 +19,7 @@ Try the live site.
 <img alt="Open Shadcn Index" src="https://img.shields.io/badge/Open%20Shadcn%20Index-000000?style=flat&colorA=000000&colorB=000000" />
 </a>
 </p>
+
+---
+
+Crafted by [<img src="https://matthewblode.com/avatar-sm.png" width="20" align="top" />](https://matthewblode.com) [Matthew Blode](https://matthewblode.com)

@@ -14,14 +14,21 @@ export function SiteFooter() {
     <footer className="fixed inset-x-0 bottom-0 border-border/60 border-t">
       <div className="container-wrapper px-4 xl:px-6">
         <div className="flex h-16 items-center justify-center text-muted-foreground text-xs sm:text-sm">
-          <span>
-            Built by{" "}
+          <span className="inline-flex items-center gap-1.5">
+            Crafted by{" "}
             <a
-              className="font-medium underline underline-offset-4"
+              className="inline-flex items-center gap-1.5 font-medium underline underline-offset-4"
               href="https://matthewblode.com"
-              rel="noreferrer noopener"
-              target="_blank"
+              rel="author"
             >
+              {/* biome-ignore lint/performance/noImgElement: small external avatar, next/image not warranted */}
+              <img
+                alt="Matthew Blode"
+                className="rounded-full"
+                height={20}
+                src="https://matthewblode.com/avatar-sm.png"
+                width={20}
+              />
               Matthew Blode
             </a>
           </span>
