@@ -67,6 +67,7 @@
   "@oui": "https://oui.mw10013.workers.dev/r/{name}.json",
   "@paceui": "https://ui.paceui.com/r/{name}.json",
   "@paykit-sdk": "https://www.usepaykit.dev/r/{name}.json",
+  "@payload-components": "https://www.payload-components.xyz/r/{name}.json",
   "@phucbm": "https://ui.phucbm.com/r/{name}.json",
   "@pixelact-ui": "https://www.pixelactui.com/r/{name}.json",
   "@plate": "https://platejs.org/r/{name}.json",
